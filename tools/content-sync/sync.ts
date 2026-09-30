@@ -9,8 +9,10 @@ import {
   PageDocSchema,
   RedirectsSchema,
   RouteIndexSchema,
+  RouteTableSchema,
   SiteSchema,
   type Media,
+  type MediaRef,
   type PageDoc,
   type Redirect,
   type RouteEntry,
@@ -21,7 +23,7 @@ import type { AssetManifest } from './fetch.ts';
 import { bodyText, type HttpClient } from './http.ts';
 import { MediaRegistry } from './media.ts';
 import { comparable, htmlBlockText, sentences } from './normalize/sentences.ts';
-import { normalizePage } from './page.ts';
+import { normalizePage, type PageDraft } from './page.ts';
 import { buildRedirects, buildRoutes, createLinkMap, parentOf, type RouteRule } from './routes.ts';
 import { buildSite } from './site.ts';
 
@@ -71,7 +73,7 @@ export interface SyncResult {
 }
 
 /** All visible text of a page document, one piece per line. */
-export function docText(doc: Omit<PageDoc, 'breadcrumbs'>): string {
+export function docText(doc: PageDraft): string {
   const parts: string[] = [
     doc.hero.title,
     doc.hero.lede ?? '',
@@ -143,7 +145,7 @@ function waived(page: string, sentence: string, waivers: Waiver[]): boolean {
 export function coverageGaps(
   page: string,
   sourceText: string,
-  doc: Omit<PageDoc, 'breadcrumbs'>,
+  doc: PageDraft,
   waivers: Waiver[] = [],
 ): string[] {
   const output = comparable(docText(doc).replace(/\n/g, ' '));
@@ -152,7 +154,7 @@ export function coverageGaps(
   );
 }
 
-function firstParagraph(doc: Omit<PageDoc, 'breadcrumbs'>): string | undefined {
+function firstParagraph(doc: PageDraft): string | undefined {
   if (doc.hero.lede) return doc.hero.lede;
   for (const section of doc.sections) {
     for (const block of section.blocks) {
@@ -164,7 +166,7 @@ function firstParagraph(doc: Omit<PageDoc, 'breadcrumbs'>): string | undefined {
   return undefined;
 }
 
-function firstMedia(doc: Omit<PageDoc, 'breadcrumbs'>): string | undefined {
+function firstMedia(doc: PageDraft): string | undefined {
   if (doc.hero.media) return doc.hero.media;
   for (const section of doc.sections) {
     for (const block of section.blocks) {
@@ -221,19 +223,6 @@ export async function runSync(options: SyncOptions): Promise<SyncResult> {
     home.title ??
     siteDraft.name;
 
-  const docs: PageDoc[] = routes.map((route) => {
-    const { doc } = normalized.get(route.id)!;
-    const chain: { label: string; path: string }[] = [];
-    for (let parent = parentOf(route, routes); parent; parent = parentOf(parent, routes)) {
-      chain.unshift({ label: parent.path === '/' ? homeLabel : parent.title, path: parent.path });
-      if (parent.path === '/') break;
-    }
-    return PageDocSchema.parse({
-      ...doc,
-      breadcrumbs: route.path === '/' ? [] : [...chain, { label: route.title, path: route.path }],
-    });
-  });
-
   const entries: RouteEntry[] = routes.map((route) => {
     const doc = normalized.get(route.id)!.doc;
     const parent = parentOf(route, routes);
@@ -256,6 +245,56 @@ export async function runSync(options: SyncOptions): Promise<SyncResult> {
       }),
       ...(route.modified ? { modified: route.modified } : {}),
     };
+  });
+
+  const refs = new Map<string, MediaRef>(
+    mediaList.map((m) => [
+      m.id,
+      {
+        id: m.id,
+        mime: m.mime,
+        width: m.width,
+        height: m.height,
+        alt: m.alt,
+        widths: m.widths,
+        svg: m.svg,
+        ...(m.placeholder ? { placeholder: m.placeholder } : {}),
+      },
+    ]),
+  );
+  const refsFor = (ids: Iterable<string>) =>
+    Object.fromEntries(
+      [...new Set(ids)]
+        .sort()
+        .filter((id) => refs.has(id))
+        .map((id) => [id, refs.get(id)!]),
+    );
+
+  const docs: PageDoc[] = routes.map((route) => {
+    const { doc } = normalized.get(route.id)!;
+    const chain: { label: string; path: string }[] = [];
+    for (let parent = parentOf(route, routes); parent; parent = parentOf(parent, routes)) {
+      chain.unshift({ label: parent.path === '/' ? homeLabel : parent.title, path: parent.path });
+      if (parent.path === '/') break;
+    }
+    const children = entries
+      .filter((e) => e.parentId === route.id && route.path !== '/')
+      .sort((a, b) => a.order - b.order || a.path.localeCompare(b.path))
+      .map((e) => ({
+        id: e.id,
+        path: e.path,
+        title: e.title,
+        ...(e.summary ? { summary: e.summary } : {}),
+        ...(e.media ? { media: e.media } : {}),
+      }));
+    const used = mediaList.filter((m) => m.usedOn.includes(route.id)).map((m) => m.id);
+    const childMedia = children.map((c) => c.media).filter((id): id is string => Boolean(id));
+    return PageDocSchema.parse({
+      ...doc,
+      breadcrumbs: route.path === '/' ? [] : [...chain, { label: route.title, path: route.path }],
+      children,
+      media: refsFor([...used, ...childMedia, ...(doc.seo.image ? [doc.seo.image] : [])]),
+    });
   });
 
   const redirects = buildRedirects(routes);
@@ -286,6 +325,7 @@ export async function runSync(options: SyncOptions): Promise<SyncResult> {
 
   const site = SiteSchema.parse({
     ...siteDraft,
+    media: refsFor([siteDraft.logo, siteDraft.icon].filter((id): id is string => Boolean(id))),
     snapshot: { syncedAt, pages: docs.length, media: mediaList.length },
   });
 
@@ -299,6 +339,12 @@ export async function runSync(options: SyncOptions): Promise<SyncResult> {
   const files = new Map<string, string>();
   files.set('site.json', json(site));
   files.set('index.json', json(RouteIndexSchema.parse({ routes: entries })));
+  files.set(
+    'routes.json',
+    json(
+      RouteTableSchema.parse({ routes: entries.map(({ id, path, kind }) => ({ id, path, kind })) }),
+    ),
+  );
   files.set('media.json', json(MediaIndexSchema.parse({ media: mediaList })));
   files.set('redirects.json', json(RedirectsSchema.parse({ redirects })));
   for (const doc of docs) files.set(`pages/${doc.id}.json`, json(doc));
@@ -306,7 +352,7 @@ export async function runSync(options: SyncOptions): Promise<SyncResult> {
     'page-loaders.ts',
     [
       '// Generated by tools/content-sync. Do not edit.',
-      "import type { PageDoc } from '../../schema/content';",
+      "import type { PageDoc } from '@schema/content';",
       '',
       'export const pageLoaders: Record<string, () => Promise<PageDoc>> = {',
       ...docs.map(

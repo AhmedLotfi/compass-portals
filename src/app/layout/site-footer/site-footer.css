@@ -1,0 +1,125 @@
+:host {
+  display: block;
+}
+
+.site-footer {
+  background-color: var(--color-paper-2);
+  border-top: var(--ink-line);
+  font-size: var(--text-sm);
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: 2.5rem;
+  padding-block: 3.5rem 2.5rem;
+}
+
+@media (min-width: 48rem) {
+  .site-footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .site-footer__grid {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 2fr) minmax(0, 3fr) minmax(0, 3fr);
+  }
+}
+
+.site-footer__logo {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-ink);
+}
+
+.site-footer__logo app-media-image {
+  block-size: 2.4rem;
+}
+
+.site-footer__name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.site-footer__tagline {
+  margin-top: 1rem;
+  max-inline-size: 34ch;
+  color: var(--color-ink-2);
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+.site-footer__nav ul {
+  display: grid;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer__contact {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+  font-style: normal;
+}
+
+.site-footer__address,
+.site-footer__contact-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.site-footer__contact-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-brass);
+}
+
+.site-footer__line {
+  display: block;
+}
+
+.site-footer__social {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.site-footer__networks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer__network {
+  display: inline-grid;
+  place-items: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  border: 1px solid var(--color-ink);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+}
+
+.site-footer__network:hover {
+  background: var(--color-paper);
+}
+
+.site-footer__app {
+  justify-self: start;
+}
+
+.site-footer__base {
+  padding-block: 1.25rem 2rem;
+  border-top: var(--hairline);
+  color: var(--color-ink-2);
+  font-size: var(--text-xs);
+}

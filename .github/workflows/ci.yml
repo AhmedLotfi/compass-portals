@@ -28,7 +28,7 @@ jobs:
           npm run lint
           npm run lint:design
 
-      - name: Unit tests
+      - name: Unit tests (against the synthetic fixture snapshot)
         run: npm test
 
       - name: Tooling type-check and tests
@@ -36,5 +36,8 @@ jobs:
           npm run typecheck:tools
           npm run test:tools
 
+      # The real snapshot (src/content) exists once compassint.org has been synced;
+      # until then the app is built against the synthetic fixture to prove it compiles and prerenders.
       - name: Build (static prerender)
-        run: npm run build
+        run: |
+          if [ -f src/content/site.json ]; then npm run build; else npm run build:fixture; fi

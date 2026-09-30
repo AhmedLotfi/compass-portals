@@ -1,0 +1,66 @@
+:host {
+  display: block;
+}
+
+.home-hero {
+  position: relative;
+  overflow: clip;
+  border-bottom: var(--hairline);
+}
+
+.home-hero__texture {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.home-hero__inner {
+  position: relative;
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+  padding-block: clamp(3rem, 2rem + 6vw, 7rem);
+}
+
+@media (min-width: 60rem) {
+  .home-hero__inner {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+}
+
+.home-hero__title {
+  max-inline-size: 16ch;
+  font-size: var(--text-display);
+  line-height: var(--text-display--line-height);
+  letter-spacing: -0.02em;
+}
+
+.home-hero__lede {
+  margin-top: 1.4rem;
+  max-inline-size: 46ch;
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
+  color: var(--color-ink-2);
+}
+
+.home-hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.home-hero__compass {
+  justify-self: center;
+  inline-size: min(72%, 18rem);
+}
+
+@media (min-width: 60rem) {
+  .home-hero__compass {
+    inline-size: min(100%, 30rem);
+  }
+}
+
+.home-plate {
+  padding-block-end: 0;
+}

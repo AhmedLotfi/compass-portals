@@ -1,0 +1,77 @@
+/*
+ * Navigation link styles. They are applied through NavLink's `linkClass`, inside a child component,
+ * so they live here rather than in the header's scoped styles.
+ */
+.primary-link {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+  padding-inline: 0.7rem;
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.primary-link:hover {
+  background: var(--color-paper-2);
+}
+
+.primary-link.is-active {
+  text-decoration: underline;
+  text-decoration-color: var(--color-brass);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.45em;
+}
+
+.nav-menu__link,
+.nav-menu__sublink {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  text-decoration: none;
+}
+
+.nav-menu__sublink {
+  color: var(--color-ink-2);
+}
+
+:is(.nav-menu__link, .nav-menu__sublink):hover,
+:is(.nav-menu__link, .nav-menu__sublink).is-active {
+  background: var(--color-paper-2);
+  color: var(--color-ink);
+}
+
+.mobile-link {
+  display: block;
+  padding-block: 0.9rem;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mobile-sublink {
+  display: block;
+  padding-block: 0.45rem;
+  color: var(--color-ink-2);
+  text-decoration: none;
+}
+
+:is(.mobile-link, .mobile-sublink).is-active {
+  color: var(--color-brass-deep);
+}
+
+.footer-link {
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link.is-active {
+  text-decoration: underline;
+  text-decoration-color: var(--color-brass);
+}

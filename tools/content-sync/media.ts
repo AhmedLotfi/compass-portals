@@ -151,7 +151,8 @@ export class MediaRegistry {
       }
       const widths = svg ? [] : variantWidths(width);
       let placeholder: string | undefined;
-      if (!svg && !meta.hasAlpha) {
+      // Blurred previews suit photos only; flat graphics (PNG/GIF logos, icons) render crisp at once.
+      if (!svg && !meta.hasAlpha && (meta.format === 'jpeg' || meta.format === 'webp')) {
         const tiny = await sharp(buffer).resize(16).webp({ quality: 40 }).toBuffer();
         placeholder = `data:image/webp;base64,${tiny.toString('base64')}`;
       }

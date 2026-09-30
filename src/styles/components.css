@@ -58,7 +58,10 @@
 }
 
 .plate__frame {
-  display: block;
+  display: inline-block;
+  max-inline-size: 100%;
+  box-sizing: border-box;
+  vertical-align: top;
   border: var(--ink-line);
   background: var(--color-white);
   padding: 0.5rem;

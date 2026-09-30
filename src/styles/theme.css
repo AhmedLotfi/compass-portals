@@ -60,7 +60,7 @@
 
 :root {
   --gutter: clamp(1rem, 0.4rem + 2.6vw, 2.5rem);
-  --section-space: clamp(4.5rem, 3rem + 5vw, 8rem);
+  --section-space: clamp(3rem, 2rem + 3vw, 5rem);
   --hairline: 1px solid var(--color-rule);
   --ink-line: 1px solid var(--color-ink);
 }

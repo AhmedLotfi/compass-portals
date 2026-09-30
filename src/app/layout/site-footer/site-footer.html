@@ -1,0 +1,96 @@
+<footer class="site-footer">
+  <div class="frame site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="site-footer__logo" routerLink="/">
+        @if (logo) {
+          <app-media-image [media]="logo" [style.inline-size]="logoWidth" sizes="12rem" />
+        } @else {
+          <span class="site-footer__name">{{ site.name }}</span>
+        }
+      </a>
+      @if (site.tagline) {
+        <p class="site-footer__tagline">{{ site.tagline }}</p>
+      }
+    </div>
+
+    @if (links.length) {
+      <nav class="site-footer__nav" [attr.aria-label]="'footerNavigation' | copy">
+        <ul>
+          @for (item of links; track item.href + item.label) {
+            <li><app-nav-link [item]="item" linkClass="footer-link" /></li>
+          }
+        </ul>
+      </nav>
+    }
+
+    <address class="site-footer__contact">
+      @if (site.contact.address.length) {
+        <p class="site-footer__address">
+          <app-icon name="pin" />
+          <span>
+            @for (line of site.contact.address; track line) {
+              <span class="site-footer__line">{{ line }}</span>
+            }
+          </span>
+        </p>
+      }
+      @for (phone of site.contact.phones; track phone.tel) {
+        <a class="site-footer__contact-link tnum" [href]="phone.tel"
+          ><app-icon name="phone" />{{ phone.display }}</a
+        >
+      }
+      @for (email of site.contact.emails; track email) {
+        <a class="site-footer__contact-link" [href]="'mailto:' + email"
+          ><app-icon name="mail" />{{ email }}</a
+        >
+      }
+      @if (site.contact.mapUrl) {
+        <a
+          class="site-footer__contact-link"
+          [href]="site.contact.mapUrl"
+          target="_blank"
+          rel="noopener"
+        >
+          <app-icon name="map" />{{ 'openMap' | copy
+          }}<span class="visually-hidden"> {{ 'opensInNewTab' | copy }}</span>
+        </a>
+      }
+    </address>
+
+    @if (social.length || site.apps.length) {
+      <div class="site-footer__social">
+        @if (social.length) {
+          <ul class="site-footer__networks" [attr.aria-label]="'followUs' | copy">
+            @for (network of social; track network.url) {
+              <li>
+                <a class="site-footer__network" [href]="network.url" target="_blank" rel="noopener">
+                  <app-icon [name]="network.icon" />
+                  <span class="visually-hidden"
+                    >{{ network.name }} {{ 'opensInNewTab' | copy }}</span
+                  >
+                </a>
+              </li>
+            }
+          </ul>
+        }
+        @for (app of site.apps; track app.url) {
+          <a
+            class="btn btn--outline site-footer__app"
+            [href]="app.url"
+            target="_blank"
+            rel="noopener"
+          >
+            <app-icon [name]="app.store" />
+            {{ (app.store === 'google-play' ? 'getTheApp' : 'getTheAppIos') | copy }}
+          </a>
+        }
+      </div>
+    }
+  </div>
+
+  @if (site.footer.copyright) {
+    <div class="frame site-footer__base">
+      <p>{{ site.footer.copyright }}</p>
+    </div>
+  }
+</footer>

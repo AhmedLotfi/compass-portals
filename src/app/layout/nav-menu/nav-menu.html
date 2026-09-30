@@ -1,0 +1,42 @@
+<div class="nav-menu">
+  <app-nav-link [item]="item()" linkClass="primary-link" />
+  <button
+    type="button"
+    class="nav-menu__toggle"
+    [attr.aria-expanded]="open()"
+    [attr.aria-controls]="panelId"
+    [attr.aria-label]="item().label"
+    (click)="toggle()"
+  >
+    <app-icon name="chevron-down" />
+  </button>
+  @if (open()) {
+    <div
+      class="nav-menu__panel"
+      [id]="panelId"
+      animate.enter="nav-menu__panel--enter"
+      animate.leave="nav-menu__panel--leave"
+    >
+      <ul class="nav-menu__list">
+        @for (child of item().children; track child.href + child.label) {
+          <li>
+            <app-nav-link [item]="child" linkClass="nav-menu__link" (click)="close()" />
+            @if (child.children.length) {
+              <ul class="nav-menu__sublist">
+                @for (grandchild of child.children; track grandchild.href + grandchild.label) {
+                  <li>
+                    <app-nav-link
+                      [item]="grandchild"
+                      linkClass="nav-menu__sublink"
+                      (click)="close()"
+                    />
+                  </li>
+                }
+              </ul>
+            }
+          </li>
+        }
+      </ul>
+    </div>
+  }
+</div>

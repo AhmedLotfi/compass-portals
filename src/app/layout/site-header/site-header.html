@@ -1,0 +1,109 @@
+<header class="site-header">
+  <div class="frame site-header__bar">
+    <a class="brand" routerLink="/">
+      @if (logo) {
+        <app-media-image
+          class="brand__logo"
+          [media]="logo"
+          [style.inline-size]="logoWidth"
+          sizes="12rem"
+          [priority]="true"
+        />
+      } @else {
+        <span class="brand__name">{{ site.name }}</span>
+      }
+    </a>
+
+    <nav class="primary-nav" [attr.aria-label]="'mainNavigation' | copy">
+      <ul class="primary-nav__list">
+        @for (item of site.navigation.header; track item.href + item.label) {
+          <li class="primary-nav__item">
+            @if (item.children.length) {
+              <app-nav-menu [item]="item" />
+            } @else {
+              <app-nav-link [item]="item" linkClass="primary-link" />
+            }
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      @if (phone) {
+        <a
+          class="tel-link tnum"
+          [href]="phone.tel"
+          [attr.aria-label]="'callNumber' | copy: { phone: phone.display }"
+        >
+          <app-icon name="phone" />
+          <span class="tel-link__number">{{ phone.display }}</span>
+        </a>
+      }
+      @if (contactPath) {
+        <a class="btn btn--ink site-header__cta" [routerLink]="contactPath">{{
+          'contactUs' | copy
+        }}</a>
+      }
+      <button
+        type="button"
+        class="menu-button"
+        aria-haspopup="dialog"
+        aria-controls="mobile-menu"
+        (click)="openMenu()"
+      >
+        <app-icon name="menu" />
+        <span>{{ 'menu' | copy }}</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Backdrop clicks close the dialog; keyboard users close it with Escape (native to <dialog>). -->
+  <!-- eslint-disable-next-line @angular-eslint/template/click-events-have-key-events, @angular-eslint/template/interactive-supports-focus -->
+  <dialog
+    #menu
+    id="mobile-menu"
+    class="mobile-menu"
+    [attr.aria-label]="'mainNavigation' | copy"
+    (click)="onDialogClick($event)"
+  >
+    <div class="mobile-menu__panel">
+      <div class="mobile-menu__top">
+        <button type="button" class="menu-button" (click)="closeMenu()">
+          <app-icon name="close" />
+          <span>{{ 'closeMenu' | copy }}</span>
+        </button>
+      </div>
+      <nav [attr.aria-label]="'mainNavigation' | copy">
+        <ul class="mobile-menu__list">
+          @for (item of site.navigation.header; track item.href + item.label) {
+            <li>
+              <app-nav-link [item]="item" linkClass="mobile-link" />
+              @if (item.children.length) {
+                <ul class="mobile-menu__sublist">
+                  @for (child of item.children; track child.href + child.label) {
+                    <li><app-nav-link [item]="child" linkClass="mobile-sublink" /></li>
+                  }
+                </ul>
+              }
+            </li>
+          }
+        </ul>
+      </nav>
+      <div class="mobile-menu__contact">
+        @if (phone) {
+          <a class="mobile-menu__contact-link tnum" [href]="phone.tel">
+            <app-icon name="phone" />{{ phone.display }}
+          </a>
+        }
+        @if (email) {
+          <a class="mobile-menu__contact-link" [href]="'mailto:' + email">
+            <app-icon name="mail" />{{ email }}
+          </a>
+        }
+        @if (contactPath) {
+          <a class="btn btn--ink" [routerLink]="contactPath">{{ 'contactUs' | copy }}</a>
+        }
+      </div>
+    </div>
+  </dialog>
+</header>

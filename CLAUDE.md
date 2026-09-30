@@ -16,28 +16,39 @@ a build-time sync pulls its content into typed JSON and self-hosted images, and 
 
 ## Commands
 
-| Command                    | What it does                                                                                             |
-| -------------------------- | -------------------------------------------------------------------------------------------------------- |
-| `npm start`                | Dev server on http://localhost:4200                                                                      |
-| `npm run build`            | Production build with static prerendering into `dist/compass-portal/browser`                             |
-| `npm test`                 | Unit tests (Vitest), single run                                                                          |
-| `npm run lint`             | angular-eslint (TypeScript and templates)                                                                |
-| `npm run content:probe`    | Fingerprint compassint.org (platform, REST API, permalinks) → `reports/probe.json`                       |
-| `npm run content:discover` | Full inventory of the site → `reports/inventory.{json,md}` (add `-- --offline` to use the archive only)  |
-| `npm run content:fetch`    | Download every image, document and builder stylesheet the inventory references                           |
-| `npm run content:sync`     | Normalize the archive into `src/content/` (offline) and verify sentence coverage → `reports/coverage.md` |
-| `npm run content:all`      | discover + fetch + sync in one go (needs compassint.org in the allowed domains)                          |
-| `npm run media:build`      | Responsive AVIF/WebP variants, share images, `/files/` documents, favicons (runs before build/start)     |
-| `npm run test:tools`       | Tests for the build tooling (Vitest, `tools/**/*.test.ts`)                                               |
-| `npm run typecheck:tools`  | Type-check `tools/`                                                                                      |
-| `npm run design:generate`  | Regenerate `src/styles/fonts.css`, `src/styles/easing.css` and `public/textures/*.svg` (deterministic)   |
-| `npm run lint:design`      | Fail on banned design tells (see Design rules)                                                           |
+| Command                                           | What it does                                                                                             |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `npm start`                                       | Dev server on http://localhost:4200                                                                      |
+| `npm run build`                                   | Production build with static prerendering into `dist/compass-portal/browser`                             |
+| `npm test`                                        | Unit tests (Vitest), single run                                                                          |
+| `npm run lint`                                    | angular-eslint (TypeScript and templates)                                                                |
+| `npm run content:probe`                           | Fingerprint compassint.org (platform, REST API, permalinks) → `reports/probe.json`                       |
+| `npm run content:discover`                        | Full inventory of the site → `reports/inventory.{json,md}` (add `-- --offline` to use the archive only)  |
+| `npm run content:fetch`                           | Download every image, document and builder stylesheet the inventory references                           |
+| `npm run content:sync`                            | Normalize the archive into `src/content/` (offline) and verify sentence coverage → `reports/coverage.md` |
+| `npm run content:all`                             | discover + fetch + sync in one go (needs compassint.org in the allowed domains)                          |
+| `npm run media:build`                             | Responsive AVIF/WebP variants, share images, `/files/` documents, favicons (runs before build/start)     |
+| `npm run content:fixture`                         | Synthetic snapshot from the fake WordPress test site into `.cache/fixture/` (never ships)                |
+| `npm run start:fixture` / `npm run build:fixture` | Develop or build against the fixture (before the real sync exists)                                       |
+| `node tools/serve-dist.ts --content=<dir>`        | Serve `dist/` like production hosting (redirect map, trailing slashes, real 404)                         |
+| `npm run test:tools`                              | Tests for the build tooling (Vitest, `tools/**/*.test.ts`)                                               |
+| `npm run typecheck:tools`                         | Type-check `tools/`                                                                                      |
+| `npm run design:generate`                         | Regenerate `src/styles/fonts.css`, `src/styles/easing.css` and `public/textures/*.svg` (deterministic)   |
+| `npm run lint:design`                             | Fail on banned design tells (see Design rules)                                                           |
 
 Run `ng build` after every change and fix errors before moving on.
 
 ## Architecture
 
 - `src/app/`: the Angular app (standalone components, signals, zoneless, OnPush by default).
+  - `app.routes.ts`: one static route per synced page (from `@content/routes.json`), plus `404` and `**`.
+  - `core/`: `content` (ContentStore, page resolver), `copy` (the microcopy file + `copy` pipe), `media`
+    (`MediaImage`, the NgOptimizedImage loader), `seo` (SeoService, title strategy, JSON-LD), `contact`.
+  - `layout/`: header (products disclosure, mobile `<dialog>`), footer, breadcrumbs, nav links, icons.
+  - `shared/`: section renderer and one component per block type; `SmartLink` for synced hrefs.
+  - `features/`: page components by kind (home, listing, product, content page, contact, 404).
+- `@content/*` resolves to `src/content/` in production builds and to `.cache/fixture/content/` under the
+  `fixture` configuration and in unit tests (`tsconfig.fixture.json`, `tsconfig.spec.json`).
   - `features/home/compass-hero/`: the hero compass (pure-CSS intro, so it runs before hydration).
   - `dev/design-lab/`: dev-only review page at `/design-lab`; guarded by `ngDevMode`, so it is not in production.
 - `src/styles/`: global CSS. `theme.css` holds the Tailwind v4 `@theme` tokens; `base.css`, `prose.css` (site rich

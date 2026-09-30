@@ -9,8 +9,11 @@ import { blockText } from './normalize/sentences.ts';
 import { shapePage } from './normalize/shape.ts';
 import type { RouteDraft } from './routes.ts';
 
+/** A page as normalized from its own HTML; breadcrumbs, children and media are added by the sync. */
+export type PageDraft = Omit<PageDoc, 'breadcrumbs' | 'children' | 'media'>;
+
 export interface NormalizedPage {
-  doc: Omit<PageDoc, 'breadcrumbs'>;
+  doc: PageDraft;
   /** Visible text of the page's content area (block breaks kept), the reference for coverage. */
   sourceText: string;
 }
@@ -67,7 +70,7 @@ export function normalizePage(
     : undefined;
 
   const wp = route.page.rest;
-  const doc: Omit<PageDoc, 'breadcrumbs'> = {
+  const doc: PageDraft = {
     id: route.id,
     kind: route.kind,
     path: route.path,

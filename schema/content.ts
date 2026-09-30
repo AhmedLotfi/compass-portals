@@ -38,6 +38,27 @@ export const MediaSchema = z.object({
   usedOn: z.array(z.string()),
 });
 
+/** The subset of a media record a page needs to render an image. */
+export const MediaRefSchema = MediaSchema.pick({
+  id: true,
+  mime: true,
+  width: true,
+  height: true,
+  alt: true,
+  widths: true,
+  svg: true,
+  placeholder: true,
+});
+
+/** A child page listed on an index page (e.g. products in a category). */
+export const RouteCardSchema = z.object({
+  id: z.string(),
+  path: z.string(),
+  title: z.string(),
+  summary: z.string().optional(),
+  media: z.string().optional(),
+});
+
 export const RichTextBlockSchema = z.object({
   type: z.literal('richText'),
   /** Sanitized HTML with internal links rewritten to the new paths. */
@@ -192,6 +213,10 @@ export const PageDocSchema = z.object({
   }),
   sections: z.array(SectionSchema),
   breadcrumbs: z.array(z.object({ label: z.string(), path: z.string() })),
+  /** Child pages, for index and category pages. */
+  children: z.array(RouteCardSchema),
+  /** Every image the page renders (its own and its children's cards), by id. */
+  media: z.record(z.string(), MediaRefSchema),
 });
 
 export const RouteEntrySchema = z.object({
@@ -213,6 +238,11 @@ export const RouteEntrySchema = z.object({
 
 export const RouteIndexSchema = z.object({
   routes: z.array(RouteEntrySchema),
+});
+
+/** What the router needs: one static route per page. */
+export const RouteTableSchema = z.object({
+  routes: z.array(RouteEntrySchema.pick({ id: true, path: true, kind: true })),
 });
 
 export interface NavItem {
@@ -255,6 +285,8 @@ export const SiteSchema = z.object({
   social: z.array(z.object({ network: z.string(), url: z.url() })),
   apps: z.array(z.object({ store: z.enum(['google-play', 'app-store']), url: z.url() })),
   footer: z.object({ copyright: z.string().optional() }),
+  /** The logo and icon media records. */
+  media: z.record(z.string(), MediaRefSchema),
   snapshot: z.object({
     syncedAt: z.string(),
     pages: z.number().int(),
@@ -274,6 +306,9 @@ export const MediaIndexSchema = z.object({ media: z.array(MediaSchema) });
 
 export type Provenance = z.infer<typeof ProvenanceSchema>;
 export type Media = z.infer<typeof MediaSchema>;
+export type MediaRef = z.infer<typeof MediaRefSchema>;
+export type RouteCard = z.infer<typeof RouteCardSchema>;
+export type RouteTable = z.infer<typeof RouteTableSchema>;
 export type Block = z.infer<typeof BlockSchema>;
 export type BlockType = Block['type'];
 export type Section = z.infer<typeof SectionSchema>;

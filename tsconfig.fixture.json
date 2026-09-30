@@ -1,0 +1,10 @@
+/* Development/test configuration: reads the synthetic snapshot in .cache/fixture instead of src/content. */
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "paths": {
+      "@content/*": ["./.cache/fixture/content/*"],
+      "@schema/*": ["./schema/*"]
+    }
+  }
+}

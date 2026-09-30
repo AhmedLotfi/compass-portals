@@ -224,6 +224,26 @@ describe('content sync (fake WordPress → snapshot)', () => {
     expect(find('/wp-login.php')).toMatchObject({ status: 410 });
   });
 
+  it('denormalizes what each page renders: its media, and child cards on index pages', () => {
+    const home = doc('home');
+    expect(Object.keys(home.media)).toContain(home.hero.media);
+    expect(home.media[home.hero.media!]).toMatchObject({ alt: 'Product screenshot', width: 1200 });
+    const products = doc('products');
+    expect(products.children).toEqual([
+      expect.objectContaining({
+        id: 'products--charity-solutions--charity-management',
+        path: '/products/charity-solutions/charity-management/',
+        title: 'Charity Management & More',
+        summary: 'Charity management lede text.',
+      }),
+    ]);
+    expect(Object.keys(result.site.media)).toEqual(
+      expect.arrayContaining([result.site.logo, result.site.icon]),
+    );
+    const table = JSON.parse(result.files.get('routes.json')!);
+    expect(table.routes[0]).toEqual({ id: 'home', path: '/', kind: 'home' });
+  });
+
   it('writes a snapshot with a page loader per page, idempotently', async () => {
     const first = await writeSnapshot(outDir, result.files);
     expect(first).toContain('page-loaders.ts');

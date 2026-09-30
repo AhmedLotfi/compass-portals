@@ -33,9 +33,7 @@ export interface SiteInput {
   syncedAt: string;
 }
 
-export function buildSite(
-  input: SiteInput,
-): Omit<Site, 'snapshot'> & { snapshot: Site['snapshot'] } {
+export function buildSite(input: SiteInput): Omit<Site, 'snapshot' | 'media'> {
   const { inventory, homeHtml, homeUrl, resolve, media } = input;
   const $ = load(homeHtml, { scriptingEnabled: false, baseURI: homeUrl });
   const probe = inventory.probe;
@@ -169,6 +167,5 @@ export function buildSite(
     social: [...social.entries()].map(([network, url]) => ({ network, url })),
     apps: [...apps.entries()].map(([store, url]) => ({ store, url })),
     footer: { ...(copyright ? { copyright } : {}) },
-    snapshot: { syncedAt: input.syncedAt, pages: 0, media: 0 },
   };
 }

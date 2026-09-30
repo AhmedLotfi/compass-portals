@@ -62,6 +62,29 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "fixture": {
+              "tsConfig": "tsconfig.fixture.json",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "public"
+                },
+                {
+                  "glob": "source-serif-4-latin*-wght-*.woff2",
+                  "input": "node_modules/@fontsource-variable/source-serif-4/files",
+                  "output": "fonts"
+                },
+                {
+                  "glob": "hanken-grotesk-latin*-wght-*.woff2",
+                  "input": "node_modules/@fontsource-variable/hanken-grotesk/files",
+                  "output": "fonts"
+                },
+                {
+                  "glob": "**/*",
+                  "input": ".cache/fixture/public"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -74,6 +97,9 @@
             },
             "development": {
               "buildTarget": "compass-portal:build:development"
+            },
+            "fixture": {
+              "buildTarget": "compass-portal:build:development,fixture"
             }
           },
           "defaultConfiguration": "development"

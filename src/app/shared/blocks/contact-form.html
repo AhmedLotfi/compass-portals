@@ -1,0 +1,119 @@
+<form class="contact-form" novalidate (submit)="onSubmit($event)">
+  <p class="contact-form__note">{{ 'formRequiredNote' | copy }}</p>
+
+  @for (entry of fields(); track entry.slot) {
+    @let slot = entry.slot;
+    @let state = contact[slot]();
+    @let showError = state.touched() && state.invalid();
+    <div class="field" [class.field--invalid]="showError">
+      <label class="field__label" [for]="fieldId(slot)">
+        {{ entry.field.label }}
+        @if (entry.field.required) {
+          <span aria-hidden="true">*</span>
+        }
+      </label>
+      @switch (slot) {
+        @case ('message') {
+          <textarea
+            class="field__control"
+            rows="6"
+            [id]="fieldId(slot)"
+            [formField]="contact.message"
+            [attr.aria-invalid]="showError"
+            [attr.aria-describedby]="showError ? fieldId(slot) + '-error' : null"
+          ></textarea>
+        }
+        @case ('email') {
+          <input
+            class="field__control"
+            type="email"
+            [id]="fieldId(slot)"
+            [autocomplete]="autocomplete[slot]"
+            [formField]="contact.email"
+            [attr.aria-invalid]="showError"
+            [attr.aria-describedby]="showError ? fieldId(slot) + '-error' : null"
+          />
+        }
+        @case ('phone') {
+          <input
+            class="field__control tnum"
+            type="tel"
+            [id]="fieldId(slot)"
+            [autocomplete]="autocomplete[slot]"
+            [formField]="contact.phone"
+            [attr.aria-invalid]="showError"
+            [attr.aria-describedby]="showError ? fieldId(slot) + '-error' : null"
+          />
+        }
+        @case ('name') {
+          <input
+            class="field__control"
+            type="text"
+            [id]="fieldId(slot)"
+            [autocomplete]="autocomplete[slot]"
+            [formField]="contact.name"
+            [attr.aria-invalid]="showError"
+            [attr.aria-describedby]="showError ? fieldId(slot) + '-error' : null"
+          />
+        }
+        @case ('company') {
+          <input
+            class="field__control"
+            type="text"
+            [id]="fieldId(slot)"
+            [autocomplete]="autocomplete[slot]"
+            [formField]="contact.company"
+            [attr.aria-invalid]="showError"
+            [attr.aria-describedby]="showError ? fieldId(slot) + '-error' : null"
+          />
+        }
+        @case ('subject') {
+          <input
+            class="field__control"
+            type="text"
+            [id]="fieldId(slot)"
+            [formField]="contact.subject"
+            [attr.aria-invalid]="showError"
+            [attr.aria-describedby]="showError ? fieldId(slot) + '-error' : null"
+          />
+        }
+      }
+      @if (showError) {
+        <p class="field__error" [id]="fieldId(slot) + '-error'">{{ state.errors()[0]?.message }}</p>
+      }
+    </div>
+  }
+
+  <div class="contact-form__trap" aria-hidden="true">
+    <label [for]="id + '-website'">{{ 'honeypot' | copy }}</label>
+    <input
+      type="text"
+      tabindex="-1"
+      autocomplete="off"
+      [id]="id + '-website'"
+      [formField]="contact.website"
+    />
+  </div>
+
+  <div class="contact-form__actions">
+    <button type="submit" class="btn btn--ink" [disabled]="status() === 'sending'">
+      {{ block().submitLabel || ('contactUs' | copy) }}
+    </button>
+    <p class="contact-form__status" role="status" aria-live="polite">
+      @switch (status()) {
+        @case ('sending') {
+          {{ 'formSending' | copy }}
+        }
+        @case ('sent') {
+          {{ 'formSent' | copy }}
+        }
+        @case ('mail-app') {
+          {{ 'formSentMail' | copy }}
+        }
+        @case ('failed') {
+          {{ 'formFailed' | copy }}
+        }
+      }
+    </p>
+  </div>
+</form>
