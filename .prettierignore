@@ -1,0 +1,11 @@
+# Vendored upstream files stay byte-identical
+.claude/skills/
+
+# Generated or archived content
+dist/
+.angular/
+.cache/
+source-archive/
+reports/
+public/
+package-lock.json

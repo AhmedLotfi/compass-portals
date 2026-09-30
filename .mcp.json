@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "angular-cli": {
+      "command": "bash",
+      "args": ["${CLAUDE_PROJECT_DIR:-.}/tools/mcp/angular-cli-mcp.sh"]
+    }
+  }
+}
