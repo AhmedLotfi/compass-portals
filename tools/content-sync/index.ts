@@ -15,6 +15,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import {
   CONTENT_DIR,
+  RENDER_DIR,
   REPORTS_DIR,
   SITE_HOSTS,
   SITE_ORIGIN,
@@ -63,7 +64,7 @@ async function readJson<T>(file: string, fallback?: T): Promise<T> {
 }
 
 async function runDiscover(probeOnly: boolean): Promise<Inventory> {
-  const http = new HttpClient({ offline });
+  const http = new HttpClient({ offline, renderedDir: RENDER_DIR });
   await http.load();
   try {
     const inventory = await discover({
@@ -89,7 +90,7 @@ async function runDiscover(probeOnly: boolean): Promise<Inventory> {
 }
 
 async function runFetch(inventory: Inventory): Promise<AssetManifest> {
-  const http = new HttpClient({ offline });
+  const http = new HttpClient({ offline, renderedDir: RENDER_DIR });
   await http.load();
   try {
     const manifest = await fetchAssets(inventory, http, {
@@ -106,7 +107,7 @@ async function runFetch(inventory: Inventory): Promise<AssetManifest> {
 }
 
 async function runSyncStage(inventory: Inventory, assets: AssetManifest): Promise<number> {
-  const http = new HttpClient({ offline: true });
+  const http = new HttpClient({ offline: true, renderedDir: RENDER_DIR });
   await http.load();
   const waivers = await readJson<Waiver[]>(WAIVERS_FILE, []);
   const result = await runSync({

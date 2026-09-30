@@ -70,6 +70,23 @@ export interface HttpClientOptions {
   maxRedirects?: number;
   /** Retries for network errors, 429 and 5xx responses (with exponential backoff). */
   retries?: number;
+  /**
+   * Pages rendered in a browser (content:render). A client-rendered site's HTML is an empty shell,
+   * so HTML requests for these pages get the rendered DOM instead.
+   */
+  renderedDir?: string;
+}
+
+interface RenderedIndex {
+  origin: string;
+  pages: { url: string; finalUrl: string; file: string }[];
+}
+
+/** The page a URL shows, independent of host form, trailing slash and plain fragments. */
+export function renderedKey(url: string): string {
+  const parsed = new URL(url);
+  const hashRoute = parsed.hash.startsWith('#/') ? parsed.hash : '';
+  return `${parsed.pathname.replace(/\/+$/, '') || '/'}${parsed.search}${hashRoute}`;
 }
 
 /** Thrown when the environment's egress proxy refuses a host. Retrying won't help. */
@@ -99,7 +116,10 @@ export class HttpClient {
   private readonly maxAttempts: number;
   private readonly manifest = new Map<string, ArchiveEntry>();
   private readonly inflight = new Map<string, Promise<HttpResponse>>();
-  private loaded = false;
+  private readonly renderedDir: string | undefined;
+  private readonly rendered = new Map<string, { file: string; finalUrl: string }>();
+  private readonly renderedHosts = new Set<string>();
+  private loading: Promise<void> | undefined;
 
   constructor(options: HttpClientOptions = {}) {
     this.offline = options.offline ?? false;
@@ -109,21 +129,44 @@ export class HttpClient {
     this.userAgent = options.userAgent ?? USER_AGENT;
     this.maxRedirects = options.maxRedirects ?? 10;
     this.maxAttempts = (options.retries ?? 4) + 1;
+    this.renderedDir = options.renderedDir;
   }
 
   get manifestPath(): string {
     return path.join(this.archiveDir, 'manifest.json');
   }
 
-  async load(): Promise<void> {
-    if (this.loaded) return;
-    this.loaded = true;
+  /** Reads the archive manifests once; concurrent callers share the same read. */
+  load(): Promise<void> {
+    this.loading ??= this.readManifests();
+    return this.loading;
+  }
+
+  private async readManifests(): Promise<void> {
     try {
       const entries = JSON.parse(await readFile(this.manifestPath, 'utf8')) as ArchiveEntry[];
       for (const entry of entries) this.manifest.set(entry.url, entry);
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
     }
+    if (!this.renderedDir) return;
+    try {
+      const index = JSON.parse(
+        await readFile(path.join(this.renderedDir, 'manifest.json'), 'utf8'),
+      ) as RenderedIndex;
+      const host = new URL(index.origin).hostname.toLowerCase().replace(/^www\./, '');
+      this.renderedHosts.add(host).add(`www.${host}`);
+      for (const page of index.pages) {
+        this.rendered.set(renderedKey(page.url), { file: page.file, finalUrl: page.finalUrl });
+      }
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
+    }
+  }
+
+  /** How many rendered pages this client serves in place of raw HTML. */
+  get renderedPages(): number {
+    return this.rendered.size;
   }
 
   /** Writes the manifest in a stable order so re-runs produce minimal diffs. */
@@ -141,9 +184,38 @@ export class HttpClient {
   get(url: string, accept = '*/*'): Promise<HttpResponse> {
     const existing = this.inflight.get(url);
     if (existing) return existing;
-    const pending = this.limit(() => this.follow(url, accept));
+    const pending = this.load().then(
+      () => this.fromRendered(url, accept) ?? this.limit(() => this.follow(url, accept)),
+    );
     this.inflight.set(url, pending);
     return pending;
+  }
+
+  /** The browser-rendered DOM of a page, when one was archived and HTML is wanted. */
+  private fromRendered(url: string, accept: string): Promise<HttpResponse> | undefined {
+    if (!this.renderedDir || !this.rendered.size || !/text\/html|\*\/\*/.test(accept))
+      return undefined;
+    let parsed: URL;
+    try {
+      parsed = new URL(url);
+    } catch {
+      return undefined;
+    }
+    if (!this.renderedHosts.has(parsed.hostname.toLowerCase())) return undefined;
+    const hit = this.rendered.get(renderedKey(url));
+    if (!hit) return undefined;
+    const file = path.join(this.renderedDir, hit.file);
+    return readFile(file).then((body) => ({
+      url,
+      finalUrl: hit.finalUrl,
+      status: 200,
+      redirects: [],
+      headers: { 'content-type': 'text/html; charset=utf-8' },
+      body,
+      fromArchive: true,
+      file: path.relative(this.archiveDir, file),
+      sha256: createHash('sha256').update(body).digest('hex'),
+    }));
   }
 
   private async follow(url: string, accept: string): Promise<HttpResponse> {

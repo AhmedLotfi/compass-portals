@@ -2,10 +2,11 @@ name: Archive compassint.org
 
 # Crawls compassint.org politely and commits what it downloaded, so every later stage (normalize,
 # sync, build) can run offline from source-archive/:
-#   1. discover: fingerprint and inventory of the server-rendered HTML (reports/probe.json, inventory)
-#   2. render: compassint.org is a client-rendered Angular app, so each page is also opened in
-#      headless Chromium, one at a time; the rendered HTML, every response the app loads (API data,
-#      images, fonts) and a screenshot per page are archived (reports/rendered.md)
+#   1. render: compassint.org is a client-rendered Angular app, so each page is opened in headless
+#      Chromium, one at a time; the rendered HTML, every response the app loads (API data, images,
+#      fonts) and a screenshot per page are archived (reports/rendered.md)
+#   2. discover: fingerprint and inventory, reading the rendered pages (reports/probe.json, inventory)
+#   3. fetch: images and documents the pages reference that the browser didn't load
 # Runs only when started by hand (Actions → Archive compassint.org → Run workflow), on the branch
 # chosen there, and pushes one commit to that branch.
 on:
@@ -32,14 +33,18 @@ jobs:
 
       - run: npm ci
 
-      - name: Inventory the site
-        run: npm run content:discover
-
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
       - name: Render every page in Chromium
         run: npm run content:render
+
+      # Reads the rendered pages from the archive in place of the empty app shell.
+      - name: Inventory the site
+        run: npm run content:discover
+
+      - name: Download the images and documents the pages reference
+        run: npm run content:fetch
 
       - name: Upload the inventory report
         if: always()

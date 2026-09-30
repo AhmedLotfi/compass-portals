@@ -14,6 +14,8 @@ export const SITE_HOSTS = (process.env.CONTENT_SITE_HOSTS ?? 'compassint.org,www
 
 export const ARCHIVE_DIR = path.join(ROOT, 'source-archive');
 export const HTTP_ARCHIVE_DIR = path.join(ARCHIVE_DIR, 'http');
+/** Pages rendered in headless Chromium (content:render), for client-rendered sites. */
+export const RENDER_DIR = path.join(ARCHIVE_DIR, 'rendered');
 export const REPORTS_DIR = path.join(ROOT, 'reports');
 
 export const USER_AGENT =

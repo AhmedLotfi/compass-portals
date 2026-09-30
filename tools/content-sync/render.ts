@@ -15,10 +15,8 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { chromium, type Page, type Response } from '@playwright/test';
-import { ARCHIVE_DIR, HTTP_ARCHIVE_DIR, REPORTS_DIR, SITE_HOSTS, SOURCE_ORIGIN } from './config.ts';
+import { HTTP_ARCHIVE_DIR, RENDER_DIR, REPORTS_DIR, SITE_HOSTS, SOURCE_ORIGIN } from './config.ts';
 import { archiveFileName, type ArchiveEntry } from './http.ts';
-
-export const RENDER_DIR = path.join(ARCHIVE_DIR, 'rendered');
 
 export interface RenderOptions {
   origin?: string;
