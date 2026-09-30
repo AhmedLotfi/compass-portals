@@ -118,8 +118,14 @@
 }
 
 .site-footer__base {
-  padding-block: 1.25rem 2rem;
-  border-top: var(--hairline);
+  padding-block-end: 2rem;
   color: var(--color-ink-2);
   font-size: var(--text-xs);
+}
+
+/* The rule sits on the text so it spans the content column, not the frame's gutters. */
+.site-footer__base p {
+  margin: 0;
+  padding-block-start: 1.25rem;
+  border-top: var(--hairline);
 }

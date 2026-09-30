@@ -60,13 +60,15 @@ export async function startDistServer(
   } catch {
     // No snapshot: serve without redirects.
   }
-  const notFoundPage = (await isFile(path.join(root, '404.html')))
-    ? path.join(root, '404.html')
-    : path.join(root, '404/index.html');
+  // Looked up per request: the post-build step moves /404/index.html to /404.html.
+  const notFoundPage = async () => {
+    for (const file of [path.join(root, '404.html'), path.join(root, '404/index.html')]) {
+      if (await isFile(file)) return file;
+    }
+    return undefined;
+  };
 
   const server = createServer(async (req, res) => {
-    const url = new URL(req.url ?? '/', 'http://localhost');
-    const pathname = decodeURIComponent(url.pathname);
     const send = (status: number, file: string, headers: Record<string, string> = {}) => {
       const type = TYPES[path.extname(file)] ?? 'application/octet-stream';
       const accepted = String(req.headers['accept-encoding'] ?? '');
@@ -83,7 +85,7 @@ export async function startDistServer(
         ...(encoding ? { 'content-encoding': encoding } : {}),
         ...headers,
       });
-      const body = createReadStream(file);
+      const body = createReadStream(file).on('error', () => res.destroy());
       if (encoding === 'br') {
         body
           .pipe(createBrotliCompress({ params: { [constants.BROTLI_PARAM_QUALITY]: 5 } }))
@@ -94,6 +96,23 @@ export async function startDistServer(
         body.pipe(res);
       }
     };
+    const notFound = async (status: 404 | 410) => {
+      const page = await notFoundPage();
+      if (page) return send(status, page);
+      res.writeHead(status, { 'content-type': 'text/plain; charset=utf-8' });
+      res.end('Not found');
+    };
+
+    let url: URL;
+    let pathname: string;
+    try {
+      url = new URL(req.url ?? '/', 'http://localhost');
+      pathname = decodeURIComponent(url.pathname);
+    } catch {
+      res.writeHead(400, { 'content-type': 'text/plain; charset=utf-8' });
+      res.end('Bad request');
+      return;
+    }
 
     const redirect = redirects.get(pathname + url.search) ?? redirects.get(pathname);
     if (redirect?.status === 301) {
@@ -101,13 +120,13 @@ export async function startDistServer(
       res.end();
       return;
     }
-    if (redirect?.status === 410) return send(410, notFoundPage);
+    if (redirect?.status === 410) return notFound(410);
 
     const target = path.join(root, pathname);
-    if (!target.startsWith(root)) return send(404, notFoundPage);
+    if (!target.startsWith(root)) return notFound(404);
     if (pathname.endsWith('/')) {
       const index = path.join(target, 'index.html');
-      return (await isFile(index)) ? send(200, index) : send(404, notFoundPage);
+      return (await isFile(index)) ? send(200, index) : notFound(404);
     }
     if (await isFile(target)) return send(200, target);
     if (await isFile(path.join(target, 'index.html'))) {
@@ -115,7 +134,7 @@ export async function startDistServer(
       res.end();
       return;
     }
-    send(404, notFoundPage);
+    return notFound(404);
   });
 
   const port = options.port ?? 0;

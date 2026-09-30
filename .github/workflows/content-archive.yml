@@ -1,0 +1,58 @@
+name: Archive compassint.org
+
+# Crawls compassint.org politely (robots.txt, three requests at a time, a pause between them) and
+# commits what it downloaded, so every later stage (normalize, sync, build) can run offline from
+# source-archive/:
+#   1. discover: inventory of every page, menu, image, document and contact detail (reports/)
+#   2. fetch: every image, document and builder stylesheet the inventory references
+# Runs only when started by hand (Actions → Archive compassint.org → Run workflow), on the branch
+# chosen there, and pushes one commit to that branch.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-archive-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Inventory the site
+        run: npm run content:discover
+
+      - name: Download images, documents and stylesheets
+        run: npm run content:fetch
+
+      - name: Upload the inventory report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: inventory
+          path: reports/
+          if-no-files-found: ignore
+
+      - name: Commit the archive and the inventory
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add source-archive reports/probe.json reports/inventory.json reports/inventory.md
+          if git diff --cached --quiet; then
+            echo "The archive is unchanged."
+            exit 0
+          fi
+          git commit -m "chore(content): archive compassint.org ($(date -u +%Y-%m-%d))"
+          git push

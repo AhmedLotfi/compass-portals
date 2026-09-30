@@ -107,7 +107,10 @@ Run `ng build` after every change and fix errors before moving on.
 - Angular CLI 22.2 needs Node `^22.22.3 || ^24.15.0`; the repo pins Node 24.21.0 in `.nvmrc`. The SessionStart hook
   (`.claude/hooks/session-start.sh`) installs it via `/opt/nvm`, runs `npm install`, and exports the environment.
 - Node's built-in `fetch` needs `NODE_USE_ENV_PROXY=1` behind the session proxy (exported by the hook).
-- compassint.org must be in the environment's allowed domains for the content sync to run.
+- compassint.org must be in the environment's allowed domains for the content sync to run here. Otherwise the
+  **Archive compassint.org** workflow (`.github/workflows/content-archive.yml`, started by hand from the Actions
+  tab) runs `content:discover` + `content:fetch` on a GitHub runner and commits `source-archive/` and the
+  inventory; after pulling that commit, `npm run content:sync` works offline here.
 - npm 11 skips unapproved install scripts (esbuild, lmdb, msgpackr-extract, @parcel/watcher); they aren't needed
   because prebuilt binaries are used.
 
