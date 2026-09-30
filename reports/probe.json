@@ -1,0 +1,41 @@
+{
+  "origin": "https://compassint.org",
+  "home": {
+    "url": "https://compassint.org/",
+    "finalUrl": "https://compassint.org/",
+    "status": 200,
+    "redirects": [],
+    "headers": {
+      "content-type": "text/html",
+      "etag": "\"1df81fcb50dd1:0\"",
+      "last-modified": "Wed, 30 Sep 2026 11:02:03 GMT",
+      "server": "Microsoft-IIS/10.0",
+      "x-powered-by": "ASP.NET"
+    }
+  },
+  "cloudflare": false,
+  "robots": {
+    "status": 406,
+    "sitemaps": [],
+    "disallowsRest": false
+  },
+  "rest": null,
+  "platform": {
+    "generator": [],
+    "plugins": [],
+    "builders": [],
+    "translationWidgets": [],
+    "lang": "en",
+    "hreflang": [],
+    "cfEmail": false
+  },
+  "permalinks": null,
+  "wwwHome": {
+    "finalUrl": "https://www.compassint.org/",
+    "status": 200
+  },
+  "httpHome": {
+    "finalUrl": "http://compassint.org/",
+    "status": 404
+  }
+}

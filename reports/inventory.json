@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-09-30T17:47:50.674Z",
+  "origin": "https://compassint.org",
+  "probe": {
+    "origin": "https://compassint.org",
+    "home": {
+      "url": "https://compassint.org/",
+      "finalUrl": "https://compassint.org/",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/html",
+        "etag": "\"1df81fcb50dd1:0\"",
+        "last-modified": "Wed, 30 Sep 2026 11:02:03 GMT",
+        "server": "Microsoft-IIS/10.0",
+        "x-powered-by": "ASP.NET"
+      }
+    },
+    "cloudflare": false,
+    "robots": {
+      "status": 406,
+      "sitemaps": [],
+      "disallowsRest": false
+    },
+    "rest": null,
+    "platform": {
+      "generator": [],
+      "plugins": [],
+      "builders": [],
+      "translationWidgets": [],
+      "lang": "en",
+      "hreflang": [],
+      "cfEmail": false
+    },
+    "permalinks": null,
+    "wwwHome": {
+      "finalUrl": "https://www.compassint.org/",
+      "status": 200
+    },
+    "httpHome": {
+      "finalUrl": "http://compassint.org/",
+      "status": 404
+    }
+  },
+  "sitemaps": [
+    {
+      "url": "https://compassint.org/wp-sitemap.xml",
+      "status": 406,
+      "kind": "missing",
+      "urls": 0
+    },
+    {
+      "url": "https://compassint.org/sitemap_index.xml",
+      "status": 406,
+      "kind": "missing",
+      "urls": 0
+    },
+    {
+      "url": "https://compassint.org/sitemap.xml",
+      "status": 406,
+      "kind": "missing",
+      "urls": 0
+    }
+  ],
+  "rest": null,
+  "pages": [
+    {
+      "key": "https://compassint.org/",
+      "requested": [],
+      "aliases": [],
+      "finalUrl": "https://compassint.org/",
+      "status": 200,
+      "redirects": [],
+      "sources": [
+        "home"
+      ],
+      "contentType": "text/html",
+      "analysis": {
+        "url": "https://compassint.org/",
+        "title": "Compass International",
+        "hreflang": [],
+        "meta": {},
+        "jsonLd": [],
+        "generator": [],
+        "bodyClasses": [],
+        "builders": [],
+        "unrenderedShortcodes": false,
+        "plugins": [],
+        "translationWidgets": [],
+        "headings": [],
+        "h1": [],
+        "wordCount": 0,
+        "menus": [],
+        "links": [],
+        "images": [],
+        "backgroundImages": [],
+        "pageStylesheets": [],
+        "documents": [],
+        "forms": [],
+        "emails": [],
+        "phones": [],
+        "cfEmailCount": 0,
+        "iframes": [],
+        "demoTextHits": [],
+        "lang": "en"
+      }
+    }
+  ],
+  "menus": {
+    "header": [],
+    "footer": []
+  },
+  "media": [],
+  "documents": [],
+  "pageStylesheets": [],
+  "contacts": {
+    "emails": {},
+    "phones": {}
+  },
+  "anomalies": []
+}
