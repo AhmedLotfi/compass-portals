@@ -30,7 +30,12 @@
       <div aria-hidden="true"></div>
       <figure class="plate">
         <span class="plate__frame">
-          <app-media-image [media]="image" sizes="(min-width: 76rem) 56rem, 100vw" />
+          <!-- Directly under the hero, so it is in the first viewport on phones: load it first. -->
+          <app-media-image
+            [media]="image"
+            sizes="(min-width: 76rem) 56rem, 100vw"
+            [priority]="true"
+          />
         </span>
       </figure>
     </div>

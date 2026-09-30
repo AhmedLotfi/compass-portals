@@ -52,7 +52,10 @@ import { CtaBlock, EmbedBlock, QuoteBlock, StatsBlock } from './small-blocks';
         <app-embed-block [block]="b" />
       }
       @case ('contactForm') {
-        <app-contact-form [block]="b" />
+        <!-- Prerendered, but the form code (Signal Forms) only loads when it nears the viewport. -->
+        @defer (on immediate; hydrate on viewport) {
+          <app-contact-form [block]="b" />
+        }
       }
     }
   `,

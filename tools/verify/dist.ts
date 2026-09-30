@@ -124,10 +124,17 @@ export function allowedText(
   return { corpus, literals, templates };
 }
 
+/** Punctuation around a fragment (": " before a title, a trailing "*") says nothing about origin. */
+const EDGES = /^[\p{P}\p{S}\s]+|[\p{P}\p{S}\s]+$/gu;
+
 export function isAllowed(fragment: string, allowed: Allowed): boolean {
   const text = comparable(fragment);
-  const known = (piece: string) =>
-    !/[\p{L}\p{N}]/u.test(piece) || allowed.literals.has(piece) || allowed.corpus.includes(piece);
+  const known = (piece: string) => {
+    const core = piece.replace(EDGES, '');
+    return (
+      !core || [piece, core].some((p) => allowed.literals.has(p) || allowed.corpus.includes(p))
+    );
+  };
   const templated = (piece: string) =>
     allowed.templates.some((template) => {
       const match = template.exec(piece);
@@ -344,6 +351,13 @@ export async function verifyDist(
         report('does not exist in the build');
       }
     }
+
+    // Texture classes paint through a mask, so on anything with content they would hide it.
+    $('[class*="texture-contours"]').each((_, el) => {
+      if ($(el).children().length || $(el).text().trim() || $(el).attr('aria-hidden') !== 'true') {
+        errors.html.push(`${label}: .${$(el).attr('class')} must be an empty aria-hidden layer`);
+      }
+    });
 
     // HTML validity.
     const result = await validator.validateString(html, file);

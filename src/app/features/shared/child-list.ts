@@ -11,12 +11,18 @@ import { MediaImage } from '../../core/media/media-image';
     <section class="rail-section" [attr.aria-label]="label()">
       <div aria-hidden="true"></div>
       <ul class="children">
-        @for (child of items(); track child.id) {
+        @for (child of items(); track child.id; let first = $first) {
           @let image = child.media ? media()[child.media] : undefined;
           <li class="children__item" [class.children__item--media]="image">
             @if (image) {
               <a class="children__plate" [routerLink]="child.path" tabindex="-1" aria-hidden="true">
-                <app-media-image [media]="image" sizes="(min-width: 64rem) 16rem, 40vw" alt="" />
+                <!-- The first plate is often the largest thing in view on phones. -->
+                <app-media-image
+                  [media]="image"
+                  sizes="(min-width: 64rem) 16rem, 40vw"
+                  alt=""
+                  [priority]="first"
+                />
               </a>
             } @else {
               <span class="children__marker" aria-hidden="true"></span>

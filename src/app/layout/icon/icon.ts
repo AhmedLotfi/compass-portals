@@ -1,8 +1,7 @@
 import { Component, computed, input } from '@angular/core';
-import { BRAND_PATHS } from './brand-paths';
 
-/** Hand-drawn 24px line icons (1.5px stroke). */
-const LINE_PATHS = {
+/** Hand-drawn 24px line icons (1.5px stroke). Brand marks are in `BrandIcon` (footer only). */
+export const LINE_PATHS = {
   phone:
     'M6.7 3.6h2.4l1.4 4-1.9 1.3a11.4 11.4 0 0 0 6.5 6.5l1.3-1.9 4 1.4v2.4a2 2 0 0 1-2.2 2A16.4 16.4 0 0 1 4.7 5.8a2 2 0 0 1 2-2.2Z',
   mail: 'M3.5 6.5h17v11h-17Z M3.8 7 12 13.2 20.2 7',
@@ -20,17 +19,17 @@ const LINE_PATHS = {
     'M4.5 4.5h15v15h-15Z M8.2 10.6v5.4 M8.2 7.8v.1 M11.6 16v-5.4 M11.6 13.2a2.4 2.4 0 0 1 4.8 0V16',
 } as const;
 
-export type IconName = keyof typeof LINE_PATHS | keyof typeof BRAND_PATHS;
+export type IconName = keyof typeof LINE_PATHS;
 
 export function isIconName(name: string): name is IconName {
-  return name in LINE_PATHS || name in BRAND_PATHS;
+  return name in LINE_PATHS;
 }
 
 /** A decorative icon; the surrounding control provides the accessible name. */
 @Component({
   selector: 'app-icon',
   template: `
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" [class.brand]="brand()">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <path [attr.d]="path()" />
     </svg>
   `,
@@ -50,19 +49,9 @@ export function isIconName(name: string): name is IconName {
       stroke-linecap: round;
       stroke-linejoin: round;
     }
-    svg.brand {
-      fill: currentColor;
-      stroke: none;
-    }
   `,
 })
 export class Icon {
   readonly name = input.required<IconName>();
-  protected readonly brand = computed(() => this.name() in BRAND_PATHS);
-  protected readonly path = computed(() => {
-    const name = this.name();
-    return name in BRAND_PATHS
-      ? BRAND_PATHS[name as keyof typeof BRAND_PATHS]
-      : LINE_PATHS[name as keyof typeof LINE_PATHS];
-  });
+  protected readonly path = computed(() => LINE_PATHS[this.name()]);
 }

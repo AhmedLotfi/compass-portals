@@ -62,6 +62,7 @@ describe('provenance', () => {
       'Ask about ERP & Accounting',
       'Facebook (opens in a new tab)',
       'ERP & Accounting | Compass International',
+      ': ERP & Accounting',
       '*',
     ]) {
       expect(isAllowed(text, allowed), text).toBe(true);

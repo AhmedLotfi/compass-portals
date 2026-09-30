@@ -64,7 +64,7 @@
             @for (network of social; track network.url) {
               <li>
                 <a class="site-footer__network" [href]="network.url" target="_blank" rel="noopener">
-                  <app-icon [name]="network.icon" />
+                  <app-brand-icon [name]="network.network" />
                   <span class="visually-hidden"
                     >{{ network.name }} {{ 'opensInNewTab' | copy }}</span
                   >
@@ -80,7 +80,7 @@
             target="_blank"
             rel="noopener"
           >
-            <app-icon [name]="app.store" />
+            <app-brand-icon [name]="app.store" />
             {{ (app.store === 'google-play' ? 'getTheApp' : 'getTheAppIos') | copy }}
           </a>
         }

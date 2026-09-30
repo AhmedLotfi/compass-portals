@@ -108,11 +108,19 @@
 }
 
 .ink-band {
+  position: relative;
   background-color: var(--color-ink);
   color: var(--color-paper);
 }
 
+.ink-band__texture {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
 .ink-band__inner {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;

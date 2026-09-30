@@ -46,6 +46,7 @@ Thumbs.db
 # Project
 /.cache
 /reports/screens
+/reports/lighthouse
 /public/media
 /public/files
 /public/icons

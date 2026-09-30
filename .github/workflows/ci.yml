@@ -58,3 +58,27 @@ jobs:
 
       - name: Hosting rules (real nginx and Apache, and the e2e server)
         run: npm run verify:hosting -- --content="$CONTENT_DIR"
+
+      # Pinned to the Chromium build of @playwright/test 1.56.1.
+      - name: Install Chromium for Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: End-to-end and accessibility tests (desktop and mobile)
+        run: npm run e2e
+        env:
+          E2E_CONTENT: ${{ env.CONTENT_DIR }}
+
+      # Uses the runner's Google Chrome. Fails on accessibility, best practices, SEO, CLS and
+      # performance below 0.9; timing targets are reported as warnings.
+      - name: Lighthouse (home, listing, product, contact; mobile and desktop)
+        run: npm run lighthouse -- --content="$CONTENT_DIR"
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: |
+            playwright-report/
+            reports/lighthouse/
+          if-no-files-found: ignore

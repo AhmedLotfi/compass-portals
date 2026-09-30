@@ -44,9 +44,11 @@ import { InternalLinks } from './internal-links';
               ></div>
             }
             @if (item.href && item.linkLabel) {
-              <app-smart-link [href]="item.href" linkClass="module-grid__more">{{
-                item.linkLabel
-              }}</app-smart-link>
+              <!-- The card's title completes generic link text ("Read more") for screen readers. -->
+              <app-smart-link [href]="item.href" linkClass="module-grid__more"
+                >{{ item.linkLabel
+                }}<span class="visually-hidden">: {{ item.title }}</span></app-smart-link
+              >
             }
           </div>
         </li>

@@ -3,7 +3,8 @@ import { RouterLink } from '@angular/router';
 import { ContentStore } from '../../core/content/content';
 import { copy, CopyPipe, hasCopy } from '../../core/copy/copy';
 import { MediaImage } from '../../core/media/media-image';
-import { Icon, isIconName, type IconName } from '../icon/icon';
+import { BrandIcon } from '../icon/brand-icon';
+import { Icon } from '../icon/icon';
 import { NavLink } from '../nav-link/nav-link';
 
 /** Brand name of a social network the site links to (from the microcopy file). */
@@ -14,7 +15,7 @@ function networkName(network: string): string {
 
 @Component({
   selector: 'app-site-footer',
-  imports: [RouterLink, NavLink, MediaImage, Icon, CopyPipe],
+  imports: [RouterLink, NavLink, MediaImage, Icon, BrandIcon, CopyPipe],
   templateUrl: './site-footer.html',
   styleUrl: './site-footer.css',
 })
@@ -32,6 +33,5 @@ export class SiteFooter {
   protected readonly social = this.site.social.map((s) => ({
     ...s,
     name: networkName(s.network),
-    icon: (isIconName(s.network) ? s.network : 'external') as IconName,
   }));
 }

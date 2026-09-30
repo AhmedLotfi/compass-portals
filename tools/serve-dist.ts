@@ -1,6 +1,7 @@
 /**
  * Serves the static build the way production hosting will: directory indexes, trailing-slash
- * redirects, the redirect map (301 / 410) and a real 404 page. Used for screenshots and e2e tests.
+ * redirects, the redirect map (301 / 410), a real 404 page and compressed text responses. Used for
+ * screenshots, e2e tests and Lighthouse.
  *
  *   node tools/serve-dist.ts [--port=4300] [--content=src/content]
  */
@@ -8,6 +9,7 @@ import { createReadStream } from 'node:fs';
 import { readFile, stat } from 'node:fs/promises';
 import { createServer, type Server } from 'node:http';
 import path from 'node:path';
+import { constants, createBrotliCompress, createGzip } from 'node:zlib';
 import { ROOT } from './content-sync/config.ts';
 
 const TYPES: Record<string, string> = {
@@ -27,6 +29,9 @@ const TYPES: Record<string, string> = {
   '.txt': 'text/plain; charset=utf-8',
   '.xml': 'application/xml',
 };
+
+/** Types hosts compress (images and fonts are already compressed). */
+const COMPRESSIBLE = /^(?:text\/|application\/(?:json|manifest\+json|xml)|image\/svg\+xml)/;
 
 interface Redirect {
   from: string;
@@ -63,11 +68,31 @@ export async function startDistServer(
     const url = new URL(req.url ?? '/', 'http://localhost');
     const pathname = decodeURIComponent(url.pathname);
     const send = (status: number, file: string, headers: Record<string, string> = {}) => {
+      const type = TYPES[path.extname(file)] ?? 'application/octet-stream';
+      const accepted = String(req.headers['accept-encoding'] ?? '');
+      const encoding = !COMPRESSIBLE.test(type)
+        ? undefined
+        : /\bbr\b/.test(accepted)
+          ? 'br'
+          : /\bgzip\b/.test(accepted)
+            ? 'gzip'
+            : undefined;
       res.writeHead(status, {
-        'content-type': TYPES[path.extname(file)] ?? 'application/octet-stream',
+        'content-type': type,
+        ...(COMPRESSIBLE.test(type) ? { vary: 'accept-encoding' } : {}),
+        ...(encoding ? { 'content-encoding': encoding } : {}),
         ...headers,
       });
-      createReadStream(file).pipe(res);
+      const body = createReadStream(file);
+      if (encoding === 'br') {
+        body
+          .pipe(createBrotliCompress({ params: { [constants.BROTLI_PARAM_QUALITY]: 5 } }))
+          .pipe(res);
+      } else if (encoding === 'gzip') {
+        body.pipe(createGzip()).pipe(res);
+      } else {
+        body.pipe(res);
+      }
     };
 
     const redirect = redirects.get(pathname + url.search) ?? redirects.get(pathname);

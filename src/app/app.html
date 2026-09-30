@@ -5,4 +5,7 @@
 <main id="main" tabindex="-1">
   <router-outlet />
 </main>
-<app-site-footer />
+<!-- Prerendered; the footer's code (links, brand marks) hydrates when it scrolls into view. -->
+@defer (on immediate; hydrate on viewport) {
+  <app-site-footer />
+}

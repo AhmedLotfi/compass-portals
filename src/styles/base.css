@@ -139,32 +139,47 @@ a[href^='tel:'] {
   box-sizing: border-box;
 }
 
-/* Cartographic textures. The SVGs carry their own low opacity. */
+/*
+ * Cartographic textures: contour lines drawn through a mask (the SVGs hold relative line weights) in
+ * a faint theme colour. Put them on an empty decorative layer. Unlike background images, masks never
+ * become the page's largest contentful paint, so the headline stays the LCP element; and because the
+ * layer's own colour is faint, contrast checkers see the light background the text really sits on.
+ */
+.texture-contours,
+.texture-contours-band,
+.texture-contours-ink {
+  background-color: var(--texture-color);
+  mask-image: var(--texture), var(--texture-focus, linear-gradient(#000, #000));
+  mask-size:
+    cover,
+    100% 100%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-composite: intersect;
+}
+
 .texture-contours {
-  background-image: url('/textures/contours-hero.svg');
-  background-size: cover;
-  background-position: center;
+  --texture: url('/textures/contours-hero.svg');
+  --texture-color: color-mix(in srgb, var(--color-ink) 16%, transparent);
 }
 
 .texture-contours-band {
-  background-image: url('/textures/contours-band.svg');
-  background-size: cover;
-  background-position: center;
+  --texture: url('/textures/contours-band.svg');
+  --texture-color: color-mix(in srgb, var(--color-ink) 14%, transparent);
 }
 
 .texture-contours-ink {
-  background-image: url('/textures/contours-ink.svg');
-  background-size: cover;
-  background-position: center;
+  --texture: url('/textures/contours-ink.svg');
+  --texture-color: color-mix(in srgb, var(--color-paper-2) 18%, transparent);
 }
 
 /* Concentrates a texture around the end side (where the hero compass sits), quiet behind the text. */
 .texture-focus-end {
-  mask-image: radial-gradient(ellipse 62% 95% at 76% 50%, #000 30%, transparent 78%);
+  --texture-focus: radial-gradient(ellipse 62% 95% at 76% 50%, #000 30%, transparent 78%);
 }
 
 .texture-focus-end:dir(rtl) {
-  mask-image: radial-gradient(ellipse 62% 95% at 24% 50%, #000 30%, transparent 78%);
+  --texture-focus: radial-gradient(ellipse 62% 95% at 24% 50%, #000 30%, transparent 78%);
 }
 
 .chart-grid {

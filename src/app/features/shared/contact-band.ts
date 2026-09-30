@@ -9,7 +9,8 @@ import { Icon } from '../../layout/icon/icon';
   selector: 'app-contact-band',
   imports: [RouterLink, Icon, CopyPipe],
   template: `
-    <section class="contact-band texture-contours-ink" aria-labelledby="contact-band-title">
+    <section class="contact-band" aria-labelledby="contact-band-title">
+      <div class="contact-band__texture texture-contours-ink" aria-hidden="true"></div>
       <div class="frame contact-band__inner">
         <h2 id="contact-band-title" class="contact-band__title">{{ title() || defaultTitle }}</h2>
         <div class="contact-band__actions">
@@ -35,10 +36,17 @@ import { Icon } from '../../layout/icon/icon';
       display: block;
     }
     .contact-band {
+      position: relative;
       background-color: var(--color-ink);
       color: var(--color-paper);
     }
+    .contact-band__texture {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
     .contact-band__inner {
+      position: relative;
       display: grid;
       gap: 1.75rem;
       padding-block: clamp(3rem, 2rem + 4vw, 5.5rem);

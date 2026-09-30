@@ -22,9 +22,8 @@ export interface TextureSpec {
   levels: number;
   /** Noise frequency: higher = more, smaller hills. */
   frequency: number;
-  color: string;
-  minorOpacity: number;
-  indexOpacity: number;
+  /** Minor contours relative to index contours; the colour and strength come from CSS (base.css). */
+  minorWeight: number;
   /** Simplification tolerance, in grid cells. */
   tolerance: number;
 }
@@ -138,11 +137,12 @@ export function renderTexture(spec: TextureSpec): string {
     }
   });
 
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${spec.width} ${spec.height}" preserveAspectRatio="xMidYMid slice" fill="none" stroke="${spec.color}" stroke-linejoin="round">
-<path stroke-opacity="${spec.minorOpacity}" stroke-width="1" vector-effect="non-scaling-stroke" d="${minor.join('')}"/>
-<path stroke-opacity="${spec.indexOpacity}" stroke-width="1.6" vector-effect="non-scaling-stroke" d="${index.join('')}"/>
+  // A mask image: only the alpha matters. The page tints it with a theme colour at low strength.
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${spec.width} ${spec.height}" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#000" stroke-linejoin="round">
+<path stroke-opacity="${spec.minorWeight}" stroke-width="1" vector-effect="non-scaling-stroke" d="${minor.join('')}"/>
+<path stroke-width="1.6" vector-effect="non-scaling-stroke" d="${index.join('')}"/>
 </svg>`;
-  // Coordinates are already integers; the default precision keeps the low stroke opacities intact.
+  // Coordinates are already integers; the default precision keeps the stroke opacity intact.
   return optimize(svg, { multipass: true }).data;
 }
 
@@ -155,9 +155,7 @@ export const TEXTURES: TextureSpec[] = [
     cells: 84,
     levels: 17,
     frequency: 0.022,
-    color: '#10263d',
-    minorOpacity: 0.09,
-    indexOpacity: 0.16,
+    minorWeight: 0.56,
     tolerance: 0.4,
   },
   {
@@ -168,9 +166,7 @@ export const TEXTURES: TextureSpec[] = [
     cells: 84,
     levels: 14,
     frequency: 0.026,
-    color: '#10263d',
-    minorOpacity: 0.08,
-    indexOpacity: 0.14,
+    minorWeight: 0.56,
     tolerance: 0.4,
   },
   {
@@ -181,9 +177,7 @@ export const TEXTURES: TextureSpec[] = [
     cells: 84,
     levels: 14,
     frequency: 0.024,
-    color: '#e6edf2',
-    minorOpacity: 0.1,
-    indexOpacity: 0.18,
+    minorWeight: 0.56,
     tolerance: 0.4,
   },
 ];
