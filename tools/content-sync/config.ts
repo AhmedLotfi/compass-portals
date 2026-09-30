@@ -24,3 +24,15 @@ export const CONCURRENCY = 3;
 export const REQUEST_GAP_MS = 150;
 export const REQUEST_TIMEOUT_MS = 30_000;
 export const MAX_CRAWL_PAGES = 1_000;
+
+/** Where the typed content snapshot is written (read by the Angular app at build time). */
+export const CONTENT_DIR = path.join(ROOT, 'src/content');
+
+/** Canonical origin of the new site, used for canonical URLs, the sitemap and JSON-LD. */
+export const SITE_ORIGIN = process.env.SITE_ORIGIN ?? 'https://compassint.org';
+
+/** Extra hosts allowed to serve images (comma-separated), e.g. a CDN the old site used. */
+export const ASSET_HOSTS = (process.env.CONTENT_ASSET_HOSTS ?? '')
+  .split(',')
+  .map((host) => host.trim().toLowerCase())
+  .filter(Boolean);

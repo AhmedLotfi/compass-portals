@@ -81,3 +81,38 @@ export function stripIndexPhp(pathname: string): string {
   const stripped = pathname.replace(/^\/index\.php(?=\/|$)/i, '');
   return stripped === '' ? '/' : stripped;
 }
+
+/** Unwraps Jetpack/Photon CDN URLs (`i0.wp.com/<host>/<path>?resize=…`) to the site's own URL. */
+export function unwrapJetpack(url: string): string {
+  const match = /^https?:\/\/i[0-3]\.wp\.com\/([^/?#]+)(\/[^?#]*)/i.exec(url);
+  return match ? `https://${match[1]}${match[2]}` : url;
+}
+
+/** WordPress names resized copies `name-1024x683.jpg`; this returns the original's URL. */
+export function stripSizeSuffix(url: string): string {
+  return url.replace(/-\d{2,5}x\d{2,5}(\.[a-z0-9]+)(?=$|[?#])/i, '$1');
+}
+
+/** The largest candidate in a `srcset`, if any. */
+export function largestFromSrcset(srcset: string | undefined, base: string): string | undefined {
+  if (!srcset) return undefined;
+  let best: { url: string; width: number } | undefined;
+  for (const candidate of srcset.split(',')) {
+    const [raw, descriptor = ''] = candidate.trim().split(/\s+/);
+    const width = descriptor.endsWith('w') ? Number(descriptor.slice(0, -1)) : 0;
+    const resolved = resolveUrl(raw, base)?.href;
+    if (resolved && (!best || width > best.width)) best = { url: resolved, width };
+  }
+  return best?.url;
+}
+
+/** Image URLs referenced by `url(...)` in a stylesheet. */
+export function cssImageUrls(css: string, base: string): string[] {
+  const urls = new Set<string>();
+  for (const match of css.matchAll(/url\(\s*(['"]?)([^'")]+)\1\s*\)/gi)) {
+    const resolved = resolveUrl(match[2], base);
+    if (resolved && /\.(?:jpe?g|png|gif|webp|avif|svg)$/i.test(resolved.pathname))
+      urls.add(resolved.href);
+  }
+  return [...urls];
+}

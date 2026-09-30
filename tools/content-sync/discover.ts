@@ -72,6 +72,8 @@ export interface RestItemSummary {
 export interface RestMediaSummary {
   id: number;
   url: string;
+  /** Every resized variant WordPress generated (thumbnail, medium, large, …). */
+  sizes: string[];
   alt: string;
   caption: string;
   mime: string;
@@ -166,7 +168,11 @@ interface RestMediaJson {
   caption?: { rendered?: string };
   mime_type?: string;
   post?: number | null;
-  media_details?: { width?: number; height?: number };
+  media_details?: {
+    width?: number;
+    height?: number;
+    sizes?: Record<string, { source_url?: string }>;
+  };
 }
 
 export async function discover(options: DiscoverOptions): Promise<Inventory> {
@@ -487,7 +493,10 @@ function buildInventory(
       pages: [link.from],
     });
   }
-  const restAlt = new Map((rest?.media ?? []).map((m) => [m.url, m.alt]));
+  // Resized variants share their original's alt text in the media library.
+  const restAlt = new Map(
+    (rest?.media ?? []).flatMap((m) => [m.url, ...m.sizes].map((u) => [u, m.alt] as const)),
+  );
   for (const entry of media.values()) {
     if (!isSiteHost(new URL(entry.url).hostname, siteHosts)) {
       anomalies.push({ kind: 'foreign-image-host', detail: entry.url, pages: entry.pages });
@@ -607,6 +616,9 @@ function summarizeMedia(item: RestMediaJson): RestMediaSummary {
   return {
     id: item.id,
     url: item.source_url ?? '',
+    sizes: Object.values(item.media_details?.sizes ?? {})
+      .map((size) => size.source_url)
+      .filter((url): url is string => Boolean(url)),
     alt: item.alt_text ?? '',
     caption: decodeEntities((item.caption?.rendered ?? '').replace(/<[^>]+>/g, '')).trim(),
     mime: item.mime_type ?? '',

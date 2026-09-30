@@ -80,7 +80,8 @@ describe('discover (against a fake WordPress site)', () => {
     expect(urls).toEqual(
       expect.arrayContaining([
         '/wp-content/uploads/2020/01/logo.png',
-        '/wp-content/uploads/2020/01/product.jpg',
+        '/wp-content/uploads/2020/01/product-1024x683.jpg',
+        '/wp-content/uploads/2020/01/module.png',
         '/wp-content/uploads/2020/01/hero.jpg',
       ]),
     );
