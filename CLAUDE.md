@@ -26,12 +26,18 @@ a build-time sync pulls its content into typed JSON and self-hosted images, and 
 | `npm run content:discover` | Full inventory of the site → `reports/inventory.{json,md}` (add `-- --offline` to use the archive only) |
 | `npm run test:tools`       | Tests for the build tooling (Vitest, `tools/**/*.test.ts`)                                              |
 | `npm run typecheck:tools`  | Type-check `tools/`                                                                                     |
+| `npm run design:generate`  | Regenerate `src/styles/fonts.css`, `src/styles/easing.css` and `public/textures/*.svg` (deterministic)  |
+| `npm run lint:design`      | Fail on banned design tells (see Design rules)                                                          |
 
 Run `ng build` after every change and fix errors before moving on.
 
 ## Architecture
 
 - `src/app/`: the Angular app (standalone components, signals, zoneless, OnPush by default).
+  - `features/home/compass-hero/`: the hero compass (pure-CSS intro, so it runs before hydration).
+  - `dev/design-lab/`: dev-only review page at `/design-lab`; guarded by `ngDevMode`, so it is not in production.
+- `src/styles/`: global CSS. `theme.css` holds the Tailwind v4 `@theme` tokens; `base.css`, `prose.css` (site rich
+  text) and `components.css` (buttons, plates, legend lists, rail sections). `fonts.css` and `easing.css` are generated.
   - `app.routes.server.ts`: every route uses `RenderMode.Prerender` (`outputMode: "static"` in `angular.json`).
 - `.claude/skills/`: vendored skills (`angular-developer`, `angular-new-app`, `frontend-design`); see its README.
 - `tools/`: build and maintenance scripts (TypeScript run directly by Node 24; the repo is ESM).
@@ -39,6 +45,8 @@ Run `ng build` after every change and fix errors before moving on.
     is archived in `source-archive/http/` (with `manifest.json`) so any stage can re-run `--offline`.
   - `tools/mcp/angular-cli-mcp.sh`: starts the Angular CLI MCP server on the `.nvmrc` Node version (`.mcp.json`).
   - `tools/vendor-skills.sh`: refreshes the vendored skills.
+  - `tools/design/`: generators for fonts (Capsize-matched fallbacks), the needle's spring easing and contour textures.
+  - `tools/screens.ts`: screenshots routes at 390/820/1440px into `reports/screens/` for design review.
 
 ## Angular 22 conventions for this repo
 

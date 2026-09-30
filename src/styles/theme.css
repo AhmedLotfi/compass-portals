@@ -1,0 +1,66 @@
+/*
+ * "True North" design tokens. Tailwind v4 turns each token into a CSS variable and a utility
+ * (e.g. --color-ink → bg-ink / text-ink). Component CSS uses the variables directly.
+ * The palette is provisional until it is tuned to the Compass logo.
+ */
+@theme {
+  --color-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --font-*: initial;
+  --text-*: initial;
+
+  /* Chart paper and ink */
+  --color-paper: #f3f6f8;
+  --color-paper-2: #e6edf2;
+  --color-rule: #c5d2dc;
+  --color-ink: #10263d;
+  --color-ink-2: #3b5064;
+  /* Brass is for graphics and large text; brass-deep passes AA for small text on paper. */
+  --color-brass: #a8823f;
+  --color-brass-deep: #7b5b21;
+  --color-signal: #b3261e;
+  --color-white: #ffffff;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --font-display: var(--font-stack-serif);
+  --font-sans: var(--font-stack-sans);
+
+  /* Type scale after The Elements of Typographic Style; fluid at the top. */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.45;
+  --text-sm: 0.9375rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.3125rem;
+  --text-lg--line-height: 1.5;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 1.3;
+  --text-2xl: clamp(1.75rem, 1.4rem + 1.2vw, 2.25rem);
+  --text-2xl--line-height: 1.15;
+  --text-3xl: clamp(2.25rem, 1.5rem + 3vw, 3.75rem);
+  --text-3xl--line-height: 1.06;
+  --text-display: clamp(2.75rem, 1.6rem + 4.6vw, 4.5rem);
+  --text-display--line-height: 1.02;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-full: 9999px;
+
+  /* One tinted lift, reserved for the open menu panel. */
+  --shadow-panel: 0 22px 44px -22px rgb(16 38 61 / 0.42), 0 2px 8px rgb(16 38 61 / 0.08);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --container-page: 76rem;
+  --container-prose: 68ch;
+}
+
+:root {
+  --gutter: clamp(1rem, 0.4rem + 2.6vw, 2.5rem);
+  --section-space: clamp(4.5rem, 3rem + 5vw, 8rem);
+  --hairline: 1px solid var(--color-rule);
+  --ink-line: 1px solid var(--color-ink);
+}

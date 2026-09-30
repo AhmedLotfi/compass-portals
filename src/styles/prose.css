@@ -1,0 +1,118 @@
+/*
+ * Rich text synced from compassint.org. It is rendered with [innerHTML], which component style
+ * scoping can't reach, so these styles are global and hang off `.prose-chart`.
+ */
+.prose-chart {
+  max-width: var(--container-prose);
+  color: var(--color-ink);
+}
+
+.prose-chart > * + * {
+  margin-top: 1em;
+}
+
+.prose-chart :is(h2, h3, h4) {
+  margin-top: 1.8em;
+}
+
+.prose-chart :is(h2, h3, h4) + * {
+  margin-top: 0.6em;
+}
+
+.prose-chart h2 {
+  font-size: var(--text-xl);
+  line-height: var(--text-xl--line-height);
+}
+
+.prose-chart h3 {
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
+}
+
+.prose-chart strong {
+  font-weight: 650;
+}
+
+/* Lists read like a map legend: a small brass diamond marks each entry. */
+.prose-chart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prose-chart ul > li {
+  position: relative;
+  padding-inline-start: 1.5em;
+}
+
+.prose-chart ul > li + li {
+  margin-top: 0.45em;
+}
+
+.prose-chart ul > li::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0.25em;
+  top: 0.62em;
+  width: 0.42em;
+  height: 0.42em;
+  background: var(--color-brass);
+  transform: rotate(45deg);
+}
+
+.prose-chart ol {
+  padding-inline-start: 1.4em;
+}
+
+.prose-chart ol > li::marker {
+  color: var(--color-brass-deep);
+  font-variant-numeric: tabular-nums;
+}
+
+.prose-chart blockquote {
+  margin-inline: 0;
+  padding-inline-start: 1.25em;
+  border-inline-start: 2px solid var(--color-brass);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-lg);
+}
+
+.prose-chart img {
+  border: var(--ink-line);
+}
+
+.prose-chart figure {
+  margin-inline: 0;
+}
+
+.prose-chart figcaption {
+  margin-top: 0.5em;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-sm);
+  color: var(--color-ink-2);
+}
+
+.prose-chart table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.prose-chart :is(th, td) {
+  padding: 0.6em 0.75em;
+  border-bottom: var(--hairline);
+  text-align: start;
+  vertical-align: top;
+}
+
+.prose-chart th {
+  font-weight: 650;
+  border-bottom: var(--ink-line);
+}
+
+.prose-chart hr {
+  border: 0;
+  border-top: var(--hairline);
+  margin-block: 2em;
+}

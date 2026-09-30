@@ -1,0 +1,191 @@
+:host {
+  display: block;
+  inline-size: min(100%, 32rem);
+  aspect-ratio: 1;
+  color: var(--color-ink);
+}
+
+svg {
+  inline-size: 100%;
+  block-size: 100%;
+  overflow: visible;
+}
+
+.ring {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.ring--thin {
+  stroke: var(--color-ink-2);
+  stroke-width: 0.75;
+}
+
+.tick {
+  fill: none;
+  stroke: currentColor;
+}
+
+.tick--minor {
+  stroke: var(--color-ink-2);
+  stroke-width: 0.75;
+}
+
+.tick--medium {
+  stroke-width: 1.1;
+}
+
+.tick--major {
+  stroke-width: 2;
+}
+
+.box {
+  fill: none;
+}
+
+.rose__dark {
+  fill: var(--color-ink);
+}
+
+.rose__light {
+  fill: var(--color-paper);
+  stroke: var(--color-ink);
+  stroke-width: 0.9;
+  stroke-linejoin: round;
+}
+
+.rose__letter {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  fill: var(--color-ink-2);
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
+.rose__letter--north {
+  font-size: 23px;
+  fill: var(--color-brass-deep);
+}
+
+.needle__north {
+  fill: var(--color-brass);
+}
+
+.needle__south {
+  fill: var(--color-ink);
+}
+
+.needle__pivot {
+  fill: var(--color-paper);
+  stroke: var(--color-ink);
+  stroke-width: 1.5;
+}
+
+.needle__cap {
+  fill: var(--color-ink);
+}
+
+/*
+ * The one orchestrated moment: the bezel draws itself clockwise from north, the rose settles in,
+ * and the needle swings past north and settles on it. Pure CSS, so it runs from the prerendered HTML
+ * before the app hydrates. The resting styles above are the final state.
+ */
+.draw {
+  stroke-dasharray: 1;
+  animation: draw 1.2s cubic-bezier(0.55, 0.1, 0.35, 1) both;
+}
+
+.draw--late {
+  animation-delay: 0.15s;
+}
+
+/* Ticks sweep in clockwise from north, in step with the ring drawing itself. */
+.tick {
+  animation: tick-in 0.35s var(--ease-out) both;
+  animation-delay: calc(0.1s + var(--i, 0) * 11ms);
+}
+
+@keyframes tick-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.rose,
+.needle,
+.needle-drift,
+.bezel {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.rose {
+  animation: rose-in 0.8s var(--ease-out) 0.4s both;
+}
+
+@keyframes rose-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94) rotate(-8deg);
+  }
+}
+
+.needle {
+  animation: needle-settle 1.8s var(--ease-settle) 0.75s both;
+}
+
+@keyframes needle-settle {
+  from {
+    transform: rotate(-140deg);
+  }
+}
+
+/* Leans a few degrees toward the pointer, like a needle near a magnet (set in afterNextRender). */
+.needle-drift {
+  transform: rotate(var(--drift, 0deg));
+  transition: transform 0.9s var(--ease-out);
+}
+
+@supports (animation-timeline: scroll()) {
+  .bezel {
+    animation: bezel-turn linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 90vh;
+  }
+
+  @keyframes bezel-turn {
+    to {
+      transform: rotate(8deg);
+    }
+  }
+}
+
+/* Later client-side visits in the same tab show the compass already settled. */
+:host(.settled) :is(.draw, .tick, .rose, .needle) {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .draw,
+  .tick,
+  .rose,
+  .needle,
+  .bezel {
+    animation: none !important;
+  }
+
+  .needle-drift {
+    transition: none;
+  }
+}

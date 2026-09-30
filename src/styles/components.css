@@ -1,0 +1,140 @@
+/* Shared primitives used across many components: buttons, plates, legend lists, rail sections. */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-block-size: 2.75rem;
+  padding: 0.7rem 1.2rem;
+  border: 1.5px solid var(--color-ink);
+  border-radius: var(--radius-sm);
+  font: 600 var(--text-sm) / 1.2 var(--font-sans);
+  letter-spacing: 0.005em;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 150ms var(--ease-out),
+    color 150ms var(--ease-out);
+}
+
+.btn--ink {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.btn--ink:hover {
+  background: #1b3a59;
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-ink);
+}
+
+.btn--outline:hover {
+  background: var(--color-paper-2);
+}
+
+.btn--on-ink {
+  border-color: var(--color-paper);
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.btn--on-ink:hover {
+  background: var(--color-white);
+}
+
+.btn svg {
+  inline-size: 1.1em;
+  block-size: 1.1em;
+  flex: none;
+}
+
+/* A plate: a screenshot or photo presented like an atlas plate, square with an ink rule. */
+.plate {
+  margin: 0;
+}
+
+.plate__frame {
+  display: block;
+  border: var(--ink-line);
+  background: var(--color-white);
+  padding: 0.5rem;
+}
+
+.plate__frame img {
+  inline-size: 100%;
+}
+
+.plate figcaption {
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-sm);
+  color: var(--color-ink-2);
+}
+
+/* A map legend: each entry has a brass diamond, entries separated by hairlines. */
+.legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: var(--ink-line);
+}
+
+.legend > li {
+  display: grid;
+  grid-template-columns: 1.25rem minmax(0, 1fr);
+  gap: 0 0.9rem;
+  padding-block: 1.1rem;
+  border-bottom: var(--hairline);
+}
+
+.legend > li::before {
+  content: '';
+  inline-size: 0.6rem;
+  block-size: 0.6rem;
+  margin-top: 0.55rem;
+  margin-inline-start: 0.2rem;
+  background: var(--color-brass);
+  transform: rotate(45deg);
+}
+
+/* Rail section: on wide screens the section title sits in a left margin rail, like a map note. */
+.rail-section {
+  display: grid;
+  gap: 1.25rem 2.5rem;
+  padding-block: var(--section-space);
+}
+
+.rail-section + .rail-section {
+  border-top: var(--hairline);
+}
+
+.rail-section__title {
+  font-size: var(--text-xl);
+  line-height: var(--text-xl--line-height);
+}
+
+.rail-section__title::before {
+  content: '';
+  display: block;
+  inline-size: 2.5rem;
+  block-size: 2px;
+  margin-bottom: 0.9rem;
+  background: var(--color-brass);
+}
+
+@media (min-width: 64rem) {
+  .rail-section {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
+  }
+
+  .rail-section__title {
+    position: sticky;
+    top: 6.5rem;
+    align-self: start;
+  }
+}

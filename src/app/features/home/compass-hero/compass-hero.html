@@ -1,0 +1,49 @@
+<svg viewBox="-200 -200 400 400" focusable="false">
+  <g class="bezel">
+    <circle class="ring draw" r="190" pathLength="1" transform="rotate(-90)" />
+    <circle
+      class="ring ring--thin draw draw--late"
+      r="179"
+      pathLength="1"
+      transform="rotate(-90)"
+    />
+    @for (tick of geometry.ticks; track tick.index) {
+      <line
+        [class]="'tick tick--' + tick.tier"
+        [attr.x1]="tick.x1"
+        [attr.y1]="tick.y1"
+        [attr.x2]="tick.x2"
+        [attr.y2]="tick.y2"
+        [style.--i]="tick.index"
+      />
+    }
+  </g>
+
+  <g class="rose">
+    <!-- Keeps the group's box centred on the pivot for rotation. -->
+    <circle class="box" r="160" />
+    @for (point of geometry.rose; track point.id) {
+      <path class="rose__dark" [attr.d]="point.dark" />
+      <path class="rose__light" [attr.d]="point.light" />
+    }
+    @for (letter of geometry.letters; track letter.label) {
+      <text
+        class="rose__letter"
+        [class.rose__letter--north]="letter.north"
+        [attr.x]="letter.x"
+        [attr.y]="letter.y"
+      >
+        {{ letter.label }}
+      </text>
+    }
+  </g>
+
+  <g class="needle-drift">
+    <g class="needle">
+      <path class="needle__north" d="M0 -124L7.5 0L-7.5 0Z" />
+      <path class="needle__south" d="M0 124L7.5 0L-7.5 0Z" />
+      <circle class="needle__pivot" r="6.5" />
+      <circle class="needle__cap" r="2" />
+    </g>
+  </g>
+</svg>

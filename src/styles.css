@@ -1,3 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles. Tailwind only scans the app, never the archived WordPress HTML. */
+@import 'tailwindcss' source(none);
+@source './app';
 
-@import 'tailwindcss';
+@import './styles/fonts.css';
+@import './styles/easing.css';
+@import './styles/theme.css';
+@import './styles/base.css';
+@import './styles/prose.css';
+@import './styles/components.css';

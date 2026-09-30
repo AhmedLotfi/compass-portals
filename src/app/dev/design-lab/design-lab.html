@@ -1,0 +1,90 @@
+<section class="hero chart-grid">
+  <div class="hero__texture texture-contours texture-focus-end" aria-hidden="true"></div>
+  <div class="frame hero__inner">
+    <div class="hero__copy">
+      <p class="slot">Slot: the site's own headline, synced from compassint.org</p>
+      <h1 class="hero__title">Display specimen set in Source Serif 4 at the hero size</h1>
+      <p class="hero__lede">
+        Lede specimen in Hanken Grotesk at 21px. The real intro paragraph comes from the content
+        sync, verbatim.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--ink" href="#">Primary action</a>
+        <a class="btn btn--outline" href="#">Secondary action</a>
+      </div>
+    </div>
+    <app-compass-hero class="hero__compass" />
+  </div>
+</section>
+
+<div class="frame">
+  <section class="rail-section">
+    <h2 class="rail-section__title">Palette</h2>
+    <ul class="swatches">
+      @for (swatch of swatches; track swatch.name) {
+        <li>
+          <span class="swatch" [style.background]="swatch.hex"></span>
+          <strong>{{ swatch.name }}</strong>
+          <span class="tnum">{{ swatch.hex }}</span>
+          <span>{{ swatch.use }}</span>
+          <span class="tnum">{{ swatch.onPaper }}:1 on paper</span>
+        </li>
+      }
+    </ul>
+  </section>
+
+  <section class="rail-section">
+    <h2 class="rail-section__title">Type scale</h2>
+    <div class="scale">
+      @for (step of scale; track step.token) {
+        <p [class]="step.cls">{{ step.label }}</p>
+      }
+    </div>
+  </section>
+
+  <section class="rail-section">
+    <h2 class="rail-section__title">Legend list</h2>
+    <ul class="legend">
+      <li>
+        <div>
+          <h3 class="legend-title">Entry title specimen</h3>
+          <p>Entry summary specimen. Product and category summaries use this pattern.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3 class="legend-title">Second entry specimen</h3>
+          <p>A hairline separates entries; the brass diamond marks each one.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="rail-section">
+    <h2 class="rail-section__title">Plate and prose</h2>
+    <div class="plate-and-prose">
+      <figure class="plate">
+        <span class="plate__frame"><span class="plate__placeholder"></span></span>
+        <figcaption>Plate caption specimen, set in the serif italic.</figcaption>
+      </figure>
+      <div class="prose-chart">
+        <p>
+          Rich text from the site renders through <code>.prose-chart</code>. It keeps a readable
+          measure and quiet structure.
+        </p>
+        <ul>
+          <li>List entry specimen</li>
+          <li>Another list entry specimen</li>
+        </ul>
+        <blockquote>Quotation specimen in the serif italic.</blockquote>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="ink-band texture-contours-ink">
+  <div class="frame ink-band__inner">
+    <h2 class="ink-band__title">Contact band specimen on ink</h2>
+    <a class="btn btn--on-ink" href="#">Action on ink</a>
+  </div>
+</section>
