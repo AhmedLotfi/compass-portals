@@ -29,5 +29,10 @@ jobs:
       - name: Unit tests
         run: npm test
 
+      - name: Tooling type-check and tests
+        run: |
+          npm run typecheck:tools
+          npm run test:tools
+
       - name: Build (static prerender)
         run: npm run build

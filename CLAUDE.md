@@ -16,12 +16,16 @@ a build-time sync pulls its content into typed JSON and self-hosted images, and 
 
 ## Commands
 
-| Command         | What it does                                                                 |
-| --------------- | ---------------------------------------------------------------------------- |
-| `npm start`     | Dev server on http://localhost:4200                                          |
-| `npm run build` | Production build with static prerendering into `dist/compass-portal/browser` |
-| `npm test`      | Unit tests (Vitest), single run                                              |
-| `npm run lint`  | angular-eslint (TypeScript and templates)                                    |
+| Command                    | What it does                                                                                            |
+| -------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `npm start`                | Dev server on http://localhost:4200                                                                     |
+| `npm run build`            | Production build with static prerendering into `dist/compass-portal/browser`                            |
+| `npm test`                 | Unit tests (Vitest), single run                                                                         |
+| `npm run lint`             | angular-eslint (TypeScript and templates)                                                               |
+| `npm run content:probe`    | Fingerprint compassint.org (platform, REST API, permalinks) → `reports/probe.json`                      |
+| `npm run content:discover` | Full inventory of the site → `reports/inventory.{json,md}` (add `-- --offline` to use the archive only) |
+| `npm run test:tools`       | Tests for the build tooling (Vitest, `tools/**/*.test.ts`)                                              |
+| `npm run typecheck:tools`  | Type-check `tools/`                                                                                     |
 
 Run `ng build` after every change and fix errors before moving on.
 
@@ -31,6 +35,8 @@ Run `ng build` after every change and fix errors before moving on.
   - `app.routes.server.ts`: every route uses `RenderMode.Prerender` (`outputMode: "static"` in `angular.json`).
 - `.claude/skills/`: vendored skills (`angular-developer`, `angular-new-app`, `frontend-design`); see its README.
 - `tools/`: build and maintenance scripts (TypeScript run directly by Node 24; the repo is ESM).
+  - `tools/content-sync/`: reads compassint.org (WordPress REST API, sitemaps, rendered pages). Every response
+    is archived in `source-archive/http/` (with `manifest.json`) so any stage can re-run `--offline`.
   - `tools/mcp/angular-cli-mcp.sh`: starts the Angular CLI MCP server on the `.nvmrc` Node version (`.mcp.json`).
   - `tools/vendor-skills.sh`: refreshes the vendored skills.
 

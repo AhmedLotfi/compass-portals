@@ -11,7 +11,11 @@
     "lint": "ng lint",
     "test:watch": "ng test",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "content:probe": "node tools/content-sync/index.ts probe",
+    "content:discover": "node tools/content-sync/index.ts discover",
+    "test:tools": "vitest run --config tools/vitest.config.ts",
+    "typecheck:tools": "tsc -p tools/tsconfig.json"
   },
   "private": true,
   "packageManager": "npm@11.19.0",
@@ -33,16 +37,21 @@
     "@angular/compiler-cli": "^22.2.0",
     "@eslint/js": "^10.0.1",
     "@tailwindcss/postcss": "^4.1.12",
-    "@types/node": "^22.12.0",
+    "@types/node": "^24.19.0",
     "angular-eslint": "22.5.0",
+    "cheerio": "^1.2.0",
+    "domhandler": "^6.0.1",
     "eslint": "^10.9.1",
+    "fast-xml-parser": "^5.11.2",
     "jsdom": "^30.0.0",
+    "p-limit": "^7.3.3",
     "postcss": "^8.5.3",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.1.12",
     "typescript": "~6.0.2",
     "typescript-eslint": "8.69.0",
-    "vitest": "^5.0.0"
+    "vitest": "^5.0.0",
+    "zod": "^4.6.5"
   },
   "engines": {
     "node": "^24.15.0"
