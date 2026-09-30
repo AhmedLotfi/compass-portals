@@ -64,4 +64,6 @@ jobs:
             exit 0
           fi
           git commit -m "chore(content): archive compassint.org ($(date -u +%Y-%m-%d))"
-          git push
+          # The branch may have moved while the crawl ran.
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
