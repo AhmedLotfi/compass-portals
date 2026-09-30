@@ -35,5 +35,7 @@
   "formFailed": "The message couldn't be sent. Email us instead.",
   "formRequiredNote": "Fields marked * are required.",
   "honeypot": "Leave this field empty",
-  "mailSubject": "Website enquiry"
+  "mailSubject": "Website enquiry",
+  "llmsPages": "Pages",
+  "llmsFullText": "Full text of every page"
 }

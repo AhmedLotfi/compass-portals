@@ -11,6 +11,8 @@ import { copy } from '../copy/copy';
 import { buildGraph, mediaUrl, plainText } from './json-ld';
 
 const MAX_DESCRIPTION = 155;
+/** Let search engines show large image previews and full snippets of the site's text. */
+const INDEXABLE = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 
 /** First sentence(s) of the page's own text, verbatim, within the description length. */
 export function describe(page: PageDoc): string | undefined {
@@ -57,7 +59,7 @@ export class SeoService {
 
     this.title.setTitle(title);
     this.set('name', 'description', description);
-    this.set('name', 'robots', notFound || page?.seo.noindex ? 'noindex, follow' : 'index, follow');
+    this.set('name', 'robots', notFound || page?.seo.noindex ? 'noindex, follow' : INDEXABLE);
     this.set('property', 'og:type', 'website');
     this.set('property', 'og:site_name', site.name);
     this.set('property', 'og:locale', language.code === 'ar' ? 'ar_AE' : 'en_US');

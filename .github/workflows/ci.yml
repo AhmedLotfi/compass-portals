@@ -36,8 +36,21 @@ jobs:
           npm run typecheck:tools
           npm run test:tools
 
-      # The real snapshot (src/content) exists once compassint.org has been synced;
-      # until then the app is built against the synthetic fixture to prove it compiles and prerenders.
+      # The real snapshot (src/content) exists once compassint.org has been synced.
+      # Until then, the app is built against the synthetic fixture to prove it compiles and prerenders.
+      - name: Pick the content snapshot
+        run: |
+          if [ -f src/content/site.json ]; then
+            echo "CONTENT_DIR=src/content" >> "$GITHUB_ENV"
+          else
+            echo "CONTENT_DIR=.cache/fixture/content" >> "$GITHUB_ENV"
+          fi
+
+      # Includes the post-build checks (every page prerendered, canonical/robots) and the sitemap, llms.txt
+      # and hosting rules.
       - name: Build (static prerender)
         run: |
-          if [ -f src/content/site.json ]; then npm run build; else npm run build:fixture; fi
+          if [ "$CONTENT_DIR" = src/content ]; then npm run build; else npm run build:fixture; fi
+
+      - name: Hosting rules (real nginx and Apache, and the e2e server)
+        run: npm run verify:hosting -- --content="$CONTENT_DIR"

@@ -9,7 +9,7 @@ a build-time sync pulls its content into typed JSON and self-hosted images, and 
 - Every fact, product description, feature, contact detail, and image comes **verbatim** from compassint.org,
   through the content sync. Never invent facts, statistics, testimonials, clients, or offers.
 - The only strings that don't come from the site are short UI and marketing microcopy (CTA labels, section
-  labels, meta descriptions where the site has none). They all live in `src/content/microcopy.en.json`.
+  labels, meta descriptions where the site has none). They all live in `src/app/core/copy/microcopy.en.json`.
 - Typos, demo text, and conflicting facts found on the site are reported to the user, never fixed or dropped silently.
 - Mirror the site's languages. Never machine-translate.
 - The content parity and provenance checks must pass before anything ships.
@@ -19,7 +19,7 @@ a build-time sync pulls its content into typed JSON and self-hosted images, and 
 | Command                                           | What it does                                                                                             |
 | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | `npm start`                                       | Dev server on http://localhost:4200                                                                      |
-| `npm run build`                                   | Production build with static prerendering into `dist/compass-portal/browser`                             |
+| `npm run build`                                   | Production build with static prerendering into `dist/compass-portal/browser`, then the post-build step   |
 | `npm test`                                        | Unit tests (Vitest), single run                                                                          |
 | `npm run lint`                                    | angular-eslint (TypeScript and templates)                                                                |
 | `npm run content:probe`                           | Fingerprint compassint.org (platform, REST API, permalinks) → `reports/probe.json`                       |
@@ -31,6 +31,7 @@ a build-time sync pulls its content into typed JSON and self-hosted images, and 
 | `npm run content:fixture`                         | Synthetic snapshot from the fake WordPress test site into `.cache/fixture/` (never ships)                |
 | `npm run start:fixture` / `npm run build:fixture` | Develop or build against the fixture (before the real sync exists)                                       |
 | `node tools/serve-dist.ts --content=<dir>`        | Serve `dist/` like production hosting (redirect map, trailing slashes, real 404)                         |
+| `npm run verify:hosting -- --content=<dir>`       | Serve the build with real nginx and Apache (generated rules) and check redirects, 404/410, headers       |
 | `npm run test:tools`                              | Tests for the build tooling (Vitest, `tools/**/*.test.ts`)                                               |
 | `npm run typecheck:tools`                         | Type-check `tools/`                                                                                      |
 | `npm run design:generate`                         | Regenerate `src/styles/fonts.css`, `src/styles/easing.css` and `public/textures/*.svg` (deterministic)   |
@@ -41,32 +42,41 @@ Run `ng build` after every change and fix errors before moving on.
 ## Architecture
 
 - `src/app/`: the Angular app (standalone components, signals, zoneless, OnPush by default).
-  - `app.routes.ts`: one static route per synced page (from `@content/routes.json`), plus `404` and `**`.
+  - `app.routes.ts`: one static route per synced page (from `@content/routes.json`), plus `404` and `**`;
+    `app.routes.server.ts` prerenders them all (`outputMode: "static"` in `angular.json`).
   - `core/`: `content` (ContentStore, page resolver), `copy` (the microcopy file + `copy` pipe), `media`
     (`MediaImage`, the NgOptimizedImage loader), `seo` (SeoService, title strategy, JSON-LD), `contact`.
   - `layout/`: header (products disclosure, mobile `<dialog>`), footer, breadcrumbs, nav links, icons.
   - `shared/`: section renderer and one component per block type; `SmartLink` for synced hrefs.
   - `features/`: page components by kind (home, listing, product, content page, contact, 404).
-- `@content/*` resolves to `src/content/` in production builds and to `.cache/fixture/content/` under the
-  `fixture` configuration and in unit tests (`tsconfig.fixture.json`, `tsconfig.spec.json`).
-  - `features/home/compass-hero/`: the hero compass (pure-CSS intro, so it runs before hydration).
+    `features/home/compass-hero/` is the hero compass (pure-CSS intro, so it runs before hydration).
   - `dev/design-lab/`: dev-only review page at `/design-lab`; guarded by `ngDevMode`, so it is not in production.
 - `src/styles/`: global CSS. `theme.css` holds the Tailwind v4 `@theme` tokens; `base.css`, `prose.css` (site rich
-  text) and `components.css` (buttons, plates, legend lists, rail sections). `fonts.css` and `easing.css` are generated.
-  - `app.routes.server.ts`: every route uses `RenderMode.Prerender` (`outputMode: "static"` in `angular.json`).
-- `.claude/skills/`: vendored skills (`angular-developer`, `angular-new-app`, `frontend-design`); see its README.
-- `tools/`: build and maintenance scripts (TypeScript run directly by Node 24; the repo is ESM).
-  - `tools/content-sync/`: reads compassint.org (WordPress REST API, sitemaps, rendered pages). Every response
-    is archived in `source-archive/http/` (with `manifest.json`) so any stage can re-run `--offline`.
-    `normalize/` flattens builder HTML into atoms (clean → atoms → shape → sanitize); `sync.ts` emits the snapshot
-    and fails when any visible source sentence is missing (waive only with a reason in `waivers.json`).
+  text), `components.css` (buttons, plates, legend lists, rail sections) and `navigation.css`. `fonts.css` and
+  `easing.css` are generated.
 - `schema/content.ts`: the zod content model. The app imports its types only.
-- `src/content/`: the generated snapshot (`site.json`, `index.json`, `media.json`, `redirects.json`,
+- `src/content/`: the generated snapshot (`site.json`, `index.json`, `routes.json`, `media.json`, `redirects.json`,
   `pages/*.json`, `page-loaders.ts`). Never edit by hand; re-run the sync.
-  - `tools/mcp/angular-cli-mcp.sh`: starts the Angular CLI MCP server on the `.nvmrc` Node version (`.mcp.json`).
-  - `tools/vendor-skills.sh`: refreshes the vendored skills.
-  - `tools/design/`: generators for fonts (Capsize-matched fallbacks), the needle's spring easing and contour textures.
-  - `tools/screens.ts`: screenshots routes at 390/820/1440px into `reports/screens/` for design review.
+  - `@content/*` resolves to `src/content/` in production builds and to `.cache/fixture/content/` under the
+    `fixture` configuration and in unit tests (`tsconfig.fixture.json`, `tsconfig.spec.json`).
+- `tools/`: build and maintenance scripts (TypeScript run directly by Node 24; the repo is ESM).
+  - `content-sync/`: reads compassint.org (WordPress REST API, sitemaps, rendered pages). Every response is
+    archived in `source-archive/http/` (with `manifest.json`) so any stage can re-run `--offline`. `normalize/`
+    flattens builder HTML into atoms (clean → atoms → shape → sanitize); `sync.ts` emits the snapshot and fails
+    when any visible source sentence is missing (waive only with a reason in `waivers.json`).
+  - `media/build.ts`: image variants, share images, documents, favicons and the manifest (before build/start).
+  - `postbuild/`: after `ng build`, fails the build if a synced page wasn't prerendered (or has the wrong
+    canonical/robots), moves the 404 page to `/404.html`, removes `index.csr.html`, and writes `sitemap.xml`,
+    `robots.txt`, `llms.txt`, `llms-full.txt` and the hosting rules (`_redirects`, `_headers`, `.htaccess`,
+    `web.config`, `deploy/nginx.conf`).
+  - `verify/`: design lint (`design-tells.ts`) and the hosting smoke test (`hosting.ts`).
+  - `design/`: generators for fonts (Capsize-matched fallbacks), the needle's spring easing, contour textures
+    and brand icon paths.
+  - `serve-dist.ts`: static server with the production redirect/404 behaviour, for screenshots and e2e.
+  - `screens.ts`: screenshots routes at 390/820/1440px into `reports/screens/` for design review.
+  - `mcp/angular-cli-mcp.sh`: starts the Angular CLI MCP server on the `.nvmrc` Node version (`.mcp.json`).
+  - `vendor-skills.sh`: refreshes the vendored skills.
+- `.claude/skills/`: vendored skills (`angular-developer`, `angular-new-app`, `frontend-design`); see its README.
 
 ## Angular 22 conventions for this repo
 

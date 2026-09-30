@@ -8,6 +8,7 @@
     "start": "ng serve",
     "prebuild": "node tools/media/build.ts",
     "build": "ng build",
+    "postbuild": "node tools/postbuild/index.ts",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --watch=false",
     "lint": "ng lint",
@@ -26,8 +27,9 @@
     "media:build": "node tools/media/build.ts",
     "content:fixture": "node tools/content-sync/fixture.ts",
     "start:fixture": "node tools/content-sync/fixture.ts --if-missing && ng serve --configuration=fixture",
-    "build:fixture": "node tools/content-sync/fixture.ts --if-missing && ng build --configuration=production,fixture",
-    "pretest": "node tools/content-sync/fixture.ts --if-missing"
+    "build:fixture": "node tools/content-sync/fixture.ts --if-missing && ng build --configuration=production,fixture && node tools/postbuild/index.ts --content=.cache/fixture/content",
+    "pretest": "node tools/content-sync/fixture.ts --if-missing",
+    "verify:hosting": "node tools/verify/hosting.ts"
   },
   "private": true,
   "packageManager": "npm@11.19.0",

@@ -13,7 +13,7 @@ is pulled from compassint.org at build time and every page is prerendered to sta
 ```bash
 npm install
 npm start          # dev server at http://localhost:4200
-npm run build      # static, prerendered production build in dist/compass-portal/browser
+npm run build      # static, prerendered production build in dist/compass-portal/browser (+ post-build checks)
 npm test           # unit tests (Vitest)
 npm run lint       # angular-eslint
 ```
@@ -26,5 +26,20 @@ npm run lint       # angular-eslint
    fully crawlable, with no runtime dependency on WordPress.
 3. **SEO**: per-page titles, descriptions, canonical URLs, Open Graph and JSON-LD, plus a sitemap, robots.txt,
    llms.txt and 301 redirects from the old `/index.php/...` URLs.
+
+## Deploying
+
+Upload `dist/compass-portal/browser/` to any static host. The post-build step writes the host rules for the
+redirects from the old WordPress URLs (301), retired WordPress endpoints (410), the 404 page, security headers
+and long-lived caching of content-hashed files:
+
+| Host                      | Uses                                                                                   |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Netlify, Cloudflare Pages | `_redirects`, `_headers` (portable rules: `/?page_id=` short links show the home page) |
+| Apache                    | `.htaccess` (needs `AllowOverride All`, mod_rewrite and mod_headers)                   |
+| IIS / Azure App Service   | `web.config` (needs the URL Rewrite module)                                            |
+| nginx                     | `dist/compass-portal/deploy/nginx.conf`, included from the `server {}` block           |
+
+`npm run verify:hosting` serves the build with real nginx and Apache using these files and checks the result.
 
 See `CLAUDE.md` for the content rules, conventions and architecture.
