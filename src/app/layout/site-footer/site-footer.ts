@@ -1,22 +1,16 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ContentStore } from '../../core/content/content';
-import { CopyPipe } from '../../core/copy/copy';
+import { copy, CopyPipe, hasCopy } from '../../core/copy/copy';
 import { MediaImage } from '../../core/media/media-image';
 import { Icon, isIconName, type IconName } from '../icon/icon';
 import { NavLink } from '../nav-link/nav-link';
 
-/** Brand names of the social networks the site links to (proper nouns, not copy). */
-const NETWORK_NAMES: Record<string, string> = {
-  facebook: 'Facebook',
-  linkedin: 'LinkedIn',
-  x: 'X',
-  instagram: 'Instagram',
-  youtube: 'YouTube',
-  whatsapp: 'WhatsApp',
-  tiktok: 'TikTok',
-  snapchat: 'Snapchat',
-};
+/** Brand name of a social network the site links to (from the microcopy file). */
+function networkName(network: string): string {
+  const key = `network.${network}`;
+  return hasCopy(key) ? copy(key) : network;
+}
 
 @Component({
   selector: 'app-site-footer',
@@ -37,7 +31,7 @@ export class SiteFooter {
     : this.site.navigation.header.map((item) => ({ ...item, children: [] }));
   protected readonly social = this.site.social.map((s) => ({
     ...s,
-    name: NETWORK_NAMES[s.network] ?? s.network,
+    name: networkName(s.network),
     icon: (isIconName(s.network) ? s.network : 'external') as IconName,
   }));
 }

@@ -1,4 +1,6 @@
-<a class="skip-link" href="#main">{{ 'skipToContent' | copy }}</a>
+<a class="skip-link" [href]="mainHref()" (click)="skipToMain($event)">{{
+  'skipToContent' | copy
+}}</a>
 <app-site-header />
 <main id="main" tabindex="-1">
   <router-outlet />

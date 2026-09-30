@@ -11,9 +11,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -51,6 +51,10 @@ jobs:
       - name: Build (static prerender)
         run: |
           if [ "$CONTENT_DIR" = src/content ]; then npm run build; else npm run build:fixture; fi
+
+      # Parity and provenance (the hard rule), links, sitemap and HTML validity of the built pages.
+      - name: Verify the build against the snapshot
+        run: npm run verify:dist -- --content="$CONTENT_DIR"
 
       - name: Hosting rules (real nginx and Apache, and the e2e server)
         run: npm run verify:hosting -- --content="$CONTENT_DIR"

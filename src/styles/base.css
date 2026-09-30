@@ -108,6 +108,11 @@ img {
   border: 0;
 }
 
+/* Phone numbers never break across lines. */
+a[href^='tel:'] {
+  white-space: nowrap;
+}
+
 .skip-link {
   position: absolute;
   inset-inline-start: var(--gutter);

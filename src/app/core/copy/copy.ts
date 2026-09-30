@@ -7,6 +7,10 @@ import microcopy from './microcopy.en.json';
  */
 export type CopyKey = keyof typeof microcopy;
 
+export function hasCopy(key: string): key is CopyKey {
+  return Object.hasOwn(microcopy, key);
+}
+
 export function copy(key: CopyKey, params: Record<string, string> = {}): string {
   return microcopy[key].replace(/\{(\w+)\}/g, (_, name: string) => params[name] ?? '');
 }

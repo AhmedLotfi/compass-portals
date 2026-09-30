@@ -12,7 +12,7 @@ a build-time sync pulls its content into typed JSON and self-hosted images, and 
   labels, meta descriptions where the site has none). They all live in `src/app/core/copy/microcopy.en.json`.
 - Typos, demo text, and conflicting facts found on the site are reported to the user, never fixed or dropped silently.
 - Mirror the site's languages. Never machine-translate.
-- The content parity and provenance checks must pass before anything ships.
+- The content parity and provenance checks must pass before anything ships (`npm run verify:dist`).
 
 ## Commands
 
@@ -31,6 +31,7 @@ a build-time sync pulls its content into typed JSON and self-hosted images, and 
 | `npm run content:fixture`                         | Synthetic snapshot from the fake WordPress test site into `.cache/fixture/` (never ships)                |
 | `npm run start:fixture` / `npm run build:fixture` | Develop or build against the fixture (before the real sync exists)                                       |
 | `node tools/serve-dist.ts --content=<dir>`        | Serve `dist/` like production hosting (redirect map, trailing slashes, real 404)                         |
+| `npm run verify:dist -- --content=<dir>`          | Parity + provenance of the built HTML against the snapshot, links, sitemap, html-validate                |
 | `npm run verify:hosting -- --content=<dir>`       | Serve the build with real nginx and Apache (generated rules) and check redirects, 404/410, headers       |
 | `npm run test:tools`                              | Tests for the build tooling (Vitest, `tools/**/*.test.ts`)                                               |
 | `npm run typecheck:tools`                         | Type-check `tools/`                                                                                      |
@@ -69,7 +70,9 @@ Run `ng build` after every change and fix errors before moving on.
     canonical/robots), moves the 404 page to `/404.html`, removes `index.csr.html`, and writes `sitemap.xml`,
     `robots.txt`, `llms.txt`, `llms-full.txt` and the hosting rules (`_redirects`, `_headers`, `.htaccess`,
     `web.config`, `deploy/nginx.conf`).
-  - `verify/`: design lint (`design-tells.ts`) and the hosting smoke test (`hosting.ts`).
+  - `verify/`: design lint (`design-tells.ts`), the built-site check (`dist.ts`: every snapshot sentence and image
+    is on its page, and every piece of text on a page is site text or microcopy) and the hosting smoke test
+    (`hosting.ts`).
   - `design/`: generators for fonts (Capsize-matched fallbacks), the needle's spring easing, contour textures
     and brand icon paths.
   - `serve-dist.ts`: static server with the production redirect/404 behaviour, for screenshots and e2e.

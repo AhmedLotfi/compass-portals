@@ -37,5 +37,13 @@
   "honeypot": "Leave this field empty",
   "mailSubject": "Website enquiry",
   "llmsPages": "Pages",
-  "llmsFullText": "Full text of every page"
+  "llmsFullText": "Full text of every page",
+  "network.facebook": "Facebook",
+  "network.linkedin": "LinkedIn",
+  "network.x": "X",
+  "network.instagram": "Instagram",
+  "network.youtube": "YouTube",
+  "network.whatsapp": "WhatsApp",
+  "network.tiktok": "TikTok",
+  "network.snapchat": "Snapchat"
 }
