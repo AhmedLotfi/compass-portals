@@ -24,6 +24,7 @@ a build-time sync pulls its content into typed JSON and self-hosted images, and 
 | `npm run lint`                                    | angular-eslint (TypeScript and templates)                                                                |
 | `npm run content:probe`                           | Fingerprint compassint.org (platform, REST API, permalinks) → `reports/probe.json`                       |
 | `npm run content:discover`                        | Full inventory of the site → `reports/inventory.{json,md}` (add `-- --offline` to use the archive only)  |
+| `npm run content:render`                          | Render every page in headless Chromium (the site is a client-rendered Angular app) into the archive      |
 | `npm run content:fetch`                           | Download every image, document and builder stylesheet the inventory references                           |
 | `npm run content:sync`                            | Normalize the archive into `src/content/` (offline) and verify sentence coverage → `reports/coverage.md` |
 | `npm run content:all`                             | discover + fetch + sync in one go (needs compassint.org in the allowed domains)                          |
@@ -109,8 +110,10 @@ Run `ng build` after every change and fix errors before moving on.
 - Node's built-in `fetch` needs `NODE_USE_ENV_PROXY=1` behind the session proxy (exported by the hook).
 - compassint.org must be in the environment's allowed domains for the content sync to run here. Otherwise the
   **Archive compassint.org** workflow (`.github/workflows/content-archive.yml`, started by hand from the Actions
-  tab) runs `content:discover` + `content:fetch` on a GitHub runner and commits `source-archive/` and the
-  inventory; after pulling that commit, `npm run content:sync` works offline here.
+  tab) runs `content:discover` + `content:render` on a GitHub runner and commits `source-archive/` and the
+  reports; after pulling that commit, the offline stages work here.
+- compassint.org itself is a client-rendered Angular app on IIS/ASP.NET (not WordPress): its HTML is an empty
+  `<app-root>`, so content comes from `content:render` (rendered DOM, API responses), not the raw HTML.
 - npm 11 skips unapproved install scripts (esbuild, lmdb, msgpackr-extract, @parcel/watcher); they aren't needed
   because prebuilt binaries are used.
 

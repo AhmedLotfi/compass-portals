@@ -17,6 +17,7 @@
     "format:check": "prettier --check .",
     "content:probe": "node tools/content-sync/index.ts probe",
     "content:discover": "node tools/content-sync/index.ts discover",
+    "content:render": "node tools/content-sync/render.ts",
     "test:tools": "vitest run --config tools/vitest.config.ts",
     "typecheck:tools": "tsc -p tools/tsconfig.json && tsc -p e2e/tsconfig.json",
     "lint:design": "node tools/verify/design-tells.ts",

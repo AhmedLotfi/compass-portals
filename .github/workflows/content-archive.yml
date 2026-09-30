@@ -1,10 +1,11 @@
 name: Archive compassint.org
 
-# Crawls compassint.org politely (robots.txt, three requests at a time, a pause between them) and
-# commits what it downloaded, so every later stage (normalize, sync, build) can run offline from
-# source-archive/:
-#   1. discover: inventory of every page, menu, image, document and contact detail (reports/)
-#   2. fetch: every image, document and builder stylesheet the inventory references
+# Crawls compassint.org politely and commits what it downloaded, so every later stage (normalize,
+# sync, build) can run offline from source-archive/:
+#   1. discover: fingerprint and inventory of the server-rendered HTML (reports/probe.json, inventory)
+#   2. render: compassint.org is a client-rendered Angular app, so each page is also opened in
+#      headless Chromium, one at a time; the rendered HTML, every response the app loads (API data,
+#      images, fonts) and a screenshot per page are archived (reports/rendered.md)
 # Runs only when started by hand (Actions → Archive compassint.org → Run workflow), on the branch
 # chosen there, and pushes one commit to that branch.
 on:
@@ -34,8 +35,11 @@ jobs:
       - name: Inventory the site
         run: npm run content:discover
 
-      - name: Download images, documents and stylesheets
-        run: npm run content:fetch
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Render every page in Chromium
+        run: npm run content:render
 
       - name: Upload the inventory report
         if: always()
@@ -49,7 +53,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add source-archive reports/probe.json reports/inventory.json reports/inventory.md
+          git add source-archive reports/probe.json reports/inventory.json reports/inventory.md reports/rendered.md
           if git diff --cached --quiet; then
             echo "The archive is unchanged."
             exit 0
