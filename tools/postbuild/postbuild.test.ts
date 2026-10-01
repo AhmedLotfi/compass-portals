@@ -281,6 +281,26 @@ describe('hosting rules', () => {
     ).toThrow(/unsupported characters/);
   });
 
+  it('writes prefix rules (a `from` ending in *) for every host', () => {
+    const prefixed = {
+      ...input,
+      redirects: [
+        { from: '/solution/hr_&_payroll/', to: '/products/hr-payroll/', status: 301, reason: '' },
+        { from: '/solution/hr_&_payroll/*', to: '/products/hr-payroll/', status: 301, reason: '' },
+      ] satisfies Redirect[],
+    };
+    expect(netlifyRedirects(prefixed)).toContain(
+      '/solution/hr_&_payroll/* /products/hr-payroll/ 301',
+    );
+    const conf = htaccess(prefixed);
+    expect(conf).toContain('RewriteRule ^solution/hr_&_payroll/$ /products/hr-payroll/ [R=301,L]');
+    expect(conf).toContain('RewriteRule ^solution/hr_&_payroll/.+ /products/hr-payroll/ [R=301,L]');
+    expect(webConfig(prefixed)).toContain('<match url="^solution/hr_&amp;_payroll/.+" />');
+    expect(nginxConf(prefixed)).toContain(
+      'location ~ "^/solution/hr_&_payroll/." { return 301 "/products/hr-payroll/"; }',
+    );
+  });
+
   it('lists hashed bundles in _headers, falling back to patterns past the host limit', () => {
     expect(netlifyHeaders(input)).toContain(
       '/main-ABCDEFGH.js\n  Cache-Control: public, max-age=31536000, immutable',

@@ -1,0 +1,134 @@
+{
+  "id": "products--university-management",
+  "kind": "product",
+  "path": "/products/university-management/",
+  "title": "University Management",
+  "sourceUrl": "https://compassint.org/products/university_management",
+  "seo": {},
+  "hero": {
+    "title": "University Management",
+    "lede": "Smart Management for Modern Universities, Our University Management System streamlines admissions, course registration, scheduling, and finances across multiple campuses. With secure access for students, faculty, and staff, it enhances collaboration, ensures efficiency, and keeps all operations under one unified platform.",
+    "media": "m-e8563e5a89",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our University Management System is a solution designed to streamline and enhance university operations. It integrates various administrative functions, including student admissions, course registration, and academic scheduling, into a single platform. The software features user-friendly interfaces for faculty and staff, promoting effective communication and collaboration, also provision of portals to students for access to academic information is possible with our solution. Detailed reporting tools and KPI tracking help monitor academic performance and institutional efficiency. Additionally, the system supports fee management, financial aid processing, and online payment options, ensuring smooth financial operations. With the help of multi-campus definitions, the software can manage multiple branches through one platform. It also ensures data security and compliance, safeguarding the confidentiality and integrity of all university records</p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Fully integrated solution designed to simplify and enhance academic and administrative operations. It streamlines student admissions, course registration, and academic scheduling into a centralized platform, making it easier for faculty and staff to manage daily tasks efficiently. With dedicated portals for students and faculty, users can securely access academic records, timetables, and communication tools. The system also offers robust financial features, including fee management, online payments, and financial aid processing. It supports multi-campus institutions by enabling centralized control over multiple branches from a single platform. Advanced reporting tools and KPI dashboards provide valuable insights into academic performance and institutional efficiency. Moreover, the system ensures data security and regulatory compliance, safeguarding the integrity and confidentiality of all university information.</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our University Management System is built on a scalable, modular architecture that supports both cloud-based and on-premise deployment options. It features a responsive, mobile-friendly interface optimized for desktops, tablets, and smartphones, ensuring seamless access across devices. The system offers secure role-based access control (RBAC) and supports Single Sign-On (SSO) for enhanced user authentication. Real-time data processing and synchronization ensure accuracy across modules, while a robust API layer allows integration with third-party systems such as learning management platforms, payment gateways, and ERP solutions. The solution supports multi-language and multi-currency environments, making it suitable for diverse institutional needs. Additionally, the system includes automated backup, data encryption, audit trails, and compliance with international data protection standards, ensuring high reliability and security.</p>"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Admissions",
+              "html": ""
+            },
+            {
+              "title": "Academics",
+              "html": ""
+            },
+            {
+              "title": "Fees",
+              "html": ""
+            },
+            {
+              "title": "Transportation",
+              "html": ""
+            },
+            {
+              "title": "Careers",
+              "html": ""
+            },
+            {
+              "title": "Careers",
+              "html": ""
+            },
+            {
+              "title": "Hostel",
+              "html": ""
+            },
+            {
+              "title": "Library",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Products",
+      "path": "/products/"
+    },
+    {
+      "label": "University Management",
+      "path": "/products/university-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-e8563e5a89": {
+      "id": "m-e8563e5a89",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "University Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAoAA4BaJZwCw7YulyBe9WrPT4AA/maDMDUIxZnHp9TZQcZD8869yA86ZtZDciHE2c5Gbh0I6SQfqlv8lEKC03dLwDCjYezlSI7e6r5IqpZ0thjkDfrNcOnK1ySAAAA="
+    }
+  }
+}

@@ -54,3 +54,4 @@ Thumbs.db
 /.lighthouseci
 /playwright-report
 /test-results
+/source-archive/rendered/screens/

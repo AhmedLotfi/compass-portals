@@ -21,13 +21,24 @@ import {
   SITE_ORIGIN,
   SOURCE_ORIGIN,
   ASSET_HOSTS,
+  HTTP_ARCHIVE_DIR,
   ROOT,
 } from './config.ts';
 import { discover, type Inventory } from './discover.ts';
 import { ASSET_MANIFEST, fetchAssets, writeAssetManifest, type AssetManifest } from './fetch.ts';
 import { HttpClient, NetworkPolicyError } from './http.ts';
 import { inventoryMarkdown } from './report.ts';
-import { coverageMarkdown, runSync, snapshotDiff, writeSnapshot, type Waiver } from './sync.ts';
+import { Archive } from './cms/api.ts';
+import { fetchCmsImages } from './cms/fetch.ts';
+import { runCmsSync } from './cms/sync.ts';
+import {
+  coverageMarkdown,
+  runSync,
+  snapshotDiff,
+  writeSnapshot,
+  type SyncResult,
+  type Waiver,
+} from './sync.ts';
 
 // Node's built-in fetch only honours HTTPS_PROXY when NODE_USE_ENV_PROXY=1 is set at startup.
 if (process.env.HTTPS_PROXY && !process.env.NODE_USE_ENV_PROXY) {
@@ -100,19 +111,38 @@ async function runFetch(inventory: Inventory): Promise<AssetManifest> {
     });
     await writeAssetManifest(manifest);
     log(`Assets: ${manifest.assets.length} downloaded, ${manifest.missing.length} missing`);
+    if ((await Archive.open(HTTP_ARCHIVE_DIR)).hasApi()) {
+      const cms = await fetchCmsImages(HTTP_ARCHIVE_DIR, http, log);
+      await writeJson(path.join(REPORTS_DIR, 'cms-images.json'), cms);
+    }
     return manifest;
   } finally {
     await http.save();
   }
 }
 
-async function runSyncStage(inventory: Inventory, assets: AssetManifest): Promise<number> {
+/**
+ * compassint.org's front end loads its content from a CMS API: when the archive has those
+ * responses, the snapshot is built from them (cms/); otherwise from the pages' HTML.
+ */
+async function buildSnapshot(waivers: Waiver[]): Promise<SyncResult> {
+  if ((await Archive.open(HTTP_ARCHIVE_DIR)).hasApi()) {
+    log('Building the snapshot from the archived CMS API');
+    return runCmsSync({
+      archiveDir: HTTP_ARCHIVE_DIR,
+      renderedDir: RENDER_DIR,
+      origin: SITE_ORIGIN,
+      source: SOURCE_ORIGIN,
+      siteHosts: SITE_HOSTS,
+      waivers,
+      log,
+    });
+  }
   const http = new HttpClient({ offline: true, renderedDir: RENDER_DIR });
   await http.load();
-  const waivers = await readJson<Waiver[]>(WAIVERS_FILE, []);
-  const result = await runSync({
-    inventory,
-    assets,
+  return runSync({
+    inventory: await readJson<Inventory>(INVENTORY_FILE),
+    assets: await readJson<AssetManifest>(ASSET_MANIFEST),
     http,
     siteHosts: SITE_HOSTS,
     origin: SITE_ORIGIN,
@@ -121,6 +151,11 @@ async function runSyncStage(inventory: Inventory, assets: AssetManifest): Promis
     waivers,
     log,
   });
+}
+
+async function runSyncStage(): Promise<number> {
+  const waivers = await readJson<Waiver[]>(WAIVERS_FILE, []);
+  const result = await buildSnapshot(waivers);
   await writeFile(path.join(REPORTS_DIR, 'coverage.md'), coverageMarkdown(result));
   await writeJson(path.join(REPORTS_DIR, 'sync.json'), {
     gaps: result.gaps,
@@ -159,14 +194,10 @@ async function main(): Promise<number> {
       await runFetch(await readJson<Inventory>(INVENTORY_FILE));
       return 0;
     case 'sync':
-      return runSyncStage(
-        await readJson<Inventory>(INVENTORY_FILE),
-        await readJson<AssetManifest>(ASSET_MANIFEST),
-      );
+      return runSyncStage();
     case 'all': {
-      const inventory = await runDiscover(false);
-      const assets = await runFetch(inventory);
-      return runSyncStage(inventory, assets);
+      await runFetch(await runDiscover(false));
+      return runSyncStage();
     }
     default:
       console.error(

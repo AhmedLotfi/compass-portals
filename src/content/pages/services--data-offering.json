@@ -1,0 +1,308 @@
+{
+  "id": "services--data-offering",
+  "kind": "service",
+  "path": "/services/data-offering/",
+  "title": "Data Offering",
+  "sourceUrl": "https://compassint.org/services/data_offering",
+  "seo": {},
+  "hero": {
+    "title": "Data Offering",
+    "lede": "We empower your business with smart, AI-driven data solutions that unlock insights and guide better decisions.From data integration to analytics and visualization, we turn raw data into real value.Boost innovation, streamline operations, and stay ahead with data that works for you.",
+    "media": "m-4d0c8f13e4",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-ac0e001e80"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Data offering services provide organizations with the tools and capabilities needed to manage and leverage their data effectively. These services cover the entire data lifecycle from collection and storage to processing, analysis, and governance allowing businesses to transform raw information into valuable insights. By implementing a robust data strategy, companies can enhance operational efficiency, improve decision-making, and gain a competitive edge. Whether dealing with structured or unstructured data, on-premise systems or cloud environments, data offering services ensure that information is accurate, accessible, and secure. In a landscape where data volumes are growing rapidly, these services are essential for any organization aiming to become data-driven and future-ready.</p>"
+        }
+      ]
+    },
+    {
+      "id": "data-management-focus",
+      "title": "Data Management Focus",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-ad051ea28b"
+        },
+        {
+          "type": "richText",
+          "html": "<p>At <strong>Compass International</strong>, we help businesses organize and manage their data so they can make better decisions, faster.</p> <p>Our Data Management service solves these problems by:</p> <ul> <li><p>Putting all your data in one place</p></li> <li><p>Keeping it clean, accurate, and up to date</p></li> <li><p>Making it easy to find and use when you need it</p></li> <li><p>Helping your team work faster with real-time information</p></li> </ul> <p>Whether it’s customer records, sales data, or internal reports — we make sure your data works for you, not against you.</p>"
+        }
+      ]
+    },
+    {
+      "id": "advanced-technical-solutions",
+      "title": "Advanced Technical Solutions",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-e01ae2f850"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Our company emphasizes the importance of efficient data operations, data governance, and a data-driven organizational strategy. Our solutions include:</p> <p>Comprehensive audit and management system</p> <p>Robust security features</p> <p>Advanced document, image, report, and print tools</p> <p>Multi-level approvals across all modules</p> <p>Integration of HR, CRM, Bank Assurance, Data Warehouse, and General Ledger modules</p>"
+        }
+      ]
+    },
+    {
+      "id": "ai-data-transformation",
+      "title": "AI & Data Transformation",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-387a4e5b3a"
+        },
+        {
+          "type": "richText",
+          "html": "<p>AI and data transformation are central to our offerings, providing our clients with:</p> <p>Prescriptive analytics</p> <p>Embedded analytics</p> <p>Predictive analytics</p> <p>Descriptive analytics</p> <p>Our solutions aim to automate and streamline data management, ensuring sustainable and automated data processes. Key features include:</p> <p>Enterprise Service Bus for seamless integration of various insurance services and systems</p> <p>Rate Table Management system for accurate and efficient management of insurance rates</p>"
+        }
+      ]
+    },
+    {
+      "id": "addressing-business-pain-points",
+      "title": "Addressing Business Pain Points",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-50aedcf1b8"
+        },
+        {
+          "type": "richText",
+          "html": "<p>We address typical business concerns such as managing hierarchies, identifying duplicates, establishing data ownership, and automating manual processes. Our solutions comprehensive reporting tools enable management to monitor daily activities and make swift, informed decisions. Additional features include:</p> <p>End-user report engine design tools supporting MS Word templates</p> <p>Customizable and user-friendly reporting</p>"
+        }
+      ]
+    },
+    {
+      "id": "mission-offering",
+      "title": "Mission & Offering",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9311c19d44"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Compass's mission is to deliver exceptional AI and data solutions, achieving client business ambitions through comprehensive data and IT transformation. Our offerings include:</p> <p>A range of services and intellectual property solutions</p> <p>Robust and sustainable data management</p> <p>Enhanced operational efficiency</p>"
+        }
+      ]
+    },
+    {
+      "id": "services-ip-solutions",
+      "title": "Services & IP Solutions",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-b53849ba5a"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Compass's detailed offerings encompass various services and IP solutions aimed at addressing the specific needs of businesses. The services provided include:</p> <p>Business intelligence and analytics</p> <p>Data governance and management</p> <p>IT infrastructure management</p> <p>Custom software development</p> <p>Systems integration and support</p> <p>Our IP solutions are designed to enhance operational capabilities and include:</p> <p>ERP solutions for streamlined business processes</p> <p>Data analytics tools for insightful decision-making</p> <p>Customizable workflow and process automation solutions</p>"
+        }
+      ]
+    },
+    {
+      "id": "comprehensive-offerings",
+      "title": "Comprehensive Offerings",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-5e0f6e7229"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Our offerings highlight the extensive range of services and IP solutions that we provide. Our focus is on delivering end-to-end solutions that cover:</p> <p>Data operations and governance</p> <p>AI-driven data analytics</p> <p>Business process automation</p> <p>IT infrastructure and support</p> <p>Tailored software solutions</p>"
+        }
+      ]
+    },
+    {
+      "id": "transformative-impact",
+      "title": "Transformative Impact",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Compass highlights and takes consideration of the transformative power of AI and data in:</p> <p>Enhancing customer experience</p> <p>Driving operational efficiency</p> <p>Enabling data monetization</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Services",
+      "path": "/services/"
+    },
+    {
+      "label": "Data Offering",
+      "path": "/services/data-offering/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-387a4e5b3a": {
+      "id": "m-387a4e5b3a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "AI & Data Transformation",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAoAA4BaJbACdAEalelx50AA/u0gWb/nWlUI2bNw1gm8iYEKDTawWawB3/YXJ+KGk/8KTnz8qa8KycmoLIlAewAAAA=="
+    },
+    "m-4d0c8f13e4": {
+      "id": "m-4d0c8f13e4",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Data Offering",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQAAoAA4BaJYwC7H8AgpTK6MrNZmFAAP7oUVPTkdcA4QjnnhZO3hb7QjetWAOrI1QSTknDYVWmiqZ8niaR6267R+R8nW0mn2EGV8bA3OdDUxtM5Uhj/LDLAq01onlnKWl1fAAA"
+    },
+    "m-50aedcf1b8": {
+      "id": "m-50aedcf1b8",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Addressing Business Pain Points",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAoAA4BaJZwAAxYov7wAAP6Z5YplWG2vJ7BE0PE9GCDB6775JYDszWXay6U/GPGaRJbGCmp3AERamLxWrx/xjArmqZkAeEBBUAAA"
+    },
+    "m-5e0f6e7229": {
+      "id": "m-5e0f6e7229",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Comprehensive Offerings",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAoAA4BaJYwCdAEQJlulZhkAAP7s38Zdocvozhe985U6EAzrtfZUR+fIl+B2jNXcRyQHp5QbKvNHQcm3v8jnyF0GAAAA"
+    },
+    "m-9311c19d44": {
+      "id": "m-9311c19d44",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Mission & Offering",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAQCdASoQAAoAA4BaJQAAUsLcwAD+7xVG0HubykqBh0azzFpHGjhHN92B/Cg65O2Uii9G6FAg0JEze9Y08oVzCN0y5bRmTHFdqfR8YoAAAA=="
+    },
+    "m-ac0e001e80": {
+      "id": "m-ac0e001e80",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAoAA4BaJYgCdAYt9GbQEYLriAD2oqe8RZz9VEkPodbbM+MvLi/2la2+krCnnfVs9pA03djWxXzuRw9/U25/6epv0K+S3I6tQURblVaXBxGI5x59KxNIyQ38scE1paZvYNQBGAA="
+    },
+    "m-ad051ea28b": {
+      "id": "m-ad051ea28b",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Data Management Focus",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoAA4BaJZwAAujFYUG7PgAA/vSRjuGCJCPgv4NG+CPLN9rLtZNTLiWv2XJf+BS6XAmrhYOv0u15b3wn9zKVFqvMz8ZvMwTbUIAA"
+    },
+    "m-b53849ba5a": {
+      "id": "m-b53849ba5a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Services & IP Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAoAA4BaJQBOgMXX7QLlIsIwLIAA/nMRC2jdxy8QqKr94IXdTWdxtbpTsijpwMrWeYEdXm1CHAsjB8Zw0e67OfhkKyBqCTTk3bpJWxhgesmiA8/9ZfkWOG84AA=="
+    },
+    "m-e01ae2f850": {
+      "id": "m-e01ae2f850",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Advanced Technical Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoAA4BaJZwAAudlomgYNsAA/vN7Ou2/Cr32G19gRf1Wa19m59300Det+xNmYbb6cx+NKEyM0Tqw/0FrwvB/dEnT7wdETdwcAA=="
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "features--business-intelligence",
+  "kind": "page",
+  "path": "/features/business-intelligence/",
+  "title": "Business Intelligence",
+  "sourceUrl": "https://compassint.org/features/business_intelligence",
+  "seo": {},
+  "hero": {
+    "title": "Business Intelligence",
+    "lede": "Harnessing the Power of Data for Informed Decision-Making and Performance Tracking. Compass's advanced Business Intelligence capabilities empower users to extract valuable insights, make informed decisions based on data, and track performance with precision. Featuring interactive visualizations, customizable reports, and real-time monitoring, businesses can analyze data seamlessly. Integration of predictive analytics and forecasting allows users to anticipate trends and take proactive actions. Collaboration tools and sharing features promote a data-driven culture across the organization. Compass's Business Intelligence support optimizes operations, identifies growth opportunities, and fosters sustainable business development.",
+    "media": "m-53d91ecc14",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-0dfc27511c"
+        },
+        {
+          "type": "richText",
+          "html": "<p>The Business Intelligence (BI) capabilities in Compass's solutions empower users to gain valuable insights into business performance. They include KPI monitoring to track performance against set targets, alongside interactive charts, graphs, and dashboards for visualizing data trends. Users can generate customized reports with specific parameters and export them in multiple formats. Compass's BI capabilities supports advanced data analysis techniques like data mining and statistical analysis for deeper insights. Real-time monitoring and alerts enable proactive issue resolution. It seamlessly integrates with diverse data sources within the system and supports self-service analytics, allowing users to explore and analyze data independently. Overall, Compass's Business Intelligence capabilities enhance decision-making and enable businesses to drive growth and operational efficiency through data-driven insights.</p>"
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Features",
+      "path": "/features/"
+    },
+    {
+      "label": "Business Intelligence",
+      "path": "/features/business-intelligence/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-0dfc27511c": {
+      "id": "m-0dfc27511c",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAsAA4BaJZACdH8Agsh1EkC8wAD+CPdtt2Oxrurb3J/U0tdWiXQgfjMjLIOgxYh3QGu4pLGmqEAV6ftRklLz5El1Xy5eQri9Y4oONbtHMMPvQmJrHK+MZMTQAA=="
+    },
+    "m-53d91ecc14": {
+      "id": "m-53d91ecc14",
+      "mime": "image/jpeg",
+      "width": 662,
+      "height": 440,
+      "alt": "Business Intelligence",
+      "widths": [
+        320,
+        480,
+        640,
+        662
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQAAsAA4BaJYwCdAYtpyLmMPtOp0gAAP7p/eQMsyK3GuYon2gFy77v6N4c2SSnPXECZCj73Bj0rn635Lge5TYH/cJZlWreWGVKe819ZzJO+wn+M19OiRMbRlc8h1Y7YhzwCYvLQAA="
+    }
+  }
+}

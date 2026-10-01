@@ -13,6 +13,8 @@
  */
 import { copyFile, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { availableParallelism } from 'node:os';
+import pLimit from 'p-limit';
 import sharp from 'sharp';
 import { optimize } from 'svgo';
 import type { Media, PageDoc, Site } from '../../schema/content.ts';
@@ -77,59 +79,65 @@ export async function buildMedia(options: MediaBuildOptions = {}): Promise<void>
   }
 
   let made = 0;
-  for (const item of mediaIndex.media) {
-    const source = await readFile(path.join(archive, item.archiveFile));
-    if (item.svg) {
-      const cleaned = optimize(source.toString('utf8'), {
-        multipass: true,
-        plugins: [
-          'preset-default',
-          'removeScripts',
-          { name: 'prefixIds', params: { prefix: item.id } },
-        ],
-      }).data;
-      if (await build(path.join(MEDIA_OUT, `${item.id}.svg`), async () => Buffer.from(cleaned)))
-        made++;
-      continue;
-    }
-    const graphic = item.mime === 'image/png' || item.mime === 'image/gif';
-    for (const width of item.widths) {
-      const resized = () => sharp(source).rotate().resize({ width, withoutEnlargement: true });
-      if (
-        await build(path.join(MEDIA_OUT, `${item.id}-${width}.webp`), () =>
-          resized()
-            .webp({ quality: graphic ? 90 : 76, effort: 5 })
-            .toBuffer(),
+  // One image per core: encoding (AVIF above all) is CPU-bound and sharp works per call.
+  const limit = pLimit(availableParallelism());
+  await Promise.all(
+    mediaIndex.media.map((item) =>
+      limit(async () => {
+        const source = await readFile(path.join(archive, item.archiveFile));
+        if (item.svg) {
+          const cleaned = optimize(source.toString('utf8'), {
+            multipass: true,
+            plugins: [
+              'preset-default',
+              'removeScripts',
+              { name: 'prefixIds', params: { prefix: item.id } },
+            ],
+          }).data;
+          if (await build(path.join(MEDIA_OUT, `${item.id}.svg`), async () => Buffer.from(cleaned)))
+            made++;
+          return;
+        }
+        const graphic = item.mime === 'image/png' || item.mime === 'image/gif';
+        for (const width of item.widths) {
+          const resized = () => sharp(source).rotate().resize({ width, withoutEnlargement: true });
+          if (
+            await build(path.join(MEDIA_OUT, `${item.id}-${width}.webp`), () =>
+              resized()
+                .webp({ quality: graphic ? 90 : 76, effort: 5 })
+                .toBuffer(),
+            )
+          )
+            made++;
+          if (
+            await build(path.join(MEDIA_OUT, `${item.id}-${width}.avif`), () =>
+              resized()
+                .avif({ quality: graphic ? 70 : 52, effort: 4 })
+                .toBuffer(),
+            )
+          )
+            made++;
+        }
+        const top = item.widths[item.widths.length - 1]!;
+        if (
+          await build(path.join(MEDIA_OUT, `${item.id}.webp`), () =>
+            readFile(path.join(MEDIA_OUT, `${item.id}-${top}.webp`)),
+          )
         )
-      )
-        made++;
-      if (
-        await build(path.join(MEDIA_OUT, `${item.id}-${width}.avif`), () =>
-          resized()
-            .avif({ quality: graphic ? 70 : 52, effort: 4 })
-            .toBuffer(),
-        )
-      )
-        made++;
-    }
-    const top = item.widths[item.widths.length - 1]!;
-    if (
-      await build(path.join(MEDIA_OUT, `${item.id}.webp`), () =>
-        readFile(path.join(MEDIA_OUT, `${item.id}-${top}.webp`)),
-      )
-    )
-      made++;
-    if (shareIds.has(item.id)) {
-      const og = () =>
-        sharp(source)
-          .rotate()
-          .resize(1200, 630, { fit: 'cover', position: 'attention' })
-          .flatten({ background: '#f3f6f8' })
-          .jpeg({ quality: 82, mozjpeg: true })
-          .toBuffer();
-      if (await build(path.join(MEDIA_OUT, `${item.id}-og.jpg`), og)) made++;
-    }
-  }
+          made++;
+        if (shareIds.has(item.id)) {
+          const og = () =>
+            sharp(source)
+              .rotate()
+              .resize(1200, 630, { fit: 'cover', position: 'attention' })
+              .flatten({ background: '#f3f6f8' })
+              .jpeg({ quality: 82, mozjpeg: true })
+              .toBuffer();
+          if (await build(path.join(MEDIA_OUT, `${item.id}-og.jpg`), og)) made++;
+        }
+      }),
+    ),
+  );
 
   // Documents linked from pages move to /files/.
   const assets = await readJson<AssetManifest>(

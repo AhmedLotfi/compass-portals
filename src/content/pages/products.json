@@ -1,0 +1,293 @@
+{
+  "id": "products",
+  "kind": "product-index",
+  "path": "/products/",
+  "title": "Products",
+  "sourceUrl": "https://compassint.org/solutions",
+  "seo": {},
+  "hero": {
+    "title": "Products",
+    "lede": "The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s",
+    "ctas": []
+  },
+  "sections": [],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Products",
+      "path": "/products/"
+    }
+  ],
+  "children": [
+    {
+      "id": "products--hr-payroll",
+      "path": "/products/hr-payroll/",
+      "title": "HR & Payroll",
+      "summary": "Enhance your organization's HR and payroll operations with our advanced and customizable module. Our HR system facilitates seamless management of employee onboarding, data administration, payroll processing, and more. With integrated compliance features and powerful reporting tools, our configurable solution ensures accuracy, transparency, and operational efficiency, empowering your HR department.",
+      "media": "m-1224c21e8a"
+    },
+    {
+      "id": "products--finance-management",
+      "path": "/products/finance-management/",
+      "title": "Finance Management",
+      "summary": "Our financial solution offers more than just accounting. It delivers comprehensive financial functionalities tailored to meet your business requirements. Manage invoicing, expense tracking, budgeting, and cash flow seamlessly with our customizable solution.",
+      "media": "m-4e2f6b33ba"
+    },
+    {
+      "id": "products--fleet-management",
+      "path": "/products/fleet-management/",
+      "title": "Fleet Management",
+      "summary": "Optimize your fleet operations with an advanced solution that showcases features for tracking, route planning, and real-time vehicle monitoring. Gain insights, generate detailed reports, and manage various related tasks effortlessly with our user-friendly interface, enhancing your fleet management capabilities",
+      "media": "m-44f131282f"
+    },
+    {
+      "id": "products--property-management",
+      "path": "/products/property-management/",
+      "title": "Property Management",
+      "summary": "Manage your properties with our configurable and customizable solution designed for property owners. Streamline lease management, maintenance requests through our integrated systems. Simplify rent collections, track your monthly/yearly expenses, and benefit from our in-system reporting capabilities for valuable insights",
+      "media": "m-3dd99ee371"
+    },
+    {
+      "id": "products--projects-management",
+      "path": "/products/projects-management/",
+      "title": "Projects Management",
+      "summary": "Elevate your project management capabilities with our feature-rich solution. Efficiently track project progress, allocate resources effectively, and collaborate seamlessly with your team. Gain real-time insights into active and closed projects, monitor active laborers, and track the total value for each project. Get a clear look into the progress of each project through the available analytics and KPI’s designed for each contributing factor. Our intuitive interface and comprehensive project billing and costing features ensure smooth management of projects",
+      "media": "m-d1d758189a"
+    },
+    {
+      "id": "products--retail-management",
+      "path": "/products/retail-management/",
+      "title": "Retail Management",
+      "summary": "Transform your retail operations with our comprehensive management module. Streamline inventory, sales, and customer data to optimize store performance. From seamless point-of-sale transactions to advanced inventory tracking and real-time stock level management, our solution ensures you stay ahead. Gain insights into sales trends, items sold, and customer preferences with a fully- fed database that centralizes customer information. Empower your decisions with detailed analytics, driving growth and delivering exceptional retail experiences",
+      "media": "m-a3d703ec91"
+    },
+    {
+      "id": "products--contracts-management",
+      "path": "/products/contracts-management/",
+      "title": "Contracts Management",
+      "summary": "Specifically designed for Consulting and Outsourcing Firms, our Contracts Management solution facilitates the registration of contract details and payment schedules analyzing the profitability of each contract. The system automates payroll costing and payments, integrating with Finance for comprehensive financial management",
+      "media": "m-bb8fbcd880"
+    },
+    {
+      "id": "products--charity-management",
+      "path": "/products/charity-management/",
+      "title": "Charity Management",
+      "summary": "Our charity solution integrates departments, streamlines workflows, and provides detailed project and donor reports for enhanced transparency and efficiency.",
+      "media": "m-42a55ad4cc"
+    },
+    {
+      "id": "products--school-management",
+      "path": "/products/school-management/",
+      "title": "School Management",
+      "summary": "Our comprehensive School Management System is designed to simplify daily operations across single or multiple branches. With features like multi-language and multi-currency support, automated SMS/email notifications, and secure online payments, the system empowers schools to manage enrollment, attendance, grades, finances, and communication all in one centralized platform. Built for efficiency, scalability, and security, it's the ideal solution for modern educational institutions.",
+      "media": "m-9e6e617d6f"
+    },
+    {
+      "id": "products--insurance-management",
+      "path": "/products/insurance-management/",
+      "title": "Insurance Management",
+      "summary": "Our customizable Insurance solution is crafted to efficiently manage and control processes within insurance companies, adhering to international specifications and configurations to meet diverse needs.",
+      "media": "m-db47a42310"
+    },
+    {
+      "id": "products--university-management",
+      "path": "/products/university-management/",
+      "title": "University Management",
+      "summary": "Smart Management for Modern Universities, Our University Management System streamlines admissions, course registration, scheduling, and finances across multiple campuses. With secure access for students, faculty, and staff, it enhances collaboration, ensures efficiency, and keeps all operations under one unified platform.",
+      "media": "m-e8563e5a89"
+    }
+  ],
+  "media": {
+    "m-1224c21e8a": {
+      "id": "m-1224c21e8a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "HR & Payroll",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAoAA4BaJZwAD4tPvKXqXDy+zAAA/u2jVTqhAPwKWURI2T78GOHclj87SbjLCSimPQE8PW5H4yJkzWTT+gCcIc6rRIeGiFEnx82doNyMAAAA"
+    },
+    "m-3dd99ee371": {
+      "id": "m-3dd99ee371",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Property Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoAA4BaJZwAAjxCJBJ4igAA/uqnLD1T3B6/2WTQ/54kQ7k+Vn33BotHdSdYn7gP7cvinrCAXnNhGOzj3WRIgxG4pix3nj1/YimAl/9ocAAA"
+    },
+    "m-42a55ad4cc": {
+      "id": "m-42a55ad4cc",
+      "mime": "image/jpeg",
+      "width": 6708,
+      "height": 4472,
+      "alt": "Charity Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQAgCdASoQAAsAA4BaJZACdAYtfyKJE9yWqEgA/rgMrvFepAmRt3o5KlrbM7AaaclURy17Oz7DqolwQ/l16O1hNMbfdkisfn9NsMj0/LNieYV6KvGesgvGv6fV23m7XFQDNMBAEnk/rwsKg5ISX1ZAAAA="
+    },
+    "m-44f131282f": {
+      "id": "m-44f131282f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Fleet Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAoAA4BaJZQCdAD0t+n9YtwA/vQ0mORcVH1I9sBq1e9Yml9jBnjh2GhY+UVpFnhyFuCvN6wNYRLOwR4AAA=="
+    },
+    "m-4e2f6b33ba": {
+      "id": "m-4e2f6b33ba",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Finance Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQAAoAA4BaJZwAD4zMhM7+GnAA/sogO9IQhlQRdt94dW+jcH9dZ/GZzAiN9kmEPr+4iXIXmt+JdjyIEw98jl0fHSsyBg4BBIZ19grkke4YfnHuRTP14VDudIdHvaidi3seDYACXaAAAA=="
+    },
+    "m-9e6e617d6f": {
+      "id": "m-9e6e617d6f",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 731,
+      "alt": "School Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAkAA4BaJQBOgCE7pyOecADN6cKEx8rHC3LGHdCKeCMjVov8R10CBQf1pQDVIZclRMj6L4wDxQByQt9Dh8cpIo3RH0DsPUvarmtEG6M7PgAA"
+    },
+    "m-a3d703ec91": {
+      "id": "m-a3d703ec91",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAoAA4BaJQBOgBbUixkUAP7O7J6+hecLeRxW8o1z9GBW8I1BOf76s/7+Fc362GEuguFVauz6Vw60ezAdW4jpH3M6IqubvOViywjn5Px3UzkAAAA="
+    },
+    "m-bb8fbcd880": {
+      "id": "m-bb8fbcd880",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 450,
+      "alt": "Contracts Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        800
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJZQC7AC1wCt3AAD+8YEbLv9x7RvSIXE9RCkbvERuJluEqthxG1CfKcSwM/Ea4VrMcIoSjJ3BTC03BZxQAA=="
+    },
+    "m-d1d758189a": {
+      "id": "m-d1d758189a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Projects Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJYgCdAD9RiUpAAD+8DVFp3o7pTpdYC8JZR7cVsT2G6qc7RXblTHMFjWy4h4/8z/qCwkNblsXVU8zL+7DS9KKvxjIvZekFXOB17bVgAA="
+    },
+    "m-db47a42310": {
+      "id": "m-db47a42310",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Insurance Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoAA4BaJZQC7AYrnsURQIuAAP7U+rfEBT0Zme7oJ+Ik0x9i+wT+HHKatoa8exbkhVVsdO1MdEyPuSvw5to/BNDEYNeavrZ1IAAA"
+    },
+    "m-e8563e5a89": {
+      "id": "m-e8563e5a89",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "University Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAoAA4BaJZwCw7YulyBe9WrPT4AA/maDMDUIxZnHp9TZQcZD8869yA86ZtZDciHE2c5Gbh0I6SQfqlv8lEKC03dLwDCjYezlSI7e6r5IqpZ0thjkDfrNcOnK1ySAAAA="
+    }
+  }
+}

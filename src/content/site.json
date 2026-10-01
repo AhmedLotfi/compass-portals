@@ -1,0 +1,376 @@
+{
+  "name": "Compass International",
+  "tagline": "Business-driven technology",
+  "origin": "https://compassint.org",
+  "source": "https://compassint.org",
+  "logo": "m-ddef0ddcd8",
+  "logoTone": "light",
+  "languages": [
+    {
+      "code": "en",
+      "dir": "ltr"
+    }
+  ],
+  "navigation": {
+    "header": [
+      {
+        "label": "Home",
+        "href": "/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "About US",
+        "href": "/about/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "Products",
+        "href": "/products/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "Services",
+        "href": "/services/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "Features",
+        "href": "/features/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "Industries",
+        "href": "/industries/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "Get Started",
+        "href": "/contact/",
+        "external": false,
+        "children": []
+      }
+    ],
+    "footer": [
+      {
+        "label": "Products",
+        "href": "/products/",
+        "external": false,
+        "children": [
+          {
+            "label": "Charity Management",
+            "href": "/products/charity-management/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Insurance Management",
+            "href": "/products/insurance-management/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "HR & Payroll",
+            "href": "/products/hr-payroll/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Finance Management",
+            "href": "/products/finance-management/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Fleet Management",
+            "href": "/products/fleet-management/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Property Management",
+            "href": "/products/property-management/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Projects Management",
+            "href": "/products/projects-management/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Retail Management",
+            "href": "/products/retail-management/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Contracts Management",
+            "href": "/products/contracts-management/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "School Management",
+            "href": "/products/school-management/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "University Management",
+            "href": "/products/university-management/",
+            "external": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "Services",
+        "href": "/services/",
+        "external": false,
+        "children": [
+          {
+            "label": "System Integration",
+            "href": "/services/system-integration/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Custom Development",
+            "href": "/services/custom-development/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Data Offering",
+            "href": "/services/data-offering/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Artificial Intelligence",
+            "href": "/services/artificial-intelligence/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Web Development",
+            "href": "/services/web-development/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Mobile Application Development",
+            "href": "/services/mobile-application-development/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "ICT Manpower & Outsourcing",
+            "href": "/services/ict-manpower-outsourcing/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "ERP Development",
+            "href": "/services/erp-development/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Metaverse solution",
+            "href": "/services/metaverse-solution/",
+            "external": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "Features",
+        "href": "/features/",
+        "external": false,
+        "children": [
+          {
+            "label": "Omni channel Platform",
+            "href": "/features/omni-channel-platform/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Invoicing",
+            "href": "/features/invoicing/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Business Intelligence",
+            "href": "/features/business-intelligence/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Other Features",
+            "href": "/features/other-features/",
+            "external": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "Industries",
+        "href": "/industries/",
+        "external": false,
+        "children": [
+          {
+            "label": "Retail",
+            "href": "/industries/retail/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "IT Services",
+            "href": "/industries/it-services/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Government",
+            "href": "/industries/government/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Real Estate",
+            "href": "/industries/real-estate/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Consulting",
+            "href": "/industries/consulting/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Construction",
+            "href": "/industries/construction/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Financial Services",
+            "href": "/industries/financial-services/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Legal",
+            "href": "/industries/legal/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Whole Sales Distribution",
+            "href": "/industries/whole-sales-distribution/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Non- Profit Organizations",
+            "href": "/industries/non-profit-organizations/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "Health Care",
+            "href": "/industries/health-care/",
+            "external": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "Home",
+        "href": "/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "About Us",
+        "href": "/about/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "FAQs",
+        "href": "/faqs/",
+        "external": false,
+        "children": []
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy-policy/",
+        "external": false,
+        "children": []
+      }
+    ]
+  },
+  "contact": {
+    "emails": [
+      "sales@compassint.org"
+    ],
+    "phones": [
+      {
+        "display": "+971 45754693",
+        "tel": "tel:+97145754693"
+      },
+      {
+        "display": "+1 64 7673 7084",
+        "tel": "tel:+16476737084"
+      }
+    ],
+    "address": [
+      "Palace Tower 1, Dubai Silicon Oasis, Dubai, UAE"
+    ]
+  },
+  "social": [
+    {
+      "network": "linkedin",
+      "url": "https://www.linkedin.com/company/compass-int/"
+    }
+  ],
+  "apps": [],
+  "footer": {
+    "copyright": "All Rights Reserved. © Compass International 2021."
+  },
+  "media": {
+    "m-ddef0ddcd8": {
+      "id": "m-ddef0ddcd8",
+      "mime": "image/webp",
+      "width": 225,
+      "height": 160,
+      "alt": "Compass International",
+      "widths": [
+        225
+      ],
+      "svg": false
+    }
+  },
+  "snapshot": {
+    "syncedAt": "2026-10-01T03:48:32.757Z",
+    "pages": 45,
+    "media": 131
+  }
+}

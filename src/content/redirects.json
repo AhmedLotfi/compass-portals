@@ -1,0 +1,664 @@
+{
+  "redirects": [
+    {
+      "from": "/about-us/",
+      "to": "/about/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/features/business_intelligence/",
+      "to": "/features/business-intelligence/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/features/business_intelligence/*",
+      "to": "/features/business-intelligence/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/features/invoicing/*",
+      "to": "/features/invoicing/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/features/omni_channel_platform/",
+      "to": "/features/omni-channel-platform/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/features/omni_channel_platform/*",
+      "to": "/features/omni-channel-platform/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/features/other_features/",
+      "to": "/features/other-features/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/features/other_features/*",
+      "to": "/features/other-features/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/home/",
+      "to": "/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/home/partner-details/",
+      "to": "/partners/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/industries/construction/*",
+      "to": "/industries/construction/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/consulting/*",
+      "to": "/industries/consulting/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/financial_services/",
+      "to": "/industries/financial-services/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/industries/financial_services/*",
+      "to": "/industries/financial-services/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/government_/",
+      "to": "/industries/government/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/industries/government_/*",
+      "to": "/industries/government/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/health_care/",
+      "to": "/industries/health-care/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/industries/health_care/*",
+      "to": "/industries/health-care/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/it_services/",
+      "to": "/industries/it-services/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/industries/it_services/*",
+      "to": "/industries/it-services/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/legal/*",
+      "to": "/industries/legal/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/non-_profit_organizations/",
+      "to": "/industries/non-profit-organizations/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/industries/non-_profit_organizations/*",
+      "to": "/industries/non-profit-organizations/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/real_estate/",
+      "to": "/industries/real-estate/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/industries/real_estate/*",
+      "to": "/industries/real-estate/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/retail/*",
+      "to": "/industries/retail/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/industries/whole_sales_distribution/",
+      "to": "/industries/whole-sales-distribution/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/industries/whole_sales_distribution/*",
+      "to": "/industries/whole-sales-distribution/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/charity_management/",
+      "to": "/products/charity-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/charity_management/*",
+      "to": "/products/charity-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/contracts_management/",
+      "to": "/products/contracts-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/contracts_management/*",
+      "to": "/products/contracts-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/finance_management/",
+      "to": "/products/finance-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/finance_management/*",
+      "to": "/products/finance-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/fleet_management/",
+      "to": "/products/fleet-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/fleet_management/*",
+      "to": "/products/fleet-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/hr_&_payroll/",
+      "to": "/products/hr-payroll/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/hr_&_payroll/*",
+      "to": "/products/hr-payroll/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/insurance_management/",
+      "to": "/products/insurance-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/insurance_management/*",
+      "to": "/products/insurance-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/projects_management/",
+      "to": "/products/projects-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/projects_management/*",
+      "to": "/products/projects-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/property_management/",
+      "to": "/products/property-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/property_management/*",
+      "to": "/products/property-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/retail_management/",
+      "to": "/products/retail-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/retail_management/*",
+      "to": "/products/retail-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/school_management/",
+      "to": "/products/school-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/school_management/*",
+      "to": "/products/school-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/products/university_management/",
+      "to": "/products/university-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/products/university_management/*",
+      "to": "/products/university-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/request-demo/",
+      "to": "/contact/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/artificial_intelligence/",
+      "to": "/services/artificial-intelligence/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/artificial_intelligence/*",
+      "to": "/services/artificial-intelligence/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/service/custom_development/",
+      "to": "/services/custom-development/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/custom_development/*",
+      "to": "/services/custom-development/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/service/data_offering/",
+      "to": "/services/data-offering/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/data_offering/*",
+      "to": "/services/data-offering/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/service/erp_development/",
+      "to": "/services/erp-development/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/erp_development/*",
+      "to": "/services/erp-development/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/service/ict_manpower_&_outsourcing/",
+      "to": "/services/ict-manpower-outsourcing/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/ict_manpower_&_outsourcing/*",
+      "to": "/services/ict-manpower-outsourcing/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/service/metaverse_solution/",
+      "to": "/services/metaverse-solution/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/metaverse_solution/*",
+      "to": "/services/metaverse-solution/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/service/mobile_application_development/",
+      "to": "/services/mobile-application-development/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/mobile_application_development/*",
+      "to": "/services/mobile-application-development/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/service/system_integration/",
+      "to": "/services/system-integration/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/system_integration/*",
+      "to": "/services/system-integration/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/service/web_development/",
+      "to": "/services/web-development/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/service/web_development/*",
+      "to": "/services/web-development/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/services/artificial_intelligence/",
+      "to": "/services/artificial-intelligence/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/services/artificial_intelligence/*",
+      "to": "/services/artificial-intelligence/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/services/custom_development/",
+      "to": "/services/custom-development/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/services/custom_development/*",
+      "to": "/services/custom-development/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/services/data_offering/",
+      "to": "/services/data-offering/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/services/data_offering/*",
+      "to": "/services/data-offering/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/services/erp_development/",
+      "to": "/services/erp-development/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/services/erp_development/*",
+      "to": "/services/erp-development/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/services/ict_manpower_&_outsourcing/",
+      "to": "/services/ict-manpower-outsourcing/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/services/ict_manpower_&_outsourcing/*",
+      "to": "/services/ict-manpower-outsourcing/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/services/metaverse_solution/",
+      "to": "/services/metaverse-solution/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/services/metaverse_solution/*",
+      "to": "/services/metaverse-solution/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/services/mobile_application_development/",
+      "to": "/services/mobile-application-development/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/services/mobile_application_development/*",
+      "to": "/services/mobile-application-development/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/services/system_integration/",
+      "to": "/services/system-integration/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/services/system_integration/*",
+      "to": "/services/system-integration/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/services/web_development/",
+      "to": "/services/web-development/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/services/web_development/*",
+      "to": "/services/web-development/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/charity_management/",
+      "to": "/products/charity-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/charity_management/*",
+      "to": "/products/charity-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/contracts_management/",
+      "to": "/products/contracts-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/contracts_management/*",
+      "to": "/products/contracts-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/finance_management/",
+      "to": "/products/finance-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/finance_management/*",
+      "to": "/products/finance-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/fleet_management/",
+      "to": "/products/fleet-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/fleet_management/*",
+      "to": "/products/fleet-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/hr_&_payroll/",
+      "to": "/products/hr-payroll/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/hr_&_payroll/*",
+      "to": "/products/hr-payroll/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/insurance_management/",
+      "to": "/products/insurance-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/insurance_management/*",
+      "to": "/products/insurance-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/projects_management/",
+      "to": "/products/projects-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/projects_management/*",
+      "to": "/products/projects-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/property_management/",
+      "to": "/products/property-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/property_management/*",
+      "to": "/products/property-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/retail_management/",
+      "to": "/products/retail-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/retail_management/*",
+      "to": "/products/retail-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/school_management/",
+      "to": "/products/school-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/school_management/*",
+      "to": "/products/school-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solution/university_management/",
+      "to": "/products/university-management/",
+      "status": 301,
+      "reason": "old URL"
+    },
+    {
+      "from": "/solution/university_management/*",
+      "to": "/products/university-management/",
+      "status": 301,
+      "reason": "old URL with a per-visit ciphertext"
+    },
+    {
+      "from": "/solutions/",
+      "to": "/products/",
+      "status": 301,
+      "reason": "old URL"
+    }
+  ]
+}

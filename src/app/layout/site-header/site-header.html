@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="frame site-header__bar">
-    <a class="brand" routerLink="/">
+    <a class="brand" [class.brand--plate]="logoOnDark" routerLink="/">
       @if (logo) {
         <app-media-image
           class="brand__logo"
@@ -16,7 +16,7 @@
 
     <nav class="primary-nav" [attr.aria-label]="'mainNavigation' | copy">
       <ul class="primary-nav__list">
-        @for (item of site.navigation.header; track item.href + item.label) {
+        @for (item of navItems; track item.href + item.label) {
           <li class="primary-nav__item">
             @if (item.children.length) {
               <app-nav-menu [item]="item" />
@@ -41,7 +41,7 @@
       }
       @if (contactPath) {
         <a class="btn btn--ink site-header__cta" [routerLink]="contactPath">{{
-          'contactUs' | copy
+          contactItem?.label ?? ('contactUs' | copy)
         }}</a>
       }
       <button

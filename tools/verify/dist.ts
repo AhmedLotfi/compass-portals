@@ -108,7 +108,15 @@ export function allowedText(
   page: PageDoc | undefined,
   copy: Record<string, string>,
 ): Allowed {
-  const corpus = [...snapshotText(site), ...(page ? snapshotText(page) : [])].join('\n');
+  // Embeds name their host ("Loads content from google.com"): the host of the site's own embed URL.
+  const embedHosts = (page?.sections ?? [])
+    .flatMap((section) => section.blocks)
+    .flatMap((block) =>
+      block.type === 'embed' ? [comparable(new URL(block.url).hostname.replace(/^www\./, ''))] : [],
+    );
+  const corpus = [...snapshotText(site), ...(page ? snapshotText(page) : []), ...embedHosts].join(
+    '\n',
+  );
   const literals = new Set<string>();
   const templates: RegExp[] = [];
   const escape = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

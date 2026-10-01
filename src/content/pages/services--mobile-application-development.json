@@ -1,0 +1,143 @@
+{
+  "id": "services--mobile-application-development",
+  "kind": "service",
+  "path": "/services/mobile-application-development/",
+  "title": "Mobile Application Development",
+  "sourceUrl": "https://compassint.org/services/mobile_application_development",
+  "seo": {},
+  "hero": {
+    "title": "Mobile Application Development",
+    "lede": "Our role at Compass is transforming ideas into powerful mobile applications designed for seamless performance and user engagement. by our experience in cross-platform development, we create solutions that are secure, scalable, and accessible.",
+    "media": "m-3296354ec2",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-1fb825f2c8"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Compass International offers comprehensive Mobile Application Development services, leveraging our dedicated team's expertise in creating custom applications across multiple platforms. Our specialization includes:</p> <p>Apple iOS</p> <p>Android</p> <p>Windows Phone 8</p> <p>BlackBerry OS</p> <p>Our team excels in translating client requirements into innovative and user-friendly mobile solutions, prioritizing functionality, security, and a seamless user experience<br></p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-c8ec705a54"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Cross-Platform Mobile Development: Expertise in programming for diverse mobile platforms, ensuring broad accessibility and functionality</p> <p>E-Government Solutions: Extensive experience in developing mobile applications tailored for efficient and secure e-government services</p> <p>GCC Market Insight: In-depth understanding and experience in catering mobile solutions that align with the specific needs and preferences of GCC markets</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-2108d20c7a"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Robust Technical Team Across UAE, India, and Egypt: Our strong development presence spans UAE, India, and Egypt, enabling us to cater comprehensively to mobile application development needs both offshore and locally in the UAE</p> <p>Advanced Content Management Solutions: We implement sophisticated tools and strategies to manage and update mobile app content effectively, ensuring continuous relevance and enhancing user engagement</p> <p>Commitment to High-Quality Standards: At Compass International, we uphold stringent quality benchmarks throughout the mobile application development process, from design to functionality, ensuring exceptional user experiences are consistently delivered</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Services",
+      "path": "/services/"
+    },
+    {
+      "label": "Mobile Application Development",
+      "path": "/services/mobile-application-development/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-1fb825f2c8": {
+      "id": "m-1fb825f2c8",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAoAA4BaJbACdH8AEYsVSIdoAAD+8x11F4bZvxcky0ifj8WSlTVail98Tt1Ds43dYrChLVSfN4WqmPk9Kc+EsDb+eqvfvUHboAAA"
+    },
+    "m-2108d20c7a": {
+      "id": "m-2108d20c7a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQAgCdASoQAAoAA4BaJQBOhxGY5Ur0WHHxgMy8AAD+7lpc2V2LNnjcbZHu6z+915ew6A5jovmnyIUscS/F7LlmKDUSPZHXPAmqO9jLltoTgh11TuutAjuKC2sUI+gwgiovbXkLcEwl0ILq5lOOQAAA"
+    },
+    "m-3296354ec2": {
+      "id": "m-3296354ec2",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Mobile Application Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAoAA4BaJbACdAEDjjuUoAD+9SMf4Vmdpx+n3LAL1LmC9cywFxRutIp8XEJPSZLRMo6IvuwZYJgRSYtzUd1UGk3R7JXCn+k3AlO5Q4pc4AAA"
+    },
+    "m-c8ec705a54": {
+      "id": "m-c8ec705a54",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAoAA4BaJagCdH8ACu5hCGAA/qnPVPbfk8GsGRFcCnGBlXhegLDNMhJcquRTIwjnPk+JWv0/4kyj7yLIDuR5/t2DHglyu8rfNwX4XS7oHa0lgejB+grBsuSAAA=="
+    }
+  }
+}

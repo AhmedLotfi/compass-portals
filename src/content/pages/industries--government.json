@@ -1,0 +1,49 @@
+{
+  "id": "industries--government",
+  "kind": "page",
+  "path": "/industries/government/",
+  "title": "Government",
+  "sourceUrl": "https://compassint.org/industries/government_",
+  "seo": {},
+  "hero": {
+    "title": "Government",
+    "lede": "At Compass, we provide secure, scalable, and efficient IT and software solutions tailored for government entities. Our technologies help streamline operations, enhance public service delivery, and support digital transformation across various governmental departments. With a strong focus on compliance, security, and performance, Compass empowers governments to operate more transparently, efficiently, and effectively.",
+    "media": "m-0b351bb561",
+    "ctas": []
+  },
+  "sections": [],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Industries",
+      "path": "/industries/"
+    },
+    {
+      "label": "Government",
+      "path": "/industries/government/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-0b351bb561": {
+      "id": "m-0b351bb561",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Government",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAoAA4BaJZACdAC9O+V82OgA3jRZ6vaZ9z2Dyo+Wd7VhkEct1ZUuAk6g8+qnYUVT+2P9XbdFguwp5ak2twL3kUZ9cXM/bpV6vK4AAAA="
+    }
+  }
+}

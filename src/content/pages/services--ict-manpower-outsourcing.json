@@ -1,0 +1,329 @@
+{
+  "id": "services--ict-manpower-outsourcing",
+  "kind": "service",
+  "path": "/services/ict-manpower-outsourcing/",
+  "title": "ICT Manpower & Outsourcing",
+  "sourceUrl": "https://compassint.org/services/ict_manpower_%26_outsourcing",
+  "seo": {},
+  "hero": {
+    "title": "ICT Manpower & Outsourcing",
+    "lede": "We provide skilled IT professionals and outsourcing solution to enhance business operations. Our flexible approach ensures access to specialized expertise to drive efficiency and growth.",
+    "media": "m-e94c6c09cc",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-d4bf75aca8"
+        },
+        {
+          "type": "richText",
+          "html": "<p>At Compass International, we offer integrated IT Manpower and Outsourcing Services designed to meet your staffing needs and streamline your operations with skilled professionals and comprehensive solutions. Whether you need temporary support, long-term project augmentation, or complete IT outsourcing, we provide flexible and reliable solutions to ensure your business thrives</p>"
+        }
+      ]
+    },
+    {
+      "id": "flexible-staffing-solutions",
+      "title": "Flexible Staffing Solutions",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9280f45e88"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Tailored staffing solutions to supplement your team during peak workloads or specific project phases. Our scalable approach ensures you have the right resources, whether you need developers, analysts, or IT specialists</p>"
+        }
+      ]
+    },
+    {
+      "id": "diverse-skillsets",
+      "title": "Diverse Skillsets",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-35e27a829c"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Access a diverse pool of IT professionals proficient in various technologies and domains, from software development to cybersecurity, ensuring we meet your specific technical requirements</p>"
+        }
+      ]
+    },
+    {
+      "id": "customized-recruitment",
+      "title": "Customized Recruitment",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-dced448e4d"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Our recruitment process focuses on cultural fit and technical expertise. We conduct thorough screening and assessment to align candidates with your company culture and project needs, ensuring seamless integration and productivity</p>"
+        }
+      ]
+    },
+    {
+      "id": "training-development",
+      "title": "Training & Development",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-be2810c118"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Continuous learning is integral in the fast-paced IT landscape. We provide ongoing training and development programs to upgrade skills and keep our professionals abreast of the latest technologies and industry trends, ensuring optimal project outcomes</p>"
+        }
+      ]
+    },
+    {
+      "id": "end-to-end-it-solutions",
+      "title": "End- To- End IT Solutions",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-fb61d4288f"
+        },
+        {
+          "type": "richText",
+          "html": "<p>At <strong>Compass International</strong>, we offer fully integrated IT outsourcing solutions that address every aspect of your technical needs—from infrastructure management to software development and application support. Our services include:</p> <ul> <li><p><strong>IT Infrastructure Management</strong>: Operating and maintaining systems and networks to ensure business continuity and data security.</p></li> <li><p><strong>Custom Software Development</strong>: Designing and developing advanced applications tailored to your business requirements.</p></li> <li><p><strong>Application Support &amp; Maintenance</strong>: Ensuring stable performance, issue resolution, and regular updates aligned with your business growth.</p></li> <li><p><strong>IT Helpdesk Services</strong>: Providing day-to-day support to end users and resolving technical issues quickly and efficiently.</p></li> </ul> <p>With a specialized team and strong regional experience, we enable you to focus on your core business while we manage and enhance your IT environment with professionalism and reliability.</p>"
+        }
+      ]
+    },
+    {
+      "id": "cost-effective-solutions",
+      "title": "Cost- Effective Solutions",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-a77fce0c13"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Reduce Operational Costs with Our Cost-Effective Outsourcing Models<br>At Compass International, we help you reduce operational costs through flexible and cost-effective outsourcing models that allow you to control resources optimally. We offer scalable outsourcing solutions, meaning you can adjust resources based on the changing demands of your business.</p> <p>Benefits of the Cost-Effective Outsourcing Model:<br>Cost Savings: Reducing the need for permanent hiring or investing in costly infrastructure.</p> <p>Resource Flexibility: Quickly adjusting to increasing or decreasing project demands, ensuring budget optimization.</p> <p>Improved Efficiency: Accessing specialists without the need for costly training or recruitment of new employees.</p> <p>We are committed to providing cost-effective solutions that meet your business needs, without compromising on performance or service quality, enabling you to achieve sustainable growth and enhanced operational efficiency.</p>"
+        }
+      ]
+    },
+    {
+      "id": "global-delivery-model",
+      "title": "Global Delivery Model",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-b00d428f1f"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Leveraging our global delivery model, we ensure seamless service across different locations. Our distributed teams collaborate effectively to provide around-the-clock support and leverage diverse expertise</p>"
+        }
+      ]
+    },
+    {
+      "id": "quality-assurance",
+      "title": "Quality Assurance",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-8deb0ae0d7"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Quality is paramount in our outsourcing services. We adhere to stringent quality assurance processes to maintain high standards in service delivery, performance, and security, ensuring reliability and consistency</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Services",
+      "path": "/services/"
+    },
+    {
+      "label": "ICT Manpower & Outsourcing",
+      "path": "/services/ict-manpower-outsourcing/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-35e27a829c": {
+      "id": "m-35e27a829c",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Diverse Skillsets",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAoAA4BaJZwAAudmMW4o6AD++cJScIlNRcO38THVUsycdMEoUvRC8+AAAA=="
+    },
+    "m-8deb0ae0d7": {
+      "id": "m-8deb0ae0d7",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Quality Assurance",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoAA4BaJbACdAEPCSYo1zKAAP7mAZbr2hjwYNLgKlHOoZFZd41yEwclPzrrBwToyG2qq6QyWR30TNtVXPPj5YPY4Wk0w4bT5ci2cXw7wxAA"
+    },
+    "m-9280f45e88": {
+      "id": "m-9280f45e88",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Flexible Staffing Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAoAA4BaJYwCdIIjECVEScRxQAD1Tt5sQ/mUQ3CU5lyTpZCK5Er2kQLqHAUNmBObwTu2NP1I9UnzIMO1+8govgRE91BqtwRc7whtGwVZuDIwAAA="
+    },
+    "m-a77fce0c13": {
+      "id": "m-a77fce0c13",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Cost- Effective Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAoAA4BaJQBOg7QANAO1dAAA/vaaIXxEonnx/QcIEkgZNPKkvhLj6WHO7GtO28gix9/cRv+iOBPAAAA="
+    },
+    "m-b00d428f1f": {
+      "id": "m-b00d428f1f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Global Delivery Model",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJZACdADC+7wl4AD+0c06LaGFlXqHweWcmUn4SYa759HwPVvuJKsxDOtF1UOQaSab1pmrkJmlx8+G6/96fUj1OM2NVvIvQTt3arvpAAA="
+    },
+    "m-be2810c118": {
+      "id": "m-be2810c118",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Training & Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJYgCdADxIjLONIIAAP7t2M8PAxa2bjOEtFnwn60yHWSweqbDA6+RZ1t6L1haFv7PSir0rS1Z06YnIWaJiu1LUy+PEa1KtA8dUWc9EgAAAA=="
+    },
+    "m-d4bf75aca8": {
+      "id": "m-d4bf75aca8",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoAA4BaJQBOgMXItnVLMGAA/uzfCrn/LUrsunroucaAQV43yF3EY2bY3ILPKzpLmzbHRY4jT2LtFtIi85R4WEgVQnhK7Sz0PJtAOhYlVD1IHJhL21Yz/Z+lAAAA"
+    },
+    "m-dced448e4d": {
+      "id": "m-dced448e4d",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Customized Recruitment",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJZwAD5DspzB46ZBYAP21gNYU0Ex6NC8Ut3X6OHBnTV3+GhpSeJDxaHm5sHxOhgM4AX2rVXRYbver7jRiAR6GazIUnGz3HABc0MP2XAAAAA=="
+    },
+    "m-e94c6c09cc": {
+      "id": "m-e94c6c09cc",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "ICT Manpower & Outsourcing",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJYwCdAYtBZ4S4YAAAP4LkOxQpb6+qGttcS+GJF5bPPvYhmb4T1/drZYzorZx7dYfTYAgdEvsHm3P+0W74SqcaaZahVf/7g+Tm+5HeL80Ac7o8DdgAA=="
+    },
+    "m-fb61d4288f": {
+      "id": "m-fb61d4288f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "End- To- End IT Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJZQC7ADPKAgBN/qAAP3Bepupk1Tp2CBeZPQb9oEE/qpFy6YxCTGTmeKzzj32ua729URNxwo86p/viZgOljLV/Y8FhlBMsuYbkpIjCgwAAA=="
+    }
+  }
+}

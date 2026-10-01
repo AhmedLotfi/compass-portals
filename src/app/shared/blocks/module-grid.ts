@@ -1,4 +1,5 @@
-import { Component, input } from '@angular/core';
+import { NgTemplateOutlet } from '@angular/common';
+import { Component, computed, input } from '@angular/core';
 import type { Block, MediaRef } from '@schema/content';
 import { MediaImage } from '../../core/media/media-image';
 import { SmartLink } from '../smart-link/smart-link';
@@ -7,11 +8,15 @@ import { InternalLinks } from './internal-links';
 /** Repeated cards from the site (products, modules), laid out as a map legend rather than a card kit. */
 @Component({
   selector: 'app-module-grid',
-  imports: [MediaImage, SmartLink, InternalLinks],
+  imports: [MediaImage, SmartLink, InternalLinks, NgTemplateOutlet],
   template: `
     @let grid = block();
     @if (grid.title) {
-      <h3 class="module-grid__title">{{ grid.title }}</h3>
+      @if (level() === 2) {
+        <h2 class="module-grid__title">{{ grid.title }}</h2>
+      } @else {
+        <h3 class="module-grid__title">{{ grid.title }}</h3>
+      }
     }
     <ul class="module-grid" [class.module-grid--media]="hasMedia()">
       @for (item of grid.items; track $index) {
@@ -27,7 +32,7 @@ import { InternalLinks } from './internal-links';
             <span class="module-grid__marker" aria-hidden="true"></span>
           }
           <div class="module-grid__body">
-            <h3 class="module-grid__name">
+            <ng-template #name>
               @if (item.href) {
                 <app-smart-link [href]="item.href" linkClass="module-grid__link">{{
                   item.title
@@ -35,7 +40,18 @@ import { InternalLinks } from './internal-links';
               } @else {
                 {{ item.title }}
               }
-            </h3>
+            </ng-template>
+            @switch (itemLevel()) {
+              @case (2) {
+                <h2 class="module-grid__name"><ng-container [ngTemplateOutlet]="name" /></h2>
+              }
+              @case (3) {
+                <h3 class="module-grid__name"><ng-container [ngTemplateOutlet]="name" /></h3>
+              }
+              @default {
+                <h4 class="module-grid__name"><ng-container [ngTemplateOutlet]="name" /></h4>
+              }
+            }
             @if (item.html) {
               <div
                 class="module-grid__text prose-chart"
@@ -113,6 +129,10 @@ import { InternalLinks } from './internal-links';
 export class ModuleGrid {
   readonly block = input.required<Extract<Block, { type: 'moduleGrid' }>>();
   readonly media = input.required<Record<string, MediaRef>>();
+  /** Heading level for the grid's title: 2 in a section without its own title, else 3. */
+  readonly level = input<2 | 3>(3);
+  /** Card titles sit one level under the grid title, or at its level when there is none. */
+  protected readonly itemLevel = computed(() => this.level() + (this.block().title ? 1 : 0));
 
   protected hasMedia(): boolean {
     return this.block().items.some((item) => item.media && this.media()[item.media]);

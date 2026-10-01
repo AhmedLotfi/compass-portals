@@ -38,6 +38,8 @@ export interface HostingInput {
 interface PathRule {
   /** Paths to match (the old URL, plus its form without the trailing slash). */
   paths: string[];
+  /** The paths are prefixes: they match any longer path (a redirect `from` ending in `*`). */
+  prefix: boolean;
   status: 301 | 410;
   to: string;
 }
@@ -68,14 +70,26 @@ function rules(redirects: Redirect[]): { paths: PathRule[]; queries: QueryRule[]
       }
       continue;
     }
+    if (redirect.from.endsWith('*')) {
+      paths.push({
+        paths: [redirect.from.slice(0, -1)],
+        prefix: true,
+        status: redirect.status,
+        to: redirect.to,
+      });
+      continue;
+    }
     const from = redirect.from;
     const variants = from.length > 1 && from.endsWith('/') ? [from, from.slice(0, -1)] : [from];
-    paths.push({ paths: variants, status: redirect.status, to: redirect.to });
+    paths.push({ paths: variants, prefix: false, status: redirect.status, to: redirect.to });
   }
   // A path listed twice keeps its first rule (the map is sorted, so this is deterministic).
   const seen = new Set<string>();
   for (const rule of paths) {
-    rule.paths = rule.paths.filter((p) => !seen.has(p) && seen.add(p));
+    rule.paths = rule.paths.filter((p) => {
+      const key = `${rule.prefix ? '*' : '='}${p}`;
+      return !seen.has(key) && seen.add(key);
+    });
   }
   return { paths: paths.filter((rule) => rule.paths.length), queries };
 }
@@ -91,9 +105,12 @@ function wireForms(path: string): string[] {
 
 const regexEscape = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-/** Anchored regex for a path, without the leading slash (Apache and IIS match that form). */
-function pathPattern(path: string): string {
-  return `^${regexEscape(path.replace(/^\//, ''))}$`;
+/**
+ * Anchored regex for a path, without the leading slash (Apache and IIS match that form). A prefix
+ * matches only longer paths, so it never shadows the exact rule for the prefix itself.
+ */
+function pathPattern(path: string, prefix = false): string {
+  return `^${regexEscape(path.replace(/^\//, ''))}${prefix ? '.+' : '$'}`;
 }
 
 /**
@@ -109,7 +126,7 @@ function rewriteTarget(to: string): { target: string; flags: string } {
 /** One exact pattern per old path (both slash forms are already listed by `rules`). */
 function patternRules(input: HostingInput): { pattern: string; rule: PathRule }[] {
   return rules(input.redirects).paths.flatMap((rule) =>
-    rule.paths.map((path) => ({ pattern: pathPattern(path), rule })),
+    rule.paths.map((path) => ({ pattern: pathPattern(path, rule.prefix), rule })),
   );
 }
 
@@ -122,7 +139,12 @@ export function netlifyRedirects(input: HostingInput): string {
   ];
   for (const rule of rules(input.redirects).paths) {
     if (rule.status !== 301) continue;
-    for (const path of rule.paths.flatMap(wireForms)) lines.push(`${path} ${rule.to} 301`);
+    for (const path of rule.paths.flatMap(wireForms)) {
+      // A splat also matches the prefix itself; where that is the target, it could loop on hosts
+      // that apply redirects before files (Cloudflare Pages), so those prefixes are left out.
+      if (rule.prefix && rule.to.startsWith(path)) continue;
+      lines.push(`${rule.prefix ? `${path}*` : path} ${rule.to} 301`);
+    }
   }
   return `${lines.join('\n')}\n`;
 }
@@ -352,11 +374,16 @@ export function nginxConf(input: HostingInput): string {
   const exact = paths.flatMap((rule) =>
     rule.paths
       .filter((path) => !(queries.length && ['/', '/index.php'].includes(path)))
-      .map((path) =>
-        rule.status === 301
-          ? `location = ${quote(path)} { return 301 ${quote(rule.to)}; }`
-          : `location = ${quote(path)} { return 410; }`,
-      ),
+      .map((path) => {
+        // A prefix matches only longer paths (a regex, so the page at the prefix itself, which
+        // can be the target, never redirects to itself). Old slugs have no regex metacharacters.
+        if (rule.prefix && /[.*+?^${}()|[\]\\]/.test(path))
+          throw new Error(`nginx.conf: unsupported characters in prefix ${path}`);
+        const match = rule.prefix ? `~ ${quote(`^${path}.`)}` : `= ${quote(path)}`;
+        return rule.status === 301
+          ? `location ${match} { return 301 ${quote(rule.to)}; }`
+          : `location ${match} { return 410; }`;
+      }),
   );
   if (exact.length) lines.push('', '# Old URLs and retired WordPress endpoints', ...exact);
   lines.push(

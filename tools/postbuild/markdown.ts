@@ -249,12 +249,16 @@ export function blockToMarkdown(block: Block, ctx: MarkdownContext): string {
     case 'stats':
       return block.items.map((item) => `- **${item.value}** ${item.label}`).join('\n');
     case 'quote':
-      return [md(block.html), block.cite]
+      return [md(block.html), [block.cite, ...(block.role ?? [])].filter(Boolean).join(', ')]
         .filter(Boolean)
         .join('\n\n')
         .split('\n')
         .map((line) => (line ? `> ${line}` : '>'))
         .join('\n');
+    case 'faq':
+      return block.items
+        .map((item) => `${heading(BLOCK, item.question)}\n\n${md(item.html)}`)
+        .join('\n\n');
     case 'embed':
       return `[${block.title}](${block.url})`;
     case 'contactForm':

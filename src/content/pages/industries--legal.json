@@ -1,0 +1,60 @@
+{
+  "id": "industries--legal",
+  "kind": "page",
+  "path": "/industries/legal/",
+  "title": "Legal",
+  "sourceUrl": "https://compassint.org/industries/legal",
+  "seo": {},
+  "hero": {
+    "title": "Legal",
+    "lede": "Compass provides a comprehensive system and software solutions that caters specifically to the unique requirements of the legal services industry",
+    "media": "m-232b72b22e",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our specialized system offers specific solutions tailored to meet the needs of the legal industry, including Finance and Contracts Management modules.The Finance module within our system enables law firms to effectively manage their financial processes, including billing and accounting. With this module, law firms can accurately capture billable hours, generate precise invoices, and efficiently manage client payments. This ensures streamlined financial operations and improved cash flow management for legal professionals.The Contracts Management module within our system allows law firms to efficiently handle contract-related processes. This includes tasks such as contract creation, negotiation, and monitoring. By leveraging this module, law firms can ensure proper contract compliance, track contract milestones, and efficiently manage their contracts portfolio.</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Industries",
+      "path": "/industries/"
+    },
+    {
+      "label": "Legal",
+      "path": "/industries/legal/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-232b72b22e": {
+      "id": "m-232b72b22e",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Legal",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAoAA4BaJQAAXTT8MDM6kAD+5+M50/2+rYipJAKwsLL8cqEVWqJc85zXa8OQquvEUIFkmG7I8+//Dhdh/9YF2p2C3asJbkScitIBi8JEo/egM9AAAA=="
+    }
+  }
+}

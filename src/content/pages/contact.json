@@ -1,0 +1,103 @@
+{
+  "id": "contact",
+  "kind": "contact",
+  "path": "/contact/",
+  "title": "Contact Us",
+  "sourceUrl": "https://compassint.org/contact",
+  "seo": {},
+  "hero": {
+    "title": "Contact Us",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "form",
+      "blocks": [
+        {
+          "type": "contactForm",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Name",
+              "kind": "text",
+              "required": true
+            },
+            {
+              "name": "companyName",
+              "label": "Company",
+              "kind": "text",
+              "required": false
+            },
+            {
+              "name": "phone",
+              "label": "Phone",
+              "kind": "tel",
+              "required": true
+            },
+            {
+              "name": "email",
+              "label": "Email",
+              "kind": "email",
+              "required": true
+            },
+            {
+              "name": "message",
+              "label": "Message",
+              "kind": "textarea",
+              "required": true
+            }
+          ],
+          "submitLabel": "Get in touch"
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "title": "Our Locations",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "UAE",
+              "html": "<p>Palace Tower 1, Dubai Silicon Oasis, Dubai, UAE</p><p>Tel : <a href=\"tel:+97145754693\">+971 45754693</a></p><p>Email : <a href=\"mailto:sales@compassint.org\">sales@compassint.org</a></p>"
+            }
+          ]
+        },
+        {
+          "type": "embed",
+          "provider": "map",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.6236107712916!2d55.38541927432864!3d25.114599405128505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f646efe4441b3%3A0x3c792c479633fe8f!2sSilicon%20Oasis%20Palace%20Tower%201!5e0!3m2!1sen!2sae!4v1761131204979!5m2!1sen!2sae",
+          "title": "UAE"
+        },
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "CANADA",
+              "html": "<p>Toronto, Canada</p><p>Tel : <a href=\"tel:+16476737084\">+1 64 7673 7084</a></p><p>Email : <a href=\"mailto:sales@compassint.org\">sales@compassint.org</a></p>"
+            }
+          ]
+        },
+        {
+          "type": "embed",
+          "provider": "map",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.90977191756!2d-79.5428687116679!3d43.71837095830807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sae!4v1761131509831!5m2!1sen!2sae",
+          "title": "CANADA"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Contact Us",
+      "path": "/contact/"
+    }
+  ],
+  "children": [],
+  "media": {}
+}

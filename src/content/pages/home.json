@@ -1,0 +1,693 @@
+{
+  "id": "home",
+  "kind": "home",
+  "path": "/",
+  "title": "Unlocking Insights: Comprehensive Data Offering Services",
+  "sourceUrl": "https://compassint.org/",
+  "seo": {},
+  "hero": {
+    "title": "Unlocking Insights: Comprehensive Data Offering Services",
+    "lede": "Empower your projects with our comprehensive data offering services, unlocking beneficial insights for informed decision-making",
+    "media": "m-9aacc48db8",
+    "ctas": [
+      {
+        "label": "Talk to our team",
+        "href": "/contact/",
+        "kind": "internal"
+      },
+      {
+        "label": "Explore our solutions",
+        "href": "/products/",
+        "kind": "internal"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "highlights",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "Metaverse solution",
+              "html": "<p>Step into the future with Compass International LLC’s Metaverse Solution.</p>",
+              "media": "m-7e80cf7263"
+            },
+            {
+              "title": "Integrated Solutions for your Business",
+              "html": "<p>We provide exceptional system integration services for your business</p>",
+              "media": "m-54eb5ddcd5"
+            },
+            {
+              "title": "Expert IT Outsourcing Services and Dedicated Manpower",
+              "html": "<p>Your trusted partner for IT outsourcing services, embodied by dedicated manpower for smooth project execution</p>",
+              "media": "m-0a9800d342"
+            },
+            {
+              "title": "Customizable & Configurable ERP Solutions",
+              "html": "<p>Unlock the full potential of your business with our customizable and configurable range of ERP solutions</p>",
+              "media": "m-8765544cc8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "right-application-right-direction",
+      "title": "Right Application. Right Direction",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>We deliver tailored IT solutions to businesses across the UAE and Middle East through scalable, off-the-shelf applications and custom business solutions</p>"
+        }
+      ]
+    },
+    {
+      "id": "products",
+      "title": "Products",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "HR & Payroll",
+              "html": "<p>Enhance your organization's HR and payroll operations with our advanced and customizable module.</p>",
+              "href": "/products/hr-payroll/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "Finance Management",
+              "html": "<p>Our financial solution offers more than just accounting.</p>",
+              "href": "/products/finance-management/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "Fleet Management",
+              "html": "<p>Optimize your fleet operations with an advanced solution that showcases features for tracking, route planning, and real-time vehicle monitoring.</p>",
+              "href": "/products/fleet-management/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "Property Management",
+              "html": "<p>Manage your properties with our configurable and customizable solution designed for property owners.</p>",
+              "href": "/products/property-management/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "Projects Management",
+              "html": "<p>Elevate your project management capabilities with our feature-rich solution.</p>",
+              "href": "/products/projects-management/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "Retail Management",
+              "html": "<p>Transform your retail operations with our comprehensive management module.</p>",
+              "href": "/products/retail-management/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "Contracts Management",
+              "html": "<p>Specifically designed for Consulting and Outsourcing Firms, our Contracts Management solution facilitates the registration of contract details and payment schedules analyzing the profitability of each contract.</p>",
+              "href": "/products/contracts-management/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "Charity Management",
+              "html": "<p>Our charity solution integrates departments, streamlines workflows, and provides detailed project and donor reports for enhanced transparency and efficiency.</p>",
+              "href": "/products/charity-management/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "School Management",
+              "html": "<p>Our comprehensive School Management System is designed to simplify daily operations across single or multiple branches.</p>",
+              "href": "/products/school-management/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "Insurance Management",
+              "html": "<p>Our customizable Insurance solution is crafted to efficiently manage and control processes within insurance companies, adhering to international specifications and configurations to meet diverse needs.</p>",
+              "href": "/products/insurance-management/",
+              "linkLabel": "Explore product"
+            },
+            {
+              "title": "University Management",
+              "html": "<p>Smart Management for Modern Universities, Our University Management System streamlines admissions, course registration, scheduling, and finances across multiple campuses.</p>",
+              "href": "/products/university-management/",
+              "linkLabel": "Explore product"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "title": "Services",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "Custom Development",
+              "html": "<p>Because every business is unique, Compass develops fully customized platforms tailored to your goals.</p>",
+              "href": "/services/custom-development/",
+              "linkLabel": "Explore this service"
+            },
+            {
+              "title": "System Integration",
+              "html": "<p>Your business will work smarter by connecting all the software and systems in one place.</p>",
+              "href": "/services/system-integration/",
+              "linkLabel": "Explore this service"
+            },
+            {
+              "title": "Data Offering",
+              "html": "<p>We empower your business with smart, AI-driven data solutions that unlock insights and guide better decisions.</p>",
+              "href": "/services/data-offering/",
+              "linkLabel": "Explore this service"
+            },
+            {
+              "title": "Artificial Intelligence",
+              "html": "<p>At Compass, we harness the power of Artificial Intelligence to drive business transformation.</p>",
+              "href": "/services/artificial-intelligence/",
+              "linkLabel": "Explore this service"
+            },
+            {
+              "title": "Web Development",
+              "html": "<p>At Compass, we specialize in delivering custom web development solutions tailored to your unique business needs.</p>",
+              "href": "/services/web-development/",
+              "linkLabel": "Explore this service"
+            },
+            {
+              "title": "Mobile Application Development",
+              "html": "<p>Our role at Compass is transforming ideas into powerful mobile applications designed for seamless performance and user engagement. by our experience in cross-platform development, we create solutions that are secure, scalable, and accessible.</p>",
+              "href": "/services/mobile-application-development/",
+              "linkLabel": "Explore this service"
+            },
+            {
+              "title": "ICT Manpower & Outsourcing",
+              "html": "<p>We provide skilled IT professionals and outsourcing solution to enhance business operations.</p>",
+              "href": "/services/ict-manpower-outsourcing/",
+              "linkLabel": "Explore this service"
+            },
+            {
+              "title": "ERP Development",
+              "html": "<p>Compass provides expert ERP consultancy to help businesses maximize efficiency. we tailor systems to meet your unique needs.</p>",
+              "href": "/services/erp-development/",
+              "linkLabel": "Explore this service"
+            },
+            {
+              "title": "Metaverse solution",
+              "html": "<p>Compass International LLC’s Metaverse Solution redefines immersive experiences with cutting-edge AR/VR displays, holographic projections, and haptic feedback devices.</p>",
+              "href": "/services/metaverse-solution/",
+              "linkLabel": "Explore this service"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "Omni channel Platform",
+              "html": "<p>Drive Business Success with Omni Channel Capabilities.</p>",
+              "href": "/features/omni-channel-platform/",
+              "linkLabel": "Learn more"
+            },
+            {
+              "title": "Invoicing",
+              "html": "<p>Streamline Invoicing Processes and Provide Seamless Experiences.</p>",
+              "href": "/features/invoicing/",
+              "linkLabel": "Learn more"
+            },
+            {
+              "title": "Business Intelligence",
+              "html": "<p>Harnessing the Power of Data for Informed Decision-Making and Performance Tracking.</p>",
+              "href": "/features/business-intelligence/",
+              "linkLabel": "Learn more"
+            },
+            {
+              "title": "Other Features",
+              "html": "<p>Compass offers a comprehensive suite of features designed to enhance business operations.</p>",
+              "href": "/features/other-features/",
+              "linkLabel": "Learn more"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industries",
+      "title": "Industries",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "Retail",
+              "html": "<p>We are proud to offer a comprehensive ERP solution designed specifically for the retail industry</p>",
+              "href": "/industries/retail/"
+            },
+            {
+              "title": "Consulting",
+              "html": "<p>Compass understands and acknowledges the distinct needs and requirements of the consulting industry.</p>",
+              "href": "/industries/consulting/"
+            },
+            {
+              "title": "Construction",
+              "html": "<p>At Compass, we understand the unique requirements and challenges faced by the construction industry.</p>",
+              "href": "/industries/construction/"
+            },
+            {
+              "title": "Financial Services",
+              "html": "<p>Compass offers a comprehensive software solution that specifically caters to the unique requirements of the finance industry</p>",
+              "href": "/industries/financial-services/"
+            },
+            {
+              "title": "Legal",
+              "html": "<p>Compass provides a comprehensive system and software solutions that caters specifically to the unique requirements of the legal services industry</p>",
+              "href": "/industries/legal/"
+            },
+            {
+              "title": "IT Services",
+              "html": "<p>At Compass, we understand the complex requirements of the IT industry and have developed enterprise resource planning (ERP) solutions that address its unique challenges.</p>",
+              "href": "/industries/it-services/"
+            },
+            {
+              "title": "Whole Sales Distribution",
+              "html": "<p>At Compass, we recognize the unique needs and challenges faced by wholesale businesses.</p>",
+              "href": "/industries/whole-sales-distribution/"
+            },
+            {
+              "title": "Non- Profit Organizations",
+              "html": "<p>Our solutions are specifically designed to cater to the needs of charity organizations, providing them with the tools and functionalities required to effectively manage their operations</p>",
+              "href": "/industries/non-profit-organizations/"
+            },
+            {
+              "title": "Government",
+              "html": "<p>At Compass, we provide secure, scalable, and efficient IT and software solutions tailored for government entities.</p>",
+              "href": "/industries/government/"
+            },
+            {
+              "title": "Health Care",
+              "html": "<p>At Compass, we specialize in delivering innovative IT and software solutions specifically designed for the healthcare sector.</p>",
+              "href": "/industries/health-care/"
+            },
+            {
+              "title": "Real Estate",
+              "html": "<p>Compass provides innovative IT and software solutions designed for the real estate industry.</p>",
+              "href": "/industries/real-estate/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "an-appstore-for-all-of-your-business-needs",
+      "title": "An AppStore for All of Your Business Needs",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>FreshBooks integrates with over 100 great apps to streamline work for business owners, keep teams and clients connected, and better understand your business.</p>"
+        }
+      ]
+    },
+    {
+      "id": "your-success-is-our-priority-24-7-support-for-all-your-erp-needs",
+      "title": "Your Success is Our Priority: 24/7 Support for All Your ERP Needs",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-e88f876b78"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>Prompt Response</strong>: Our support team is committed to providing timely assistance. We prioritize quick response times to ensure that your queries and concerns are addressed as soon as possible. Whether it's troubleshooting, technical guidance, or general inquiries, we strive to provide a prompt and efficient support experience.</p> <p><strong>Expert Guidance</strong>: Our support team consists of highly skilled professionals with in-depth knowledge of our ERP system. They have the expertise to guide you through any challenges you may encounter. From software configuration and customization to user training and best practices, our experts are here to assist you every step of the way.</p>"
+        }
+      ]
+    },
+    {
+      "id": "our-clients",
+      "title": "Our Clients",
+      "blocks": [
+        {
+          "type": "gallery",
+          "variant": "logos",
+          "items": [
+            {
+              "media": "m-00c53fde01"
+            },
+            {
+              "media": "m-9c9d865f22"
+            },
+            {
+              "media": "m-47f07718b5"
+            },
+            {
+              "media": "m-27d745df79"
+            },
+            {
+              "media": "m-613bb5b3dc"
+            },
+            {
+              "media": "m-fa5e82b8f5"
+            },
+            {
+              "media": "m-973ef2cf9f"
+            },
+            {
+              "media": "m-2d8fff5367"
+            },
+            {
+              "media": "m-69c0f55b95"
+            },
+            {
+              "media": "m-9cee773b98"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "our-client-feedbacks",
+      "title": "Our Client Feedbacks",
+      "blocks": [
+        {
+          "type": "quote",
+          "html": "<p>We have been using the ERP system for over a year, and it has greatly improved our operations with its user-friendly interface, comprehensive features, and reliable support. Automation of routine tasks has boosted productivity, allowing our team to focus on more strategic work. While the system is robust, we feel that additional customization options and performance optimization during peak usage could enhance its functionality further. Overall, it has been a valuable tool for streamlining our business processes.</p>",
+          "cite": "Hussein Jakhlab",
+          "role": [
+            "CEO",
+            "Delham Group"
+          ],
+          "media": "m-31629987c6"
+        }
+      ]
+    },
+    {
+      "id": "partners",
+      "title": "Partners",
+      "blocks": [
+        {
+          "type": "gallery",
+          "variant": "logos",
+          "items": [
+            {
+              "media": "m-3a9e5521ce",
+              "href": "/partners/"
+            },
+            {
+              "media": "m-b6f461a569",
+              "href": "/partners/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [],
+  "children": [],
+  "media": {
+    "m-00c53fde01": {
+      "id": "m-00c53fde01",
+      "mime": "image/png",
+      "width": 120,
+      "height": 54,
+      "alt": "Client logo",
+      "widths": [
+        120
+      ],
+      "svg": false
+    },
+    "m-0a9800d342": {
+      "id": "m-0a9800d342",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Expert IT Outsourcing Services and Dedicated Manpower",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-27d745df79": {
+      "id": "m-27d745df79",
+      "mime": "image/png",
+      "width": 126,
+      "height": 63,
+      "alt": "Client logo",
+      "widths": [
+        126
+      ],
+      "svg": false
+    },
+    "m-2d8fff5367": {
+      "id": "m-2d8fff5367",
+      "mime": "image/png",
+      "width": 266,
+      "height": 54,
+      "alt": "Client logo",
+      "widths": [
+        266
+      ],
+      "svg": false
+    },
+    "m-31629987c6": {
+      "id": "m-31629987c6",
+      "mime": "image/jpeg",
+      "width": 640,
+      "height": 640,
+      "alt": "Hussein Jakhlab",
+      "widths": [
+        320,
+        480,
+        640
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQABAAA4BaJQBOgMWWla8axrDMYAD2leJZGl34btJOtpkK7Z3XP6avZGzPhDfvfcWe+td5+/rxLZUeeIo4YwwDLA071ztkEkjnR1t6o8c0qQTw6YleXAAA"
+    },
+    "m-3a9e5521ce": {
+      "id": "m-3a9e5521ce",
+      "mime": "image/png",
+      "width": 791,
+      "height": 429,
+      "alt": "Vizio-Tek",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        791
+      ],
+      "svg": false
+    },
+    "m-47f07718b5": {
+      "id": "m-47f07718b5",
+      "mime": "image/gif",
+      "width": 1596,
+      "height": 797,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1596
+      ],
+      "svg": false
+    },
+    "m-54eb5ddcd5": {
+      "id": "m-54eb5ddcd5",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Integrated Solutions for your Business",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-613bb5b3dc": {
+      "id": "m-613bb5b3dc",
+      "mime": "image/png",
+      "width": 403,
+      "height": 256,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        403
+      ],
+      "svg": false
+    },
+    "m-69c0f55b95": {
+      "id": "m-69c0f55b95",
+      "mime": "image/png",
+      "width": 248,
+      "height": 70,
+      "alt": "Client logo",
+      "widths": [
+        248
+      ],
+      "svg": false
+    },
+    "m-7e80cf7263": {
+      "id": "m-7e80cf7263",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Metaverse solution",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-8765544cc8": {
+      "id": "m-8765544cc8",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Customizable & Configurable ERP Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-973ef2cf9f": {
+      "id": "m-973ef2cf9f",
+      "mime": "image/jpeg",
+      "width": 500,
+      "height": 500,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        480,
+        500
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAwAQCdASoQABAAA4BaJaQAA3AA/uzFG+DNQ/z5MbHV26r5Emj5Qb3cVOoYgqYMdAAAAA=="
+    },
+    "m-9aacc48db8": {
+      "id": "m-9aacc48db8",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Unlocking Insights: Comprehensive Data Offering Services",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-9c9d865f22": {
+      "id": "m-9c9d865f22",
+      "mime": "image/png",
+      "width": 960,
+      "height": 260,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960
+      ],
+      "svg": false
+    },
+    "m-9cee773b98": {
+      "id": "m-9cee773b98",
+      "mime": "image/jpeg",
+      "width": 200,
+      "height": 200,
+      "alt": "Client logo",
+      "widths": [
+        200
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQABAAA4BaJZQAD4tQ7HqjEHgzkAD++Lo8X9AcC86tk1iPwlxyDYTyyF8ujFr7R9Efa32lmLyDmUn4mv5ie/tYjK7Ypp4gVKIEOqN09DwwcjQB3ttKtsAA"
+    },
+    "m-b6f461a569": {
+      "id": "m-b6f461a569",
+      "mime": "image/jpeg",
+      "width": 2048,
+      "height": 2048,
+      "alt": "VICTORY XR",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAgCdASoQABAAA4BaJYwCdIExgli/2B3zXI3gAP735hyTZqv3HVk4rZRzxa+sii3nZ8/CrYL3brM7H5FNkPJEJIhGyVU7B8rkHA/jogAAAA=="
+    },
+    "m-e88f876b78": {
+      "id": "m-e88f876b78",
+      "mime": "image/png",
+      "width": 745,
+      "height": 624,
+      "alt": "Your Success is Our Priority: 24/7 Support for All Your ERP Needs",
+      "widths": [
+        320,
+        480,
+        640,
+        745
+      ],
+      "svg": false
+    },
+    "m-fa5e82b8f5": {
+      "id": "m-fa5e82b8f5",
+      "mime": "image/jpeg",
+      "width": 959,
+      "height": 959,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        959
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAA4BaJYgCsADJQu8G7gAA/vVfCl0o6kkW3q/MJKGBmSFTDxf25ytxKSxDXguoDx/ME5xhJ6W2SvDP4QYQxhvGvHxgARb2xlf2e9x7TzbqgaCsWUbEAI2jDqY2QIpHfRwSAAA="
+    }
+  }
+}

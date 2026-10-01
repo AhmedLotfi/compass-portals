@@ -48,6 +48,15 @@ jobs:
 
       # Includes the post-build checks (every page prerendered, canonical/robots) and the sitemap, llms.txt
       # and hosting rules.
+      # Image variants (AVIF/WebP at every width) take minutes to encode; they only change with
+      # the snapshot's media list, and the build skips files that already exist.
+      - name: Cache image variants
+        uses: actions/cache@v4
+        with:
+          path: public/media
+          key: media-${{ hashFiles('src/content/media.json', 'tools/media/build.ts') }}
+          restore-keys: media-
+
       - name: Build (static prerender)
         run: |
           if [ "$CONTENT_DIR" = src/content ]; then npm run build; else npm run build:fixture; fi

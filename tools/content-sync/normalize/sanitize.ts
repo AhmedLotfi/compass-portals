@@ -91,8 +91,11 @@ function options(allowedTags: string[], resolve: LinkResolver): sanitizeHtml.IOp
       },
     },
     exclusiveFilter: (frame) =>
-      ['p', 'li', 'strong', 'em', 'a', 'span'].includes(frame.tag) &&
-      !frame.text.trim() &&
+      ['p', 'li', 'strong', 'em', 'a', 'span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(
+        frame.tag,
+      ) &&
+      // The frame text is raw, so a heading holding only `&nbsp;` counts as empty too.
+      !frame.text.replace(/&nbsp;|&#160;|&#xa0;/gi, '').trim() &&
       !frame.mediaChildren.length,
   };
 }

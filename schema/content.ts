@@ -102,6 +102,8 @@ export const MediaBlockSchema = z.object({
 
 export const GalleryBlockSchema = z.object({
   type: z.literal('gallery'),
+  /** `logos`: brand marks (clients, partners), set in even cells rather than as photo plates. */
+  variant: z.enum(['photos', 'logos']).optional(),
   items: z.array(
     z.object({
       media: z.string(),
@@ -130,6 +132,16 @@ export const QuoteBlockSchema = z.object({
   type: z.literal('quote'),
   html: z.string(),
   cite: z.string().optional(),
+  /** The person's position and organisation, one line each, as on the site. */
+  role: z.array(z.string()).optional(),
+  /** Portrait of the person quoted. */
+  media: z.string().optional(),
+});
+
+/** Questions and answers, shown as disclosure widgets. */
+export const FaqBlockSchema = z.object({
+  type: z.literal('faq'),
+  items: z.array(z.object({ question: z.string(), html: z.string() })),
 });
 
 export const EmbedBlockSchema = z.object({
@@ -163,6 +175,7 @@ export const BlockSchema = z.discriminatedUnion('type', [
   CtaBlockSchema,
   StatsBlockSchema,
   QuoteBlockSchema,
+  FaqBlockSchema,
   EmbedBlockSchema,
   ContactFormBlockSchema,
 ]);
@@ -270,6 +283,8 @@ export const SiteSchema = z.object({
   /** Where content was synced from. */
   source: z.url(),
   logo: z.string().optional(),
+  /** `light` when the logo is drawn in white for dark backgrounds (measured from the file). */
+  logoTone: z.enum(['light', 'dark']).optional(),
   icon: z.string().optional(),
   languages: z.array(z.object({ code: z.string(), dir: z.enum(['ltr', 'rtl']) })).min(1),
   navigation: z.object({
@@ -295,6 +310,7 @@ export const SiteSchema = z.object({
 });
 
 export const RedirectSchema = z.object({
+  /** Old path (decoded). A trailing `*` makes it a prefix: any longer path under it redirects. */
   from: z.string(),
   to: z.string(),
   status: z.union([z.literal(301), z.literal(410)]),

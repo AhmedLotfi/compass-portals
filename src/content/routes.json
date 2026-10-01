@@ -1,0 +1,229 @@
+{
+  "routes": [
+    {
+      "id": "products",
+      "path": "/products/",
+      "kind": "product-index"
+    },
+    {
+      "id": "products--hr-payroll",
+      "path": "/products/hr-payroll/",
+      "kind": "product"
+    },
+    {
+      "id": "products--finance-management",
+      "path": "/products/finance-management/",
+      "kind": "product"
+    },
+    {
+      "id": "products--fleet-management",
+      "path": "/products/fleet-management/",
+      "kind": "product"
+    },
+    {
+      "id": "products--property-management",
+      "path": "/products/property-management/",
+      "kind": "product"
+    },
+    {
+      "id": "products--projects-management",
+      "path": "/products/projects-management/",
+      "kind": "product"
+    },
+    {
+      "id": "products--retail-management",
+      "path": "/products/retail-management/",
+      "kind": "product"
+    },
+    {
+      "id": "products--contracts-management",
+      "path": "/products/contracts-management/",
+      "kind": "product"
+    },
+    {
+      "id": "products--charity-management",
+      "path": "/products/charity-management/",
+      "kind": "product"
+    },
+    {
+      "id": "products--school-management",
+      "path": "/products/school-management/",
+      "kind": "product"
+    },
+    {
+      "id": "products--insurance-management",
+      "path": "/products/insurance-management/",
+      "kind": "product"
+    },
+    {
+      "id": "products--university-management",
+      "path": "/products/university-management/",
+      "kind": "product"
+    },
+    {
+      "id": "services",
+      "path": "/services/",
+      "kind": "service-index"
+    },
+    {
+      "id": "services--custom-development",
+      "path": "/services/custom-development/",
+      "kind": "service"
+    },
+    {
+      "id": "services--system-integration",
+      "path": "/services/system-integration/",
+      "kind": "service"
+    },
+    {
+      "id": "services--data-offering",
+      "path": "/services/data-offering/",
+      "kind": "service"
+    },
+    {
+      "id": "services--artificial-intelligence",
+      "path": "/services/artificial-intelligence/",
+      "kind": "service"
+    },
+    {
+      "id": "services--web-development",
+      "path": "/services/web-development/",
+      "kind": "service"
+    },
+    {
+      "id": "services--mobile-application-development",
+      "path": "/services/mobile-application-development/",
+      "kind": "service"
+    },
+    {
+      "id": "services--ict-manpower-outsourcing",
+      "path": "/services/ict-manpower-outsourcing/",
+      "kind": "service"
+    },
+    {
+      "id": "services--erp-development",
+      "path": "/services/erp-development/",
+      "kind": "service"
+    },
+    {
+      "id": "services--metaverse-solution",
+      "path": "/services/metaverse-solution/",
+      "kind": "service"
+    },
+    {
+      "id": "features",
+      "path": "/features/",
+      "kind": "product-category"
+    },
+    {
+      "id": "features--omni-channel-platform",
+      "path": "/features/omni-channel-platform/",
+      "kind": "page"
+    },
+    {
+      "id": "features--invoicing",
+      "path": "/features/invoicing/",
+      "kind": "page"
+    },
+    {
+      "id": "features--business-intelligence",
+      "path": "/features/business-intelligence/",
+      "kind": "page"
+    },
+    {
+      "id": "features--other-features",
+      "path": "/features/other-features/",
+      "kind": "page"
+    },
+    {
+      "id": "industries",
+      "path": "/industries/",
+      "kind": "product-category"
+    },
+    {
+      "id": "industries--retail",
+      "path": "/industries/retail/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--consulting",
+      "path": "/industries/consulting/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--construction",
+      "path": "/industries/construction/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--financial-services",
+      "path": "/industries/financial-services/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--legal",
+      "path": "/industries/legal/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--it-services",
+      "path": "/industries/it-services/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--whole-sales-distribution",
+      "path": "/industries/whole-sales-distribution/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--non-profit-organizations",
+      "path": "/industries/non-profit-organizations/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--government",
+      "path": "/industries/government/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--health-care",
+      "path": "/industries/health-care/",
+      "kind": "page"
+    },
+    {
+      "id": "industries--real-estate",
+      "path": "/industries/real-estate/",
+      "kind": "page"
+    },
+    {
+      "id": "about",
+      "path": "/about/",
+      "kind": "page"
+    },
+    {
+      "id": "home",
+      "path": "/",
+      "kind": "home"
+    },
+    {
+      "id": "contact",
+      "path": "/contact/",
+      "kind": "contact"
+    },
+    {
+      "id": "faqs",
+      "path": "/faqs/",
+      "kind": "page"
+    },
+    {
+      "id": "partners",
+      "path": "/partners/",
+      "kind": "page"
+    },
+    {
+      "id": "privacy-policy",
+      "path": "/privacy-policy/",
+      "kind": "page"
+    }
+  ]
+}

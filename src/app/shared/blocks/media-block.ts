@@ -14,7 +14,11 @@ interface MediaItem {
   selector: 'app-media-block',
   imports: [MediaImage, SmartLink],
   template: `
-    <div class="plates" [class.plates--gallery]="items().length > 1">
+    <div
+      class="plates"
+      [class.plates--gallery]="items().length > 1"
+      [class.plates--logos]="logos()"
+    >
       @for (item of items(); track item.media) {
         @let image = media()[item.media];
         @if (image) {
@@ -49,6 +53,22 @@ interface MediaItem {
       max-inline-size: none;
       grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
     }
+    /* Logos: even cells on a hairline grid, each mark centred and scaled to fit, like a legend. */
+    .plates--logos {
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+      gap: 0;
+      border-block-start: var(--hairline);
+      border-inline-start: var(--hairline);
+    }
+    .plates--logos .plate {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 3 / 2;
+      padding: 1rem 1.25rem;
+      border-block-end: var(--hairline);
+      border-inline-end: var(--hairline);
+      background: var(--color-paper);
+    }
   `,
 })
 export class MediaBlock {
@@ -59,7 +79,15 @@ export class MediaBlock {
     const block = this.block();
     return block.type === 'gallery' ? block.items : [block];
   });
+  protected readonly logos = computed(() => {
+    const block = this.block();
+    return block.type === 'gallery' && block.variant === 'logos';
+  });
   protected readonly sizes = computed(() =>
-    this.items().length > 1 ? '(min-width: 64rem) 18rem, 50vw' : '(min-width: 64rem) 48rem, 100vw',
+    this.logos()
+      ? '10rem'
+      : this.items().length > 1
+        ? '(min-width: 64rem) 18rem, 50vw'
+        : '(min-width: 64rem) 48rem, 100vw',
   );
 }

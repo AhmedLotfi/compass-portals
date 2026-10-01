@@ -1,0 +1,183 @@
+{
+  "id": "services--custom-development",
+  "kind": "service",
+  "path": "/services/custom-development/",
+  "title": "Custom Development",
+  "sourceUrl": "https://compassint.org/services/custom_development",
+  "seo": {},
+  "hero": {
+    "title": "Custom Development",
+    "lede": "Because every business is unique, Compass develops fully customized platforms tailored to your goals.",
+    "media": "m-1b104cb34e",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "introduction",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>We build custom solutions that fit your needs and actually make things easier. Our technology aligns with your strategy, helping you grow and stay competitive.</p>"
+        }
+      ]
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-3b45196446"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Our Custom Development services at Compass International are dedicated to creating tailored applications that meet your unique business requirements. Our experienced team specializes in utilizing a diverse range of tools and technologies to deliver customized solutions that drive efficiency and innovation.</p> <p>We work closely with our clients to understand their specific needs and design custom solutions that align with their business objectives. Whether it's enhancing existing applications or developing new ones from scratch, our team is equipped to handle a wide range of custom development projects, ensuring your organization remains agile and competitive in today's fast-paced market</p>"
+        }
+      ]
+    },
+    {
+      "id": "technologies-we-specialise-in",
+      "title": "Technologies we Specialise In",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-09389eb502"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Oracle Forms</p> <p>Oracle Reports</p> <p>Oracle Application Server</p> <p>XML Publisher</p> <p>VB.NET 4</p> <p>Oracle Discoverer</p> <p>Oracle Workflows</p> <p>Oracle J Developer</p> <p>JSP</p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-f34dfa70a0"
+        },
+        {
+          "type": "richText",
+          "html": "<p>End-to-End Business Solutions: Comprehensive services tailored for diverse business needs, from inception to execution</p> <p>GCC Expertise: Extensive experience and deep understanding of business dynamics across GCC countries</p> <p>Bilingual Resources: Proficient in Arabic and English to support seamless communication and understanding</p> <p>Offshore and Onsite Development: Flexible delivery models for development, ensuring cost-efficiency and project alignment with client needs</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-b03caa6583"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Applications Implementation Methodology: Proven strategies and frameworks for efficient and effective application implementation</p> <p>Certified Technical Expertise: A skilled team with OCP (Oracle Certified Professional) and OCA (Oracle Certified Associate) certifications ensuring high-quality technical solutions</p> <p>Expertise in Oracle E-Business Latest Releases: In-depth experience with the latest Oracle E-Business Suite versions to optimize system performance and capabilities</p> <p>Upgrade Expertise: Extensive proficiency in upgrading systems from one release to another, minimizing downtime and maximizing operational continuity<br></p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Services",
+      "path": "/services/"
+    },
+    {
+      "label": "Custom Development",
+      "path": "/services/custom-development/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-09389eb502": {
+      "id": "m-09389eb502",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technologies we Specialise In",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAoAA4BaJZQCdAED/rOMPfhmgAD+3bHS4NeNGKxvi/HtPDU/l8puP6sq4g3Pfgkb8myOGHSeezGcxLk5t0u/ld+40nDxxzvAx+NDf7PnybpZ5WgRTGlXJWBAAA=="
+    },
+    "m-1b104cb34e": {
+      "id": "m-1b104cb34e",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Custom Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoAA4BaJbACdAEPDQKqJ+AQgAD+9ZETitVpafp6mTLvLj8pybxbOnhjJtoFXKhuD2sC5zPmsrpclS/SqAAA"
+    },
+    "m-3b45196446": {
+      "id": "m-3b45196446",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAoAA4BaJQAAX1fpAO0faGAA/mxsv/ZrsU4Tln1AB7n6SOHbVRdisesEsbsRCoGu6hlrZXCkFpJpbyB6NJkI7rjBTvm+vdmjUV5g+t71rmVtAAA="
+    },
+    "m-b03caa6583": {
+      "id": "m-b03caa6583",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAQCdASoQAAoAA4BaJbACdAYsZFAx9LIA/uYD44dHTp/KMvECefzGH1Y5mw9qEmcE6tcANTV0KH6ZdgWHlYm21oVd7qTUKI0rP84kRD/mRD4/RReCDV5PQkV1nwOIpWtgCxdq012AVOsgO5IiFLAA"
+    },
+    "m-f34dfa70a0": {
+      "id": "m-f34dfa70a0",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAoAA4BaJZACdAEVYkqfykf5AAD+6evQmMywVz+e+9dbH92KWxRuf5xLpdGPmI9K7BDHEndJC++CoFXUA9GqeU0Boc5t8/EQ5Obblk/E2Et9ULqW4AAA"
+    }
+  }
+}

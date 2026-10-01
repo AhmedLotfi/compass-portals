@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { pageKey } from './render.ts';
+import { pageIdentity, pageKey } from './render.ts';
 
 describe('render crawl', () => {
   const origin = 'https://compassint.org';
@@ -25,5 +25,14 @@ describe('render crawl', () => {
     expect(pageKey('https://example.org/x', origin, hosts)).toBeUndefined();
     expect(pageKey('mailto:info@compassint.org', origin, hosts)).toBeUndefined();
     expect(pageKey('not a url', origin, hosts)).toBeUndefined();
+  });
+
+  it('treats URLs that differ only by the per-visit ciphertext as one page', () => {
+    expect(
+      pageIdentity(
+        'https://compassint.org/solution/hr_&_payroll/U2FsdGVkX18bhGDj4BDDazsppFAGWDSov6RYukMBxqM%3D',
+      ),
+    ).toBe('https://compassint.org/solution/hr_&_payroll');
+    expect(pageIdentity('https://compassint.org/about')).toBe('https://compassint.org/about');
   });
 });

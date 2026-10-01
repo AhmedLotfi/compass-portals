@@ -1,8 +1,9 @@
 # Compass International portal
 
 A static, prerendered Angular 22 marketing site that presents all of the content of https://compassint.org/
-(Compass International: UAE software company) with a new "True North" design. WordPress is only the source:
-a build-time sync pulls its content into typed JSON and self-hosted images, and every route is prerendered.
+(Compass International: UAE software company) with a new "True North" design. The old site is only the source:
+its front end loads everything from a CMS API (ASP.NET Boilerplate, `webapi.compassint.org`), and a build-time
+sync turns the archived API responses into typed JSON and self-hosted images; every route is prerendered.
 
 ## The hard rule: same data as the website
 
@@ -64,10 +65,16 @@ Run `ng build` after every change and fix errors before moving on.
   - `@content/*` resolves to `src/content/` in production builds and to `.cache/fixture/content/` under the
     `fixture` configuration and in unit tests (`tsconfig.fixture.json`, `tsconfig.spec.json`).
 - `tools/`: build and maintenance scripts (TypeScript run directly by Node 24; the repo is ESM).
-  - `content-sync/`: reads compassint.org (WordPress REST API, sitemaps, rendered pages). Every response is
+  - `content-sync/`: reads compassint.org (its CMS API, sitemaps, rendered pages). Every response is
     archived in `source-archive/http/` (with `manifest.json`) so any stage can re-run `--offline`. `normalize/`
     flattens builder HTML into atoms (clean → atoms → shape → sanitize); `sync.ts` emits the snapshot and fails
     when any visible source sentence is missing (waive only with a reason in `waivers.json`).
+  - `content-sync/cms/`: the adapter used whenever the archive holds API responses. `api.ts` reads them,
+    `map.ts` maps sections and pages to the content model (labels the old front end prints, such as "Our Team",
+    come from the rendered pages and fail the sync if the live site doesn't show them), `rendered.ts` reads the
+    header and footer, `sync.ts` builds the snapshot and the redirects (old URLs end in a per-visit
+    ciphertext, so they redirect by prefix: a redirect `from` ending in `*`), and `fetch.ts` downloads every
+    image the API names.
   - `media/build.ts`: image variants, share images, documents, favicons and the manifest (before build/start).
   - `postbuild/`: after `ng build`, fails the build if a synced page wasn't prerendered (or has the wrong
     canonical/robots), moves the 404 page to `/404.html`, removes `index.csr.html`, and writes `sitemap.xml`,

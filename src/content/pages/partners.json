@@ -1,0 +1,85 @@
+{
+  "id": "partners",
+  "kind": "page",
+  "path": "/partners/",
+  "title": "Partners",
+  "sourceUrl": "https://compassint.org/home/partner-details",
+  "seo": {},
+  "hero": {
+    "title": "Partners",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "partners",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "Vizio-Tek",
+              "html": "<p>Through our partnership with VizioTek, we collaborate with a trusted provider of comprehensive IT, Audio-Visual (AV), and Security solutions across the UAE and GCC. VizioTek specializes in the design, implementation, and project management of advanced technology infrastructures, including cybersecurity, networking, AV systems, access control, and CCTV installations. Their expertise ensures seamless integration and optimal performance, enhancing our ability to deliver robust and innovative technology solutions to our clients.</p>",
+              "media": "m-3a9e5521ce",
+              "href": "https://www.vizio-tek.com/home",
+              "linkLabel": "Visit Website"
+            },
+            {
+              "title": "VICTORY XR",
+              "html": "<p>VictoryXR is a leading provider of immersive educational experiences using virtual and augmented reality. Specializing in Metaverse classrooms and digital twin campuses, VictoryXR empowers institutions and organizations to deliver engaging, scalable, and interactive learning. Our partnership enables us to integrate cutting-edge XR solutions that enhance training, collaboration, and innovation in education .</p>",
+              "media": "m-b6f461a569",
+              "href": "https://www.victoryxr.com/",
+              "linkLabel": "Visit Website"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Partners",
+      "path": "/partners/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-3a9e5521ce": {
+      "id": "m-3a9e5521ce",
+      "mime": "image/png",
+      "width": 791,
+      "height": 429,
+      "alt": "Vizio-Tek",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        791
+      ],
+      "svg": false
+    },
+    "m-b6f461a569": {
+      "id": "m-b6f461a569",
+      "mime": "image/jpeg",
+      "width": 2048,
+      "height": 2048,
+      "alt": "VICTORY XR",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAgCdASoQABAAA4BaJYwCdIExgli/2B3zXI3gAP735hyTZqv3HVk4rZRzxa+sii3nZ8/CrYL3brM7H5FNkPJEJIhGyVU7B8rkHA/jogAAAA=="
+    }
+  }
+}

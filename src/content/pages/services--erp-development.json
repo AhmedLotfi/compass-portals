@@ -1,0 +1,122 @@
+{
+  "id": "services--erp-development",
+  "kind": "service",
+  "path": "/services/erp-development/",
+  "title": "ERP Development",
+  "sourceUrl": "https://compassint.org/services/erp_development",
+  "seo": {},
+  "hero": {
+    "title": "ERP Development",
+    "lede": "Compass provides expert ERP consultancy to help businesses maximize efficiency. we tailor systems to meet your unique needs. Backed by a strong technical team and extensive experience, we ensure seamless integration, compliance, and long-term business growth.",
+    "media": "m-66d5a25d75",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Compass International offers specialized ERP Consultancy services to help your company achieve its goals through best practices. Our team of key subject matter experts in Oracle E-Business Suite brings extensive knowledge in areas such as HR &amp; Payroll, Financial Management, and Supply Chain. We provide tailored guidance to optimize your processes and extend the capabilities of your Oracle Applications. Additionally, we offer custom ERP solutions based on client needs, ensuring that your unique requirements are met with precision. Our strong technical team ensures seamless integration and customization, enabling you to leverage the full potential of your ERP system. With our expertise, your organization can streamline operations, improve efficiency, and drive business growth</p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-16ec3ce344"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Oracle E-Business Suite Expertise: We specialize in implementing and optimizing Oracle E-Business Suite to enhance your business processes across HR, Finance, and Supply Chain</p> <p>Extensive GCC Experience: With extensive experience in the GCC region, we provide ERP solutions tailored to the unique business environments and regulatory requirements of GCC countries</p> <p>Bilingual Arabic and English Resources: Our team includes bilingual professionals proficient in Arabic and English, ensuring effective communication and support for diverse clientele</p> <p>Comprehensive Training Material: We offer ready-to-use training materials that cover all aspects of the ERP system, enabling your team to quickly and effectively utilize the system</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-72b5f45c82"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Extended Oracle E-Business Suite: We offer extensive customization and extensions for Oracle E-Business Suite, ensuring the solution meets your specific business needs</p> <p>Strong Technical Team with OCP and OCA Certifications: Our highly skilled technical team holds Oracle Certified Professional (OCP) and Oracle Certified Associate (OCA) certifications, guaranteeing expert-level support and implementation</p> <p>Experience with Oracle E-Business Latest Releases: We have extensive experience with the latest releases of Oracle E-Business Suite, ensuring your ERP system leverages the newest features and improvements</p> <p>Experience with Upgrades from One Release to Another: Our team is proficient in managing upgrades from one release to another, ensuring a smooth transition and minimal disruption to your operations</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Services",
+      "path": "/services/"
+    },
+    {
+      "label": "ERP Development",
+      "path": "/services/erp-development/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-16ec3ce344": {
+      "id": "m-16ec3ce344",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAoAA4BaJYgCdAYtpgVLE2dIAAD+wPZW0+FE3ayevN8aozIV/rxP9FVWayXkPekaD2HeMeNWae0slprNnHbqR5173l5ZtyBivI9717xqMARHbyMVrS7wAAA="
+    },
+    "m-66d5a25d75": {
+      "id": "m-66d5a25d75",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "ERP Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJZQCdADhlaUWA4VgAP36UvE8yCn7zH0+RcWFgaYKX0wnpHlCDfdMXYoe8+jYUMP9JzxA1PMvdbYEIRCDtbaSf5Mykt5j0YrJDJXRonNGxahGrZCAAA=="
+    },
+    "m-72b5f45c82": {
+      "id": "m-72b5f45c82",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoAA4BaJZgC7AEf6RVohQyiuyAA/guBeQKo1un12cSXgJRfHybtl2/OzCxwQckE0SN7+Jl8nc0jLQNWUavCfJdrfuAOhO0X83Iq+krL5CjluFl2Zs4A"
+    }
+  }
+}

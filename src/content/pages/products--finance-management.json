@@ -1,0 +1,164 @@
+{
+  "id": "products--finance-management",
+  "kind": "product",
+  "path": "/products/finance-management/",
+  "title": "Finance Management",
+  "sourceUrl": "https://compassint.org/products/finance_management",
+  "seo": {},
+  "hero": {
+    "title": "Finance Management",
+    "lede": "Our financial solution offers more than just accounting. It delivers comprehensive financial functionalities tailored to meet your business requirements. Manage invoicing, expense tracking, budgeting, and cash flow seamlessly with our customizable solution.",
+    "media": "m-4e2f6b33ba",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our Finance solution leverages advanced accounting principles and best practices, including multi-company, multi-segment, and multi-cost center functionalities. It is equipped with a reporting system that enables management to monitor daily business activities effectively and generates automated reports such as trial balances, balance sheets, and more, providing comprehensive insights. Additionally, it tracks key performance indicators (KPIs) to facilitate swift and informed decision-making, addressing critical inquiries promptly</p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-49a71f2479"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Consolidated Financial Statements: Generate comprehensive balance sheets and profit and loss statements.</p> <p>Multi-Company and Multi-Legal Entities: Manage multiple companies and legal entities within a single system.</p> <p>Multi-Currency Operations: Conduct transactions and maintain accounts in various currencies.</p> <p>Multi-Cost Centers: Track and analyze expenses across different cost centers</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-0d5e435b93"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Flexible Fields: Adapt fields to meet specific business requirements and workflows</p> <p>Web-Based and Web-Enabled Solutions: You may access the platform through any device with a suitable connection</p> <p>SMS and Email Integration: Ability to send notifications through text or email streams</p> <p>Ability to export reports or documents to file formats such as Excel, Word, and PDF</p>"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Accounts Receivables",
+              "html": ""
+            },
+            {
+              "title": "Accounts Payable",
+              "html": ""
+            },
+            {
+              "title": "General Ledger",
+              "html": ""
+            },
+            {
+              "title": "Cash Management",
+              "html": ""
+            },
+            {
+              "title": "Fixed Assets",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Products",
+      "path": "/products/"
+    },
+    {
+      "label": "Finance Management",
+      "path": "/products/finance-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-0d5e435b93": {
+      "id": "m-0d5e435b93",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAoAA4BaJZwAAmsFnqR1StEAAP5E2CRHNmqWIlIb977SgZbr1MgH5SYL0fsOfz3fF/MX4BxKdaEUIeBbjbH8Hh7DGqJ59yj2XeNXfwGUHA8AAAA="
+    },
+    "m-49a71f2479": {
+      "id": "m-49a71f2479",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQAAoAA4BaJYwC7AEQ/c91sKWAAP75Fxrl8Sb06LGB4dXuRjuxnZrLoyGX5uS5W5HyCDxM5JzAAA=="
+    },
+    "m-4e2f6b33ba": {
+      "id": "m-4e2f6b33ba",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Finance Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQAAoAA4BaJZwAD4zMhM7+GnAA/sogO9IQhlQRdt94dW+jcH9dZ/GZzAiN9kmEPr+4iXIXmt+JdjyIEw98jl0fHSsyBg4BBIZ19grkke4YfnHuRTP14VDudIdHvaidi3seDYACXaAAAA=="
+    }
+  }
+}

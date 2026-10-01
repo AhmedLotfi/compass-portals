@@ -1,0 +1,49 @@
+{
+  "id": "industries--real-estate",
+  "kind": "page",
+  "path": "/industries/real-estate/",
+  "title": "Real Estate",
+  "sourceUrl": "https://compassint.org/industries/real_estate",
+  "seo": {},
+  "hero": {
+    "title": "Real Estate",
+    "lede": "Compass provides innovative IT and software solutions designed for the real estate industry. We help real estate companies streamline property management, automate sales processes, and enhance client engagement through smart tools like CRM integration, AI chatbots, and data analytics. With Compass, you gain the digital edge to succeed in a fast-moving market.",
+    "media": "m-2dee8f3f5f",
+    "ctas": []
+  },
+  "sections": [],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Industries",
+      "path": "/industries/"
+    },
+    {
+      "label": "Real Estate",
+      "path": "/industries/real-estate/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-2dee8f3f5f": {
+      "id": "m-2dee8f3f5f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Real Estate",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwAgCdASoQAAoAA4BaJbACdH8AgoiDTinpSCzAAP5OUC3hSXgBAJuvNEXeHv+IKw+i/Sou2dVeEMgvX+wNI821IVEq0ZyhWAftUR5W9z8HaHUBj1szVSR2k9165AHA9KB/i+XgIcNwsZUBesrdvevsgG2nyvRzAYcAAA=="
+    }
+  }
+}

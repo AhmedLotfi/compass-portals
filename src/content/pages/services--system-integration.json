@@ -1,0 +1,212 @@
+{
+  "id": "services--system-integration",
+  "kind": "service",
+  "path": "/services/system-integration/",
+  "title": "System Integration",
+  "sourceUrl": "https://compassint.org/services/system_integration",
+  "seo": {},
+  "hero": {
+    "title": "System Integration",
+    "lede": "Your business will work smarter by connecting all the software and systems in one place. This makes it easier for your teams to share information, make faster decisions, and grow without problems. Whether you're handling HR, finance, or customer data, everything works together smoothly, helps saving you time, cutting down on errors, and moving your business forward with confidence.",
+    "media": "m-144236b7d5",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-0bbd58aa92"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Our integration services at Compass are designed to seamlessly unify diverse IT systems, ensuring cohesive and efficient operations across all departments of your organization. With our expertise, we integrate hardware, software, and network components into a unified infrastructure. Our approach focuses on minimizing disruption and enhancing workflow continuity, ensuring smooth data flow and improved operational efficiency.</p> <p>We work closely with our clients to understand their specific needs and begin designing integration solutions that align with their strategic goals. Our solutions are built to be scalable and adaptable to future developments. Additionally, we offer integration with a wide range of third-party applications upon client request, providing the flexibility and functionality needed to meet the unique requirements of every business. Our commitment to quality and excellence ensures that your integrated systems will effectively support your business objectives.</p>"
+        }
+      ]
+    },
+    {
+      "id": "end-to-end-business-process-automation",
+      "title": "End-to-End Business Process Automation",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9fd6c3416a"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Our system integration services automate key business processes across departments, from HR and finance to supply chain and customer service. This reduces manual intervention, accelerates workflows, and ensures consistency across your organization. By streamlining tasks, we empower your teams to focus on more strategic, value-driven activities.</p>"
+        }
+      ]
+    },
+    {
+      "id": "ai-driven-insights-and-automation",
+      "title": "AI-Driven Insights and Automation",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-cfc0bb33bb"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Compass integrates artificial intelligence (AI) into your systems to drive smarter business operations. By utilizing AI for predictive analytics, anomaly detection, and automated decision-making, we help you stay ahead of market trends, reduce risks, and improve efficiency. Our AI-powered solutions offer deeper insights that enable proactive, data-backed decision-making across your organization.</p>"
+        }
+      ]
+    },
+    {
+      "id": "scalable-and-flexible-architecture",
+      "title": "Scalable and Flexible Architecture",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-68636cb28c"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Compass offers integration solutions designed to scale with your business. Our flexible architecture supports future growth by easily adapting to new technologies, additional data, and expanded operations. This ensures that your systems continue to evolve without the need for significant overhauls, providing a long-term solution that accommodates business expansion.</p>"
+        }
+      ]
+    },
+    {
+      "id": "smart-integration-with-erp-crm-and-legacy-systems",
+      "title": "Smart Integration with ERP, CRM, and Legacy Systems",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-d46a6aad5b"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Our team ensures smooth integration with existing ERP, CRM, and legacy systems, optimizing their performance and enhancing their capabilities. By bridging modern technologies with legacy systems, we preserve your existing investments while driving innovation and efficiency, resulting in improved workflow and greater user satisfaction.</p>"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Landing Features",
+              "html": "<p>Accounting software is a tool that allows you to track and manage the day-to-day finances of your businesses.</p> <p>It should allow you to create professional invoices.</p> <p>manage expense tracking, run double-entry accounting reports.</p> <p>accept online payments, and monitor all parts of your business’s money – both in and out.</p> <p>accounting software allows you to do all of this – and more.</p> <p>It includes invoicing features, expense tracking, time tracking, online payments, industry-standard double-entry accounting, balance sheets.</p> <p>mileage tracking, project profitability, bank reconciliation.</p> <p>client retainers, and the list goes on. It’s the reason we’re one of those most popular small business invoicing software – having been used by over 30 million people worldwi.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Services",
+      "path": "/services/"
+    },
+    {
+      "label": "System Integration",
+      "path": "/services/system-integration/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-0bbd58aa92": {
+      "id": "m-0bbd58aa92",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAQCdASoQAAoAA4BaJZQCdACwEjdogAD+56uX5DpNZH5Z0K7z2pERWhcjVz3xPEHZ/aG+nv4EV29K4q6vXo5NQZXT9TCWur4pOh7bXaa0hF/NlxpRy9ton24tUAAA"
+    },
+    "m-144236b7d5": {
+      "id": "m-144236b7d5",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "System Integration",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoAA4BaJbACdADw78H3CFoAAP7lIuZPNukocC875pLdyA5GM4RFSedjbuGoinbuNW5t28jbQ7cUnuKP7LaeYfuTme9JYUh+L8PXdmsF9D4OA9B0r4AA"
+    },
+    "m-68636cb28c": {
+      "id": "m-68636cb28c",
+      "mime": "image/jpeg",
+      "width": 736,
+      "height": 491,
+      "alt": "Scalable and Flexible Architecture",
+      "widths": [
+        320,
+        480,
+        640,
+        736
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwAQCdASoQAAsAA4BaJbACdAYv1hZZGrAA/e+kg9LXsrClb1qMosINpODWQ6jG8fzh4RE1c4ZFsJ8CdqlvDZbe0bDz2ddiVTHldjQ9MrNqRQdLedRoGZ4sZb5LdEgCkXuoTBVOUzIQxl8UsRHUHZcAAAA="
+    },
+    "m-9fd6c3416a": {
+      "id": "m-9fd6c3416a",
+      "mime": "image/jpeg",
+      "width": 735,
+      "height": 490,
+      "alt": "End-to-End Business Process Automation",
+      "widths": [
+        320,
+        480,
+        640,
+        735
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAsAA4BaJbACdAYt92irYu/QAAD+zfcsNs3oZaRzgPGp8bvQOK2YGv/lF5zOFGzKFbgymbxRhtsrEgqlfloKWFmxUTqRfFBg7C0X736Nl7QQ+Q3SDR3g+83WNampNeMsAAAA"
+    },
+    "m-cfc0bb33bb": {
+      "id": "m-cfc0bb33bb",
+      "mime": "image/jpeg",
+      "width": 736,
+      "height": 736,
+      "alt": "AI-Driven Insights and Automation",
+      "widths": [
+        320,
+        480,
+        640,
+        736
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwAgCdASoQABAAA4BaJbACdAYv12b3LjG+KosAAP70n9zG8lzevhSasG/d+LeVpfVJmwi/1WqomYOrHd6EftarmT7mf7xKvlsRLAAojFg1H90dlFCWW+TpltVZe/d/f1WLFBiUlix08aLZ/jwVDxd2Ih5W9rQ2NSwMglg0oAA="
+    },
+    "m-d46a6aad5b": {
+      "id": "m-d46a6aad5b",
+      "mime": "image/jpeg",
+      "width": 735,
+      "height": 489,
+      "alt": "Smart Integration with ERP, CRM, and Legacy Systems",
+      "widths": [
+        320,
+        480,
+        640,
+        735
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJQBOgMYOpbrDLnAA/vNTPbUmye1vpCOvaprcAi/7HeUcRl1Egcq71w+tUeVZE0cWB3YqVIpFgx2mDTVvGK1rvtrQL6yYmfsIk+RFooAAAA=="
+    }
+  }
+}

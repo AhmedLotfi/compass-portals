@@ -36,12 +36,14 @@ const ICONS: Record<string, IconName> = {
           } @else {
             <span class="feature-list__marker" aria-hidden="true"></span>
           }
-          <span class="feature-list__text">
+          <div class="feature-list__text">
             @if (item.title) {
-              <strong>{{ item.title }}</strong>
+              <strong class="feature-list__name">{{ item.title }}</strong>
             }
-            <span [innerHTML]="item.html"></span>
-          </span>
+            @if (item.html) {
+              <div class="feature-list__body" [innerHTML]="item.html"></div>
+            }
+          </div>
         </li>
       }
     </ul>
@@ -72,6 +74,16 @@ const ICONS: Record<string, IconName> = {
       align-items: start;
       padding-block: 0.8rem;
       border-top: var(--hairline);
+    }
+    .feature-list__name {
+      display: block;
+    }
+    /* Site text can be several paragraphs (an office's address, phone and email). */
+    .feature-list__body > :is(p, ul, ol) {
+      margin: 0;
+    }
+    .feature-list__body > * + * {
+      margin-top: 0.35rem;
     }
     .feature-list__icon {
       margin-top: 0.1rem;

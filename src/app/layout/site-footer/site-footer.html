@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="frame site-footer__grid">
     <div class="site-footer__brand">
-      <a class="site-footer__logo" routerLink="/">
+      <a class="site-footer__logo" [class.site-footer__logo--plate]="logoOnDark" routerLink="/">
         @if (logo) {
           <app-media-image [media]="logo" [style.inline-size]="logoWidth" sizes="12rem" />
         } @else {
@@ -12,16 +12,6 @@
         <p class="site-footer__tagline">{{ site.tagline }}</p>
       }
     </div>
-
-    @if (links.length) {
-      <nav class="site-footer__nav" [attr.aria-label]="'footerNavigation' | copy">
-        <ul>
-          @for (item of links; track item.href + item.label) {
-            <li><app-nav-link [item]="item" linkClass="footer-link" /></li>
-          }
-        </ul>
-      </nav>
-    }
 
     <address class="site-footer__contact">
       @if (site.contact.address.length) {
@@ -88,9 +78,33 @@
     }
   </div>
 
-  @if (site.footer.copyright) {
-    <div class="frame site-footer__base">
-      <p>{{ site.footer.copyright }}</p>
-    </div>
+  @if (groups.length) {
+    <nav class="frame site-footer__columns" [attr.aria-label]="'footerNavigation' | copy">
+      @for (group of groups; track group.href + group.label) {
+        <div class="site-footer__column">
+          <h2 class="site-footer__heading">
+            <app-nav-link [item]="group" linkClass="footer-link" />
+          </h2>
+          <ul>
+            @for (item of group.children; track item.href + item.label) {
+              <li><app-nav-link [item]="item" linkClass="footer-link" /></li>
+            }
+          </ul>
+        </div>
+      }
+    </nav>
   }
+
+  <div class="frame site-footer__base">
+    @if (links.length) {
+      <ul class="site-footer__links" [attr.aria-label]="'footerLinks' | copy">
+        @for (item of links; track item.href + item.label) {
+          <li><app-nav-link [item]="item" linkClass="footer-link" /></li>
+        }
+      </ul>
+    }
+    @if (site.footer.copyright) {
+      <p>{{ site.footer.copyright }}</p>
+    }
+  </div>
 </footer>

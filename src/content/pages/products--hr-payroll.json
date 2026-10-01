@@ -1,0 +1,160 @@
+{
+  "id": "products--hr-payroll",
+  "kind": "product",
+  "path": "/products/hr-payroll/",
+  "title": "HR & Payroll",
+  "sourceUrl": "https://compassint.org/products/hr_%26_payroll",
+  "seo": {},
+  "hero": {
+    "title": "HR & Payroll",
+    "lede": "Enhance your organization's HR and payroll operations with our advanced and customizable module. Our HR system facilitates seamless management of employee onboarding, data administration, payroll processing, and more. With integrated compliance features and powerful reporting tools, our configurable solution ensures accuracy, transparency, and operational efficiency, empowering your HR department.",
+    "media": "m-1224c21e8a",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our HR &amp; Payroll solution is an web-based application that acts as a centralized hub for all aspects of employee management, including integration between departments, performance measurement, and payroll management. Tailored for all business types, it offers configurable and customizable features to meet every organization’s needs. Offering built-in integrated KPIs to closely monitor performance, payrolls, and more. As a result, facilitating informed decision-making and strategic planning. With intuitive interfaces and scalable capabilities, our solution ensures accurate payroll management while allowing organizations to drive effective HR strategies and achieve operational excellence</p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-76f23d4661"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Generate employee pays and have access to detailed payroll reports</p> <p>Manage comprehensive employee records efficiently<br><br>Analyze performance &amp; progress in the department through listed KPI's<br><br>Supports multi-tiered organizations</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-945e2e7122"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Web-Based and Web-Enabled: Access the platform via a web browser from any device with internet connectivity</p> <p>SMS and Email Integration: Send notifications and communications directly from the application via SMS and email</p> <p>Export Functionality: Effortlessly export data and reports into Excel, Word, and PDF formats</p> <p>Flexible Fields: Customize and modify fields to fit specific requirements and workflows</p>"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Human Resource",
+              "html": ""
+            },
+            {
+              "title": "Payroll",
+              "html": ""
+            },
+            {
+              "title": "Time Attendance",
+              "html": ""
+            },
+            {
+              "title": "Self-service",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Products",
+      "path": "/products/"
+    },
+    {
+      "label": "HR & Payroll",
+      "path": "/products/hr-payroll/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-1224c21e8a": {
+      "id": "m-1224c21e8a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "HR & Payroll",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAoAA4BaJZwAD4tPvKXqXDy+zAAA/u2jVTqhAPwKWURI2T78GOHclj87SbjLCSimPQE8PW5H4yJkzWTT+gCcIc6rRIeGiFEnx82doNyMAAAA"
+    },
+    "m-76f23d4661": {
+      "id": "m-76f23d4661",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQAAoAA4BaJZQCdADzp1u5mCrAAP7uKnYyx4jT8TRZRnIvh8nCTUypuTZJixIzVDe1+XyXoJMFmI8ziDescsslX6LFrILY+6ugsbXLWjxxvXx1upAOx/JEruWqhFKAAAA="
+    },
+    "m-945e2e7122": {
+      "id": "m-945e2e7122",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQAAoAA4BaJZAC7AEDpM6BS77gAP7n/aWVe7fz8X000jBF8VVT9VdFQJs8SmUYsayJJ2ev4yfMSj1tZLbFwCqB6UVnCuM/vFM5yCsUeQnaFzcIO9b6j7a+lHkKVOHj9AYoAAAA"
+    }
+  }
+}

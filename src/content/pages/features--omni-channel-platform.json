@@ -1,0 +1,71 @@
+{
+  "id": "features--omni-channel-platform",
+  "kind": "page",
+  "path": "/features/omni-channel-platform/",
+  "title": "Omni channel Platform",
+  "sourceUrl": "https://compassint.org/features/omni_channel_platform",
+  "seo": {},
+  "hero": {
+    "title": "Omni channel Platform",
+    "lede": "Drive Business Success with Omni Channel Capabilities. With our comprehensive support, businesses can harness the Omni Channel platform to deliver consistent and personalized experiences to customers across all touchpoints. Whether it's online channels, physical stores, mobile devices, or any other interaction point, we ensure a seamless and unified experience. Empower your business to effortlessly connect with customers and maximize their satisfaction with our unparalleled support.",
+    "media": "m-1e1f3fc552",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our solutions ensure seamless synchronization of customer data, inventory information, and transaction details in real-time across all channels. This guarantees a cohesive and unified customer experience, enabling transactions to begin in one channel and seamlessly conclude in another without disruptions or data inconsistencies.</p> <p>By leveraging the Omni Channel capabilities, businesses gain a holistic understanding of customer interactions, preferences, and purchase history. This rich data empowers targeted marketing campaigns, personalized offers, and tailored recommendations, thereby enhancing customer satisfaction and driving sales.</p> <p>Additionally, businesses can efficiently manage operations across channels, including inventory visibility, order management, and fulfillment. This ensures accurate tracking of stock levels and prompt delivery of purchases to customers.</p>"
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Features",
+      "path": "/features/"
+    },
+    {
+      "label": "Omni channel Platform",
+      "path": "/features/omni-channel-platform/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-1e1f3fc552": {
+      "id": "m-1e1f3fc552",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Omni channel Platform",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAgCdASoQAAsAA4BaJZACdB2gDY6vsdfq5yqOeAAA/tJ/8rYpgoSLxuPqNYvsnMlM9xOOOoxrnMPla97BtSGgdH4i3YGPz3sIsNG82NdxQ8NBKBMgAe7lyCFuc2QlPceZM7yebxqrNbSAAAA="
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "industries--consulting",
+  "kind": "page",
+  "path": "/industries/consulting/",
+  "title": "Consulting",
+  "sourceUrl": "https://compassint.org/industries/consulting",
+  "seo": {},
+  "hero": {
+    "title": "Consulting",
+    "lede": "Compass understands and acknowledges the distinct needs and requirements of the consulting industry. Consequently, our all-encompassing Enterprise Resource Planning (ERP) solution is meticulously tailored to specifically address the unique challenges faced by consulting firms",
+    "media": "m-11e762222e",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our solutions equips consulting firms with the necessary tools and functionalities to effectively manage their contracts, resources, and client relationships. By leveraging our specialized solution, businesses can optimize project planning and execution by efficiently allocating resources, managing budgets, and tracking project milestones. Our systems also boasts robust time tracking and billing capabilities, enabling consulting firms to accurately capture billable hours, generate invoices, and seamlessly handle client payments. Moreover, our solution offers sophisticated Customer Relationship Management (CRM) functionality, empowering consulting firms to cultivate client relationships, monitor interactions, and gain invaluable insights into client preferences and requirements. In addition to these comprehensive features, our solutions encompasses specialized modules, including Finance Management, HR &amp; Payroll, and Contracts Management. These modules equip consulting firms with the necessary tools to proficiently manage financial processes, oversee HR functions, and effectively handle contract management. By leveraging our industry-specific software solutions, consulting firms can enhance operational efficiency, drive successful project outcomes, and thrive in a highly competitive market. Irrespective of project management, resource optimization, or the delivery of exceptional client service, our solutions empowers consulting firms to achieve unparalleled success</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Industries",
+      "path": "/industries/"
+    },
+    {
+      "label": "Consulting",
+      "path": "/industries/consulting/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-11e762222e": {
+      "id": "m-11e762222e",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Consulting",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoAA4BaJYwCdAYuvVU6mCAAAP6sbtRclUVcNsZB3jCdO398lzksrvnb8Lw6hzwUWFWt2CBcS4ZqUXoeuTEC4dzAkPSDGZnnxK/HD2xWoggAaUXvZEAA"
+    }
+  }
+}

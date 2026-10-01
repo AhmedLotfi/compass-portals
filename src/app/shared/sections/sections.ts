@@ -25,7 +25,11 @@ import { BlockView } from '../blocks/block-view';
         }
         <div class="rail-section__body">
           @for (block of section.blocks; track $index) {
-            <app-block-view [block]="block" [media]="media()" />
+            <app-block-view
+              [block]="block"
+              [media]="media()"
+              [headingLevel]="section.title ? 3 : 2"
+            />
           }
         </div>
       </section>

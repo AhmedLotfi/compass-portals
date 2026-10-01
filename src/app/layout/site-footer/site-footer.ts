@@ -23,12 +23,15 @@ export class SiteFooter {
   protected readonly content = inject(ContentStore);
   protected readonly site = this.content.site;
   protected readonly logo = this.content.logo;
+  protected readonly logoOnDark = this.site.logoTone === 'light';
   protected readonly logoWidth = this.logo
     ? `calc(2.4rem * ${(this.logo.width / this.logo.height).toFixed(4)})`
     : undefined;
-  /** Footer menu from the site; the header's top level when the site has no footer menu. */
+  /** Footer menu groups (a heading link with its pages), as the site's footer columns. */
+  protected readonly groups = this.site.navigation.footer.filter((item) => item.children.length);
+  /** Single footer links; the header's top level when the site has no footer menu. */
   protected readonly links = this.site.navigation.footer.length
-    ? this.site.navigation.footer
+    ? this.site.navigation.footer.filter((item) => !item.children.length)
     : this.site.navigation.header.map((item) => ({ ...item, children: [] }));
   protected readonly social = this.site.social.map((s) => ({
     ...s,

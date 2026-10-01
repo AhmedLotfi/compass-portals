@@ -31,6 +31,12 @@ export interface Check {
 
 const NOT_FOUND_BODY = /<meta name="robots" content="noindex/;
 
+/**
+ * A segment like the old site's URL ciphertext. Its `%2F` variant isn't sampled: Apache refuses
+ * encoded slashes unless the server config sets `AllowEncodedSlashes`, which .htaccess can't.
+ */
+export const PREFIX_SAMPLE = 'U2FsdGVkX1%2BsvK2HIPtWNtih5iPLhPYchQyyGIWYBrM%3D';
+
 export async function hostingChecks(contentDir: string, browserDir: string): Promise<Check[]> {
   const read = async <T>(file: string) =>
     JSON.parse(await readFile(path.join(contentDir, file), 'utf8')) as T;
@@ -60,7 +66,9 @@ export async function hostingChecks(contentDir: string, browserDir: string): Pro
       { name: 'trailing slash', path: bare, status: 301, location: inner.path },
     );
   }
-  const moved = redirects.find((r) => r.status === 301 && !r.from.includes('?'));
+  const moved = redirects.find(
+    (r) => r.status === 301 && !r.from.includes('?') && !r.from.endsWith('*'),
+  );
   if (moved) {
     checks.push({ name: 'old URL', path: encodeURI(moved.from), status: 301, location: moved.to });
     if (moved.from.endsWith('/') && moved.from.length > 1) {
@@ -72,6 +80,16 @@ export async function hostingChecks(contentDir: string, browserDir: string): Pro
         serverOnly: true,
       });
     }
+  }
+  const prefix = redirects.find((r) => r.status === 301 && r.from.endsWith('*'));
+  if (prefix) {
+    // The old site appends a per-visit ciphertext to its URLs (base64, percent-encoded).
+    checks.push({
+      name: 'old URL with a ciphertext segment',
+      path: `${encodeURI(prefix.from.slice(0, -1))}${PREFIX_SAMPLE}`,
+      status: 301,
+      location: prefix.to,
+    });
   }
   const short = redirects.find((r) => /^\/\?(?:page_id|p)=\d+$/.test(r.from) && r.to !== '/');
   if (short) {

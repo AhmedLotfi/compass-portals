@@ -89,6 +89,21 @@ export function pageKey(href: string, origin: string, hosts: string[]): string |
   return `${new URL(origin).origin}${pathname}${url.search}${hashRoute}`;
 }
 
+/**
+ * The page a key shows. The old front end appends a ciphertext segment (CryptoJS, base64 of
+ * `Salted__…`) that changes on every render, so the same page turns up under many URLs.
+ */
+export function pageIdentity(key: string): string {
+  const url = new URL(key);
+  const segments = url.pathname.split('/');
+  const last = decodeURIComponent(segments.at(-1) ?? '');
+  if (/^U2FsdGVkX1/.test(last)) url.pathname = segments.slice(0, -1).join('/') || '/';
+  return url.href;
+}
+
+/** Pages no link leads to (form targets), rendered so their text is archived too. */
+export const SEED_PATHS = ['/request-demo', '/news-details', '/careers/apply'];
+
 function slugFor(url: string): string {
   const parsed = new URL(url);
   const base =
@@ -216,8 +231,8 @@ export async function renderSite(options: RenderOptions = {}): Promise<RenderMan
   );
 
   const start = keyOf(new URL('/', origin).href)!;
-  const queue = [start];
-  const seen = new Set(queue);
+  const queue = [start, ...SEED_PATHS.map((p) => keyOf(new URL(p, origin).href)!)];
+  const seen = new Set(queue.map(pageIdentity));
   const pages: RenderedPage[] = [];
   const failed: { url: string; error: string }[] = [];
   const started = Date.now();
@@ -291,8 +306,8 @@ export async function renderSite(options: RenderOptions = {}): Promise<RenderMan
           continue;
         }
         links.add(key);
-        if (!seen.has(key)) {
-          seen.add(key);
+        if (!seen.has(pageIdentity(key))) {
+          seen.add(pageIdentity(key));
           queue.push(key);
         }
       }

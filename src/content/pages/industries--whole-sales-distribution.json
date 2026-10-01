@@ -1,0 +1,60 @@
+{
+  "id": "industries--whole-sales-distribution",
+  "kind": "page",
+  "path": "/industries/whole-sales-distribution/",
+  "title": "Whole Sales Distribution",
+  "sourceUrl": "https://compassint.org/industries/whole_sales_distribution",
+  "seo": {},
+  "hero": {
+    "title": "Whole Sales Distribution",
+    "lede": "At Compass, we recognize the unique needs and challenges faced by wholesale businesses. That's why we have developed a comprehensive software solution tailored to cater specifically to the requirements of the wholesale industry",
+    "media": "m-b65c9bf240",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our system offers a wide range of features and functionalities designed to streamline wholesale operations, optimize inventory management, and enhance overall efficiency.<br>Our software solution includes specialized finance management modules that cater to the complex financial requirements of wholesale distributors. It enables businesses to efficiently handle pricing structures, including bulk discounts, tiered pricing, and contract pricing, ensuring accurate and profitable sales transactions. With our solution, wholesale businesses can automate critical financial processes, such as order management, procurement, and inventory control, enabling seamless collaboration and maximizing profitability.<br>We understand that inventory management is crucial for wholesale businesses. it incorporates advanced demand forecasting and inventory replenishment capabilities, allowing wholesale businesses to anticipate customer demand, optimize stock levels, and minimize stockouts. With our powerful warehouse management features, businesses can efficiently receive, store, and fulfill orders, ensuring timely and accurate deliveries.</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Industries",
+      "path": "/industries/"
+    },
+    {
+      "label": "Whole Sales Distribution",
+      "path": "/industries/whole-sales-distribution/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-b65c9bf240": {
+      "id": "m-b65c9bf240",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Whole Sales Distribution",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAoAA4BaJZQCw7Ytp/ZAVpGWgAD8oK5fnkk3Hkbp8vAUL/lRq+VdzEkKAmgvPxpr/WTRej1rY2tYcHDNh3HQthcxXAAA"
+    }
+  }
+}

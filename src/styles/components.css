@@ -141,3 +141,24 @@
     align-self: start;
   }
 }
+
+/* Logo galleries (media-block): the frame and image inside each even cell. */
+.plates--logos .plate__frame {
+  display: grid;
+  place-items: center;
+  inline-size: 100%;
+  block-size: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+.plates--logos app-media-image {
+  max-block-size: 100%;
+}
+.plates--logos img {
+  inline-size: auto;
+  max-inline-size: 100%;
+  max-block-size: 4.5rem;
+  object-fit: contain;
+}

@@ -1,0 +1,2934 @@
+{
+  "media": [
+    {
+      "id": "m-00c53fde01",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ce917610-2951-43df-b978-428ef3d41d8c.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-ce917610-2951-43--93263a4a7d.png",
+      "mime": "image/png",
+      "width": 120,
+      "height": 54,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        120
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-08295d417c",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-156a5cb5-46ff-4c22-8675-5261d9897401.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-156a5cb5-46ff-4c--f77472f43e.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 667,
+      "alt": "Invoicing",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQAgCdASoQAAsAA4BaJZQCdAYt9ynhxHUnwqDcAAD+sjyx9ilKv2+1K+sWeimI1lZZpul6iZsmxXVUmCENjQrP3Nyn3mektsZDQL/S+Vf1NPT+wbdpRtlLjM2btIM4AWG5j8AA",
+      "usedOn": [
+        "features--invoicing"
+      ]
+    },
+    {
+      "id": "m-09389eb502",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-441b0cfa-3790-43e2-9853-ea6cb42c0f93.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-441b0cfa-3790-43--6dc4c04491.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technologies we Specialise In",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAoAA4BaJZQCdAED/rOMPfhmgAD+3bHS4NeNGKxvi/HtPDU/l8puP6sq4g3Pfgkb8myOGHSeezGcxLk5t0u/ld+40nDxxzvAx+NDf7PnybpZ5WgRTGlXJWBAAA==",
+      "usedOn": [
+        "services--custom-development"
+      ]
+    },
+    {
+      "id": "m-09df8b8cbc",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-31623d38-e6e0-4e60-9af8-ab41cd45cd45.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-31623d38-e6e0-4e--7d8d773be7.jpg",
+      "mime": "image/jpeg",
+      "width": 914,
+      "height": 1280,
+      "alt": "Baraa Oubessi",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        914
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoQABYAPu1iqU2ppaOiMAgBMB2JZwAAV+ztNRdtH59vhUAA+/hQAPDHfMwMpM9UnyD0sJKYvxiI0XrYIVH3KaM7c45FHzxPiBF2brwXJWnTvYZYZPYI4NzM9o9uk7gDQNuu88QUiiSX4DMNudwoXbAjN7mza/SCAPzgAA==",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-0a9800d342",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d672dae2-8ae9-4e7c-885b-1bd7eaf27ed9.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-d672dae2-8ae9-4e--cf46240831.png",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Expert IT Outsourcing Services and Dedicated Manpower",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-0b351bb561",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-062f48b4-020f-4569-903a-371a4debbddf.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-062f48b4-020f-45--a880b645e5.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Government",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAoAA4BaJZACdAC9O+V82OgA3jRZ6vaZ9z2Dyo+Wd7VhkEct1ZUuAk6g8+qnYUVT+2P9XbdFguwp5ak2twL3kUZ9cXM/bpV6vK4AAAA=",
+      "usedOn": [
+        "industries--government"
+      ]
+    },
+    {
+      "id": "m-0bbd58aa92",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-18398c29-d3f5-4042-ac69-5fe1cad03454.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-18398c29-d3f5-40--a40583d6a9.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAQCdASoQAAoAA4BaJZQCdACwEjdogAD+56uX5DpNZH5Z0K7z2pERWhcjVz3xPEHZ/aG+nv4EV29K4q6vXo5NQZXT9TCWur4pOh7bXaa0hF/NlxpRy9ton24tUAAA",
+      "usedOn": [
+        "services--system-integration"
+      ]
+    },
+    {
+      "id": "m-0d5e435b93",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5124cb9b-47bc-4faf-9968-30d098e947bf.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-5124cb9b-47bc-4f--512cfb468e.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAoAA4BaJZwAAmsFnqR1StEAAP5E2CRHNmqWIlIb977SgZbr1MgH5SYL0fsOfz3fF/MX4BxKdaEUIeBbjbH8Hh7DGqJ59yj2XeNXfwGUHA8AAAA=",
+      "usedOn": [
+        "products--finance-management"
+      ]
+    },
+    {
+      "id": "m-0db1914f8b",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-26fe730f-1c0b-4d17-974b-6002eb00ca09.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-26fe730f-1c0b-4d--fb5aa56dc7.jpg",
+      "mime": "image/jpeg",
+      "width": 736,
+      "height": 490,
+      "alt": "Web Development",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        736
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAsAA4BaJZgCw7Dx5x5IAP7ihbklNksvs5j84tQV5Ik6/VP1IgwK0Z1WvQgSDoEXZR2Fd8E1xtTCqwjVmq4giGMDbkrtNJ3+EAAA",
+      "usedOn": [
+        "services--web-development"
+      ]
+    },
+    {
+      "id": "m-0dfc27511c",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c99f6bc9-c8e8-4e1a-bbec-4c5304f8f01e.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-c99f6bc9-c8e8-4e--3f532fba99.jpg",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Overview",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAsAA4BaJZACdH8Agsh1EkC8wAD+CPdtt2Oxrurb3J/U0tdWiXQgfjMjLIOgxYh3QGu4pLGmqEAV6ftRklLz5El1Xy5eQri9Y4oONbtHMMPvQmJrHK+MZMTQAA==",
+      "usedOn": [
+        "features--business-intelligence"
+      ]
+    },
+    {
+      "id": "m-0eed3394d6",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-211fdd8d-0a2d-4700-b30d-69cfc277b008.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-211fdd8d-0a2d-47--977e967c94.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Artificial Intelligence",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAoAA4BaJZwC7AEOgmrYxgAA/vI7wWlKEF15v6Xbsv+b1DSx08Bdr8c4n4gH5mwlsUmzRFYAAA==",
+      "usedOn": [
+        "services--artificial-intelligence"
+      ]
+    },
+    {
+      "id": "m-11d68445bb",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c340f2c0-8f25-4028-b9dc-bf981c38f15b.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-c340f2c0-8f25-40--2720b671c2.jpg",
+      "mime": "image/jpeg",
+      "width": 1206,
+      "height": 720,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1206
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAoAA4BaJaACdADMBUoKrJaWAP7YOaEDUnKWiZjXzv76E8PM1s8c7vH5+/Ct/Tm0SV8qHUMvbOxQF8n9vsS9Vu6t7+D5x6+Mga0aXGroRPfLm/TbYBIAAAA=",
+      "usedOn": [
+        "products--contracts-management"
+      ]
+    },
+    {
+      "id": "m-11e762222e",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-012b07ea-d822-401e-a561-df9695f1e3d8.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-012b07ea-d822-40--7b708fd805.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Consulting",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoAA4BaJYwCdAYuvVU6mCAAAP6sbtRclUVcNsZB3jCdO398lzksrvnb8Lw6hzwUWFWt2CBcS4ZqUXoeuTEC4dzAkPSDGZnnxK/HD2xWoggAaUXvZEAA",
+      "usedOn": [
+        "industries--consulting"
+      ]
+    },
+    {
+      "id": "m-1224c21e8a",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-543406e7-19dc-4a2b-9005-c32b2717b79b.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-543406e7-19dc-4a--b7e453370f.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "HR & Payroll",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAoAA4BaJZwAD4tPvKXqXDy+zAAA/u2jVTqhAPwKWURI2T78GOHclj87SbjLCSimPQE8PW5H4yJkzWTT+gCcIc6rRIeGiFEnx82doNyMAAAA",
+      "usedOn": [
+        "products--hr-payroll"
+      ]
+    },
+    {
+      "id": "m-144236b7d5",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-313929ac-fee2-41d3-b8d9-7f4a4c3dcc98.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-313929ac-fee2-41--97a8240004.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "System Integration",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoAA4BaJbACdADw78H3CFoAAP7lIuZPNukocC875pLdyA5GM4RFSedjbuGoinbuNW5t28jbQ7cUnuKP7LaeYfuTme9JYUh+L8PXdmsF9D4OA9B0r4AA",
+      "usedOn": [
+        "services--system-integration"
+      ]
+    },
+    {
+      "id": "m-148568f2d5",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-33d15b23-fc04-4646-a04a-aca3b6ee708e.jpeg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-33d15b23-fc04-46--3561bc9adf.jpg",
+      "mime": "image/jpeg",
+      "width": 408,
+      "height": 408,
+      "alt": "Ahmad Lotfi",
+      "altSource": "html",
+      "widths": [
+        320,
+        408
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwAgCdASoQABAAA4BaJYwCdH8AgoTF3c/A6+BAAP74tC4CFc6a/JgHX7+XsysC44qTWuqdSqBhGeurpYSm/ZvxxeCtai1IDDCI/REoutS64+23XHgH6ox55A/sbaeC18O5RCOh9YOi+hYcAI53FMNpJ14gAAAA",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-16c254ddaa",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9f4d4ef4-8c9c-451a-a693-613898c12231.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-9f4d4ef4-8c9c-45--c353afc4bb.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 1140,
+      "alt": "Why Compass ?",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "svg": false,
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-16ec3ce344",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ecab7bd7-0330-429d-9607-b345f5fa0ce5.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-ecab7bd7-0330-42--47b5927688.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAoAA4BaJYgCdAYtpgVLE2dIAAD+wPZW0+FE3ayevN8aozIV/rxP9FVWayXkPekaD2HeMeNWae0slprNnHbqR5173l5ZtyBivI9717xqMARHbyMVrS7wAAA=",
+      "usedOn": [
+        "services--erp-development"
+      ]
+    },
+    {
+      "id": "m-1b104cb34e",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d87e802a-0e4e-4e26-939b-73b793219ea0.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-d87e802a-0e4e-4e--ffef602edb.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Custom Development",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoAA4BaJbACdAEPDQKqJ+AQgAD+9ZETitVpafp6mTLvLj8pybxbOnhjJtoFXKhuD2sC5zPmsrpclS/SqAAA",
+      "usedOn": [
+        "services--custom-development"
+      ]
+    },
+    {
+      "id": "m-1de1dca7f9",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ce94ec8f-a782-4921-a6fd-02374d9a2671.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-ce94ec8f-a782-49--b93b219b57.png",
+      "mime": "image/png",
+      "width": 914,
+      "height": 1280,
+      "alt": "Mohammed Burhan Gill",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        914
+      ],
+      "svg": false,
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-1e1f3fc552",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-56dc10bb-871c-4ade-bdd7-e68f3b9c5e27.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-56dc10bb-871c-4a--046a7618c0.jpg",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Omni channel Platform",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAgCdASoQAAsAA4BaJZACdB2gDY6vsdfq5yqOeAAA/tJ/8rYpgoSLxuPqNYvsnMlM9xOOOoxrnMPla97BtSGgdH4i3YGPz3sIsNG82NdxQ8NBKBMgAe7lyCFuc2QlPceZM7yebxqrNbSAAAA=",
+      "usedOn": [
+        "features--omni-channel-platform"
+      ]
+    },
+    {
+      "id": "m-1e5a6aed27",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2f1ffc2e-f465-40a3-bfef-ea71142dde54.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-2f1ffc2e-f465-40--c087dba990.jpg",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 854,
+      "alt": "Other Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAsAA4BaJQBOgBSisc+egAD+7XJlxlzGIUph3lPlatV74KfXda3ZKwXRAnsl5CPsT/p/ysTCYF9+0h5o+v8vSyVjFZIm+AmJu4x4AAA=",
+      "usedOn": [
+        "features--other-features"
+      ]
+    },
+    {
+      "id": "m-1e962068bc",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c1436b3f-fe8e-4ad3-9ee5-201cf9ede21f.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-c1436b3f-fe8e-4a--1560073d1f.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Mission and Offering",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQAAoAA4BaJbACdAfwAwujHkAA/vGPzK6BDpwZ5yvu39uzCqA2nu3vabfDG1nbi8ezzwNPoCAulHE0az0dZ7mt8soaBiJjm05szpL/a/Br+WYiobjbq1Lmc0n8SYjf6BrKBA+U48AAAA==",
+      "usedOn": [
+        "services--artificial-intelligence"
+      ]
+    },
+    {
+      "id": "m-1fb825f2c8",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-4eefb917-198c-4432-b184-57361b5e0b96.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-4eefb917-198c-44--ca948c4423.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAoAA4BaJbACdH8AEYsVSIdoAAD+8x11F4bZvxcky0ifj8WSlTVail98Tt1Ds43dYrChLVSfN4WqmPk9Kc+EsDb+eqvfvUHboAAA",
+      "usedOn": [
+        "services--mobile-application-development"
+      ]
+    },
+    {
+      "id": "m-2108d20c7a",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d68b8f86-bb5a-4f7b-b060-7b85cefbc5c4.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-d68b8f86-bb5a-4f--9764ae8f8f.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQAgCdASoQAAoAA4BaJQBOhxGY5Ur0WHHxgMy8AAD+7lpc2V2LNnjcbZHu6z+915ew6A5jovmnyIUscS/F7LlmKDUSPZHXPAmqO9jLltoTgh11TuutAjuKC2sUI+gwgiovbXkLcEwl0ILq5lOOQAAA",
+      "usedOn": [
+        "services--mobile-application-development"
+      ]
+    },
+    {
+      "id": "m-21554ab937",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-bb0ff570-2aea-4e9a-bdba-edc0b3b0e406.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-bb0ff570-2aea-4e--6bfa52a281.jpg",
+      "mime": "image/jpeg",
+      "width": 998,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        998
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAoAA4BaJYwCdAEO1Dm8XhoAAP737tP8vCMjXCKb6YsRBljQXPU9X5+471hVMx6CrPElhWyp9ab8CA/0AdES0BOlCuT7q41iTYoXgAA=",
+      "usedOn": [
+        "products--charity-management"
+      ]
+    },
+    {
+      "id": "m-232b72b22e",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1571537b-5934-4cab-9307-3325f1b59e8e.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-1571537b-5934-4c--06aeddd606.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Legal",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAoAA4BaJQAAXTT8MDM6kAD+5+M50/2+rYipJAKwsLL8cqEVWqJc85zXa8OQquvEUIFkmG7I8+//Dhdh/9YF2p2C3asJbkScitIBi8JEo/egM9AAAA==",
+      "usedOn": [
+        "industries--legal"
+      ]
+    },
+    {
+      "id": "m-2608e25a68",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-3d31d590-3819-4181-b572-dfe87cd74d81.jpeg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-3d31d590-3819-41--89771ef31d.jpg",
+      "mime": "image/jpeg",
+      "width": 853,
+      "height": 1280,
+      "alt": "Samer Nashawati",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        853
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoQABgAPu1iqk4ppaQiMAgBMB2JZQDG9YyA33i7uHBNyMLPaFJkAP7QERrtD7ZVx9QdZsoGKqDfOGX+V1Hmp/PUU/hFARyZBzywvAiCAbp9wrRjwbJAavTqxEvt97ZZFv06wg27jzCNahy7W1AmAVVQjGQJnFrWJ1SkLR4PirXy55lgAAA=",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-27d745df79",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5c828b5b-e2de-4688-9954-3e2b5765f692.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-5c828b5b-e2de-46--3a52985a17.png",
+      "mime": "image/png",
+      "width": 126,
+      "height": 63,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        126
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-2be4774ccb",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d7b7dbc5-c886-4182-8631-959960327bc5.jpeg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-d7b7dbc5-c886-41--4f73789c9b.jpg",
+      "mime": "image/jpeg",
+      "width": 851,
+      "height": 1181,
+      "alt": "Waleed Wageh",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        851
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAQBACdASoQABYAPu1kqU2ppaOiMAgBMB2JQBOkBLhCZYysVspQbpC0AAD+3tZq9vSYMpVcWrZTCYRFQBTAU+U/veeaEHT4H6evc0yTFVU7Jp5ir511+E+XFziUS+rSZth7L47dzox2HkHHB7ohWN4vXw6zo6sSLwshTylcEcJ9DHcjc1Q8/2HsVFRDVqkSM6pAXAAA",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-2d8fff5367",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e049fd42-7273-4bb3-98b8-54b637796d96.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-e049fd42-7273-4b--6a493a61f0.png",
+      "mime": "image/png",
+      "width": 266,
+      "height": 54,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        266
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-2dee8f3f5f",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e4bcbd2a-32cb-481d-9811-e95fd6a0b835.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-e4bcbd2a-32cb-48--9c5f8acc69.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Real Estate",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwAgCdASoQAAoAA4BaJbACdH8AgoiDTinpSCzAAP5OUC3hSXgBAJuvNEXeHv+IKw+i/Sou2dVeEMgvX+wNI821IVEq0ZyhWAftUR5W9z8HaHUBj1szVSR2k9165AHA9KB/i+XgIcNwsZUBesrdvevsgG2nyvRzAYcAAA==",
+      "usedOn": [
+        "industries--real-estate"
+      ]
+    },
+    {
+      "id": "m-2e3d7c9ff6",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-195f2f57-1753-4655-a6ca-6fae3939fe71.jpeg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-195f2f57-1753-46--6c51544d55.jpg",
+      "mime": "image/jpeg",
+      "width": 3120,
+      "height": 4160,
+      "alt": "Mahmoud Meki",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZgCdMoMnJDXHdQyQm25ysXrgAP7gmT+Ulki0aqCME8bWb8wNInM0b4NUBzuUCnFlTbtbJwS66GJuXIhmrHvqXghiDBxffc9uWigi8GhZg8KCBrSJWfGzU4SaE1fkWzXYH/nGE1I7VWxFFOKhm6ooAAA=",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-31629987c6",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e7627b3c-ccbf-4ed2-a46f-fc45f153f8a2.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-e7627b3c-ccbf-4e--b6b1a7b0e8.jpg",
+      "mime": "image/jpeg",
+      "width": 640,
+      "height": 640,
+      "alt": "Hussein Jakhlab",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQABAAA4BaJQBOgMWWla8axrDMYAD2leJZGl34btJOtpkK7Z3XP6avZGzPhDfvfcWe+td5+/rxLZUeeIo4YwwDLA071ztkEkjnR1t6o8c0qQTw6YleXAAA",
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-31c96695f2",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-7b90680c-f194-4f33-8fe0-0c200bbbdc96.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-7b90680c-f194-4f--d986051ac6.jpg",
+      "mime": "image/jpeg",
+      "width": 1200,
+      "height": 546,
+      "alt": "Metaverse solution",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1200
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAcAA4BaJYgCdAEPUSVqs0AA/tIEB/yeFYwjFgNEAhEvJu37po/Rjg4ox9XkALR8Z+qudll77JUq9Nghp83WkhoAAA==",
+      "usedOn": [
+        "services--metaverse-solution"
+      ]
+    },
+    {
+      "id": "m-3296354ec2",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-27154dfb-3d42-48e7-aa25-4ca6839dfb13.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-27154dfb-3d42-48--ac5eb1a086.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Mobile Application Development",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAoAA4BaJbACdAEDjjuUoAD+9SMf4Vmdpx+n3LAL1LmC9cywFxRutIp8XEJPSZLRMo6IvuwZYJgRSYtzUd1UGk3R7JXCn+k3AlO5Q4pc4AAA",
+      "usedOn": [
+        "services--mobile-application-development"
+      ]
+    },
+    {
+      "id": "m-35911c2ef4",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-82eddefb-24c5-4eda-b89e-51ce3724e26e.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-82eddefb-24c5-4e--2e6b73272d.jpg",
+      "mime": "image/jpeg",
+      "width": 289,
+      "height": 360,
+      "alt": "Veeranan Malaisamy",
+      "altSource": "html",
+      "widths": [
+        289
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZwAAXugXt/le67+IIb5iIwAA/vJPVcgseQwHdWEQmpeqTn2siWY6ST167UIvAXWkGRAuxSXUilwCLutDXxCFUcrnTz16rrJ7bNm2/NrsJl9g5ST3PMifwYMUh+Zii4aWGWGpblixT+bNiGpd9vffgAA=",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-35e27a829c",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-b9c950f7-0212-4ece-8623-65e6983f4477.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-b9c950f7-0212-4e--a13b3b120d.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Diverse Skillsets",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAoAA4BaJZwAAudmMW4o6AD++cJScIlNRcO38THVUsycdMEoUvRC8+AAAA==",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-387a4e5b3a",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2bd7dcbe-ecbd-4f0e-b462-6bb5615389ad.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-2bd7dcbe-ecbd-4f--be6b7a8064.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "AI & Data Transformation",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAoAA4BaJbACdAEalelx50AA/u0gWb/nWlUI2bNw1gm8iYEKDTawWawB3/YXJ+KGk/8KTnz8qa8KycmoLIlAewAAAA==",
+      "usedOn": [
+        "services--data-offering"
+      ]
+    },
+    {
+      "id": "m-39a5c1d112",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fd40376d-988f-431d-b57e-8f6efc12ff58.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-fd40376d-988f-43--e49ca2e218.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJYwCdACY9VUPgAD+bLDqL1+azkatEoUq1scm0WhMSWPW3HCE2L6nhNWMSvfOXPJU70/SFlwKlaARsYBSoZlRQHPsl8AoAPM3fL6AAAA=",
+      "usedOn": [
+        "industries--retail"
+      ]
+    },
+    {
+      "id": "m-3a9e5521ce",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d751a138-6ac7-491a-991e-b7e1b2016a9e.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-d751a138-6ac7-49--2e1ad7e000.png",
+      "mime": "image/png",
+      "width": 791,
+      "height": 429,
+      "alt": "Vizio-Tek",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        791
+      ],
+      "svg": false,
+      "usedOn": [
+        "home",
+        "partners"
+      ]
+    },
+    {
+      "id": "m-3b45196446",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-bf37b73b-f080-4479-b26f-55719e1b919c.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-bf37b73b-f080-44--ee88d45066.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAoAA4BaJQAAX1fpAO0faGAA/mxsv/ZrsU4Tln1AB7n6SOHbVRdisesEsbsRCoGu6hlrZXCkFpJpbyB6NJkI7rjBTvm+vdmjUV5g+t71rmVtAAA=",
+      "usedOn": [
+        "services--custom-development"
+      ]
+    },
+    {
+      "id": "m-3cb490c46f",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e2e3ee03-be47-408b-96fa-8ce03203dfae.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-e2e3ee03-be47-40--eb701f1d3c.jpg",
+      "mime": "image/jpeg",
+      "width": 621,
+      "height": 388,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        621
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAoAA4BaJQBOgMWv223tpghoAAD+1PuskJ9xRXdxVKNHzgUxI0lrCJvzZQ8lidnlZ+eIexRSi/djz4St/ONxV1dDFpPdx5iUDDrOqtd0z8lcl57gP7/4HlV4Ml4ERom1ccAAAAA=",
+      "usedOn": [
+        "products--charity-management"
+      ]
+    },
+    {
+      "id": "m-3dd99ee371",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-7c113754-9620-4134-9feb-ef149e220c9f.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-7c113754-9620-41--8d82a95669.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Property Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoAA4BaJZwAAjxCJBJ4igAA/uqnLD1T3B6/2WTQ/54kQ7k+Vn33BotHdSdYn7gP7cvinrCAXnNhGOzj3WRIgxG4pix3nj1/YimAl/9ocAAA",
+      "usedOn": [
+        "products--property-management"
+      ]
+    },
+    {
+      "id": "m-42a55ad4cc",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9c619e06-3fed-45a1-8c12-a21b4de94cbd.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-9c619e06-3fed-45--44793f87d8.jpg",
+      "mime": "image/jpeg",
+      "width": 6708,
+      "height": 4472,
+      "alt": "Charity Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQAgCdASoQAAsAA4BaJZACdAYtfyKJE9yWqEgA/rgMrvFepAmRt3o5KlrbM7AaaclURy17Oz7DqolwQ/l16O1hNMbfdkisfn9NsMj0/LNieYV6KvGesgvGv6fV23m7XFQDNMBAEnk/rwsKg5ISX1ZAAAA=",
+      "usedOn": [
+        "products--charity-management"
+      ]
+    },
+    {
+      "id": "m-44f131282f",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-98364e4d-ada7-4648-84f9-39e3b6d8435e.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-98364e4d-ada7-46--838a6704ad.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Fleet Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAoAA4BaJZQCdAD0t+n9YtwA/vQ0mORcVH1I9sBq1e9Yml9jBnjh2GhY+UVpFnhyFuCvN6wNYRLOwR4AAA==",
+      "usedOn": [
+        "products--fleet-management"
+      ]
+    },
+    {
+      "id": "m-47f07718b5",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9b66534d-f623-4cdc-9fb0-53c8c3cedea2.gif",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-9b66534d-f623-4c--22285ea74a.gif",
+      "mime": "image/gif",
+      "width": 1596,
+      "height": 797,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1596
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-49a71f2479",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-62984db0-81ca-44a7-966f-978e2526855f.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-62984db0-81ca-44--734895b156.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQAAoAA4BaJYwC7AEQ/c91sKWAAP75Fxrl8Sb06LGB4dXuRjuxnZrLoyGX5uS5W5HyCDxM5JzAAA==",
+      "usedOn": [
+        "products--finance-management"
+      ]
+    },
+    {
+      "id": "m-4d0c8f13e4",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fde7af47-3b16-400a-a38d-b8a2e9838a7d.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-fde7af47-3b16-40--c42c5d9941.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Data Offering",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQAAoAA4BaJYwC7H8AgpTK6MrNZmFAAP7oUVPTkdcA4QjnnhZO3hb7QjetWAOrI1QSTknDYVWmiqZ8niaR6267R+R8nW0mn2EGV8bA3OdDUxtM5Uhj/LDLAq01onlnKWl1fAAA",
+      "usedOn": [
+        "services--data-offering"
+      ]
+    },
+    {
+      "id": "m-4e2f6b33ba",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-81ee6950-6b74-470a-8322-a6daa1f69e38.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-81ee6950-6b74-47--a398fa159f.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Finance Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQAAoAA4BaJZwAD4zMhM7+GnAA/sogO9IQhlQRdt94dW+jcH9dZ/GZzAiN9kmEPr+4iXIXmt+JdjyIEw98jl0fHSsyBg4BBIZ19grkke4YfnHuRTP14VDudIdHvaidi3seDYACXaAAAA==",
+      "usedOn": [
+        "products--finance-management"
+      ]
+    },
+    {
+      "id": "m-4ee075b05a",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-0932dd39-fd5d-416d-b60d-f117643ed44f.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-0932dd39-fd5d-41--98f4a4d012.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Health Care",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoAA4BaJZACdAYv1yLhw2iDZAAA+WHbQTzWQiCPxORDkbSfDsu03Pw4dMM6jb7D73BHIctvvawj25xqLVOtd46FSUpLljYF4QXjiEx39lW8a7KovywA",
+      "usedOn": [
+        "industries--health-care"
+      ]
+    },
+    {
+      "id": "m-50aedcf1b8",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-eba41593-ec4e-4922-a790-33db35ee156b.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-eba41593-ec4e-49--da4fa9d938.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Addressing Business Pain Points",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAoAA4BaJZwAAxYov7wAAP6Z5YplWG2vJ7BE0PE9GCDB6775JYDszWXay6U/GPGaRJbGCmp3AERamLxWrx/xjArmqZkAeEBBUAAA",
+      "usedOn": [
+        "services--data-offering"
+      ]
+    },
+    {
+      "id": "m-51c1446b27",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9a8c864e-9d2f-4964-a073-b4806ebf8647.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-9a8c864e-9d2f-49--1f8fa907cd.jpg",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "What more on Automated Quotes?",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAAsAA4BaJYgCdAEXgLIEunxKfwAA/tc/10Vj8gao4FX3EWY99/dJtF7RwIC9d1WFThqVaEJNJeeXcP5dDP7pCtZu1k0VOfZAgD82SxQDti4HiyagjxUAAAA=",
+      "usedOn": [
+        "features--other-features"
+      ]
+    },
+    {
+      "id": "m-53c015971d",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2e9c8b16-a8aa-422c-a93f-4df1051d038d.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-2e9c8b16-a8aa-42--af7af50c49.jpg",
+      "mime": "image/jpeg",
+      "width": 6336,
+      "height": 9504,
+      "alt": "Mohammed Alzaleq",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JZQC7AYwctkd5/XuFE8aUJgAA/vOAn39XwcyZ9A+NExTHbjhWmA9H8RPIz7MPs+8xDevShbAdbjQdu+LObPSeziH5lggzSxhUG/uv2pPB4sqZPMN/vxV/by/eqVRUl//o599QL/v64VSxj/P1ve8nPqjYYp23U3JRG88j1eCHiSM48/l+QAAA",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-53d91ecc14",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c56ac7a7-4943-4c5a-beda-965481216654.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-c56ac7a7-4943-4c--ba0b832174.jpg",
+      "mime": "image/jpeg",
+      "width": 662,
+      "height": 440,
+      "alt": "Business Intelligence",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        662
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQAAsAA4BaJYwCdAYtpyLmMPtOp0gAAP7p/eQMsyK3GuYon2gFy77v6N4c2SSnPXECZCj73Bj0rn635Lge5TYH/cJZlWreWGVKe819ZzJO+wn+M19OiRMbRlc8h1Y7YhzwCYvLQAA=",
+      "usedOn": [
+        "features--business-intelligence"
+      ]
+    },
+    {
+      "id": "m-54eb5ddcd5",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-13e17efd-7576-4cf9-91cb-3f0a717626b5.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-13e17efd-7576-4c--9a5bc2b87f.png",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Integrated Solutions for your Business",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-5931b8c916",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-365d6633-b905-4b44-9de6-86ac4a9f543a.jpeg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-365d6633-b905-4b--070c2175b6.jpg",
+      "mime": "image/jpeg",
+      "width": 1026,
+      "height": 1282,
+      "alt": "Ahmed Fathy",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1026
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoQABQAPu1iqU2ppaQiMAgBMB2JZQCw7CBSxDeXz8N7UzhXaADLALzcj+Lv63brJc14T+GTgLTu6Lo7xmzu27qt3TFHpCnoXND0bc/n28z7TqWx1NoZVsFCjZ8eJQUMow6Sv4YLBpelBUVf24VA9Sz2U0h6E3YLWAA=",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-5a055a0145",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ebe08394-736b-4ac0-ae7c-caf05dc8a89e.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-ebe08394-736b-4a--54bac00575.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Comprehensive AI Offerings",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoQAAoAA4BaJbACdAD0ea9wAP7uqRMAuus50jKDDtOYBF7dWdwP3oI/sHPggAAA",
+      "usedOn": [
+        "services--artificial-intelligence"
+      ]
+    },
+    {
+      "id": "m-5e0f6e7229",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-84c40e54-ac88-488a-900b-a50e66991de1.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-84c40e54-ac88-48--033efa7602.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Comprehensive Offerings",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAoAA4BaJYwCdAEQJlulZhkAAP7s38Zdocvozhe985U6EAzrtfZUR+fIl+B2jNXcRyQHp5QbKvNHQcm3v8jnyF0GAAAA",
+      "usedOn": [
+        "services--data-offering"
+      ]
+    },
+    {
+      "id": "m-613bb5b3dc",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-7ab49a01-fadc-4fba-855f-bf27bd36bfc9.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-7ab49a01-fadc-4f--5123181f65.png",
+      "mime": "image/png",
+      "width": 403,
+      "height": 256,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        320,
+        403
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-62a1073f5b",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-742802b4-b8d8-452d-bca5-aae24c0668a3.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-742802b4-b8d8-45--5e994ec7a4.jpg",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 533,
+      "alt": "Inventory & Its Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        800
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQAAsAA4BaJYgCdAYr7BAs3a/QAPfF1tJD9eYR/nOuRaM6oNBnnQ09GFLaSmrPzcbLbUkxfGgqjKyduM7utauYzHmYcM0/aJDM2WpdzyRfRHtsSXmON0kOF96jpce0VSpEhVmApxL3kE6QwAA=",
+      "usedOn": [
+        "features--other-features"
+      ]
+    },
+    {
+      "id": "m-6449f5c306",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c779ab27-9fe4-42eb-a4c5-3c0a7545ff04.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-c779ab27-9fe4-42--d00cdc49eb.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAoAA4BaJbACw7EDHbPd8BywAP6p0rte6r50aNxvyflK958i4Cxws2CXVWEs1UpeglY/P+Tx+SvcO7t++4OUMAA=",
+      "usedOn": [
+        "services--artificial-intelligence"
+      ]
+    },
+    {
+      "id": "m-648a0f465a",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-15bcd674-6281-4666-b305-746e3a423d71.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-15bcd674-6281-46--ff3760138e.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Advanced Technical Solutions",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAoAA4BaJYgCdADDzZ0wAAD+94JljRAsgR16gaW2E5r9jYM03WnUuwn/SFE+XgyNFKxCwThx//sceAA=",
+      "usedOn": [
+        "services--artificial-intelligence"
+      ]
+    },
+    {
+      "id": "m-66d5a25d75",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-a2ba9050-c7d8-4af3-8f6e-79d6cf3b7ffc.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-a2ba9050-c7d8-4a--c0c539a421.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "ERP Development",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJZQCdADhlaUWA4VgAP36UvE8yCn7zH0+RcWFgaYKX0wnpHlCDfdMXYoe8+jYUMP9JzxA1PMvdbYEIRCDtbaSf5Mykt5j0YrJDJXRonNGxahGrZCAAA==",
+      "usedOn": [
+        "services--erp-development"
+      ]
+    },
+    {
+      "id": "m-67b5375550",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-27e40a4e-88b3-4e92-9e87-9e927a06687d.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-27e40a4e-88b3-4e--f96b0d57a5.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAgCdASoQAAoAA4BaJagCdH8AgwCtLD/6JLjfAAD+CHnLgV341jSULSLVJ4R4tb7r7USMSQI8aYYV3nVvCXLnOj42f1iS9UpSKpK4ncEyuOQhzAykNx17qSPKdHa7EgRcerl6s4ZX9gS9ZDaxen6/AAA=",
+      "usedOn": [
+        "products--projects-management"
+      ]
+    },
+    {
+      "id": "m-68636cb28c",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-7b438d4b-db84-4b48-90b2-029ac9711f68.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-7b438d4b-db84-4b--889ade4a34.jpg",
+      "mime": "image/jpeg",
+      "width": 736,
+      "height": 491,
+      "alt": "Scalable and Flexible Architecture",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        736
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwAQCdASoQAAsAA4BaJbACdAYv1hZZGrAA/e+kg9LXsrClb1qMosINpODWQ6jG8fzh4RE1c4ZFsJ8CdqlvDZbe0bDz2ddiVTHldjQ9MrNqRQdLedRoGZ4sZb5LdEgCkXuoTBVOUzIQxl8UsRHUHZcAAAA=",
+      "usedOn": [
+        "services--system-integration"
+      ]
+    },
+    {
+      "id": "m-69c0f55b95",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e4a4a2e3-eae5-46da-bb83-e763e2a732aa.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-e4a4a2e3-eae5-46--670d8f4d84.png",
+      "mime": "image/png",
+      "width": 248,
+      "height": 70,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        248
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-6a9b5ddc06",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-80d365ce-f82a-41cd-967e-a93424a9015c.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-80d365ce-f82a-41--bfab340150.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoAA4BaJZQC7AEf1tbORU3AAP7xE3FIWM6w+MVq9nlckkt8jdSHyQQxiuVf3kl0F3HazHHWvOgiJU1MO3XKGsoyjT0kcnHI0pr9K+t5ROQA",
+      "usedOn": [
+        "products--contracts-management"
+      ]
+    },
+    {
+      "id": "m-6ae2712f6c",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-64de8771-1449-4e0f-951d-e7e6b112ade4.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-64de8771-1449-4e--ca48f05d8f.jpg",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Automated Quotes",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQAAsAA4BaJbACdAYsPWbBlu52SADiYpjDh4wNdkNKeAgGHc03keqQAj1ALClHwCB8NHUqcGvH1X9MOTtd8Msy3vj8gWtOY+0iRstbsKwPuDxAaqZ1CIw0Lkd+hTgUAqWIlLo0i3XR0AAA",
+      "usedOn": [
+        "features--other-features"
+      ]
+    },
+    {
+      "id": "m-72b5f45c82",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-0ddb32f6-2aa7-4d0f-9d75-dec57198b5f5.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-0ddb32f6-2aa7-4d--8e318338ba.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoAA4BaJZgC7AEf6RVohQyiuyAA/guBeQKo1un12cSXgJRfHybtl2/OzCxwQckE0SN7+Jl8nc0jLQNWUavCfJdrfuAOhO0X83Iq+krL5CjluFl2Zs4A",
+      "usedOn": [
+        "services--erp-development"
+      ]
+    },
+    {
+      "id": "m-76f23d4661",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-bba105a3-9fbc-4042-9561-2e73b4517ba5.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-bba105a3-9fbc-40--8cf5336060.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQAAoAA4BaJZQCdADzp1u5mCrAAP7uKnYyx4jT8TRZRnIvh8nCTUypuTZJixIzVDe1+XyXoJMFmI8ziDescsslX6LFrILY+6ugsbXLWjxxvXx1upAOx/JEruWqhFKAAAA=",
+      "usedOn": [
+        "products--hr-payroll"
+      ]
+    },
+    {
+      "id": "m-7b8ab60c1a",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-84c6fd5c-4d7d-46a3-8caa-389eab5e7bef.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-84c6fd5c-4d7d-46--236459014a.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Construction",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQAgCdASoQAAoAA4BaJZQCdAEXn67d2UFgAP738B+KDhvZ/3/KSvU6mC7jwz9W8u+Nf5VkQdO/VyCHbrGbc4+SKwJkvyw7b60TPDQNRm60uPP8/MwJOw7clhRJVazin318ddoFj96IS5Q6dcsDTps9jXH6QAAA",
+      "usedOn": [
+        "industries--construction",
+        "industries--financial-services"
+      ]
+    },
+    {
+      "id": "m-7c9fb831a3",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-463b0c1b-7d64-44d3-965f-584b1529dd6d.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-463b0c1b-7d64-44--1f7bf1800c.jpg",
+      "mime": "image/jpeg",
+      "width": 612,
+      "height": 387,
+      "alt": "Reminders",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        612
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAQCdASoQAAoAA4BaJYwCdABle94AAP5mgL+P/tWIIT1h+g3nibjbwi0Ti++JgxUwZBA22Cv124d08VFehM+C71UvAAif9cwlhTgLe+4Vm1jDR3DxxJc5ycAAAA==",
+      "usedOn": [
+        "features--other-features"
+      ]
+    },
+    {
+      "id": "m-7e80cf7263",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-cfe6c40a-14b0-4c42-af0b-d2eb582adf95.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-cfe6c40a-14b0-4c--2b81b5e6cf.png",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Metaverse solution",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-813946f5a1",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fd1ec08f-d405-436a-afda-433202452c9d.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-fd1ec08f-d405-43--bd26acfe74.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAQCdASoQAAoAA4BaJZwAAcVruXwAAP71g4oT4YQdXXtUHp/y6qiY5+adDIWvqzA8kDZHl7YPPp9ObcUz9+s21iRHvmhW5/GnjEUhhSycoX0ONxMvQIRfNqBLUAAA",
+      "usedOn": [
+        "industries--retail"
+      ]
+    },
+    {
+      "id": "m-86d3649511",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-08425697-b015-4b6b-9a93-1c15000a6b2f.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-08425697-b015-4b--12dac30816.jpg",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Overview",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQAAsAA4BaJYwCdAYrxbMqMGvZAADONr9zmY3gGYFvWsE38+aqJbYWqEVqlfU/FbrXb4Ls7me/t6If46c3OMq3zyVpz5ZsPfhxbc/0/UC8Grla9JEhQyE8KwQFcSZ2czWYAA==",
+      "usedOn": [
+        "features--invoicing"
+      ]
+    },
+    {
+      "id": "m-8765544cc8",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-46543864-c95d-42dd-972b-1d6b7958c752.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-46543864-c95d-42--a4e0b013c2.png",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Customizable & Configurable ERP Solutions",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-8c894a5b3c",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d3194759-af34-4416-b28a-c42021316bb3.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-d3194759-af34-44--190931f3ea.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Transformative Impact",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoAA4BaJZACdADDFXaX4AD+81L8ivxg/db39putrCjlPV5JA8kOtKfS4w1uWLEWWTJcu5hyPIu5z7+Tg6ew5VFhRvNlFqPzGVMAAAA=",
+      "usedOn": [
+        "services--artificial-intelligence"
+      ]
+    },
+    {
+      "id": "m-8deb0ae0d7",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-3de13efd-501a-4eef-b33c-a238cad966a5.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-3de13efd-501a-4e--f7226ad611.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Quality Assurance",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoAA4BaJbACdAEPCSYo1zKAAP7mAZbr2hjwYNLgKlHOoZFZd41yEwclPzrrBwToyG2qq6QyWR30TNtVXPPj5YPY4Wk0w4bT5ci2cXw7wxAA",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-9280f45e88",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-38015b8e-7d33-40e1-bd21-77a709b0aa76.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-38015b8e-7d33-40--cd751877bc.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Flexible Staffing Solutions",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAoAA4BaJYwCdIIjECVEScRxQAD1Tt5sQ/mUQ3CU5lyTpZCK5Er2kQLqHAUNmBObwTu2NP1I9UnzIMO1+8govgRE91BqtwRc7whtGwVZuDIwAAA=",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-9311c19d44",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ced374ff-6e7c-4c35-b4fe-e56b22026f83.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-ced374ff-6e7c-4c--89ee7c5f35.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Mission & Offering",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAQCdASoQAAoAA4BaJQAAUsLcwAD+7xVG0HubykqBh0azzFpHGjhHN92B/Cg65O2Uii9G6FAg0JEze9Y08oVzCN0y5bRmTHFdqfR8YoAAAA==",
+      "usedOn": [
+        "services--data-offering"
+      ]
+    },
+    {
+      "id": "m-945e2e7122",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-780c9140-8180-416c-8648-a9e126f265c9.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-780c9140-8180-41--48e2238373.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQAAoAA4BaJZAC7AEDpM6BS77gAP7n/aWVe7fz8X000jBF8VVT9VdFQJs8SmUYsayJJ2ev4yfMSj1tZLbFwCqB6UVnCuM/vFM5yCsUeQnaFzcIO9b6j7a+lHkKVOHj9AYoAAAA",
+      "usedOn": [
+        "products--hr-payroll"
+      ]
+    },
+    {
+      "id": "m-9486d23aec",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-14b08325-6fb0-43bf-b70d-6cf6fcba39bd.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-14b08325-6fb0-43--90b3bc20b3.png",
+      "mime": "image/png",
+      "width": 827,
+      "height": 1063,
+      "alt": "Nader Diab",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        827
+      ],
+      "svg": false,
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-9551f54773",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-6f04cff3-ba62-4a15-bf20-1fa829d41a57.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-6f04cff3-ba62-4a--52062eaa64.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoAA4BaJYwCdH8AEAWC/AAA/u0nxu8aZOGtCiIx9YBSGXC6+MC+MjyWP2/V9TQNAxg680WCZb68ErdrEeIEi4oDYOvxcuLigcwA",
+      "usedOn": [
+        "products--fleet-management"
+      ]
+    },
+    {
+      "id": "m-973ef2cf9f",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-28cf3b81-a10a-43c9-b234-f056143b2d8e.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-28cf3b81-a10a-43--207f09f1a1.jpg",
+      "mime": "image/jpeg",
+      "width": 500,
+      "height": 500,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        500
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAwAQCdASoQABAAA4BaJaQAA3AA/uzFG+DNQ/z5MbHV26r5Emj5Qb3cVOoYgqYMdAAAAA==",
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-9aacc48db8",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-62da8c57-81f5-4ceb-bdcc-116396ada73c.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-62da8c57-81f5-4c--bc6bd1b289.png",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Unlocking Insights: Comprehensive Data Offering Services",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-9ba4729d02",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-78a46074-588c-4975-a2c2-02a16f442394.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-78a46074-588c-49--50b8ebb564.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwAgCdASoQAAoAA4BaJQBOgP9WvTXxZia0cAD85gbN7gV6M5LbUWtFSSrJK5oaMZjJTbDsr7+KeXnf8f3z/rM9xKTqr+GCI50nLet2maSdGKicXEtJdMc0riRzs44LwjULoEEztjkWjIBB6wEDsAjv4v7918wAAAA=",
+      "usedOn": [
+        "products--projects-management"
+      ]
+    },
+    {
+      "id": "m-9c9d865f22",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2da91d56-ed65-4e1d-a234-11ded55f55e5.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-2da91d56-ed65-4e--21d853195a.png",
+      "mime": "image/png",
+      "width": 960,
+      "height": 260,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-9cee773b98",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-de4cbf69-9c97-4263-a0bf-db745f8bde94.jpeg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-de4cbf69-9c97-42--a3b6185583.jpg",
+      "mime": "image/jpeg",
+      "width": 200,
+      "height": 200,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        200
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQABAAA4BaJZQAD4tQ7HqjEHgzkAD++Lo8X9AcC86tk1iPwlxyDYTyyF8ujFr7R9Efa32lmLyDmUn4mv5ie/tYjK7Ypp4gVKIEOqN09DwwcjQB3ttKtsAA",
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-9e6e617d6f",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-4e1c217d-52cb-425a-ac3d-b967fd8a9c8c.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-4e1c217d-52cb-42--cb41d3438a.jpg",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 731,
+      "alt": "School Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAkAA4BaJQBOgCE7pyOecADN6cKEx8rHC3LGHdCKeCMjVov8R10CBQf1pQDVIZclRMj6L4wDxQByQt9Dh8cpIo3RH0DsPUvarmtEG6M7PgAA",
+      "usedOn": [
+        "products--school-management"
+      ]
+    },
+    {
+      "id": "m-9fd6c3416a",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-30754f97-b285-4667-a007-fb30bd2fe7c5.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-30754f97-b285-46--39ad8aa706.jpg",
+      "mime": "image/jpeg",
+      "width": 735,
+      "height": 490,
+      "alt": "End-to-End Business Process Automation",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        735
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAsAA4BaJbACdAYt92irYu/QAAD+zfcsNs3oZaRzgPGp8bvQOK2YGv/lF5zOFGzKFbgymbxRhtsrEgqlfloKWFmxUTqRfFBg7C0X736Nl7QQ+Q3SDR3g+83WNampNeMsAAAA",
+      "usedOn": [
+        "services--system-integration"
+      ]
+    },
+    {
+      "id": "m-a3d703ec91",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-841f2d1d-aa48-4c4a-a4fc-6bf913b79740.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-841f2d1d-aa48-4c--c239584fe7.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAoAA4BaJQBOgBbUixkUAP7O7J6+hecLeRxW8o1z9GBW8I1BOf76s/7+Fc362GEuguFVauz6Vw60ezAdW4jpH3M6IqubvOViywjn5Px3UzkAAAA=",
+      "usedOn": [
+        "products--retail-management"
+      ]
+    },
+    {
+      "id": "m-a652374743",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fd4dbbab-4e2d-4f0f-87e7-8c8a1623a29f.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-fd4dbbab-4e2d-4f--68dab1f45e.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoAA4BaJZwAD5DumfoWXYqEAAD+9pOoXjE+8z9PD6cjIKN59Hst7swyB5G87Uy34h/MuLLBViBkVKkScA/d3NsXlYHorFl5rBKhkjABQAAA",
+      "usedOn": [
+        "products--fleet-management"
+      ]
+    },
+    {
+      "id": "m-a77fce0c13",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9db08f41-7b51-4e80-810d-7b0b4d558c1a.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-9db08f41-7b51-4e--37bef4b50d.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Cost- Effective Solutions",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAoAA4BaJQBOg7QANAO1dAAA/vaaIXxEonnx/QcIEkgZNPKkvhLj6WHO7GtO28gix9/cRv+iOBPAAAA=",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-a93f249b87",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-6ad0da7b-e78b-488a-a52a-b7fe1c1dee60.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-6ad0da7b-e78b-48--3ccfae8d4e.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Focus on AI",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQAAoAA4BaJQBOgCP/5KkztA4AAP72r3R+yFCxwuEt9IA985Xi2s2ncIHzo+NsB08+HvKHZQpLEAAA",
+      "usedOn": [
+        "services--artificial-intelligence"
+      ]
+    },
+    {
+      "id": "m-ac0e001e80",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d7c72ec4-17e6-43a3-9525-3bf31bcc5dc1.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-d7c72ec4-17e6-43--05ce4b63e2.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAoAA4BaJYgCdAYt9GbQEYLriAD2oqe8RZz9VEkPodbbM+MvLi/2la2+krCnnfVs9pA03djWxXzuRw9/U25/6epv0K+S3I6tQURblVaXBxGI5x59KxNIyQ38scE1paZvYNQBGAA=",
+      "usedOn": [
+        "services--data-offering"
+      ]
+    },
+    {
+      "id": "m-ad051ea28b",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ac938469-2c9b-497f-a35c-dc3e115ed612.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-ac938469-2c9b-49--87f17b6969.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Data Management Focus",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoAA4BaJZwAAujFYUG7PgAA/vSRjuGCJCPgv4NG+CPLN9rLtZNTLiWv2XJf+BS6XAmrhYOv0u15b3wn9zKVFqvMz8ZvMwTbUIAA",
+      "usedOn": [
+        "services--data-offering"
+      ]
+    },
+    {
+      "id": "m-af41418b06",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-884f8e70-fe35-40dc-a9ad-04c80a8ef77d.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-884f8e70-fe35-40--1296ca3b12.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Addressing Business Needs",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAoAA4BaJQBOgBjphcrEM7wAAM4/oYSE2ZaTlulTDCxCvT8fhFkpNbUzOwu2Zk8q3p1dQdtKP8TcvWrNHv6J2Qt4ZGhLrrHnN+Pzhd6S1J4Y0C2ZypLj3bKcHCMinszgAA==",
+      "usedOn": [
+        "services--artificial-intelligence"
+      ]
+    },
+    {
+      "id": "m-b00d428f1f",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ed3f9232-60b3-4438-a5b2-fe0e6ef71895.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-ed3f9232-60b3-44--febbc32119.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Global Delivery Model",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJZACdADC+7wl4AD+0c06LaGFlXqHweWcmUn4SYa759HwPVvuJKsxDOtF1UOQaSab1pmrkJmlx8+G6/96fUj1OM2NVvIvQTt3arvpAAA=",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-b03caa6583",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-cd18d6f0-9bc1-4759-823c-88efc03d8f28.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-cd18d6f0-9bc1-47--aa988aa92d.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAQCdASoQAAoAA4BaJbACdAYsZFAx9LIA/uYD44dHTp/KMvECefzGH1Y5mw9qEmcE6tcANTV0KH6ZdgWHlYm21oVd7qTUKI0rP84kRD/mRD4/RReCDV5PQkV1nwOIpWtgCxdq012AVOsgO5IiFLAA",
+      "usedOn": [
+        "services--custom-development"
+      ]
+    },
+    {
+      "id": "m-b53849ba5a",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-70c0022b-5203-45dc-b2b3-fa2fe83571ea.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-70c0022b-5203-45--4c4eda8434.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Services & IP Solutions",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAoAA4BaJQBOgMXX7QLlIsIwLIAA/nMRC2jdxy8QqKr94IXdTWdxtbpTsijpwMrWeYEdXm1CHAsjB8Zw0e67OfhkKyBqCTTk3bpJWxhgesmiA8/9ZfkWOG84AA==",
+      "usedOn": [
+        "services--data-offering"
+      ]
+    },
+    {
+      "id": "m-b65c9bf240",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1099b15f-2d69-4119-93ef-1f8f1ebf3fd5.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-1099b15f-2d69-41--99a0c81c07.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Whole Sales Distribution",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAoAA4BaJZQCw7Ytp/ZAVpGWgAD8oK5fnkk3Hkbp8vAUL/lRq+VdzEkKAmgvPxpr/WTRej1rY2tYcHDNh3HQthcxXAAA",
+      "usedOn": [
+        "industries--whole-sales-distribution"
+      ]
+    },
+    {
+      "id": "m-b6f461a569",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-950b8f72-9443-4c1b-96ad-75afecea3568.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-950b8f72-9443-4c--112fd5bd3e.jpg",
+      "mime": "image/jpeg",
+      "width": 2048,
+      "height": 2048,
+      "alt": "VICTORY XR",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAgCdASoQABAAA4BaJYwCdIExgli/2B3zXI3gAP735hyTZqv3HVk4rZRzxa+sii3nZ8/CrYL3brM7H5FNkPJEJIhGyVU7B8rkHA/jogAAAA==",
+      "usedOn": [
+        "home",
+        "partners"
+      ]
+    },
+    {
+      "id": "m-bb8fbcd880",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2147cfbb-127f-42bd-b70c-9ba5c71c5afc.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-2147cfbb-127f-42--5e78877930.jpg",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 450,
+      "alt": "Contracts Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        800
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJZQC7AC1wCt3AAD+8YEbLv9x7RvSIXE9RCkbvERuJluEqthxG1CfKcSwM/Ea4VrMcIoSjJ3BTC03BZxQAA==",
+      "usedOn": [
+        "products--contracts-management"
+      ]
+    },
+    {
+      "id": "m-be2810c118",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5f81b918-4160-4468-bfc0-88a46072b82d.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-5f81b918-4160-44--6e86fba02d.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Training & Development",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJYgCdADxIjLONIIAAP7t2M8PAxa2bjOEtFnwn60yHWSweqbDA6+RZ1t6L1haFv7PSir0rS1Z06YnIWaJiu1LUy+PEa1KtA8dUWc9EgAAAA==",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-c8ec705a54",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-abb29bd9-7553-4600-b813-55c3222cc960.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-abb29bd9-7553-46--4c63bbaf87.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAoAA4BaJagCdH8ACu5hCGAA/qnPVPbfk8GsGRFcCnGBlXhegLDNMhJcquRTIwjnPk+JWv0/4kyj7yLIDuR5/t2DHglyu8rfNwX4XS7oHa0lgejB+grBsuSAAA==",
+      "usedOn": [
+        "services--mobile-application-development"
+      ]
+    },
+    {
+      "id": "m-cdba91ffa5",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9e808726-6cd3-4e87-b257-b8e322a6e64c.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-9e808726-6cd3-4e--cc28350ea5.jpg",
+      "mime": "image/jpeg",
+      "width": 848,
+      "height": 565,
+      "alt": "How it helps clients?",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        848
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAsAA4BaJbACdAYvg/eMlmAAAPzs7fnDhk9yeJQQdEgT7sD/Q4JkS9HEBc7By7A4ndGzyoNpbvFmdo9pY5dZje4Rm4qghYgwJCMhpiXQpvWxSZUaBMANz2A2ePIOqSAAAA==",
+      "usedOn": [
+        "features--other-features"
+      ]
+    },
+    {
+      "id": "m-cfc0bb33bb",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c2a17772-7e73-468f-b11b-496444d3a0ca.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-c2a17772-7e73-46--d0f396ea6c.jpg",
+      "mime": "image/jpeg",
+      "width": 736,
+      "height": 736,
+      "alt": "AI-Driven Insights and Automation",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        736
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwAgCdASoQABAAA4BaJbACdAYv12b3LjG+KosAAP70n9zG8lzevhSasG/d+LeVpfVJmwi/1WqomYOrHd6EftarmT7mf7xKvlsRLAAojFg1H90dlFCWW+TpltVZe/d/f1WLFBiUlix08aLZ/jwVDxd2Ih5W9rQ2NSwMglg0oAA=",
+      "usedOn": [
+        "services--system-integration"
+      ]
+    },
+    {
+      "id": "m-cfe17dbe0a",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d23ce245-8f3c-4fa7-b4fa-23c4a53950dc.jpeg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-d23ce245-8f3c-4f--6aa046defc.jpg",
+      "mime": "image/jpeg",
+      "width": 728,
+      "height": 1009,
+      "alt": "Nedal Kaddah",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        728
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoQABYAPu1iqU2ppaOiMAgBMB2JQBOgApd67zizLxWXEkVYAPxQ9yId8cZxYgrCIChenXMPqsGxNV163dGhIjRAEPTbgFJvVAJYOuAGXiJkdWkmnC1zsUkifayrPZRDq46H77i6PKHr5azesRlgFfft6xyF14DY/Ga+WCAA",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-d1d758189a",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5830a2a7-2159-4351-8404-dd49f3802da5.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-5830a2a7-2159-43--c35c5f3c89.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Projects Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJYgCdAD9RiUpAAD+8DVFp3o7pTpdYC8JZR7cVsT2G6qc7RXblTHMFjWy4h4/8z/qCwkNblsXVU8zL+7DS9KKvxjIvZekFXOB17bVgAA=",
+      "usedOn": [
+        "products--projects-management"
+      ]
+    },
+    {
+      "id": "m-d46a6aad5b",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e1580f82-6197-4bc5-b020-ee5c6174373e.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-e1580f82-6197-4b--65e17b17ac.jpg",
+      "mime": "image/jpeg",
+      "width": 735,
+      "height": 489,
+      "alt": "Smart Integration with ERP, CRM, and Legacy Systems",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        735
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJQBOgMYOpbrDLnAA/vNTPbUmye1vpCOvaprcAi/7HeUcRl1Egcq71w+tUeVZE0cWB3YqVIpFgx2mDTVvGK1rvtrQL6yYmfsIk+RFooAAAA==",
+      "usedOn": [
+        "services--system-integration"
+      ]
+    },
+    {
+      "id": "m-d4bf75aca8",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2241997a-ad98-4c3b-acc8-227d074239cf.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-2241997a-ad98-4c--09e8c1b274.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoAA4BaJQBOgMXItnVLMGAA/uzfCrn/LUrsunroucaAQV43yF3EY2bY3ILPKzpLmzbHRY4jT2LtFtIi85R4WEgVQnhK7Sz0PJtAOhYlVD1IHJhL21Yz/Z+lAAAA",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-daa661fa88",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d19a2324-48fc-42e5-8254-cebf40675d9c.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-d19a2324-48fc-42--2c84300157.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Non- Profit Organizations",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoQAAoAA4BaJZQAD4xrPQyOrQAA/s9xq1+f+wktMr27MeivR+1iPVZV7Bd1N/IEd1xZdryVW95UceLRi6MeIgjENz22bPQadV1iwFP59TvP4sjMUnwltrHoRVQCHBst/M4AAA==",
+      "usedOn": [
+        "industries--non-profit-organizations"
+      ]
+    },
+    {
+      "id": "m-db47a42310",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-6fabde7c-b10d-47a0-abd0-b5159757c8ea.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-6fabde7c-b10d-47--237a437e69.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Insurance Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoAA4BaJZQC7AYrnsURQIuAAP7U+rfEBT0Zme7oJ+Ik0x9i+wT+HHKatoa8exbkhVVsdO1MdEyPuSvw5to/BNDEYNeavrZ1IAAA",
+      "usedOn": [
+        "products--insurance-management"
+      ]
+    },
+    {
+      "id": "m-dced448e4d",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e2974950-9626-4631-a4eb-4c339abf820f.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-e2974950-9626-46--3b6b917050.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Customized Recruitment",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJZwAD5DspzB46ZBYAP21gNYU0Ex6NC8Ut3X6OHBnTV3+GhpSeJDxaHm5sHxOhgM4AX2rVXRYbver7jRiAR6GazIUnGz3HABc0MP2XAAAAA==",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-ddef0ddcd8",
+      "sourceUrl": "https://compassint.org/#inline-ddef0ddcd8",
+      "archiveFile": "inline/ddef0ddcd8.webp",
+      "mime": "image/webp",
+      "width": 225,
+      "height": 160,
+      "alt": "Compass International",
+      "altSource": "html",
+      "widths": [
+        225
+      ],
+      "svg": false,
+      "usedOn": [
+        "site"
+      ]
+    },
+    {
+      "id": "m-e01ae2f850",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1d5d2281-001d-4f07-ab3d-44426127d510.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-1d5d2281-001d-4f--125946e7fa.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Advanced Technical Solutions",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoAA4BaJZwAAudlomgYNsAA/vN7Ou2/Cr32G19gRf1Wa19m59300Det+xNmYbb6cx+NKEyM0Tqw/0FrwvB/dEnT7wdETdwcAA==",
+      "usedOn": [
+        "services--data-offering"
+      ]
+    },
+    {
+      "id": "m-e319169f4c",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-0ec7479b-dc87-43e6-9c2b-cfd45106d1bd.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-0ec7479b-dc87-43--5407461c57.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 665,
+      "alt": "What more with Reminders?",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAsAA4BaJZQCw7D0unjcUAbF7sAA/k9FxCNrVJd1JG7SbENbEqS3Zg6x8r1QqMNHTEWkjP0hVKIJ8d+r8VxdbAz+bLAhgept2otniE4PRviVPN7Apre5WAAAAA==",
+      "usedOn": [
+        "features--other-features"
+      ]
+    },
+    {
+      "id": "m-e4bb3a84f5",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5cd633da-5609-47ec-a841-56f9922460da.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-5cd633da-5609-47--1aac0de252.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAoAA4BaJZwAAlohe5+l3AD+8eDIxK9VCUhgejC4QT7SXV2VkU/XnN5jGdmV99mIHAAA",
+      "usedOn": [
+        "products--property-management"
+      ]
+    },
+    {
+      "id": "m-e8563e5a89",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5a1f5f5f-52ec-4bfb-aaaa-918c98e8e6c3.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-5a1f5f5f-52ec-4b--5cc0803cb1.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "University Management",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAoAA4BaJZwCw7YulyBe9WrPT4AA/maDMDUIxZnHp9TZQcZD8869yA86ZtZDciHE2c5Gbh0I6SQfqlv8lEKC03dLwDCjYezlSI7e6r5IqpZ0thjkDfrNcOnK1ySAAAA=",
+      "usedOn": [
+        "products--university-management"
+      ]
+    },
+    {
+      "id": "m-e88f876b78",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-99e439e3-5242-4240-8185-6448e956ffee.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-99e439e3-5242-42--cb8129dd27.png",
+      "mime": "image/png",
+      "width": 745,
+      "height": 624,
+      "alt": "Your Success is Our Priority: 24/7 Support for All Your ERP Needs",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        745
+      ],
+      "svg": false,
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-e94c6c09cc",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-b00ef81b-a349-4f17-99a0-52bc7c8fae58.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-b00ef81b-a349-4f--507b4f8c52.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "ICT Manpower & Outsourcing",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJYwCdAYtBZ4S4YAAAP4LkOxQpb6+qGttcS+GJF5bPPvYhmb4T1/drZYzorZx7dYfTYAgdEvsHm3P+0W74SqcaaZahVf/7g+Tm+5HeL80Ac7o8DdgAA==",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-e9d4c97ea1",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-021d4d76-bfd5-407f-bb00-d228bac8e4ce.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-021d4d76-bfd5-40--195d652f3a.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "AI and Data Transformation",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAoAA4BaJZACdAC655ilAAD+0IqdFe9BVsvsK7N44eY6I3RecDljwgolqld4kZinAkrVhe4NkhRMzVOAAA==",
+      "usedOn": [
+        "services--artificial-intelligence"
+      ]
+    },
+    {
+      "id": "m-ebde384de1",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-cd11fbf8-ff44-4fdf-9c56-e303252d40fe.png",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-cd11fbf8-ff44-4f--88633da16a.png",
+      "mime": "image/png",
+      "width": 914,
+      "height": 1280,
+      "alt": "Mohammed Ali",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        914
+      ],
+      "svg": false,
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-f34dfa70a0",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-371e2d2d-d842-4491-b372-f888cc6ac5a1.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-371e2d2d-d842-44--94eec6ff95.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAoAA4BaJZACdAEVYkqfykf5AAD+6evQmMywVz+e+9dbH92KWxRuf5xLpdGPmI9K7BDHEndJC++CoFXUA9GqeU0Boc5t8/EQ5Obblk/E2Et9ULqW4AAA",
+      "usedOn": [
+        "services--custom-development"
+      ]
+    },
+    {
+      "id": "m-f572131630",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-be233ec3-8cb4-48ff-a039-3fb5d541167b.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-be233ec3-8cb4-48--22407a53bb.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAoAA4BaJYwCsAEN5M5LXVAA+WMnNWWE6/RWssQfikJT+u9/RqtjbMWAYUeg3JNtwiFiJP+yj9m32rMQAI7QAvzlO6mPpyO89YfcbIde/MyMY9eUBfo1sIAAAA==",
+      "usedOn": [
+        "products--property-management"
+      ]
+    },
+    {
+      "id": "m-f5b9c43a4f",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-b128b61b-0ceb-48bf-a420-8eb64345ce44.jpeg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-b128b61b-0ceb-48--df525f6e1b.jpg",
+      "mime": "image/jpeg",
+      "width": 1600,
+      "height": 1138,
+      "alt": "Introduction",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAsAA4BaJYwAAh5Q4YuZAAD+9wnvjyto8WytoBju0JOHMYxvHeQQLmtRqL8VNNE6rbjPuakAfIIw1AyUoXaFiPEnjkyKKSyg2zuq1wAAAA==",
+      "usedOn": [
+        "about"
+      ]
+    },
+    {
+      "id": "m-f9687917ed",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c5938430-c79d-4eb3-9c21-5ac7e9677673.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-c5938430-c79d-4e--13b7f8fc81.jpg",
+      "mime": "image/jpeg",
+      "width": 1061,
+      "height": 707,
+      "alt": "Inventory Tracking",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1061
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQAgCdASoQAAsAA4BaJbAC7AYuRMBFE2YAAM4zZHkTtatjxLjeLofw77Y5QEJ9+BKPGbUP/psG5FcRFtURp3fWyM/Jo+aLXw+Hd4sDC7kSdnc8TW/xdWBFOVHklZIs3cE/A/SBgAK8yFqd9iAAAA==",
+      "usedOn": [
+        "features--other-features"
+      ]
+    },
+    {
+      "id": "m-fa5e82b8f5",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-b6b39719-2d85-4298-b3f6-f1657469a5ef.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-b6b39719-2d85-42--288cb0fb5a.jpg",
+      "mime": "image/jpeg",
+      "width": 959,
+      "height": 959,
+      "alt": "Client logo",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        959
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAA4BaJYgCsADJQu8G7gAA/vVfCl0o6kkW3q/MJKGBmSFTDxf25ytxKSxDXguoDx/ME5xhJ6W2SvDP4QYQxhvGvHxgARb2xlf2e9x7TzbqgaCsWUbEAI2jDqY2QIpHfRwSAAA=",
+      "usedOn": [
+        "home"
+      ]
+    },
+    {
+      "id": "m-fb61d4288f",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-f164b9d0-c02c-4cfa-b2e6-1327c91b1013.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-f164b9d0-c02c-4c--153283052f.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "End- To- End IT Solutions",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJZQC7ADPKAgBN/qAAP3Bepupk1Tp2CBeZPQb9oEE/qpFy6YxCTGTmeKzzj32ua729URNxwo86p/viZgOljLV/Y8FhlBMsuYbkpIjCgwAAA==",
+      "usedOn": [
+        "services--ict-manpower-outsourcing"
+      ]
+    },
+    {
+      "id": "m-fc0905e61d",
+      "sourceUrl": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-a5e03331-7235-439b-991e-129e2e21a14a.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-a5e03331-7235-43--0f07df3f60.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "IT Services",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoQAAoAA4BaJZQC7AYu5VjEFNXnzxAAzjISfS8iK501f+2Obldb3/PR0eAW9uu0qiR8woVsIzL+vavheQO+MM9QuTIajbyBx8dyKEwpTFDG0HD4opAAAA==",
+      "usedOn": [
+        "industries--it-services"
+      ]
+    }
+  ]
+}

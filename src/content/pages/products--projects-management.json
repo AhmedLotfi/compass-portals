@@ -1,0 +1,152 @@
+{
+  "id": "products--projects-management",
+  "kind": "product",
+  "path": "/products/projects-management/",
+  "title": "Projects Management",
+  "sourceUrl": "https://compassint.org/products/projects_management",
+  "seo": {},
+  "hero": {
+    "title": "Projects Management",
+    "lede": "Elevate your project management capabilities with our feature-rich solution. Efficiently track project progress, allocate resources effectively, and collaborate seamlessly with your team. Gain real-time insights into active and closed projects, monitor active laborers, and track the total value for each project. Get a clear look into the progress of each project through the available analytics and KPI’s designed for each contributing factor. Our intuitive interface and comprehensive project billing and costing features ensure smooth management of projects",
+    "media": "m-d1d758189a",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our Project Management solution incorporates advanced project principle including Client Payment Certificates and Subcontractor Payment Certificates. The system provides comprehensive reports that enable management to monitor daily business activities and make quick, informed decisions. Additionally, it features configurable KPIs, allowing users to track the status and financial details of projects, including which ones are open and the associated amounts. This holistic approach ensures effective project oversight and timely responses to critical inquiries</p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9ba4729d02"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Client and Subcontractor Payment Certification: Manage and certify payments to clients and subcontractors efficiently</p> <p>Advance Payment and Retention Account Control: Monitor and control advance payments and retention accounts for each project</p> <p>Expense vs. Revenue Statements per Project: Generate detailed statements comparing project expenses to revenues</p> <p>Project Budgeting and Cost Allocation: Plan and allocate budgets effectively across project expenses</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-67b5375550"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Web-Based and Web-Enabled Solutions: Access the platform via any device with an internet connection</p> <p>SMS and Email Integration: Send notifications and communications directly from the system through SMS and email</p> <p>Oracle and SQL Server Databases: Utilize Oracle and SQL Server databases for reliable data management</p> <p>Export Functionality to Excel, Word, and PDF: Easily export data and reports into Excel, Word, and PDF</p> <p>Customizable Flex Fields: Adapt and configure fields to meet specific business needs and workflows<br><br></p>"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Projects",
+              "html": ""
+            },
+            {
+              "title": "Sub- Contractor",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Products",
+      "path": "/products/"
+    },
+    {
+      "label": "Projects Management",
+      "path": "/products/projects-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-67b5375550": {
+      "id": "m-67b5375550",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAgCdASoQAAoAA4BaJagCdH8AgwCtLD/6JLjfAAD+CHnLgV341jSULSLVJ4R4tb7r7USMSQI8aYYV3nVvCXLnOj42f1iS9UpSKpK4ncEyuOQhzAykNx17qSPKdHa7EgRcerl6s4ZX9gS9ZDaxen6/AAA="
+    },
+    "m-9ba4729d02": {
+      "id": "m-9ba4729d02",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwAgCdASoQAAoAA4BaJQBOgP9WvTXxZia0cAD85gbN7gV6M5LbUWtFSSrJK5oaMZjJTbDsr7+KeXnf8f3z/rM9xKTqr+GCI50nLet2maSdGKicXEtJdMc0riRzs44LwjULoEEztjkWjIBB6wEDsAjv4v7918wAAAA="
+    },
+    "m-d1d758189a": {
+      "id": "m-d1d758189a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Projects Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJYgCdAD9RiUpAAD+8DVFp3o7pTpdYC8JZR7cVsT2G6qc7RXblTHMFjWy4h4/8z/qCwkNblsXVU8zL+7DS9KKvxjIvZekFXOB17bVgAA="
+    }
+  }
+}

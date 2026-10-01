@@ -1,0 +1,152 @@
+{
+  "id": "products--fleet-management",
+  "kind": "product",
+  "path": "/products/fleet-management/",
+  "title": "Fleet Management",
+  "sourceUrl": "https://compassint.org/products/fleet_management",
+  "seo": {},
+  "hero": {
+    "title": "Fleet Management",
+    "lede": "Optimize your fleet operations with an advanced solution that showcases features for tracking, route planning, and real-time vehicle monitoring. Gain insights, generate detailed reports, and manage various related tasks effortlessly with our user-friendly interface, enhancing your fleet management capabilities",
+    "media": "m-44f131282f",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Compass Fleet Management incorporates advanced fleet management principles and best practices, including defining fleet, job card issuance and management, and fleet attendance tracking. Comprehensive reports can also be generated to be able to monitor daily operations. These reports enable swift and informed decision-making, addressing critical inquiries promptly and effectively. Accordingly; configurable KPI’s are set in place to provide the user with a generalized view into fleet management</p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-a652374743"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Comprehensive Machine and Equipment Management: View and manage all machines and equipment in one dedicated screen<br><br>Reminder: Receive reminders for insurance, registration, and service expirations</p> <p>Fleet Attendance and Revenue Calculation: Track fleet attendance and calculate the revenue for each machine.</p> <p>Expense vs. Revenue Statements: Receive and analyze expenses and revenues for each machine with detailed statements</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9551f54773"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Web-Based and Web-Enabled Solutions: Access the platform via any device with an internet connection</p> <p>SMS and Email Integration: Send notifications and communications directly from the system through SMS and email</p> <p>Oracle and SQL Server Databases: Utilize Oracle and SQL Server databases for reliable data management</p> <p>Export Functionality to Excel, Word, and PDF: Easily export data and reports into Excel, Word, and PDF</p> <p>Customizable Flex Fields: Adapt and configure fields to meet specific business needs and workflows</p>"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Fleet",
+              "html": ""
+            },
+            {
+              "title": "Workshop",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Products",
+      "path": "/products/"
+    },
+    {
+      "label": "Fleet Management",
+      "path": "/products/fleet-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-44f131282f": {
+      "id": "m-44f131282f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Fleet Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAoAA4BaJZQCdAD0t+n9YtwA/vQ0mORcVH1I9sBq1e9Yml9jBnjh2GhY+UVpFnhyFuCvN6wNYRLOwR4AAA=="
+    },
+    "m-9551f54773": {
+      "id": "m-9551f54773",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoAA4BaJYwCdH8AEAWC/AAA/u0nxu8aZOGtCiIx9YBSGXC6+MC+MjyWP2/V9TQNAxg680WCZb68ErdrEeIEi4oDYOvxcuLigcwA"
+    },
+    "m-a652374743": {
+      "id": "m-a652374743",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoAA4BaJZwAD5DumfoWXYqEAAD+9pOoXjE+8z9PD6cjIKN59Hst7swyB5G87Uy34h/MuLLBViBkVKkScA/d3NsXlYHorFl5rBKhkjABQAAA"
+    }
+  }
+}

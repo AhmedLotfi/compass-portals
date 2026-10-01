@@ -22,14 +22,46 @@
 
 @media (min-width: 64rem) {
   .site-footer__grid {
-    grid-template-columns: minmax(0, 4fr) minmax(0, 2fr) minmax(0, 3fr) minmax(0, 3fr);
+    grid-template-columns: minmax(0, 5fr) minmax(0, 4fr) minmax(0, 3fr);
   }
+}
+
+/* The site's link columns, set like a map legend: a ruled heading over a plain list. */
+.site-footer__columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 2rem 2.5rem;
+  padding-block: 2rem 2.5rem;
+}
+
+.site-footer__heading {
+  margin: 0 0 0.875rem;
+  padding-block-end: 0.5rem;
+  border-bottom: 2px solid var(--color-brass);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.site-footer__column ul,
+.site-footer__links {
+  display: grid;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-footer__logo {
   display: inline-block;
   text-decoration: none;
   color: var(--color-ink);
+}
+
+.site-footer__logo--plate {
+  padding: 0.4rem 0.75rem;
+  background-color: var(--color-ink);
+  border-radius: var(--radius-sm);
 }
 
 .site-footer__logo app-media-image {
@@ -48,14 +80,6 @@
   color: var(--color-ink-2);
   font-family: var(--font-display);
   font-style: italic;
-}
-
-.site-footer__nav ul {
-  display: grid;
-  gap: 0.6rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .site-footer__contact {
@@ -123,9 +147,20 @@
   font-size: var(--text-xs);
 }
 
-/* The rule sits on the text so it spans the content column, not the frame's gutters. */
-.site-footer__base p {
-  margin: 0;
+/* The rule sits on the content so it spans the content column, not the frame's gutters. */
+.site-footer__base > :first-child {
   padding-block-start: 1.25rem;
   border-top: var(--hairline);
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-block-end: 1rem;
+  font-size: var(--text-sm);
+}
+
+.site-footer__base p {
+  margin: 0;
 }

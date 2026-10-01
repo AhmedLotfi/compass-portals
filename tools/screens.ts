@@ -45,6 +45,14 @@ try {
     page.on('pageerror', (error) => problems.push(`pageerror: ${error.message}`));
     for (const route of routes) {
       await page.goto(new URL(route, baseUrl).href, { waitUntil: 'networkidle' });
+      // Scroll through the page so lazy images load before the full-page capture.
+      await page.evaluate(async () => {
+        for (let y = 0; y < document.body.scrollHeight; y += innerHeight / 2) {
+          scrollTo(0, y);
+          await new Promise((resolve) => setTimeout(resolve, 120));
+        }
+        scrollTo(0, 0);
+      });
       await page.waitForTimeout(wait);
       const slug = route.replace(/^\/|\/$/g, '').replace(/[^a-z0-9]+/gi, '-') || 'home';
       const file = path.join(

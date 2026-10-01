@@ -1,0 +1,102 @@
+{
+  "id": "features--invoicing",
+  "kind": "page",
+  "path": "/features/invoicing/",
+  "title": "Invoicing",
+  "sourceUrl": "https://compassint.org/features/invoicing",
+  "seo": {},
+  "hero": {
+    "title": "Invoicing",
+    "lede": "Streamline Invoicing Processes and Provide Seamless Experiences. Our solution empowers businesses to optimize their invoicing operations, ensuring improved accuracy and a seamless experience for customers. With advanced features and automation, businesses can streamline billing processes, enhance efficiency, and deliver professional invoices. Our reliable support helps businesses elevate their invoicing operations, enhance customer satisfaction, and achieve greater success.",
+    "media": "m-08295d417c",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-86d3649511"
+        },
+        {
+          "type": "richText",
+          "html": "<p>One of our key features involve invoicing. Our invoicing capabilities within our solutions provide the ability to create customized and also configurable professional invoices tailored to reflect your brand identity. Businesses can easily personalize invoices with logos, colors, and customized messages, showcasing a cohesive and professional image that underscores their commitment to exceptional service.</p> <p>Our invoicing feature simplifies the entire invoicing process, automating the creation of invoices using customizable and also configurable templates. This not only saves time but also minimizes errors. Businesses can effortlessly input essential details such as customer information, product descriptions, quantities, and prices. The system calculates taxes, discounts, and other charges automatically, ensuring precise and consistent invoicing.</p>"
+        }
+      ]
+    },
+    {
+      "id": "other-invoicing-functionalities-we-offer",
+      "title": "Other invoicing functionalities we offer",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Additionally, businesses benefit from efficient handling of invoicing for recurring services or subscriptions. Our solutions automate the generation of recurring invoices according to predefined schedules, eliminating manual intervention. This streamlines invoicing, reduces administrative burdens, and ensures timely billing for ongoing services.</p> <p>Another standout feature of our invoicing capabilities is seamless integration with payment gateways. This enables businesses to include payment options directly on invoices, allowing customers to conveniently settle their bills online. This integration not only promotes prompt payments but also enhances the overall customer experience with a smooth and secure payment process.</p> <p>Furthermore, our invoicing system empowers businesses to track and manage invoice statuses effectively. Real-time visibility into invoice statuses—whether sent, viewed, paid, or overdue—enables proactive management of receivables, follow-ups on outstanding payments, and efficient cash flow management.</p> <p>In summary, these capabilities collectively enhance the customer experience by ensuring accuracy, efficiency, and convenience throughout the invoicing process.</p>"
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Features",
+      "path": "/features/"
+    },
+    {
+      "label": "Invoicing",
+      "path": "/features/invoicing/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-08295d417c": {
+      "id": "m-08295d417c",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 667,
+      "alt": "Invoicing",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQAgCdASoQAAsAA4BaJZQCdAYt9ynhxHUnwqDcAAD+sjyx9ilKv2+1K+sWeimI1lZZpul6iZsmxXVUmCENjQrP3Nyn3mektsZDQL/S+Vf1NPT+wbdpRtlLjM2btIM4AWG5j8AA"
+    },
+    "m-86d3649511": {
+      "id": "m-86d3649511",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQAAsAA4BaJYwCdAYrxbMqMGvZAADONr9zmY3gGYFvWsE38+aqJbYWqEVqlfU/FbrXb4Ls7me/t6If46c3OMq3zyVpz5ZsPfhxbc/0/UC8Grla9JEhQyE8KwQFcSZ2czWYAA=="
+    }
+  }
+}

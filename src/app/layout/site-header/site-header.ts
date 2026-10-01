@@ -24,6 +24,15 @@ export class SiteHeader {
   protected readonly phone = this.content.primaryPhone;
   protected readonly email = this.content.primaryEmail;
   protected readonly contactPath = this.content.pathOf('contact');
+  /** The site's own menu entry for the contact page ("Get Started"): shown as the button. */
+  protected readonly contactItem = this.site.navigation.header.find(
+    (item) => !item.external && item.href === this.contactPath,
+  );
+  /** The desktop menu without that entry, which the button already shows. */
+  protected readonly navItems = this.site.navigation.header.filter(
+    (item) => item !== this.contactItem,
+  );
+  protected readonly logoOnDark = this.site.logoTone === 'light';
 
   private readonly menu = viewChild.required<ElementRef<HTMLDialogElement>>('menu');
 

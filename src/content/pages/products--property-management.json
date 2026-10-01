@@ -1,0 +1,152 @@
+{
+  "id": "products--property-management",
+  "kind": "product",
+  "path": "/products/property-management/",
+  "title": "Property Management",
+  "sourceUrl": "https://compassint.org/products/property_management",
+  "seo": {},
+  "hero": {
+    "title": "Property Management",
+    "lede": "Manage your properties with our configurable and customizable solution designed for property owners. Streamline lease management, maintenance requests through our integrated systems. Simplify rent collections, track your monthly/yearly expenses, and benefit from our in-system reporting capabilities for valuable insights",
+    "media": "m-3dd99ee371",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our Property Management offers a comprehensive solution for property management companies, including landlords, and property managers. The system features an integrated workflow, supporting both leasing and sales contracts. It efficiently manages collection and reconciliation processes. Additionally, the solution includes configurable KPIs, allowing property owners to gain an overall view of their various properties, tenants in each, and available units. The system also generates reports for revenues and expenses and can automate the creation of contracts for printing and distribution</p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-f572131630"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Multi-Currency Operations: Process transactions and maintain accounts in various currencies</p> <p>Multi-Owner Management: Manage properties under multiple owners seamlessly through one screen</p> <p>Units Management: Ability to manage space and various units</p> <p>Facility Management: Track assets and oversee facility management operations</p> <p>Cost per Unit: Calculate and analyze costs associated with each unit</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-e4bb3a84f5"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Web-Based and Web-Enabled Solutions: Access the platform via any device with an internet connection</p> <p>SMS and Email Integration: Send notifications and communications directly from the system through SMS and email</p> <p>Oracle and SQL Server Databases: Utilize Oracle and SQL Server databases for reliable data management</p> <p>Export Functionality to Excel, Word, and PDF: Easily export data and reports into Excel, Word, and PDF</p> <p>Customizable Flex Fields: Adapt and configure fields to meet specific business needs and workflows<br></p>"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Property Management",
+              "html": ""
+            },
+            {
+              "title": "Facility Management",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Products",
+      "path": "/products/"
+    },
+    {
+      "label": "Property Management",
+      "path": "/products/property-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-3dd99ee371": {
+      "id": "m-3dd99ee371",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Property Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoAA4BaJZwAAjxCJBJ4igAA/uqnLD1T3B6/2WTQ/54kQ7k+Vn33BotHdSdYn7gP7cvinrCAXnNhGOzj3WRIgxG4pix3nj1/YimAl/9ocAAA"
+    },
+    "m-e4bb3a84f5": {
+      "id": "m-e4bb3a84f5",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAoAA4BaJZwAAlohe5+l3AD+8eDIxK9VCUhgejC4QT7SXV2VkU/XnN5jGdmV99mIHAAA"
+    },
+    "m-f572131630": {
+      "id": "m-f572131630",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAoAA4BaJYwCsAEN5M5LXVAA+WMnNWWE6/RWssQfikJT+u9/RqtjbMWAYUeg3JNtwiFiJP+yj9m32rMQAI7QAvzlO6mPpyO89YfcbIde/MyMY9eUBfo1sIAAAA=="
+    }
+  }
+}

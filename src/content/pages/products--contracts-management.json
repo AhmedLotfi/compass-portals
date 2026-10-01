@@ -1,0 +1,155 @@
+{
+  "id": "products--contracts-management",
+  "kind": "product",
+  "path": "/products/contracts-management/",
+  "title": "Contracts Management",
+  "sourceUrl": "https://compassint.org/products/contracts_management",
+  "seo": {},
+  "hero": {
+    "title": "Contracts Management",
+    "lede": "Specifically designed for Consulting and Outsourcing Firms, our Contracts Management solution facilitates the registration of contract details and payment schedules analyzing the profitability of each contract. The system automates payroll costing and payments, integrating with Finance for comprehensive financial management",
+    "media": "m-bb8fbcd880",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>Our Contracts Management is designed for Consulting and Outsourcing Firms to register contract details and payment schedules, facilitating revenue versus cost analysis for each contract. The system includes KPI tracking to monitor key performance indicators related to contract profitability and efficiency. It integrates payroll and payment costing seamlessly with Finance, ensuring comprehensive financial management<br></p>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-11d68445bb"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Multi-Company Management: Efficiently handle operations across multiple companies and legal entities within one system.</p> <p>Expiration Reminders: Receive timely notifications for expired contracts to ensure proactive management.</p> <p>Automatic Management of Deferred Revenue: Seamlessly handle deferred revenue processes to maintain accurate financial records.</p> <p>Management of Outsourcing Contracts: Streamline the management of outsourcing agreements to optimize operational efficiency</p>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-6a9b5ddc06"
+        },
+        {
+          "type": "richText",
+          "html": "<p>Web-Based and Web-Enabled Solutions: Access the platform via any device with an internet connection</p> <p>SMS and Email Integration: Send notifications and communications directly from the system through SMS and email</p> <p>Oracle and SQL Server Databases: Utilize Oracle and SQL Server databases for reliable data management</p> <p>Export Functionality to Excel, Word, and PDF: Easily export data and reports into Excel, Word, and PDF</p> <p>Customizable Flex Fields: Adapt and configure fields to meet specific business needs and workflows</p>"
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Contracts",
+              "html": ""
+            },
+            {
+              "title": "Finance",
+              "html": ""
+            },
+            {
+              "title": "Human Resource",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Products",
+      "path": "/products/"
+    },
+    {
+      "label": "Contracts Management",
+      "path": "/products/contracts-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-11d68445bb": {
+      "id": "m-11d68445bb",
+      "mime": "image/jpeg",
+      "width": 1206,
+      "height": 720,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1206
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAoAA4BaJaACdADMBUoKrJaWAP7YOaEDUnKWiZjXzv76E8PM1s8c7vH5+/Ct/Tm0SV8qHUMvbOxQF8n9vsS9Vu6t7+D5x6+Mga0aXGroRPfLm/TbYBIAAAA="
+    },
+    "m-6a9b5ddc06": {
+      "id": "m-6a9b5ddc06",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoAA4BaJZQC7AEf1tbORU3AAP7xE3FIWM6w+MVq9nlckkt8jdSHyQQxiuVf3kl0F3HazHHWvOgiJU1MO3XKGsoyjT0kcnHI0pr9K+t5ROQA"
+    },
+    "m-bb8fbcd880": {
+      "id": "m-bb8fbcd880",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 450,
+      "alt": "Contracts Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        800
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJZQC7AC1wCt3AAD+8YEbLv9x7RvSIXE9RCkbvERuJluEqthxG1CfKcSwM/Ea4VrMcIoSjJ3BTC03BZxQAA=="
+    }
+  }
+}

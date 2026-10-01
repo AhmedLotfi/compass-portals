@@ -52,11 +52,18 @@ export async function startDistServer(
   const root = options.root ?? path.join(ROOT, 'dist/compass-portal/browser');
   const contentDir = options.contentDir ?? path.join(ROOT, 'src/content');
   const redirects = new Map<string, Redirect>();
+  /** Redirects whose `from` ends in `*`: any longer path under the prefix. */
+  const prefixes: Redirect[] = [];
   try {
     const data = JSON.parse(await readFile(path.join(contentDir, 'redirects.json'), 'utf8')) as {
       redirects: Redirect[];
     };
-    for (const r of data.redirects) redirects.set(r.from, r);
+    for (const r of data.redirects) {
+      if (r.from.endsWith('*')) prefixes.push(r);
+      else redirects.set(r.from, r);
+    }
+    // Longest prefix first.
+    prefixes.sort((a, b) => b.from.length - a.from.length);
   } catch {
     // No snapshot: serve without redirects.
   }
@@ -114,7 +121,12 @@ export async function startDistServer(
       return;
     }
 
-    const redirect = redirects.get(pathname + url.search) ?? redirects.get(pathname);
+    const redirect =
+      redirects.get(pathname + url.search) ??
+      redirects.get(pathname) ??
+      prefixes.find(
+        (r) => pathname.length > r.from.length - 1 && pathname.startsWith(r.from.slice(0, -1)),
+      );
     if (redirect?.status === 301) {
       res.writeHead(301, { location: redirect.to });
       res.end();

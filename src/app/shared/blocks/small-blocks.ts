@@ -1,7 +1,8 @@
 import { Component, computed, inject, input, signal } from '@angular/core';
 import { DomSanitizer, type SafeResourceUrl } from '@angular/platform-browser';
-import type { Block } from '@schema/content';
+import type { Block, MediaRef } from '@schema/content';
 import { CopyPipe } from '../../core/copy/copy';
+import { MediaImage } from '../../core/media/media-image';
 import { Icon } from '../../layout/icon/icon';
 import { SmartLink } from '../smart-link/smart-link';
 import { InternalLinks } from './internal-links';
@@ -75,12 +76,23 @@ export class StatsBlock {
 
 @Component({
   selector: 'app-quote-block',
-  imports: [InternalLinks],
+  imports: [InternalLinks, MediaImage],
   template: `
+    @let quote = block();
     <figure class="quote">
-      <blockquote class="prose-chart" appInternalLinks [innerHTML]="block().html"></blockquote>
-      @if (block().cite) {
-        <figcaption>{{ block().cite }}</figcaption>
+      <blockquote class="prose-chart" appInternalLinks [innerHTML]="quote.html"></blockquote>
+      @if (quote.cite) {
+        <figcaption class="quote__by">
+          @if (portrait(); as image) {
+            <app-media-image class="quote__portrait" [media]="image" sizes="3.5rem" alt="" />
+          }
+          <span>
+            <span class="quote__name">{{ quote.cite }}</span>
+            @for (line of quote.role; track $index) {
+              <span class="quote__role">{{ line }}</span>
+            }
+          </span>
+        </figcaption>
       }
     </figure>
   `,
@@ -96,15 +108,106 @@ export class StatsBlock {
       font-size: var(--text-xl);
       line-height: var(--text-xl--line-height);
     }
-    figcaption {
-      margin-top: 0.75rem;
+    .quote__by {
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+      margin-top: 1.25rem;
       color: var(--color-ink-2);
       font-size: var(--text-sm);
+    }
+    .quote__portrait {
+      inline-size: 3.5rem;
+      flex: none;
+      border-radius: 50%;
+      overflow: hidden;
+      border: var(--ink-line);
+    }
+    .quote__name,
+    .quote__role {
+      display: block;
+    }
+    .quote__name {
+      color: var(--color-ink);
+      font-weight: 600;
     }
   `,
 })
 export class QuoteBlock {
   readonly block = input.required<Extract<Block, { type: 'quote' }>>();
+  readonly media = input<Record<string, MediaRef>>({});
+  protected readonly portrait = computed(() => {
+    const id = this.block().media;
+    return id ? this.media()[id] : undefined;
+  });
+}
+
+/** Questions and answers as native disclosure widgets: keyboard and screen-reader ready, no script. */
+@Component({
+  selector: 'app-faq-block',
+  imports: [InternalLinks],
+  template: `
+    <div class="faq">
+      @for (item of block().items; track $index) {
+        <details class="faq__item">
+          <summary class="faq__question">{{ item.question }}</summary>
+          <div class="faq__answer prose-chart" appInternalLinks [innerHTML]="item.html"></div>
+        </details>
+      }
+    </div>
+  `,
+  styles: `
+    .faq {
+      border-block-start: var(--hairline);
+    }
+    .faq__item {
+      border-block-end: var(--hairline);
+    }
+    .faq__question {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding-block: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--color-ink);
+      list-style: none;
+    }
+    .faq__question::-webkit-details-marker {
+      display: none;
+    }
+    /* A compass-card tick that turns to point down when the answer is open. */
+    .faq__question::after {
+      content: '';
+      flex: none;
+      inline-size: 0.5rem;
+      block-size: 0.5rem;
+      border-inline-end: 2px solid var(--color-brass);
+      border-block-end: 2px solid var(--color-brass);
+      transform: rotate(-45deg);
+      transition: transform 160ms var(--ease-out, ease-out);
+    }
+    .faq__item[open] > .faq__question::after {
+      transform: rotate(45deg);
+    }
+    .faq__question:focus-visible {
+      outline: 2px solid var(--color-ink);
+      outline-offset: 2px;
+    }
+    .faq__answer {
+      padding-block-end: 1.25rem;
+      max-inline-size: 68ch;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .faq__question::after {
+        transition: none;
+      }
+    }
+  `,
+})
+export class FaqBlock {
+  readonly block = input.required<Extract<Block, { type: 'faq' }>>();
 }
 
 /** Click-to-load embed: no third-party requests until the visitor asks for the map or video. */

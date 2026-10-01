@@ -31,6 +31,13 @@
   block-size: 2.6rem;
 }
 
+/* A white logo sits on an ink plate, like the cartouche of a chart. */
+.brand--plate {
+  padding: 0.3rem 0.65rem;
+  background-color: var(--color-ink);
+  border-radius: var(--radius-sm);
+}
+
 .brand__name {
   font-family: var(--font-display);
   font-size: var(--text-lg);

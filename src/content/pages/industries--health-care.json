@@ -1,0 +1,60 @@
+{
+  "id": "industries--health-care",
+  "kind": "page",
+  "path": "/industries/health-care/",
+  "title": "Health Care",
+  "sourceUrl": "https://compassint.org/industries/health_care",
+  "seo": {},
+  "hero": {
+    "title": "Health Care",
+    "lede": "At Compass, we specialize in delivering innovative IT and software solutions specifically designed for the healthcare sector. We understand the unique challenges faced by healthcare providers — from securely managing patient data to streamlining clinical workflows and ensuring regulatory compliance. Our advanced technologies empower hospitals, clinics, and medical professionals to enhance patient care, improve operational efficiency, and make data-driven decisions. Committed to innovation and security, we support the transformation of healthcare delivery for better outcomes and a healthier future.",
+    "media": "m-4ee075b05a",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>At Compass, we offer a full spectrum of advanced IT and software solutions designed to address the complex and evolving needs of the healthcare industry. Our healthcare solutions focus on improving patient care delivery, enhancing clinical and administrative workflows, and ensuring robust data security and regulatory compliance.</p> <p>We provide integrated electronic health record (EHR) systems that streamline patient data management, enabling healthcare professionals to access accurate and up-to-date information instantly. Our telemedicine platforms facilitate remote consultations, expanding access to care while maintaining quality and convenience.</p> <p>Compass solutions also include powerful analytics and business intelligence tools that transform clinical and operational data into actionable insights. These insights enable healthcare providers to optimize resource allocation, improve patient outcomes, and drive strategic decision-making.</p> <p>Moreover, our systems support interoperability, allowing seamless communication between various healthcare departments and external partners, ensuring continuity of care. With automation features, healthcare organizations can reduce administrative burdens, minimize errors, and increase operational efficiency.</p> <p>Security is paramount in healthcare, and Compass prioritizes safeguarding sensitive patient information through state-of-the-art encryption, access controls, and compliance with global healthcare regulations such as HIPAA and GDPR.</p> <p>By partnering with Compass, healthcare providers gain a trusted technology ally committed to innovation, quality, and delivering solutions that empower better care for patients and smoother operations for providers.</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Industries",
+      "path": "/industries/"
+    },
+    {
+      "label": "Health Care",
+      "path": "/industries/health-care/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-4ee075b05a": {
+      "id": "m-4ee075b05a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Health Care",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoAA4BaJZACdAYv1yLhw2iDZAAA+WHbQTzWQiCPxORDkbSfDsu03Pw4dMM6jb7D73BHIctvvawj25xqLVOtd46FSUpLljYF4QXjiEx39lW8a7KovywA"
+    }
+  }
+}

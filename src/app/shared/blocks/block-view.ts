@@ -5,7 +5,7 @@ import { FeatureList } from './feature-list';
 import { MediaBlock } from './media-block';
 import { ModuleGrid } from './module-grid';
 import { RichText } from './rich-text';
-import { CtaBlock, EmbedBlock, QuoteBlock, StatsBlock } from './small-blocks';
+import { CtaBlock, EmbedBlock, FaqBlock, QuoteBlock, StatsBlock } from './small-blocks';
 
 /** Renders one content block by type. */
 @Component({
@@ -18,6 +18,7 @@ import { CtaBlock, EmbedBlock, QuoteBlock, StatsBlock } from './small-blocks';
     CtaBlock,
     StatsBlock,
     QuoteBlock,
+    FaqBlock,
     EmbedBlock,
     ContactForm,
   ],
@@ -31,7 +32,7 @@ import { CtaBlock, EmbedBlock, QuoteBlock, StatsBlock } from './small-blocks';
         <app-feature-list [block]="b" />
       }
       @case ('moduleGrid') {
-        <app-module-grid [block]="b" [media]="media()" />
+        <app-module-grid [block]="b" [media]="media()" [level]="headingLevel()" />
       }
       @case ('media') {
         <app-media-block [block]="b" [media]="media()" />
@@ -46,7 +47,10 @@ import { CtaBlock, EmbedBlock, QuoteBlock, StatsBlock } from './small-blocks';
         <app-stats-block [block]="b" />
       }
       @case ('quote') {
-        <app-quote-block [block]="b" />
+        <app-quote-block [block]="b" [media]="media()" />
+      }
+      @case ('faq') {
+        <app-faq-block [block]="b" />
       }
       @case ('embed') {
         <app-embed-block [block]="b" />
@@ -64,4 +68,6 @@ import { CtaBlock, EmbedBlock, QuoteBlock, StatsBlock } from './small-blocks';
 export class BlockView {
   readonly block = input.required<Block>();
   readonly media = input.required<Record<string, MediaRef>>();
+  /** Level for the block's own headings: 2 when its section has no title (h2) of its own. */
+  readonly headingLevel = input<2 | 3>(3);
 }

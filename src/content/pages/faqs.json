@@ -1,0 +1,64 @@
+{
+  "id": "faqs",
+  "kind": "page",
+  "path": "/faqs/",
+  "title": "Frequently Asked Questions",
+  "sourceUrl": "https://compassint.org/faqs",
+  "seo": {},
+  "hero": {
+    "title": "Frequently Asked Questions",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "questions",
+      "blocks": [
+        {
+          "type": "faq",
+          "items": [
+            {
+              "question": "What is accounting software?",
+              "html": "<p>Accounting software is a tool that allows you to track and manage the day-to-day finances of your businesses. It should allow you to create professional invoices, manage expense tracking, run double-entry accounting reports, accept online payments, and monitor all parts of your business’s money – both in and out. FreshBooks accounting software allows you to do all of this – and more. It includes invoicing features, expense tracking, time tracking, online payments, industry-standard double-entry accounting, balance sheets, mileage tracking, project profitability, bank reconciliation, client retainers, and the list goes on. It’s the reason we’re one of those most popular small business invoicing software – having been used by over 30 million people worldwide. All features are built to be easy to use for small business owners and their teams, clients, and accountants. Plus, as a cloud accounting software – your data is stored and ready to be accessed wherever you are in the world.</p>"
+            },
+            {
+              "question": "Which FreshBooks plan is right for me?",
+              "html": "<p>Accounting software is a tool that allows you to track and manage the day-to-day finances of your businesses. It should allow you to create professional invoices, manage expense tracking, run double-entry accounting reports, accept online payments, and monitor all parts of your business’s money – both in and out. FreshBooks accounting software allows you to do all of this – and more. It includes invoicing features, expense tracking, time tracking, online payments, industry-standard double-entry accounting, balance sheets, mileage tracking, project profitability, bank reconciliation, client retainers, and the list goes on. It’s the reason we’re one of those most popular small business invoicing software – having been used by over 30 million people worldwide. All features are built to be easy to use for small business owners and their teams, clients, and accountants. Plus, as a cloud accounting software – your data is stored and ready to be accessed wherever you are in the world.</p>"
+            },
+            {
+              "question": "Fix a Problem",
+              "html": "<p>Fix Upload Problem</p>"
+            },
+            {
+              "question": "Fix a Problem",
+              "html": "<p>Video Upload</p>"
+            },
+            {
+              "question": "Fix a Problem",
+              "html": "<p>Upload Image</p>"
+            },
+            {
+              "question": "Fix a Problem",
+              "html": "<p>ewew</p>"
+            },
+            {
+              "question": "What is accounting software?",
+              "html": "<p>312312</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Frequently Asked Questions",
+      "path": "/faqs/"
+    }
+  ],
+  "children": [],
+  "media": {}
+}

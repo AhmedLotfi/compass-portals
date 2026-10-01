@@ -1,0 +1,61 @@
+{
+  "id": "products--retail-management",
+  "kind": "product",
+  "path": "/products/retail-management/",
+  "title": "Retail Management",
+  "sourceUrl": "https://compassint.org/products/retail_management",
+  "seo": {},
+  "hero": {
+    "title": "Retail Management",
+    "lede": "Transform your retail operations with our comprehensive management module. Streamline inventory, sales, and customer data to optimize store performance. From seamless point-of-sale transactions to advanced inventory tracking and real-time stock level management, our solution ensures you stay ahead. Gain insights into sales trends, items sold, and customer preferences with a fully- fed database that centralizes customer information. Empower your decisions with detailed analytics, driving growth and delivering exceptional retail experiences",
+    "media": "m-a3d703ec91",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "Request Your Demo",
+          "href": "/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Products",
+      "path": "/products/"
+    },
+    {
+      "label": "Retail Management",
+      "path": "/products/retail-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-a3d703ec91": {
+      "id": "m-a3d703ec91",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAoAA4BaJQBOgBbUixkUAP7O7J6+hecLeRxW8o1z9GBW8I1BOf76s/7+Fc362GEuguFVauz6Vw60ezAdW4jpH3M6IqubvOViywjn5Px3UzkAAAA="
+    }
+  }
+}
