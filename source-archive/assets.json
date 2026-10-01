@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T03:00:06.795Z",
+  "generatedAt": "2026-10-01T05:28:21.653Z",
   "assets": [
     {
       "url": "https://compassint.org/assets/compass/business-apps.svg",
@@ -9,6 +9,15 @@
       "sha256": "ec6c7b19b339e92e47981e672b219106d22bfabd7664310046c11d836e4d0749",
       "contentType": "image/svg+xml",
       "bytes": 2383
+    },
+    {
+      "url": "https://compassint.org/assets/custom/img/contact-us.svg",
+      "kind": "image",
+      "status": 200,
+      "file": "compassint.org/assets-custom-img-contact-us.svg--49126d0291.xml",
+      "sha256": "a20528c38b657a1b68fcf7a238cf6cb490936a353597fb25b1f18d8da5eefddb",
+      "contentType": "image/svg+xml",
+      "bytes": 9995
     },
     {
       "url": "https://compassint.org/assets/img/contact-us-bg.svg",
@@ -1012,6 +1021,7 @@
   ],
   "resolved": {
     "https://compassint.org/assets/compass/business-apps.svg": "https://compassint.org/assets/compass/business-apps.svg",
+    "https://compassint.org/assets/custom/img/contact-us.svg": "https://compassint.org/assets/custom/img/contact-us.svg",
     "https://compassint.org/assets/img/hero-dot-bg.png": "https://compassint.org/assets/img/hero-dot-bg.png",
     "https://compassint.org/assets/img/page-header-bg.svg": "https://compassint.org/assets/img/page-header-bg.svg",
     "https://compassint.org/assets/img/quotes-dot.svg": "https://compassint.org/assets/img/quotes-dot.svg",
