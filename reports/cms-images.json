@@ -1,0 +1,63 @@
+{
+  "downloaded": [
+    "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1b4ae758-d6c3-4d04-89ac-7f44327009c7.jpg",
+    "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-646dadf4-7788-4924-b53b-14abdee84ec9.jpg",
+    "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-76ea970f-f201-440c-9318-df8e5bda70be.jpg",
+    "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-b0d6602c-ec84-4d58-aa8b-233b0e142d27.jpg",
+    "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e93a686e-513e-4ca5-ad17-307b54482cc1.jpg",
+    "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ea8d3ece-3ce6-4d1e-ab24-1c5de5c810d4.jpg",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1540281d-5c51-4ff9-8378-23b2de9b3c8d.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-15804f2d-b2e4-46ea-abf6-c170be0e89af.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-666b6572-6bae-45ec-ac71-b63dc2bb7503.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-7daee165-f13a-4255-91c1-b100eb9e6e66.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-86da34e8-122f-4b11-b2c3-41e88c169f7d.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-bac5fbef-6993-4fc0-83cb-48a36a650cf6.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c356eba7-bd40-4666-92d4-67068514afdf.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-cf36b001-22ce-404e-8038-2b8220cb5dd6.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d6516c1d-f8b1-408d-924b-2be3de823430.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-f1b6d2d6-5bbd-44ac-af20-828f99fb763f.png",
+    "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-f2ac30cd-0a4f-4f58-ba19-db774387d4d4.png"
+  ],
+  "missing": [
+    {
+      "url": "http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png",
+      "reason": "GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout"
+    },
+    {
+      "url": "http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-2e6d6331-c061-4bde-95bd-1d7fae1b6fac.png",
+      "reason": "host unreachable (GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout)"
+    },
+    {
+      "url": "http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-78be4b25-25ac-4308-808f-6fb6a010f08d.png",
+      "reason": "host unreachable (GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout)"
+    },
+    {
+      "url": "http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-811a5f1c-fdc1-43e9-a591-fe07136bf566.png",
+      "reason": "host unreachable (GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout)"
+    },
+    {
+      "url": "http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-f2e826cd-1d96-4d0c-a1cb-6b5967f06c1a.png",
+      "reason": "host unreachable (GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout)"
+    },
+    {
+      "url": "http://compassint.ddns.net:5002/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-073c675c-3146-4428-8655-8e6d835a5283.png",
+      "reason": "host unreachable (GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout)"
+    },
+    {
+      "url": "http://compassint.ddns.net:5002/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-0c2af66a-2e2a-479a-baa5-77f93efd8970.png",
+      "reason": "host unreachable (GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout)"
+    },
+    {
+      "url": "http://compassint.ddns.net:5002/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-427e3b85-dae7-4b75-8f77-9b4190f21c7e.png",
+      "reason": "host unreachable (GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout)"
+    },
+    {
+      "url": "http://compassint.ddns.net:5002/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5180772a-540d-489d-a5fe-21d2ce77fbdd.png",
+      "reason": "host unreachable (GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout)"
+    },
+    {
+      "url": "http://compassint.ddns.net:5002/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-634f006b-2334-48d0-bb1e-a97d977be9e8.png",
+      "reason": "host unreachable (GET http://compassint.ddns.net:5002/Attachment/AppAttachments/HrPerson-Profile/HrPerson-Profile-20c33aec-46c4-4fd8-9eab-1b40cd9dcf18.png failed after 1 attempts: The operation was aborted due to timeout)"
+    }
+  ]
+}
