@@ -6,11 +6,7 @@
     "status": 200,
     "redirects": [],
     "headers": {
-      "content-type": "text/html",
-      "etag": "\"1df81fcb50dd1:0\"",
-      "last-modified": "Wed, 30 Sep 2026 11:02:03 GMT",
-      "server": "Microsoft-IIS/10.0",
-      "x-powered-by": "ASP.NET"
+      "content-type": "text/html; charset=utf-8"
     }
   },
   "cloudflare": false,
@@ -29,13 +25,25 @@
     "hreflang": [],
     "cfEmail": false
   },
-  "permalinks": null,
+  "permalinks": {
+    "sample": "https://compassint.org/about-us",
+    "clean": {
+      "url": "https://compassint.org/about-us",
+      "finalUrl": "https://compassint.org/about-us",
+      "status": 200
+    },
+    "indexPhp": {
+      "url": "https://compassint.org/index.php/about-us",
+      "finalUrl": "https://compassint.org/index.php/about-us",
+      "status": 200
+    }
+  },
   "wwwHome": {
-    "finalUrl": "https://www.compassint.org/",
+    "finalUrl": "https://compassint.org/",
     "status": 200
   },
   "httpHome": {
-    "finalUrl": "http://compassint.org/",
-    "status": 404
+    "finalUrl": "https://compassint.org/",
+    "status": 200
   }
 }

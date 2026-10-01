@@ -1,6 +1,2074 @@
 {
-  "generatedAt": "2026-09-30T17:47:51.259Z",
-  "assets": [],
-  "resolved": {},
-  "missing": []
+  "generatedAt": "2026-10-01T03:00:06.795Z",
+  "assets": [
+    {
+      "url": "https://compassint.org/assets/compass/business-apps.svg",
+      "kind": "image",
+      "status": 200,
+      "file": "compassint.org/assets-compass-business-apps.svg--76fbe1247b.xml",
+      "sha256": "ec6c7b19b339e92e47981e672b219106d22bfabd7664310046c11d836e4d0749",
+      "contentType": "image/svg+xml",
+      "bytes": 2383
+    },
+    {
+      "url": "https://compassint.org/assets/img/contact-us-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 200,
+      "file": "compassint.org/assets-img-hero-dot-bg.png--f94718437c.png",
+      "sha256": "2b6c9f0ce1c8b72cb82176ff705c987c5697a505540361acc9081e49b2fcb05c",
+      "contentType": "image/png",
+      "bytes": 22782
+    },
+    {
+      "url": "https://compassint.org/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 200,
+      "file": "compassint.org/assets-img-page-header-bg.svg--77259af885.xml",
+      "sha256": "16e0067a56800242a045ac02c8b0aae557558036c74342bbbde56c1a280d7d80",
+      "contentType": "image/svg+xml",
+      "bytes": 32398
+    },
+    {
+      "url": "https://compassint.org/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 200,
+      "file": "compassint.org/assets-img-quotes-dot.svg--facfc3c1ad.xml",
+      "sha256": "fcc8b57ae43325942539122b21209db29824025f8c169810606fb8ceea9a7f6d",
+      "contentType": "image/svg+xml",
+      "bytes": 23380
+    },
+    {
+      "url": "https://compassint.org/careers/assets/custom/img/contact-us.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/careers/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/careers/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/features/business_intelligence/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/features/business_intelligence/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/features/invoicing/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/features/invoicing/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/features/omni_channel_platform/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/features/omni_channel_platform/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/features/other_features/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/features/other_features/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/home/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/home/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/construction/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/construction/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/consulting/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/consulting/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/financial_services/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/financial_services/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/government_/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/government_/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/health_care/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/health_care/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/it_services/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/it_services/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/legal/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/legal/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/non-_profit_organizations/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/non-_profit_organizations/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/real_estate/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/real_estate/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/retail/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/retail/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/whole_sales_distribution/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/industries/whole_sales_distribution/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 200,
+      "file": "compassint.org/media-footer-tenx-bg-a2ctjhka.png--e3c6f501aa.png",
+      "sha256": "7da81232e736bbb7b3fd030a7d33467899a558ff1d6abd6b36ffb0ff442cc559",
+      "contentType": "image/png",
+      "bytes": 845252
+    },
+    {
+      "url": "https://compassint.org/products/charity_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/charity_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/charity_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/contracts_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/contracts_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/contracts_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/finance_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/finance_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/finance_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/fleet_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/fleet_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/fleet_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/hr_&_payroll/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/hr_&_payroll/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/hr_&_payroll/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/insurance_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/insurance_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/insurance_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/projects_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/projects_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/projects_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/property_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/property_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/property_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/retail_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/retail_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/retail_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/school_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/school_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/school_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/university_management/assets/img/hero-dot-bg.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/university_management/assets/img/quotes-dot.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/products/university_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/service/metaverse_solution/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/service/metaverse_solution/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/artificial_intelligence/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/artificial_intelligence/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/custom_development/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/custom_development/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/data_offering/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/data_offering/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/erp_development/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/erp_development/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/ict_manpower_&_outsourcing/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/ict_manpower_&_outsourcing/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/metaverse_solution/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/metaverse_solution/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/mobile_application_development/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/mobile_application_development/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/system_integration/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/system_integration/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/web_development/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/services/web_development/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/charity_management/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/charity_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/contracts_management/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/contracts_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/finance_management/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/finance_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/fleet_management/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/fleet_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/hr_&_payroll/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/hr_&_payroll/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/projects_management/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/projects_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/property_management/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/property_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/retail_management/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/retail_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/school_management/assets/img/page-header-bg.svg",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    },
+    {
+      "url": "https://compassint.org/solution/school_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "kind": "image",
+      "status": 406,
+      "file": null,
+      "sha256": null,
+      "contentType": "text/html",
+      "bytes": 1346
+    }
+  ],
+  "resolved": {
+    "https://compassint.org/assets/compass/business-apps.svg": "https://compassint.org/assets/compass/business-apps.svg",
+    "https://compassint.org/assets/img/hero-dot-bg.png": "https://compassint.org/assets/img/hero-dot-bg.png",
+    "https://compassint.org/assets/img/page-header-bg.svg": "https://compassint.org/assets/img/page-header-bg.svg",
+    "https://compassint.org/assets/img/quotes-dot.svg": "https://compassint.org/assets/img/quotes-dot.svg",
+    "https://compassint.org/media/footer-tenx-bg-A2CTJHKA.png": "https://compassint.org/media/footer-tenx-bg-A2CTJHKA.png"
+  },
+  "missing": [
+    {
+      "url": "http://compassint.ddns.net:5002/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-427e3b85-dae7-4b75-8f77-9b4190f21c7e.png",
+      "reason": "host compassint.ddns.net is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-021d4d76-bfd5-407f-bb00-d228bac8e4ce.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-06b84212-e46a-43af-bb61-9a942d1e927f.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-08425697-b015-4b6b-9a93-1c15000a6b2f.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-0ddb32f6-2aa7-4d0f-9d75-dec57198b5f5.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-0ec7479b-dc87-43e6-9c2b-cfd45106d1bd.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-13bd2cc8-7b27-431b-851e-eff2395a1d42.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-151fb56c-4d89-4884-a177-2dec099fda32.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-15bcd674-6281-4666-b305-746e3a423d71.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-18398c29-d3f5-4042-ac69-5fe1cad03454.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1d5d2281-001d-4f07-ab3d-44426127d510.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2241997a-ad98-4c3b-acc8-227d074239cf.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-27e40a4e-88b3-4e92-9e87-9e927a06687d.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-28fe1bb6-cab2-4843-8e0d-e2d694a832db.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2bd7dcbe-ecbd-4f0e-b462-6bb5615389ad.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-371e2d2d-d842-4491-b372-f888cc6ac5a1.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-38015b8e-7d33-40e1-bd21-77a709b0aa76.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-3a7e3285-4f64-4f58-b377-1f7aea3d1ecf.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-3de13efd-501a-4eef-b33c-a238cad966a5.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-441b0cfa-3790-43e2-9853-ea6cb42c0f93.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-463b0c1b-7d64-44d3-965f-584b1529dd6d.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-4828517c-4c4c-49b3-b611-a5a5104687c1.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-4eefb917-198c-4432-b184-57361b5e0b96.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5124cb9b-47bc-4faf-9968-30d098e947bf.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5cd633da-5609-47ec-a841-56f9922460da.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5f81b918-4160-4468-bfc0-88a46072b82d.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-604f4447-753d-45df-a790-d90f1bb9ab7d.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-62984db0-81ca-44a7-966f-978e2526855f.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-64de8771-1449-4e0f-951d-e7e6b112ade4.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-6ad0da7b-e78b-488a-a52a-b7fe1c1dee60.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-6d7a74e5-7334-48fe-b955-29c71506b282.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-6f04cff3-ba62-4a15-bf20-1fa829d41a57.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-70c0022b-5203-45dc-b2b3-fa2fe83571ea.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-742802b4-b8d8-452d-bca5-aae24c0668a3.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-780c9140-8180-416c-8648-a9e126f265c9.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-78a46074-588c-4975-a2c2-02a16f442394.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-80d365ce-f82a-41cd-967e-a93424a9015c.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-80e737b4-a9fe-4f12-9937-1e2d0f5e9824.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-84c40e54-ac88-488a-900b-a50e66991de1.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-884f8e70-fe35-40dc-a9ad-04c80a8ef77d.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9a8c864e-9d2f-4964-a073-b4806ebf8647.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9db08f41-7b51-4e80-810d-7b0b4d558c1a.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9e808726-6cd3-4e87-b257-b8e322a6e64c.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9f685bfb-0aa9-4e6d-8fcf-5884315bf517.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-a740cca4-d406-4f69-b646-b897432a5da4.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-abb29bd9-7553-4600-b813-55c3222cc960.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ac938469-2c9b-497f-a35c-dc3e115ed612.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-b9c950f7-0212-4ece-8623-65e6983f4477.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-bb0ff570-2aea-4e9a-bdba-edc0b3b0e406.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-bba105a3-9fbc-4042-9561-2e73b4517ba5.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-bd03d790-f63a-4643-8ea6-3dadc249e70a.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-be233ec3-8cb4-48ff-a039-3fb5d541167b.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-bf37b73b-f080-4479-b26f-55719e1b919c.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c1436b3f-fe8e-4ad3-9ee5-201cf9ede21f.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c340f2c0-8f25-4028-b9dc-bf981c38f15b.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c5938430-c79d-4eb3-9c21-5ac7e9677673.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c779ab27-9fe4-42eb-a4c5-3c0a7545ff04.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c7ad3711-70e1-4c09-88f4-20ab6e56e9a7.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c99f6bc9-c8e8-4e1a-bbec-4c5304f8f01e.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-cd18d6f0-9bc1-4759-823c-88efc03d8f28.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ced374ff-6e7c-4c35-b4fe-e56b22026f83.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d3194759-af34-4416-b28a-c42021316bb3.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d68b8f86-bb5a-4f7b-b060-7b85cefbc5c4.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d7c70883-6e4c-4f71-b1be-63c7b42e5b61.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d7c72ec4-17e6-43a3-9525-3bf31bcc5dc1.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e2974950-9626-4631-a4eb-4c339abf820f.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e2e3ee03-be47-408b-96fa-8ce03203dfae.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-eba41593-ec4e-4922-a790-33db35ee156b.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ebe08394-736b-4ac0-ae7c-caf05dc8a89e.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ecab7bd7-0330-429d-9607-b345f5fa0ce5.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ed3f9232-60b3-4438-a5b2-fe0e6ef71895.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ee205c5f-bb11-466a-80f8-8b02a0be9019.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-f164b9d0-c02c-4cfa-b2e6-1327c91b1013.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-f8a9dd03-d902-4088-a6f4-9b66a69aadb9.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fa6df0db-a6b5-4bf6-9dd3-0b487a593b63.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fa98d21e-d1cd-4318-9b6d-b7e75f2d2a8e.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fd40376d-988f-431d-b57e-8f6efc12ff58.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fd4dbbab-4e2d-4f0f-87e7-8c8a1623a29f.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-012b07ea-d822-401e-a561-df9695f1e3d8.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-062f48b4-020f-4569-903a-371a4debbddf.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-0932dd39-fd5d-416d-b60d-f117643ed44f.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1099b15f-2d69-4119-93ef-1f8f1ebf3fd5.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-13e17efd-7576-4cf9-91cb-3f0a717626b5.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-14b08325-6fb0-43bf-b70d-6cf6fcba39bd.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-156a5cb5-46ff-4c22-8675-5261d9897401.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1571537b-5934-4cab-9307-3325f1b59e8e.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-195f2f57-1753-4655-a6ca-6fae3939fe71.jpeg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1b730e43-ebce-4a3e-869c-b5b4e099449f.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-211fdd8d-0a2d-4700-b30d-69cfc277b008.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2147cfbb-127f-42bd-b70c-9ba5c71c5afc.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-25df8eba-a287-44ef-8b3e-bc80a281e060.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-26fe730f-1c0b-4d17-974b-6002eb00ca09.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-27154dfb-3d42-48e7-aa25-4ca6839dfb13.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-28cf3b81-a10a-43c9-b234-f056143b2d8e.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2da91d56-ed65-4e1d-a234-11ded55f55e5.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2e9c8b16-a8aa-422c-a93f-4df1051d038d.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-2f1ffc2e-f465-40a3-bfef-ea71142dde54.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-30754f97-b285-4667-a007-fb30bd2fe7c5.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-313929ac-fee2-41d3-b8d9-7f4a4c3dcc98.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-31623d38-e6e0-4e60-9af8-ab41cd45cd45.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-33d15b23-fc04-4646-a04a-aca3b6ee708e.jpeg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-34c15db4-1118-44d5-8419-2b6077d79645.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-365d6633-b905-4b44-9de6-86ac4a9f543a.jpeg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-3d31d590-3819-4181-b572-dfe87cd74d81.jpeg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-46543864-c95d-42dd-972b-1d6b7958c752.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-4e1c217d-52cb-425a-ac3d-b967fd8a9c8c.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-543406e7-19dc-4a2b-9005-c32b2717b79b.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-56dc10bb-871c-4ade-bdd7-e68f3b9c5e27.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5830a2a7-2159-4351-8404-dd49f3802da5.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5a1f5f5f-52ec-4bfb-aaaa-918c98e8e6c3.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-5c828b5b-e2de-4688-9954-3e2b5765f692.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-62da8c57-81f5-4ceb-bdcc-116396ada73c.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-69feca7b-0f13-4ec0-8f33-a25ec8ecb363.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-6e8fb6c4-a81f-4e15-81a1-7f665267ba9d.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-6fabde7c-b10d-47a0-abd0-b5159757c8ea.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-7ab49a01-fadc-4fba-855f-bf27bd36bfc9.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-7b438d4b-db84-4b48-90b2-029ac9711f68.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-7b90680c-f194-4f33-8fe0-0c200bbbdc96.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-7c113754-9620-4134-9feb-ef149e220c9f.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-81ee6950-6b74-470a-8322-a6daa1f69e38.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-82eddefb-24c5-4eda-b89e-51ce3724e26e.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-831a3012-85f0-4246-a338-f480cce53eff.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-841f2d1d-aa48-4c4a-a4fc-6bf913b79740.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-84c6fd5c-4d7d-46a3-8caa-389eab5e7bef.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-950b8f72-9443-4c1b-96ad-75afecea3568.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-98364e4d-ada7-4648-84f9-39e3b6d8435e.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-99e439e3-5242-4240-8185-6448e956ffee.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9b66534d-f623-4cdc-9fb0-53c8c3cedea2.gif",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9c619e06-3fed-45a1-8c12-a21b4de94cbd.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-9f4d4ef4-8c9c-451a-a693-613898c12231.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-a2ba9050-c7d8-4af3-8f6e-79d6cf3b7ffc.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-a5e03331-7235-439b-991e-129e2e21a14a.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-aa529c5a-35a9-46d2-8e7d-50d07e8bc56b.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-b00ef81b-a349-4f17-99a0-52bc7c8fae58.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-b128b61b-0ceb-48bf-a420-8eb64345ce44.jpeg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-b6b39719-2d85-4298-b3f6-f1657469a5ef.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c2a17772-7e73-468f-b11b-496444d3a0ca.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-c56ac7a7-4943-4c5a-beda-965481216654.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-cd11fbf8-ff44-4fdf-9c56-e303252d40fe.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ce917610-2951-43df-b978-428ef3d41d8c.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-ce94ec8f-a782-4921-a6fd-02374d9a2671.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-cfe6c40a-14b0-4c42-af0b-d2eb582adf95.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d19a2324-48fc-42e5-8254-cebf40675d9c.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d23ce245-8f3c-4fa7-b4fa-23c4a53950dc.jpeg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d672dae2-8ae9-4e7c-885b-1bd7eaf27ed9.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d751a138-6ac7-491a-991e-b7e1b2016a9e.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d7b7dbc5-c886-4182-8631-959960327bc5.jpeg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-d87e802a-0e4e-4e26-939b-73b793219ea0.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-de4cbf69-9c97-4263-a0bf-db745f8bde94.jpeg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e049fd42-7273-4bb3-98b8-54b637796d96.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e1580f82-6197-4bc5-b020-ee5c6174373e.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e4a4a2e3-eae5-46da-bb83-e763e2a732aa.png",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e4bcbd2a-32cb-481d-9811-e95fd6a0b835.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e7627b3c-ccbf-4ed2-a46f-fc45f153f8a2.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fd1ec08f-d405-436a-afda-433202452c9d.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://cadmin.compassint.org/ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-fde7af47-3b16-400a-a38d-b8a2e9838a7d.jpg",
+      "reason": "host cadmin.compassint.org is not allowlisted"
+    },
+    {
+      "url": "https://compassint.org/assets/img/contact-us-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/careers/assets/custom/img/contact-us.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/careers/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/careers/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/features/business_intelligence/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/features/business_intelligence/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/features/invoicing/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/features/invoicing/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/features/omni_channel_platform/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/features/omni_channel_platform/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/features/other_features/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/features/other_features/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/home/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/home/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/construction/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/construction/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/consulting/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/consulting/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/financial_services/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/financial_services/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/government_/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/government_/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/health_care/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/health_care/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/it_services/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/it_services/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/legal/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/legal/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/non-_profit_organizations/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/non-_profit_organizations/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/real_estate/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/real_estate/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/retail/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/retail/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/whole_sales_distribution/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/industries/whole_sales_distribution/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/charity_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/charity_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/charity_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/contracts_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/contracts_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/contracts_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/finance_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/finance_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/finance_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/fleet_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/fleet_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/fleet_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/hr_&_payroll/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/hr_&_payroll/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/hr_&_payroll/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/insurance_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/insurance_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/insurance_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/projects_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/projects_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/projects_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/property_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/property_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/property_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/retail_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/retail_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/retail_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/school_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/school_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/school_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/university_management/assets/img/hero-dot-bg.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/university_management/assets/img/quotes-dot.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/products/university_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/service/metaverse_solution/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/service/metaverse_solution/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/artificial_intelligence/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/artificial_intelligence/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/custom_development/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/custom_development/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/data_offering/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/data_offering/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/erp_development/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/erp_development/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/ict_manpower_&_outsourcing/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/ict_manpower_&_outsourcing/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/metaverse_solution/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/metaverse_solution/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/mobile_application_development/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/mobile_application_development/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/system_integration/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/system_integration/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/web_development/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/services/web_development/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/charity_management/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/charity_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/contracts_management/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/contracts_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/finance_management/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/finance_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/fleet_management/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/fleet_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/hr_&_payroll/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/hr_&_payroll/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/projects_management/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/projects_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/property_management/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/property_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/retail_management/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/retail_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/school_management/assets/img/page-header-bg.svg",
+      "reason": "not downloadable"
+    },
+    {
+      "url": "https://compassint.org/solution/school_management/media/footer-tenx-bg-A2CTJHKA.png",
+      "reason": "not downloadable"
+    }
+  ]
 }
