@@ -25,7 +25,12 @@ export interface RenderOptions {
   archiveDir?: string;
   reportsDir?: string;
   maxPages?: number;
+  /** Stop starting new pages after this long, keeping what was rendered (default 35 minutes). */
+  budgetMs?: number;
 }
+
+/** A page that takes longer than this is recorded as skipped and the crawl moves on. */
+const PAGE_BUDGET_MS = 45_000;
 const PAGE_GAP_MS = 500;
 const KEPT_HEADERS = [
   'content-type',
@@ -61,6 +66,10 @@ export interface RenderManifest {
   generatedAt: string;
   userAgent: string;
   pages: RenderedPage[];
+  /** Pages that failed or ran over their time budget. */
+  failed: { url: string; error: string }[];
+  /** Pages found but not visited (page or time limit reached). */
+  unvisited: string[];
   /** Requests that aren't archived bodies (non-GET, failed, third-party scripts), for review. */
   requests: { method: string; url: string; status: number | null; type: string }[];
 }
@@ -102,24 +111,41 @@ async function readManifest(httpDir: string): Promise<Map<string, ArchiveEntry>>
   }
 }
 
-/** Loads everything the page will load: waits for the app, scrolls through it, waits again. */
+/** Upper bound for each "wait until the network is quiet": some sites never go quiet (analytics, polling). */
+const IDLE_WAIT_MS = 5_000;
+
+/**
+ * Loads everything the page will load: waits for the app, scrolls through it (at most 40 steps, so
+ * infinite lists can't trap it), waits again. Every wait is bounded.
+ */
 async function settle(page: Page): Promise<void> {
   await page
     .waitForFunction(() => (document.querySelector('app-root')?.children.length ?? 1) > 0, null, {
       timeout: 15_000,
     })
     .catch(() => undefined);
-  await page.waitForLoadState('networkidle').catch(() => undefined);
+  await page.waitForLoadState('networkidle', { timeout: IDLE_WAIT_MS }).catch(() => undefined);
   await page.evaluate(async () => {
     const step = Math.max(300, Math.round(innerHeight * 0.75));
-    for (let y = 0; y < document.documentElement.scrollHeight; y += step) {
+    for (let i = 0, y = 0; i < 40 && y < document.documentElement.scrollHeight; i++, y += step) {
       scrollTo(0, y);
       await new Promise((resolve) => setTimeout(resolve, 120));
     }
     scrollTo(0, 0);
   });
-  await page.waitForLoadState('networkidle').catch(() => undefined);
+  await page.waitForLoadState('networkidle', { timeout: IDLE_WAIT_MS }).catch(() => undefined);
   await page.waitForTimeout(400);
+}
+
+/** Rejects when `work` takes longer than `ms`. */
+function withinBudget<T>(work: Promise<T>, ms: number, what: string): Promise<T> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  return Promise.race([
+    work,
+    new Promise<never>((_, reject) => {
+      timer = setTimeout(() => reject(new Error(`${what} took longer than ${ms / 1000} s`)), ms);
+    }),
+  ]).finally(() => clearTimeout(timer));
 }
 
 export async function renderSite(options: RenderOptions = {}): Promise<RenderManifest> {
@@ -129,6 +155,7 @@ export async function renderSite(options: RenderOptions = {}): Promise<RenderMan
   const renderDir = options.archiveDir ? path.join(options.archiveDir, 'rendered') : RENDER_DIR;
   const reportsDir = options.reportsDir ?? REPORTS_DIR;
   const maxPages = options.maxPages ?? 300;
+  const budgetMs = options.budgetMs ?? 35 * 60_000;
   const isSiteHost = (url: URL) => hosts.includes(url.hostname.toLowerCase());
   const keyOf = (href: string) => pageKey(href, origin, hosts);
   const archive = await readManifest(httpDir);
@@ -192,12 +219,39 @@ export async function renderSite(options: RenderOptions = {}): Promise<RenderMan
   const queue = [start];
   const seen = new Set(queue);
   const pages: RenderedPage[] = [];
-  const page = await context.newPage();
+  const failed: { url: string; error: string }[] = [];
+  const started = Date.now();
+  let page = await context.newPage();
   try {
     while (queue.length && pages.length < maxPages) {
+      if (Date.now() - started > budgetMs) {
+        console.error(`[render] time budget reached; ${queue.length} page(s) left unvisited`);
+        break;
+      }
       const url = queue.shift()!;
-      console.error(`[render] ${url}`);
-      const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+      const pageStart = Date.now();
+      try {
+        await withinBudget(visit(url), PAGE_BUDGET_MS, `rendering ${url}`);
+      } catch (error) {
+        failed.push({ url, error: (error as Error).message });
+        console.error(`[render] skipped ${url}: ${(error as Error).message}`);
+        // A page stuck mid-navigation is replaced so the next one starts clean.
+        await page.close().catch(() => undefined);
+        page = await context.newPage();
+      }
+      console.error(
+        `[render] ${pages.length} done, ${queue.length} queued, ${failed.length} skipped: ${url} (${((Date.now() - pageStart) / 1000).toFixed(1)} s)`,
+      );
+      if (pages.length % 10 === 0) await save();
+      await page.waitForTimeout(PAGE_GAP_MS);
+    }
+  } finally {
+    await page.close().catch(() => undefined);
+  }
+
+  async function visit(url: string): Promise<void> {
+    {
+      const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30_000 });
       await settle(page);
       const html = await page.content();
       const slug = slugFor(url);
@@ -255,16 +309,43 @@ export async function renderSite(options: RenderOptions = {}): Promise<RenderMan
         external: [...external].sort(),
         renderedAt: new Date().toISOString(),
       });
-      await page.waitForTimeout(PAGE_GAP_MS);
     }
+  }
+
+  /** Writes both manifests and the report, so an interrupted crawl still leaves usable data. */
+  async function save(): Promise<RenderManifest> {
+    await Promise.allSettled(pending);
+    const entries = [...archive.values()].sort((a, b) => a.url.localeCompare(b.url));
+    await writeFile(path.join(httpDir, 'manifest.json'), JSON.stringify(entries, null, 2) + '\n');
+    const manifest: RenderManifest = {
+      origin,
+      generatedAt: new Date().toISOString(),
+      userAgent,
+      pages: [...pages].sort((a, b) => a.url.localeCompare(b.url)),
+      failed: [...failed],
+      unvisited: [...queue],
+      requests: [...new Map(requests.map((r) => [`${r.method} ${r.url}`, r])).values()].sort(
+        (a, b) => a.url.localeCompare(b.url),
+      ),
+    };
+    await writeFile(
+      path.join(renderDir, 'manifest.json'),
+      JSON.stringify(manifest, null, 2) + '\n',
+    );
+    await mkdir(reportsDir, { recursive: true });
+    await writeFile(path.join(reportsDir, 'rendered.md'), renderedMarkdown(manifest, entries));
+    return manifest;
+  }
+
+  try {
     // Linked documents the app never loaded itself (PDFs and the like).
     const linkedFiles = [...new Set(pages.flatMap((p) => p.files))].filter(
       (url) => !archive.has(url),
     );
     for (const url of linkedFiles) {
-      const response = await context.request.get(url).catch(() => undefined);
+      const response = await context.request.get(url, { timeout: 30_000 }).catch(() => undefined);
       if (!response) continue;
-      const body = await response.body();
+      const body = await response.body().catch(() => Buffer.alloc(0));
       const contentType = response.headers()['content-type'] ?? '';
       const file = body.length ? archiveFileName(url, contentType) : null;
       if (file) {
@@ -281,26 +362,10 @@ export async function renderSite(options: RenderOptions = {}): Promise<RenderMan
         fetchedAt: new Date().toISOString(),
       });
     }
+    return await save();
   } finally {
-    await Promise.allSettled(pending);
     await browser.close();
   }
-
-  const entries = [...archive.values()].sort((a, b) => a.url.localeCompare(b.url));
-  await writeFile(path.join(httpDir, 'manifest.json'), JSON.stringify(entries, null, 2) + '\n');
-  const manifest: RenderManifest = {
-    origin,
-    generatedAt: new Date().toISOString(),
-    userAgent,
-    pages: pages.sort((a, b) => a.url.localeCompare(b.url)),
-    requests: [...new Map(requests.map((r) => [`${r.method} ${r.url}`, r])).values()].sort((a, b) =>
-      a.url.localeCompare(b.url),
-    ),
-  };
-  await writeFile(path.join(renderDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
-  await mkdir(reportsDir, { recursive: true });
-  await writeFile(path.join(reportsDir, 'rendered.md'), renderedMarkdown(manifest, entries));
-  return manifest;
 }
 
 export function renderedMarkdown(manifest: RenderManifest, entries: ArchiveEntry[]): string {
@@ -341,6 +406,15 @@ export function renderedMarkdown(manifest: RenderManifest, entries: ArchiveEntry
         `| ${cell(pathOf(p.url))}${p.finalUrl !== p.url ? ` → ${cell(pathOf(p.finalUrl))}` : ''} | ${p.status ?? ''} | ${cell(p.title)} | ${cell(p.h1.join(' / '))} | ${p.links.length} | ${p.files.length} | ${p.screenshot ?? ''} |`,
     ),
     '',
+    '## Skipped and unvisited',
+    '',
+    ...(manifest.failed.length || manifest.unvisited.length
+      ? [
+          ...manifest.failed.map((f) => `- skipped ${pathOf(f.url)}: ${f.error}`),
+          ...manifest.unvisited.map((u) => `- not visited ${pathOf(u)}`),
+        ]
+      : ['- none']),
+    '',
     '## API data',
     '',
     ...(json.length ? json.map((e) => `- ${e.status} ${e.url} (${e.bytes} bytes)`) : ['- none']),
@@ -355,7 +429,13 @@ export function renderedMarkdown(manifest: RenderManifest, entries: ArchiveEntry
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const max = process.argv.find((a) => a.startsWith('--max-pages='))?.split('=')[1];
-  const manifest = await renderSite(max ? { maxPages: Number(max) } : {});
+  const flag = (name: string) =>
+    process.argv.find((a) => a.startsWith(`--${name}=`))?.split('=')[1];
+  const max = flag('max-pages');
+  const minutes = flag('budget-minutes');
+  const manifest = await renderSite({
+    ...(max ? { maxPages: Number(max) } : {}),
+    ...(minutes ? { budgetMs: Number(minutes) * 60_000 } : {}),
+  });
   console.error(`[render] ${manifest.pages.length} pages rendered; see reports/rendered.md`);
 }

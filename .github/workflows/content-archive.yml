@@ -11,6 +11,10 @@ name: Archive compassint.org
 # chosen there, and pushes one commit to that branch.
 on:
   workflow_dispatch:
+    inputs:
+      max_pages:
+        description: Most pages to render
+        default: '150'
 
 permissions:
   contents: write
@@ -36,14 +40,19 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
+      # Bounded so the job always reaches the commit step: each page has a 45 s budget, and no new
+      # page starts after 35 minutes; what was rendered by then is kept.
       - name: Render every page in Chromium
-        run: npm run content:render
+        timeout-minutes: 45
+        run: npm run content:render -- --max-pages="${{ inputs.max_pages }}" --budget-minutes=35
 
       # Reads the rendered pages from the archive in place of the empty app shell.
       - name: Inventory the site
+        if: always()
         run: npm run content:discover
 
       - name: Download the images and documents the pages reference
+        if: always()
         run: npm run content:fetch
 
       - name: Upload the inventory report
@@ -55,10 +64,13 @@ jobs:
           if-no-files-found: ignore
 
       - name: Commit the archive and the inventory
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add source-archive reports/probe.json reports/inventory.json reports/inventory.md reports/rendered.md
+          for path in source-archive reports/probe.json reports/inventory.json reports/inventory.md reports/rendered.md; do
+            if [ -e "$path" ]; then git add "$path"; fi
+          done
           if git diff --cached --quiet; then
             echo "The archive is unchanged."
             exit 0
