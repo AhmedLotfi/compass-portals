@@ -1,0 +1,169 @@
+{
+  "id": "ar--products--finance-management",
+  "kind": "product",
+  "lang": "ar",
+  "alternates": {
+    "en": "/products/finance-management/",
+    "ar": "/ar/products/finance-management/"
+  },
+  "path": "/ar/products/finance-management/",
+  "title": "إدارة التمويل",
+  "sourceUrl": "https://compassint.org/products/finance_management",
+  "seo": {},
+  "hero": {
+    "title": "إدارة التمويل",
+    "lede": "يقدّم حلّنا المالي ما هو أكثر من مجرد محاسبة؛ فهو يوفّر وظائف مالية شاملة مصممة لتلبية متطلبات أعمالك. قم بإدارة الفواتير، وتتبع النفقات، وإعداد الميزانيات، والتدفق النقدي بكل سلاسة من خلال حل قابل للتخصيص حسب احتياجاتك.",
+    "media": "m-4e2f6b33ba",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>يعتمد حلّنا المالي على مبادئ المحاسبة المتقدمة وأفضل الممارسات، ويشمل وظائف متعددة مثل إدارة عدة شركات، وعدة قطاعات، ومراكز تكلفة متعددة. يتميز النظام بنظام تقارير متكامل يمكّن الإدارة من متابعة الأنشطة اليومية بفعالية، ويقوم بتوليد تقارير آلية مثل ميزان المراجعة، والميزانية العمومية، وغيرها، مما يوفر رؤى شاملة. بالإضافة إلى ذلك، يتابع النظام مؤشرات الأداء الرئيسية (KPIs) لتسهيل اتخاذ قرارات سريعة ومدروسة، ومعالجة الاستفسارات المهمة بكفاءة.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "ميزات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-49a71f2479"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>البيانات المالية الموحدة:</strong> توليد ميزانيات عمومية وبيانات أرباح وخسائر شاملة.</p> <p><strong>إدارة متعددة للشركات والكيانات القانونية:</strong> إدارة عدة شركات وكيانات قانونية ضمن نظام واحد.</p> <p><strong>العمليات متعددة العملات:</strong> تنفيذ المعاملات وإدارة الحسابات بعدّة عملات.</p> <p><strong>مراكز تكلفة متعددة:</strong> تتبّع وتحليل النفقات عبر مراكز تكلفة مختلفة</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الميزات التقنية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-0d5e435b93"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>حقول مرنة:</strong> تكييف الحقول لتلبية المتطلبات الخاصة بالأعمال وسير العمل.</p> <p><strong>حلول قائمة على الويب ومدعومة عبر الإنترنت:</strong> يمكنك الوصول إلى المنصة من أي جهاز متصل بالإنترنت.</p> <p><strong>تكامل مع الرسائل النصية والبريد الإلكتروني:</strong> إمكانية إرسال الإشعارات عبر الرسائل النصية أو البريد الإلكتروني.</p> <p><strong>إمكانية تصدير التقارير أو المستندات:</strong> تصدير التقارير والمستندات إلى صيغ ملفات مثل Excel وWord وPDF.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "المزايا",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Accounts Receivables",
+              "html": ""
+            },
+            {
+              "title": "Accounts Payable",
+              "html": ""
+            },
+            {
+              "title": "General Ledger",
+              "html": ""
+            },
+            {
+              "title": "Cash Management",
+              "html": ""
+            },
+            {
+              "title": "Fixed Assets",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "إدارة التمويل",
+      "path": "/ar/products/finance-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-0d5e435b93": {
+      "id": "m-0d5e435b93",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAoAA4BaJZwAAmsFnqR1StEAAP5E2CRHNmqWIlIb977SgZbr1MgH5SYL0fsOfz3fF/MX4BxKdaEUIeBbjbH8Hh7DGqJ59yj2XeNXfwGUHA8AAAA="
+    },
+    "m-49a71f2479": {
+      "id": "m-49a71f2479",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQAAoAA4BaJYwC7AEQ/c91sKWAAP75Fxrl8Sb06LGB4dXuRjuxnZrLoyGX5uS5W5HyCDxM5JzAAA=="
+    },
+    "m-4e2f6b33ba": {
+      "id": "m-4e2f6b33ba",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Finance Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQAAoAA4BaJZwAD4zMhM7+GnAA/sogO9IQhlQRdt94dW+jcH9dZ/GZzAiN9kmEPr+4iXIXmt+JdjyIEw98jl0fHSsyBg4BBIZ19grkke4YfnHuRTP14VDudIdHvaidi3seDYACXaAAAA=="
+    }
+  }
+}

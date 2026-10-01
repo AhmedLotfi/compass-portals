@@ -1,4 +1,5 @@
-import { Component, inject } from '@angular/core';
+import { Lang } from '../../core/i18n/lang';
+import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ContentStore } from '../../core/content/content';
 import { CopyPipe } from '../../core/copy/copy';
@@ -13,10 +14,10 @@ import { CompassHero } from '../home/compass-hero/compass-hero';
       <div class="not-found__copy">
         <h1 id="not-found-title">{{ 'notFoundTitle' | copy }}</h1>
         <p class="not-found__body">{{ 'notFoundBody' | copy }}</p>
-        <a class="btn btn--ink" routerLink="/">{{ 'notFoundHome' | copy }}</a>
-        @if (links.length) {
+        <a class="btn btn--ink" [routerLink]="home()">{{ 'notFoundHome' | copy }}</a>
+        @if (links().length) {
           <ul class="not-found__links">
-            @for (item of links; track item.href + item.label) {
+            @for (item of links(); track item.href + item.label) {
               <li><app-nav-link [item]="item" linkClass="footer-link" /></li>
             }
           </ul>
@@ -62,8 +63,10 @@ import { CompassHero } from '../home/compass-hero/compass-hero';
   `,
 })
 export class NotFound {
-  protected readonly links = inject(ContentStore).site.navigation.header.map((item) => ({
-    ...item,
-    children: [],
-  }));
+  private readonly content = inject(ContentStore);
+  private readonly lang = inject(Lang);
+  protected readonly home = computed(() => this.content.homePath(this.lang.current()));
+  protected readonly links = computed(() =>
+    this.content.navigation(this.lang.current()).header.map((item) => ({ ...item, children: [] })),
+  );
 }

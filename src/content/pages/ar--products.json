@@ -1,0 +1,296 @@
+{
+  "id": "ar--products",
+  "kind": "product-index",
+  "lang": "ar",
+  "path": "/ar/products/",
+  "title": "Products",
+  "sourceUrl": "https://compassint.org/solutions",
+  "seo": {
+    "canonical": "/products/"
+  },
+  "hero": {
+    "title": "Products",
+    "lede": "The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s",
+    "ctas": []
+  },
+  "sections": [],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    }
+  ],
+  "children": [
+    {
+      "id": "ar--products--hr-payroll",
+      "path": "/ar/products/hr-payroll/",
+      "title": "الموارد البشرية والرواتب",
+      "summary": "عزّز عمليات الموارد البشرية والرواتب في مؤسستك من خلال نظامنا المتقدم والقابل للتخصيص. يوفّر نظام الموارد البشرية لدينا إدارة سلسة لعمليات التوظيف، وإدارة بيانات الموظفين، ومعالجة الرواتب، وغيرها من المهام. بفضل ميزاته المتكاملة للامتثال القانوني وأدوات التقارير القوية، يضمن الحل دقة وشفافية وكفاءة تشغيلية، مما يمنح قسم الموارد البشرية لديك القوة اللازمة لتحقيق أفضل أداء.",
+      "media": "m-1224c21e8a"
+    },
+    {
+      "id": "ar--products--finance-management",
+      "path": "/ar/products/finance-management/",
+      "title": "إدارة التمويل",
+      "summary": "يقدّم حلّنا المالي ما هو أكثر من مجرد محاسبة؛ فهو يوفّر وظائف مالية شاملة مصممة لتلبية متطلبات أعمالك. قم بإدارة الفواتير، وتتبع النفقات، وإعداد الميزانيات، والتدفق النقدي بكل سلاسة من خلال حل قابل للتخصيص حسب احتياجاتك.",
+      "media": "m-4e2f6b33ba"
+    },
+    {
+      "id": "ar--products--fleet-management",
+      "path": "/ar/products/fleet-management/",
+      "title": "إدارة الأسطول",
+      "summary": "قم بتحسين عمليات إدارة الأسطول باستخدام حل متقدم يوفّر ميزات تتبع المركبات، وتخطيط المسارات، والمراقبة اللحظية. احصل على رؤى دقيقة، وولّد تقارير تفصيلية، وأدر المهام المتعلقة بالأسطول بكل سهولة من خلال واجهة استخدام بسيطة وسلسة، مما يعزز من كفاءة إدارة أسطولك.",
+      "media": "m-44f131282f"
+    },
+    {
+      "id": "ar--products--property-management",
+      "path": "/ar/products/property-management/",
+      "title": "إدارة الممتلكات",
+      "summary": "قم بإدارة عقاراتك باستخدام حلّنا القابل للتخصيص والتعديل، والمصمم خصيصًا لمالكي العقارات. قم بتبسيط إدارة عقود الإيجار وطلبات الصيانة من خلال أنظمتنا المتكاملة. سهّل عملية تحصيل الإيجارات، وتتبّع نفقاتك الشهرية والسنوية، واستفد من إمكانيات التقارير داخل النظام للحصول على رؤى قيّمة",
+      "media": "m-3dd99ee371"
+    },
+    {
+      "id": "ar--products--projects-management",
+      "path": "/ar/products/projects-management/",
+      "title": "إدارة المشاريع",
+      "summary": "ارتقِ بقدرات إدارة المشاريع لديك مع حلنا المتميز بالمزايا المتكاملة. تابع تقدم المشاريع بكفاءة، ووزع الموارد بفعالية، وتعاون بسلاسة مع فريقك. احصل على رؤى فورية حول المشاريع النشطة والمغلقة، راقب عدد العمال النشطين، وتتبع القيمة الإجمالية لكل مشروع. استعرض تقدم كل مشروع بوضوح من خلال التحليلات ومؤشرات الأداء الرئيسية المصممة لكل عامل مساهم. واجهتنا البديهية وميزات الفوترة والتكاليف الشاملة تضمن إدارة سلسة وفعالة للمشاريع.",
+      "media": "m-d1d758189a"
+    },
+    {
+      "id": "ar--products--retail-management",
+      "path": "/ar/products/retail-management/",
+      "title": "إدارة البيع بالتجزئة",
+      "summary": "طوّر عمليات البيع بالتجزئة لديك مع وحدة الإدارة الشاملة لدينا. بسّط بيانات المخزون والمبيعات والعملاء لتحسين أداء متجرك. من معاملات نقاط البيع السلسة إلى تتبع المخزون المتقدم وإدارة مستوى المخزون في الوقت الفعلي، يضمن لك حلنا البقاء في الصدارة. احصل على رؤى ثاقبة حول اتجاهات المبيعات والمنتجات المباعة وتفضيلات العملاء من خلال قاعدة بيانات متكاملة تُجمّع معلومات العملاء. عزز قراراتك بتحليلات مفصلة، ​​مما يُحفّز النمو ويُقدّم تجارب بيع بالتجزئة استثنائية.",
+      "media": "m-a3d703ec91"
+    },
+    {
+      "id": "ar--products--contracts-management",
+      "path": "/ar/products/contracts-management/",
+      "title": "إدارة العقود",
+      "summary": "صُمم حل إدارة العقود لدينا خصيصًا لشركات الاستشارات والاستعانة بمصادر خارجية، حيث يُسهّل تسجيل تفاصيل العقود وجداول الدفع، مع تحليل ربحية كل عقد. يُؤتمت النظام تكاليف الرواتب والمدفوعات، ويتكامل مع قسم المالية لإدارة مالية شاملة.",
+      "media": "m-bb8fbcd880"
+    },
+    {
+      "id": "ar--products--charity-management",
+      "path": "/ar/products/charity-management/",
+      "title": "Charity Management",
+      "summary": "Our charity solution integrates departments, streamlines workflows, and provides detailed project and donor reports for enhanced transparency and efficiency.",
+      "media": "m-42a55ad4cc"
+    },
+    {
+      "id": "ar--products--school-management",
+      "path": "/ar/products/school-management/",
+      "title": "إدارة المدارس",
+      "summary": "صُمم نظامنا الشامل لإدارة المدارس لتبسيط العمليات اليومية في فرع واحد أو فروع متعددة. بفضل ميزاته المتعددة اللغات والعملات، وإشعارات الرسائل النصية/البريد الإلكتروني الآلية، والمدفوعات الإلكترونية الآمنة، يُمكّن النظام المدارس من إدارة التسجيل والحضور والدرجات والشؤون المالية والتواصل، كل ذلك عبر منصة مركزية واحدة. صُمم هذا النظام لضمان الكفاءة وقابلية التوسع والأمان، وهو الحل الأمثل للمؤسسات التعليمية الحديثة.",
+      "media": "m-9e6e617d6f"
+    },
+    {
+      "id": "ar--products--insurance-management",
+      "path": "/ar/products/insurance-management/",
+      "title": "إدارة التأمين",
+      "summary": "حل التأمين القابل للتخصيص لدينا مُصمم لإدارة العمليات داخل شركات التأمين بكفاءة وفعالية، مع الالتزام بالمواصفات والمعايير الدولية لتلبية الاحتياجات المتنوعة.",
+      "media": "m-db47a42310"
+    },
+    {
+      "id": "ar--products--university-management",
+      "path": "/ar/products/university-management/",
+      "title": "إدارة الجامعات",
+      "summary": "إدارة ذكية للجامعات الحديثة, نظامنا لإدارة الجامعات لدينا يبسّط عمليات القبول، تسجيل المقررات، الجدولة الأكاديمية، والإدارة المالية عبر عدة فروع. يوفر وصولاً آمناً للطلاب وأعضاء الهيئة التدريسية والإداريين، مما يعزز التعاون ويضمن الكفاءة ضمن منصة موحدة.",
+      "media": "m-e8563e5a89"
+    }
+  ],
+  "media": {
+    "m-1224c21e8a": {
+      "id": "m-1224c21e8a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "HR & Payroll",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAoAA4BaJZwAD4tPvKXqXDy+zAAA/u2jVTqhAPwKWURI2T78GOHclj87SbjLCSimPQE8PW5H4yJkzWTT+gCcIc6rRIeGiFEnx82doNyMAAAA"
+    },
+    "m-3dd99ee371": {
+      "id": "m-3dd99ee371",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Property Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoAA4BaJZwAAjxCJBJ4igAA/uqnLD1T3B6/2WTQ/54kQ7k+Vn33BotHdSdYn7gP7cvinrCAXnNhGOzj3WRIgxG4pix3nj1/YimAl/9ocAAA"
+    },
+    "m-42a55ad4cc": {
+      "id": "m-42a55ad4cc",
+      "mime": "image/jpeg",
+      "width": 6708,
+      "height": 4472,
+      "alt": "Charity Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQAgCdASoQAAsAA4BaJZACdAYtfyKJE9yWqEgA/rgMrvFepAmRt3o5KlrbM7AaaclURy17Oz7DqolwQ/l16O1hNMbfdkisfn9NsMj0/LNieYV6KvGesgvGv6fV23m7XFQDNMBAEnk/rwsKg5ISX1ZAAAA="
+    },
+    "m-44f131282f": {
+      "id": "m-44f131282f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Fleet Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAoAA4BaJZQCdAD0t+n9YtwA/vQ0mORcVH1I9sBq1e9Yml9jBnjh2GhY+UVpFnhyFuCvN6wNYRLOwR4AAA=="
+    },
+    "m-4e2f6b33ba": {
+      "id": "m-4e2f6b33ba",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Finance Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQAAoAA4BaJZwAD4zMhM7+GnAA/sogO9IQhlQRdt94dW+jcH9dZ/GZzAiN9kmEPr+4iXIXmt+JdjyIEw98jl0fHSsyBg4BBIZ19grkke4YfnHuRTP14VDudIdHvaidi3seDYACXaAAAA=="
+    },
+    "m-9e6e617d6f": {
+      "id": "m-9e6e617d6f",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 731,
+      "alt": "School Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAkAA4BaJQBOgCE7pyOecADN6cKEx8rHC3LGHdCKeCMjVov8R10CBQf1pQDVIZclRMj6L4wDxQByQt9Dh8cpIo3RH0DsPUvarmtEG6M7PgAA"
+    },
+    "m-a3d703ec91": {
+      "id": "m-a3d703ec91",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAoAA4BaJQBOgBbUixkUAP7O7J6+hecLeRxW8o1z9GBW8I1BOf76s/7+Fc362GEuguFVauz6Vw60ezAdW4jpH3M6IqubvOViywjn5Px3UzkAAAA="
+    },
+    "m-bb8fbcd880": {
+      "id": "m-bb8fbcd880",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 450,
+      "alt": "Contracts Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        800
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJZQC7AC1wCt3AAD+8YEbLv9x7RvSIXE9RCkbvERuJluEqthxG1CfKcSwM/Ea4VrMcIoSjJ3BTC03BZxQAA=="
+    },
+    "m-d1d758189a": {
+      "id": "m-d1d758189a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Projects Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJYgCdAD9RiUpAAD+8DVFp3o7pTpdYC8JZR7cVsT2G6qc7RXblTHMFjWy4h4/8z/qCwkNblsXVU8zL+7DS9KKvxjIvZekFXOB17bVgAA="
+    },
+    "m-db47a42310": {
+      "id": "m-db47a42310",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Insurance Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoAA4BaJZQC7AYrnsURQIuAAP7U+rfEBT0Zme7oJ+Ik0x9i+wT+HHKatoa8exbkhVVsdO1MdEyPuSvw5to/BNDEYNeavrZ1IAAA"
+    },
+    "m-e8563e5a89": {
+      "id": "m-e8563e5a89",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "University Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAoAA4BaJZwCw7YulyBe9WrPT4AA/maDMDUIxZnHp9TZQcZD8869yA86ZtZDciHE2c5Gbh0I6SQfqlv8lEKC03dLwDCjYezlSI7e6r5IqpZ0thjkDfrNcOnK1ySAAAA="
+    }
+  }
+}

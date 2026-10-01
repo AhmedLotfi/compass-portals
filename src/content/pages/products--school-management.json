@@ -1,6 +1,11 @@
 {
   "id": "products--school-management",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/school-management/",
+    "ar": "/ar/products/school-management/"
+  },
   "path": "/products/school-management/",
   "title": "School Management",
   "sourceUrl": "https://compassint.org/products/school_management",

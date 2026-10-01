@@ -1,0 +1,157 @@
+{
+  "id": "ar--products--projects-management",
+  "kind": "product",
+  "lang": "ar",
+  "alternates": {
+    "en": "/products/projects-management/",
+    "ar": "/ar/products/projects-management/"
+  },
+  "path": "/ar/products/projects-management/",
+  "title": "إدارة المشاريع",
+  "sourceUrl": "https://compassint.org/products/projects_management",
+  "seo": {},
+  "hero": {
+    "title": "إدارة المشاريع",
+    "lede": "ارتقِ بقدرات إدارة المشاريع لديك مع حلنا المتميز بالمزايا المتكاملة. تابع تقدم المشاريع بكفاءة، ووزع الموارد بفعالية، وتعاون بسلاسة مع فريقك. احصل على رؤى فورية حول المشاريع النشطة والمغلقة، راقب عدد العمال النشطين، وتتبع القيمة الإجمالية لكل مشروع. استعرض تقدم كل مشروع بوضوح من خلال التحليلات ومؤشرات الأداء الرئيسية المصممة لكل عامل مساهم. واجهتنا البديهية وميزات الفوترة والتكاليف الشاملة تضمن إدارة سلسة وفعالة للمشاريع.",
+    "media": "m-d1d758189a",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>حل إدارة المشاريع لدينا يدمج مبادئ متقدمة تشمل شهادات دفع العملاء وشهادات دفع المقاولين الفرعيين. يوفر النظام تقارير شاملة تمكّن الإدارة من مراقبة الأنشطة اليومية واتخاذ قرارات سريعة ومستنيرة. بالإضافة إلى ذلك، يحتوي النظام على مؤشرات أداء رئيسية (KPIs) قابلة للتخصيص، تسمح للمستخدمين بتتبع حالة المشاريع والتفاصيل المالية، بما في ذلك المشاريع المفتوحة والمبالغ المرتبطة بها. هذا النهج الشامل يضمن رقابة فعالة على المشاريع واستجابة سريعة للاستفسارات الحرجة.<br></p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "ميزات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9ba4729d02"
+        },
+        {
+          "type": "richText",
+          "html": "<p>شهادات دفع العملاء والمقاولين الفرعيين: إدارة واعتماد المدفوعات للعملاء والمقاولين الفرعيين بكفاءة.</p> <p>مراقبة حسابات الدفعات المقدمة والاحتجاز: متابعة والتحكم في الدفعات المقدمة وحسابات الاحتجاز لكل مشروع.</p> <p>بيانات المصروفات مقابل الإيرادات لكل مشروع: إنشاء بيانات تفصيلية تقارن بين مصروفات المشروع وإيراداته.</p> <p>تخطيط الميزانية وتوزيع التكاليف للمشاريع: وضع خطط الميزانية وتخصيص التكاليف بفعالية عبر مصروفات المشروع.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الميزات التقنية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-67b5375550"
+        },
+        {
+          "type": "richText",
+          "html": "<p>حلول معتمدة على الويب وقابلة للاستخدام عبر الإنترنت: الوصول إلى المنصة من أي جهاز متصل بالإنترنت.</p> <p>دمج الرسائل النصية والبريد الإلكتروني: إرسال الإشعارات والاتصالات مباشرة من النظام عبر الرسائل النصية والبريد الإلكتروني.</p> <p>قواعد بيانات أوراكل وSQL سيرفر: استخدام قواعد بيانات أوراكل وSQL سيرفر لإدارة بيانات موثوقة.</p> <p>خاصية التصدير إلى إكسل، وورد، وPDF: تصدير البيانات والتقارير بسهولة إلى إكسل، وورد، وPDF.</p> <p>حقول مرنة قابلة للتخصيص: تكييف وتكوين الحقول لتلبية الاحتياجات والعمليات الخاصة بالأعمال.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "المزايا",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Projects",
+              "html": ""
+            },
+            {
+              "title": "Sub- Contractor",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "إدارة المشاريع",
+      "path": "/ar/products/projects-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-67b5375550": {
+      "id": "m-67b5375550",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAgCdASoQAAoAA4BaJagCdH8AgwCtLD/6JLjfAAD+CHnLgV341jSULSLVJ4R4tb7r7USMSQI8aYYV3nVvCXLnOj42f1iS9UpSKpK4ncEyuOQhzAykNx17qSPKdHa7EgRcerl6s4ZX9gS9ZDaxen6/AAA="
+    },
+    "m-9ba4729d02": {
+      "id": "m-9ba4729d02",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwAgCdASoQAAoAA4BaJQBOgP9WvTXxZia0cAD85gbN7gV6M5LbUWtFSSrJK5oaMZjJTbDsr7+KeXnf8f3z/rM9xKTqr+GCI50nLet2maSdGKicXEtJdMc0riRzs44LwjULoEEztjkWjIBB6wEDsAjv4v7918wAAAA="
+    },
+    "m-d1d758189a": {
+      "id": "m-d1d758189a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Projects Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJYgCdAD9RiUpAAD+8DVFp3o7pTpdYC8JZR7cVsT2G6qc7RXblTHMFjWy4h4/8z/qCwkNblsXVU8zL+7DS9KKvxjIvZekFXOB17bVgAA="
+    }
+  }
+}

@@ -1,6 +1,11 @@
 {
   "id": "home",
   "kind": "home",
+  "lang": "en",
+  "alternates": {
+    "en": "/",
+    "ar": "/ar/"
+  },
   "path": "/",
   "title": "Unlocking Insights: Comprehensive Data Offering Services",
   "sourceUrl": "https://compassint.org/",

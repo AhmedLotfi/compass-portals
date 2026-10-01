@@ -1,6 +1,11 @@
 {
   "id": "services--system-integration",
   "kind": "service",
+  "lang": "en",
+  "alternates": {
+    "en": "/services/system-integration/",
+    "ar": "/ar/services/system-integration/"
+  },
   "path": "/services/system-integration/",
   "title": "System Integration",
   "sourceUrl": "https://compassint.org/services/system_integration",

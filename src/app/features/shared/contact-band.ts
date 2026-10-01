@@ -1,4 +1,5 @@
-import { Component, inject, input } from '@angular/core';
+import { Lang } from '../../core/i18n/lang';
+import { Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ContentStore } from '../../core/content/content';
 import { copy, CopyPipe } from '../../core/copy/copy';
@@ -12,7 +13,7 @@ import { Icon } from '../../layout/icon/icon';
     <section class="contact-band" aria-labelledby="contact-band-title">
       <div class="contact-band__texture texture-contours-ink" aria-hidden="true"></div>
       <div class="frame contact-band__inner">
-        <h2 id="contact-band-title" class="contact-band__title">{{ title() || defaultTitle }}</h2>
+        <h2 id="contact-band-title" class="contact-band__title">{{ title() || defaultTitle() }}</h2>
         <div class="contact-band__actions">
           @if (phone) {
             <a class="contact-band__link tnum" [href]="phone.tel"
@@ -24,7 +25,7 @@ import { Icon } from '../../layout/icon/icon';
               ><app-icon name="mail" />{{ email }}</a
             >
           }
-          @if (contactPath) {
+          @if (contactPath(); as contactPath) {
             <a class="btn btn--on-ink" [routerLink]="contactPath">{{ 'contactUs' | copy }}</a>
           }
         </div>
@@ -89,6 +90,9 @@ export class ContactBand {
   private readonly content = inject(ContentStore);
   protected readonly phone = this.content.primaryPhone;
   protected readonly email = this.content.primaryEmail;
-  protected readonly contactPath = this.content.pathOf('contact');
-  protected readonly defaultTitle = copy('talkToUs');
+  private readonly lang = inject(Lang);
+  protected readonly contactPath = computed(() =>
+    this.content.pathOf('contact', this.lang.current()),
+  );
+  protected readonly defaultTitle = computed(() => copy('talkToUs', {}, this.lang.current()));
 }

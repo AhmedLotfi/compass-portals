@@ -1,0 +1,50 @@
+{
+  "id": "ar--services--web-development",
+  "kind": "service",
+  "lang": "ar",
+  "path": "/ar/services/web-development/",
+  "title": "Web Development",
+  "sourceUrl": "https://compassint.org/services/web_development",
+  "seo": {
+    "canonical": "/services/web-development/"
+  },
+  "hero": {
+    "title": "Web Development",
+    "lede": "At Compass, we specialize in delivering custom web development solutions tailored to your unique business needs. Leveraging our deep expertise, we build engaging, high-performance websites that elevate your online presence. Our advanced content management systems ensure seamless functionality, intuitive user",
+    "media": "m-0db1914f8b",
+    "ctas": []
+  },
+  "sections": [],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Services",
+      "path": "/ar/services/"
+    },
+    {
+      "label": "Web Development",
+      "path": "/ar/services/web-development/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-0db1914f8b": {
+      "id": "m-0db1914f8b",
+      "mime": "image/jpeg",
+      "width": 736,
+      "height": 490,
+      "alt": "Web Development",
+      "widths": [
+        320,
+        480,
+        640,
+        736
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAsAA4BaJZgCw7Dx5x5IAP7ihbklNksvs5j84tQV5Ik6/VP1IgwK0Z1WvQgSDoEXZR2Fd8E1xtTCqwjVmq4giGMDbkrtNJ3+EAAA"
+    }
+  }
+}

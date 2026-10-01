@@ -1,6 +1,7 @@
 {
   "id": "products--charity-management",
   "kind": "product",
+  "lang": "en",
   "path": "/products/charity-management/",
   "title": "Charity Management",
   "sourceUrl": "https://compassint.org/products/charity_management",

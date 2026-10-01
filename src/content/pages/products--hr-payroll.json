@@ -1,6 +1,11 @@
 {
   "id": "products--hr-payroll",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/hr-payroll/",
+    "ar": "/ar/products/hr-payroll/"
+  },
   "path": "/products/hr-payroll/",
   "title": "HR & Payroll",
   "sourceUrl": "https://compassint.org/products/hr_%26_payroll",

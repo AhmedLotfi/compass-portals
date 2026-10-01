@@ -1,0 +1,343 @@
+{
+  "id": "ar--services--ict-manpower-outsourcing",
+  "kind": "service",
+  "lang": "ar",
+  "alternates": {
+    "en": "/services/ict-manpower-outsourcing/",
+    "ar": "/ar/services/ict-manpower-outsourcing/"
+  },
+  "path": "/ar/services/ict-manpower-outsourcing/",
+  "title": "كوادر وخدمات في مجال تكنولوجيا المعلومات والاتصالات",
+  "sourceUrl": "https://compassint.org/services/ict_manpower_%26_outsourcing",
+  "seo": {},
+  "hero": {
+    "title": "كوادر وخدمات في مجال تكنولوجيا المعلومات والاتصالات",
+    "lede": ".نوفر خبراء تكنولوجيا المعلومات ذوي الكفاءة وحلول الاستعانة بمصادر خارجية لتحسين عمليات الأعمال",
+    "media": "m-e94c6c09cc",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "introduction",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>.نهجنا المرن يضمن الوصول إلى خبرات متخصصة لتعزيز الكفاءة والنمو</p>"
+        }
+      ]
+    },
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-d4bf75aca8"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>في كومباس إنترناشونال، نقدم خدمات متكاملة في مجال توفير الكوادر التقنية والتعهيد الخارجي، مصممة لتلبية احتياجاتكم في التوظيف وتسهيل عملياتكم من خلال كوادر مؤهلة وحلول شاملة.</strong><br>سواء كنتم بحاجة إلى دعم مؤقت، أو تعزيز فرق العمل في مشاريع طويلة المدى، أو تعهيد كامل لخدمات تكنولوجيا المعلومات، نوفر لكم حلولًا مرنة وموثوقة تضمن نمو أعمالكم واستمرار نجاحها.<br></p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "حلول التوظيف المرنة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9280f45e88"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>حلول توظيف مخصصة لدعم فريق عملكم خلال فترات الضغط أو مراحل محددة من المشاريع.</strong><br>نقدّم نهجًا مرنًا وقابلًا للتوسع يضمن توفر الموارد المناسبة في الوقت المناسب، سواء كنتم بحاجة إلى مطورين، محللي نظم، أو مختصين في تكنولوجيا المعلومات.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "مجموعات مهارات متنوعة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-35e27a829c"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>الوصول إلى مجموعة متنوعة من الكوادر التقنية المتخصصة في مختلف المجالات والتقنيات</strong><br>نوفر خبراء في مجالات متعددة مثل تطوير البرمجيات والأمن السيبراني، لضمان تلبية جميع متطلباتكم الفنية بدقة واحترافية.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "التوظيف المخصص",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-dced448e4d"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>نعتمد في عملية التوظيف على تحقيق التوافق الثقافي والتميّز الفني.</strong><br>نقوم بإجراء تقييمات دقيقة وشاملة لضمان توافق المرشحين مع ثقافة شركتكم واحتياجات مشاريعكم، مما يضمن اندماجًا سلسًا وزيادة في الإنتاجية من اليوم الأول.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "التدريب والتطوير",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-be2810c118"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>التعلم المستمر عنصر أساسي في بيئة تكنولوجيا المعلومات سريعة التغير.</strong><br>نوفّر برامج تدريب وتطوير متواصلة تهدف إلى تعزيز المهارات ومواكبة أحدث التقنيات والاتجاهات في القطاع، مما يضمن تحقيق أفضل النتائج في المشاريع.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-6",
+      "title": "حلول تكنولوجيا المعلومات الشاملة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-fb61d4288f"
+        },
+        {
+          "type": "richText",
+          "html": "<p>في <strong>كومباس إنترناشونال</strong>، نقدم حلول تعهيد متكاملة تغطي جميع جوانب احتياجاتكم التقنية، ابتداءً من إدارة البنية التحتية وصولًا إلى تطوير البرمجيات ودعم التطبيقات. وتشمل خدماتنا:</p> <ul> <li><p><strong>إدارة البنية التحتية التقنية</strong>: تشغيل وصيانة الأنظمة والشبكات لضمان استمرارية الأعمال وأمان البيانات.</p></li> <li><p><strong>تطوير البرمجيات حسب الطلب</strong>: تصميم وتطوير تطبيقات متقدمة تتماشى مع متطلبات أعمالكم.</p></li> <li><p><strong>دعم وصيانة التطبيقات</strong>: ضمان استقرار الأداء، إصلاح الأعطال، وتحديث الأنظمة بما يتناسب مع تطور الأعمال.</p></li> <li><p><strong>خدمات مركز الدعم الفني (Helpdesk)</strong>: تقديم الدعم اليومي للمستخدمين النهائيين، وحل المشكلات التقنية بسرعة وفعالية.</p></li> </ul> <p>من خلال فريق متخصص وخبرة إقليمية قوية، نساعدكم على التركيز على مهامكم الأساسية، بينما نقوم نحن بإدارة وتطوير بيئتكم التقنية بكفاءة وموثوقية.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-7",
+      "title": "حلول فعالة من حيث التكلفة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-a77fce0c13"
+        },
+        {
+          "type": "richText",
+          "html": "<p>قلّل التكاليف التشغيلية مع نماذج التعهيد الاقتصادية التي نقدمها<br>في كومباس إنترناشونال، نساعدك في تقليل التكاليف التشغيلية من خلال نماذج تعهيد مرنة وفعّالة من حيث التكلفة، تتيح لك التحكم في الموارد بشكل مثالي. نحن نقدم حلول تعهيد قابلة للتوسيع، مما يعني أنك تستطيع ضبط الموارد وفقًا لاحتياجات العمل المتغيرة.</p> <p>فوائد نموذج التعهيد الاقتصادي:<br>توفير التكاليف: تقليل الحاجة لتوظيف موظفين دائمين أو استثمار في البنية التحتية التقنية المكلفة.</p> <p>مرونة في الموارد: استجابة سريعة لزيادة أو انخفاض متطلبات المشروع، مما يضمن تحسين استخدام الميزانية.</p> <p>تحسين الكفاءة: الوصول إلى متخصصين في المجال دون الحاجة لتحمل تكاليف تدريب أو استقطاب موظفين جدد.</p> <p>نحن نحرص على تقديم حلول اقتصادية تناسب احتياجات عملك، دون التأثير على جودة الأداء أو مستوى الخدمة، مما يسمح لك بتحقيق النمو المستدام وتعزيز الكفاءة التشغيلية.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-8",
+      "title": "نموذج التسليم العالمي",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-b00d428f1f"
+        },
+        {
+          "type": "richText",
+          "html": "<p>من خلال الاستفادة من نموذج التسليم العالمي لدينا، نضمن تقديم خدمة سلسة عبر المواقع المختلفة.<br>تتعاون فرقنا الموزعة بفعالية لتوفير دعم على مدار الساعة والاستفادة من الخبرات المتنوعة.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-9",
+      "title": "ضمان الجودة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-8deb0ae0d7"
+        },
+        {
+          "type": "richText",
+          "html": "<p>الجودة هي أولويتنا في خدمات التعهيد لدينا.<br>نلتزم باتباع عمليات ضمان الجودة الدقيقة للحفاظ على معايير عالية في تقديم الخدمة، والأداء، والأمان، مما يضمن الموثوقية والاتساق في جميع جوانب العمل.</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Services",
+      "path": "/ar/services/"
+    },
+    {
+      "label": "كوادر وخدمات في مجال تكنولوجيا المعلومات والاتصالات",
+      "path": "/ar/services/ict-manpower-outsourcing/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-35e27a829c": {
+      "id": "m-35e27a829c",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Diverse Skillsets",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAoAA4BaJZwAAudmMW4o6AD++cJScIlNRcO38THVUsycdMEoUvRC8+AAAA=="
+    },
+    "m-8deb0ae0d7": {
+      "id": "m-8deb0ae0d7",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Quality Assurance",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoAA4BaJbACdAEPCSYo1zKAAP7mAZbr2hjwYNLgKlHOoZFZd41yEwclPzrrBwToyG2qq6QyWR30TNtVXPPj5YPY4Wk0w4bT5ci2cXw7wxAA"
+    },
+    "m-9280f45e88": {
+      "id": "m-9280f45e88",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Flexible Staffing Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAoAA4BaJYwCdIIjECVEScRxQAD1Tt5sQ/mUQ3CU5lyTpZCK5Er2kQLqHAUNmBObwTu2NP1I9UnzIMO1+8govgRE91BqtwRc7whtGwVZuDIwAAA="
+    },
+    "m-a77fce0c13": {
+      "id": "m-a77fce0c13",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Cost- Effective Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAoAA4BaJQBOg7QANAO1dAAA/vaaIXxEonnx/QcIEkgZNPKkvhLj6WHO7GtO28gix9/cRv+iOBPAAAA="
+    },
+    "m-b00d428f1f": {
+      "id": "m-b00d428f1f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Global Delivery Model",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJZACdADC+7wl4AD+0c06LaGFlXqHweWcmUn4SYa759HwPVvuJKsxDOtF1UOQaSab1pmrkJmlx8+G6/96fUj1OM2NVvIvQTt3arvpAAA="
+    },
+    "m-be2810c118": {
+      "id": "m-be2810c118",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Training & Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJYgCdADxIjLONIIAAP7t2M8PAxa2bjOEtFnwn60yHWSweqbDA6+RZ1t6L1haFv7PSir0rS1Z06YnIWaJiu1LUy+PEa1KtA8dUWc9EgAAAA=="
+    },
+    "m-d4bf75aca8": {
+      "id": "m-d4bf75aca8",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoAA4BaJQBOgMXItnVLMGAA/uzfCrn/LUrsunroucaAQV43yF3EY2bY3ILPKzpLmzbHRY4jT2LtFtIi85R4WEgVQnhK7Sz0PJtAOhYlVD1IHJhL21Yz/Z+lAAAA"
+    },
+    "m-dced448e4d": {
+      "id": "m-dced448e4d",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Customized Recruitment",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJZwAD5DspzB46ZBYAP21gNYU0Ex6NC8Ut3X6OHBnTV3+GhpSeJDxaHm5sHxOhgM4AX2rVXRYbver7jRiAR6GazIUnGz3HABc0MP2XAAAAA=="
+    },
+    "m-e94c6c09cc": {
+      "id": "m-e94c6c09cc",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "ICT Manpower & Outsourcing",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJYwCdAYtBZ4S4YAAAP4LkOxQpb6+qGttcS+GJF5bPPvYhmb4T1/drZYzorZx7dYfTYAgdEvsHm3P+0W74SqcaaZahVf/7g+Tm+5HeL80Ac7o8DdgAA=="
+    },
+    "m-fb61d4288f": {
+      "id": "m-fb61d4288f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "End- To- End IT Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJZQC7ADPKAgBN/qAAP3Bepupk1Tp2CBeZPQb9oEE/qpFy6YxCTGTmeKzzj32ua729URNxwo86p/viZgOljLV/Y8FhlBMsuYbkpIjCgwAAA=="
+    }
+  }
+}

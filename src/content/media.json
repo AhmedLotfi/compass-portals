@@ -14,6 +14,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -37,6 +38,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQAgCdASoQAAsAA4BaJZQCdAYt9ynhxHUnwqDcAAD+sjyx9ilKv2+1K+sWeimI1lZZpul6iZsmxXVUmCENjQrP3Nyn3mektsZDQL/S+Vf1NPT+wbdpRtlLjM2btIM4AWG5j8AA",
       "usedOn": [
+        "ar--features--invoicing",
         "features--invoicing"
       ]
     },
@@ -60,6 +62,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAoAA4BaJZQCdAED/rOMPfhmgAD+3bHS4NeNGKxvi/HtPDU/l8puP6sq4g3Pfgkb8myOGHSeezGcxLk5t0u/ld+40nDxxzvAx+NDf7PnybpZ5WgRTGlXJWBAAA==",
       "usedOn": [
+        "ar--services--custom-development",
         "services--custom-development"
       ]
     },
@@ -82,7 +85,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoQABYAPu1iqU2ppaOiMAgBMB2JZwAAV+ztNRdtH59vhUAA+/hQAPDHfMwMpM9UnyD0sJKYvxiI0XrYIVH3KaM7c45FHzxPiBF2brwXJWnTvYZYZPYI4NzM9o9uk7gDQNuu88QUiiSX4DMNudwoXbAjN7mza/SCAPzgAA==",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -105,6 +109,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -128,6 +133,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAoAA4BaJZACdAC9O+V82OgA3jRZ6vaZ9z2Dyo+Wd7VhkEct1ZUuAk6g8+qnYUVT+2P9XbdFguwp5ak2twL3kUZ9cXM/bpV6vK4AAAA=",
       "usedOn": [
+        "ar--industries--government",
         "industries--government"
       ]
     },
@@ -151,6 +157,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAQCdASoQAAoAA4BaJZQCdACwEjdogAD+56uX5DpNZH5Z0K7z2pERWhcjVz3xPEHZ/aG+nv4EV29K4q6vXo5NQZXT9TCWur4pOh7bXaa0hF/NlxpRy9ton24tUAAA",
       "usedOn": [
+        "ar--services--system-integration",
         "services--system-integration"
       ]
     },
@@ -174,6 +181,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAoAA4BaJZwAAmsFnqR1StEAAP5E2CRHNmqWIlIb977SgZbr1MgH5SYL0fsOfz3fF/MX4BxKdaEUIeBbjbH8Hh7DGqJ59yj2XeNXfwGUHA8AAAA=",
       "usedOn": [
+        "ar--products--finance-management",
         "products--finance-management"
       ]
     },
@@ -195,6 +203,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAsAA4BaJZgCw7Dx5x5IAP7ihbklNksvs5j84tQV5Ik6/VP1IgwK0Z1WvQgSDoEXZR2Fd8E1xtTCqwjVmq4giGMDbkrtNJ3+EAAA",
       "usedOn": [
+        "ar--services--web-development",
         "services--web-development"
       ]
     },
@@ -218,6 +227,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAsAA4BaJZACdH8Agsh1EkC8wAD+CPdtt2Oxrurb3J/U0tdWiXQgfjMjLIOgxYh3QGu4pLGmqEAV6ftRklLz5El1Xy5eQri9Y4oONbtHMMPvQmJrHK+MZMTQAA==",
       "usedOn": [
+        "ar--features--business-intelligence",
         "features--business-intelligence"
       ]
     },
@@ -241,6 +251,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAoAA4BaJZwC7AEOgmrYxgAA/vI7wWlKEF15v6Xbsv+b1DSx08Bdr8c4n4gH5mwlsUmzRFYAAA==",
       "usedOn": [
+        "ar--services--artificial-intelligence",
         "services--artificial-intelligence"
       ]
     },
@@ -264,6 +275,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAoAA4BaJaACdADMBUoKrJaWAP7YOaEDUnKWiZjXzv76E8PM1s8c7vH5+/Ct/Tm0SV8qHUMvbOxQF8n9vsS9Vu6t7+D5x6+Mga0aXGroRPfLm/TbYBIAAAA=",
       "usedOn": [
+        "ar--products--contracts-management",
         "products--contracts-management"
       ]
     },
@@ -287,6 +299,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoAA4BaJYwCdAYuvVU6mCAAAP6sbtRclUVcNsZB3jCdO398lzksrvnb8Lw6hzwUWFWt2CBcS4ZqUXoeuTEC4dzAkPSDGZnnxK/HD2xWoggAaUXvZEAA",
       "usedOn": [
+        "ar--industries--consulting",
         "industries--consulting"
       ]
     },
@@ -310,6 +323,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAoAA4BaJZwAD4tPvKXqXDy+zAAA/u2jVTqhAPwKWURI2T78GOHclj87SbjLCSimPQE8PW5H4yJkzWTT+gCcIc6rRIeGiFEnx82doNyMAAAA",
       "usedOn": [
+        "ar--products--hr-payroll",
         "products--hr-payroll"
       ]
     },
@@ -333,6 +347,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoAA4BaJbACdADw78H3CFoAAP7lIuZPNukocC875pLdyA5GM4RFSedjbuGoinbuNW5t28jbQ7cUnuKP7LaeYfuTme9JYUh+L8PXdmsF9D4OA9B0r4AA",
       "usedOn": [
+        "ar--services--system-integration",
         "services--system-integration"
       ]
     },
@@ -352,7 +367,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwAgCdASoQABAAA4BaJYwCdH8AgoTF3c/A6+BAAP74tC4CFc6a/JgHX7+XsysC44qTWuqdSqBhGeurpYSm/ZvxxeCtai1IDDCI/REoutS64+23XHgH6ox55A/sbaeC18O5RCOh9YOi+hYcAI53FMNpJ14gAAAA",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -375,7 +391,8 @@
       ],
       "svg": false,
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -398,6 +415,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAoAA4BaJYgCdAYtpgVLE2dIAAD+wPZW0+FE3ayevN8aozIV/rxP9FVWayXkPekaD2HeMeNWae0slprNnHbqR5173l5ZtyBivI9717xqMARHbyMVrS7wAAA=",
       "usedOn": [
+        "ar--services--erp-development",
         "services--erp-development"
       ]
     },
@@ -421,6 +439,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoAA4BaJbACdAEPDQKqJ+AQgAD+9ZETitVpafp6mTLvLj8pybxbOnhjJtoFXKhuD2sC5zPmsrpclS/SqAAA",
       "usedOn": [
+        "ar--services--custom-development",
         "services--custom-development"
       ]
     },
@@ -442,7 +461,8 @@
       ],
       "svg": false,
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -465,6 +485,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAgCdASoQAAsAA4BaJZACdB2gDY6vsdfq5yqOeAAA/tJ/8rYpgoSLxuPqNYvsnMlM9xOOOoxrnMPla97BtSGgdH4i3YGPz3sIsNG82NdxQ8NBKBMgAe7lyCFuc2QlPceZM7yebxqrNbSAAAA=",
       "usedOn": [
+        "ar--features--omni-channel-platform",
         "features--omni-channel-platform"
       ]
     },
@@ -488,6 +509,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAsAA4BaJQBOgBSisc+egAD+7XJlxlzGIUph3lPlatV74KfXda3ZKwXRAnsl5CPsT/p/ysTCYF9+0h5o+v8vSyVjFZIm+AmJu4x4AAA=",
       "usedOn": [
+        "ar--features--other-features",
         "features--other-features"
       ]
     },
@@ -511,6 +533,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQAAoAA4BaJbACdAfwAwujHkAA/vGPzK6BDpwZ5yvu39uzCqA2nu3vabfDG1nbi8ezzwNPoCAulHE0az0dZ7mt8soaBiJjm05szpL/a/Br+WYiobjbq1Lmc0n8SYjf6BrKBA+U48AAAA==",
       "usedOn": [
+        "ar--services--artificial-intelligence",
         "services--artificial-intelligence"
       ]
     },
@@ -534,6 +557,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAoAA4BaJbACdH8AEYsVSIdoAAD+8x11F4bZvxcky0ifj8WSlTVail98Tt1Ds43dYrChLVSfN4WqmPk9Kc+EsDb+eqvfvUHboAAA",
       "usedOn": [
+        "ar--services--mobile-application-development",
         "services--mobile-application-development"
       ]
     },
@@ -557,6 +581,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQAgCdASoQAAoAA4BaJQBOhxGY5Ur0WHHxgMy8AAD+7lpc2V2LNnjcbZHu6z+915ew6A5jovmnyIUscS/F7LlmKDUSPZHXPAmqO9jLltoTgh11TuutAjuKC2sUI+gwgiovbXkLcEwl0ILq5lOOQAAA",
       "usedOn": [
+        "ar--services--mobile-application-development",
         "services--mobile-application-development"
       ]
     },
@@ -580,6 +605,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAoAA4BaJYwCdAEO1Dm8XhoAAP737tP8vCMjXCKb6YsRBljQXPU9X5+471hVMx6CrPElhWyp9ab8CA/0AdES0BOlCuT7q41iTYoXgAA=",
       "usedOn": [
+        "ar--products--charity-management",
         "products--charity-management"
       ]
     },
@@ -603,6 +629,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAoAA4BaJQAAXTT8MDM6kAD+5+M50/2+rYipJAKwsLL8cqEVWqJc85zXa8OQquvEUIFkmG7I8+//Dhdh/9YF2p2C3asJbkScitIBi8JEo/egM9AAAA==",
       "usedOn": [
+        "ar--industries--legal",
         "industries--legal"
       ]
     },
@@ -625,7 +652,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoQABgAPu1iqk4ppaQiMAgBMB2JZQDG9YyA33i7uHBNyMLPaFJkAP7QERrtD7ZVx9QdZsoGKqDfOGX+V1Hmp/PUU/hFARyZBzywvAiCAbp9wrRjwbJAavTqxEvt97ZZFv06wg27jzCNahy7W1AmAVVQjGQJnFrWJ1SkLR4PirXy55lgAAA=",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -642,6 +670,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -664,7 +693,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAQBACdASoQABYAPu1kqU2ppaOiMAgBMB2JQBOkBLhCZYysVspQbpC0AAD+3tZq9vSYMpVcWrZTCYRFQBTAU+U/veeaEHT4H6evc0yTFVU7Jp5ir511+E+XFziUS+rSZth7L47dzox2HkHHB7ohWN4vXw6zo6sSLwshTylcEcJ9DHcjc1Q8/2HsVFRDVqkSM6pAXAAA",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -681,6 +711,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -704,6 +735,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwAgCdASoQAAoAA4BaJbACdH8AgoiDTinpSCzAAP5OUC3hSXgBAJuvNEXeHv+IKw+i/Sou2dVeEMgvX+wNI821IVEq0ZyhWAftUR5W9z8HaHUBj1szVSR2k9165AHA9KB/i+XgIcNwsZUBesrdvevsgG2nyvRzAYcAAA==",
       "usedOn": [
+        "ar--industries--real-estate",
         "industries--real-estate"
       ]
     },
@@ -729,7 +761,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZgCdMoMnJDXHdQyQm25ysXrgAP7gmT+Ulki0aqCME8bWb8wNInM0b4NUBzuUCnFlTbtbJwS66GJuXIhmrHvqXghiDBxffc9uWigi8GhZg8KCBrSJWfGzU4SaE1fkWzXYH/nGE1I7VWxFFOKhm6ooAAA=",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -749,6 +782,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQABAAA4BaJQBOgMWWla8axrDMYAD2leJZGl34btJOtpkK7Z3XP6avZGzPhDfvfcWe+td5+/rxLZUeeIo4YwwDLA071ztkEkjnR1t6o8c0qQTw6YleXAAA",
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -772,6 +806,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAcAA4BaJYgCdAEPUSVqs0AA/tIEB/yeFYwjFgNEAhEvJu37po/Rjg4ox9XkALR8Z+qudll77JUq9Nghp83WkhoAAA==",
       "usedOn": [
+        "ar--services--metaverse-solution",
         "services--metaverse-solution"
       ]
     },
@@ -795,6 +830,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAoAA4BaJbACdAEDjjuUoAD+9SMf4Vmdpx+n3LAL1LmC9cywFxRutIp8XEJPSZLRMo6IvuwZYJgRSYtzUd1UGk3R7JXCn+k3AlO5Q4pc4AAA",
       "usedOn": [
+        "ar--services--mobile-application-development",
         "services--mobile-application-development"
       ]
     },
@@ -813,7 +849,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZwAAXugXt/le67+IIb5iIwAA/vJPVcgseQwHdWEQmpeqTn2siWY6ST167UIvAXWkGRAuxSXUilwCLutDXxCFUcrnTz16rrJ7bNm2/NrsJl9g5ST3PMifwYMUh+Zii4aWGWGpblixT+bNiGpd9vffgAA=",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -836,6 +873,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAoAA4BaJZwAAudmMW4o6AD++cJScIlNRcO38THVUsycdMEoUvRC8+AAAA==",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -859,6 +897,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAoAA4BaJbACdAEalelx50AA/u0gWb/nWlUI2bNw1gm8iYEKDTawWawB3/YXJ+KGk/8KTnz8qa8KycmoLIlAewAAAA==",
       "usedOn": [
+        "ar--services--data-offering",
         "services--data-offering"
       ]
     },
@@ -882,6 +921,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJYwCdACY9VUPgAD+bLDqL1+azkatEoUq1scm0WhMSWPW3HCE2L6nhNWMSvfOXPJU70/SFlwKlaARsYBSoZlRQHPsl8AoAPM3fL6AAAA=",
       "usedOn": [
+        "ar--industries--retail",
         "industries--retail"
       ]
     },
@@ -903,6 +943,8 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
+        "ar--partners",
         "home",
         "partners"
       ]
@@ -927,6 +969,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAoAA4BaJQAAX1fpAO0faGAA/mxsv/ZrsU4Tln1AB7n6SOHbVRdisesEsbsRCoGu6hlrZXCkFpJpbyB6NJkI7rjBTvm+vdmjUV5g+t71rmVtAAA=",
       "usedOn": [
+        "ar--services--custom-development",
         "services--custom-development"
       ]
     },
@@ -947,6 +990,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAoAA4BaJQBOgMWv223tpghoAAD+1PuskJ9xRXdxVKNHzgUxI0lrCJvzZQ8lidnlZ+eIexRSi/djz4St/ONxV1dDFpPdx5iUDDrOqtd0z8lcl57gP7/4HlV4Ml4ERom1ccAAAAA=",
       "usedOn": [
+        "ar--products--charity-management",
         "products--charity-management"
       ]
     },
@@ -970,6 +1014,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoAA4BaJZwAAjxCJBJ4igAA/uqnLD1T3B6/2WTQ/54kQ7k+Vn33BotHdSdYn7gP7cvinrCAXnNhGOzj3WRIgxG4pix3nj1/YimAl/9ocAAA",
       "usedOn": [
+        "ar--products--property-management",
         "products--property-management"
       ]
     },
@@ -995,6 +1040,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQAgCdASoQAAsAA4BaJZACdAYtfyKJE9yWqEgA/rgMrvFepAmRt3o5KlrbM7AaaclURy17Oz7DqolwQ/l16O1hNMbfdkisfn9NsMj0/LNieYV6KvGesgvGv6fV23m7XFQDNMBAEnk/rwsKg5ISX1ZAAAA=",
       "usedOn": [
+        "ar--products--charity-management",
         "products--charity-management"
       ]
     },
@@ -1018,6 +1064,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAoAA4BaJZQCdAD0t+n9YtwA/vQ0mORcVH1I9sBq1e9Yml9jBnjh2GhY+UVpFnhyFuCvN6wNYRLOwR4AAA==",
       "usedOn": [
+        "ar--products--fleet-management",
         "products--fleet-management"
       ]
     },
@@ -1041,6 +1088,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -1064,6 +1112,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQAAoAA4BaJYwC7AEQ/c91sKWAAP75Fxrl8Sb06LGB4dXuRjuxnZrLoyGX5uS5W5HyCDxM5JzAAA==",
       "usedOn": [
+        "ar--products--finance-management",
         "products--finance-management"
       ]
     },
@@ -1087,6 +1136,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQAAoAA4BaJYwC7H8AgpTK6MrNZmFAAP7oUVPTkdcA4QjnnhZO3hb7QjetWAOrI1QSTknDYVWmiqZ8niaR6267R+R8nW0mn2EGV8bA3OdDUxtM5Uhj/LDLAq01onlnKWl1fAAA",
       "usedOn": [
+        "ar--services--data-offering",
         "services--data-offering"
       ]
     },
@@ -1110,6 +1160,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAQCdASoQAAoAA4BaJZwAD4zMhM7+GnAA/sogO9IQhlQRdt94dW+jcH9dZ/GZzAiN9kmEPr+4iXIXmt+JdjyIEw98jl0fHSsyBg4BBIZ19grkke4YfnHuRTP14VDudIdHvaidi3seDYACXaAAAA==",
       "usedOn": [
+        "ar--products--finance-management",
         "products--finance-management"
       ]
     },
@@ -1133,6 +1184,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoAA4BaJZACdAYv1yLhw2iDZAAA+WHbQTzWQiCPxORDkbSfDsu03Pw4dMM6jb7D73BHIctvvawj25xqLVOtd46FSUpLljYF4QXjiEx39lW8a7KovywA",
       "usedOn": [
+        "ar--industries--health-care",
         "industries--health-care"
       ]
     },
@@ -1156,6 +1208,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAoAA4BaJZwAAxYov7wAAP6Z5YplWG2vJ7BE0PE9GCDB6775JYDszWXay6U/GPGaRJbGCmp3AERamLxWrx/xjArmqZkAeEBBUAAA",
       "usedOn": [
+        "ar--services--data-offering",
         "services--data-offering"
       ]
     },
@@ -1179,6 +1232,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAAsAA4BaJYgCdAEXgLIEunxKfwAA/tc/10Vj8gao4FX3EWY99/dJtF7RwIC9d1WFThqVaEJNJeeXcP5dDP7pCtZu1k0VOfZAgD82SxQDti4HiyagjxUAAAA=",
       "usedOn": [
+        "ar--features--other-features",
         "features--other-features"
       ]
     },
@@ -1204,7 +1258,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JZQC7AYwctkd5/XuFE8aUJgAA/vOAn39XwcyZ9A+NExTHbjhWmA9H8RPIz7MPs+8xDevShbAdbjQdu+LObPSeziH5lggzSxhUG/uv2pPB4sqZPMN/vxV/by/eqVRUl//o599QL/v64VSxj/P1ve8nPqjYYp23U3JRG88j1eCHiSM48/l+QAAA",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -1225,6 +1280,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQAAsAA4BaJYwCdAYtpyLmMPtOp0gAAP7p/eQMsyK3GuYon2gFy77v6N4c2SSnPXECZCj73Bj0rn635Lge5TYH/cJZlWreWGVKe819ZzJO+wn+M19OiRMbRlc8h1Y7YhzwCYvLQAA=",
       "usedOn": [
+        "ar--features--business-intelligence",
         "features--business-intelligence"
       ]
     },
@@ -1248,6 +1304,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -1271,7 +1328,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoQABQAPu1iqU2ppaQiMAgBMB2JZQCw7CBSxDeXz8N7UzhXaADLALzcj+Lv63brJc14T+GTgLTu6Lo7xmzu27qt3TFHpCnoXND0bc/n28z7TqWx1NoZVsFCjZ8eJQUMow6Sv4YLBpelBUVf24VA9Sz2U0h6E3YLWAA=",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -1294,6 +1352,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoQAAoAA4BaJbACdAD0ea9wAP7uqRMAuus50jKDDtOYBF7dWdwP3oI/sHPggAAA",
       "usedOn": [
+        "ar--services--artificial-intelligence",
         "services--artificial-intelligence"
       ]
     },
@@ -1317,6 +1376,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAoAA4BaJYwCdAEQJlulZhkAAP7s38Zdocvozhe985U6EAzrtfZUR+fIl+B2jNXcRyQHp5QbKvNHQcm3v8jnyF0GAAAA",
       "usedOn": [
+        "ar--services--data-offering",
         "services--data-offering"
       ]
     },
@@ -1335,6 +1395,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -1357,6 +1418,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQAAsAA4BaJYgCdAYr7BAs3a/QAPfF1tJD9eYR/nOuRaM6oNBnnQ09GFLaSmrPzcbLbUkxfGgqjKyduM7utauYzHmYcM0/aJDM2WpdzyRfRHtsSXmON0kOF96jpce0VSpEhVmApxL3kE6QwAA=",
       "usedOn": [
+        "ar--features--other-features",
         "features--other-features"
       ]
     },
@@ -1380,6 +1442,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAoAA4BaJbACw7EDHbPd8BywAP6p0rte6r50aNxvyflK958i4Cxws2CXVWEs1UpeglY/P+Tx+SvcO7t++4OUMAA=",
       "usedOn": [
+        "ar--services--artificial-intelligence",
         "services--artificial-intelligence"
       ]
     },
@@ -1403,6 +1466,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAoAA4BaJYgCdADDzZ0wAAD+94JljRAsgR16gaW2E5r9jYM03WnUuwn/SFE+XgyNFKxCwThx//sceAA=",
       "usedOn": [
+        "ar--services--artificial-intelligence",
         "services--artificial-intelligence"
       ]
     },
@@ -1426,6 +1490,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJZQCdADhlaUWA4VgAP36UvE8yCn7zH0+RcWFgaYKX0wnpHlCDfdMXYoe8+jYUMP9JzxA1PMvdbYEIRCDtbaSf5Mykt5j0YrJDJXRonNGxahGrZCAAA==",
       "usedOn": [
+        "ar--services--erp-development",
         "services--erp-development"
       ]
     },
@@ -1449,6 +1514,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAgCdASoQAAoAA4BaJagCdH8AgwCtLD/6JLjfAAD+CHnLgV341jSULSLVJ4R4tb7r7USMSQI8aYYV3nVvCXLnOj42f1iS9UpSKpK4ncEyuOQhzAykNx17qSPKdHa7EgRcerl6s4ZX9gS9ZDaxen6/AAA=",
       "usedOn": [
+        "ar--products--projects-management",
         "products--projects-management"
       ]
     },
@@ -1470,6 +1536,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwAQCdASoQAAsAA4BaJbACdAYv1hZZGrAA/e+kg9LXsrClb1qMosINpODWQ6jG8fzh4RE1c4ZFsJ8CdqlvDZbe0bDz2ddiVTHldjQ9MrNqRQdLedRoGZ4sZb5LdEgCkXuoTBVOUzIQxl8UsRHUHZcAAAA=",
       "usedOn": [
+        "ar--services--system-integration",
         "services--system-integration"
       ]
     },
@@ -1487,6 +1554,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -1510,6 +1578,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoAA4BaJZQC7AEf1tbORU3AAP7xE3FIWM6w+MVq9nlckkt8jdSHyQQxiuVf3kl0F3HazHHWvOgiJU1MO3XKGsoyjT0kcnHI0pr9K+t5ROQA",
       "usedOn": [
+        "ar--products--contracts-management",
         "products--contracts-management"
       ]
     },
@@ -1533,6 +1602,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQAAsAA4BaJbACdAYsPWbBlu52SADiYpjDh4wNdkNKeAgGHc03keqQAj1ALClHwCB8NHUqcGvH1X9MOTtd8Msy3vj8gWtOY+0iRstbsKwPuDxAaqZ1CIw0Lkd+hTgUAqWIlLo0i3XR0AAA",
       "usedOn": [
+        "ar--features--other-features",
         "features--other-features"
       ]
     },
@@ -1556,6 +1626,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoAA4BaJZgC7AEf6RVohQyiuyAA/guBeQKo1un12cSXgJRfHybtl2/OzCxwQckE0SN7+Jl8nc0jLQNWUavCfJdrfuAOhO0X83Iq+krL5CjluFl2Zs4A",
       "usedOn": [
+        "ar--services--erp-development",
         "services--erp-development"
       ]
     },
@@ -1579,6 +1650,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQAAoAA4BaJZQCdADzp1u5mCrAAP7uKnYyx4jT8TRZRnIvh8nCTUypuTZJixIzVDe1+XyXoJMFmI8ziDescsslX6LFrILY+6ugsbXLWjxxvXx1upAOx/JEruWqhFKAAAA=",
       "usedOn": [
+        "ar--products--hr-payroll",
         "products--hr-payroll"
       ]
     },
@@ -1602,6 +1674,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQAgCdASoQAAoAA4BaJZQCdAEXn67d2UFgAP738B+KDhvZ/3/KSvU6mC7jwz9W8u+Nf5VkQdO/VyCHbrGbc4+SKwJkvyw7b60TPDQNRm60uPP8/MwJOw7clhRJVazin318ddoFj96IS5Q6dcsDTps9jXH6QAAA",
       "usedOn": [
+        "ar--industries--construction",
+        "ar--industries--financial-services",
         "industries--construction",
         "industries--financial-services"
       ]
@@ -1623,6 +1697,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAQCdASoQAAoAA4BaJYwCdABle94AAP5mgL+P/tWIIT1h+g3nibjbwi0Ti++JgxUwZBA22Cv124d08VFehM+C71UvAAif9cwlhTgLe+4Vm1jDR3DxxJc5ycAAAA==",
       "usedOn": [
+        "ar--features--other-features",
         "features--other-features"
       ]
     },
@@ -1646,6 +1721,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -1669,6 +1745,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAQCdASoQAAoAA4BaJZwAAcVruXwAAP71g4oT4YQdXXtUHp/y6qiY5+adDIWvqzA8kDZHl7YPPp9ObcUz9+s21iRHvmhW5/GnjEUhhSycoX0ONxMvQIRfNqBLUAAA",
       "usedOn": [
+        "ar--industries--retail",
         "industries--retail"
       ]
     },
@@ -1692,6 +1769,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQAAsAA4BaJYwCdAYrxbMqMGvZAADONr9zmY3gGYFvWsE38+aqJbYWqEVqlfU/FbrXb4Ls7me/t6If46c3OMq3zyVpz5ZsPfhxbc/0/UC8Grla9JEhQyE8KwQFcSZ2czWYAA==",
       "usedOn": [
+        "ar--features--invoicing",
         "features--invoicing"
       ]
     },
@@ -1715,6 +1793,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -1738,6 +1817,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAoAA4BaJZACdADDFXaX4AD+81L8ivxg/db39putrCjlPV5JA8kOtKfS4w1uWLEWWTJcu5hyPIu5z7+Tg6ew5VFhRvNlFqPzGVMAAAA=",
       "usedOn": [
+        "ar--services--artificial-intelligence",
         "services--artificial-intelligence"
       ]
     },
@@ -1761,6 +1841,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoAA4BaJbACdAEPCSYo1zKAAP7mAZbr2hjwYNLgKlHOoZFZd41yEwclPzrrBwToyG2qq6QyWR30TNtVXPPj5YPY4Wk0w4bT5ci2cXw7wxAA",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -1784,6 +1865,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAoAA4BaJYwCdIIjECVEScRxQAD1Tt5sQ/mUQ3CU5lyTpZCK5Er2kQLqHAUNmBObwTu2NP1I9UnzIMO1+8govgRE91BqtwRc7whtGwVZuDIwAAA=",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -1807,6 +1889,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAQCdASoQAAoAA4BaJQAAUsLcwAD+7xVG0HubykqBh0azzFpHGjhHN92B/Cg65O2Uii9G6FAg0JEze9Y08oVzCN0y5bRmTHFdqfR8YoAAAA==",
       "usedOn": [
+        "ar--services--data-offering",
         "services--data-offering"
       ]
     },
@@ -1830,6 +1913,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQAAoAA4BaJZAC7AEDpM6BS77gAP7n/aWVe7fz8X000jBF8VVT9VdFQJs8SmUYsayJJ2ev4yfMSj1tZLbFwCqB6UVnCuM/vFM5yCsUeQnaFzcIO9b6j7a+lHkKVOHj9AYoAAAA",
       "usedOn": [
+        "ar--products--hr-payroll",
         "products--hr-payroll"
       ]
     },
@@ -1851,7 +1935,8 @@
       ],
       "svg": false,
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -1874,6 +1959,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoAA4BaJYwCdH8AEAWC/AAA/u0nxu8aZOGtCiIx9YBSGXC6+MC+MjyWP2/V9TQNAxg680WCZb68ErdrEeIEi4oDYOvxcuLigcwA",
       "usedOn": [
+        "ar--products--fleet-management",
         "products--fleet-management"
       ]
     },
@@ -1894,6 +1980,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAwAQCdASoQABAAA4BaJaQAA3AA/uzFG+DNQ/z5MbHV26r5Emj5Qb3cVOoYgqYMdAAAAA==",
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -1917,6 +2004,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -1940,6 +2028,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwAgCdASoQAAoAA4BaJQBOgP9WvTXxZia0cAD85gbN7gV6M5LbUWtFSSrJK5oaMZjJTbDsr7+KeXnf8f3z/rM9xKTqr+GCI50nLet2maSdGKicXEtJdMc0riRzs44LwjULoEEztjkWjIBB6wEDsAjv4v7918wAAAA=",
       "usedOn": [
+        "ar--products--projects-management",
         "products--projects-management"
       ]
     },
@@ -1961,6 +2050,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -1979,6 +2069,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQABAAA4BaJZQAD4tQ7HqjEHgzkAD++Lo8X9AcC86tk1iPwlxyDYTyyF8ujFr7R9Efa32lmLyDmUn4mv5ie/tYjK7Ypp4gVKIEOqN09DwwcjQB3ttKtsAA",
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -2002,6 +2093,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAkAA4BaJQBOgCE7pyOecADN6cKEx8rHC3LGHdCKeCMjVov8R10CBQf1pQDVIZclRMj6L4wDxQByQt9Dh8cpIo3RH0DsPUvarmtEG6M7PgAA",
       "usedOn": [
+        "ar--products--school-management",
         "products--school-management"
       ]
     },
@@ -2023,6 +2115,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAsAA4BaJbACdAYt92irYu/QAAD+zfcsNs3oZaRzgPGp8bvQOK2YGv/lF5zOFGzKFbgymbxRhtsrEgqlfloKWFmxUTqRfFBg7C0X736Nl7QQ+Q3SDR3g+83WNampNeMsAAAA",
       "usedOn": [
+        "ar--services--system-integration",
         "services--system-integration"
       ]
     },
@@ -2046,6 +2139,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAoAA4BaJQBOgBbUixkUAP7O7J6+hecLeRxW8o1z9GBW8I1BOf76s/7+Fc362GEuguFVauz6Vw60ezAdW4jpH3M6IqubvOViywjn5Px3UzkAAAA=",
       "usedOn": [
+        "ar--products--retail-management",
         "products--retail-management"
       ]
     },
@@ -2069,6 +2163,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoAA4BaJZwAD5DumfoWXYqEAAD+9pOoXjE+8z9PD6cjIKN59Hst7swyB5G87Uy34h/MuLLBViBkVKkScA/d3NsXlYHorFl5rBKhkjABQAAA",
       "usedOn": [
+        "ar--products--fleet-management",
         "products--fleet-management"
       ]
     },
@@ -2092,6 +2187,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAoAA4BaJQBOg7QANAO1dAAA/vaaIXxEonnx/QcIEkgZNPKkvhLj6WHO7GtO28gix9/cRv+iOBPAAAA=",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -2115,6 +2211,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQAAoAA4BaJQBOgCP/5KkztA4AAP72r3R+yFCxwuEt9IA985Xi2s2ncIHzo+NsB08+HvKHZQpLEAAA",
       "usedOn": [
+        "ar--services--artificial-intelligence",
         "services--artificial-intelligence"
       ]
     },
@@ -2138,6 +2235,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAoAA4BaJYgCdAYt9GbQEYLriAD2oqe8RZz9VEkPodbbM+MvLi/2la2+krCnnfVs9pA03djWxXzuRw9/U25/6epv0K+S3I6tQURblVaXBxGI5x59KxNIyQ38scE1paZvYNQBGAA=",
       "usedOn": [
+        "ar--services--data-offering",
         "services--data-offering"
       ]
     },
@@ -2161,6 +2259,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoAA4BaJZwAAujFYUG7PgAA/vSRjuGCJCPgv4NG+CPLN9rLtZNTLiWv2XJf+BS6XAmrhYOv0u15b3wn9zKVFqvMz8ZvMwTbUIAA",
       "usedOn": [
+        "ar--services--data-offering",
         "services--data-offering"
       ]
     },
@@ -2184,6 +2283,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAoAA4BaJQBOgBjphcrEM7wAAM4/oYSE2ZaTlulTDCxCvT8fhFkpNbUzOwu2Zk8q3p1dQdtKP8TcvWrNHv6J2Qt4ZGhLrrHnN+Pzhd6S1J4Y0C2ZypLj3bKcHCMinszgAA==",
       "usedOn": [
+        "ar--services--artificial-intelligence",
         "services--artificial-intelligence"
       ]
     },
@@ -2207,6 +2307,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJZACdADC+7wl4AD+0c06LaGFlXqHweWcmUn4SYa759HwPVvuJKsxDOtF1UOQaSab1pmrkJmlx8+G6/96fUj1OM2NVvIvQTt3arvpAAA=",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -2230,6 +2331,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAQCdASoQAAoAA4BaJbACdAYsZFAx9LIA/uYD44dHTp/KMvECefzGH1Y5mw9qEmcE6tcANTV0KH6ZdgWHlYm21oVd7qTUKI0rP84kRD/mRD4/RReCDV5PQkV1nwOIpWtgCxdq012AVOsgO5IiFLAA",
       "usedOn": [
+        "ar--services--custom-development",
         "services--custom-development"
       ]
     },
@@ -2253,6 +2355,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAoAA4BaJQBOgMXX7QLlIsIwLIAA/nMRC2jdxy8QqKr94IXdTWdxtbpTsijpwMrWeYEdXm1CHAsjB8Zw0e67OfhkKyBqCTTk3bpJWxhgesmiA8/9ZfkWOG84AA==",
       "usedOn": [
+        "ar--services--data-offering",
         "services--data-offering"
       ]
     },
@@ -2276,6 +2379,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAoAA4BaJZQCw7Ytp/ZAVpGWgAD8oK5fnkk3Hkbp8vAUL/lRq+VdzEkKAmgvPxpr/WTRej1rY2tYcHDNh3HQthcxXAAA",
       "usedOn": [
+        "ar--industries--whole-sales-distribution",
         "industries--whole-sales-distribution"
       ]
     },
@@ -2301,6 +2405,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAgCdASoQABAAA4BaJYwCdIExgli/2B3zXI3gAP735hyTZqv3HVk4rZRzxa+sii3nZ8/CrYL3brM7H5FNkPJEJIhGyVU7B8rkHA/jogAAAA==",
       "usedOn": [
+        "ar--home",
+        "ar--partners",
         "home",
         "partners"
       ]
@@ -2324,6 +2430,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJZQC7AC1wCt3AAD+8YEbLv9x7RvSIXE9RCkbvERuJluEqthxG1CfKcSwM/Ea4VrMcIoSjJ3BTC03BZxQAA==",
       "usedOn": [
+        "ar--products--contracts-management",
         "products--contracts-management"
       ]
     },
@@ -2347,6 +2454,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJYgCdADxIjLONIIAAP7t2M8PAxa2bjOEtFnwn60yHWSweqbDA6+RZ1t6L1haFv7PSir0rS1Z06YnIWaJiu1LUy+PEa1KtA8dUWc9EgAAAA==",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -2370,6 +2478,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAoAA4BaJagCdH8ACu5hCGAA/qnPVPbfk8GsGRFcCnGBlXhegLDNMhJcquRTIwjnPk+JWv0/4kyj7yLIDuR5/t2DHglyu8rfNwX4XS7oHa0lgejB+grBsuSAAA==",
       "usedOn": [
+        "ar--services--mobile-application-development",
         "services--mobile-application-development"
       ]
     },
@@ -2392,6 +2501,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAsAA4BaJbACdAYvg/eMlmAAAPzs7fnDhk9yeJQQdEgT7sD/Q4JkS9HEBc7By7A4ndGzyoNpbvFmdo9pY5dZje4Rm4qghYgwJCMhpiXQpvWxSZUaBMANz2A2ePIOqSAAAA==",
       "usedOn": [
+        "ar--features--other-features",
         "features--other-features"
       ]
     },
@@ -2413,6 +2523,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwAgCdASoQABAAA4BaJbACdAYv12b3LjG+KosAAP70n9zG8lzevhSasG/d+LeVpfVJmwi/1WqomYOrHd6EftarmT7mf7xKvlsRLAAojFg1H90dlFCWW+TpltVZe/d/f1WLFBiUlix08aLZ/jwVDxd2Ih5W9rQ2NSwMglg0oAA=",
       "usedOn": [
+        "ar--services--system-integration",
         "services--system-integration"
       ]
     },
@@ -2434,7 +2545,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoQABYAPu1iqU2ppaOiMAgBMB2JQBOgApd67zizLxWXEkVYAPxQ9yId8cZxYgrCIChenXMPqsGxNV163dGhIjRAEPTbgFJvVAJYOuAGXiJkdWkmnC1zsUkifayrPZRDq46H77i6PKHr5azesRlgFfft6xyF14DY/Ga+WCAA",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -2457,6 +2569,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJYgCdAD9RiUpAAD+8DVFp3o7pTpdYC8JZR7cVsT2G6qc7RXblTHMFjWy4h4/8z/qCwkNblsXVU8zL+7DS9KKvxjIvZekFXOB17bVgAA=",
       "usedOn": [
+        "ar--products--projects-management",
         "products--projects-management"
       ]
     },
@@ -2478,6 +2591,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJQBOgMYOpbrDLnAA/vNTPbUmye1vpCOvaprcAi/7HeUcRl1Egcq71w+tUeVZE0cWB3YqVIpFgx2mDTVvGK1rvtrQL6yYmfsIk+RFooAAAA==",
       "usedOn": [
+        "ar--services--system-integration",
         "services--system-integration"
       ]
     },
@@ -2501,6 +2615,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAoAA4BaJQBOgMXItnVLMGAA/uzfCrn/LUrsunroucaAQV43yF3EY2bY3ILPKzpLmzbHRY4jT2LtFtIi85R4WEgVQnhK7Sz0PJtAOhYlVD1IHJhL21Yz/Z+lAAAA",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -2524,6 +2639,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoQAAoAA4BaJZQAD4xrPQyOrQAA/s9xq1+f+wktMr27MeivR+1iPVZV7Bd1N/IEd1xZdryVW95UceLRi6MeIgjENz22bPQadV1iwFP59TvP4sjMUnwltrHoRVQCHBst/M4AAA==",
       "usedOn": [
+        "ar--industries--non-profit-organizations",
         "industries--non-profit-organizations"
       ]
     },
@@ -2547,6 +2663,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoAA4BaJZQC7AYrnsURQIuAAP7U+rfEBT0Zme7oJ+Ik0x9i+wT+HHKatoa8exbkhVVsdO1MdEyPuSvw5to/BNDEYNeavrZ1IAAA",
       "usedOn": [
+        "ar--products--insurance-management",
         "products--insurance-management"
       ]
     },
@@ -2570,6 +2687,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJZwAD5DspzB46ZBYAP21gNYU0Ex6NC8Ut3X6OHBnTV3+GhpSeJDxaHm5sHxOhgM4AX2rVXRYbver7jRiAR6GazIUnGz3HABc0MP2XAAAAA==",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -2610,6 +2728,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoAA4BaJZwAAudlomgYNsAA/vN7Ou2/Cr32G19gRf1Wa19m59300Det+xNmYbb6cx+NKEyM0Tqw/0FrwvB/dEnT7wdETdwcAA==",
       "usedOn": [
+        "ar--services--data-offering",
         "services--data-offering"
       ]
     },
@@ -2633,6 +2752,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAsAA4BaJZQCw7D0unjcUAbF7sAA/k9FxCNrVJd1JG7SbENbEqS3Zg6x8r1QqMNHTEWkjP0hVKIJ8d+r8VxdbAz+bLAhgept2otniE4PRviVPN7Apre5WAAAAA==",
       "usedOn": [
+        "ar--features--other-features",
         "features--other-features"
       ]
     },
@@ -2656,6 +2776,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAoAA4BaJZwAAlohe5+l3AD+8eDIxK9VCUhgejC4QT7SXV2VkU/XnN5jGdmV99mIHAAA",
       "usedOn": [
+        "ar--products--property-management",
         "products--property-management"
       ]
     },
@@ -2679,6 +2800,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAoAA4BaJZwCw7YulyBe9WrPT4AA/maDMDUIxZnHp9TZQcZD8869yA86ZtZDciHE2c5Gbh0I6SQfqlv8lEKC03dLwDCjYezlSI7e6r5IqpZ0thjkDfrNcOnK1ySAAAA=",
       "usedOn": [
+        "ar--products--university-management",
         "products--university-management"
       ]
     },
@@ -2699,6 +2821,7 @@
       ],
       "svg": false,
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -2722,6 +2845,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJYwCdAYtBZ4S4YAAAP4LkOxQpb6+qGttcS+GJF5bPPvYhmb4T1/drZYzorZx7dYfTYAgdEvsHm3P+0W74SqcaaZahVf/7g+Tm+5HeL80Ac7o8DdgAA==",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -2745,6 +2869,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAoAA4BaJZACdAC655ilAAD+0IqdFe9BVsvsK7N44eY6I3RecDljwgolqld4kZinAkrVhe4NkhRMzVOAAA==",
       "usedOn": [
+        "ar--services--artificial-intelligence",
         "services--artificial-intelligence"
       ]
     },
@@ -2766,7 +2891,8 @@
       ],
       "svg": false,
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -2789,6 +2915,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAoAA4BaJZACdAEVYkqfykf5AAD+6evQmMywVz+e+9dbH92KWxRuf5xLpdGPmI9K7BDHEndJC++CoFXUA9GqeU0Boc5t8/EQ5Obblk/E2Et9ULqW4AAA",
       "usedOn": [
+        "ar--services--custom-development",
         "services--custom-development"
       ]
     },
@@ -2812,6 +2939,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAoAA4BaJYwCsAEN5M5LXVAA+WMnNWWE6/RWssQfikJT+u9/RqtjbMWAYUeg3JNtwiFiJP+yj9m32rMQAI7QAvzlO6mPpyO89YfcbIde/MyMY9eUBfo1sIAAAA==",
       "usedOn": [
+        "ar--products--property-management",
         "products--property-management"
       ]
     },
@@ -2836,7 +2964,8 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAsAA4BaJYwAAh5Q4YuZAAD+9wnvjyto8WytoBju0JOHMYxvHeQQLmtRqL8VNNE6rbjPuakAfIIw1AyUoXaFiPEnjkyKKSyg2zuq1wAAAA==",
       "usedOn": [
-        "about"
+        "about",
+        "ar--about"
       ]
     },
     {
@@ -2859,6 +2988,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQAgCdASoQAAsAA4BaJbAC7AYuRMBFE2YAAM4zZHkTtatjxLjeLofw77Y5QEJ9+BKPGbUP/psG5FcRFtURp3fWyM/Jo+aLXw+Hd4sDC7kSdnc8TW/xdWBFOVHklZIs3cE/A/SBgAK8yFqd9iAAAA==",
       "usedOn": [
+        "ar--features--other-features",
         "features--other-features"
       ]
     },
@@ -2881,6 +3011,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAA4BaJYgCsADJQu8G7gAA/vVfCl0o6kkW3q/MJKGBmSFTDxf25ytxKSxDXguoDx/ME5xhJ6W2SvDP4QYQxhvGvHxgARb2xlf2e9x7TzbqgaCsWUbEAI2jDqY2QIpHfRwSAAA=",
       "usedOn": [
+        "ar--home",
         "home"
       ]
     },
@@ -2904,6 +3035,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJZQC7ADPKAgBN/qAAP3Bepupk1Tp2CBeZPQb9oEE/qpFy6YxCTGTmeKzzj32ua729URNxwo86p/viZgOljLV/Y8FhlBMsuYbkpIjCgwAAA==",
       "usedOn": [
+        "ar--services--ict-manpower-outsourcing",
         "services--ict-manpower-outsourcing"
       ]
     },
@@ -2927,6 +3059,7 @@
       "svg": false,
       "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoQAAoAA4BaJZQC7AYu5VjEFNXnzxAAzjISfS8iK501f+2Obldb3/PR0eAW9uu0qiR8woVsIzL+vavheQO+MM9QuTIajbyBx8dyKEwpTFDG0HD4opAAAA==",
       "usedOn": [
+        "ar--industries--it-services",
         "industries--it-services"
       ]
     }

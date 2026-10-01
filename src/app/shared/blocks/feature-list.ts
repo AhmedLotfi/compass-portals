@@ -1,3 +1,4 @@
+import { AutoLang } from '../../core/i18n/auto-lang';
 import { Component, input } from '@angular/core';
 import type { Block } from '@schema/content';
 import { Icon, type IconName } from '../../layout/icon/icon';
@@ -21,11 +22,11 @@ const ICONS: Record<string, IconName> = {
 
 @Component({
   selector: 'app-feature-list',
-  imports: [Icon, InternalLinks],
+  imports: [AutoLang, Icon, InternalLinks],
   template: `
     @let list = block();
     @if (list.title) {
-      <h3 class="feature-list__title">{{ list.title }}</h3>
+      <h3 class="feature-list__title" [appAutoLang]="list.title">{{ list.title }}</h3>
     }
     <ul class="feature-list" appInternalLinks>
       @for (item of list.items; track $index) {
@@ -38,7 +39,9 @@ const ICONS: Record<string, IconName> = {
           }
           <div class="feature-list__text">
             @if (item.title) {
-              <strong class="feature-list__name">{{ item.title }}</strong>
+              <strong class="feature-list__name" [appAutoLang]="item.title">{{
+                item.title
+              }}</strong>
             }
             @if (item.html) {
               <div class="feature-list__body" [innerHTML]="item.html"></div>

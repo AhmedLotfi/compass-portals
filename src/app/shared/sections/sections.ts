@@ -1,3 +1,4 @@
+import { AutoLang } from '../../core/i18n/auto-lang';
 import { Component, input } from '@angular/core';
 import type { MediaRef, Section } from '@schema/content';
 import { BlockView } from '../blocks/block-view';
@@ -8,7 +9,7 @@ import { BlockView } from '../blocks/block-view';
  */
 @Component({
   selector: 'app-sections',
-  imports: [BlockView],
+  imports: [AutoLang, BlockView],
   template: `
     @for (section of sections(); track section.id) {
       <section
@@ -17,7 +18,11 @@ import { BlockView } from '../blocks/block-view';
         [attr.aria-labelledby]="section.title ? 's-' + section.id + '-title' : null"
       >
         @if (section.title) {
-          <h2 class="rail-section__title" [id]="'s-' + section.id + '-title'">
+          <h2
+            class="rail-section__title"
+            [id]="'s-' + section.id + '-title'"
+            [appAutoLang]="section.title"
+          >
             {{ section.title }}
           </h2>
         } @else {

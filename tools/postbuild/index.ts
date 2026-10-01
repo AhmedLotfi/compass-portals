@@ -32,6 +32,12 @@ import {
 } from './site-files.ts';
 
 export const MICROCOPY = path.join(ROOT, 'src/app/core/copy/microcopy.en.json');
+/** Preloads for the Arabic faces (cut to the site's letters by tools/media/build.ts). */
+export const ARABIC_PRELOADS = ['noto-sans-arabic-site.woff2', 'noto-naskh-arabic-site.woff2'].map(
+  (file) => `<link rel="preload" href="/fonts/${file}" as="font" type="font/woff2" crossorigin>`,
+);
+
+export const MICROCOPY_AR = path.join(ROOT, 'src/app/core/copy/microcopy.ar.json');
 
 export interface PostbuildOptions {
   contentDir?: string;
@@ -102,9 +108,17 @@ async function checkPages(
     if (robots.includes('noindex') !== noindex) {
       problems.push(`${route.path} has robots "${robots}"`);
     }
+    const page = content.pages.get(route.id);
     const canonical = /<link rel="canonical" href="([^"]*)"/.exec(html)?.[1];
-    if (!noindex && canonical !== pageUrl(content.site, route.path)) {
+    const expectedCanonical = pageUrl(content.site, page?.seo.canonical ?? route.path);
+    if (!noindex && canonical !== expectedCanonical) {
       problems.push(`${route.path} has canonical ${canonical ?? '(none)'}`);
+    }
+    const lang = route.lang ?? 'en';
+    const htmlTag = /<html\b[^>]*>/.exec(html)?.[0] ?? '';
+    const dir = lang === 'ar' ? 'rtl' : 'ltr';
+    if (!htmlTag.includes(`lang="${lang}"`) || !htmlTag.includes(`dir="${dir}"`)) {
+      problems.push(`${route.path} should be <html lang="${lang}" dir="${dir}">: ${htmlTag}`);
     }
   }
   return problems;
@@ -138,6 +152,15 @@ export async function postbuild(options: PostbuildOptions = {}): Promise<Postbui
 
   // Without the fallback page, hosts can't turn unknown URLs into client-rendered 200s.
   await rm(path.join(browser, 'index.csr.html'), { force: true });
+
+  // Arabic pages start their Arabic faces with the HTML (index.html preloads only the Latin ones,
+  // which every page needs). Idempotent: a page that already has them is left alone.
+  for (const route of content.routes.filter((r) => r.lang === 'ar')) {
+    const file = path.join(browser, route.path, 'index.html');
+    const html = await readFile(file, 'utf8');
+    if (html.includes(ARABIC_PRELOADS[0]!)) continue;
+    await writeFile(file, html.replace('</head>', `${ARABIC_PRELOADS.join('')}</head>`));
+  }
 
   const bundles = (await readdir(browser)).filter((file) => HASHED_BUNDLE.test(file)).sort();
   const hosting = { redirects: content.redirects, bundles };

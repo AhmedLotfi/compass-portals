@@ -1,0 +1,94 @@
+{
+  "id": "ar--industries--retail",
+  "kind": "page",
+  "lang": "ar",
+  "path": "/ar/industries/retail/",
+  "title": "Retail",
+  "sourceUrl": "https://compassint.org/industries/retail",
+  "seo": {
+    "canonical": "/industries/retail/"
+  },
+  "hero": {
+    "title": "Retail",
+    "lede": "We are proud to offer a comprehensive ERP solution designed specifically for the retail industry",
+    "media": "m-813946f5a1",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "retails",
+      "title": "Retails",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>Accounting software is a tool that allows you to track and manage the day-to-day finances of your businesses. It should allow you to create professional invoices, manage expense tracking, run double-entry accounting reports, accept online payments, and monitor all parts of your business’s money – both in and out. FreshBooks accounting software allows you to do all of this – and more. It includes invoicing features, expense tracking, time tracking, online payments, industry-standard double-entry accounting, balance sheets, mileage tracking, project profitability, bank reconciliation, client retainers, and the list goes on. It’s the reason we’re one of those most popular small business invoicing software – having been used by over 30 million people worldwide. All features are built to be easy to use for small business owners and their teams, clients, and accountants. Plus, as a cloud accounting software – your data is stored and ready to be accessed wherever you are in the world.</p></div>"
+        }
+      ]
+    },
+    {
+      "id": "retail",
+      "title": "Retail",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-39a5c1d112"
+        },
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>Accounting software is a tool that allows you to track and manage the day-to-day finances of your businesses. It should allow you to create professional invoices, manage expense tracking, run double-entry accounting reports, accept online payments, and monitor all parts of your business’s money – both in and out. FreshBooks accounting software allows you to do all of this – and more. It includes invoicing features, expense tracking, time tracking, online payments, industry-standard double-entry accounting, balance sheets, mileage tracking, project profitability, bank reconciliation, client retainers, and the list goes on. It’s the reason we’re one of those most popular small business invoicing software – having been used by over 30 million people worldwide. All features are built to be easy to use for small business owners and their teams, clients, and accountants. Plus, as a cloud accounting software – your data is stored and ready to be accessed wherever you are in the world.</p></div>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Industries",
+      "path": "/ar/industries/"
+    },
+    {
+      "label": "Retail",
+      "path": "/ar/industries/retail/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-39a5c1d112": {
+      "id": "m-39a5c1d112",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoQAAoAA4BaJYwCdACY9VUPgAD+bLDqL1+azkatEoUq1scm0WhMSWPW3HCE2L6nhNWMSvfOXPJU70/SFlwKlaARsYBSoZlRQHPsl8AoAPM3fL6AAAA="
+    },
+    "m-813946f5a1": {
+      "id": "m-813946f5a1",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAQCdASoQAAoAA4BaJZwAAcVruXwAAP71g4oT4YQdXXtUHp/y6qiY5+adDIWvqzA8kDZHl7YPPp9ObcUz9+s21iRHvmhW5/GnjEUhhSycoX0ONxMvQIRfNqBLUAAA"
+    }
+  }
+}

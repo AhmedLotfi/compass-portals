@@ -1,0 +1,63 @@
+{
+  "id": "ar--industries--construction",
+  "kind": "page",
+  "lang": "ar",
+  "path": "/ar/industries/construction/",
+  "title": "Construction",
+  "sourceUrl": "https://compassint.org/industries/construction",
+  "seo": {
+    "canonical": "/industries/construction/"
+  },
+  "hero": {
+    "title": "Construction",
+    "lede": "At Compass, we understand the unique requirements and challenges faced by the construction industry. That's why our comprehensive ERP solution is specifically designed to cater to the needs of construction businesses",
+    "media": "m-7b8ab60c1a",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>Our ERP system offers a range of features and functionalities that enable construction companies to effectively manage their projects, resources, and finances. With our specialized Project Management solution, businesses can manage their projects by efficiently tracking and allocating resources, managing schedules, and monitoring progress. Our ERP system also offers specialized modules such as Finance Management, Inventory Management, HR &amp; Payroll, Project Management, and Fleet Management.</p> <p>These modules provide construction companies with the tools they need to handle their financial processes, track and manage inventory, handle HR and payroll tasks, and efficiently manage their fleet of vehicles and equipment. Additionally, our solution provides comprehensive reporting and analytics tools, enabling businesses to gain valuable insights into project performance, resource utilization, and profitability. With our ERP solution catered specifically for the construction industry, companies can enhance operational efficiency, improve project outcomes, and drive overall business success.</p></div>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Industries",
+      "path": "/ar/industries/"
+    },
+    {
+      "label": "Construction",
+      "path": "/ar/industries/construction/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-7b8ab60c1a": {
+      "id": "m-7b8ab60c1a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Construction",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQAgCdASoQAAoAA4BaJZQCdAEXn67d2UFgAP738B+KDhvZ/3/KSvU6mC7jwz9W8u+Nf5VkQdO/VyCHbrGbc4+SKwJkvyw7b60TPDQNRm60uPP8/MwJOw7clhRJVazin318ddoFj96IS5Q6dcsDTps9jXH6QAAA"
+    }
+  }
+}

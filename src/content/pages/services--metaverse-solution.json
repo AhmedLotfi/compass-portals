@@ -1,6 +1,7 @@
 {
   "id": "services--metaverse-solution",
   "kind": "service",
+  "lang": "en",
   "path": "/services/metaverse-solution/",
   "title": "Metaverse solution",
   "sourceUrl": "https://compassint.org/services/metaverse_solution",

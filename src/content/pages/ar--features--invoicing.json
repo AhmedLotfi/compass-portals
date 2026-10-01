@@ -1,0 +1,107 @@
+{
+  "id": "ar--features--invoicing",
+  "kind": "page",
+  "lang": "ar",
+  "alternates": {
+    "en": "/features/invoicing/",
+    "ar": "/ar/features/invoicing/"
+  },
+  "path": "/ar/features/invoicing/",
+  "title": "Invoicing",
+  "sourceUrl": "https://compassint.org/features/invoicing",
+  "seo": {},
+  "hero": {
+    "title": "Invoicing",
+    "lede": "Streamline Invoicing Processes and Provide Seamless Experiences. Our solution empowers businesses to optimize their invoicing operations, ensuring improved accuracy and a seamless experience for customers. With advanced features and automation, businesses can streamline billing processes, enhance efficiency, and deliver professional invoices. Our reliable support helps businesses elevate their invoicing operations, enhance customer satisfaction, and achieve greater success.",
+    "media": "m-08295d417c",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-86d3649511"
+        },
+        {
+          "type": "richText",
+          "html": "<p>واحدة من الميزات الأساسية لدينا تتعلق بالفوترة. توفر قدرات الفوترة ضمن حلولنا إمكانية إنشاء فواتير احترافية مخصصة وقابلة للتكوين لتعكس هوية علامتك التجارية. يمكن للشركات بسهولة تخصيص الفواتير باستخدام الشعارات، والألوان، والرسائل المخصصة، مما يعكس صورة متماسكة واحترافية تؤكد التزامهم بتقديم خدمة متميزة.</p> <p>تُبسّط ميزة الفوترة لدينا كامل عملية إصدار الفواتير من خلال أتمتة إنشاء الفواتير باستخدام قوالب قابلة للتخصيص والتكوين. وهذا لا يوفر الوقت فحسب، بل يقلل أيضًا من الأخطاء. يمكن للشركات إدخال التفاصيل الأساسية بكل سهولة مثل معلومات العميل، وصف المنتجات، الكميات، والأسعار. يقوم النظام بحساب الضرائب، الخصومات، والرسوم الأخرى تلقائيًا، مما يضمن إصدار فواتير دقيقة ومتسقة.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "وظائف الفوترة الأخرى التي نقدمها",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>بالإضافة إلى ذلك، تستفيد الشركات من التعامل الفعال مع الفواتير للخدمات المتكررة أو الاشتراكات. تقوم حلولنا بأتمتة إنشاء الفواتير المتكررة وفقًا لجداول زمنية محددة مسبقًا، مما يلغي الحاجة للتدخل اليدوي. هذا يُبسّط عملية الفوترة، ويقلل الأعباء الإدارية، ويضمن إصدار الفواتير في الوقت المناسب للخدمات المستمرة.</p> <p>ميزة أخرى مميزة في قدرات الفوترة لدينا هي التكامل السلس مع بوابات الدفع. يتيح ذلك للشركات تضمين خيارات الدفع مباشرة على الفواتير، مما يسمح للعملاء بتسديد فواتيرهم بسهولة عبر الإنترنت. لا يعزز هذا التكامل سرعة الدفع فقط، بل يحسن أيضًا تجربة العميل بشكل عام من خلال عملية دفع سلسة وآمنة.</p> <p>علاوة على ذلك، يُمكّن نظام الفوترة لدينا الشركات من تتبع وإدارة حالات الفواتير بفعالية. توفر الرؤية اللحظية لحالة الفواتير — سواء كانت مرسلة، مُطّلعة، مدفوعة، أو متأخرة — إمكانية إدارة استباقية للحسابات المستحقة، والمتابعة على المدفوعات المتأخرة، وإدارة تدفق نقدي أكثر كفاءة.</p> <p>باختصار، تعزز هذه القدرات مجتمعة تجربة العملاء من خلال ضمان الدقة، والكفاءة، والراحة طوال عملية الفوترة.</p>"
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Features",
+      "path": "/ar/features/"
+    },
+    {
+      "label": "Invoicing",
+      "path": "/ar/features/invoicing/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-08295d417c": {
+      "id": "m-08295d417c",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 667,
+      "alt": "Invoicing",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQAgCdASoQAAsAA4BaJZQCdAYt9ynhxHUnwqDcAAD+sjyx9ilKv2+1K+sWeimI1lZZpul6iZsmxXVUmCENjQrP3Nyn3mektsZDQL/S+Vf1NPT+wbdpRtlLjM2btIM4AWG5j8AA"
+    },
+    "m-86d3649511": {
+      "id": "m-86d3649511",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQAAsAA4BaJYwCdAYrxbMqMGvZAADONr9zmY3gGYFvWsE38+aqJbYWqEVqlfU/FbrXb4Ls7me/t6If46c3OMq3zyVpz5ZsPfhxbc/0/UC8Grla9JEhQyE8KwQFcSZ2czWYAA=="
+    }
+  }
+}

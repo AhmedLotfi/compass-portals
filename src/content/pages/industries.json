@@ -1,6 +1,7 @@
 {
   "id": "industries",
   "kind": "product-category",
+  "lang": "en",
   "path": "/industries/",
   "title": "Industries",
   "sourceUrl": "https://compassint.org/industries",

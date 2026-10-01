@@ -20,7 +20,7 @@ import type { PageDoc, Site } from '../../schema/content.ts';
 import { CONTENT_DIR, ROOT } from '../content-sync/config.ts';
 import { comparable, htmlBlockText, sentences } from '../content-sync/normalize/sentences.ts';
 import { docText } from '../content-sync/sync.ts';
-import { loadContent, MICROCOPY } from '../postbuild/index.ts';
+import { loadContent, MICROCOPY, MICROCOPY_AR } from '../postbuild/index.ts';
 
 export type CheckName = 'parity' | 'provenance' | 'links' | 'sitemap' | 'html';
 
@@ -247,6 +247,12 @@ export async function verifyDist(
   const distDir = options.distDir ?? path.join(ROOT, 'dist/compass-portal');
   const browser = path.join(distDir, 'browser');
   const content = await loadContent(contentDir, options.microcopy ?? MICROCOPY);
+  // Both languages' microcopy: a page also names the other language in its language switch.
+  const arabic = JSON.parse(await readFile(MICROCOPY_AR, 'utf8')) as Record<string, string>;
+  const copy = {
+    ...content.copy,
+    ...Object.fromEntries(Object.entries(arabic).map(([key, value]) => [`ar:${key}`, value])),
+  };
   const errors: DistReport['errors'] = {
     parity: [],
     provenance: [],
@@ -302,11 +308,13 @@ export async function verifyDist(
         if (!html.includes(`/media/${id}`))
           errors.parity.push(`${label}: image ${id} is not shown`);
       }
-      if (!/noindex/.test($('meta[name="robots"]').attr('content') ?? '')) indexable.push(url.href);
+      // Untranslated Arabic pages name the English page as canonical: only that one is listed.
+      if (!/noindex/.test($('meta[name="robots"]').attr('content') ?? '') && !page.seo.canonical)
+        indexable.push(url.href);
     }
 
     // Provenance: nothing that isn't the site's text or reviewed microcopy.
-    const allowed = allowedText(content.site, page, content.copy);
+    const allowed = allowedText(content.site, page, copy);
     for (const { where, text } of pageTexts($)) {
       if (!isAllowed(text, allowed)) errors.provenance.push(`${label} ${where}: "${text}"`);
     }

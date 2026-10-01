@@ -1,0 +1,278 @@
+{
+  "id": "ar--industries",
+  "kind": "product-category",
+  "lang": "ar",
+  "path": "/ar/industries/",
+  "title": "Industries",
+  "sourceUrl": "https://compassint.org/industries",
+  "seo": {
+    "canonical": "/industries/"
+  },
+  "hero": {
+    "title": "Industries",
+    "lede": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "ctas": []
+  },
+  "sections": [],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Industries",
+      "path": "/ar/industries/"
+    }
+  ],
+  "children": [
+    {
+      "id": "ar--industries--retail",
+      "path": "/ar/industries/retail/",
+      "title": "Retail",
+      "summary": "We are proud to offer a comprehensive ERP solution designed specifically for the retail industry",
+      "media": "m-813946f5a1"
+    },
+    {
+      "id": "ar--industries--consulting",
+      "path": "/ar/industries/consulting/",
+      "title": "Consulting",
+      "summary": "Compass understands and acknowledges the distinct needs and requirements of the consulting industry. Consequently, our all-encompassing Enterprise Resource Planning (ERP) solution is meticulously tailored to specifically address the unique challenges faced by consulting firms",
+      "media": "m-11e762222e"
+    },
+    {
+      "id": "ar--industries--construction",
+      "path": "/ar/industries/construction/",
+      "title": "Construction",
+      "summary": "At Compass, we understand the unique requirements and challenges faced by the construction industry. That's why our comprehensive ERP solution is specifically designed to cater to the needs of construction businesses",
+      "media": "m-7b8ab60c1a"
+    },
+    {
+      "id": "ar--industries--financial-services",
+      "path": "/ar/industries/financial-services/",
+      "title": "Financial Services",
+      "summary": "Compass offers a comprehensive software solution that specifically caters to the unique requirements of the finance industry",
+      "media": "m-7b8ab60c1a"
+    },
+    {
+      "id": "ar--industries--legal",
+      "path": "/ar/industries/legal/",
+      "title": "Legal",
+      "summary": "Compass provides a comprehensive system and software solutions that caters specifically to the unique requirements of the legal services industry",
+      "media": "m-232b72b22e"
+    },
+    {
+      "id": "ar--industries--it-services",
+      "path": "/ar/industries/it-services/",
+      "title": "IT Services",
+      "summary": "At Compass, we understand the complex requirements of the IT industry and have developed enterprise resource planning (ERP) solutions that address its unique challenges.",
+      "media": "m-fc0905e61d"
+    },
+    {
+      "id": "ar--industries--whole-sales-distribution",
+      "path": "/ar/industries/whole-sales-distribution/",
+      "title": "Whole Sales Distribution",
+      "summary": "At Compass, we recognize the unique needs and challenges faced by wholesale businesses. That's why we have developed a comprehensive software solution tailored to cater specifically to the requirements of the wholesale industry",
+      "media": "m-b65c9bf240"
+    },
+    {
+      "id": "ar--industries--non-profit-organizations",
+      "path": "/ar/industries/non-profit-organizations/",
+      "title": "Non- Profit Organizations",
+      "summary": "Our solutions are specifically designed to cater to the needs of charity organizations, providing them with the tools and functionalities required to effectively manage their operations",
+      "media": "m-daa661fa88"
+    },
+    {
+      "id": "ar--industries--government",
+      "path": "/ar/industries/government/",
+      "title": "Government",
+      "summary": "At Compass, we provide secure, scalable, and efficient IT and software solutions tailored for government entities. Our technologies help streamline operations, enhance public service delivery, and support digital transformation across various governmental departments. With a strong focus on compliance, security, and performance, Compass empowers governments to operate more transparently, efficiently, and effectively.",
+      "media": "m-0b351bb561"
+    },
+    {
+      "id": "ar--industries--health-care",
+      "path": "/ar/industries/health-care/",
+      "title": "Health Care",
+      "summary": "At Compass, we specialize in delivering innovative IT and software solutions specifically designed for the healthcare sector. We understand the unique challenges faced by healthcare providers — from securely managing patient data to streamlining clinical workflows and ensuring regulatory compliance. Our advanced technologies empower hospitals, clinics, and medical professionals to enhance patient care, improve operational efficiency, and make data-driven decisions. Committed to innovation and security, we support the transformation of healthcare delivery for better outcomes and a healthier future.",
+      "media": "m-4ee075b05a"
+    },
+    {
+      "id": "ar--industries--real-estate",
+      "path": "/ar/industries/real-estate/",
+      "title": "Real Estate",
+      "summary": "Compass provides innovative IT and software solutions designed for the real estate industry. We help real estate companies streamline property management, automate sales processes, and enhance client engagement through smart tools like CRM integration, AI chatbots, and data analytics. With Compass, you gain the digital edge to succeed in a fast-moving market.",
+      "media": "m-2dee8f3f5f"
+    }
+  ],
+  "media": {
+    "m-0b351bb561": {
+      "id": "m-0b351bb561",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Government",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAoAA4BaJZACdAC9O+V82OgA3jRZ6vaZ9z2Dyo+Wd7VhkEct1ZUuAk6g8+qnYUVT+2P9XbdFguwp5ak2twL3kUZ9cXM/bpV6vK4AAAA="
+    },
+    "m-11e762222e": {
+      "id": "m-11e762222e",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Consulting",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoAA4BaJYwCdAYuvVU6mCAAAP6sbtRclUVcNsZB3jCdO398lzksrvnb8Lw6hzwUWFWt2CBcS4ZqUXoeuTEC4dzAkPSDGZnnxK/HD2xWoggAaUXvZEAA"
+    },
+    "m-232b72b22e": {
+      "id": "m-232b72b22e",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Legal",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAoAA4BaJQAAXTT8MDM6kAD+5+M50/2+rYipJAKwsLL8cqEVWqJc85zXa8OQquvEUIFkmG7I8+//Dhdh/9YF2p2C3asJbkScitIBi8JEo/egM9AAAA=="
+    },
+    "m-2dee8f3f5f": {
+      "id": "m-2dee8f3f5f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Real Estate",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwAgCdASoQAAoAA4BaJbACdH8AgoiDTinpSCzAAP5OUC3hSXgBAJuvNEXeHv+IKw+i/Sou2dVeEMgvX+wNI821IVEq0ZyhWAftUR5W9z8HaHUBj1szVSR2k9165AHA9KB/i+XgIcNwsZUBesrdvevsgG2nyvRzAYcAAA=="
+    },
+    "m-4ee075b05a": {
+      "id": "m-4ee075b05a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Health Care",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoAA4BaJZACdAYv1yLhw2iDZAAA+WHbQTzWQiCPxORDkbSfDsu03Pw4dMM6jb7D73BHIctvvawj25xqLVOtd46FSUpLljYF4QXjiEx39lW8a7KovywA"
+    },
+    "m-7b8ab60c1a": {
+      "id": "m-7b8ab60c1a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Construction",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQAgCdASoQAAoAA4BaJZQCdAEXn67d2UFgAP738B+KDhvZ/3/KSvU6mC7jwz9W8u+Nf5VkQdO/VyCHbrGbc4+SKwJkvyw7b60TPDQNRm60uPP8/MwJOw7clhRJVazin318ddoFj96IS5Q6dcsDTps9jXH6QAAA"
+    },
+    "m-813946f5a1": {
+      "id": "m-813946f5a1",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAQCdASoQAAoAA4BaJZwAAcVruXwAAP71g4oT4YQdXXtUHp/y6qiY5+adDIWvqzA8kDZHl7YPPp9ObcUz9+s21iRHvmhW5/GnjEUhhSycoX0ONxMvQIRfNqBLUAAA"
+    },
+    "m-b65c9bf240": {
+      "id": "m-b65c9bf240",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Whole Sales Distribution",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAoAA4BaJZQCw7Ytp/ZAVpGWgAD8oK5fnkk3Hkbp8vAUL/lRq+VdzEkKAmgvPxpr/WTRej1rY2tYcHDNh3HQthcxXAAA"
+    },
+    "m-daa661fa88": {
+      "id": "m-daa661fa88",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Non- Profit Organizations",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoQAAoAA4BaJZQAD4xrPQyOrQAA/s9xq1+f+wktMr27MeivR+1iPVZV7Bd1N/IEd1xZdryVW95UceLRi6MeIgjENz22bPQadV1iwFP59TvP4sjMUnwltrHoRVQCHBst/M4AAA=="
+    },
+    "m-fc0905e61d": {
+      "id": "m-fc0905e61d",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "IT Services",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoQAAoAA4BaJZQC7AYu5VjEFNXnzxAAzjISfS8iK501f+2Obldb3/PR0eAW9uu0qiR8woVsIzL+vavheQO+MM9QuTIajbyBx8dyKEwpTFDG0HD4opAAAA=="
+    }
+  }
+}

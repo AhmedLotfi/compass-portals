@@ -1,0 +1,566 @@
+{
+  "id": "ar--about",
+  "kind": "page",
+  "lang": "ar",
+  "alternates": {
+    "en": "/about/",
+    "ar": "/ar/about/"
+  },
+  "path": "/ar/about/",
+  "title": "About US",
+  "sourceUrl": "https://compassint.org/about",
+  "seo": {},
+  "hero": {
+    "title": "About US",
+    "lede": "Come on a journey with us; from where it all started",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-f5b9c43a4f"
+        },
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>Welcome to Compass International – Your Trusted Technology Partner.</p> <p>Established in 2007 in Sharjah and now headquartered in Dubai, Compass International LLC is a leading IT company specializing in delivering business-driven technology solutions across the UAE and the Middle East. With over two decades of combined expertise, we empower organizations through scalable, cloud-based ERP systems, customized software solutions, and comprehensive IT services.</p> <p>From our early beginnings, we've grown into a global presence with strategic branches in India (2012) for development, Egypt (2016) for outsourcing and support, and Canada (2017) for research and innovation. Our services go beyond software—we provide full lifecycle support, including training, IT manpower supply, outsourcing, maintenance, repair, and post-implementation services.</p> <p>Our highly experienced teams work collaboratively with clients from various industries—ranging from startups to government entities—to drive digital transformation with clarity, efficiency, and long-term value. Whether you're seeking Oracle E-Business Suite consultancy, immersive Metaverse experiences, or advanced infrastructure integration, Compass is your partner in progress.</p> <p>Let us help you turn technology into a strategic advantage.</p></div>"
+        }
+      ]
+    },
+    {
+      "id": "section",
+      "title": "فريقنا",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "Baraa Oubessi",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>CEO</p></div>",
+              "media": "m-09df8b8cbc"
+            },
+            {
+              "title": "أحمد فتحي",
+              "html": "<p>مدير العمليات الرئيسي</p>",
+              "media": "m-5931b8c916"
+            },
+            {
+              "title": "Samer Nashawati",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>CDO</p></div>",
+              "media": "m-2608e25a68"
+            },
+            {
+              "title": "Salma Sulthana",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Finance &amp; Admin Manager</p></div>"
+            },
+            {
+              "title": "Amr Kendil",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Marketing Manager</p></div>"
+            },
+            {
+              "title": "Manoj Kumar",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Senior Application Developer</p></div>"
+            },
+            {
+              "title": "Souha Ben Tahar",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Project Manager</p></div>"
+            },
+            {
+              "title": "Mohammed Burhan Gill",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Project Manager</p></div>",
+              "media": "m-1de1dca7f9"
+            },
+            {
+              "title": "Ahmad Lotfi",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Team Leader</p></div>",
+              "media": "m-148568f2d5"
+            },
+            {
+              "title": "Mahmoud Barbari",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Team Leader</p></div>"
+            },
+            {
+              "title": "Mahmoud Meki",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Team Leader</p></div>",
+              "media": "m-2e3d7c9ff6"
+            },
+            {
+              "title": "Nader Diab",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Mobile Application Team Leader</p></div>",
+              "media": "m-9486d23aec"
+            },
+            {
+              "title": "دانة نصر",
+              "html": "<p>مساعدة تنفيذية</p>"
+            },
+            {
+              "title": "Waleed Wageh",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Team Leader</p></div>",
+              "media": "m-2be4774ccb"
+            },
+            {
+              "title": "Nirmala Kalaichezian",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Project Manager</p></div>"
+            },
+            {
+              "title": "Swatee Kaushal",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Project Manager</p></div>"
+            },
+            {
+              "title": "Mohmed Bashir",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Project Manager</p></div>"
+            },
+            {
+              "title": "Abdelrahman Aboobacker",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Team Leader</p></div>"
+            },
+            {
+              "title": "Nedal Kaddah",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Senior Oracle Developer</p></div>",
+              "media": "m-cfe17dbe0a"
+            },
+            {
+              "title": "Mohammed Alzaleq",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Senior Oracle Developer</p></div>",
+              "media": "m-53c015971d"
+            },
+            {
+              "title": "Assem Mohammed",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Mohammed Aljazmati",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Omer Hasan",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Mobile Application Developer</p></div>"
+            },
+            {
+              "title": "Mohammad Aamar",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Madiha Mamdouh",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Mohmed Sobhi",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Ambuja L K",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Leena Skariah",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Hamza Jawed",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Mohmed Usman",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Danial Iqbal",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Yasir Naseem",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Mobile Application Developer</p></div>"
+            },
+            {
+              "title": "Veeranan Malaisamy",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>",
+              "media": "m-35911c2ef4"
+            },
+            {
+              "title": "Shokry Mohamed",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Umair Khan",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Ali Elsayed",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Sampuran Banerjee",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Abderahmane Benkhiera",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Service Engineer</p></div>"
+            },
+            {
+              "title": "Youssef Gadelrab",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Ahmed Magdy",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Ahmed Abdelaziz",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Amir Emad",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Kishor Kumar",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Ajith S",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Mangaleeswaran",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Mohammed Altaf",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Thirumurugan",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Shiva Kumar",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Application Developer</p></div>"
+            },
+            {
+              "title": "Mohammed Ali",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>UI/UX Designer</p></div>",
+              "media": "m-ebde384de1"
+            },
+            {
+              "title": "Hashem Hany",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>UI/UX Designer</p></div>"
+            },
+            {
+              "title": "Tareq Alzaleq",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>IT Support</p></div>"
+            },
+            {
+              "title": "Sabari Ganesh",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>IT Support</p></div>"
+            },
+            {
+              "title": "Mahmoud Jouni",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Technical Support</p></div>"
+            },
+            {
+              "title": "Karim Elsayed",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>System Administrator</p></div>"
+            },
+            {
+              "title": "Waqas Ahmed Farooqui",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Cyber Security Specialist</p></div>"
+            },
+            {
+              "title": "Shujaat Amin",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Cyber Security Specialist</p></div>"
+            },
+            {
+              "title": "Samar Awad",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Multimedia Designer</p></div>"
+            },
+            {
+              "title": "Mariam Shehab",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Content Marketing Specialist</p></div>"
+            },
+            {
+              "title": "Ismail Mustafa",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Sales Executive</p></div>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-compass",
+      "title": "Why Compass ?",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-16c254ddaa"
+        },
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>At Compass International, we believe technology should empower growth, not complicate it. As a trusted IT partner based in Dubai, we bring clarity, direction, and innovation to every project—helping businesses navigate the complexities of digital transformation with confidence.</p> <p>With a deep understanding of regional and global markets, we specialize in delivering tailored IT solutions that align with your unique goals. Whether it's enterprise software integration, cloud infrastructure, or custom development, our approach is always strategic, scalable, and future-ready.</p> <p>What sets us apart is not just what we do—but how we do it. We combine technical expertise with a collaborative mindset, working closely with clients to create impact-driven outcomes. From startups to government entities, organizations choose Compass because we don’t just build solutions—we build partnerships that last.</p> <p>Let us be your guide in a world of constant change.</p></div>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "الوظائف المتاحة",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Marketing & Sales",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>2 Jobs Availablesssss</p></div>"
+            },
+            {
+              "title": "Human Resource",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>2 Jobs Available</p></div>"
+            },
+            {
+              "title": "Content Writer",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>2 Jobs Available</p></div>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "About US",
+      "path": "/ar/about/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-09df8b8cbc": {
+      "id": "m-09df8b8cbc",
+      "mime": "image/jpeg",
+      "width": 914,
+      "height": 1280,
+      "alt": "Baraa Oubessi",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        914
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADQAwCdASoQABYAPu1iqU2ppaOiMAgBMB2JZwAAV+ztNRdtH59vhUAA+/hQAPDHfMwMpM9UnyD0sJKYvxiI0XrYIVH3KaM7c45FHzxPiBF2brwXJWnTvYZYZPYI4NzM9o9uk7gDQNuu88QUiiSX4DMNudwoXbAjN7mza/SCAPzgAA=="
+    },
+    "m-148568f2d5": {
+      "id": "m-148568f2d5",
+      "mime": "image/jpeg",
+      "width": 408,
+      "height": 408,
+      "alt": "Ahmad Lotfi",
+      "widths": [
+        320,
+        408
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwAgCdASoQABAAA4BaJYwCdH8AgoTF3c/A6+BAAP74tC4CFc6a/JgHX7+XsysC44qTWuqdSqBhGeurpYSm/ZvxxeCtai1IDDCI/REoutS64+23XHgH6ox55A/sbaeC18O5RCOh9YOi+hYcAI53FMNpJ14gAAAA"
+    },
+    "m-16c254ddaa": {
+      "id": "m-16c254ddaa",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 1140,
+      "alt": "Why Compass ?",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "svg": false
+    },
+    "m-1de1dca7f9": {
+      "id": "m-1de1dca7f9",
+      "mime": "image/png",
+      "width": 914,
+      "height": 1280,
+      "alt": "Mohammed Burhan Gill",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        914
+      ],
+      "svg": false
+    },
+    "m-2608e25a68": {
+      "id": "m-2608e25a68",
+      "mime": "image/jpeg",
+      "width": 853,
+      "height": 1280,
+      "alt": "Samer Nashawati",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        853
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoQABgAPu1iqk4ppaQiMAgBMB2JZQDG9YyA33i7uHBNyMLPaFJkAP7QERrtD7ZVx9QdZsoGKqDfOGX+V1Hmp/PUU/hFARyZBzywvAiCAbp9wrRjwbJAavTqxEvt97ZZFv06wg27jzCNahy7W1AmAVVQjGQJnFrWJ1SkLR4PirXy55lgAAA="
+    },
+    "m-2be4774ccb": {
+      "id": "m-2be4774ccb",
+      "mime": "image/jpeg",
+      "width": 851,
+      "height": 1181,
+      "alt": "Waleed Wageh",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        851
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAQBACdASoQABYAPu1kqU2ppaOiMAgBMB2JQBOkBLhCZYysVspQbpC0AAD+3tZq9vSYMpVcWrZTCYRFQBTAU+U/veeaEHT4H6evc0yTFVU7Jp5ir511+E+XFziUS+rSZth7L47dzox2HkHHB7ohWN4vXw6zo6sSLwshTylcEcJ9DHcjc1Q8/2HsVFRDVqkSM6pAXAAA"
+    },
+    "m-2e3d7c9ff6": {
+      "id": "m-2e3d7c9ff6",
+      "mime": "image/jpeg",
+      "width": 3120,
+      "height": 4160,
+      "alt": "Mahmoud Meki",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZgCdMoMnJDXHdQyQm25ysXrgAP7gmT+Ulki0aqCME8bWb8wNInM0b4NUBzuUCnFlTbtbJwS66GJuXIhmrHvqXghiDBxffc9uWigi8GhZg8KCBrSJWfGzU4SaE1fkWzXYH/nGE1I7VWxFFOKhm6ooAAA="
+    },
+    "m-35911c2ef4": {
+      "id": "m-35911c2ef4",
+      "mime": "image/jpeg",
+      "width": 289,
+      "height": 360,
+      "alt": "Veeranan Malaisamy",
+      "widths": [
+        289
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZwAAXugXt/le67+IIb5iIwAA/vJPVcgseQwHdWEQmpeqTn2siWY6ST167UIvAXWkGRAuxSXUilwCLutDXxCFUcrnTz16rrJ7bNm2/NrsJl9g5ST3PMifwYMUh+Zii4aWGWGpblixT+bNiGpd9vffgAA="
+    },
+    "m-53c015971d": {
+      "id": "m-53c015971d",
+      "mime": "image/jpeg",
+      "width": 6336,
+      "height": 9504,
+      "alt": "Mohammed Alzaleq",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JZQC7AYwctkd5/XuFE8aUJgAA/vOAn39XwcyZ9A+NExTHbjhWmA9H8RPIz7MPs+8xDevShbAdbjQdu+LObPSeziH5lggzSxhUG/uv2pPB4sqZPMN/vxV/by/eqVRUl//o599QL/v64VSxj/P1ve8nPqjYYp23U3JRG88j1eCHiSM48/l+QAAA"
+    },
+    "m-5931b8c916": {
+      "id": "m-5931b8c916",
+      "mime": "image/jpeg",
+      "width": 1026,
+      "height": 1282,
+      "alt": "Ahmed Fathy",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1026
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoQABQAPu1iqU2ppaQiMAgBMB2JZQCw7CBSxDeXz8N7UzhXaADLALzcj+Lv63brJc14T+GTgLTu6Lo7xmzu27qt3TFHpCnoXND0bc/n28z7TqWx1NoZVsFCjZ8eJQUMow6Sv4YLBpelBUVf24VA9Sz2U0h6E3YLWAA="
+    },
+    "m-9486d23aec": {
+      "id": "m-9486d23aec",
+      "mime": "image/png",
+      "width": 827,
+      "height": 1063,
+      "alt": "Nader Diab",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        827
+      ],
+      "svg": false
+    },
+    "m-cfe17dbe0a": {
+      "id": "m-cfe17dbe0a",
+      "mime": "image/jpeg",
+      "width": 728,
+      "height": 1009,
+      "alt": "Nedal Kaddah",
+      "widths": [
+        320,
+        480,
+        640,
+        728
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoQABYAPu1iqU2ppaOiMAgBMB2JQBOgApd67zizLxWXEkVYAPxQ9yId8cZxYgrCIChenXMPqsGxNV163dGhIjRAEPTbgFJvVAJYOuAGXiJkdWkmnC1zsUkifayrPZRDq46H77i6PKHr5azesRlgFfft6xyF14DY/Ga+WCAA"
+    },
+    "m-ebde384de1": {
+      "id": "m-ebde384de1",
+      "mime": "image/png",
+      "width": 914,
+      "height": 1280,
+      "alt": "Mohammed Ali",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        914
+      ],
+      "svg": false
+    },
+    "m-f5b9c43a4f": {
+      "id": "m-f5b9c43a4f",
+      "mime": "image/jpeg",
+      "width": 1600,
+      "height": 1138,
+      "alt": "Introduction",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAsAA4BaJYwAAh5Q4YuZAAD+9wnvjyto8WytoBju0JOHMYxvHeQQLmtRqL8VNNE6rbjPuakAfIIw1AyUoXaFiPEnjkyKKSyg2zuq1wAAAA=="
+    }
+  }
+}

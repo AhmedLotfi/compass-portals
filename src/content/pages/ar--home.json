@@ -1,0 +1,698 @@
+{
+  "id": "ar--home",
+  "kind": "home",
+  "lang": "ar",
+  "alternates": {
+    "en": "/",
+    "ar": "/ar/"
+  },
+  "path": "/ar/",
+  "title": "Unlocking Insights: Comprehensive Data Offering Services",
+  "sourceUrl": "https://compassint.org/",
+  "seo": {},
+  "hero": {
+    "title": "Unlocking Insights: Comprehensive Data Offering Services",
+    "lede": "Empower your projects with our comprehensive data offering services, unlocking beneficial insights for informed decision-making",
+    "media": "m-9aacc48db8",
+    "ctas": [
+      {
+        "label": "تحدّث إلى فريقنا",
+        "href": "/ar/contact/",
+        "kind": "internal"
+      },
+      {
+        "label": "استكشف حلولنا",
+        "href": "/ar/products/",
+        "kind": "internal"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "highlights",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "Metaverse solution",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Step into the future with Compass International LLC’s Metaverse Solution.</p></div>",
+              "media": "m-7e80cf7263"
+            },
+            {
+              "title": "Integrated Solutions for your Business",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>We provide exceptional system integration services for your business</p></div>",
+              "media": "m-54eb5ddcd5"
+            },
+            {
+              "title": "Expert IT Outsourcing Services and Dedicated Manpower",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Your trusted partner for IT outsourcing services, embodied by dedicated manpower for smooth project execution</p></div>",
+              "media": "m-0a9800d342"
+            },
+            {
+              "title": "Customizable & Configurable ERP Solutions",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Unlock the full potential of your business with our customizable and configurable range of ERP solutions</p></div>",
+              "media": "m-8765544cc8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "right-application-right-direction",
+      "title": "Right Application. Right Direction",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>تعمل مؤسسة الشارقة للتمكين الاجتماعي على تقديم مجالات رعاية مختلفة تصَبُّ أهدافها في تنمية وتمكين الأيتام ، وهي بذلك تنتهج العمل الإنسان ي الشامل تجاهم من خلال أوجه التمكين التالية</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "المنتجات",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "الموارد البشرية والرواتب",
+              "html": "<p>عزّز عمليات الموارد البشرية والرواتب في مؤسستك من خلال نظامنا المتقدم والقابل للتخصيص.</p>",
+              "href": "/ar/products/hr-payroll/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "إدارة التمويل",
+              "html": "<p>يقدّم حلّنا المالي ما هو أكثر من مجرد محاسبة؛ فهو يوفّر وظائف مالية شاملة مصممة لتلبية متطلبات أعمالك.</p>",
+              "href": "/ar/products/finance-management/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "إدارة الأسطول",
+              "html": "<p>قم بتحسين عمليات إدارة الأسطول باستخدام حل متقدم يوفّر ميزات تتبع المركبات، وتخطيط المسارات، والمراقبة اللحظية.</p>",
+              "href": "/ar/products/fleet-management/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "إدارة الممتلكات",
+              "html": "<p>قم بإدارة عقاراتك باستخدام حلّنا القابل للتخصيص والتعديل، والمصمم خصيصًا لمالكي العقارات.</p>",
+              "href": "/ar/products/property-management/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "إدارة المشاريع",
+              "html": "<p>ارتقِ بقدرات إدارة المشاريع لديك مع حلنا المتميز بالمزايا المتكاملة.</p>",
+              "href": "/ar/products/projects-management/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "إدارة البيع بالتجزئة",
+              "html": "<p>طوّر عمليات البيع بالتجزئة لديك مع وحدة الإدارة الشاملة لدينا.</p>",
+              "href": "/ar/products/retail-management/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "إدارة العقود",
+              "html": "<p>صُمم حل إدارة العقود لدينا خصيصًا لشركات الاستشارات والاستعانة بمصادر خارجية، حيث يُسهّل تسجيل تفاصيل العقود وجداول الدفع، مع تحليل ربحية كل عقد.</p>",
+              "href": "/ar/products/contracts-management/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "Charity Management",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Our charity solution integrates departments, streamlines workflows, and provides detailed project and donor reports for enhanced transparency and efficiency.</p></div>",
+              "href": "/ar/products/charity-management/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "إدارة المدارس",
+              "html": "<p>صُمم نظامنا الشامل لإدارة المدارس لتبسيط العمليات اليومية في فرع واحد أو فروع متعددة.</p>",
+              "href": "/ar/products/school-management/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "إدارة التأمين",
+              "html": "<p>حل التأمين القابل للتخصيص لدينا مُصمم لإدارة العمليات داخل شركات التأمين بكفاءة وفعالية، مع الالتزام بالمواصفات والمعايير الدولية لتلبية الاحتياجات المتنوعة.</p>",
+              "href": "/ar/products/insurance-management/",
+              "linkLabel": "استكشف المنتج"
+            },
+            {
+              "title": "إدارة الجامعات",
+              "html": "<p>إدارة ذكية للجامعات الحديثة, نظامنا لإدارة الجامعات لدينا يبسّط عمليات القبول، تسجيل المقررات، الجدولة الأكاديمية، والإدارة المالية عبر عدة فروع.</p>",
+              "href": "/ar/products/university-management/",
+              "linkLabel": "استكشف المنتج"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الخدمات",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "تطوير مخصص",
+              "html": "<p>.</p>",
+              "href": "/ar/services/custom-development/",
+              "linkLabel": "استكشف هذه الخدمة"
+            },
+            {
+              "title": "تكامل الأنظمة",
+              "html": "<p>سيقوم عملك بذكاء أكبر من خلال ربط جميع الأنظمة والبرمجيات في مكان واحد.</p>",
+              "href": "/ar/services/system-integration/",
+              "linkLabel": "استكشف هذه الخدمة"
+            },
+            {
+              "title": "خدمات البيانات",
+              "html": "<p>,نمكن أعمالك من خلال حلول بيانات ذكية مدعومة بالذكاء الاصطناعي توفّر رؤى دقيقة لاتخاذ قرارات أفضل .</p>",
+              "href": "/ar/services/data-offering/",
+              "linkLabel": "استكشف هذه الخدمة"
+            },
+            {
+              "title": "الذكاء الاصطناعي",
+              "html": "<p>في كومباس، نستثمر قوة الذكاء الاصطناعي لدفع عجلة التحول الرقمي في أعمالكم.</p>",
+              "href": "/ar/services/artificial-intelligence/",
+              "linkLabel": "استكشف هذه الخدمة"
+            },
+            {
+              "title": "Web Development",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>At Compass, we specialize in delivering custom web development solutions tailored to your unique business needs.</p></div>",
+              "href": "/ar/services/web-development/",
+              "linkLabel": "استكشف هذه الخدمة"
+            },
+            {
+              "title": "تطوير تطبيقات الموبايل",
+              "html": "<p>في كومباس، نُحوّل الأفكار إلى تطبيقات جوال قوية تتميز بالأداء السلس والتفاعل العالي مع المستخدمين.</p>",
+              "href": "/ar/services/mobile-application-development/",
+              "linkLabel": "استكشف هذه الخدمة"
+            },
+            {
+              "title": "كوادر وخدمات في مجال تكنولوجيا المعلومات والاتصالات",
+              "html": "<p>.</p>",
+              "href": "/ar/services/ict-manpower-outsourcing/",
+              "linkLabel": "استكشف هذه الخدمة"
+            },
+            {
+              "title": "ERP Development",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Compass provides expert ERP consultancy to help businesses maximize efficiency. we tailor systems to meet your unique needs.</p></div>",
+              "href": "/ar/services/erp-development/",
+              "linkLabel": "استكشف هذه الخدمة"
+            },
+            {
+              "title": "Metaverse solution",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Compass International LLC’s Metaverse Solution redefines immersive experiences with cutting-edge AR/VR displays, holographic projections, and haptic feedback devices.</p></div>",
+              "href": "/ar/services/metaverse-solution/",
+              "linkLabel": "استكشف هذه الخدمة"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "المزايا",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "Omni channel Platform",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Drive Business Success with Omni Channel Capabilities.</p></div>",
+              "href": "/ar/features/omni-channel-platform/",
+              "linkLabel": "اعرف المزيد"
+            },
+            {
+              "title": "Invoicing",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Streamline Invoicing Processes and Provide Seamless Experiences.</p></div>",
+              "href": "/ar/features/invoicing/",
+              "linkLabel": "اعرف المزيد"
+            },
+            {
+              "title": "Business Intelligence",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Harnessing the Power of Data for Informed Decision-Making and Performance Tracking.</p></div>",
+              "href": "/ar/features/business-intelligence/",
+              "linkLabel": "اعرف المزيد"
+            },
+            {
+              "title": "Other Features",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Compass offers a comprehensive suite of features designed to enhance business operations.</p></div>",
+              "href": "/ar/features/other-features/",
+              "linkLabel": "اعرف المزيد"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "القطاعات",
+      "blocks": [
+        {
+          "type": "moduleGrid",
+          "items": [
+            {
+              "title": "Retail",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>We are proud to offer a comprehensive ERP solution designed specifically for the retail industry</p></div>",
+              "href": "/ar/industries/retail/"
+            },
+            {
+              "title": "Consulting",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Compass understands and acknowledges the distinct needs and requirements of the consulting industry.</p></div>",
+              "href": "/ar/industries/consulting/"
+            },
+            {
+              "title": "Construction",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>At Compass, we understand the unique requirements and challenges faced by the construction industry.</p></div>",
+              "href": "/ar/industries/construction/"
+            },
+            {
+              "title": "Financial Services",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Compass offers a comprehensive software solution that specifically caters to the unique requirements of the finance industry</p></div>",
+              "href": "/ar/industries/financial-services/"
+            },
+            {
+              "title": "Legal",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Compass provides a comprehensive system and software solutions that caters specifically to the unique requirements of the legal services industry</p></div>",
+              "href": "/ar/industries/legal/"
+            },
+            {
+              "title": "IT Services",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>At Compass, we understand the complex requirements of the IT industry and have developed enterprise resource planning (ERP) solutions that address its unique challenges.</p></div>",
+              "href": "/ar/industries/it-services/"
+            },
+            {
+              "title": "Whole Sales Distribution",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>At Compass, we recognize the unique needs and challenges faced by wholesale businesses.</p></div>",
+              "href": "/ar/industries/whole-sales-distribution/"
+            },
+            {
+              "title": "Non- Profit Organizations",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Our solutions are specifically designed to cater to the needs of charity organizations, providing them with the tools and functionalities required to effectively manage their operations</p></div>",
+              "href": "/ar/industries/non-profit-organizations/"
+            },
+            {
+              "title": "Government",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>At Compass, we provide secure, scalable, and efficient IT and software solutions tailored for government entities.</p></div>",
+              "href": "/ar/industries/government/"
+            },
+            {
+              "title": "Health Care",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>At Compass, we specialize in delivering innovative IT and software solutions specifically designed for the healthcare sector.</p></div>",
+              "href": "/ar/industries/health-care/"
+            },
+            {
+              "title": "Real Estate",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Compass provides innovative IT and software solutions designed for the real estate industry.</p></div>",
+              "href": "/ar/industries/real-estate/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "an-appstore-for-all-of-your-business-needs",
+      "title": "An AppStore for All of Your Business Needs",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>FreshBooks integrates with over 100 great apps to streamline work for business owners, keep teams and clients connected, and better understand your business.</p></div>"
+        }
+      ]
+    },
+    {
+      "id": "your-success-is-our-priority-24-7-support-for-all-your-erp-needs",
+      "title": "Your Success is Our Priority: 24/7 Support for All Your ERP Needs",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-e88f876b78"
+        },
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p><strong>Prompt Response</strong>: Our support team is committed to providing timely assistance. We prioritize quick response times to ensure that your queries and concerns are addressed as soon as possible. Whether it's troubleshooting, technical guidance, or general inquiries, we strive to provide a prompt and efficient support experience.</p> <p><strong>Expert Guidance</strong>: Our support team consists of highly skilled professionals with in-depth knowledge of our ERP system. They have the expertise to guide you through any challenges you may encounter. From software configuration and customization to user training and best practices, our experts are here to assist you every step of the way.</p></div>"
+        }
+      ]
+    },
+    {
+      "id": "section-6",
+      "title": "عملاؤنا",
+      "blocks": [
+        {
+          "type": "gallery",
+          "variant": "logos",
+          "items": [
+            {
+              "media": "m-00c53fde01"
+            },
+            {
+              "media": "m-9c9d865f22"
+            },
+            {
+              "media": "m-47f07718b5"
+            },
+            {
+              "media": "m-27d745df79"
+            },
+            {
+              "media": "m-613bb5b3dc"
+            },
+            {
+              "media": "m-fa5e82b8f5"
+            },
+            {
+              "media": "m-973ef2cf9f"
+            },
+            {
+              "media": "m-2d8fff5367"
+            },
+            {
+              "media": "m-69c0f55b95"
+            },
+            {
+              "media": "m-9cee773b98"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-7",
+      "title": "آراء عملائنا",
+      "blocks": [
+        {
+          "type": "quote",
+          "html": "<p>نحن نستخدم نظام تخطيط موارد المؤسسات منذ أكثر من عام ، وقد حسن عملياتنا بشكل كبير من خلال واجهته سهلة الاستخدام وميزاته الشاملة والدعم الموثوق. عززت أتمتة المهام الروتينية الإنتاجية ، مما سمح لفريقنا بالتركيز على المزيد من العمل الاستراتيجي. على الرغم من أن النظام قوي ، إلا أننا نشعر أن خيارات التخصيص الإضافية وتحسين الأداء أثناء ذروة الاستخدام يمكن أن تعزز وظائفه بشكل أكبر. بشكل عام ، كانت أداة قيمة لتبسيط عملياتنا التجارية.</p>",
+          "cite": "حسين جخلب",
+          "role": [
+            "الرئيس التنفيذي",
+            "Delham Group"
+          ],
+          "media": "m-31629987c6"
+        }
+      ]
+    },
+    {
+      "id": "section-8",
+      "title": "شركاؤنا",
+      "blocks": [
+        {
+          "type": "gallery",
+          "variant": "logos",
+          "items": [
+            {
+              "media": "m-3a9e5521ce",
+              "href": "/ar/partners/"
+            },
+            {
+              "media": "m-b6f461a569",
+              "href": "/ar/partners/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [],
+  "children": [],
+  "media": {
+    "m-00c53fde01": {
+      "id": "m-00c53fde01",
+      "mime": "image/png",
+      "width": 120,
+      "height": 54,
+      "alt": "Client logo",
+      "widths": [
+        120
+      ],
+      "svg": false
+    },
+    "m-0a9800d342": {
+      "id": "m-0a9800d342",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Expert IT Outsourcing Services and Dedicated Manpower",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-27d745df79": {
+      "id": "m-27d745df79",
+      "mime": "image/png",
+      "width": 126,
+      "height": 63,
+      "alt": "Client logo",
+      "widths": [
+        126
+      ],
+      "svg": false
+    },
+    "m-2d8fff5367": {
+      "id": "m-2d8fff5367",
+      "mime": "image/png",
+      "width": 266,
+      "height": 54,
+      "alt": "Client logo",
+      "widths": [
+        266
+      ],
+      "svg": false
+    },
+    "m-31629987c6": {
+      "id": "m-31629987c6",
+      "mime": "image/jpeg",
+      "width": 640,
+      "height": 640,
+      "alt": "Hussein Jakhlab",
+      "widths": [
+        320,
+        480,
+        640
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQABAAA4BaJQBOgMWWla8axrDMYAD2leJZGl34btJOtpkK7Z3XP6avZGzPhDfvfcWe+td5+/rxLZUeeIo4YwwDLA071ztkEkjnR1t6o8c0qQTw6YleXAAA"
+    },
+    "m-3a9e5521ce": {
+      "id": "m-3a9e5521ce",
+      "mime": "image/png",
+      "width": 791,
+      "height": 429,
+      "alt": "Vizio-Tek",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        791
+      ],
+      "svg": false
+    },
+    "m-47f07718b5": {
+      "id": "m-47f07718b5",
+      "mime": "image/gif",
+      "width": 1596,
+      "height": 797,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1596
+      ],
+      "svg": false
+    },
+    "m-54eb5ddcd5": {
+      "id": "m-54eb5ddcd5",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Integrated Solutions for your Business",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-613bb5b3dc": {
+      "id": "m-613bb5b3dc",
+      "mime": "image/png",
+      "width": 403,
+      "height": 256,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        403
+      ],
+      "svg": false
+    },
+    "m-69c0f55b95": {
+      "id": "m-69c0f55b95",
+      "mime": "image/png",
+      "width": 248,
+      "height": 70,
+      "alt": "Client logo",
+      "widths": [
+        248
+      ],
+      "svg": false
+    },
+    "m-7e80cf7263": {
+      "id": "m-7e80cf7263",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Metaverse solution",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-8765544cc8": {
+      "id": "m-8765544cc8",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Customizable & Configurable ERP Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-973ef2cf9f": {
+      "id": "m-973ef2cf9f",
+      "mime": "image/jpeg",
+      "width": 500,
+      "height": 500,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        480,
+        500
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAwAQCdASoQABAAA4BaJaQAA3AA/uzFG+DNQ/z5MbHV26r5Emj5Qb3cVOoYgqYMdAAAAA=="
+    },
+    "m-9aacc48db8": {
+      "id": "m-9aacc48db8",
+      "mime": "image/png",
+      "width": 1335,
+      "height": 1247,
+      "alt": "Unlocking Insights: Comprehensive Data Offering Services",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1335
+      ],
+      "svg": false
+    },
+    "m-9c9d865f22": {
+      "id": "m-9c9d865f22",
+      "mime": "image/png",
+      "width": 960,
+      "height": 260,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960
+      ],
+      "svg": false
+    },
+    "m-9cee773b98": {
+      "id": "m-9cee773b98",
+      "mime": "image/jpeg",
+      "width": 200,
+      "height": 200,
+      "alt": "Client logo",
+      "widths": [
+        200
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQABAAA4BaJZQAD4tQ7HqjEHgzkAD++Lo8X9AcC86tk1iPwlxyDYTyyF8ujFr7R9Efa32lmLyDmUn4mv5ie/tYjK7Ypp4gVKIEOqN09DwwcjQB3ttKtsAA"
+    },
+    "m-b6f461a569": {
+      "id": "m-b6f461a569",
+      "mime": "image/jpeg",
+      "width": 2048,
+      "height": 2048,
+      "alt": "VICTORY XR",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAgCdASoQABAAA4BaJYwCdIExgli/2B3zXI3gAP735hyTZqv3HVk4rZRzxa+sii3nZ8/CrYL3brM7H5FNkPJEJIhGyVU7B8rkHA/jogAAAA=="
+    },
+    "m-e88f876b78": {
+      "id": "m-e88f876b78",
+      "mime": "image/png",
+      "width": 745,
+      "height": 624,
+      "alt": "Your Success is Our Priority: 24/7 Support for All Your ERP Needs",
+      "widths": [
+        320,
+        480,
+        640,
+        745
+      ],
+      "svg": false
+    },
+    "m-fa5e82b8f5": {
+      "id": "m-fa5e82b8f5",
+      "mime": "image/jpeg",
+      "width": 959,
+      "height": 959,
+      "alt": "Client logo",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        959
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQABAAA4BaJYgCsADJQu8G7gAA/vVfCl0o6kkW3q/MJKGBmSFTDxf25ytxKSxDXguoDx/ME5xhJ6W2SvDP4QYQxhvGvHxgARb2xlf2e9x7TzbqgaCsWUbEAI2jDqY2QIpHfRwSAAA="
+    }
+  }
+}

@@ -372,7 +372,14 @@ export function snapshotFiles(
   files.set(
     'routes.json',
     json(
-      RouteTableSchema.parse({ routes: entries.map(({ id, path, kind }) => ({ id, path, kind })) }),
+      RouteTableSchema.parse({
+        routes: entries.map(({ id, path, kind, lang }) => ({
+          id,
+          path,
+          kind,
+          ...(lang ? { lang } : {}),
+        })),
+      }),
     ),
   );
   files.set('media.json', json(MediaIndexSchema.parse({ media: mediaList })));

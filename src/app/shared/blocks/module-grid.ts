@@ -1,3 +1,4 @@
+import { AutoLang } from '../../core/i18n/auto-lang';
 import { NgTemplateOutlet } from '@angular/common';
 import { Component, computed, input } from '@angular/core';
 import type { Block, MediaRef } from '@schema/content';
@@ -8,14 +9,14 @@ import { InternalLinks } from './internal-links';
 /** Repeated cards from the site (products, modules), laid out as a map legend rather than a card kit. */
 @Component({
   selector: 'app-module-grid',
-  imports: [MediaImage, SmartLink, InternalLinks, NgTemplateOutlet],
+  imports: [AutoLang, MediaImage, SmartLink, InternalLinks, NgTemplateOutlet],
   template: `
     @let grid = block();
     @if (grid.title) {
       @if (level() === 2) {
-        <h2 class="module-grid__title">{{ grid.title }}</h2>
+        <h2 class="module-grid__title" [appAutoLang]="grid.title">{{ grid.title }}</h2>
       } @else {
-        <h3 class="module-grid__title">{{ grid.title }}</h3>
+        <h3 class="module-grid__title" [appAutoLang]="grid.title">{{ grid.title }}</h3>
       }
     }
     <ul class="module-grid" [class.module-grid--media]="hasMedia()">
@@ -43,13 +44,19 @@ import { InternalLinks } from './internal-links';
             </ng-template>
             @switch (itemLevel()) {
               @case (2) {
-                <h2 class="module-grid__name"><ng-container [ngTemplateOutlet]="name" /></h2>
+                <h2 class="module-grid__name" [appAutoLang]="item.title">
+                  <ng-container [ngTemplateOutlet]="name" />
+                </h2>
               }
               @case (3) {
-                <h3 class="module-grid__name"><ng-container [ngTemplateOutlet]="name" /></h3>
+                <h3 class="module-grid__name" [appAutoLang]="item.title">
+                  <ng-container [ngTemplateOutlet]="name" />
+                </h3>
               }
               @default {
-                <h4 class="module-grid__name"><ng-container [ngTemplateOutlet]="name" /></h4>
+                <h4 class="module-grid__name" [appAutoLang]="item.title">
+                  <ng-container [ngTemplateOutlet]="name" />
+                </h4>
               }
             }
             @if (item.html) {

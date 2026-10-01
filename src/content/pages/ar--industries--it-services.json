@@ -1,0 +1,63 @@
+{
+  "id": "ar--industries--it-services",
+  "kind": "page",
+  "lang": "ar",
+  "path": "/ar/industries/it-services/",
+  "title": "IT Services",
+  "sourceUrl": "https://compassint.org/industries/it_services",
+  "seo": {
+    "canonical": "/industries/it-services/"
+  },
+  "hero": {
+    "title": "IT Services",
+    "lede": "At Compass, we understand the complex requirements of the IT industry and have developed enterprise resource planning (ERP) solutions that address its unique challenges.",
+    "media": "m-fc0905e61d",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>Our specialized systems is designed to streamline and optimize IT operations across various sectors, including software development, IT consulting, cybersecurity, and more. With our solution, IT companies can effectively manage complex projects, allocate resources efficiently, and track progress in real-time. it offers advanced finance management features, allowing IT companies to accurately capture project costs, track expenses, and generate precise invoices. This ensures streamlined financial operations and improved cash flow management for IT professionals. The Contracts Management module within systems enables IT companies to efficiently handle contract-related processes. This includes tasks such as contract creation, negotiation, and monitoring. By leveraging this module, IT companies can ensure proper contract compliance, track contract milestones, and efficiently manage their contracts portfolio.</p> <p>This ensures streamlined financial operations and improved cash flow management for IT professionals. The Contracts Management module within our system enables IT companies to efficiently handle contract-related processes. This includes tasks such as contract creation, negotiation, and monitoring. By leveraging this module, IT companies can ensure proper contract compliance, track contract milestones, and efficiently manage their contracts portfolio.</p></div>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Industries",
+      "path": "/ar/industries/"
+    },
+    {
+      "label": "IT Services",
+      "path": "/ar/industries/it-services/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-fc0905e61d": {
+      "id": "m-fc0905e61d",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "IT Services",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoQAAoAA4BaJZQC7AYu5VjEFNXnzxAAzjISfS8iK501f+2Obldb3/PR0eAW9uu0qiR8woVsIzL+vavheQO+MM9QuTIajbyBx8dyKEwpTFDG0HD4opAAAA=="
+    }
+  }
+}

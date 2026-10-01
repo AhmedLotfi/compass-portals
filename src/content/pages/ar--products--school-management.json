@@ -1,0 +1,66 @@
+{
+  "id": "ar--products--school-management",
+  "kind": "product",
+  "lang": "ar",
+  "alternates": {
+    "en": "/products/school-management/",
+    "ar": "/ar/products/school-management/"
+  },
+  "path": "/ar/products/school-management/",
+  "title": "إدارة المدارس",
+  "sourceUrl": "https://compassint.org/products/school_management",
+  "seo": {},
+  "hero": {
+    "title": "إدارة المدارس",
+    "lede": "صُمم نظامنا الشامل لإدارة المدارس لتبسيط العمليات اليومية في فرع واحد أو فروع متعددة. بفضل ميزاته المتعددة اللغات والعملات، وإشعارات الرسائل النصية/البريد الإلكتروني الآلية، والمدفوعات الإلكترونية الآمنة، يُمكّن النظام المدارس من إدارة التسجيل والحضور والدرجات والشؤون المالية والتواصل، كل ذلك عبر منصة مركزية واحدة. صُمم هذا النظام لضمان الكفاءة وقابلية التوسع والأمان، وهو الحل الأمثل للمؤسسات التعليمية الحديثة.",
+    "media": "m-9e6e617d6f",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "إدارة المدارس",
+      "path": "/ar/products/school-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-9e6e617d6f": {
+      "id": "m-9e6e617d6f",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 731,
+      "alt": "School Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAkAA4BaJQBOgCE7pyOecADN6cKEx8rHC3LGHdCKeCMjVov8R10CBQf1pQDVIZclRMj6L4wDxQByQt9Dh8cpIo3RH0DsPUvarmtEG6M7PgAA"
+    }
+  }
+}

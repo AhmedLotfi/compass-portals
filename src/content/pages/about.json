@@ -1,6 +1,11 @@
 {
   "id": "about",
   "kind": "page",
+  "lang": "en",
+  "alternates": {
+    "en": "/about/",
+    "ar": "/ar/about/"
+  },
   "path": "/about/",
   "title": "About US",
   "sourceUrl": "https://compassint.org/about",

@@ -1,0 +1,166 @@
+{
+  "id": "ar--products--charity-management",
+  "kind": "product",
+  "lang": "ar",
+  "path": "/ar/products/charity-management/",
+  "title": "Charity Management",
+  "sourceUrl": "https://compassint.org/products/charity_management",
+  "seo": {
+    "canonical": "/products/charity-management/"
+  },
+  "hero": {
+    "title": "Charity Management",
+    "lede": "Our charity solution integrates departments, streamlines workflows, and provides detailed project and donor reports for enhanced transparency and efficiency.",
+    "media": "m-42a55ad4cc",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>Our Charity Management solution is tailored to optimize organizational processes and workflows within charitable operations. It provides configurable and customizable features, functioning as a comprehensive document management system and robust reporting tool. Gain detailed insights into project statuses, donor activities, and beneficiary management, ensuring enhanced operational efficiency and transparency for your charitable initiatives. With user-friendly interfaces and scalable capabilities, our solution empowers organizations to effectively manage and track their impact, fostering greater accountability and strategic growth in serving communities</p></div>"
+        }
+      ]
+    },
+    {
+      "id": "business-features",
+      "title": "Business Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-3cb490c46f"
+        },
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>Management of Multiple Companies and Legal Entities: Efficiently handle operations across multiple companies and legal entities within a unified system</p> <p>Integration with Compass Financial Modules: Seamlessly integrate with financial modules for comprehensive financial management</p> <p>Donor Portals for Transaction Viewing: Provide portals for donors to access and view their transaction histories</p> <p>Front-End Donation Software E-Tamweel: Utilize front-end donation software, E-Tamweel, for streamlined donation processes<br></p></div>"
+        }
+      ]
+    },
+    {
+      "id": "technical-features",
+      "title": "Technical Features",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-21554ab937"
+        },
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>Web-Based and Web-Enabled Solutions: Access the platform via any device with an internet connection</p> <p>SMS and Email Integration: Send notifications and communications directly from the system through SMS and email</p> <p>Oracle and SQL Server Databases: Utilize Oracle and SQL Server databases for reliable data management</p> <p>Export Functionality to Excel, Word, and PDF: Easily export data and reports into Excel, Word, and PDF</p> <p>Customizable Flex Fields: Adapt and configure fields to meet specific business needs and workflows</p></div>"
+        }
+      ]
+    },
+    {
+      "id": "section",
+      "title": "المزايا",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Sponsorship",
+              "html": ""
+            },
+            {
+              "title": "Social Cases",
+              "html": ""
+            },
+            {
+              "title": "Charity Projects",
+              "html": ""
+            },
+            {
+              "title": "Tamweel",
+              "html": ""
+            },
+            {
+              "title": "Families",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "Charity Management",
+      "path": "/ar/products/charity-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-21554ab937": {
+      "id": "m-21554ab937",
+      "mime": "image/jpeg",
+      "width": 998,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        998
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAoAA4BaJYwCdAEO1Dm8XhoAAP737tP8vCMjXCKb6YsRBljQXPU9X5+471hVMx6CrPElhWyp9ab8CA/0AdES0BOlCuT7q41iTYoXgAA="
+    },
+    "m-3cb490c46f": {
+      "id": "m-3cb490c46f",
+      "mime": "image/jpeg",
+      "width": 621,
+      "height": 388,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        621
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAoAA4BaJQBOgMWv223tpghoAAD+1PuskJ9xRXdxVKNHzgUxI0lrCJvzZQ8lidnlZ+eIexRSi/djz4St/ONxV1dDFpPdx5iUDDrOqtd0z8lcl57gP7/4HlV4Ml4ERom1ccAAAAA="
+    },
+    "m-42a55ad4cc": {
+      "id": "m-42a55ad4cc",
+      "mime": "image/jpeg",
+      "width": 6708,
+      "height": 4472,
+      "alt": "Charity Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600,
+        1920
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQAgCdASoQAAsAA4BaJZACdAYtfyKJE9yWqEgA/rgMrvFepAmRt3o5KlrbM7AaaclURy17Oz7DqolwQ/l16O1hNMbfdkisfn9NsMj0/LNieYV6KvGesgvGv6fV23m7XFQDNMBAEnk/rwsKg5ISX1ZAAAA="
+    }
+  }
+}

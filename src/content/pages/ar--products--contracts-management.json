@@ -1,0 +1,160 @@
+{
+  "id": "ar--products--contracts-management",
+  "kind": "product",
+  "lang": "ar",
+  "alternates": {
+    "en": "/products/contracts-management/",
+    "ar": "/ar/products/contracts-management/"
+  },
+  "path": "/ar/products/contracts-management/",
+  "title": "إدارة العقود",
+  "sourceUrl": "https://compassint.org/products/contracts_management",
+  "seo": {},
+  "hero": {
+    "title": "إدارة العقود",
+    "lede": "صُمم حل إدارة العقود لدينا خصيصًا لشركات الاستشارات والاستعانة بمصادر خارجية، حيث يُسهّل تسجيل تفاصيل العقود وجداول الدفع، مع تحليل ربحية كل عقد. يُؤتمت النظام تكاليف الرواتب والمدفوعات، ويتكامل مع قسم المالية لإدارة مالية شاملة.",
+    "media": "m-bb8fbcd880",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>نظام إدارة العقود لدينا مُصمم خصيصًا لشركات الاستشارات والتعهيد، حيث يتيح تسجيل تفاصيل العقود وجداول الدفع، مما يسهل تحليل الإيرادات مقابل التكاليف لكل عقد. يشمل النظام تتبع مؤشرات الأداء الرئيسية (KPIs) لمراقبة ربحية العقود وكفاءتها. كما يدمج بين كشوف الرواتب وتكاليف الدفعات بشكل سلس مع النظام المالي، مما يضمن إدارة مالية شاملة ومتكاملة.<br></p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "ميزات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-11d68445bb"
+        },
+        {
+          "type": "richText",
+          "html": "<p>إدارة متعددة الشركات: إدارة العمليات بكفاءة عبر عدة شركات وكيانات قانونية داخل نظام واحد.</p> <p>تذكيرات الانتهاء: استلام إشعارات في الوقت المناسب للعقود المنتهية لضمان إدارة استباقية.</p> <p>الإدارة التلقائية للإيرادات المؤجلة: التعامل بسلاسة مع عمليات الإيرادات المؤجلة للحفاظ على سجلات مالية دقيقة.</p> <p>إدارة عقود التعهيد: تبسيط إدارة اتفاقيات التعهيد لتعزيز كفاءة العمليات.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الميزات التقنية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-6a9b5ddc06"
+        },
+        {
+          "type": "richText",
+          "html": "<p>حلول معتمدة على الويب وقابلة للوصول عبر الإنترنت: الوصول إلى المنصة من أي جهاز متصل بالإنترنت.</p> <p>دمج الرسائل النصية والبريد الإلكتروني: إرسال الإشعارات والاتصالات مباشرة من النظام عبر الرسائل النصية والبريد الإلكتروني.</p> <p>قواعد بيانات أوراكل وSQL سيرفر: استخدام قواعد بيانات أوراكل وSQL سيرفر لإدارة بيانات موثوقة.</p> <p>وظيفة التصدير إلى إكسل، وورد، وPDF: تصدير البيانات والتقارير بسهولة إلى إكسل، وورد، وPDF.</p> <p>حقول مرنة قابلة للتخصيص: تكييف وتكوين الحقول لتلبية الاحتياجات والعمليات الخاصة بالأعمال.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "المزايا",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Contracts",
+              "html": ""
+            },
+            {
+              "title": "Finance",
+              "html": ""
+            },
+            {
+              "title": "Human Resource",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "إدارة العقود",
+      "path": "/ar/products/contracts-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-11d68445bb": {
+      "id": "m-11d68445bb",
+      "mime": "image/jpeg",
+      "width": 1206,
+      "height": 720,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1206
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAoAA4BaJaACdADMBUoKrJaWAP7YOaEDUnKWiZjXzv76E8PM1s8c7vH5+/Ct/Tm0SV8qHUMvbOxQF8n9vsS9Vu6t7+D5x6+Mga0aXGroRPfLm/TbYBIAAAA="
+    },
+    "m-6a9b5ddc06": {
+      "id": "m-6a9b5ddc06",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAoAA4BaJZQC7AEf1tbORU3AAP7xE3FIWM6w+MVq9nlckkt8jdSHyQQxiuVf3kl0F3HazHHWvOgiJU1MO3XKGsoyjT0kcnHI0pr9K+t5ROQA"
+    },
+    "m-bb8fbcd880": {
+      "id": "m-bb8fbcd880",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 450,
+      "alt": "Contracts Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        800
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJZQC7AC1wCt3AAD+8YEbLv9x7RvSIXE9RCkbvERuJluEqthxG1CfKcSwM/Ea4VrMcIoSjJ3BTC03BZxQAA=="
+    }
+  }
+}

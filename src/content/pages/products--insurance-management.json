@@ -1,6 +1,11 @@
 {
   "id": "products--insurance-management",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/insurance-management/",
+    "ar": "/ar/products/insurance-management/"
+  },
   "path": "/products/insurance-management/",
   "title": "Insurance Management",
   "sourceUrl": "https://compassint.org/products/insurance_management",

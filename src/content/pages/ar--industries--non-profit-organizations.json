@@ -1,0 +1,63 @@
+{
+  "id": "ar--industries--non-profit-organizations",
+  "kind": "page",
+  "lang": "ar",
+  "path": "/ar/industries/non-profit-organizations/",
+  "title": "Non- Profit Organizations",
+  "sourceUrl": "https://compassint.org/industries/non-_profit_organizations",
+  "seo": {
+    "canonical": "/industries/non-profit-organizations/"
+  },
+  "hero": {
+    "title": "Non- Profit Organizations",
+    "lede": "Our solutions are specifically designed to cater to the needs of charity organizations, providing them with the tools and functionalities required to effectively manage their operations",
+    "media": "m-daa661fa88",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>With a range of specialized modules, we understand the unique challenges faced by these non-profit organizations and are dedicated to supporting their charitable endeavors.</p> <p>The Donor Management module is at the core of our system solution, allowing charity organizations to efficiently track and manage donor information. This module enables organizations to maintain accurate records of donor contact details, donation history, and communication preferences. By utilizing this module, charity organizations can build strong relationships with their donors, fostering long-term partnerships and increasing support for their important causes.</p> <p>Another vital module is the Grant Management module, which streamlines the process of managing grants from various funding sources. This module allows charity organizations to effectively track grant applications, monitor their progress, and accurately allocate funds to specific projects or initiatives. By maintaining transparency and accountability in financial management, organizations can showcase their responsible stewardship to potential donors and granting organizations.</p></div>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Industries",
+      "path": "/ar/industries/"
+    },
+    {
+      "label": "Non- Profit Organizations",
+      "path": "/ar/industries/non-profit-organizations/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-daa661fa88": {
+      "id": "m-daa661fa88",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Non- Profit Organizations",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoQAAoAA4BaJZQAD4xrPQyOrQAA/s9xq1+f+wktMr27MeivR+1iPVZV7Bd1N/IEd1xZdryVW95UceLRi6MeIgjENz22bPQadV1iwFP59TvP4sjMUnwltrHoRVQCHBst/M4AAA=="
+    }
+  }
+}

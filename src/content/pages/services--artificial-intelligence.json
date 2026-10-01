@@ -1,6 +1,11 @@
 {
   "id": "services--artificial-intelligence",
   "kind": "service",
+  "lang": "en",
+  "alternates": {
+    "en": "/services/artificial-intelligence/",
+    "ar": "/ar/services/artificial-intelligence/"
+  },
   "path": "/services/artificial-intelligence/",
   "title": "Artificial Intelligence",
   "sourceUrl": "https://compassint.org/services/artificial_intelligence",

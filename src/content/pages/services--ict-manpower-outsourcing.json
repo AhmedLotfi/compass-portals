@@ -1,6 +1,11 @@
 {
   "id": "services--ict-manpower-outsourcing",
   "kind": "service",
+  "lang": "en",
+  "alternates": {
+    "en": "/services/ict-manpower-outsourcing/",
+    "ar": "/ar/services/ict-manpower-outsourcing/"
+  },
   "path": "/services/ict-manpower-outsourcing/",
   "title": "ICT Manpower & Outsourcing",
   "sourceUrl": "https://compassint.org/services/ict_manpower_%26_outsourcing",

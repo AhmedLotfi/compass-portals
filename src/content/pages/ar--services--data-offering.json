@@ -1,0 +1,313 @@
+{
+  "id": "ar--services--data-offering",
+  "kind": "service",
+  "lang": "ar",
+  "alternates": {
+    "en": "/services/data-offering/",
+    "ar": "/ar/services/data-offering/"
+  },
+  "path": "/ar/services/data-offering/",
+  "title": "خدمات البيانات",
+  "sourceUrl": "https://compassint.org/services/data_offering",
+  "seo": {},
+  "hero": {
+    "title": "خدمات البيانات",
+    "lede": ",نمكن أعمالك من خلال حلول بيانات ذكية مدعومة بالذكاء الاصطناعي توفّر رؤى دقيقة لاتخاذ قرارات أفضل.من دمج البيانات إلى التحليلات والتصورات، نحوّل البيانات الخام إلى قيمة حقيقية.عزّز الابتكار، وحقق الكفاءة، وابقَ في الصدارة مع بيانات تعمل لصالحك",
+    "media": "m-4d0c8f13e4",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-ac0e001e80"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تُزوّد ​​خدمات عرض البيانات المؤسسات بالأدوات والقدرات اللازمة لإدارة بياناتها والاستفادة منها بفعالية. تُغطي هذه الخدمات دورة حياة البيانات بأكملها، بدءًا من جمعها وتخزينها، وصولًا إلى معالجتها وتحليلها وحوكمتها، مما يُمكّن الشركات من تحويل المعلومات الخام إلى رؤى قيّمة. بتطبيق استراتيجية بيانات فعّالة، يُمكن للشركات تعزيز كفاءتها التشغيلية، وتحسين عملية اتخاذ القرارات، واكتساب ميزة تنافسية. سواءً كانت تتعامل مع بيانات مُهيكلة أو غير مُهيكلة، أو أنظمة محلية أو بيئات سحابية، تضمن خدمات عرض البيانات دقة المعلومات وسهولة الوصول إليها وأمانها. في ظلّ النموّ السريع لأحجام البيانات، تُعدّ هذه الخدمات أساسية لأيّ مؤسسة تسعى إلى أن تصبح مُعتمدة على البيانات ومُستعدة للمستقبل.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "التركيز على إدارة البيانات",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-ad051ea28b"
+        },
+        {
+          "type": "richText",
+          "html": "<p>في <strong>شركة كومباس إنترناشونال</strong>، نساعد الشركات على تنظيم بياناتها وإدارتها بشكل فعّال حتى تتمكّن من اتخاذ قرارات أفضل وبشكل أسرع.</p> <p>خدمتنا في إدارة البيانات تحل هذه المشاكل من خلال:</p> <ul> <li><p>جمع البيانات في مكان واحد</p></li> <li><p>الحفاظ على دقتها وتحديثها باستمرار</p></li> <li><p>تسهيل الوصول إليها واستخدامها في الوقت المناسب</p></li> <li><p>مساعدة فريقك على العمل بكفاءة من خلال معلومات مباشرة وفورية</p></li> </ul> <p>سواء كانت بيانات عملاء أو مبيعات أو تقارير داخلية – نحن نضمن أن بياناتك تخدمك وتدعم نجاح عملك، بدلاً من أن تكون عبئاً عليك.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الحلول التقنية المتقدمة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-e01ae2f850"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تركّز شركتنا على أهمية تشغيل البيانات بكفاءة، الحوكمة الصحيحة للبيانات، واعتماد استراتيجية تعتمد على البيانات في اتخاذ القرار. نقدم حلول متكاملة تشمل:</p> <p>نظام شامل للتدقيق والإدارة</p> <p>خصائص أمان قوية لحماية البيانات</p> <p>أدوات متقدمة لإدارة المستندات، الصور، التقارير والطباعة</p> <p>نظام موافقات متعددة المستويات في جميع الأقسام</p> <p>تكامل مع أنظمة الموارد البشرية، إدارة العلاقات مع العملاء (CRM)، التأمين البنكي، مستودع البيانات، والحسابات العامة</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "الذكاء الاصطناعي وتحويل البيانات",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-387a4e5b3a"
+        },
+        {
+          "type": "richText",
+          "html": "<p>الذكاء الاصطناعي وتحويل البيانات هما جزء أساسي من خدماتنا، حيث نوفر لعملائنا:</p> <p>تحليلات وصفية</p> <p>تحليلات تنبؤية</p> <p>تحليلات مدمجة داخل الأنظمة</p> <p>تحليلات توجيهية تساعد في اتخاذ القرار</p> <p>تهدف حلولنا إلى أتمتة وتبسيط إدارة البيانات، لضمان عمليات مستدامة وآلية على المدى الطويل. وتشمل أبرز المزايا:</p> <p>نظام Enterprise Service Bus لدمج مختلف خدمات وأنظمة التأمين بسلاسة</p> <p>نظام إدارة جداول الأسعار لضبط وإدارة أسعار التأمين بدقة وكفاءة</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "معالجة نقاط الضعف في الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-50aedcf1b8"
+        },
+        {
+          "type": "richText",
+          "html": "<p>نحن نساعد الشركات على مواجهة التحديات الشائعة مثل <strong>إدارة الهيكل الإداري، اكتشاف التكرار في البيانات، تحديد ملكية البيانات، وأتمتة العمليات اليدوية</strong>. توفر حلولنا أدوات تقارير شاملة تمكّن الإدارة من متابعة الأنشطة اليومية واتخاذ قرارات سريعة ومدروسة. وتشمل المزايا الإضافية:</p> <ul> <li><p>أدوات تصميم تقارير للمستخدم النهائي تدعم قوالب Microsoft Word</p></li> <li><p>تقارير قابلة للتخصيص وسهلة الاستخدام</p></li> </ul>"
+        }
+      ]
+    },
+    {
+      "id": "section-6",
+      "title": "الرسالة والعرض",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9311c19d44"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تهدف شركة كومباس إلى تقديم <strong>حلول مميزة في مجال الذكاء الاصطناعي والبيانات</strong>، لمساعدة العملاء على تحقيق أهدافهم من خلال تحول شامل في البيانات والبنية التحتية لتكنولوجيا المعلومات. وتشمل خدماتنا:</p> <ul> <li><p>مجموعة من الحلول والخدمات المبنية على الملكية الفكرية</p></li> <li><p>إدارة بيانات قوية ومستدامة</p></li> <li><p>تحسين كفاءة العمليات التشغيلية</p></li> </ul>"
+        }
+      ]
+    },
+    {
+      "id": "section-7",
+      "title": "الخدمات وحلول الملكية الفكرية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-b53849ba5a"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تشمل عروض شركة كومباس مجموعة متنوعة من <strong>الخدمات والحلول المبنية على الملكية الفكرية</strong>، والمصممة لتلبية احتياجات الشركات بشكل دقيق. وتشمل خدماتنا:</p> <ul> <li><p>ذكاء الأعمال والتحليلات</p></li> <li><p>حوكمة البيانات وإدارتها</p></li> <li><p>إدارة البنية التحتية لتكنولوجيا المعلومات</p></li> <li><p>تطوير البرمجيات حسب الطلب</p></li> <li><p>تكامل الأنظمة والدعم الفني</p></li> </ul> <p>أما حلولنا المبنية على الملكية الفكرية، فهي مصممة لتعزيز القدرات التشغيلية، وتشمل:</p> <ul> <li><p>أنظمة ERP لتبسيط العمليات التجارية</p></li> <li><p>أدوات تحليل البيانات لدعم اتخاذ القرار</p></li> <li><p>حلول مرنة لأتمتة سير العمل والعمليات</p></li> </ul>"
+        }
+      ]
+    },
+    {
+      "id": "section-8",
+      "title": "العروض الشاملة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-5e0f6e7229"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تعكس عروضنا <strong>التنوع الكبير في الخدمات والحلول المبنية على الملكية الفكرية</strong> التي نقدمها. نركز على توفير <strong>حلول متكاملة من البداية للنهاية</strong> تغطي الجوانب التالية:</p> <ul> <li><p>تشغيل البيانات وحوكمتها</p></li> <li><p>تحليلات البيانات المدعومة بالذكاء الاصطناعي</p></li> <li><p>أتمتة العمليات التجارية</p></li> <li><p>البنية التحتية لتكنولوجيا المعلومات والدعم الفني</p></li> <li><p>حلول برمجية مصممة حسب احتياجات العميل</p></li> </ul>"
+        }
+      ]
+    },
+    {
+      "id": "section-9",
+      "title": "التأثير التحويلي",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>تولي شركة كومباس أهمية كبيرة للقوة التحويلية للذكاء الاصطناعي والبيانات في:</p> <ul> <li><p>تحسين تجربة العملاء</p></li> <li><p>رفع كفاءة العمليات التشغيلية</p></li> <li><p>تمكين الاستفادة التجارية من البيانات (Data Monetization)</p></li> </ul>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Services",
+      "path": "/ar/services/"
+    },
+    {
+      "label": "خدمات البيانات",
+      "path": "/ar/services/data-offering/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-387a4e5b3a": {
+      "id": "m-387a4e5b3a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "AI & Data Transformation",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAoAA4BaJbACdAEalelx50AA/u0gWb/nWlUI2bNw1gm8iYEKDTawWawB3/YXJ+KGk/8KTnz8qa8KycmoLIlAewAAAA=="
+    },
+    "m-4d0c8f13e4": {
+      "id": "m-4d0c8f13e4",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Data Offering",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQAAoAA4BaJYwC7H8AgpTK6MrNZmFAAP7oUVPTkdcA4QjnnhZO3hb7QjetWAOrI1QSTknDYVWmiqZ8niaR6267R+R8nW0mn2EGV8bA3OdDUxtM5Uhj/LDLAq01onlnKWl1fAAA"
+    },
+    "m-50aedcf1b8": {
+      "id": "m-50aedcf1b8",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Addressing Business Pain Points",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAoAA4BaJZwAAxYov7wAAP6Z5YplWG2vJ7BE0PE9GCDB6775JYDszWXay6U/GPGaRJbGCmp3AERamLxWrx/xjArmqZkAeEBBUAAA"
+    },
+    "m-5e0f6e7229": {
+      "id": "m-5e0f6e7229",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Comprehensive Offerings",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAoAA4BaJYwCdAEQJlulZhkAAP7s38Zdocvozhe985U6EAzrtfZUR+fIl+B2jNXcRyQHp5QbKvNHQcm3v8jnyF0GAAAA"
+    },
+    "m-9311c19d44": {
+      "id": "m-9311c19d44",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Mission & Offering",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAQCdASoQAAoAA4BaJQAAUsLcwAD+7xVG0HubykqBh0azzFpHGjhHN92B/Cg65O2Uii9G6FAg0JEze9Y08oVzCN0y5bRmTHFdqfR8YoAAAA=="
+    },
+    "m-ac0e001e80": {
+      "id": "m-ac0e001e80",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwAgCdASoQAAoAA4BaJYgCdAYt9GbQEYLriAD2oqe8RZz9VEkPodbbM+MvLi/2la2+krCnnfVs9pA03djWxXzuRw9/U25/6epv0K+S3I6tQURblVaXBxGI5x59KxNIyQ38scE1paZvYNQBGAA="
+    },
+    "m-ad051ea28b": {
+      "id": "m-ad051ea28b",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Data Management Focus",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoAA4BaJZwAAujFYUG7PgAA/vSRjuGCJCPgv4NG+CPLN9rLtZNTLiWv2XJf+BS6XAmrhYOv0u15b3wn9zKVFqvMz8ZvMwTbUIAA"
+    },
+    "m-b53849ba5a": {
+      "id": "m-b53849ba5a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Services & IP Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAoAA4BaJQBOgMXX7QLlIsIwLIAA/nMRC2jdxy8QqKr94IXdTWdxtbpTsijpwMrWeYEdXm1CHAsjB8Zw0e67OfhkKyBqCTTk3bpJWxhgesmiA8/9ZfkWOG84AA=="
+    },
+    "m-e01ae2f850": {
+      "id": "m-e01ae2f850",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Advanced Technical Solutions",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAoAA4BaJZwAAudlomgYNsAA/vN7Ou2/Cr32G19gRf1Wa19m59300Det+xNmYbb6cx+NKEyM0Tqw/0FrwvB/dEnT7wdETdwcAA=="
+    }
+  }
+}

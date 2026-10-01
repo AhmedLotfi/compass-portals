@@ -46,5 +46,8 @@
   "network.youtube": "YouTube",
   "network.whatsapp": "WhatsApp",
   "network.tiktok": "TikTok",
-  "network.snapchat": "Snapchat"
+  "network.snapchat": "Snapchat",
+  "languageName": "English",
+  "languageSwitch": "Read this page in English",
+  "llmsArabic": "Pages in Arabic"
 }

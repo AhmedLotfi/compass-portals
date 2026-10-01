@@ -1,3 +1,4 @@
+import { Lang } from '../../core/i18n/lang';
 import { Component, computed, inject, input, signal } from '@angular/core';
 import {
   email,
@@ -81,11 +82,16 @@ export class ContactForm {
     website: '',
   });
 
+  private readonly lang = inject(Lang);
+
   protected readonly contact = form(this.model, (path) => {
     for (const slot of ['name', 'email', 'phone', 'company', 'subject', 'message'] as const) {
-      required(path[slot], { when: () => this.isRequired(slot), message: copy('formRequired') });
+      required(path[slot], {
+        when: () => this.isRequired(slot),
+        message: copy('formRequired', {}, this.lang.current()),
+      });
     }
-    email(path.email, { message: copy('formEmail') });
+    email(path.email, { message: copy('formEmail', {}, this.lang.current()) });
     maxLength(path.message, 5000);
     validate(path.website, ({ value }) => (value() ? { kind: 'spam' } : undefined));
   });

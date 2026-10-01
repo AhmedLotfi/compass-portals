@@ -186,6 +186,12 @@ export const SectionSchema = z.object({
   blocks: z.array(BlockSchema),
 });
 
+/** The site's languages: English, and Arabic where the CMS has it. */
+export const LangSchema = z.enum(['en', 'ar']);
+
+/** The same page in each language, by path. */
+export const AlternatesSchema = z.object({ en: z.string().optional(), ar: z.string().optional() });
+
 export const PageKindSchema = z.enum([
   'home',
   'product-index',
@@ -201,6 +207,10 @@ export const PageKindSchema = z.enum([
 export const PageDocSchema = z.object({
   id: z.string(),
   kind: PageKindSchema,
+  /** The page's language (English when absent). */
+  lang: LangSchema.optional(),
+  /** Translations that are real pairs (hreflang); absent for a page that only repeats English. */
+  alternates: AlternatesSchema.optional(),
   /** New path, with the old site's trailing slash kept. */
   path: z.string().regex(/^\/(?:[^\s?#]+\/)?$/),
   title: z.string(),
@@ -215,6 +225,8 @@ export const PageDocSchema = z.object({
     descriptionSource: ProvenanceSchema.optional(),
     image: z.string().optional(),
     noindex: z.boolean().optional(),
+    /** A different canonical page (path), e.g. the English page for an untranslated Arabic one. */
+    canonical: z.string().optional(),
   }),
   hero: z.object({
     title: z.string(),
@@ -236,6 +248,7 @@ export const RouteEntrySchema = z.object({
   id: z.string(),
   path: z.string(),
   kind: PageKindSchema,
+  lang: LangSchema.optional(),
   /** Router params for prerendering (all strings). */
   params: z.record(z.string(), z.string()),
   parentId: z.string().nullable(),
@@ -255,7 +268,7 @@ export const RouteIndexSchema = z.object({
 
 /** What the router needs: one static route per page. */
 export const RouteTableSchema = z.object({
-  routes: z.array(RouteEntrySchema.pick({ id: true, path: true, kind: true })),
+  routes: z.array(RouteEntrySchema.pick({ id: true, path: true, kind: true, lang: true })),
 });
 
 export interface NavItem {
@@ -300,6 +313,20 @@ export const SiteSchema = z.object({
   social: z.array(z.object({ network: z.string(), url: z.url() })),
   apps: z.array(z.object({ store: z.enum(['google-play', 'app-store']), url: z.url() })),
   footer: z.object({ copyright: z.string().optional() }),
+  /** Chrome for the other languages (navigation and tagline in that language's tree). */
+  i18n: z
+    .object({
+      ar: z
+        .object({
+          tagline: z.string().optional(),
+          navigation: z.object({
+            header: z.array(NavItemSchema),
+            footer: z.array(NavItemSchema),
+          }),
+        })
+        .optional(),
+    })
+    .optional(),
   /** The logo and icon media records. */
   media: z.record(z.string(), MediaRefSchema),
   snapshot: z.object({
@@ -321,6 +348,8 @@ export const RedirectsSchema = z.object({ redirects: z.array(RedirectSchema) });
 export const MediaIndexSchema = z.object({ media: z.array(MediaSchema) });
 
 export type Provenance = z.infer<typeof ProvenanceSchema>;
+export type Lang = z.infer<typeof LangSchema>;
+export type Alternates = z.infer<typeof AlternatesSchema>;
 export type Media = z.infer<typeof MediaSchema>;
 export type MediaRef = z.infer<typeof MediaRefSchema>;
 export type RouteCard = z.infer<typeof RouteCardSchema>;

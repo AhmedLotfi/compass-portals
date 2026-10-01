@@ -10,7 +10,13 @@ sync turns the archived API responses into typed JSON and self-hosted images; ev
 - Every fact, product description, feature, contact detail, and image comes **verbatim** from compassint.org,
   through the content sync. Never invent facts, statistics, testimonials, clients, or offers.
 - The only strings that don't come from the site are short UI and marketing microcopy (CTA labels, section
-  labels, meta descriptions where the site has none). They all live in `src/app/core/copy/microcopy.en.json`.
+  labels, meta descriptions where the site has none). They all live in `src/app/core/copy/microcopy.en.json`
+  and its Arabic twin `microcopy.ar.json` (same keys; a unit test checks them).
+- Arabic (`/ar/…`): each CMS field shows its `*Ar` value when that really is Arabic, otherwise the English value,
+  marked `lang="en" dir="ltr"` (rich text by the sync, plain strings by the `appAutoLang` directive). The old front
+  end has no Arabic interface text, so its labels come from `tools/content-sync/cms/labels.ar.json`. Both Arabic
+  files are **hand-written drafts awaiting the owner's review**. An Arabic page with no Arabic CMS text names the
+  English page as canonical and has no hreflang pair.
 - Typos, demo text, and conflicting facts found on the site are reported to the user, never fixed or dropped silently.
 - Mirror the site's languages. Never machine-translate.
 - The content parity and provenance checks must pass before anything ships (`npm run verify:dist`).
@@ -49,7 +55,8 @@ Run `ng build` after every change and fix errors before moving on.
 - `src/app/`: the Angular app (standalone components, signals, zoneless, OnPush by default).
   - `app.routes.ts`: one static route per synced page (from `@content/routes.json`), plus `404` and `**`;
     `app.routes.server.ts` prerenders them all (`outputMode: "static"` in `angular.json`).
-  - `core/`: `content` (ContentStore, page resolver), `copy` (the microcopy file + `copy` pipe), `media`
+  - `core/`: `content` (ContentStore, page resolver), `copy` (the microcopy files + `copy` pipe), `i18n` (`Lang`
+    service set by the page resolver, `AutoLang` directive, `counterpart()` for the language switch), `media`
     (`MediaImage`, the NgOptimizedImage loader), `seo` (SeoService, title strategy, JSON-LD), `contact`.
   - `layout/`: header (products disclosure, mobile `<dialog>`), footer, breadcrumbs, nav links, icons.
   - `shared/`: section renderer and one component per block type; `SmartLink` for synced hrefs.
@@ -74,7 +81,8 @@ Run `ng build` after every change and fix errors before moving on.
     header and footer, `sync.ts` builds the snapshot and the redirects (old URLs end in a per-visit
     ciphertext, so they redirect by prefix: a redirect `from` ending in `*`), and `fetch.ts` downloads every
     image the API names.
-  - `media/build.ts`: image variants, share images, documents, favicons and the manifest (before build/start).
+  - `media/build.ts`: image variants, share images, documents, favicons and the manifest (before build/start),
+    and the Arabic web fonts cut to the letters the Arabic pages use (`public/fonts/*-site.woff2`).
   - `postbuild/`: after `ng build`, fails the build if a synced page wasn't prerendered (or has the wrong
     canonical/robots), moves the 404 page to `/404.html`, removes `index.csr.html`, and writes `sitemap.xml`,
     `robots.txt`, `llms.txt`, `llms-full.txt` and the hosting rules (`_redirects`, `_headers`, `.htaccess`,

@@ -1,0 +1,278 @@
+{
+  "id": "ar--features--other-features",
+  "kind": "page",
+  "lang": "ar",
+  "alternates": {
+    "en": "/features/other-features/",
+    "ar": "/ar/features/other-features/"
+  },
+  "path": "/ar/features/other-features/",
+  "title": "Other Features",
+  "sourceUrl": "https://compassint.org/features/other_features",
+  "seo": {},
+  "hero": {
+    "title": "Other Features",
+    "lede": "Compass offers a comprehensive suite of features designed to enhance business operations. These include automated quote generation for streamlined sales processes, ensuring prompt payments and minimizing delays. The system also includes automated reminders for upcoming payment deadlines, ensuring payments are made on time and reducing the risk of missed payments. Additionally, our solutions provide robust inventory tracking and validation capabilities, allowing businesses to efficiently manage and control their inventory levels.",
+    "media": "m-1e5a6aed27",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "عروض الأسعار الآلية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-6ae2712f6c"
+        },
+        {
+          "type": "richText",
+          "html": "<p>ميزة \"العروض التلقائية\" ضمن حلولنا تُعد أداة محورية تُحدث تحولًا في عملية المبيعات لعملائنا. من خلال أتمتة إنشاء العروض السعرية، يتم القضاء على العمليات الحسابية اليدوية وتقليل الأعمال الورقية.</p> <p>ويستفيد عملاؤنا حاليًا من هذه الميزة بعدة طرق. أولًا، تُخفف العبء على فرق المبيعات من خلال أتمتة العملية بالكامل، مما يتيح لمندوبي المبيعات تخصيص وقتهم لبناء علاقات أقوى مع العملاء وإتمام الصفقات، بدلاً من الانشغال بالمهام الإدارية.</p> <p>علاوة على ذلك، تضمن ميزة العروض التلقائية الدقة والاتساق في عملية تقديم العروض. ومن خلال القوالب المعدة مسبقًا وقواعد التسعير الموحدة، يمكن للعملاء الوثوق بأن عروضهم خالية من الأخطاء ومتوافقة مع سياسات العمل.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "ماذا أيضًا عن ميزة العروض التلقائية؟",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-51c1446b27"
+        },
+        {
+          "type": "richText",
+          "html": "<p>علاوة على ذلك، تُمكّن هذه الميزة ضمن حلولنا العملاء من الاستجابة السريعة لاستفسارات وطلبات العملاء. فمن خلال إنشاء العروض بشكل فوري، يمكن لفرق المبيعات إعداد عروض أسعار في الحال، مما يؤدي إلى ردود أسرع وعملاء أكثر رضا. هذه الكفاءة تُعزز من فرص إغلاق الصفقات بشكل أسرع.</p> <p>بالإضافة إلى ذلك، تتيح ميزة العروض التلقائية في نظامنا للعملاء تخصيص العروض بسهولة لتتناسب مع احتياجات كل عميل. يمكنهم تضمين رسائل مخصصة، وعروض خاصة، وخصومات، مما يجعل كل عرض مصمم خصيصًا للعميل، ويُحسّن من تجربة البيع.</p> <p><strong>باختصار،</strong> تقوم هذه الميزة بـ:</p> <ul> <li><p>أتمتة إنشاء العروض السعرية</p></li> <li><p>تقليل عبء العمل على فرق المبيعات</p></li> <li><p>ضمان الدقة والاتساق</p></li> <li><p>تسريع أوقات الاستجابة</p></li> <li><p>دعم تقديم عروض مخصصة للعملاء</p></li> </ul> <p>مما يؤدي إلى تحسين الكفاءة التشغيلية وتعزيز رضا العملاء وزيادة فرص إتمام الصفقات.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "تتبع المخزون",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-f9687917ed"
+        },
+        {
+          "type": "richText",
+          "html": "<p>ضمن حلول <strong>كومباس</strong>، توفر ميزة <strong>تتبع المخزون</strong> للعملاء حلاً قويًا وفعالًا لإدارة مخزونهم. وتُقدّم هذه الميزة مجموعة واسعة من الفوائد التي تُخفف من عبء العمل على العملاء وتعزز من كفاءة عمليات إدارة المخزون لديهم بشكل عام.</p> <p>من أبرز مزايا ميزة تتبع المخزون من <strong>كومباس</strong> هي <strong>الرؤية اللحظية</strong> لمستويات المخزون. يمكن للعملاء مراقبة كميات المنتجات وتوفرها في أي وقت، مما يمكّنهم من اتخاذ قرارات مدروسة بشأن إعادة التوريد وتنفيذ الطلبات. هذا يُلغي الحاجة إلى الفحص اليدوي للمخزون والتخمين، ويوفر الوقت ويقلل من مخاطر نفاد المخزون أو تكدسه.</p> <p>بالإضافة إلى ذلك، تساعد ميزة تتبع المخزون من <strong>كومباس</strong> العملاء على <strong>تحسين إدارة المخزون</strong> من خلال توفير تحليلات ورؤى قيّمة. يمكن للعملاء الوصول إلى تقارير تفصيلية حول دوران المخزون، وحركة المنتجات، وأداء العناصر، مما يمكّنهم من تحديد الاتجاهات، وتوقّع الطلب، واتخاذ قرارات قائمة على البيانات. هذه الإمكانيات تُمكّن العملاء من تبسيط مخزونهم، وتقليل تكاليف التخزين، وتحسين الكفاءة التشغيلية بشكل عام.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "المخزون وخصائصه",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-62a1073f5b"
+        },
+        {
+          "type": "richText",
+          "html": "<p>ضمن حلول <strong>كومباس</strong>، تُعزّز ميزة <strong>تتبع المخزون</strong> من كفاءة إدارة المخزون لدى العملاء من خلال تقديم تحليلات وبيانات قيّمة. حيث يحصل العملاء على تقارير تفصيلية حول دوران المخزون، وحركة الأصناف، وأداء المنتجات، مما يمكّنهم من تحديد الاتجاهات، وتوقّع الطلب، واتخاذ قرارات مبنية على بيانات دقيقة. هذا يُمكّنهم من تبسيط عمليات إدارة المخزون، وخفض تكاليف التخزين، وتحسين الكفاءة التشغيلية بشكل عام.</p> <p>علاوة على ذلك، تتيح هذه الميزة للعملاء إعداد <strong>تنبيهات وإشعارات تلقائية</strong> في حال انخفاض مستويات المخزون أو انتهاء صلاحية المنتجات، مما يضمن اتخاذ إجراءات فورية ويمنع حدوث مشكلات في المخزون. ومن خلال تطبيق تدابير استباقية في إدارة المخزون، يمكن للعملاء تقليل حالات نفاد المخزون، والحد من الفاقد، وتحسين سلسلة التوريد بكفاءة.</p> <p>بالإضافة إلى ذلك، تُبسط ميزة تتبع المخزون من <strong>كومباس</strong> عمليات الجرد وتقلل من الجهد اليدوي. فهي تدعم <strong>المسح بالباركود</strong> وتتكامل بسلاسة مع أنظمة نقاط البيع، مما يسهّل تحديث بيانات المخزون بدقة والحفاظ على سجلات منظمة. هذا يُلغي الحاجة إلى إدخال البيانات يدويًا، ويقلل من الأخطاء، ويوفر الوقت، مما يتيح للعملاء التركيز على المهام التجارية الأكثر أهمية.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "كيف يساعد العملاء؟",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-cdba91ffa5"
+        },
+        {
+          "type": "richText",
+          "html": "<p>علاوة على ذلك، يُكمل <strong>وحدة تخطيط وتوقّع المخزون</strong> في حلولنا ميزة تتبع المخزون من خلال تعزيز قدرة العملاء على إدارة المخزون بفعالية أكبر. فمن خلال تحليل البيانات التاريخية وأنماط الطلب، يمكن للعملاء توقّع احتياجات المخزون المستقبلية بدقة. وتتيح هذه القدرة <strong>التخطيط الاستباقي</strong> لأنشطة الإنتاج والتوريد، مما يضمن الحفاظ على مستويات مخزون مثالية وتقليل مخاطر عدم التوازن في المخزون. ومن خلال تحسين عمليات إدارة المخزون واتخاذ قرارات مبنية على رؤى مستندة إلى البيانات، يمكن للعملاء تعزيز الكفاءة التشغيلية وزيادة الربحية عبر سلسلة التوريد الخاصة بهم.</p> <p>وباختصار، فإن <strong>مجموعة حلول كومباس المتكاملة لإدارة المخزون</strong> تمكّن العملاء من قدرات متقدمة لتبسيط العمليات، وتقليل التكاليف، وتحسين رضا العملاء من خلال ممارسات إدارة مخزون فعالة وذكية.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-6",
+      "title": "تذكيرات",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-7c9fb831a3"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تُعد <strong>ميزة التذكيرات</strong> ضمن حلولنا أداة قوية صُممت لتعزيز كفاءة المؤسسات وإدارة المهام لعملائنا. وتُقدّم هذه الميزة العديد من الفوائد التي تهدف إلى تقليل عبء العمل وتحسين الإنتاجية.</p> <p>من أبرز مزايا ميزة التذكيرات هي <strong>قدرتها على أتمتة الإشعارات</strong> المتعلقة بالمهام الحرجة، والمواعيد النهائية، والأحداث المهمة. حيث يمكن للعملاء تخصيص التذكيرات لمجموعة متنوعة من الأنشطة مثل مراحل المشاريع، ومواعيد الدفع، والاجتماعات، أو إجراءات المتابعة. ويتم إرسال هذه التذكيرات بكل سلاسة عبر البريد الإلكتروني، أو الرسائل النصية، أو من خلال مركز الإشعارات داخل النظام، مما يضمن بقاء العملاء على اطلاع واستعداد دائم.</p> <p>ومن خلال <strong>إلغاء الحاجة للتتبع اليدوي</strong> وتعزيز تذكّر المهام، تُساعد ميزة التذكيرات في تحسين إدارة الوقت، وتمكّن العملاء من تحديد أولوياتهم بفعالية وإنجاز مهامهم في الوقت المناسب.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-7",
+      "title": "ماذا أيضاً في التذكيرات؟",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-e319169f4c"
+        },
+        {
+          "type": "richText",
+          "html": "<p>استمرارًا لالتزامنا بتحسين الكفاءة التنظيمية، تساعد <strong>ميزة التذكيرات</strong> في حلولنا العملاء على إدارة مهامهم بشكل أفضل. فهي تتيح لهم <strong>تحديد الأولويات وتصنيف المهام</strong> من خلال تعيين مواعيد نهائية، وتحديد مستويات الأهمية، واستخدام العلامات (Tags). هذا النهج المنظم يُمكّن العملاء من التركيز على المهام الأكثر أهمية، وتوزيع الموارد بفعالية، وتجنّب الضغط الناتج عن التعامل مع عدة مسؤوليات في آنٍ واحد. ومن خلال توفير رؤية واضحة للمهام القادمة، تساعد ميزة التذكيرات العملاء على <strong>تخطيط أعمالهم بكفاءة والالتزام بالمواعيد النهائية باستمرار</strong>.</p> <p>تُقدّم هذه الميزة تنبيهات مؤتمتة، وسهولة في تحديد أولويات المهام، وتعاونًا سلسًا بين فرق العمل، ورؤى دقيقة حول إدارة عبء العمل. وباستخدامها، يتمكّن العملاء من <strong>تبسيط إدارة المهام، وتقليل التتبع اليدوي، وزيادة الإنتاجية بشكل ملحوظ</strong>.</p>"
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Features",
+      "path": "/ar/features/"
+    },
+    {
+      "label": "Other Features",
+      "path": "/ar/features/other-features/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-1e5a6aed27": {
+      "id": "m-1e5a6aed27",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 854,
+      "alt": "Other Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAsAA4BaJQBOgBSisc+egAD+7XJlxlzGIUph3lPlatV74KfXda3ZKwXRAnsl5CPsT/p/ysTCYF9+0h5o+v8vSyVjFZIm+AmJu4x4AAA="
+    },
+    "m-51c1446b27": {
+      "id": "m-51c1446b27",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "What more on Automated Quotes?",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAAsAA4BaJYgCdAEXgLIEunxKfwAA/tc/10Vj8gao4FX3EWY99/dJtF7RwIC9d1WFThqVaEJNJeeXcP5dDP7pCtZu1k0VOfZAgD82SxQDti4HiyagjxUAAAA="
+    },
+    "m-62a1073f5b": {
+      "id": "m-62a1073f5b",
+      "mime": "image/jpeg",
+      "width": 800,
+      "height": 533,
+      "alt": "Inventory & Its Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        800
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQAgCdASoQAAsAA4BaJYgCdAYr7BAs3a/QAPfF1tJD9eYR/nOuRaM6oNBnnQ09GFLaSmrPzcbLbUkxfGgqjKyduM7utauYzHmYcM0/aJDM2WpdzyRfRHtsSXmON0kOF96jpce0VSpEhVmApxL3kE6QwAA="
+    },
+    "m-6ae2712f6c": {
+      "id": "m-6ae2712f6c",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Automated Quotes",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwAgCdASoQAAsAA4BaJbACdAYsPWbBlu52SADiYpjDh4wNdkNKeAgGHc03keqQAj1ALClHwCB8NHUqcGvH1X9MOTtd8Msy3vj8gWtOY+0iRstbsKwPuDxAaqZ1CIw0Lkd+hTgUAqWIlLo0i3XR0AAA"
+    },
+    "m-7c9fb831a3": {
+      "id": "m-7c9fb831a3",
+      "mime": "image/jpeg",
+      "width": 612,
+      "height": 387,
+      "alt": "Reminders",
+      "widths": [
+        320,
+        480,
+        612
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAQCdASoQAAoAA4BaJYwCdABle94AAP5mgL+P/tWIIT1h+g3nibjbwi0Ti++JgxUwZBA22Cv124d08VFehM+C71UvAAif9cwlhTgLe+4Vm1jDR3DxxJc5ycAAAA=="
+    },
+    "m-cdba91ffa5": {
+      "id": "m-cdba91ffa5",
+      "mime": "image/jpeg",
+      "width": 848,
+      "height": 565,
+      "alt": "How it helps clients?",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        848
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAsAA4BaJbACdAYvg/eMlmAAAPzs7fnDhk9yeJQQdEgT7sD/Q4JkS9HEBc7By7A4ndGzyoNpbvFmdo9pY5dZje4Rm4qghYgwJCMhpiXQpvWxSZUaBMANz2A2ePIOqSAAAA=="
+    },
+    "m-e319169f4c": {
+      "id": "m-e319169f4c",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 665,
+      "alt": "What more with Reminders?",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAsAA4BaJZQCw7D0unjcUAbF7sAA/k9FxCNrVJd1JG7SbENbEqS3Zg6x8r1QqMNHTEWkjP0hVKIJ8d+r8VxdbAz+bLAhgept2otniE4PRviVPN7Apre5WAAAAA=="
+    },
+    "m-f9687917ed": {
+      "id": "m-f9687917ed",
+      "mime": "image/jpeg",
+      "width": 1061,
+      "height": 707,
+      "alt": "Inventory Tracking",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1061
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQAgCdASoQAAsAA4BaJbAC7AYuRMBFE2YAAM4zZHkTtatjxLjeLofw77Y5QEJ9+BKPGbUP/psG5FcRFtURp3fWyM/Jo+aLXw+Hd4sDC7kSdnc8TW/xdWBFOVHklZIs3cE/A/SBgAK8yFqd9iAAAA=="
+    }
+  }
+}

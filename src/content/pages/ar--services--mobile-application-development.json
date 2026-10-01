@@ -1,0 +1,148 @@
+{
+  "id": "ar--services--mobile-application-development",
+  "kind": "service",
+  "lang": "ar",
+  "alternates": {
+    "en": "/services/mobile-application-development/",
+    "ar": "/ar/services/mobile-application-development/"
+  },
+  "path": "/ar/services/mobile-application-development/",
+  "title": "تطوير تطبيقات الموبايل",
+  "sourceUrl": "https://compassint.org/services/mobile_application_development",
+  "seo": {},
+  "hero": {
+    "title": "تطوير تطبيقات الموبايل",
+    "lede": "في كومباس، نُحوّل الأفكار إلى تطبيقات جوال قوية تتميز بالأداء السلس والتفاعل العالي مع المستخدمين. وبالاستفادة من خبرتنا في تطوير التطبيقات متعددة المنصات، نبتكر حلولًا آمنة، قابلة للتوسع، وسهلة الوصول.",
+    "media": "m-3296354ec2",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-1fb825f2c8"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تقدّم كومباس إنترناشونال خدمات تطوير تطبيقات الهواتف المحمولة الشاملة، مستفيدة من خبرة فريقنا المتخصص في إنشاء تطبيقات مخصصة عبر منصات متعددة. تشمل تخصصاتنا:</p> <ul> <li><p><strong>Apple iOS</strong></p></li> <li><p><strong>Android</strong></p></li> <li><p><strong>Windows Phone 8</strong></p></li> <li><p><strong>BlackBerry OS</strong></p></li> </ul> <p>يتفوق فريقنا في تحويل متطلبات العملاء إلى حلول مبتكرة وسهلة الاستخدام، مع التركيز على الوظائف، الأمان، وتجربة المستخدم السلسة.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "ميزات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-c8ec705a54"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>تطوير تطبيقات الجوال عبر المنصات:</strong><br>خبرة واسعة في برمجة التطبيقات لأنظمة تشغيل متعددة، لضمان الوصول السهل والأداء الفعّال عبر مختلف الأجهزة والمنصات.</p> <p><strong>حلول الحكومة الإلكترونية:</strong><br>خبرة متقدمة في تطوير تطبيقات جوال مخصصة لتقديم خدمات حكومية إلكترونية بكفاءة وأمان عالٍ.</p> <p><strong>فهم عميق لسوق الخليج:</strong><br>دراية متعمقة وخبرة في تقديم حلول جوال تلبي احتياجات وتفضيلات أسواق دول مجلس التعاون الخليجي بدقة وفعالية.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الميزات التقنية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-2108d20c7a"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>فريق تقني قوي في الإمارات والهند ومصر</strong><br>نتمتع بحضور تطويري واسع يمتد عبر الإمارات والهند ومصر، مما يمكّننا من تلبية جميع احتياجات تطوير تطبيقات الجوال محليًا داخل دولة الإمارات أو عبر فرق العمل الخارجية بكفاءة عالية</p> <p><strong>حلول متقدمة لإدارة المحتوى</strong><br>نستخدم أدوات واستراتيجيات متطورة لإدارة وتحديث محتوى تطبيقات الجوال بشكل فعّال، بما يضمن استمرار ملاءمة المحتوى وتعزيز تفاعل المستخدمين باستمرار.</p> <p><strong>الالتزام بأعلى معايير الجودة</strong><br>في كومباس إنترناشونال، نلتزم بأعلى معايير الجودة في جميع مراحل تطوير تطبيقات الجوال، بدءًا من التصميم وحتى الأداء، لضمان تقديم تجارب مستخدم متميزة بشكل دائم.</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Services",
+      "path": "/ar/services/"
+    },
+    {
+      "label": "تطوير تطبيقات الموبايل",
+      "path": "/ar/services/mobile-application-development/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-1fb825f2c8": {
+      "id": "m-1fb825f2c8",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAoAA4BaJbACdH8AEYsVSIdoAAD+8x11F4bZvxcky0ifj8WSlTVail98Tt1Ds43dYrChLVSfN4WqmPk9Kc+EsDb+eqvfvUHboAAA"
+    },
+    "m-2108d20c7a": {
+      "id": "m-2108d20c7a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQAgCdASoQAAoAA4BaJQBOhxGY5Ur0WHHxgMy8AAD+7lpc2V2LNnjcbZHu6z+915ew6A5jovmnyIUscS/F7LlmKDUSPZHXPAmqO9jLltoTgh11TuutAjuKC2sUI+gwgiovbXkLcEwl0ILq5lOOQAAA"
+    },
+    "m-3296354ec2": {
+      "id": "m-3296354ec2",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Mobile Application Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAoAA4BaJbACdAEDjjuUoAD+9SMf4Vmdpx+n3LAL1LmC9cywFxRutIp8XEJPSZLRMo6IvuwZYJgRSYtzUd1UGk3R7JXCn+k3AlO5Q4pc4AAA"
+    },
+    "m-c8ec705a54": {
+      "id": "m-c8ec705a54",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAoAA4BaJagCdH8ACu5hCGAA/qnPVPbfk8GsGRFcCnGBlXhegLDNMhJcquRTIwjnPk+JWv0/4kyj7yLIDuR5/t2DHglyu8rfNwX4XS7oHa0lgejB+grBsuSAAA=="
+    }
+  }
+}

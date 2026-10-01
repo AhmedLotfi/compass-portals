@@ -1,0 +1,125 @@
+{
+  "id": "ar--features",
+  "kind": "product-category",
+  "lang": "ar",
+  "path": "/ar/features/",
+  "title": "Features",
+  "sourceUrl": "https://compassint.org/features",
+  "seo": {
+    "canonical": "/features/"
+  },
+  "hero": {
+    "title": "Features",
+    "lede": "Browse through the many features that have made our solutions functional and favourable in today's world",
+    "ctas": []
+  },
+  "sections": [],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Features",
+      "path": "/ar/features/"
+    }
+  ],
+  "children": [
+    {
+      "id": "ar--features--omni-channel-platform",
+      "path": "/ar/features/omni-channel-platform/",
+      "title": "Omni channel Platform",
+      "summary": "Drive Business Success with Omni Channel Capabilities. With our comprehensive support, businesses can harness the Omni Channel platform to deliver consistent and personalized experiences to customers across all touchpoints. Whether it's online channels, physical stores, mobile devices, or any other interaction point, we ensure a seamless and unified experience. Empower your business to effortlessly connect with customers and maximize their satisfaction with our unparalleled support.",
+      "media": "m-1e1f3fc552"
+    },
+    {
+      "id": "ar--features--business-intelligence",
+      "path": "/ar/features/business-intelligence/",
+      "title": "Business Intelligence",
+      "summary": "Harnessing the Power of Data for Informed Decision-Making and Performance Tracking. Compass's advanced Business Intelligence capabilities empower users to extract valuable insights, make informed decisions based on data, and track performance with precision. Featuring interactive visualizations, customizable reports, and real-time monitoring, businesses can analyze data seamlessly. Integration of predictive analytics and forecasting allows users to anticipate trends and take proactive actions. Collaboration tools and sharing features promote a data-driven culture across the organization. Compass's Business Intelligence support optimizes operations, identifies growth opportunities, and fosters sustainable business development.",
+      "media": "m-53d91ecc14"
+    },
+    {
+      "id": "ar--features--invoicing",
+      "path": "/ar/features/invoicing/",
+      "title": "Invoicing",
+      "summary": "Streamline Invoicing Processes and Provide Seamless Experiences. Our solution empowers businesses to optimize their invoicing operations, ensuring improved accuracy and a seamless experience for customers. With advanced features and automation, businesses can streamline billing processes, enhance efficiency, and deliver professional invoices. Our reliable support helps businesses elevate their invoicing operations, enhance customer satisfaction, and achieve greater success.",
+      "media": "m-08295d417c"
+    },
+    {
+      "id": "ar--features--other-features",
+      "path": "/ar/features/other-features/",
+      "title": "Other Features",
+      "summary": "Compass offers a comprehensive suite of features designed to enhance business operations. These include automated quote generation for streamlined sales processes, ensuring prompt payments and minimizing delays. The system also includes automated reminders for upcoming payment deadlines, ensuring payments are made on time and reducing the risk of missed payments. Additionally, our solutions provide robust inventory tracking and validation capabilities, allowing businesses to efficiently manage and control their inventory levels.",
+      "media": "m-1e5a6aed27"
+    }
+  ],
+  "media": {
+    "m-08295d417c": {
+      "id": "m-08295d417c",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 667,
+      "alt": "Invoicing",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQAgCdASoQAAsAA4BaJZQCdAYt9ynhxHUnwqDcAAD+sjyx9ilKv2+1K+sWeimI1lZZpul6iZsmxXVUmCENjQrP3Nyn3mektsZDQL/S+Vf1NPT+wbdpRtlLjM2btIM4AWG5j8AA"
+    },
+    "m-1e1f3fc552": {
+      "id": "m-1e1f3fc552",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Omni channel Platform",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAgCdASoQAAsAA4BaJZACdB2gDY6vsdfq5yqOeAAA/tJ/8rYpgoSLxuPqNYvsnMlM9xOOOoxrnMPla97BtSGgdH4i3YGPz3sIsNG82NdxQ8NBKBMgAe7lyCFuc2QlPceZM7yebxqrNbSAAAA="
+    },
+    "m-1e5a6aed27": {
+      "id": "m-1e5a6aed27",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 854,
+      "alt": "Other Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAsAA4BaJQBOgBSisc+egAD+7XJlxlzGIUph3lPlatV74KfXda3ZKwXRAnsl5CPsT/p/ysTCYF9+0h5o+v8vSyVjFZIm+AmJu4x4AAA="
+    },
+    "m-53d91ecc14": {
+      "id": "m-53d91ecc14",
+      "mime": "image/jpeg",
+      "width": 662,
+      "height": 440,
+      "alt": "Business Intelligence",
+      "widths": [
+        320,
+        480,
+        640,
+        662
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQAAsAA4BaJYwCdAYtpyLmMPtOp0gAAP7p/eQMsyK3GuYon2gFy77v6N4c2SSnPXECZCj73Bj0rn635Lge5TYH/cJZlWreWGVKe819ZzJO+wn+M19OiRMbRlc8h1Y7YhzwCYvLQAA="
+    }
+  }
+}

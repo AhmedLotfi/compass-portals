@@ -1,6 +1,11 @@
 {
   "id": "services--mobile-application-development",
   "kind": "service",
+  "lang": "en",
+  "alternates": {
+    "en": "/services/mobile-application-development/",
+    "ar": "/ar/services/mobile-application-development/"
+  },
   "path": "/services/mobile-application-development/",
   "title": "Mobile Application Development",
   "sourceUrl": "https://compassint.org/services/mobile_application_development",

@@ -46,7 +46,8 @@ export function buildGraph(
   const origin = site.origin;
   const orgId = `${origin}/#organization`;
   const websiteId = `${origin}/#website`;
-  const language = site.languages[0]?.code ?? 'en';
+  // The page's own language; the site (WebSite) is English with an Arabic tree.
+  const language = page?.lang ?? 'en';
   const logo = site.logo ? site.media[site.logo] : undefined;
 
   const organization: Record<string, unknown> = {
@@ -80,7 +81,7 @@ export function buildGraph(
     name: site.name,
     ...(site.tagline ? { description: site.tagline } : {}),
     publisher: { '@id': orgId },
-    inLanguage: language,
+    inLanguage: site.languages.map((l) => l.code),
   };
   const graph: Record<string, unknown>[] = [organization, website];
 

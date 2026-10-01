@@ -26,7 +26,13 @@ interface Face {
   file: string;
   weight: string;
   style: 'normal' | 'italic';
+  /** Defaults to the file's Latin or Latin Extended subset. */
+  unicodeRange?: string;
 }
+
+/** fontsource's `arabic` subset (only Arabic text downloads these files). */
+const ARABIC =
+  'U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC';
 
 const faces: Face[] = [];
 for (const style of ['normal', 'italic'] as const) {
@@ -47,6 +53,25 @@ for (const style of ['normal', 'italic'] as const) {
     );
   }
 }
+// Arabic pages: Noto Naskh Arabic, a book naskh, for display (beside the serif), and Noto Sans
+// Arabic for text (beside the grotesque). Arabic has no italic; browsers keep the upright face.
+faces.push(
+  {
+    family: 'Noto Naskh Arabic',
+    // Cut to the site's Arabic letters by tools/media/build.ts.
+    file: 'noto-naskh-arabic-site.woff2',
+    weight: '400 700',
+    style: 'normal',
+    unicodeRange: ARABIC,
+  },
+  {
+    family: 'Noto Sans Arabic',
+    file: 'noto-sans-arabic-site.woff2',
+    weight: '100 900',
+    style: 'normal',
+    unicodeRange: ARABIC,
+  },
+);
 
 const faceCss = faces
   .map(
@@ -56,7 +81,7 @@ const faceCss = faces
   font-weight: ${face.weight};
   font-display: swap;
   src: url('/fonts/${face.file}') format('woff2');
-  unicode-range: ${face.file.includes('latin-ext') ? LATIN_EXT : LATIN};
+  unicode-range: ${face.unicodeRange ?? (face.file.includes('latin-ext') ? LATIN_EXT : LATIN)};
 }`,
   )
   .join('\n\n');
@@ -79,6 +104,10 @@ const clones: Record<string, string> = {
 const withClones = (faces: string) =>
   Object.entries(clones).reduce((css, [from, to]) => css.split(from).join(to), faces);
 
+/** The Arabic face right after the Latin one: the browser takes Arabic glyphs from it. */
+const withArabic = (stack: string, arabic: string) =>
+  stack.replace(/^([^,]+),/, `$1, '${arabic}',`);
+
 const css = `${faceCss}
 
 /* Metric-matched fallbacks (Capsize): the page doesn't shift when the web fonts swap in. */
@@ -87,8 +116,8 @@ ${withClones(serif.fontFaces)}
 ${withClones(sans.fontFaces)}
 
 :root {
-  --font-stack-serif: ${serif.fontFamily}, serif;
-  --font-stack-sans: ${sans.fontFamily}, system-ui, sans-serif;
+  --font-stack-serif: ${withArabic(serif.fontFamily, 'Noto Naskh Arabic')}, serif;
+  --font-stack-sans: ${withArabic(sans.fontFamily, 'Noto Sans Arabic')}, system-ui, sans-serif;
 }
 `;
 

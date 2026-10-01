@@ -1,0 +1,63 @@
+{
+  "id": "ar--industries--financial-services",
+  "kind": "page",
+  "lang": "ar",
+  "path": "/ar/industries/financial-services/",
+  "title": "Financial Services",
+  "sourceUrl": "https://compassint.org/industries/financial_services",
+  "seo": {
+    "canonical": "/industries/financial-services/"
+  },
+  "hero": {
+    "title": "Financial Services",
+    "lede": "Compass offers a comprehensive software solution that specifically caters to the unique requirements of the finance industry",
+    "media": "m-7b8ab60c1a",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<div lang=\"en\" dir=\"ltr\"><p>Our specialized solution includes Financial Management and Contracts Management modules, which play a crucial role in streamlining financial operations and enhancing efficiency for financial institutions.</p> <p>The Financial Management module automates critical financial processes such as general ledger accounting, financial reporting, and budgeting. This automation ensures accuracy, reliability, and compliance with industry regulations. By leveraging this module, finance companies can efficiently manage their financial data and streamline their financial workflows.</p> <p>The Contracts Management module, on the other hand, enables finance companies to effectively handle contract management processes. This includes tasks such as contract creation, negotiation, and monitoring. With this module, finance companies can ensure proper contract compliance and optimize their contract management processes.</p></div>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Industries",
+      "path": "/ar/industries/"
+    },
+    {
+      "label": "Financial Services",
+      "path": "/ar/industries/financial-services/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-7b8ab60c1a": {
+      "id": "m-7b8ab60c1a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Construction",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQAgCdASoQAAoAA4BaJZQCdAEXn67d2UFgAP738B+KDhvZ/3/KSvU6mC7jwz9W8u+Nf5VkQdO/VyCHbrGbc4+SKwJkvyw7b60TPDQNRm60uPP8/MwJOw7clhRJVazin318ddoFj96IS5Q6dcsDTps9jXH6QAAA"
+    }
+  }
+}

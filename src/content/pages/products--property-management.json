@@ -1,6 +1,11 @@
 {
   "id": "products--property-management",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/property-management/",
+    "ar": "/ar/products/property-management/"
+  },
   "path": "/products/property-management/",
   "title": "Property Management",
   "sourceUrl": "https://compassint.org/products/property_management",

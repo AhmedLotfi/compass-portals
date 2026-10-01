@@ -1,6 +1,7 @@
 {
   "id": "contact",
   "kind": "contact",
+  "lang": "en",
   "path": "/contact/",
   "title": "Contact Us",
   "sourceUrl": "https://compassint.org/contact",

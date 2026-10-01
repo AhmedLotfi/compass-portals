@@ -2,6 +2,7 @@ import { Component, computed, input } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import type { NavItem } from '@schema/content';
 import { CopyPipe } from '../../core/copy/copy';
+import { AutoLang } from '../../core/i18n/auto-lang';
 
 /** Splits an internal href into a router path and fragment. */
 export function splitHref(href: string): { path: string; fragment?: string } {
@@ -12,11 +13,17 @@ export function splitHref(href: string): { path: string; fragment?: string } {
 /** A navigation link: router link for internal paths, new-tab link for external URLs. */
 @Component({
   selector: 'app-nav-link',
-  imports: [RouterLink, RouterLinkActive, CopyPipe],
+  imports: [RouterLink, RouterLinkActive, CopyPipe, AutoLang],
   template: `
     @let link = item();
     @if (link.external) {
-      <a [class]="linkClass()" [href]="link.href" target="_blank" rel="noopener">
+      <a
+        [class]="linkClass()"
+        [href]="link.href"
+        target="_blank"
+        rel="noopener"
+        [appAutoLang]="link.label"
+      >
         {{ link.label }}<span class="visually-hidden"> {{ 'opensInNewTab' | copy }}</span>
       </a>
     } @else {
@@ -27,6 +34,7 @@ export function splitHref(href: string): { path: string; fragment?: string } {
         routerLinkActive="is-active"
         [routerLinkActiveOptions]="{ exact: target().path === '/' }"
         ariaCurrentWhenActive="page"
+        [appAutoLang]="link.label"
         >{{ link.label }}</a
       >
     }

@@ -1,6 +1,11 @@
 {
   "id": "services--custom-development",
   "kind": "service",
+  "lang": "en",
+  "alternates": {
+    "en": "/services/custom-development/",
+    "ar": "/ar/services/custom-development/"
+  },
   "path": "/services/custom-development/",
   "title": "Custom Development",
   "sourceUrl": "https://compassint.org/services/custom_development",

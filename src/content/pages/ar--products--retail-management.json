@@ -1,0 +1,66 @@
+{
+  "id": "ar--products--retail-management",
+  "kind": "product",
+  "lang": "ar",
+  "alternates": {
+    "en": "/products/retail-management/",
+    "ar": "/ar/products/retail-management/"
+  },
+  "path": "/ar/products/retail-management/",
+  "title": "إدارة البيع بالتجزئة",
+  "sourceUrl": "https://compassint.org/products/retail_management",
+  "seo": {},
+  "hero": {
+    "title": "إدارة البيع بالتجزئة",
+    "lede": "طوّر عمليات البيع بالتجزئة لديك مع وحدة الإدارة الشاملة لدينا. بسّط بيانات المخزون والمبيعات والعملاء لتحسين أداء متجرك. من معاملات نقاط البيع السلسة إلى تتبع المخزون المتقدم وإدارة مستوى المخزون في الوقت الفعلي، يضمن لك حلنا البقاء في الصدارة. احصل على رؤى ثاقبة حول اتجاهات المبيعات والمنتجات المباعة وتفضيلات العملاء من خلال قاعدة بيانات متكاملة تُجمّع معلومات العملاء. عزز قراراتك بتحليلات مفصلة، ​​مما يُحفّز النمو ويُقدّم تجارب بيع بالتجزئة استثنائية.",
+    "media": "m-a3d703ec91",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "إدارة البيع بالتجزئة",
+      "path": "/ar/products/retail-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-a3d703ec91": {
+      "id": "m-a3d703ec91",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Retail Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAQCdASoQAAoAA4BaJQBOgBbUixkUAP7O7J6+hecLeRxW8o1z9GBW8I1BOf76s/7+Fc362GEuguFVauz6Vw60ezAdW4jpH3M6IqubvOViywjn5Px3UzkAAAA="
+    }
+  }
+}

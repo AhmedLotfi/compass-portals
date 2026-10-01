@@ -1,0 +1,66 @@
+{
+  "id": "ar--products--insurance-management",
+  "kind": "product",
+  "lang": "ar",
+  "alternates": {
+    "en": "/products/insurance-management/",
+    "ar": "/ar/products/insurance-management/"
+  },
+  "path": "/ar/products/insurance-management/",
+  "title": "إدارة التأمين",
+  "sourceUrl": "https://compassint.org/products/insurance_management",
+  "seo": {},
+  "hero": {
+    "title": "إدارة التأمين",
+    "lede": "حل التأمين القابل للتخصيص لدينا مُصمم لإدارة العمليات داخل شركات التأمين بكفاءة وفعالية، مع الالتزام بالمواصفات والمعايير الدولية لتلبية الاحتياجات المتنوعة.",
+    "media": "m-db47a42310",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "إدارة التأمين",
+      "path": "/ar/products/insurance-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-db47a42310": {
+      "id": "m-db47a42310",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Insurance Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoAA4BaJZQC7AYrnsURQIuAAP7U+rfEBT0Zme7oJ+Ik0x9i+wT+HHKatoa8exbkhVVsdO1MdEyPuSvw5to/BNDEYNeavrZ1IAAA"
+    }
+  }
+}

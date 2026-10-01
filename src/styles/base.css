@@ -109,8 +109,12 @@ img {
 }
 
 /* Phone numbers never break across lines. */
+/* Phone numbers read left to right in every language: in an Arabic paragraph, "+971 45754693"
+   would otherwise be reordered as "45754693 971+". */
 a[href^='tel:'] {
   white-space: nowrap;
+  direction: ltr;
+  unicode-bidi: isolate;
 }
 
 .skip-link {

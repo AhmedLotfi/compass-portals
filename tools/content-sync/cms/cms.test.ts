@@ -1,9 +1,19 @@
 import { load } from 'cheerio';
 import { describe, expect, it } from 'vitest';
 import { collapseSlashes, ordered } from './api.ts';
-import { firstSentence, oldSlug, slugify, type CmsPage } from './map.ts';
+import {
+  arLabel,
+  firstSentence,
+  hasArabic,
+  localPath,
+  markEnglish,
+  oldSlug,
+  pick,
+  slugify,
+  type CmsPage,
+} from './map.ts';
 import { readChrome } from './rendered.ts';
-import { buildCmsRedirects, oldPathMap } from './sync.ts';
+import { buildCmsRedirects, oldPathMap, pairTranslations } from './sync.ts';
 
 describe('CMS paths', () => {
   it('builds clean slugs from the English titles', () => {
@@ -114,5 +124,43 @@ describe('site chrome', () => {
     expect(chrome.footerLinks.map((l) => l.label)).toEqual(['Home', 'FAQs', 'Privacy Policy']);
     expect(chrome.copyright).toBe('All Rights Reserved. © Compass International 2021.');
     expect(chrome.social).toEqual(['https://www.linkedin.com/company/compass-int/']);
+  });
+});
+
+describe('Arabic', () => {
+  it('uses an Arabic value only when it is Arabic, else the English, marked as such', () => {
+    expect(pick('ar', 'HR & Payroll', 'الموارد البشرية')).toEqual({
+      value: 'الموارد البشرية',
+      english: false,
+    });
+    // The CMS often copies the English into the Arabic field.
+    expect(pick('ar', 'Retail', 'Retail')).toEqual({ value: 'Retail', english: true });
+    expect(pick('ar', 'Retail', null)).toEqual({ value: 'Retail', english: true });
+    expect(pick('en', 'Retail', 'التجزئة')).toEqual({ value: 'Retail', english: false });
+    expect(hasArabic('Overview')).toBe(false);
+    expect(markEnglish('<p>Overview</p>')).toBe('<div lang="en" dir="ltr"><p>Overview</p></div>');
+    expect(localPath('ar', '/products/')).toBe('/ar/products/');
+  });
+
+  it('has an Arabic draft for every label it is asked for, and fails loudly otherwise', () => {
+    expect(arLabel('Our Team')).toBe('فريقنا');
+    expect(() => arLabel('Not a label')).toThrow(/labels\.ar\.json/);
+  });
+
+  it('pairs real translations with hreflang, and points the rest at the English page', () => {
+    const doc = (id: string, path: string) => ({ id, path, seo: {} }) as CmsPage['doc'];
+    const en = [
+      { key: 'a', lang: 'en', translated: false, doc: doc('a', '/a/') },
+      { key: 'b', lang: 'en', translated: false, doc: doc('b', '/b/') },
+    ] as unknown as CmsPage[];
+    const ar = [
+      { key: 'a', lang: 'ar', translated: true, doc: doc('ar--a', '/ar/a/') },
+      { key: 'b', lang: 'ar', translated: false, doc: doc('ar--b', '/ar/b/') },
+    ] as unknown as CmsPage[];
+    pairTranslations(en, ar);
+    expect(en[0]!.doc.alternates).toEqual({ en: '/a/', ar: '/ar/a/' });
+    expect(ar[0]!.doc.alternates).toEqual({ en: '/a/', ar: '/ar/a/' });
+    expect(en[1]!.doc.alternates).toBeUndefined();
+    expect(ar[1]!.doc.seo.canonical).toBe('/b/');
   });
 });

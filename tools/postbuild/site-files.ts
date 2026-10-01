@@ -24,9 +24,15 @@ function xml(text: string): string {
     .replace(/'/g, '&apos;');
 }
 
-/** Pages search engines may index: every route whose page isn't marked noindex. */
+/**
+ * Pages search engines may index: every route whose page isn't marked noindex and is its own
+ * canonical (an untranslated Arabic page names the English page instead).
+ */
 export function indexableRoutes(content: SiteContent): RouteEntry[] {
-  return content.routes.filter((route) => !content.pages.get(route.id)?.seo.noindex);
+  return content.routes.filter((route) => {
+    const seo = content.pages.get(route.id)?.seo;
+    return !seo?.noindex && !seo?.canonical;
+  });
 }
 
 export function pageUrl(site: Site, path: string): string {
@@ -50,6 +56,19 @@ export function sitemapXml(content: SiteContent): string {
       '  <url>',
       `    <loc>${xml(pageUrl(site, route.path))}</loc>`,
       ...(lastmod ? [`    <lastmod>${lastmod}</lastmod>`] : []),
+      // A translated page lists both languages (and English as the default), like its <head>.
+      ...(page?.alternates?.en && page.alternates.ar
+        ? (
+            [
+              ['en', page.alternates.en],
+              ['ar', page.alternates.ar],
+              ['x-default', page.alternates.en],
+            ] as const
+          ).map(
+            ([lang, path]) =>
+              `    <xhtml:link rel="alternate" hreflang="${lang}" href="${xml(pageUrl(site, path))}"/>`,
+          )
+        : []),
       ...images.flatMap((src) => [
         '    <image:image>',
         `      <image:loc>${xml(src)}</image:loc>`,
@@ -60,7 +79,7 @@ export function sitemapXml(content: SiteContent): string {
   });
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ...urls,
     '</urlset>',
     '',
@@ -80,8 +99,11 @@ interface Outline {
   rest: RouteEntry[];
 }
 
+/** Pages in the site's main language (the outline); translations are listed apart. */
+const isEnglish = (route: RouteEntry) => (route.lang ?? 'en') === 'en';
+
 function outline(content: SiteContent): Outline {
-  const routes = indexableRoutes(content);
+  const routes = indexableRoutes(content).filter(isEnglish);
   const childrenOf = (id: string) => routes.filter((route) => route.parentId === id);
   const subtree = (id: string): RouteEntry[] =>
     childrenOf(id).flatMap((child) => [child, ...subtree(child.id)]);
@@ -128,9 +150,11 @@ export function llmsTxt(content: SiteContent): string {
     return `- ${route.summary ? `${link}: ${route.summary}` : link}`;
   };
   const { groups, rest } = outline(content);
+  const arabic = indexableRoutes(content).filter((route) => !isEnglish(route));
   const sections = [
     ...groups.map((group) => [`## ${group.head.title}`, group.members.map(item).join('\n')]),
     ...(rest.length ? [[`## ${copy['llmsPages']}`, rest.map(item).join('\n')]] : []),
+    ...(arabic.length ? [[`## ${copy['llmsArabic']}`, arabic.map(item).join('\n')]] : []),
     ['## Optional', `- [${copy['llmsFullText']}](${pageUrl(site, '/llms-full.txt')})`],
   ];
   return `${[...preamble(content), ...sections.flat()].join('\n\n')}\n`;

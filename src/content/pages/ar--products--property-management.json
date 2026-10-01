@@ -1,0 +1,157 @@
+{
+  "id": "ar--products--property-management",
+  "kind": "product",
+  "lang": "ar",
+  "alternates": {
+    "en": "/products/property-management/",
+    "ar": "/ar/products/property-management/"
+  },
+  "path": "/ar/products/property-management/",
+  "title": "إدارة الممتلكات",
+  "sourceUrl": "https://compassint.org/products/property_management",
+  "seo": {},
+  "hero": {
+    "title": "إدارة الممتلكات",
+    "lede": "قم بإدارة عقاراتك باستخدام حلّنا القابل للتخصيص والتعديل، والمصمم خصيصًا لمالكي العقارات. قم بتبسيط إدارة عقود الإيجار وطلبات الصيانة من خلال أنظمتنا المتكاملة. سهّل عملية تحصيل الإيجارات، وتتبّع نفقاتك الشهرية والسنوية، واستفد من إمكانيات التقارير داخل النظام للحصول على رؤى قيّمة",
+    "media": "m-3dd99ee371",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>يقدّم نظام إدارة العقارات لدينا حلاً شاملاً لشركات إدارة العقارات، بما في ذلك الملاك ومديري العقارات. يتميز النظام بسير عمل متكامل يدعم كلًا من عقود الإيجار والبيع، ويدير بفعالية عمليات التحصيل والمصالحة. كما يتضمن النظام مؤشرات أداء رئيسية قابلة للتخصيص، تُمكّن المالكين من الحصول على نظرة شاملة على عقاراتهم المختلفة، والمستأجرين في كل منها، والوحدات المتاحة. ويقوم النظام أيضًا بإصدار تقارير للإيرادات والمصروفات، بالإضافة إلى إمكانية أتمتة إنشاء العقود للطباعة والتوزيع.<br><br></p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "ميزات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-f572131630"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>العمليات متعددة العملات:</strong> تنفيذ المعاملات وإدارة الحسابات بعدّة عملات.</p> <p><strong>إدارة متعددة المُلّاك:</strong> إدارة العقارات التابعة لعدة مالكين بسهولة من خلال شاشة واحدة.</p> <p><strong>إدارة الوحدات:</strong> إمكانية إدارة المساحات والوحدات المختلفة.</p> <p><strong>إدارة المرافق:</strong> تتبّع الأصول والإشراف على عمليات إدارة المرافق.</p> <p><strong>التكلفة لكل وحدة:</strong> حساب وتحليل التكاليف المرتبطة بكل وحدة على حدة.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الميزات التقنية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-e4bb3a84f5"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>حلول قائمة على الويب ومدعومة عبر الإنترنت:</strong> الوصول إلى المنصة من أي جهاز متصل بالإنترنت.</p> <p><strong>تكامل الرسائل النصية والبريد الإلكتروني:</strong> إرسال الإشعارات والتواصل مباشرة من النظام عبر الرسائل النصية والبريد الإلكتروني.</p> <p><strong>قواعد بيانات Oracle وSQL Server:</strong> استخدام قواعد بيانات Oracle وSQL Server لإدارة البيانات بشكل موثوق.</p> <p><strong>إمكانية التصدير إلى Excel وWord وPDF:</strong> تصدير البيانات والتقارير بسهولة إلى ملفات Excel وWord وPDF.</p> <p><strong>حقول مرنة قابلة للتخصيص:</strong> تكييف وتكوين الحقول لتناسب احتياجات العمل المحددة وسير العمليات.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "المزايا",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Property Management",
+              "html": ""
+            },
+            {
+              "title": "Facility Management",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "إدارة الممتلكات",
+      "path": "/ar/products/property-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-3dd99ee371": {
+      "id": "m-3dd99ee371",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Property Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoAA4BaJZwAAjxCJBJ4igAA/uqnLD1T3B6/2WTQ/54kQ7k+Vn33BotHdSdYn7gP7cvinrCAXnNhGOzj3WRIgxG4pix3nj1/YimAl/9ocAAA"
+    },
+    "m-e4bb3a84f5": {
+      "id": "m-e4bb3a84f5",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAoAA4BaJZwAAlohe5+l3AD+8eDIxK9VCUhgejC4QT7SXV2VkU/XnN5jGdmV99mIHAAA"
+    },
+    "m-f572131630": {
+      "id": "m-f572131630",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAoAA4BaJYwCsAEN5M5LXVAA+WMnNWWE6/RWssQfikJT+u9/RqtjbMWAYUeg3JNtwiFiJP+yj9m32rMQAI7QAvzlO6mPpyO89YfcbIde/MyMY9eUBfo1sIAAAA=="
+    }
+  }
+}

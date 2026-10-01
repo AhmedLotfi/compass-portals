@@ -1,6 +1,11 @@
 {
   "id": "features--other-features",
   "kind": "page",
+  "lang": "en",
+  "alternates": {
+    "en": "/features/other-features/",
+    "ar": "/ar/features/other-features/"
+  },
   "path": "/features/other-features/",
   "title": "Other Features",
   "sourceUrl": "https://compassint.org/features/other_features",

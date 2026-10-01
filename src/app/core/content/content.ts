@@ -1,7 +1,7 @@
 import { Service } from '@angular/core';
 import routesJson from '@content/routes.json';
 import siteJson from '@content/site.json';
-import type { MediaRef, PageKind, RouteTable, Site } from '@schema/content';
+import type { Lang, MediaRef, NavItem, PageKind, RouteTable, Site } from '@schema/content';
 
 /** Site-wide content from the synced snapshot (validated at sync time). */
 const SITE = siteJson as unknown as Site;
@@ -14,9 +14,22 @@ export class ContentStore {
   readonly site: Site = SITE;
   readonly routes = ROUTES;
 
-  /** Path of the first page of a kind, e.g. the contact page. */
-  pathOf(kind: PageKind): string | undefined {
-    return this.routes.find((route) => route.kind === kind)?.path;
+  /** Path of the first page of a kind in a language's tree, e.g. the contact page. */
+  pathOf(kind: PageKind, lang: Lang = 'en'): string | undefined {
+    return this.routes.find((route) => route.kind === kind && (route.lang ?? 'en') === lang)?.path;
+  }
+
+  /** The home page of a language's tree. */
+  homePath(lang: Lang = 'en'): string {
+    return this.pathOf('home', lang) ?? '/';
+  }
+
+  navigation(lang: Lang = 'en'): { header: NavItem[]; footer: NavItem[] } {
+    return (lang === 'ar' ? this.site.i18n?.ar?.navigation : undefined) ?? this.site.navigation;
+  }
+
+  tagline(lang: Lang = 'en'): string | undefined {
+    return (lang === 'ar' ? this.site.i18n?.ar?.tagline : undefined) ?? this.site.tagline;
   }
 
   siteMedia(id: string | undefined): MediaRef | undefined {

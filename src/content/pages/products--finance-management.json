@@ -1,6 +1,11 @@
 {
   "id": "products--finance-management",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/finance-management/",
+    "ar": "/ar/products/finance-management/"
+  },
   "path": "/products/finance-management/",
   "title": "Finance Management",
   "sourceUrl": "https://compassint.org/products/finance_management",

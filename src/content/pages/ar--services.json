@@ -1,0 +1,245 @@
+{
+  "id": "ar--services",
+  "kind": "service-index",
+  "lang": "ar",
+  "path": "/ar/services/",
+  "title": "Services",
+  "sourceUrl": "https://compassint.org/services",
+  "seo": {
+    "canonical": "/services/"
+  },
+  "hero": {
+    "title": "Services",
+    "lede": "Elevate your business with our range of IT services, including AI solutions, Data Offerings, system integrations, development services tailored to your requirements.",
+    "ctas": []
+  },
+  "sections": [],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Services",
+      "path": "/ar/services/"
+    }
+  ],
+  "children": [
+    {
+      "id": "ar--services--metaverse-solution",
+      "path": "/ar/services/metaverse-solution/",
+      "title": "Metaverse solution",
+      "summary": "Compass International LLC’s Metaverse Solution redefines immersive experiences with cutting-edge AR/VR displays, holographic projections, and haptic feedback devices. Our platform empowers businesses, educators, and innovators to seamlessly connect physical and digital worlds, enabling virtual meetings, product showcases, team training, and unforgettable customer interactions. Step into the future with our Immersive 360 Experience Room and unlock limitless possibilities for growth, collaboration, and creativity",
+      "media": "m-31c96695f2"
+    },
+    {
+      "id": "ar--services--custom-development",
+      "path": "/ar/services/custom-development/",
+      "title": "تطوير مخصص",
+      "summary": ".لأن كل عمل له طابعه الخاص، تقوم كومباس بتطوير منصات مخصصة بالكامل بما يتوافق مع أهدافك.نحن نبني حلولًا مصممة خصيصًا لتلائم احتياجاتك وتُسهل عليك العمل فعليًا.تتوافق تقنياتنا مع استراتيجيتك، مما يساعدك على النمو والحفاظ على قدرتك التنافسية",
+      "media": "m-1b104cb34e"
+    },
+    {
+      "id": "ar--services--system-integration",
+      "path": "/ar/services/system-integration/",
+      "title": "تكامل الأنظمة",
+      "summary": "سيقوم عملك بذكاء أكبر من خلال ربط جميع الأنظمة والبرمجيات في مكان واحد. هذا يسهل على فريق العمل مشاركة المعلومات، واتخاذ قرارات أسرع، وتحقيق النمو بسلاسة. سواء كان في إدارة الموارد البشرية، أو الشؤون المالية، أو بيانات العملاء، فإن كل شيء يعمل بانسجام، مما يوفر الوقت، ويقلل من الأخطاء، ويدفع عملك نحو التقدم بثقة.",
+      "media": "m-144236b7d5"
+    },
+    {
+      "id": "ar--services--data-offering",
+      "path": "/ar/services/data-offering/",
+      "title": "خدمات البيانات",
+      "summary": ",نمكن أعمالك من خلال حلول بيانات ذكية مدعومة بالذكاء الاصطناعي توفّر رؤى دقيقة لاتخاذ قرارات أفضل.من دمج البيانات إلى التحليلات والتصورات، نحوّل البيانات الخام إلى قيمة حقيقية.عزّز الابتكار، وحقق الكفاءة، وابقَ في الصدارة مع بيانات تعمل لصالحك",
+      "media": "m-4d0c8f13e4"
+    },
+    {
+      "id": "ar--services--artificial-intelligence",
+      "path": "/ar/services/artificial-intelligence/",
+      "title": "الذكاء الاصطناعي",
+      "summary": "في كومباس، نستثمر قوة الذكاء الاصطناعي لدفع عجلة التحول الرقمي في أعمالكم. حلولنا المتقدمة في الذكاء الاصطناعي تعمل على أتمتة العمليات المعقدة، وتحسين تفاعل العملاء، وتعزيز الكفاءة التشغيلية , مما يتيح لكم الحفاظ على تنافسيتكم في عالم رقمي سريع التطور.",
+      "media": "m-0eed3394d6"
+    },
+    {
+      "id": "ar--services--web-development",
+      "path": "/ar/services/web-development/",
+      "title": "Web Development",
+      "summary": "At Compass, we specialize in delivering custom web development solutions tailored to your unique business needs. Leveraging our deep expertise, we build engaging, high-performance websites that elevate your online presence. Our advanced content management systems ensure seamless functionality, intuitive user",
+      "media": "m-0db1914f8b"
+    },
+    {
+      "id": "ar--services--mobile-application-development",
+      "path": "/ar/services/mobile-application-development/",
+      "title": "تطوير تطبيقات الموبايل",
+      "summary": "في كومباس، نُحوّل الأفكار إلى تطبيقات جوال قوية تتميز بالأداء السلس والتفاعل العالي مع المستخدمين. وبالاستفادة من خبرتنا في تطوير التطبيقات متعددة المنصات، نبتكر حلولًا آمنة، قابلة للتوسع، وسهلة الوصول.",
+      "media": "m-3296354ec2"
+    },
+    {
+      "id": "ar--services--ict-manpower-outsourcing",
+      "path": "/ar/services/ict-manpower-outsourcing/",
+      "title": "كوادر وخدمات في مجال تكنولوجيا المعلومات والاتصالات",
+      "summary": ".نوفر خبراء تكنولوجيا المعلومات ذوي الكفاءة وحلول الاستعانة بمصادر خارجية لتحسين عمليات الأعمال",
+      "media": "m-e94c6c09cc"
+    },
+    {
+      "id": "ar--services--erp-development",
+      "path": "/ar/services/erp-development/",
+      "title": "ERP Development",
+      "summary": "Compass provides expert ERP consultancy to help businesses maximize efficiency. we tailor systems to meet your unique needs. Backed by a strong technical team and extensive experience, we ensure seamless integration, compliance, and long-term business growth.",
+      "media": "m-66d5a25d75"
+    }
+  ],
+  "media": {
+    "m-0db1914f8b": {
+      "id": "m-0db1914f8b",
+      "mime": "image/jpeg",
+      "width": 736,
+      "height": 490,
+      "alt": "Web Development",
+      "widths": [
+        320,
+        480,
+        640,
+        736
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAsAA4BaJZgCw7Dx5x5IAP7ihbklNksvs5j84tQV5Ik6/VP1IgwK0Z1WvQgSDoEXZR2Fd8E1xtTCqwjVmq4giGMDbkrtNJ3+EAAA"
+    },
+    "m-0eed3394d6": {
+      "id": "m-0eed3394d6",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Artificial Intelligence",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAoAA4BaJZwC7AEOgmrYxgAA/vI7wWlKEF15v6Xbsv+b1DSx08Bdr8c4n4gH5mwlsUmzRFYAAA=="
+    },
+    "m-144236b7d5": {
+      "id": "m-144236b7d5",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "System Integration",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoAA4BaJbACdADw78H3CFoAAP7lIuZPNukocC875pLdyA5GM4RFSedjbuGoinbuNW5t28jbQ7cUnuKP7LaeYfuTme9JYUh+L8PXdmsF9D4OA9B0r4AA"
+    },
+    "m-1b104cb34e": {
+      "id": "m-1b104cb34e",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Custom Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoAA4BaJbACdAEPDQKqJ+AQgAD+9ZETitVpafp6mTLvLj8pybxbOnhjJtoFXKhuD2sC5zPmsrpclS/SqAAA"
+    },
+    "m-31c96695f2": {
+      "id": "m-31c96695f2",
+      "mime": "image/jpeg",
+      "width": 1200,
+      "height": 546,
+      "alt": "Metaverse solution",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1200
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAcAA4BaJYgCdAEPUSVqs0AA/tIEB/yeFYwjFgNEAhEvJu37po/Rjg4ox9XkALR8Z+qudll77JUq9Nghp83WkhoAAA=="
+    },
+    "m-3296354ec2": {
+      "id": "m-3296354ec2",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Mobile Application Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAoAA4BaJbACdAEDjjuUoAD+9SMf4Vmdpx+n3LAL1LmC9cywFxRutIp8XEJPSZLRMo6IvuwZYJgRSYtzUd1UGk3R7JXCn+k3AlO5Q4pc4AAA"
+    },
+    "m-4d0c8f13e4": {
+      "id": "m-4d0c8f13e4",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Data Offering",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQAAoAA4BaJYwC7H8AgpTK6MrNZmFAAP7oUVPTkdcA4QjnnhZO3hb7QjetWAOrI1QSTknDYVWmiqZ8niaR6267R+R8nW0mn2EGV8bA3OdDUxtM5Uhj/LDLAq01onlnKWl1fAAA"
+    },
+    "m-66d5a25d75": {
+      "id": "m-66d5a25d75",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "ERP Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJZQCdADhlaUWA4VgAP36UvE8yCn7zH0+RcWFgaYKX0wnpHlCDfdMXYoe8+jYUMP9JzxA1PMvdbYEIRCDtbaSf5Mykt5j0YrJDJXRonNGxahGrZCAAA=="
+    },
+    "m-e94c6c09cc": {
+      "id": "m-e94c6c09cc",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "ICT Manpower & Outsourcing",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJYwCdAYtBZ4S4YAAAP4LkOxQpb6+qGttcS+GJF5bPPvYhmb4T1/drZYzorZx7dYfTYAgdEvsHm3P+0W74SqcaaZahVf/7g+Tm+5HeL80Ac7o8DdgAA=="
+    }
+  }
+}

@@ -81,6 +81,27 @@
   display: none;
 }
 
+/* The other language, named in that language: a plain text link like the phone number. */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+  padding-inline: 0.6rem;
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--color-brass);
+  text-underline-offset: 0.25em;
+}
+
+.lang-switch[lang='ar'] {
+  /* The system's Arabic face: on an English page, the one Arabic word shouldn't download the
+     166 KB Arabic web font (Arabic pages load it for their own text). */
+  font-family: system-ui, sans-serif;
+  font-size: var(--text-base);
+}
+
 .site-header__cta {
   display: none;
 }
@@ -129,17 +150,24 @@
   max-inline-size: 100vw;
   block-size: 100dvh;
   max-block-size: 100dvh;
-  margin: 0 0 0 auto;
+  margin-block: 0;
+  margin-inline: auto 0;
   padding: 0;
   border: 0;
   border-inline-start: var(--ink-line);
+  /* Off-screen past the end edge: right in English, left in Arabic. */
+  --menu-offset: 100%;
   background: var(--color-paper);
   color: var(--color-ink);
   transition:
     transform 220ms var(--ease-out),
     overlay 220ms allow-discrete,
     display 220ms allow-discrete;
-  transform: translateX(100%);
+  transform: translateX(var(--menu-offset));
+}
+
+.mobile-menu:dir(rtl) {
+  --menu-offset: -100%;
 }
 
 .mobile-menu[open] {
@@ -148,7 +176,7 @@
 
 @starting-style {
   .mobile-menu[open] {
-    transform: translateX(100%);
+    transform: translateX(var(--menu-offset));
   }
 }
 

@@ -1,0 +1,179 @@
+{
+  "id": "ar--services--custom-development",
+  "kind": "service",
+  "lang": "ar",
+  "alternates": {
+    "en": "/services/custom-development/",
+    "ar": "/ar/services/custom-development/"
+  },
+  "path": "/ar/services/custom-development/",
+  "title": "تطوير مخصص",
+  "sourceUrl": "https://compassint.org/services/custom_development",
+  "seo": {},
+  "hero": {
+    "title": "تطوير مخصص",
+    "lede": ".لأن كل عمل له طابعه الخاص، تقوم كومباس بتطوير منصات مخصصة بالكامل بما يتوافق مع أهدافك.نحن نبني حلولًا مصممة خصيصًا لتلائم احتياجاتك وتُسهل عليك العمل فعليًا.تتوافق تقنياتنا مع استراتيجيتك، مما يساعدك على النمو والحفاظ على قدرتك التنافسية",
+    "media": "m-1b104cb34e",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-3b45196446"
+        },
+        {
+          "type": "richText",
+          "html": "<p>خدمات التطوير المخصص في كومباس انترناشونال موجهة نحو إنشاء تطبيقات مصممة خصيصًا لتلبية متطلبات عملك الفريدة</p> <p>يتميّز فريقنا الخبير بالقدرة على استخدام مجموعة متنوعة من الأدوات والتقنيات لتقديم حلول مخصصة تعزز الكفاءة وتدعم الابتكار</p> <p>نعمل بشكل وثيق مع عملائنا لفهم احتياجاتهم الخاصة وتصميم حلول تتماشى مع أهدافهم التجارية. سواء كنت تسعى لتطوير تطبيقات جديدة من الصفر أو تحسين تطبيقات قائمة، فإن فريقنا مستعد للتعامل مع مختلف مشاريع التطوير المخصص، لضمان بقاء مؤسستك مرنة وقادرة على المنافسة في سوق سريع التغيّر</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "التقنيات التي نتميز بها",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-09389eb502"
+        },
+        {
+          "type": "richText",
+          "html": "<p>نماذج أوراكل</p> <p>تقارير أوراكل</p> <p>خادم تطبيقات أوراكل</p> <p>لتصميم التقارير الاحترافية XMLناشر</p> <p>تطوير تطبيقات باستخدام فيجوال بيسك .نت الإصدار 4</p> <p>أداة أوراكل لتحليل البيانات واستخراج التقارير</p> <p>إدارة وتنفيذ سير العمل داخل أنظمة أوراكل</p> <p>بيئة تطوير متكاملة لتطبيقات أوراكل</p> <p>تطوير صفحات الويب الديناميكية باستخدام جافا</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "ميزات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-f34dfa70a0"
+        },
+        {
+          "type": "richText",
+          "html": "<p>حلول أعمال متكاملة من البداية إلى النهاية؛ خدمات شاملة ومصممة لتلبية احتياجات الأعمال المتنوعة، بدءًا من التخطيط وحتى التنفيذ</p> <p>خبرة في أسواق دول الخليج؛ خبرة واسعة وفهم عميق لديناميكية الأعمال في دول مجلس التعاون الخليجي</p> <p>فريق ثنائي اللغة؛ إتقان تام للغتين العربية والإنجليزية لضمان تواصل سلس وفهم واضح</p> <p>تطوير داخلي وخارجي؛ نماذج تسليم مرنة للتطوير بما يضمن الكفاءة في التكاليف وتوافق المشروع مع احتياجات العميل</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "الميزات التقنية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-b03caa6583"
+        },
+        {
+          "type": "richText",
+          "html": "<p>منهجية تنفيذ التطبيقات: استراتيجيات وأُطر عمل مجربة لضمان تنفيذ التطبيقات بكفاءة وفعالية</p> <p>خبرة فنية معتمدة: فريق متخصص حاصل على شهادات (محترف معتمد من أوراكل) و (شريك معتمد من أوراكل)، يقدّم حلولًا تقنية عالية الجودة</p> <p>خبرة في أحدث إصدارات مجموعة أوراكل للأعمال: خبرة عميقة في التعامل مع أحدث إصدارات مجموعة أوراكل للأعمال لتعزيز أداء النظام وتحقيق أقصى استفادة من قدراته</p> <p>خبرة في التحديثات والترقيات: كفاءة عالية في ترقية الأنظمة بين الإصدارات المختلفة، مع تقليل فترة التوقف وضمان استمرارية العمليات التشغيلية.</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Services",
+      "path": "/ar/services/"
+    },
+    {
+      "label": "تطوير مخصص",
+      "path": "/ar/services/custom-development/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-09389eb502": {
+      "id": "m-09389eb502",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technologies we Specialise In",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAoAA4BaJZQCdAED/rOMPfhmgAD+3bHS4NeNGKxvi/HtPDU/l8puP6sq4g3Pfgkb8myOGHSeezGcxLk5t0u/ld+40nDxxzvAx+NDf7PnybpZ5WgRTGlXJWBAAA=="
+    },
+    "m-1b104cb34e": {
+      "id": "m-1b104cb34e",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Custom Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoAA4BaJbACdAEPDQKqJ+AQgAD+9ZETitVpafp6mTLvLj8pybxbOnhjJtoFXKhuD2sC5zPmsrpclS/SqAAA"
+    },
+    "m-3b45196446": {
+      "id": "m-3b45196446",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAoAA4BaJQAAX1fpAO0faGAA/mxsv/ZrsU4Tln1AB7n6SOHbVRdisesEsbsRCoGu6hlrZXCkFpJpbyB6NJkI7rjBTvm+vdmjUV5g+t71rmVtAAA="
+    },
+    "m-b03caa6583": {
+      "id": "m-b03caa6583",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAQCdASoQAAoAA4BaJbACdAYsZFAx9LIA/uYD44dHTp/KMvECefzGH1Y5mw9qEmcE6tcANTV0KH6ZdgWHlYm21oVd7qTUKI0rP84kRD/mRD4/RReCDV5PQkV1nwOIpWtgCxdq012AVOsgO5IiFLAA"
+    },
+    "m-f34dfa70a0": {
+      "id": "m-f34dfa70a0",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAoAA4BaJZACdAEVYkqfykf5AAD+6evQmMywVz+e+9dbH92KWxRuf5xLpdGPmI9K7BDHEndJC++CoFXUA9GqeU0Boc5t8/EQ5Obblk/E2Et9ULqW4AAA"
+    }
+  }
+}

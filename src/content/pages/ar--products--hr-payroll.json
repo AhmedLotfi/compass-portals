@@ -1,0 +1,165 @@
+{
+  "id": "ar--products--hr-payroll",
+  "kind": "product",
+  "lang": "ar",
+  "alternates": {
+    "en": "/products/hr-payroll/",
+    "ar": "/ar/products/hr-payroll/"
+  },
+  "path": "/ar/products/hr-payroll/",
+  "title": "الموارد البشرية والرواتب",
+  "sourceUrl": "https://compassint.org/products/hr_%26_payroll",
+  "seo": {},
+  "hero": {
+    "title": "الموارد البشرية والرواتب",
+    "lede": "عزّز عمليات الموارد البشرية والرواتب في مؤسستك من خلال نظامنا المتقدم والقابل للتخصيص. يوفّر نظام الموارد البشرية لدينا إدارة سلسة لعمليات التوظيف، وإدارة بيانات الموظفين، ومعالجة الرواتب، وغيرها من المهام. بفضل ميزاته المتكاملة للامتثال القانوني وأدوات التقارير القوية، يضمن الحل دقة وشفافية وكفاءة تشغيلية، مما يمنح قسم الموارد البشرية لديك القوة اللازمة لتحقيق أفضل أداء.",
+    "media": "m-1224c21e8a",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>يُعد حل الموارد البشرية والرواتب لدينا تطبيقًا قائمًا على الويب يعمل كمركز موحّد لإدارة جميع جوانب شؤون الموظفين، بما في ذلك التكامل بين الأقسام، وقياس الأداء، وإدارة الرواتب. وقد تم تصميمه ليتناسب مع مختلف أنواع الأعمال، ويتميز بخصائص قابلة للتخصيص والتعديل لتلبية احتياجات كل مؤسسة. كما يوفّر مؤشرات أداء رئيسية مدمجة تتيح مراقبة دقيقة للأداء والرواتب والمزيد، مما يسهّل اتخاذ قرارات مبنية على بيانات دقيقة والتخطيط الاستراتيجي الفعّال. وبفضل واجهاته البديهية وقدراته القابلة للتوسّع، يضمن النظام إدارة دقيقة للرواتب، ويساعد المؤسسات على تنفيذ استراتيجيات موارد بشرية ناجحة وتحقيق التميّز التشغيلي.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "ميزات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-76f23d4661"
+        },
+        {
+          "type": "richText",
+          "html": "<ul> <li><p><strong>توليد كشوف رواتب الموظفين والوصول إلى تقارير مفصلة للرواتب</strong></p></li> <li><p><strong>إدارة سجلات الموظفين الشاملة بكفاءة</strong></p></li> <li><p><strong>تحليل الأداء والتقدم داخل القسم من خلال مؤشرات الأداء المدرجة (KPIs)</strong></p></li> <li><p><strong>يدعم المؤسسات متعددة المستويات والهيكل التنظيمي الهرمي</strong></p></li> </ul>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الميزات التقنية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-945e2e7122"
+        },
+        {
+          "type": "richText",
+          "html": "<ul> <li><p><strong>قائم على الويب ومدعوم عبر الإنترنت:</strong> الوصول إلى المنصة من خلال متصفح الإنترنت عبر أي جهاز متصل بالإنترنت</p></li> <li><p><strong>تكامل مع الرسائل النصية والبريد الإلكتروني:</strong> إرسال الإشعارات والتواصل مباشرة من التطبيق عبر الرسائل النصية والبريد الإلكتروني</p></li> <li><p><strong>إمكانية التصدير:</strong> تصدير البيانات والتقارير بسهولة إلى صيغ Excel وWord وPDF</p></li> <li><p><strong>حقول مرنة:</strong> تخصيص وتعديل الحقول لتناسب المتطلبات وسير العمل المحدد</p></li> </ul>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "المزايا",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Human Resource",
+              "html": ""
+            },
+            {
+              "title": "Payroll",
+              "html": ""
+            },
+            {
+              "title": "Time Attendance",
+              "html": ""
+            },
+            {
+              "title": "Self-service",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "الموارد البشرية والرواتب",
+      "path": "/ar/products/hr-payroll/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-1224c21e8a": {
+      "id": "m-1224c21e8a",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "HR & Payroll",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAoAA4BaJZwAD4tPvKXqXDy+zAAA/u2jVTqhAPwKWURI2T78GOHclj87SbjLCSimPQE8PW5H4yJkzWTT+gCcIc6rRIeGiFEnx82doNyMAAAA"
+    },
+    "m-76f23d4661": {
+      "id": "m-76f23d4661",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQAAoAA4BaJZQCdADzp1u5mCrAAP7uKnYyx4jT8TRZRnIvh8nCTUypuTZJixIzVDe1+XyXoJMFmI8ziDescsslX6LFrILY+6ugsbXLWjxxvXx1upAOx/JEruWqhFKAAAA="
+    },
+    "m-945e2e7122": {
+      "id": "m-945e2e7122",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoQAAoAA4BaJZAC7AEDpM6BS77gAP7n/aWVe7fz8X000jBF8VVT9VdFQJs8SmUYsayJJ2ev4yfMSj1tZLbFwCqB6UVnCuM/vFM5yCsUeQnaFzcIO9b6j7a+lHkKVOHj9AYoAAAA"
+    }
+  }
+}

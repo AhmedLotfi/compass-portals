@@ -1,6 +1,11 @@
 {
   "id": "products--projects-management",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/projects-management/",
+    "ar": "/ar/products/projects-management/"
+  },
   "path": "/products/projects-management/",
   "title": "Projects Management",
   "sourceUrl": "https://compassint.org/products/projects_management",

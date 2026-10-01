@@ -1,3 +1,4 @@
+import { AutoLang } from '../../core/i18n/auto-lang';
 import { Component, computed, inject, input, signal } from '@angular/core';
 import { DomSanitizer, type SafeResourceUrl } from '@angular/platform-browser';
 import type { Block, MediaRef } from '@schema/content';
@@ -76,7 +77,7 @@ export class StatsBlock {
 
 @Component({
   selector: 'app-quote-block',
-  imports: [InternalLinks, MediaImage],
+  imports: [AutoLang, InternalLinks, MediaImage],
   template: `
     @let quote = block();
     <figure class="quote">
@@ -87,9 +88,9 @@ export class StatsBlock {
             <app-media-image class="quote__portrait" [media]="image" sizes="3.5rem" alt="" />
           }
           <span>
-            <span class="quote__name">{{ quote.cite }}</span>
+            <span class="quote__name" [appAutoLang]="quote.cite">{{ quote.cite }}</span>
             @for (line of quote.role; track $index) {
-              <span class="quote__role">{{ line }}</span>
+              <span class="quote__role" [appAutoLang]="line">{{ line }}</span>
             }
           </span>
         </figcaption>
@@ -145,12 +146,12 @@ export class QuoteBlock {
 /** Questions and answers as native disclosure widgets: keyboard and screen-reader ready, no script. */
 @Component({
   selector: 'app-faq-block',
-  imports: [InternalLinks],
+  imports: [AutoLang, InternalLinks],
   template: `
     <div class="faq">
       @for (item of block().items; track $index) {
         <details class="faq__item">
-          <summary class="faq__question">{{ item.question }}</summary>
+          <summary class="faq__question" [appAutoLang]="item.question">{{ item.question }}</summary>
           <div class="faq__answer prose-chart" appInternalLinks [innerHTML]="item.html"></div>
         </details>
       }
@@ -190,6 +191,13 @@ export class QuoteBlock {
     }
     .faq__item[open] > .faq__question::after {
       transform: rotate(45deg);
+    }
+    /* Right to left, the tick's borders sit on the other side: mirror its turn. */
+    .faq__question:dir(rtl)::after {
+      transform: rotate(45deg);
+    }
+    .faq__item[open] > .faq__question:dir(rtl)::after {
+      transform: rotate(-45deg);
     }
     .faq__question:focus-visible {
       outline: 2px solid var(--color-ink);

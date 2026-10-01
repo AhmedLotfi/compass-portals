@@ -1,6 +1,11 @@
 {
   "id": "services--data-offering",
   "kind": "service",
+  "lang": "en",
+  "alternates": {
+    "en": "/services/data-offering/",
+    "ar": "/ar/services/data-offering/"
+  },
   "path": "/services/data-offering/",
   "title": "Data Offering",
   "sourceUrl": "https://compassint.org/services/data_offering",

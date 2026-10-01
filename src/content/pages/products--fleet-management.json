@@ -1,6 +1,11 @@
 {
   "id": "products--fleet-management",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/fleet-management/",
+    "ar": "/ar/products/fleet-management/"
+  },
   "path": "/products/fleet-management/",
   "title": "Fleet Management",
   "sourceUrl": "https://compassint.org/products/fleet_management",

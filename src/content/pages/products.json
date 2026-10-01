@@ -1,6 +1,7 @@
 {
   "id": "products",
   "kind": "product-index",
+  "lang": "en",
   "path": "/products/",
   "title": "Products",
   "sourceUrl": "https://compassint.org/solutions",

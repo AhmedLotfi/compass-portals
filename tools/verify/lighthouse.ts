@@ -48,14 +48,20 @@ export interface PageResult {
   warnings: string[];
 }
 
-/** One page of each kind the site has: home, listing, product, contact. */
+/** One page of each kind the site has (home, listing, product, contact), and the Arabic home. */
 export function samplePages(routes: RouteEntry[]): RouteEntry[] {
-  const pick = (kinds: RouteEntry['kind'][]) => routes.find((route) => kinds.includes(route.kind));
+  const english = routes.filter((route) => (route.lang ?? 'en') === 'en');
+  const pick = (kinds: RouteEntry['kind'][], from = english) =>
+    from.find((route) => kinds.includes(route.kind));
   const pages = [
     pick(['home']),
     pick(['product-index', 'product-category', 'service-index']),
     pick(['product', 'service']),
     pick(['contact']),
+    pick(
+      ['home'],
+      routes.filter((route) => route.lang === 'ar'),
+    ),
   ].filter((route): route is RouteEntry => Boolean(route));
   return [...new Map(pages.map((route) => [route.id, route])).values()];
 }

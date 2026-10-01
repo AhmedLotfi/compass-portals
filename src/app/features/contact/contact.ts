@@ -1,3 +1,4 @@
+import { AutoLang } from '../../core/i18n/auto-lang';
 import { Component, computed, inject, input } from '@angular/core';
 import type { PageDoc } from '@schema/content';
 import { ContentStore } from '../../core/content/content';
@@ -12,7 +13,7 @@ import { PageHero } from '../shared/page-hero';
  */
 @Component({
   selector: 'app-contact',
-  imports: [PageHero, Sections, Icon, CopyPipe],
+  imports: [AutoLang, PageHero, Sections, Icon, CopyPipe],
   template: `
     @let p = page();
     <app-page-hero [page]="p" />
@@ -29,7 +30,7 @@ import { PageHero } from '../shared/page-hero';
                 <dd>
                   <address>
                     @for (line of contact.address; track line) {
-                      <span class="details__line">{{ line }}</span>
+                      <span class="details__line" [appAutoLang]="line">{{ line }}</span>
                     }
                   </address>
                   @if (contact.mapUrl) {

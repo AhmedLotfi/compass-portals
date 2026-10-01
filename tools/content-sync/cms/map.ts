@@ -1,7 +1,13 @@
 /**
- * Maps the compassint.org CMS (api.ts) to the portal's pages. Every text comes verbatim from an
- * API field, or from the live front end's rendered pages (labels such as "Our Team", checked by
- * `RenderedSite.label`). Nothing is rewritten: only grouped into hero, sections and blocks.
+ * Maps the compassint.org CMS (api.ts) to the portal's pages, in English or Arabic. Every text
+ * comes verbatim from an API field, or from the live front end's rendered pages (labels such as
+ * "Our Team", checked by `RenderedSite.label`). Nothing is rewritten: only grouped into hero,
+ * sections and blocks.
+ *
+ * Arabic: each field uses its `*Ar` value when that really is Arabic, else the English value,
+ * marked as English (rich text is wrapped in `lang="en" dir="ltr"`; plain strings are marked by the
+ * app). The old front end has no Arabic interface text, so its labels come from `labels.ar.json`,
+ * a hand-written draft for review. Nothing is machine-translated.
  */
 import { load } from 'cheerio';
 import type { Block, LinkKind, PageKind, Section } from '../../../schema/content.ts';
@@ -22,7 +28,44 @@ import {
   type PageDetail,
   type WebPage,
 } from './api.ts';
+import arLabels from './labels.ar.json' with { type: 'json' };
 import type { RenderedSite } from './rendered.ts';
+
+export type Lang = 'en' | 'ar';
+
+const ARABIC = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
+
+/** Whether a text has Arabic letters (a `*Ar` field that only copies the English has none). */
+export function hasArabic(value: string | null | undefined): boolean {
+  return ARABIC.test(value ?? '');
+}
+
+/** The value of a field pair for a language, and whether it is the English fallback. */
+export function pick(
+  lang: Lang,
+  en: string | null | undefined,
+  ar: string | null | undefined,
+): { value: string; english: boolean } {
+  if (lang === 'ar' && hasArabic(ar)) return { value: ar ?? '', english: false };
+  return { value: en ?? '', english: lang === 'ar' };
+}
+
+/** The Arabic for a label the old front end prints in English (draft for review). */
+export function arLabel(label: string): string {
+  const value = (arLabels as Record<string, string>)[label];
+  if (!value) throw new Error(`labels.ar.json has no Arabic for "${label}"`);
+  return value;
+}
+
+/** A path in a language's tree: `/products/` → `/ar/products/`. */
+export function localPath(lang: Lang, path: string): string {
+  return lang === 'en' ? path : `/${lang}${path}`;
+}
+
+/** A page id in a language's tree: `products--erp` → `ar--products--erp`. */
+export function localId(lang: Lang, id: string): string {
+  return lang === 'en' ? id : `${lang}--${id}`;
+}
 
 /** The site's sections by CMS id, with their new path, the old URL prefixes, and page kinds. */
 export const SECTIONS = [
@@ -78,6 +121,11 @@ export type SectionSpec = (typeof SECTIONS)[number];
 /** A page of the new site, before media and breadcrumbs are attached. */
 export interface CmsPage {
   doc: PageDraft;
+  lang: Lang;
+  /** The language-neutral id (the English page's id), pairing a page with its translation. */
+  key: string;
+  /** Arabic pages: whether any of its CMS text really is Arabic (else it only repeats English). */
+  translated: boolean;
   parentId: string | null;
   order: number;
   /** Old paths that showed this page (decoded, exact). */
@@ -126,6 +174,7 @@ export interface MapContext {
   resolve: LinkResolver;
   /** Origin of the old site, for source URLs. */
   source: string;
+  lang: Lang;
 }
 
 interface Lede {
@@ -134,27 +183,89 @@ interface Lede {
   rest?: string;
 }
 
+/** Rich text that is English on an Arabic page: marked so it is read and laid out as English. */
+export function markEnglish(html: string): string {
+  return html ? `<div lang="en" dir="ltr">${html}</div>` : html;
+}
+
 /** A description as hero lede (its first paragraph) and the rest as rich text. */
-function splitLede(html: string, resolve: LinkResolver): Lede {
+function splitLede(html: string, resolve: LinkResolver, english = false): Lede {
   const clean = sanitizeRich(html, resolve);
   if (!clean) return {};
   const $ = load(`<div id="r">${clean}</div>`);
   const first = $('#r').children().first();
-  if (!first.is('p') || !normalizeSpace(first.text())) return { rest: clean };
+  if (!first.is('p') || !normalizeSpace(first.text()))
+    return { rest: english ? markEnglish(clean) : clean };
   const lede = normalizeSpace(first.text());
   first.remove();
   const rest = ($('#r').html() ?? '').trim();
-  return { lede, ...(rest ? { rest } : {}) };
+  return { lede, ...(rest ? { rest: english ? markEnglish(rest) : rest } : {}) };
 }
 
 class Mapper {
   readonly pages: CmsPage[] = [];
   private readonly sectionIds = new Map<string, Set<string>>();
+  /** Arabic values used since the last `add`: whether the page has any real Arabic. */
+  private arabicUsed = 0;
 
   private readonly ctx: MapContext;
+  readonly lang: Lang;
+  /** Links in CMS text, pointed into this language's tree. */
+  readonly resolve: LinkResolver;
 
   constructor(ctx: MapContext) {
     this.ctx = ctx;
+    this.lang = ctx.lang;
+    this.resolve = (href) => {
+      const target = ctx.resolve(href);
+      return target.kind === 'internal' && target.href.startsWith('/')
+        ? { ...target, href: localPath(this.lang, target.href) }
+        : target;
+    };
+  }
+
+  /** The raw value of a field pair for this language (for coverage and further shaping). */
+  raw(en: string | null | undefined, ar: string | null | undefined): string {
+    const picked = pick(this.lang, en, ar);
+    if (this.lang === 'ar' && !picked.english && picked.value.trim()) this.arabicUsed++;
+    return picked.value;
+  }
+
+  /** A plain-text field, trimmed. */
+  t(en: string | null | undefined, ar?: string | null): string {
+    return text(this.raw(en, ar));
+  }
+
+  /** A rich-text field, sanitized; English on an Arabic page is marked as English. */
+  h(en: string | null | undefined, ar?: string | null): string {
+    const english = this.lang === 'ar' && !hasArabic(ar);
+    const html = sanitizeRich(this.raw(en, ar), this.resolve);
+    return english ? markEnglish(html) : html;
+  }
+
+  /** Sanitized HTML the mapper built from plain text (already in this page's language or not). */
+  wrap(html: string, english: boolean): string {
+    return this.lang === 'ar' && english ? markEnglish(html) : html;
+  }
+
+  /** A description split into lede and rich text. */
+  lede(en: string | null | undefined, ar?: string | null): Lede {
+    const english = this.lang === 'ar' && !hasArabic(ar);
+    return splitLede(this.raw(en, ar), this.resolve, english);
+  }
+
+  /** A label the old front end prints: verified on the rendered page, then in this language. */
+  async label(path: string, label: string, options?: { prefix?: boolean }): Promise<string> {
+    await this.ctx.rendered.label(path, label, options);
+    return this.lang === 'ar' ? arLabel(label) : label;
+  }
+
+  path(path: string): string {
+    return localPath(this.lang, path);
+  }
+
+  id(id: string): string {
+    return localId(this.lang, id);
   }
 
   /** Registers an image (trying the CMS's doubled-slash spelling too); its alt is the site's. */
@@ -198,8 +309,8 @@ class Mapper {
 
   /** A landing line: its own section with its picture and text. */
   line(pageId: string, line: LandingLine): Section | undefined {
-    const title = text(line.titleEn);
-    const html = this.rich(line.descriptionEn);
+    const title = this.t(line.titleEn, line.titleAr);
+    const html = this.h(line.descriptionEn, line.descriptionAr);
     const media = this.image(line.imageUrl, title, pageId);
     return this.section(pageId, title || undefined, [
       ...(media ? [{ type: 'media', media } as const] : []),
@@ -214,16 +325,28 @@ class Mapper {
       {
         type: 'featureList',
         items: active.map((item) => ({
-          title: text(item.titleEn),
-          html: this.rich(item.descriptionEn),
+          title: this.t(item.titleEn, item.titleAr),
+          html: this.h(item.descriptionEn, item.descriptionAr),
         })),
       },
     ]);
   }
 
-  add(page: CmsPage): CmsPage {
-    this.pages.push(page);
-    return page;
+  /** Adds a page of this language; `doc.id`, paths and the parent are given language-neutral. */
+  add(page: Omit<CmsPage, 'lang' | 'key' | 'translated'>): void {
+    const key = page.doc.id;
+    this.pages.push({
+      ...page,
+      lang: this.lang,
+      key,
+      translated: this.lang === 'ar' && this.arabicUsed > 0,
+      parentId: page.parentId === null ? null : this.id(page.parentId),
+      doc: { ...page.doc, id: this.id(key), path: this.path(page.doc.path) },
+      // Old URLs belong to the English pages (the old site had no Arabic URLs).
+      oldPaths: this.lang === 'en' ? page.oldPaths : [],
+      oldPrefixes: this.lang === 'en' ? page.oldPrefixes : [],
+    });
+    this.arabicUsed = 0;
   }
 }
 
@@ -240,7 +363,7 @@ const latest = (...times: (string | null | undefined)[]) =>
     .at(-1);
 
 export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
-  const { cms, rendered } = ctx;
+  const { cms } = ctx;
   const m = new Mapper(ctx);
   const sections = new Map(cms.pages.map((page) => [page.id, page]));
   const sectionOf = (spec: SectionSpec): WebPage => {
@@ -255,12 +378,12 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
 
   // Section index pages and their detail pages.
   // Labels the old product pages print around the CMS data.
-  const features = await rendered.label('/solution/', 'Features', { prefix: true });
-  const requestDemo = await rendered.label('/solution/', 'Request Your Demo', { prefix: true });
+  const features = await m.label('/solution/', 'Features', { prefix: true });
+  const requestDemo = await m.label('/solution/', 'Request Your Demo', { prefix: true });
   const demoCta = (): Block => ({
     type: 'cta',
     label: requestDemo,
-    href: '/contact/',
+    href: m.path('/contact/'),
     kind: 'internal',
   });
 
@@ -268,18 +391,23 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
     if (spec.key === 'about') continue;
     const section = sectionOf(spec);
     const indexId = spec.key;
-    const { lede, rest } = splitLede(section.descriptionEn ?? '', ctx.resolve);
-    const heroMedia = m.image(section.imageUrl, text(section.titleEn), indexId);
+    const sectionTitle = m.t(section.titleEn, section.titleAr);
+    const { lede, rest } = m.lede(section.descriptionEn, section.descriptionAr);
+    const heroMedia = m.image(section.imageUrl, sectionTitle, m.id(indexId));
+    const indexSource = sourceOf(
+      m.raw(section.titleEn, section.titleAr),
+      m.raw(section.descriptionEn, section.descriptionAr),
+    );
     m.add({
       doc: {
         id: indexId,
         kind: spec.index,
         path: spec.path,
-        title: text(section.titleEn),
+        title: sectionTitle,
         sourceUrl: `${ctx.source}${spec.oldIndex[0]}`,
         seo: {},
         hero: {
-          title: text(section.titleEn),
+          title: sectionTitle,
           ...(lede ? { lede } : {}),
           ...(heroMedia ? { media: heroMedia } : {}),
           ctas: [],
@@ -293,20 +421,20 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
       ...(latest(section.lastModificationTime, section.creationTime)
         ? { modified: latest(section.lastModificationTime, section.creationTime)! }
         : {}),
-      sourceText: sourceOf(section.titleEn, section.descriptionEn),
+      sourceText: indexSource,
     });
 
     for (const detail of ordered(section.webPageDetails)) {
       const id = detailId(spec, detail);
-      const title = text(detail.titleEn);
-      const split = splitLede(detail.descriptionEn ?? '', ctx.resolve);
-      const media = m.image(detail.imageUrl, title, id);
+      const title = m.t(detail.titleEn, detail.titleAr);
+      const split = m.lede(detail.descriptionEn, detail.descriptionAr);
+      const media = m.image(detail.imageUrl, title, m.id(id));
       const body: Section[] = [];
       if (split.rest)
         body.push({ id: 'introduction', blocks: [{ type: 'richText', html: split.rest }] });
       if (detail.showlines) {
         for (const line of ordered(detail.webPageLandingLines)) {
-          const s = m.line(id, line);
+          const s = m.line(m.id(id), line);
           // The CMS sometimes reuses the page's picture for its first line: show it once.
           if (s && media)
             s.blocks = s.blocks.filter((b) => !(b.type === 'media' && b.media === media));
@@ -314,7 +442,7 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
         }
       }
       if (detail.showFeatures) {
-        const list = m.features(id, features, detail.webPageLandingFeatures);
+        const list = m.features(m.id(id), features, detail.webPageLandingFeatures);
         if (list) body.push(list);
       }
       if (detail.videoUrl) {
@@ -338,6 +466,18 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
       const slug = oldSlug(detail.titleEn ?? '');
       const activeLines = detail.showlines ? ordered(detail.webPageLandingLines) : [];
       const activeFeatures = detail.showFeatures ? ordered(detail.webPageLandingFeatures) : [];
+      const detailSource = sourceOf(
+        m.raw(detail.titleEn, detail.titleAr),
+        m.raw(detail.descriptionEn, detail.descriptionAr),
+        ...activeLines.flatMap((l) => [
+          m.raw(l.titleEn, l.titleAr),
+          m.raw(l.descriptionEn, l.descriptionAr),
+        ]),
+        ...activeFeatures.flatMap((f) => [
+          m.raw(f.titleEn, f.titleAr),
+          m.raw(f.descriptionEn, f.descriptionAr),
+        ]),
+      );
       m.add({
         doc: {
           id,
@@ -361,12 +501,7 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
         ...(latest(detail.lastModificationTime, detail.creationTime)
           ? { modified: latest(detail.lastModificationTime, detail.creationTime)! }
           : {}),
-        sourceText: sourceOf(
-          detail.titleEn,
-          detail.descriptionEn,
-          ...activeLines.flatMap((l) => [l.titleEn, l.descriptionEn]),
-          ...activeFeatures.flatMap((f) => [f.titleEn, f.descriptionEn]),
-        ),
+        sourceText: detailSource,
       });
     }
   }
@@ -379,22 +514,25 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
     const lines = detail?.showlines ? ordered(detail.webPageLandingLines) : [];
     const body: Section[] = [];
     const [first, ...others] = lines;
+    const aboutId = m.id('about');
     if (first) {
-      const s = m.line('about', first);
+      const s = m.line(aboutId, first);
       if (s) body.push(s);
     }
     const team = ordered(cms.team, (member) => Number(member.orderNumber ?? 0));
     if (team.length) {
-      const s = m.section('about', await rendered.label('/about', 'Our Team'), [
+      const s = m.section(aboutId, await m.label('/about', 'Our Team'), [
         {
           type: 'moduleGrid',
           items: team.map((member) => {
-            const name = text(member.nameEN);
-            const media = m.image(member.imageUrl, name, 'about');
-            const job = text(member.jobEN);
+            const name = m.t(member.nameEN, member.nameAR);
+            const media = m.image(member.imageUrl, name, aboutId);
+            const job = m.t(member.jobEN, member.jobAR);
             return {
               title: name,
-              ...(job ? { html: `<p>${escapeHtml(job)}</p>` } : {}),
+              ...(job
+                ? { html: m.wrap(`<p>${escapeHtml(job)}</p>`, !hasArabic(member.jobAR)) }
+                : {}),
               ...(media ? { media } : {}),
             };
           }),
@@ -403,28 +541,41 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
       if (s) body.push(s);
     }
     for (const line of others) {
-      const s = m.line('about', line);
+      const s = m.line(aboutId, line);
       if (s) body.push(s);
     }
     const careers = detail?.showFeatures
-      ? m.features(
-          'about',
-          await rendered.label('/about', 'Our Careers'),
-          detail.webPageLandingFeatures,
-        )
+      ? m.features(aboutId, await m.label('/about', 'Our Careers'), detail.webPageLandingFeatures)
       : undefined;
     if (careers) body.push(careers);
+    const aboutTitle = m.t(section.titleEn, section.titleAr);
+    const aboutLede = plain(m.raw(section.descriptionEn, section.descriptionAr));
+    const aboutSource = sourceOf(
+      m.raw(section.titleEn, section.titleAr),
+      m.raw(section.descriptionEn, section.descriptionAr),
+      ...lines.flatMap((l) => [
+        m.raw(l.titleEn, l.titleAr),
+        m.raw(l.descriptionEn, l.descriptionAr),
+      ]),
+      ...team.flatMap((t) => [m.raw(t.nameEN, t.nameAR), m.raw(t.jobEN, t.jobAR)]),
+      ...(detail?.showFeatures
+        ? ordered(detail.webPageLandingFeatures).flatMap((f) => [
+            m.raw(f.titleEn, f.titleAr),
+            m.raw(f.descriptionEn, f.descriptionAr),
+          ])
+        : []),
+    );
     m.add({
       doc: {
         id: 'about',
         kind: 'page',
         path: spec.path,
-        title: text(section.titleEn),
+        title: aboutTitle,
         sourceUrl: `${ctx.source}/about`,
         seo: {},
         hero: {
-          title: text(section.titleEn),
-          ...(plain(section.descriptionEn) ? { lede: plain(section.descriptionEn) } : {}),
+          title: aboutTitle,
+          ...(aboutLede ? { lede: aboutLede } : {}),
           ctas: [],
         },
         sections: body,
@@ -436,33 +587,33 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
       ...(latest(section.lastModificationTime, detail?.lastModificationTime)
         ? { modified: latest(section.lastModificationTime, detail?.lastModificationTime)! }
         : {}),
-      sourceText: sourceOf(
-        section.titleEn,
-        section.descriptionEn,
-        ...lines.flatMap((l) => [l.titleEn, l.descriptionEn]),
-        ...team.flatMap((t) => [t.nameEN, t.jobEN]),
-        ...(detail?.showFeatures
-          ? ordered(detail.webPageLandingFeatures).flatMap((f) => [f.titleEn, f.descriptionEn])
-          : []),
-      ),
+      sourceText: aboutSource,
     });
   }
 
-  await mapHome(ctx, m, sectionOf, detailPath);
+  await mapHome(ctx, m, sectionOf, (spec, detail) => m.path(detailPath(spec, detail)));
   await mapStatic(ctx, m);
   return m.pages;
 }
 
 /** Card for a detail page, as the old home page lists them: title, first sentence, link. */
 function card(
+  m: Mapper,
   detail: PageDetail,
   href: string,
   linkLabel: string | undefined,
 ): Extract<Block, { type: 'moduleGrid' }>['items'][number] {
-  const summary = plain(detail.descriptionEn);
+  const summary = plain(m.raw(detail.descriptionEn, detail.descriptionAr));
   return {
-    title: text(detail.titleEn),
-    ...(summary ? { html: `<p>${escapeHtml(firstSentence(summary))}</p>` } : {}),
+    title: m.t(detail.titleEn, detail.titleAr),
+    ...(summary
+      ? {
+          html: m.wrap(
+            `<p>${escapeHtml(firstSentence(summary))}</p>`,
+            !hasArabic(detail.descriptionAr),
+          ),
+        }
+      : {}),
     href,
     ...(linkLabel ? { linkLabel } : {}),
   };
@@ -474,8 +625,9 @@ async function mapHome(
   sectionOf: (spec: SectionSpec) => WebPage,
   detailPath: (spec: SectionSpec, detail: PageDetail) => string,
 ): Promise<void> {
-  const { cms, rendered } = ctx;
-  const label = (value: string) => rendered.label('/', value);
+  const { cms } = ctx;
+  const label = (value: string) => m.label('/', value);
+  const homeId = m.id('home');
   const body: Section[] = [];
   const sources: (string | null | undefined)[] = [];
 
@@ -483,19 +635,24 @@ async function mapHome(
   const slides = cms.slides.filter((slide) => slide.isActive);
   const [lead, ...more] = slides;
   if (!lead) throw new Error('The CMS has no home slides');
-  const heroMedia = m.image(lead.imageImagePath, text(lead.titleEn), 'home');
-  sources.push(...slides.flatMap((s) => [s.titleEn, s.detailsEn]));
+  const leadTitle = m.t(lead.titleEn, lead.titleAr);
+  const leadLede = m.t(lead.detailsEn, lead.detailsAr);
+  const heroMedia = m.image(lead.imageImagePath, leadTitle, homeId);
+  sources.push(
+    ...slides.flatMap((s) => [m.raw(s.titleEn, s.titleAr), m.raw(s.detailsEn, s.detailsAr)]),
+  );
   if (more.length) {
-    const s = m.section('home', undefined, [
+    const s = m.section(homeId, undefined, [
       {
         type: 'moduleGrid',
         items: more.map((slide) => {
-          const title = text(slide.titleEn);
-          const media = m.image(slide.imageImagePath, title, 'home');
+          const title = m.t(slide.titleEn, slide.titleAr);
+          const media = m.image(slide.imageImagePath, title, homeId);
+          const details = m.t(slide.detailsEn, slide.detailsAr);
           return {
             title,
-            ...(text(slide.detailsEn)
-              ? { html: `<p>${escapeHtml(text(slide.detailsEn))}</p>` }
+            ...(details
+              ? { html: m.wrap(`<p>${escapeHtml(details)}</p>`, !hasArabic(slide.detailsAr)) }
               : {}),
             ...(media ? { media } : {}),
           };
@@ -507,11 +664,11 @@ async function mapHome(
 
   for (const slogan of ordered(cms.slogans.map((s) => ({ ...s, order: 0 })))) {
     // The slogan title is styled HTML; its text is "Right Application. Right Direction".
-    const title = plain(slogan.titleEn);
-    const html = m.rich(slogan.contentEn);
-    const s = m.section('home', title || undefined, html ? [{ type: 'richText', html }] : []);
+    const title = plain(m.raw(slogan.titleEn, slogan.titleAr));
+    const html = m.h(slogan.contentEn, slogan.contentAr);
+    const s = m.section(homeId, title || undefined, html ? [{ type: 'richText', html }] : []);
     if (s) body.push(s);
-    sources.push(slogan.titleEn, slogan.contentEn);
+    sources.push(m.raw(slogan.titleEn, slogan.titleAr), m.raw(slogan.contentEn, slogan.contentAr));
   }
 
   const linkLabels: Record<string, string | undefined> = {
@@ -523,11 +680,11 @@ async function mapHome(
   for (const spec of SECTIONS.slice(1)) {
     const section = sectionOf(spec);
     const details = ordered(section.webPageDetails);
-    const s = m.section('home', await label(text(section.titleEn)), [
+    const s = m.section(homeId, await label(text(section.titleEn)), [
       {
         type: 'moduleGrid',
         items: details.map((detail) =>
-          card(detail, detailPath(spec, detail), linkLabels[spec.key]),
+          card(m, detail, detailPath(spec, detail), linkLabels[spec.key]),
         ),
       },
     ]);
@@ -535,26 +692,26 @@ async function mapHome(
   }
 
   for (const line of ordered(cms.sloganLines.map((l) => ({ ...l, order: 0 })))) {
-    const title = text(line.titleEn);
-    const media = m.image(line.imageUrl, title, 'home');
+    const title = m.t(line.titleEn, line.titleAr);
+    const media = m.image(line.imageUrl, title, homeId);
     // The old front end shows the title, picture and description, not the `message` field
     // ("Try it free for 30 Days…", "m"), so neither does this page.
-    const html = m.rich(line.descriptionEn);
-    const s = m.section('home', title || undefined, [
+    const html = m.h(line.descriptionEn, line.descriptionAr);
+    const s = m.section(homeId, title || undefined, [
       ...(media ? [{ type: 'media', media } as const] : []),
       ...(html ? [{ type: 'richText', html } as const] : []),
     ]);
     if (s) body.push(s);
-    sources.push(line.titleEn, line.descriptionEn);
+    sources.push(m.raw(line.titleEn, line.titleAr), m.raw(line.descriptionEn, line.descriptionAr));
   }
 
   // The old front end's alt text for every client logo.
   const clientAlt = 'Client logo';
   const clients = ordered(cms.clients)
-    .map((client) => m.image(client.imageImagePath, clientAlt, 'home'))
+    .map((client) => m.image(client.imageImagePath, clientAlt, homeId))
     .filter((id): id is string => Boolean(id));
   if (clients.length) {
-    const s = m.section('home', await label('Our Clients'), [
+    const s = m.section(homeId, await label('Our Clients'), [
       { type: 'gallery', variant: 'logos', items: clients.map((media) => ({ media })) },
     ]);
     if (s) body.push(s);
@@ -563,15 +720,21 @@ async function mapHome(
   const feedback = ordered(cms.feedback);
   if (feedback.length) {
     const s = m.section(
-      'home',
+      homeId,
       await label('Our Client Feedbacks'),
       feedback.map((item) => {
-        const name = text(item.nameEn);
-        const media = m.image(item.imageUrl, name, 'home');
-        const role = [text(item.positionNameEn), text(item.companyNameEn)].filter(Boolean);
+        const name = m.t(item.nameEn, item.nameAr);
+        const media = m.image(item.imageUrl, name, homeId);
+        const role = [
+          m.t(item.positionNameEn, item.positionNameAr),
+          m.t(item.companyNameEn, item.companyNameAr),
+        ].filter(Boolean);
         return {
           type: 'quote',
-          html: `<p>${escapeHtml(text(item.messageEn))}</p>`,
+          html: m.wrap(
+            `<p>${escapeHtml(m.t(item.messageEn, item.messageAr))}</p>`,
+            !hasArabic(item.messageAr),
+          ),
           ...(name ? { cite: name } : {}),
           ...(role.length ? { role } : {}),
           ...(media ? { media } : {}),
@@ -580,20 +743,25 @@ async function mapHome(
     );
     if (s) body.push(s);
     sources.push(
-      ...feedback.flatMap((f) => [f.nameEn, f.positionNameEn, f.companyNameEn, f.messageEn]),
+      ...feedback.flatMap((f) => [
+        m.raw(f.nameEn, f.nameAr),
+        m.raw(f.positionNameEn, f.positionNameAr),
+        m.raw(f.companyNameEn, f.companyNameAr),
+        m.raw(f.messageEn, f.messageAr),
+      ]),
     );
   }
 
   const partners = ordered(cms.partners);
   if (partners.length) {
-    const s = m.section('home', await label('Partners'), [
+    const s = m.section(homeId, await label('Partners'), [
       {
         type: 'gallery',
         variant: 'logos',
         items: partners
-          .map((partner) => m.image(partner.imageImagePath, text(partner.clientName), 'home'))
+          .map((partner) => m.image(partner.imageImagePath, text(partner.clientName), homeId))
           .filter((id): id is string => Boolean(id))
-          .map((media) => ({ media, href: '/partners/' })),
+          .map((media) => ({ media, href: m.path('/partners/') })),
       },
     ]);
     if (s && s.blocks.some((b) => b.type === 'gallery' && b.items.length)) body.push(s);
@@ -606,16 +774,16 @@ async function mapHome(
       id: 'home',
       kind: 'home',
       path: '/',
-      title: text(lead.titleEn),
+      title: leadTitle,
       sourceUrl: `${ctx.source}/`,
       seo: {},
       hero: {
-        title: text(lead.titleEn),
-        ...(text(lead.detailsEn) ? { lede: text(lead.detailsEn) } : {}),
+        title: leadTitle,
+        ...(leadLede ? { lede: leadLede } : {}),
         ...(heroMedia ? { media: heroMedia } : {}),
         ctas: [
-          { label: contact, href: '/contact/', kind: 'internal' satisfies LinkKind },
-          { label: explore, href: '/products/', kind: 'internal' satisfies LinkKind },
+          { label: contact, href: m.path('/contact/'), kind: 'internal' satisfies LinkKind },
+          { label: explore, href: m.path('/products/'), kind: 'internal' satisfies LinkKind },
         ],
       },
       sections: body,
@@ -631,6 +799,8 @@ async function mapHome(
 /** Contact, FAQs, partners and the privacy policy. */
 async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
   const { cms, rendered } = ctx;
+  // Front-end labels: verified on the rendered page, then in this language.
+  const local = (label: string) => (m.lang === 'ar' ? arLabel(label) : label);
 
   // Contact: the form as the site labels it, then each office.
   const contactPage = await rendered.page('/contact');
@@ -647,16 +817,17 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
       const type = el.tagName === 'textarea' ? 'textarea' : ($el.attr('type') ?? 'text');
       return {
         name: $el.attr('formcontrolname') ?? $el.attr('name') ?? slugify(label),
-        label,
+        label: label ? local(label) : label,
         kind: (['email', 'tel', 'textarea'].includes(type) ? type : 'text') as
           'text' | 'email' | 'tel' | 'textarea',
         required: $el.is('[required]') || /\*/.test(labelEl.text()),
       };
     })
     .filter((field) => field.label);
-  const submitLabel = normalizeSpace(
+  const submitText = normalizeSpace(
     form.find('button[type="submit"]').clone().find('[aria-hidden="true"]').remove().end().text(),
   );
+  const submitLabel = submitText ? local(submitText) : '';
   // In the API's order, as the old contact page lists them (UAE, then Canada).
   const offices = cms.offices.filter((office) => office.isActive);
   const officeBlocks: Block[] = [];
@@ -683,9 +854,10 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
           : `<p>${escapeHtml(email)}</p>`,
       );
     }
+    // Office records have no Arabic fields: on an Arabic page they read as English.
     officeBlocks.push({
       type: 'featureList',
-      items: [{ title: text(office.countryName), html: lines.join('') }],
+      items: [{ title: text(office.countryName), html: m.wrap(lines.join(''), true) }],
     });
     const src = /src="([^"]+)"/.exec(office.mapUrl ?? '')?.[1];
     if (src) {
@@ -697,7 +869,7 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
       });
     }
   }
-  const contactTitle = await rendered.label('/contact', 'Contact Us');
+  const contactTitle = await m.label('/contact', 'Contact Us');
   m.add({
     doc: {
       id: 'contact',
@@ -716,7 +888,7 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
           ? [
               {
                 id: 'locations',
-                title: await rendered.label('/contact', 'Our Locations'),
+                title: await m.label('/contact', 'Our Locations'),
                 blocks: officeBlocks,
               },
             ]
@@ -734,7 +906,10 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
 
   // FAQs: the old /faqs path shows the home page, whose FAQ block this is.
   const faqs = ordered(cms.faqs);
-  const faqTitle = await rendered.label('/', 'Frequently Asked Questions');
+  const faqTitle = await m.label('/', 'Frequently Asked Questions');
+  const faqSource = sourceOf(
+    ...faqs.flatMap((f) => [m.raw(f.questionEn, f.questionAr), m.raw(f.answerEn, f.answerAr)]),
+  );
   m.add({
     doc: {
       id: 'faqs',
@@ -750,14 +925,16 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
           blocks: [
             {
               type: 'faq',
-              items: faqs.map((faq) => ({
-                question: text(faq.questionEn),
-                html: m.rich(
-                  /</.test(faq.answerEn ?? '')
-                    ? faq.answerEn
-                    : `<p>${escapeHtml(text(faq.answerEn))}</p>`,
-                ),
-              })),
+              items: faqs.map((faq) => {
+                const answer = m.raw(faq.answerEn, faq.answerAr);
+                return {
+                  question: m.t(faq.questionEn, faq.questionAr),
+                  html: m.wrap(
+                    m.rich(/</.test(answer) ? answer : `<p>${escapeHtml(text(answer))}</p>`),
+                    !hasArabic(faq.answerAr),
+                  ),
+                };
+              }),
             },
           ],
         },
@@ -767,14 +944,14 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
     order: 91,
     oldPaths: ['/faqs'],
     oldPrefixes: [],
-    sourceText: sourceOf(...faqs.flatMap((f) => [f.questionEn, f.answerEn])),
+    sourceText: faqSource,
   });
 
   // Partners: the old /home/partner-details page, with what the CMS says about each partner.
   const partners = ordered(cms.partners);
   if (partners.length) {
-    const visit = await rendered.label('/home/partner-details', 'Visit Website');
-    const title = await rendered.label('/', 'Partners');
+    const visit = await m.label('/home/partner-details', 'Visit Website');
+    const title = await m.label('/', 'Partners');
     m.add({
       doc: {
         id: 'partners',
@@ -792,13 +969,19 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
                 type: 'moduleGrid',
                 items: partners.map((partner) => {
                   const name = text(partner.clientName);
-                  const media = m.image(partner.imageImagePath, name, 'partners');
+                  const media = m.image(partner.imageImagePath, name, m.id('partners'));
                   const about = text(partner.descriptions);
                   const url = text(partner.otherURL);
                   return {
                     title: name,
+                    // Partner records have no Arabic fields.
                     ...(about
-                      ? { html: m.rich(/</.test(about) ? about : `<p>${escapeHtml(about)}</p>`) }
+                      ? {
+                          html: m.wrap(
+                            m.rich(/</.test(about) ? about : `<p>${escapeHtml(about)}</p>`),
+                            true,
+                          ),
+                        }
                       : {}),
                     ...(media ? { media } : {}),
                     ...(/^https?:\/\//.test(url) ? { href: url, linkLabel: visit } : {}),
@@ -820,21 +1003,33 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
   // Privacy policy: front-end page (no CMS record), normalized from the rendered DOM.
   const privacy = await rendered.page('/privacy-policy');
   const $p = privacy.$;
-  const root = $p('app-privacy-policy').first();
+  // A copy: the cached page is shared by every pass, and cleaning edits the tree.
+  const root = $p('app-privacy-policy').first().clone();
   const header = root.find('app-others-page-header').first();
-  const privacyTitle = normalizeSpace(header.find('h1, h2').first().text()) || 'Privacy Policy';
+  const privacyHeading = normalizeSpace(header.find('h1, h2').first().text()) || 'Privacy Policy';
+  // The policy is English only; its heading is also a footer link, which has an Arabic label.
+  const privacyTitle = m.lang === 'ar' ? arLabel(privacyHeading) : privacyHeading;
   header.remove();
   cleanContent($p, root as never);
   const reference = blockText(root.get(0)!);
   const shaped = shapePage(
     toAtoms($p, root.get(0)!),
     {
-      resolveLink: ctx.resolve,
+      resolveLink: m.resolve,
       registerImage: (image) =>
-        ctx.media.register(image, { id: 'privacy-policy', url: privacy.url }),
+        ctx.media.register(image, { id: m.id('privacy-policy'), url: privacy.url }),
     },
     privacyTitle,
   );
+  const privacySections =
+    m.lang === 'ar'
+      ? shaped.sections.map((section) => ({
+          ...section,
+          blocks: section.blocks.map((block) =>
+            block.type === 'richText' ? { ...block, html: markEnglish(block.html) } : block,
+          ),
+        }))
+      : shaped.sections;
   m.add({
     doc: {
       id: 'privacy-policy',
@@ -844,12 +1039,12 @@ async function mapStatic(ctx: MapContext, m: Mapper): Promise<void> {
       sourceUrl: `${ctx.source}/privacy-policy`,
       seo: {},
       hero: { ...shaped.hero, title: privacyTitle },
-      sections: shaped.sections,
+      sections: privacySections,
     },
     parentId: 'home',
     order: 93,
     oldPaths: ['/privacy-policy'],
     oldPrefixes: [],
-    sourceText: `${privacyTitle}\n${reference}`,
+    sourceText: `${privacyHeading === privacyTitle ? privacyTitle : ''}\n${reference}`,
   });
 }

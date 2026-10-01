@@ -1,0 +1,95 @@
+{
+  "id": "ar--features--business-intelligence",
+  "kind": "page",
+  "lang": "ar",
+  "alternates": {
+    "en": "/features/business-intelligence/",
+    "ar": "/ar/features/business-intelligence/"
+  },
+  "path": "/ar/features/business-intelligence/",
+  "title": "Business Intelligence",
+  "sourceUrl": "https://compassint.org/features/business_intelligence",
+  "seo": {},
+  "hero": {
+    "title": "Business Intelligence",
+    "lede": "Harnessing the Power of Data for Informed Decision-Making and Performance Tracking. Compass's advanced Business Intelligence capabilities empower users to extract valuable insights, make informed decisions based on data, and track performance with precision. Featuring interactive visualizations, customizable reports, and real-time monitoring, businesses can analyze data seamlessly. Integration of predictive analytics and forecasting allows users to anticipate trends and take proactive actions. Collaboration tools and sharing features promote a data-driven culture across the organization. Compass's Business Intelligence support optimizes operations, identifies growth opportunities, and fosters sustainable business development.",
+    "media": "m-53d91ecc14",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-0dfc27511c"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تمكّن قدرات الذكاء التجاري في حلول كومباس المستخدمين من الحصول على رؤى قيمة حول أداء الأعمال. تشمل هذه القدرات مراقبة مؤشرات الأداء الرئيسية (KPIs) لتتبع الأداء مقارنة بالأهداف المحددة، بالإضافة إلى الرسوم البيانية التفاعلية والمخططات ولوحات المعلومات لعرض اتجاهات البيانات بصريًا. يمكن للمستخدمين إنشاء تقارير مخصصة بمعايير محددة وتصديرها بصيغ متعددة. تدعم قدرات الذكاء التجاري في كومباس تقنيات تحليل بيانات متقدمة مثل التنقيب في البيانات والتحليل الإحصائي للحصول على رؤى أعمق. تتيح المراقبة والتنبيهات في الوقت الحقيقي حل المشكلات بشكل استباقي. كما تتكامل بسلاسة مع مصادر بيانات متنوعة داخل النظام وتدعم تحليلات الخدمة الذاتية، مما يسمح للمستخدمين باستكشاف البيانات وتحليلها بشكل مستقل. بشكل عام، تعزز قدرات الذكاء التجاري في كومباس عملية اتخاذ القرار وتمكن الشركات من دفع عجلة النمو وكفاءة العمليات من خلال رؤى مبنية على البيانات.</p>"
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Features",
+      "path": "/ar/features/"
+    },
+    {
+      "label": "Business Intelligence",
+      "path": "/ar/features/business-intelligence/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-0dfc27511c": {
+      "id": "m-0dfc27511c",
+      "mime": "image/jpeg",
+      "width": 1280,
+      "height": 853,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAsAA4BaJZACdH8Agsh1EkC8wAD+CPdtt2Oxrurb3J/U0tdWiXQgfjMjLIOgxYh3QGu4pLGmqEAV6ftRklLz5El1Xy5eQri9Y4oONbtHMMPvQmJrHK+MZMTQAA=="
+    },
+    "m-53d91ecc14": {
+      "id": "m-53d91ecc14",
+      "mime": "image/jpeg",
+      "width": 662,
+      "height": 440,
+      "alt": "Business Intelligence",
+      "widths": [
+        320,
+        480,
+        640,
+        662
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQAAsAA4BaJYwCdAYtpyLmMPtOp0gAAP7p/eQMsyK3GuYon2gFy77v6N4c2SSnPXECZCj73Bj0rn635Lge5TYH/cJZlWreWGVKe819ZzJO+wn+M19OiRMbRlc8h1Y7YhzwCYvLQAA="
+    }
+  }
+}

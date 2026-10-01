@@ -318,8 +318,8 @@ describe('postbuild', () => {
   let distDir: string;
   let content: Awaited<ReturnType<typeof loadContent>>;
 
-  const html = (robots: string, canonical?: string) =>
-    `<html><head><meta name="robots" content="${robots}">${canonical ? `<link rel="canonical" href="${canonical}">` : ''}</head><body><h1>x</h1></body></html>`;
+  const html = (robots: string, canonical?: string, lang = 'lang="en" dir="ltr"') =>
+    `<html ${lang}><head><meta name="robots" content="${robots}">${canonical ? `<link rel="canonical" href="${canonical}">` : ''}</head><body><h1>x</h1></body></html>`;
 
   async function fakeDist(): Promise<void> {
     await rm(distDir, { recursive: true, force: true });
@@ -379,12 +379,16 @@ describe('postbuild', () => {
 
   it('refuses to ship a build with missing, stray or mis-tagged pages', async () => {
     await fakeDist();
-    const [first, second] = content.routes.filter((r) => r.path !== '/');
+    const [first, second, third] = content.routes.filter((r) => r.path !== '/');
     const browser = path.join(distDir, 'browser');
     await rm(path.join(browser, first!.path), { recursive: true });
     await writeFile(
       path.join(browser, second!.path, 'index.html'),
       html('noindex', 'https://elsewhere.test/'),
+    );
+    await writeFile(
+      path.join(browser, third!.path, 'index.html'),
+      html('index, follow', new URL(third!.path, ORIGIN).href, 'lang="ar" dir="rtl"'),
     );
     const manifest = JSON.parse(
       await readFile(path.join(distDir, 'prerendered-routes.json'), 'utf8'),
@@ -401,5 +405,6 @@ describe('postbuild', () => {
     expect(message).toContain(`${first!.path} has no index.html`);
     expect(message).toContain(`${second!.path} has robots "noindex"`);
     expect(message).toContain(`${second!.path} has canonical https://elsewhere.test/`);
+    expect(message).toContain(`${third!.path} should be <html lang="en" dir="ltr">`);
   });
 });

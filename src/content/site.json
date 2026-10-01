@@ -9,6 +9,10 @@
     {
       "code": "en",
       "dir": "ltr"
+    },
+    {
+      "code": "ar",
+      "dir": "rtl"
     }
   ],
   "navigation": {
@@ -355,6 +359,327 @@
   "footer": {
     "copyright": "All Rights Reserved. © Compass International 2021."
   },
+  "i18n": {
+    "ar": {
+      "tagline": "تقنية في خدمة الأعمال",
+      "navigation": {
+        "header": [
+          {
+            "label": "الرئيسية",
+            "href": "/ar/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "من نحن",
+            "href": "/ar/about/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "المنتجات",
+            "href": "/ar/products/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "الخدمات",
+            "href": "/ar/services/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "المزايا",
+            "href": "/ar/features/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "القطاعات",
+            "href": "/ar/industries/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "ابدأ الآن",
+            "href": "/ar/contact/",
+            "external": false,
+            "children": []
+          }
+        ],
+        "footer": [
+          {
+            "label": "المنتجات",
+            "href": "/ar/products/",
+            "external": false,
+            "children": [
+              {
+                "label": "Charity Management",
+                "href": "/ar/products/charity-management/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "إدارة التأمين",
+                "href": "/ar/products/insurance-management/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "الموارد البشرية والرواتب",
+                "href": "/ar/products/hr-payroll/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "إدارة التمويل",
+                "href": "/ar/products/finance-management/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "إدارة الأسطول",
+                "href": "/ar/products/fleet-management/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "إدارة الممتلكات",
+                "href": "/ar/products/property-management/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "إدارة المشاريع",
+                "href": "/ar/products/projects-management/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "إدارة البيع بالتجزئة",
+                "href": "/ar/products/retail-management/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "إدارة العقود",
+                "href": "/ar/products/contracts-management/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "إدارة المدارس",
+                "href": "/ar/products/school-management/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "إدارة الجامعات",
+                "href": "/ar/products/university-management/",
+                "external": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "الخدمات",
+            "href": "/ar/services/",
+            "external": false,
+            "children": [
+              {
+                "label": "تكامل الأنظمة",
+                "href": "/ar/services/system-integration/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "تطوير مخصص",
+                "href": "/ar/services/custom-development/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "خدمات البيانات",
+                "href": "/ar/services/data-offering/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "الذكاء الاصطناعي",
+                "href": "/ar/services/artificial-intelligence/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Web Development",
+                "href": "/ar/services/web-development/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "تطوير تطبيقات الموبايل",
+                "href": "/ar/services/mobile-application-development/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "كوادر وخدمات في مجال تكنولوجيا المعلومات والاتصالات",
+                "href": "/ar/services/ict-manpower-outsourcing/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "ERP Development",
+                "href": "/ar/services/erp-development/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Metaverse solution",
+                "href": "/ar/services/metaverse-solution/",
+                "external": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "المزايا",
+            "href": "/ar/features/",
+            "external": false,
+            "children": [
+              {
+                "label": "Omni channel Platform",
+                "href": "/ar/features/omni-channel-platform/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Invoicing",
+                "href": "/ar/features/invoicing/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Business Intelligence",
+                "href": "/ar/features/business-intelligence/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Other Features",
+                "href": "/ar/features/other-features/",
+                "external": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "القطاعات",
+            "href": "/ar/industries/",
+            "external": false,
+            "children": [
+              {
+                "label": "Retail",
+                "href": "/ar/industries/retail/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "IT Services",
+                "href": "/ar/industries/it-services/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Government",
+                "href": "/ar/industries/government/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Real Estate",
+                "href": "/ar/industries/real-estate/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Consulting",
+                "href": "/ar/industries/consulting/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Construction",
+                "href": "/ar/industries/construction/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Financial Services",
+                "href": "/ar/industries/financial-services/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Legal",
+                "href": "/ar/industries/legal/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Whole Sales Distribution",
+                "href": "/ar/industries/whole-sales-distribution/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Non- Profit Organizations",
+                "href": "/ar/industries/non-profit-organizations/",
+                "external": false,
+                "children": []
+              },
+              {
+                "label": "Health Care",
+                "href": "/ar/industries/health-care/",
+                "external": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "الرئيسية",
+            "href": "/ar/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "من نحن",
+            "href": "/ar/about/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "اتصل بنا",
+            "href": "/ar/contact/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "الأسئلة الشائعة",
+            "href": "/ar/faqs/",
+            "external": false,
+            "children": []
+          },
+          {
+            "label": "سياسة الخصوصية",
+            "href": "/ar/privacy-policy/",
+            "external": false,
+            "children": []
+          }
+        ]
+      }
+    }
+  },
   "media": {
     "m-ddef0ddcd8": {
       "id": "m-ddef0ddcd8",
@@ -369,8 +694,8 @@
     }
   },
   "snapshot": {
-    "syncedAt": "2026-10-01T03:48:32.757Z",
-    "pages": 45,
+    "syncedAt": "2026-10-01T05:30:06.310Z",
+    "pages": 90,
     "media": 131
   }
 }

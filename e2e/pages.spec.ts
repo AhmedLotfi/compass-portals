@@ -1,5 +1,5 @@
 import { AxeBuilder } from '@axe-core/playwright';
-import { routes, site } from './content.ts';
+import { pageDoc, routes, site } from './content.ts';
 import { expect, hydrated, test } from './fixtures.ts';
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice'];
@@ -12,10 +12,14 @@ for (const route of routes) {
       await hydrated(page);
       await expect(page.locator('h1')).toHaveCount(1);
       expect(await page.title()).not.toBe('');
+      // An untranslated Arabic page names the English page as canonical.
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
         'href',
-        new URL(route.path, site.origin).href,
+        new URL(pageDoc(route).seo.canonical ?? route.path, site.origin).href,
       );
+      const lang = route.lang ?? 'en';
+      await expect(page.locator('html')).toHaveAttribute('lang', lang);
+      await expect(page.locator('html')).toHaveAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
       await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /\S/);
       const graph = JSON.parse(
         (await page.locator('script[type="application/ld+json"]').textContent()) ?? '',

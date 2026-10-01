@@ -20,7 +20,7 @@ import {
   type Waiver,
 } from '../sync.ts';
 import { Archive, loadCms } from './api.ts';
-import { mapSite, SECTIONS, type CmsPage } from './map.ts';
+import { arLabel, localPath, mapSite, SECTIONS, type CmsPage, type Lang } from './map.ts';
 import { readChrome, RenderedSite } from './rendered.ts';
 
 export interface CmsSyncOptions {
@@ -171,10 +171,30 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
       media: scratch,
       resolve: (href) => ({ href, kind: 'external' }),
       source: options.source,
+      lang: 'en',
     }),
   );
-  const pages = await mapSite({ cms, rendered, media, resolve, source: options.source });
-  log(`Mapped ${pages.length} pages from the CMS`);
+  const english = await mapSite({
+    cms,
+    rendered,
+    media,
+    resolve,
+    source: options.source,
+    lang: 'en',
+  });
+  const arabic = await mapSite({
+    cms,
+    rendered,
+    media,
+    resolve,
+    source: options.source,
+    lang: 'ar',
+  });
+  pairTranslations(english, arabic);
+  const pages = [...english, ...arabic];
+  log(
+    `Mapped ${english.length} pages from the CMS, in English and Arabic (${arabic.filter((p) => p.translated).length} with Arabic text)`,
+  );
 
   // Site chrome. Header and footer links point at the old paths; map them to the new ones.
   const siteRef = { id: 'site', url: home.url };
@@ -194,6 +214,20 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
     return { label: link.label, href: target, external: false, children: [] };
   };
   const defined = <T>(items: (T | undefined)[]) => items.filter((i): i is T => Boolean(i));
+  // The Arabic tree's chrome: the same links, into /ar/, labelled with the Arabic labels
+  // (front-end labels) or the Arabic page's own title (pages).
+  const arabicByPath = new Map(arabic.map((page) => [page.doc.path, page]));
+  const toArabic = (item: NavItem, pageTitle: boolean): NavItem => {
+    if (item.external) return item;
+    const href = localPath('ar', item.href);
+    const page = arabicByPath.get(href);
+    return {
+      label: pageTitle && page ? page.doc.title : arLabel(item.label),
+      href,
+      external: false,
+      children: item.children.map((child) => toArabic(child, true)),
+    };
+  };
   const [name = '', tagline] = chrome.topbar.split(/\s+·\s+/);
   const offices = cms.offices.filter((o) => o.isActive);
   const valueOf = (raw: string | null) => (raw ?? '').trim().replace(/^.*?:\s*/, '');
@@ -211,7 +245,10 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
     origin: options.origin,
     source: options.source,
     ...(logo ? { logo } : {}),
-    languages: [{ code: 'en', dir: 'ltr' }],
+    languages: [
+      { code: 'en', dir: 'ltr' },
+      { code: 'ar', dir: 'rtl' },
+    ],
     navigation: {
       header: defined(chrome.header.map(nav)),
       footer: [
@@ -238,6 +275,15 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
     apps: [],
     footer: chrome.copyright ? { copyright: chrome.copyright } : {},
   };
+  siteDraft.i18n = {
+    ar: {
+      ...(tagline ? { tagline: arLabel(tagline) } : {}),
+      navigation: {
+        header: siteDraft.navigation.header.map((item) => toArabic(item, false)),
+        footer: siteDraft.navigation.footer.map((item) => toArabic(item, false)),
+      },
+    },
+  };
 
   const mediaList = await media.finalize();
   const logoRecord = mediaList.find((m) => m.id === logo);
@@ -255,13 +301,18 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
     );
 
   const byId = new Map(pages.map((p) => [p.doc.id, p]));
-  const homeLabel =
-    siteDraft.navigation.header.find((item) => item.href === '/')?.label ?? siteDraft.name;
+  const homeLabels: Record<Lang, string> = {
+    en: siteDraft.navigation.header.find((item) => item.href === '/')?.label ?? siteDraft.name,
+    ar:
+      siteDraft.i18n.ar?.navigation.header.find((item) => item.href === '/ar/')?.label ??
+      siteDraft.name,
+  };
   const firstParagraph = (page: CmsPage) => page.doc.hero.lede;
   const entries: RouteEntry[] = pages.map((page) => ({
     id: page.doc.id,
     path: page.doc.path,
     kind: page.doc.kind,
+    lang: page.lang,
     params: {},
     parentId: page.parentId,
     order: page.order,
@@ -277,13 +328,13 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
     const chain: { label: string; path: string }[] = [];
     for (let parent = page.parentId ? byId.get(page.parentId) : undefined; parent;) {
       chain.unshift({
-        label: parent.doc.path === '/' ? homeLabel : parent.doc.title,
+        label: parent.parentId === null ? homeLabels[page.lang] : parent.doc.title,
         path: parent.doc.path,
       });
       parent = parent.parentId ? byId.get(parent.parentId) : undefined;
     }
     const children = entries
-      .filter((e) => e.parentId === page.doc.id && page.doc.path !== '/')
+      .filter((e) => e.parentId === page.doc.id && page.parentId !== null)
       .sort((a, b) => a.order - b.order || a.path.localeCompare(b.path))
       .map((e) => ({
         id: e.id,
@@ -295,8 +346,9 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
     const used = mediaList.filter((m) => m.usedOn.includes(page.doc.id)).map((m) => m.id);
     return {
       ...page.doc,
+      lang: page.lang,
       breadcrumbs:
-        page.doc.path === '/' ? [] : [...chain, { label: page.doc.title, path: page.doc.path }],
+        page.parentId === null ? [] : [...chain, { label: page.doc.title, path: page.doc.path }],
       children,
       media: refsFor([...used, ...defined(children.map((c) => c.media))]),
     };
@@ -327,6 +379,26 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
     skipped: [],
     files: snapshotFiles(site, entries, docs, mediaList, redirects),
   };
+}
+
+/**
+ * Pairs each Arabic page with its English page. A real translation (some CMS text is Arabic)
+ * gets hreflang alternates both ways; an Arabic page that only repeats the English stays
+ * reachable for navigation, but names the English page as its canonical and has no pair.
+ */
+export function pairTranslations(english: CmsPage[], arabic: CmsPage[]): void {
+  const byKey = new Map(english.map((page) => [page.key, page]));
+  for (const ar of arabic) {
+    const en = byKey.get(ar.key);
+    if (!en) continue;
+    if (ar.translated) {
+      const alternates = { en: en.doc.path, ar: ar.doc.path };
+      en.doc.alternates = alternates;
+      ar.doc.alternates = alternates;
+    } else {
+      ar.doc.seo = { ...ar.doc.seo, canonical: en.doc.path };
+    }
+  }
 }
 
 /**

@@ -1,3 +1,4 @@
+import { AutoLang } from '../../core/i18n/auto-lang';
 import { Component, computed, input } from '@angular/core';
 import type { PageDoc } from '@schema/content';
 import { MediaImage } from '../../core/media/media-image';
@@ -7,7 +8,7 @@ import { SmartLink } from '../../shared/smart-link/smart-link';
 /** The heading area of inner pages: breadcrumbs, the page's H1 and lede, its CTAs and hero plate. */
 @Component({
   selector: 'app-page-hero',
-  imports: [Breadcrumbs, MediaImage, SmartLink],
+  imports: [AutoLang, Breadcrumbs, MediaImage, SmartLink],
   template: `
     @let p = page();
     <header class="page-hero chart-grid">
@@ -16,9 +17,9 @@ import { SmartLink } from '../../shared/smart-link/smart-link';
           @if (p.breadcrumbs.length > 1) {
             <app-breadcrumbs [items]="p.breadcrumbs" />
           }
-          <h1 class="page-hero__title">{{ p.hero.title }}</h1>
+          <h1 class="page-hero__title" [appAutoLang]="p.hero.title">{{ p.hero.title }}</h1>
           @if (p.hero.lede) {
-            <p class="page-hero__lede">{{ p.hero.lede }}</p>
+            <p class="page-hero__lede" [appAutoLang]="p.hero.lede">{{ p.hero.lede }}</p>
           }
           @if (p.hero.ctas.length) {
             <div class="page-hero__ctas">

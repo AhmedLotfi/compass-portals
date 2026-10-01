@@ -1,3 +1,4 @@
+import { AutoLang } from '../../core/i18n/auto-lang';
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import type { MediaRef, RouteCard } from '@schema/content';
@@ -6,7 +7,7 @@ import { MediaImage } from '../../core/media/media-image';
 /** Child pages of an index page (e.g. a category's products) as a map legend with plates. */
 @Component({
   selector: 'app-child-list',
-  imports: [RouterLink, MediaImage],
+  imports: [AutoLang, RouterLink, MediaImage],
   template: `
     <section class="rail-section" [attr.aria-label]="label()">
       <div aria-hidden="true"></div>
@@ -29,10 +30,10 @@ import { MediaImage } from '../../core/media/media-image';
             }
             <div class="children__body">
               <h2 class="children__title">
-                <a [routerLink]="child.path">{{ child.title }}</a>
+                <a [routerLink]="child.path" [appAutoLang]="child.title">{{ child.title }}</a>
               </h2>
               @if (child.summary) {
-                <p class="children__summary">{{ child.summary }}</p>
+                <p class="children__summary" [appAutoLang]="child.summary">{{ child.summary }}</p>
               }
             </div>
           </li>

@@ -1,7 +1,8 @@
-import { Component, DestroyRef, type ElementRef, inject, viewChild } from '@angular/core';
+import { Component, computed, DestroyRef, type ElementRef, inject, viewChild } from '@angular/core';
 import { NavigationStart, Router, RouterLink } from '@angular/router';
 import { ContentStore } from '../../core/content/content';
 import { CopyPipe } from '../../core/copy/copy';
+import { counterpart, Lang } from '../../core/i18n/lang';
 import { MediaImage } from '../../core/media/media-image';
 import { Icon } from '../icon/icon';
 import { NavLink } from '../nav-link/nav-link';
@@ -23,21 +24,34 @@ export class SiteHeader {
     : undefined;
   protected readonly phone = this.content.primaryPhone;
   protected readonly email = this.content.primaryEmail;
-  protected readonly contactPath = this.content.pathOf('contact');
+  private readonly lang = inject(Lang);
+  private readonly router = inject(Router);
+  protected readonly homePath = computed(() => this.content.homePath(this.lang.current()));
+  protected readonly header = computed(() => this.content.navigation(this.lang.current()).header);
+  protected readonly contactPath = computed(() =>
+    this.content.pathOf('contact', this.lang.current()),
+  );
   /** The site's own menu entry for the contact page ("Get Started"): shown as the button. */
-  protected readonly contactItem = this.site.navigation.header.find(
-    (item) => !item.external && item.href === this.contactPath,
+  protected readonly contactItem = computed(() =>
+    this.header().find((item) => !item.external && item.href === this.contactPath()),
   );
   /** The desktop menu without that entry, which the button already shows. */
-  protected readonly navItems = this.site.navigation.header.filter(
-    (item) => item !== this.contactItem,
+  protected readonly navItems = computed(() =>
+    this.header().filter((item) => item !== this.contactItem()),
   );
+  /** This page in the other language (every page exists in both trees). */
+  protected readonly switchTo = computed(() => {
+    const path = this.lang.path();
+    if (!path) return undefined;
+    const other = this.lang.current() === 'en' ? 'ar' : 'en';
+    return { lang: other, path: counterpart(path, other) } as const;
+  });
   protected readonly logoOnDark = this.site.logoTone === 'light';
 
   private readonly menu = viewChild.required<ElementRef<HTMLDialogElement>>('menu');
 
   constructor() {
-    const subscription = inject(Router).events.subscribe((event) => {
+    const subscription = this.router.events.subscribe((event) => {
       if (event instanceof NavigationStart) this.closeMenu();
     });
     inject(DestroyRef).onDestroy(() => subscription.unsubscribe());

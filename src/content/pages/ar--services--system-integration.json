@@ -1,0 +1,217 @@
+{
+  "id": "ar--services--system-integration",
+  "kind": "service",
+  "lang": "ar",
+  "alternates": {
+    "en": "/services/system-integration/",
+    "ar": "/ar/services/system-integration/"
+  },
+  "path": "/ar/services/system-integration/",
+  "title": "تكامل الأنظمة",
+  "sourceUrl": "https://compassint.org/services/system_integration",
+  "seo": {},
+  "hero": {
+    "title": "تكامل الأنظمة",
+    "lede": "سيقوم عملك بذكاء أكبر من خلال ربط جميع الأنظمة والبرمجيات في مكان واحد. هذا يسهل على فريق العمل مشاركة المعلومات، واتخاذ قرارات أسرع، وتحقيق النمو بسلاسة. سواء كان في إدارة الموارد البشرية، أو الشؤون المالية، أو بيانات العملاء، فإن كل شيء يعمل بانسجام، مما يوفر الوقت، ويقلل من الأخطاء، ويدفع عملك نحو التقدم بثقة.",
+    "media": "m-144236b7d5",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-0bbd58aa92"
+        },
+        {
+          "type": "richText",
+          "html": "<p>خدمات التكامل لدينا في كومباس مصممة لدمج أنظمة تقنية المعلومات المتنوعة بسلاسة، مما يضمن عمليات مترابطة وفعّالة عبر جميع أقسام مؤسستك. ومن خلال خبراتنا، نقوم بدمج مكوّنات الأجهزة والبرمجيات والشبكات ضمن بنية تحتية موحّدة. يركّز نهجنا على تقليل التعطيل إلى أدنى حد ممكن وتعزيز سير العمليات بسلاسة، مما يضمن تدفق البيانات بشكل انسيابي وتحسين الكفاءة التشغيلية.</p> <p>نعمل عن قرب مع عملائنا لفهم احتياجاتهم الخاصة ونبدأ في تصميم حلول تكامل تتماشى مع أهدافهم الإستراتيجية. إن حلولنا مبنية لتكون قابلة للتوسع ومواكبة للتطورات المستقبلية. كما نقدّم عمليات تكامل مع مجموعة واسعة من التطبيقات الخارجية حسب طلب العميل، مما يوفر المرونة والوظائف اللازمة لتلبية المتطلبات الخاصة بكل نشاط تجاري. إن التزامنا بالجودة والتميز يضمن أن الأنظمة المتكاملة لديك ستدعم أهداف أعمالك بكفاءة وفعالية</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "أتمتة شاملة لعمليات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9fd6c3416a"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تعمل خدمات تكامل الأنظمة لدينا على أتمتة العمليات الأساسية عبر مختلف الأقسام، من الموارد البشرية والمالية إلى سلسلة التوريد وخدمة العملاء. هذا يقلل من التدخل اليدوي، ويسرّع سير العمل، ويضمن التناسق في جميع أنحاء المؤسسة. من خلال تبسيط المهام، نُتيح لفرق العمل التركيز على الأنشطة الإستراتيجية التي تضيف قيمة حقيقية للأعمال.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "رؤى مدعومة بالذكاء الاصطناعي وأتمتة ذكية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-cfc0bb33bb"
+        },
+        {
+          "type": "richText",
+          "html": "<p>نقوم في كومباس بدمج تقنيات الذكاء الاصطناعي في أنظمتك لتعزيز كفاءة العمليات التجارية. من خلال استخدام الذكاء الاصطناعي في التحليلات التنبؤية، واكتشاف الشذوذ، واتخاذ القرارات المؤتمتة، نساعدك على مواكبة توجهات السوق، وتقليل المخاطر، وتحسين الأداء. توفر حلولنا المدعومة بالذكاء الاصطناعي رؤى أعمق تُمكِّن مؤسستك من اتخاذ قرارات استباقية مدعومة بالبيانات.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "هيكلية مرنة وقابلة للتوسع",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-68636cb28c"
+        },
+        {
+          "type": "richText",
+          "html": "<p>تقدّم كومباس حلول تكامل مصممة لتواكب نمو أعمالك. تدعم هيكليتنا المرنة التوسع المستقبلي من خلال التكيف السهل مع التقنيات الجديدة، وزيادة حجم البيانات، وتوسّع العمليات. هذا يضمن تطور أنظمتك باستمرار دون الحاجة إلى تعديلات جذرية، مما يوفر حلاً طويل الأمد يلبي متطلبات التوسع في الأعمال</p>"
+        }
+      ]
+    },
+    {
+      "id": "erp-crm",
+      "title": "تكامل ذكي مع أنظمة ERP وCRM والأنظمة القديمة",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-d46a6aad5b"
+        },
+        {
+          "type": "richText",
+          "html": "<p>يضمن فريقنا دمجًا سلسًا مع الأنظمة القديمة الموجودة لديك، مما يعزز من كفاءتها ويُحسّن من قدراتها. من خلال ربط التقنيات الحديثة بالأنظمة القديمة، نحافظ على استثماراتك الحالية مع دفع عجلة الابتكار وتحسين الأداء، مما يؤدي إلى سير عمل أكثر سلاسة وزيادة رضا المستخدمين.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "المزايا",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Landing Features",
+              "html": "<div lang=\"en\" dir=\"ltr\"><p>Accounting software is a tool that allows you to track and manage the day-to-day finances of your businesses.</p> <p>It should allow you to create professional invoices.</p> <p>manage expense tracking, run double-entry accounting reports.</p> <p>accept online payments, and monitor all parts of your business’s money – both in and out.</p> <p>accounting software allows you to do all of this – and more.</p> <p>It includes invoicing features, expense tracking, time tracking, online payments, industry-standard double-entry accounting, balance sheets.</p> <p>mileage tracking, project profitability, bank reconciliation.</p> <p>client retainers, and the list goes on. It’s the reason we’re one of those most popular small business invoicing software – having been used by over 30 million people worldwi.</p></div>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Services",
+      "path": "/ar/services/"
+    },
+    {
+      "label": "تكامل الأنظمة",
+      "path": "/ar/services/system-integration/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-0bbd58aa92": {
+      "id": "m-0bbd58aa92",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAQCdASoQAAoAA4BaJZQCdACwEjdogAD+56uX5DpNZH5Z0K7z2pERWhcjVz3xPEHZ/aG+nv4EV29K4q6vXo5NQZXT9TCWur4pOh7bXaa0hF/NlxpRy9ton24tUAAA"
+    },
+    "m-144236b7d5": {
+      "id": "m-144236b7d5",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "System Integration",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAoAA4BaJbACdADw78H3CFoAAP7lIuZPNukocC875pLdyA5GM4RFSedjbuGoinbuNW5t28jbQ7cUnuKP7LaeYfuTme9JYUh+L8PXdmsF9D4OA9B0r4AA"
+    },
+    "m-68636cb28c": {
+      "id": "m-68636cb28c",
+      "mime": "image/jpeg",
+      "width": 736,
+      "height": 491,
+      "alt": "Scalable and Flexible Architecture",
+      "widths": [
+        320,
+        480,
+        640,
+        736
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwAQCdASoQAAsAA4BaJbACdAYv1hZZGrAA/e+kg9LXsrClb1qMosINpODWQ6jG8fzh4RE1c4ZFsJ8CdqlvDZbe0bDz2ddiVTHldjQ9MrNqRQdLedRoGZ4sZb5LdEgCkXuoTBVOUzIQxl8UsRHUHZcAAAA="
+    },
+    "m-9fd6c3416a": {
+      "id": "m-9fd6c3416a",
+      "mime": "image/jpeg",
+      "width": 735,
+      "height": 490,
+      "alt": "End-to-End Business Process Automation",
+      "widths": [
+        320,
+        480,
+        640,
+        735
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAsAA4BaJbACdAYt92irYu/QAAD+zfcsNs3oZaRzgPGp8bvQOK2YGv/lF5zOFGzKFbgymbxRhtsrEgqlfloKWFmxUTqRfFBg7C0X736Nl7QQ+Q3SDR3g+83WNampNeMsAAAA"
+    },
+    "m-cfc0bb33bb": {
+      "id": "m-cfc0bb33bb",
+      "mime": "image/jpeg",
+      "width": 736,
+      "height": 736,
+      "alt": "AI-Driven Insights and Automation",
+      "widths": [
+        320,
+        480,
+        640,
+        736
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwAgCdASoQABAAA4BaJbACdAYv12b3LjG+KosAAP70n9zG8lzevhSasG/d+LeVpfVJmwi/1WqomYOrHd6EftarmT7mf7xKvlsRLAAojFg1H90dlFCWW+TpltVZe/d/f1WLFBiUlix08aLZ/jwVDxd2Ih5W9rQ2NSwMglg0oAA="
+    },
+    "m-d46a6aad5b": {
+      "id": "m-d46a6aad5b",
+      "mime": "image/jpeg",
+      "width": 735,
+      "height": 489,
+      "alt": "Smart Integration with ERP, CRM, and Legacy Systems",
+      "widths": [
+        320,
+        480,
+        640,
+        735
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJQBOgMYOpbrDLnAA/vNTPbUmye1vpCOvaprcAi/7HeUcRl1Egcq71w+tUeVZE0cWB3YqVIpFgx2mDTVvGK1rvtrQL6yYmfsIk+RFooAAAA=="
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { AutoLang } from '../../core/i18n/auto-lang';
 import { Component, computed, input } from '@angular/core';
 import type { Block, MediaRef } from '@schema/content';
 import { MediaImage } from '../../core/media/media-image';
@@ -12,7 +13,7 @@ interface MediaItem {
 /** One image or a gallery, each presented as an atlas plate with its caption. */
 @Component({
   selector: 'app-media-block',
-  imports: [MediaImage, SmartLink],
+  imports: [AutoLang, MediaImage, SmartLink],
   template: `
     <div
       class="plates"
@@ -33,7 +34,7 @@ interface MediaItem {
               /></span>
             }
             @if (item.caption) {
-              <figcaption>{{ item.caption }}</figcaption>
+              <figcaption [appAutoLang]="item.caption">{{ item.caption }}</figcaption>
             }
           </figure>
         }

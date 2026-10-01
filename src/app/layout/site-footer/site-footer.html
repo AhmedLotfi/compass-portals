@@ -1,15 +1,19 @@
 <footer class="site-footer">
   <div class="frame site-footer__grid">
     <div class="site-footer__brand">
-      <a class="site-footer__logo" [class.site-footer__logo--plate]="logoOnDark" routerLink="/">
+      <a
+        class="site-footer__logo"
+        [class.site-footer__logo--plate]="logoOnDark"
+        [routerLink]="homePath()"
+      >
         @if (logo) {
           <app-media-image [media]="logo" [style.inline-size]="logoWidth" sizes="12rem" />
         } @else {
           <span class="site-footer__name">{{ site.name }}</span>
         }
       </a>
-      @if (site.tagline) {
-        <p class="site-footer__tagline">{{ site.tagline }}</p>
+      @if (tagline(); as tagline) {
+        <p class="site-footer__tagline" [appAutoLang]="tagline">{{ tagline }}</p>
       }
     </div>
 
@@ -19,7 +23,7 @@
           <app-icon name="pin" />
           <span>
             @for (line of site.contact.address; track line) {
-              <span class="site-footer__line">{{ line }}</span>
+              <span class="site-footer__line" [appAutoLang]="line">{{ line }}</span>
             }
           </span>
         </p>
@@ -47,11 +51,11 @@
       }
     </address>
 
-    @if (social.length || site.apps.length) {
+    @if (social().length || site.apps.length) {
       <div class="site-footer__social">
-        @if (social.length) {
+        @if (social().length) {
           <ul class="site-footer__networks" [attr.aria-label]="'followUs' | copy">
-            @for (network of social; track network.url) {
+            @for (network of social(); track network.url) {
               <li>
                 <a class="site-footer__network" [href]="network.url" target="_blank" rel="noopener">
                   <app-brand-icon [name]="network.network" />
@@ -78,9 +82,9 @@
     }
   </div>
 
-  @if (groups.length) {
+  @if (groups().length) {
     <nav class="frame site-footer__columns" [attr.aria-label]="'footerNavigation' | copy">
-      @for (group of groups; track group.href + group.label) {
+      @for (group of groups(); track group.href + group.label) {
         <div class="site-footer__column">
           <h2 class="site-footer__heading">
             <app-nav-link [item]="group" linkClass="footer-link" />
@@ -96,15 +100,15 @@
   }
 
   <div class="frame site-footer__base">
-    @if (links.length) {
+    @if (links().length) {
       <ul class="site-footer__links" [attr.aria-label]="'footerLinks' | copy">
-        @for (item of links; track item.href + item.label) {
+        @for (item of links(); track item.href + item.label) {
           <li><app-nav-link [item]="item" linkClass="footer-link" /></li>
         }
       </ul>
     }
     @if (site.footer.copyright) {
-      <p>{{ site.footer.copyright }}</p>
+      <p [appAutoLang]="site.footer.copyright">{{ site.footer.copyright }}</p>
     }
   </div>
 </footer>

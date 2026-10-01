@@ -1,6 +1,11 @@
 {
   "id": "features--business-intelligence",
   "kind": "page",
+  "lang": "en",
+  "alternates": {
+    "en": "/features/business-intelligence/",
+    "ar": "/ar/features/business-intelligence/"
+  },
   "path": "/features/business-intelligence/",
   "title": "Business Intelligence",
   "sourceUrl": "https://compassint.org/features/business_intelligence",

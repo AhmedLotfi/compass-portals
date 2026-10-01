@@ -1,6 +1,11 @@
 {
   "id": "features--omni-channel-platform",
   "kind": "page",
+  "lang": "en",
+  "alternates": {
+    "en": "/features/omni-channel-platform/",
+    "ar": "/ar/features/omni-channel-platform/"
+  },
   "path": "/features/omni-channel-platform/",
   "title": "Omni channel Platform",
   "sourceUrl": "https://compassint.org/features/omni_channel_platform",

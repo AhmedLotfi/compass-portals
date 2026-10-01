@@ -1,3 +1,4 @@
+import { AutoLang } from '../../core/i18n/auto-lang';
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CopyPipe } from '../../core/copy/copy';
@@ -9,16 +10,16 @@ export interface Crumb {
 
 @Component({
   selector: 'app-breadcrumbs',
-  imports: [RouterLink, CopyPipe],
+  imports: [AutoLang, RouterLink, CopyPipe],
   template: `
     <nav class="breadcrumbs" [attr.aria-label]="'breadcrumb' | copy">
       <ol>
         @for (crumb of items(); track crumb.path; let last = $last) {
           <li>
             @if (last) {
-              <span aria-current="page">{{ crumb.label }}</span>
+              <span aria-current="page" [appAutoLang]="crumb.label">{{ crumb.label }}</span>
             } @else {
-              <a [routerLink]="crumb.path">{{ crumb.label }}</a>
+              <a [routerLink]="crumb.path" [appAutoLang]="crumb.label">{{ crumb.label }}</a>
             }
           </li>
         }

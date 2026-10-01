@@ -1,6 +1,11 @@
 {
   "id": "products--university-management",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/university-management/",
+    "ar": "/ar/products/university-management/"
+  },
   "path": "/products/university-management/",
   "title": "University Management",
   "sourceUrl": "https://compassint.org/products/university_management",

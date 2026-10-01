@@ -1,6 +1,11 @@
 {
   "id": "services--erp-development",
   "kind": "service",
+  "lang": "en",
+  "alternates": {
+    "en": "/services/erp-development/",
+    "ar": "/ar/services/erp-development/"
+  },
   "path": "/services/erp-development/",
   "title": "ERP Development",
   "sourceUrl": "https://compassint.org/services/erp_development",

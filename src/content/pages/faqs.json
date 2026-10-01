@@ -1,6 +1,7 @@
 {
   "id": "faqs",
   "kind": "page",
+  "lang": "en",
   "path": "/faqs/",
   "title": "Frequently Asked Questions",
   "sourceUrl": "https://compassint.org/faqs",

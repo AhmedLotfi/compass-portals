@@ -1,6 +1,7 @@
 {
   "id": "services",
   "kind": "service-index",
+  "lang": "en",
   "path": "/services/",
   "title": "Services",
   "sourceUrl": "https://compassint.org/services",

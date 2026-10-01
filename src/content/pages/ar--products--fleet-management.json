@@ -1,0 +1,157 @@
+{
+  "id": "ar--products--fleet-management",
+  "kind": "product",
+  "lang": "ar",
+  "alternates": {
+    "en": "/products/fleet-management/",
+    "ar": "/ar/products/fleet-management/"
+  },
+  "path": "/ar/products/fleet-management/",
+  "title": "إدارة الأسطول",
+  "sourceUrl": "https://compassint.org/products/fleet_management",
+  "seo": {},
+  "hero": {
+    "title": "إدارة الأسطول",
+    "lede": "قم بتحسين عمليات إدارة الأسطول باستخدام حل متقدم يوفّر ميزات تتبع المركبات، وتخطيط المسارات، والمراقبة اللحظية. احصل على رؤى دقيقة، وولّد تقارير تفصيلية، وأدر المهام المتعلقة بالأسطول بكل سهولة من خلال واجهة استخدام بسيطة وسلسة، مما يعزز من كفاءة إدارة أسطولك.",
+    "media": "m-44f131282f",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>يُدمج نظام كومباس لإدارة الأسطول مبادئ إدارة الأسطول المتقدمة وأفضل الممارسات، بما في ذلك تعريف الأسطول، إصدار وإدارة بطاقات العمل، وتتبع حضور المركبات. كما يمكن توليد تقارير شاملة لمتابعة العمليات اليومية. تساهم هذه التقارير في اتخاذ قرارات سريعة ومدروسة، ومعالجة الاستفسارات المهمة بشكل فوري وفعّال. وبناءً على ذلك، يتم إعداد مؤشرات أداء رئيسية قابلة للتخصيص لتوفير رؤية عامة للمستخدم حول إدارة الأسطول.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "ميزات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-a652374743"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>إدارة شاملة للآلات والمعدات:</strong> عرض وإدارة جميع الآلات والمعدات من خلال شاشة مخصصة واحدة.</p> <p><strong>التنبيهات:</strong> استلام تذكيرات بانتهاء التأمين، التسجيل، والخدمات الدورية.</p> <p><strong>تتبّع الحضور وحساب الإيرادات:</strong> تتبّع حضور الأسطول وحساب الإيرادات الخاصة بكل آلة.</p> <p><strong>بيانات المصروفات مقابل الإيرادات:</strong> استلام وتحليل المصروفات والإيرادات لكل آلة من خلال كشوفات تفصيلية.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الميزات التقنية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-9551f54773"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>حلول قائمة على الويب ومدعومة عبر الإنترنت:</strong> الوصول إلى المنصة من أي جهاز متصل بالإنترنت.</p> <p><strong>تكامل مع الرسائل النصية القصيرة والبريد الإلكتروني:</strong> إرسال الإشعارات والتواصل مباشرة من النظام عبر الرسائل النصية والبريد الإلكتروني.</p> <p><strong>قواعد بيانات Oracle وSQL Server:</strong> استخدام قواعد بيانات Oracle وSQL Server لضمان إدارة موثوقة وآمنة للبيانات.</p> <p><strong>إمكانية التصدير إلى Excel وWord وPDF:</strong> تصدير البيانات والتقارير بسهولة إلى ملفات Excel وWord وPDF.</p> <p><strong>حقول مرنة قابلة للتخصيص:</strong> تكييف وتخصيص الحقول لتلبية احتياجات العمل المحددة وسير العمل المطلوب.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "المزايا",
+      "blocks": [
+        {
+          "type": "featureList",
+          "items": [
+            {
+              "title": "Fleet",
+              "html": ""
+            },
+            {
+              "title": "Workshop",
+              "html": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-demo",
+      "blocks": [
+        {
+          "type": "cta",
+          "label": "اطلب عرضًا توضيحيًا",
+          "href": "/ar/contact/",
+          "kind": "internal"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Products",
+      "path": "/ar/products/"
+    },
+    {
+      "label": "إدارة الأسطول",
+      "path": "/ar/products/fleet-management/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-44f131282f": {
+      "id": "m-44f131282f",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Fleet Management",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAoAA4BaJZQCdAD0t+n9YtwA/vQ0mORcVH1I9sBq1e9Yml9jBnjh2GhY+UVpFnhyFuCvN6wNYRLOwR4AAA=="
+    },
+    "m-9551f54773": {
+      "id": "m-9551f54773",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAoAA4BaJYwCdH8AEAWC/AAA/u0nxu8aZOGtCiIx9YBSGXC6+MC+MjyWP2/V9TQNAxg680WCZb68ErdrEeIEi4oDYOvxcuLigcwA"
+    },
+    "m-a652374743": {
+      "id": "m-a652374743",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoAA4BaJZwAD5DumfoWXYqEAAD+9pOoXjE+8z9PD6cjIKN59Hst7swyB5G87Uy34h/MuLLBViBkVKkScA/d3NsXlYHorFl5rBKhkjABQAAA"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 {
   "id": "features",
   "kind": "product-category",
+  "lang": "en",
   "path": "/features/",
   "title": "Features",
   "sourceUrl": "https://compassint.org/features",

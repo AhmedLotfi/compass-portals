@@ -1,6 +1,11 @@
 {
   "id": "products--contracts-management",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/contracts-management/",
+    "ar": "/ar/products/contracts-management/"
+  },
   "path": "/products/contracts-management/",
   "title": "Contracts Management",
   "sourceUrl": "https://compassint.org/products/contracts_management",

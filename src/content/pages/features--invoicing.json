@@ -1,6 +1,11 @@
 {
   "id": "features--invoicing",
   "kind": "page",
+  "lang": "en",
+  "alternates": {
+    "en": "/features/invoicing/",
+    "ar": "/ar/features/invoicing/"
+  },
   "path": "/features/invoicing/",
   "title": "Invoicing",
   "sourceUrl": "https://compassint.org/features/invoicing",

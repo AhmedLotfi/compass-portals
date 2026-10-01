@@ -1,0 +1,127 @@
+{
+  "id": "ar--services--erp-development",
+  "kind": "service",
+  "lang": "ar",
+  "alternates": {
+    "en": "/services/erp-development/",
+    "ar": "/ar/services/erp-development/"
+  },
+  "path": "/ar/services/erp-development/",
+  "title": "ERP Development",
+  "sourceUrl": "https://compassint.org/services/erp_development",
+  "seo": {},
+  "hero": {
+    "title": "ERP Development",
+    "lede": "Compass provides expert ERP consultancy to help businesses maximize efficiency. we tailor systems to meet your unique needs. Backed by a strong technical team and extensive experience, we ensure seamless integration, compliance, and long-term business growth.",
+    "media": "m-66d5a25d75",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "id": "section",
+      "title": "نظرة عامة",
+      "blocks": [
+        {
+          "type": "richText",
+          "html": "<p>تقدم كومباس إنترناشونال خدمات استشارية متخصصة في تخطيط موارد المؤسسات لمساعدة شركتكم على تحقيق أهدافها باتباع أفضل الممارسات.<br>يتمتع فريقنا من الخبراء الرئيسيين في مجال حزمة أوراكل للأعمال الإلكترونية بخبرة واسعة في مجالات مثل الموارد البشرية والرواتب، والإدارة المالية، وسلسلة التوريد. نقدم إرشادات مصممة خصيصًا لتحسين عملياتكم وتوسيع إمكانيات تطبيقات أوراكل. بالإضافة إلى ذلك، نقدم حلول تخطيط موارد المؤسسات مخصصة بناءً على احتياجاتكم، مما يضمن تلبية متطلباتكم الفريدة بدقة. يضمن فريقنا الفني القوي التكامل والتخصيص بسلاسة، مما يتيح لكم الاستفادة الكاملة من إمكانات نظام تخطيط موارد المؤسسات الخاص بكم. بفضل خبرتنا، تستطيع مؤسستكم تبسيط العمليات، وتحسين الكفاءة، ودفع عجلة نمو أعمالكم.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "ميزات الأعمال",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-16ec3ce344"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>الخبرة في Oracle E-Business Suite:</strong><br>نحن متخصصون في تنفيذ وتحسين نظام Oracle E-Business Suite لتعزيز عمليات الأعمال في مجالات الموارد البشرية، والمالية، وسلسلة التوريد.</p> <p><strong>خبرة واسعة في منطقة الخليج:</strong><br>بفضل خبرتنا الواسعة في دول مجلس التعاون الخليجي، نقدم حلول ERP مصممة لتناسب بيئات الأعمال الفريدة والمتطلبات التنظيمية الخاصة بكل دولة في المنطقة.</p> <p><strong>موارد ثنائية اللغة (العربية والإنجليزية):</strong><br>يضم فريقنا محترفين يتقنون اللغتين العربية والإنجليزية، مما يضمن تواصلاً فعالاً ودعماً شاملاً لعملائنا من مختلف الخلفيات.</p> <p><strong>مواد تدريبية شاملة:</strong><br>نقدم مواد تدريبية جاهزة تغطي جميع جوانب نظام ERP، مما يساعد فريق عملك على استخدام النظام بكفاءة وسرعة.</p>"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "الميزات التقنية",
+      "blocks": [
+        {
+          "type": "media",
+          "media": "m-72b5f45c82"
+        },
+        {
+          "type": "richText",
+          "html": "<p><strong>توسيع وتخصيص Oracle E-Business Suite:</strong><br>نقدم خدمات تخصيص وتوسعة شاملة لنظام Oracle E-Business Suite، لضمان توافق الحل مع احتياجات أعمالك الخاصة.</p> <p><strong>فريق تقني قوي يحمل شهادات OCP وOCA:</strong><br>يضم فريقنا التقني نخبة من المختصين الحاصلين على شهادات Oracle Certified Professional (OCP) وOracle Certified Associate (OCA)، مما يضمن لك دعماً وتنفيذاً على أعلى مستوى من الاحترافية.</p> <p><strong>خبرة في أحدث إصدارات Oracle E-Business Suite:</strong><br>نمتلك خبرة واسعة في التعامل مع أحدث إصدارات Oracle E-Business Suite، مما يتيح لك الاستفادة من أحدث الميزات والتحسينات في النظام.</p> <p><strong>خبرة في ترقيات الإصدارات:</strong><br>لدينا خبرة متميزة في إدارة ترقيات النظام من إصدار إلى آخر، مع ضمان انتقال سلس وتقليل التأثير على عملياتك التشغيلية.</p>"
+        }
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Services",
+      "path": "/ar/services/"
+    },
+    {
+      "label": "ERP Development",
+      "path": "/ar/services/erp-development/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-16ec3ce344": {
+      "id": "m-16ec3ce344",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Business Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAoAA4BaJYgCdAYtpgVLE2dIAAD+wPZW0+FE3ayevN8aozIV/rxP9FVWayXkPekaD2HeMeNWae0slprNnHbqR5173l5ZtyBivI9717xqMARHbyMVrS7wAAA="
+    },
+    "m-66d5a25d75": {
+      "id": "m-66d5a25d75",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "ERP Development",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAoAA4BaJZQCdADhlaUWA4VgAP36UvE8yCn7zH0+RcWFgaYKX0wnpHlCDfdMXYoe8+jYUMP9JzxA1PMvdbYEIRCDtbaSf5Mykt5j0YrJDJXRonNGxahGrZCAAA=="
+    },
+    "m-72b5f45c82": {
+      "id": "m-72b5f45c82",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoAA4BaJZgC7AEf6RVohQyiuyAA/guBeQKo1un12cSXgJRfHybtl2/OzCxwQckE0SN7+Jl8nc0jLQNWUavCfJdrfuAOhO0X83Iq+krL5CjluFl2Zs4A"
+    }
+  }
+}

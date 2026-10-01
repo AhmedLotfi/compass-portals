@@ -16,6 +16,7 @@ import path from 'node:path';
 import { availableParallelism } from 'node:os';
 import pLimit from 'p-limit';
 import sharp from 'sharp';
+import subsetFont from 'subset-font';
 import { optimize } from 'svgo';
 import type { Media, PageDoc, Site } from '../../schema/content.ts';
 import { ARCHIVE_DIR, CONTENT_DIR, HTTP_ARCHIVE_DIR, ROOT } from '../content-sync/config.ts';
@@ -193,6 +194,57 @@ export async function buildMedia(options: MediaBuildOptions = {}): Promise<void>
   }
 
   log(`${mediaIndex.media.length} images: ${made} file(s) built; ${files} document(s) copied.`);
+  const arabic = await buildArabicFonts(contentDir, path.join(publicDir, 'fonts'));
+  if (arabic) log(arabic);
+}
+
+/** Arabic letters and the joiners that shape them. */
+const ARABIC_TEXT =
+  /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\u200C-\u200F]/gu;
+
+/** The Arabic web fonts, cut to the characters the site's Arabic pages use. */
+export const ARABIC_FONTS = [
+  {
+    source:
+      'node_modules/@fontsource-variable/noto-sans-arabic/files/noto-sans-arabic-arabic-wght-normal.woff2',
+    file: 'noto-sans-arabic-site.woff2',
+  },
+  {
+    source:
+      'node_modules/@fontsource-variable/noto-naskh-arabic/files/noto-naskh-arabic-arabic-wght-normal.woff2',
+    file: 'noto-naskh-arabic-site.woff2',
+  },
+] as const;
+
+/**
+ * The full Arabic faces are 94 KB and 166 KB; the site's Arabic text uses a few dozen letters.
+ * The subsets (HarfBuzz, so the shaping tables for joined forms stay) are about a sixth of that.
+ * They are cut from the snapshot on every build, so new content brings its letters along.
+ */
+export async function buildArabicFonts(
+  contentDir: string,
+  outDir: string,
+): Promise<string | undefined> {
+  const texts = [
+    await readFile(path.join(contentDir, 'site.json'), 'utf8'),
+    await readFile(path.join(ROOT, 'src/app/core/copy/microcopy.ar.json'), 'utf8'),
+  ];
+  for (const file of await readdir(path.join(contentDir, 'pages'))) {
+    if (file.startsWith('ar--'))
+      texts.push(await readFile(path.join(contentDir, 'pages', file), 'utf8'));
+  }
+  const letters = [...new Set(texts.join('').match(ARABIC_TEXT) ?? [])].sort().join('');
+  if (!letters) return undefined;
+  await mkdir(outDir, { recursive: true });
+  const sizes: string[] = [];
+  for (const font of ARABIC_FONTS) {
+    const subset = await subsetFont(await readFile(path.join(ROOT, font.source)), letters, {
+      targetFormat: 'woff2',
+    });
+    await writeFile(path.join(outDir, font.file), subset);
+    sizes.push(`${font.file} ${Math.round(subset.length / 1024)} KB`);
+  }
+  return `Arabic fonts for ${letters.length} letters: ${sizes.join(', ')}`;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

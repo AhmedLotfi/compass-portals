@@ -23,5 +23,7 @@ import { PageHero } from '../shared/page-hero';
 })
 export class Product {
   readonly page = input.required<PageDoc>();
-  protected readonly askAbout = computed(() => copy('askAbout', { title: this.page().title }));
+  protected readonly askAbout = computed(() =>
+    copy('askAbout', { title: this.page().title }, this.page().lang ?? 'en'),
+  );
 }

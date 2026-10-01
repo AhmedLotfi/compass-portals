@@ -1,6 +1,7 @@
 {
   "id": "services--web-development",
   "kind": "service",
+  "lang": "en",
   "path": "/services/web-development/",
   "title": "Web Development",
   "sourceUrl": "https://compassint.org/services/web_development",

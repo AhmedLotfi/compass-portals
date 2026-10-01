@@ -1,6 +1,11 @@
 {
   "id": "products--retail-management",
   "kind": "product",
+  "lang": "en",
+  "alternates": {
+    "en": "/products/retail-management/",
+    "ar": "/ar/products/retail-management/"
+  },
   "path": "/products/retail-management/",
   "title": "Retail Management",
   "sourceUrl": "https://compassint.org/products/retail_management",

@@ -1,0 +1,52 @@
+{
+  "id": "ar--services--metaverse-solution",
+  "kind": "service",
+  "lang": "ar",
+  "path": "/ar/services/metaverse-solution/",
+  "title": "Metaverse solution",
+  "sourceUrl": "https://compassint.org/services/metaverse_solution",
+  "seo": {
+    "canonical": "/services/metaverse-solution/"
+  },
+  "hero": {
+    "title": "Metaverse solution",
+    "lede": "Compass International LLC’s Metaverse Solution redefines immersive experiences with cutting-edge AR/VR displays, holographic projections, and haptic feedback devices. Our platform empowers businesses, educators, and innovators to seamlessly connect physical and digital worlds, enabling virtual meetings, product showcases, team training, and unforgettable customer interactions. Step into the future with our Immersive 360 Experience Room and unlock limitless possibilities for growth, collaboration, and creativity",
+    "media": "m-31c96695f2",
+    "ctas": []
+  },
+  "sections": [],
+  "breadcrumbs": [
+    {
+      "label": "الرئيسية",
+      "path": "/ar/"
+    },
+    {
+      "label": "Services",
+      "path": "/ar/services/"
+    },
+    {
+      "label": "Metaverse solution",
+      "path": "/ar/services/metaverse-solution/"
+    }
+  ],
+  "children": [],
+  "media": {
+    "m-31c96695f2": {
+      "id": "m-31c96695f2",
+      "mime": "image/jpeg",
+      "width": 1200,
+      "height": 546,
+      "alt": "Metaverse solution",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1200
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAcAA4BaJYgCdAEPUSVqs0AA/tIEB/yeFYwjFgNEAhEvJu37po/Rjg4ox9XkALR8Z+qudll77JUq9Nghp83WkhoAAA=="
+    }
+  }
+}

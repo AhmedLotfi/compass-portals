@@ -1,7 +1,17 @@
+import { inject } from '@angular/core';
 import type { Routes } from '@angular/router';
 import type { PageKind } from '@schema/content';
 import { routeTable } from './core/content/content';
 import { pageResolver } from './core/content/page-resolver';
+import { Lang } from './core/i18n/lang';
+
+/** The 404 page (served as /404.html for every unknown URL) is English. */
+const englishPage = () => {
+  const lang = inject(Lang);
+  lang.current.set('en');
+  lang.path.set(undefined);
+  return 'en';
+};
 
 type LoadComponent = NonNullable<Routes[number]['loadComponent']>;
 
@@ -46,8 +56,13 @@ export const routes: Routes = [
     pathMatch: 'full' as const,
     loadComponent: COMPONENT_FOR[entry.kind],
     resolve: { page: pageResolver },
-    data: { pageId: entry.id },
+    data: { pageId: entry.id, lang: entry.lang ?? 'en' },
   })),
-  { path: '404', loadComponent: notFound, data: { notFound: true } },
-  { path: '**', loadComponent: notFound, data: { notFound: true } },
+  {
+    path: '404',
+    loadComponent: notFound,
+    data: { notFound: true },
+    resolve: { lang: englishPage },
+  },
+  { path: '**', loadComponent: notFound, data: { notFound: true }, resolve: { lang: englishPage } },
 ];
