@@ -70,6 +70,8 @@ export interface HttpClientOptions {
   maxRedirects?: number;
   /** Retries for network errors, 429 and 5xx responses (with exponential backoff). */
   retries?: number;
+  /** Per-request timeout (default REQUEST_TIMEOUT_MS). */
+  timeoutMs?: number;
   /**
    * Pages rendered in a browser (content:render). A client-rendered site's HTML is an empty shell,
    * so HTML requests for these pages get the rendered DOM instead.
@@ -114,6 +116,7 @@ export class HttpClient {
   private readonly userAgent: string;
   private readonly maxRedirects: number;
   private readonly maxAttempts: number;
+  private readonly timeoutMs: number;
   private readonly manifest = new Map<string, ArchiveEntry>();
   private readonly inflight = new Map<string, Promise<HttpResponse>>();
   private readonly renderedDir: string | undefined;
@@ -129,6 +132,7 @@ export class HttpClient {
     this.userAgent = options.userAgent ?? USER_AGENT;
     this.maxRedirects = options.maxRedirects ?? 10;
     this.maxAttempts = (options.retries ?? 4) + 1;
+    this.timeoutMs = options.timeoutMs ?? REQUEST_TIMEOUT_MS;
     this.renderedDir = options.renderedDir;
   }
 
@@ -306,7 +310,7 @@ export class HttpClient {
         const response = await fetch(url, {
           headers,
           redirect: 'manual',
-          signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+          signal: AbortSignal.timeout(this.timeoutMs),
         });
         if ((response.status === 429 || response.status >= 500) && attempt < this.maxAttempts) {
           const wait =

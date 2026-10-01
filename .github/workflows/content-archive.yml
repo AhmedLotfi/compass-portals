@@ -53,8 +53,10 @@ jobs:
         if: always()
         run: npm run content:discover
 
+      # Bounded so the commit step always runs (the CMS names images on a host that may not answer).
       - name: Download the images and documents the pages reference
         if: always()
+        timeout-minutes: 15
         run: npm run content:fetch
 
       - name: Upload the inventory report

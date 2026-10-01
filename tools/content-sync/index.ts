@@ -100,6 +100,24 @@ async function runDiscover(probeOnly: boolean): Promise<Inventory> {
   }
 }
 
+/**
+ * Every image the CMS API names, with its own client: one attempt and a 10 s timeout per image.
+ * It starts after the main client has saved, so each reads the other's archive entries.
+ */
+async function fetchCms(): Promise<void> {
+  if (offline || !(await Archive.open(HTTP_ARCHIVE_DIR)).hasApi()) return;
+  const http = new HttpClient({ renderedDir: RENDER_DIR, retries: 0, timeoutMs: 10_000 });
+  await http.load();
+  try {
+    await writeJson(
+      path.join(REPORTS_DIR, 'cms-images.json'),
+      await fetchCmsImages(HTTP_ARCHIVE_DIR, http, log),
+    );
+  } finally {
+    await http.save();
+  }
+}
+
 async function runFetch(inventory: Inventory): Promise<AssetManifest> {
   const http = new HttpClient({ offline, renderedDir: RENDER_DIR });
   await http.load();
@@ -111,13 +129,10 @@ async function runFetch(inventory: Inventory): Promise<AssetManifest> {
     });
     await writeAssetManifest(manifest);
     log(`Assets: ${manifest.assets.length} downloaded, ${manifest.missing.length} missing`);
-    if ((await Archive.open(HTTP_ARCHIVE_DIR)).hasApi()) {
-      const cms = await fetchCmsImages(HTTP_ARCHIVE_DIR, http, log);
-      await writeJson(path.join(REPORTS_DIR, 'cms-images.json'), cms);
-    }
     return manifest;
   } finally {
     await http.save();
+    await fetchCms();
   }
 }
 
