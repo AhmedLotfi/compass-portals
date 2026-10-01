@@ -22,6 +22,10 @@
       "title": "Overview",
       "blocks": [
         {
+          "type": "media",
+          "media": "m-8d5a5d6928"
+        },
+        {
           "type": "richText",
           "html": "<p>Our University Management System is a solution designed to streamline and enhance university operations. It integrates various administrative functions, including student admissions, course registration, and academic scheduling, into a single platform. The software features user-friendly interfaces for faculty and staff, promoting effective communication and collaboration, also provision of portals to students for access to academic information is possible with our solution. Detailed reporting tools and KPI tracking help monitor academic performance and institutional efficiency. Additionally, the system supports fee management, financial aid processing, and online payment options, ensuring smooth financial operations. With the help of multi-campus definitions, the software can manage multiple branches through one platform. It also ensures data security and compliance, safeguarding the confidentiality and integrity of all university records</p>"
         }
@@ -41,6 +45,10 @@
       "id": "technical-features",
       "title": "Technical Features",
       "blocks": [
+        {
+          "type": "media",
+          "media": "m-8da8180604"
+        },
         {
           "type": "richText",
           "html": "<p>Our University Management System is built on a scalable, modular architecture that supports both cloud-based and on-premise deployment options. It features a responsive, mobile-friendly interface optimized for desktops, tablets, and smartphones, ensuring seamless access across devices. The system offers secure role-based access control (RBAC) and supports Single Sign-On (SSO) for enhanced user authentication. Real-time data processing and synchronization ensure accuracy across modules, while a robust API layer allows integration with third-party systems such as learning management platforms, payment gateways, and ERP solutions. The solution supports multi-language and multi-currency environments, making it suitable for diverse institutional needs. Additionally, the system includes automated backup, data encryption, audit trails, and compliance with international data protection standards, ensuring high reliability and security.</p>"
@@ -118,6 +126,40 @@
   ],
   "children": [],
   "media": {
+    "m-8d5a5d6928": {
+      "id": "m-8d5a5d6928",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAoAA4BaJQBOgBjyy/ndAAD+7qFJ/F+kG/VaEyUe21oDHUxZwhxm3mqinbA7iI0ZA/pUCCvls2AA"
+    },
+    "m-8da8180604": {
+      "id": "m-8da8180604",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoQAAoAA4BaJQBOgCFZsNxPE+wAAP7u8w1rTmsvu1gxkXETTN29RFrKoGi3QRmck7Q7QiL1i2ZSQxZd5LcyRjmxcFWxt7t1QnHcPJVc5GUk6XBJBpSLpRPtejrnkLwA"
+    },
     "m-e8563e5a89": {
       "id": "m-e8563e5a89",
       "mime": "image/jpeg",

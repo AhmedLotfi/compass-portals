@@ -1822,6 +1822,54 @@
       ]
     },
     {
+      "id": "m-8d5a5d6928",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-646dadf4-7788-4924-b53b-14abdee84ec9.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-646dadf4-7788-49--e0e71d532b.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Overview",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAoAA4BaJQBOgBjyy/ndAAD+7qFJ/F+kG/VaEyUe21oDHUxZwhxm3mqinbA7iI0ZA/pUCCvls2AA",
+      "usedOn": [
+        "ar--products--university-management",
+        "products--university-management"
+      ]
+    },
+    {
+      "id": "m-8da8180604",
+      "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-e93a686e-513e-4ca5-ad17-307b54482cc1.jpg",
+      "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-e93a686e-513e-4c--039715a3d7.jpg",
+      "mime": "image/jpeg",
+      "width": 1000,
+      "height": 617,
+      "alt": "Technical Features",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1000
+      ],
+      "svg": false,
+      "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoQAAoAA4BaJQBOgCFZsNxPE+wAAP7u8w1rTmsvu1gxkXETTN29RFrKoGi3QRmck7Q7QiL1i2ZSQxZd5LcyRjmxcFWxt7t1QnHcPJVc5GUk6XBJBpSLpRPtejrnkLwA",
+      "usedOn": [
+        "ar--products--university-management",
+        "products--university-management"
+      ]
+    },
+    {
       "id": "m-8deb0ae0d7",
       "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-3de13efd-501a-4eef-b33c-a238cad966a5.jpg",
       "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-3de13efd-501a-4e--f7226ad611.jpg",
