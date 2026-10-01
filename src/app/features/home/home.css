@@ -29,7 +29,9 @@
 }
 
 .home-hero__title {
-  max-inline-size: 16ch;
+  /* 16ch of the display serif, in em: ch follows whichever font is showing, so it would
+     change (and rewrap the headline) when the web font swaps in. */
+  max-inline-size: 8.5em;
   font-size: var(--text-display);
   line-height: var(--text-display--line-height);
   letter-spacing: -0.02em;
@@ -37,7 +39,7 @@
 
 .home-hero__lede {
   margin-top: 1.4rem;
-  max-inline-size: 46ch;
+  max-inline-size: 25.75em; /* 46ch of the text face, font-independent */
   font-size: var(--text-lg);
   line-height: var(--text-lg--line-height);
   color: var(--color-ink-2);

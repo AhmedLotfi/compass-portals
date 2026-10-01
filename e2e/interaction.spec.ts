@@ -79,7 +79,14 @@ test('with reduced motion, nothing animates on the home page', async ({ browser,
     document
       .getAnimations()
       .filter((animation) => animation.playState === 'running')
-      .map((animation) => (animation as CSSAnimation).animationName || animation.id),
+      .map((animation) => {
+        const target = (animation.effect as KeyframeEffect | null)?.target;
+        const what =
+          (animation as CSSAnimation).animationName ||
+          (animation as CSSTransition).transitionProperty ||
+          animation.id;
+        return `${what} on ${target ? `${target.tagName.toLowerCase()}.${target.className}` : '?'}`;
+      }),
   );
   expect(running).toEqual([]);
   await context.close();

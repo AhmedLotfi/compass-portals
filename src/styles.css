@@ -2,7 +2,6 @@
 @import 'tailwindcss' source(none);
 @source './app';
 
-@import './styles/fonts.css';
 @import './styles/easing.css';
 @import './styles/theme.css';
 @import './styles/base.css';

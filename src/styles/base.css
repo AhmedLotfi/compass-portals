@@ -202,7 +202,9 @@ a[href^='tel:'] {
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    /* 0s, not a token 0.01ms: with the default `transition-property: all`, a non-zero duration
+       on every element turns any style change (a late font resizing a box) into a transition. */
+    transition-duration: 0s !important;
     scroll-behavior: auto !important;
   }
 

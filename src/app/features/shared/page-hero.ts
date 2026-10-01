@@ -71,10 +71,11 @@ import { SmartLink } from '../../shared/smart-link/smart-link';
       gap: 1.25rem;
     }
     .page-hero__title {
-      max-inline-size: 20ch;
+      /* 20ch of the display serif, in em so a font swap can't rewrap the headline. */
+      max-inline-size: 10.6em;
     }
     .page-hero__lede {
-      max-inline-size: 58ch;
+      max-inline-size: 32.5em; /* 58ch of the text face, font-independent */
       font-size: var(--text-lg);
       line-height: var(--text-lg--line-height);
       color: var(--color-ink-2);

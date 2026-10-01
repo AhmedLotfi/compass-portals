@@ -162,3 +162,12 @@
   max-block-size: 4.5rem;
   object-fit: contain;
 }
+
+/* A card's "read more" link (inside SmartLink): a full 24px target (WCAG 2.2 target size), set
+   apart from the text above it. */
+.module-grid__more {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 1.75rem;
+  margin-block-start: 0.25rem;
+}

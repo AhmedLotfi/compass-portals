@@ -17,30 +17,30 @@ sync turns the archived API responses into typed JSON and self-hosted images; ev
 
 ## Commands
 
-| Command                                           | What it does                                                                                             |
-| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| `npm start`                                       | Dev server on http://localhost:4200                                                                      |
-| `npm run build`                                   | Production build with static prerendering into `dist/compass-portal/browser`, then the post-build step   |
-| `npm test`                                        | Unit tests (Vitest), single run                                                                          |
-| `npm run lint`                                    | angular-eslint (TypeScript and templates)                                                                |
-| `npm run content:probe`                           | Fingerprint compassint.org (platform, REST API, permalinks) → `reports/probe.json`                       |
-| `npm run content:discover`                        | Full inventory of the site → `reports/inventory.{json,md}` (add `-- --offline` to use the archive only)  |
-| `npm run content:render`                          | Render every page in headless Chromium (the site is a client-rendered Angular app) into the archive      |
-| `npm run content:fetch`                           | Download every image, document and builder stylesheet the inventory references                           |
-| `npm run content:sync`                            | Normalize the archive into `src/content/` (offline) and verify sentence coverage → `reports/coverage.md` |
-| `npm run content:all`                             | discover + fetch + sync in one go (needs compassint.org in the allowed domains)                          |
-| `npm run media:build`                             | Responsive AVIF/WebP variants, share images, `/files/` documents, favicons (runs before build/start)     |
-| `npm run content:fixture`                         | Synthetic snapshot from the fake WordPress test site into `.cache/fixture/` (never ships)                |
-| `npm run start:fixture` / `npm run build:fixture` | Develop or build against the fixture (before the real sync exists)                                       |
-| `node tools/serve-dist.ts --content=<dir>`        | Serve `dist/` like production hosting (redirect map, trailing slashes, real 404)                         |
-| `npm run verify:dist -- --content=<dir>`          | Parity + provenance of the built HTML against the snapshot, links, sitemap, html-validate                |
-| `npm run e2e`                                     | Playwright e2e + axe (WCAG 2.2 AA) against the build, desktop and mobile (`E2E_CONTENT=<dir>`)           |
-| `npm run lighthouse -- --content=<dir>`           | Lighthouse (mobile + desktop) on home, listing, product, contact → `reports/lighthouse/`                 |
-| `npm run verify:hosting -- --content=<dir>`       | Serve the build with real nginx and Apache (generated rules) and check redirects, 404/410, headers       |
-| `npm run test:tools`                              | Tests for the build tooling (Vitest, `tools/**/*.test.ts`)                                               |
-| `npm run typecheck:tools`                         | Type-check `tools/`                                                                                      |
-| `npm run design:generate`                         | Regenerate `src/styles/fonts.css`, `src/styles/easing.css` and `public/textures/*.svg` (deterministic)   |
-| `npm run lint:design`                             | Fail on banned design tells (see Design rules)                                                           |
+| Command                                           | What it does                                                                                                       |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `npm start`                                       | Dev server on http://localhost:4200                                                                                |
+| `npm run build`                                   | Production build with static prerendering into `dist/compass-portal/browser`, then the post-build step             |
+| `npm test`                                        | Unit tests (Vitest), single run                                                                                    |
+| `npm run lint`                                    | angular-eslint (TypeScript and templates)                                                                          |
+| `npm run content:probe`                           | Fingerprint compassint.org (platform, REST API, permalinks) → `reports/probe.json`                                 |
+| `npm run content:discover`                        | Full inventory of the site → `reports/inventory.{json,md}` (add `-- --offline` to use the archive only)            |
+| `npm run content:render`                          | Render every page in headless Chromium (the site is a client-rendered Angular app) into the archive                |
+| `npm run content:fetch`                           | Download every image, document and builder stylesheet the inventory references                                     |
+| `npm run content:sync`                            | Normalize the archive into `src/content/` (offline) and verify sentence coverage → `reports/coverage.md`           |
+| `npm run content:all`                             | discover + fetch + sync in one go (needs compassint.org in the allowed domains)                                    |
+| `npm run media:build`                             | Responsive AVIF/WebP variants, share images, `/files/` documents, favicons (runs before build/start)               |
+| `npm run content:fixture`                         | Synthetic snapshot from the fake WordPress test site into `.cache/fixture/` (never ships)                          |
+| `npm run start:fixture` / `npm run build:fixture` | Develop or build against the fixture (before the real sync exists)                                                 |
+| `node tools/serve-dist.ts --content=<dir>`        | Serve `dist/` like production hosting (redirect map, trailing slashes, real 404)                                   |
+| `npm run verify:dist -- --content=<dir>`          | Parity + provenance of the built HTML against the snapshot, links, sitemap, html-validate                          |
+| `npm run e2e`                                     | Playwright e2e + axe (WCAG 2.2 AA) against the build, desktop and mobile (`E2E_CONTENT=<dir>`)                     |
+| `npm run lighthouse -- --content=<dir>`           | Lighthouse (mobile + desktop) on home, listing, product, contact → `reports/lighthouse/`                           |
+| `npm run verify:hosting -- --content=<dir>`       | Serve the build with real nginx and Apache (generated rules) and check redirects, 404/410, headers                 |
+| `npm run test:tools`                              | Tests for the build tooling (Vitest, `tools/**/*.test.ts`)                                                         |
+| `npm run typecheck:tools`                         | Type-check `tools/`                                                                                                |
+| `npm run design:generate`                         | Regenerate the font faces in `src/index.html`, `src/styles/easing.css` and `public/textures/*.svg` (deterministic) |
+| `npm run lint:design`                             | Fail on banned design tells (see Design rules)                                                                     |
 
 Run `ng build` after every change and fix errors before moving on.
 
@@ -57,8 +57,7 @@ Run `ng build` after every change and fix errors before moving on.
     `features/home/compass-hero/` is the hero compass (pure-CSS intro, so it runs before hydration).
   - `dev/design-lab/`: dev-only review page at `/design-lab`; guarded by `ngDevMode`, so it is not in production.
 - `src/styles/`: global CSS. `theme.css` holds the Tailwind v4 `@theme` tokens; `base.css`, `prose.css` (site rich
-  text), `components.css` (buttons, plates, legend lists, rail sections) and `navigation.css`. `fonts.css` and
-  `easing.css` are generated.
+  text), `components.css` (buttons, plates, legend lists, rail sections) and `navigation.css`. `easing.css` and the font block in `index.html` (inline, so first paint has the fonts) are generated.
 - `schema/content.ts`: the zod content model. The app imports its types only.
 - `src/content/`: the generated snapshot (`site.json`, `index.json`, `routes.json`, `media.json`, `redirects.json`,
   `pages/*.json`, `page-loaders.ts`). Never edit by hand; re-run the sync.

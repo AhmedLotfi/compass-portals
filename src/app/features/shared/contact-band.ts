@@ -60,7 +60,7 @@ import { Icon } from '../../layout/icon/icon';
     .contact-band__title {
       color: var(--color-paper);
       font-size: var(--text-2xl);
-      max-inline-size: 18ch;
+      max-inline-size: 9.5em; /* 18ch of the display serif, font-independent */
     }
     .contact-band__actions {
       display: flex;

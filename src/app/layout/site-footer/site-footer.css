@@ -1,5 +1,10 @@
 :host {
   display: block;
+  /* Below every page: its layout (and the italic face of its tagline) waits until it nears the
+     viewport. Not used on content sections: accessibility checkers can't hit-test skipped content,
+     so they report its links as covered. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 40rem;
 }
 
 .site-footer {
@@ -76,7 +81,7 @@
 
 .site-footer__tagline {
   margin-top: 1rem;
-  max-inline-size: 34ch;
+  max-inline-size: 18em; /* 34ch of the display serif, font-independent */
   color: var(--color-ink-2);
   font-family: var(--font-display);
   font-style: italic;

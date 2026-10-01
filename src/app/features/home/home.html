@@ -30,12 +30,9 @@
       <div aria-hidden="true"></div>
       <figure class="plate">
         <span class="plate__frame">
-          <!-- Directly under the hero, so it is in the first viewport on phones: load it first. -->
-          <app-media-image
-            [media]="image"
-            sizes="(min-width: 76rem) 56rem, 100vw"
-            [priority]="true"
-          />
+          <!-- Under the hero, past the first screen: loading it early would compete with the
+               headline, the page's largest paint. -->
+          <app-media-image [media]="image" sizes="(min-width: 76rem) 56rem, 100vw" />
         </span>
       </figure>
     </div>
@@ -43,7 +40,11 @@
 }
 
 <div class="frame">
-  <app-sections [sections]="p.sections" [media]="p.media" />
+  <!-- Prerendered in full; the long run of sections under the hero hydrates as it scrolls into
+       view, so the first visit doesn't hydrate every card and logo before it can respond. -->
+  @defer (on immediate; hydrate on viewport) {
+    <app-sections [sections]="p.sections" [media]="p.media" />
+  }
 </div>
 
 <app-contact-band />
