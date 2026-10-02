@@ -224,11 +224,24 @@
   object-fit: contain;
 }
 
-/* A card's "read more" link (inside SmartLink): a full 24px target (WCAG 2.2 target size), set
-   apart from the text above it. */
+/* A card's "read more" link (inside SmartLink, so global): a full 24px target (WCAG 2.2 target
+   size) on its own ruled row at the foot of the card, like the old catalog's "Explore product". */
 .module-grid__more {
   display: inline-flex;
   align-items: center;
+  inline-size: 100%;
   min-block-size: 1.75rem;
-  margin-block-start: 0.25rem;
+  margin-block-start: auto;
+  padding-block-start: 1rem;
+  box-sizing: border-box;
+  border-top: var(--hairline);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent-deep);
+  text-decoration: none;
+}
+
+.module-grid__more:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
 }

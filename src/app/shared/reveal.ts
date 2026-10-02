@@ -22,17 +22,23 @@ export class Reveal {
     const host = inject<ElementRef<HTMLElement>>(ElementRef);
     const destroyRef = inject(DestroyRef);
     afterNextRender(() => {
-      if (mediaMatches('(prefers-reduced-motion: reduce)')) return;
+      if (
+        mediaMatches('(prefers-reduced-motion: reduce)') ||
+        typeof IntersectionObserver === 'undefined'
+      )
+        return;
       const el = host.nativeElement;
       if (el.getBoundingClientRect().top <= window.innerHeight) return;
       this.pending.set(true);
+      // The watched area reaches far above the viewport: an element the visitor jumped past
+      // (an anchor, the end key) is "seen" too, and must not stay hidden.
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (!entry?.isIntersecting) return;
           this.pending.set(false);
           observer.disconnect();
         },
-        { rootMargin: '0px 0px -10% 0px' },
+        { rootMargin: '100000px 0px -10% 0px' },
       );
       observer.observe(el);
       destroyRef.onDestroy(() => observer.disconnect());

@@ -165,28 +165,6 @@ import { InternalLinks } from './internal-links';
       font-size: var(--text-sm);
       line-height: var(--text-sm--line-height);
     }
-    /* The card's "read more" link (inside SmartLink): a full 24px target, on its own row at the
-       foot of the card, like the old catalog's "Explore product" row. */
-    :host ::ng-deep .module-grid__more {
-      display: inline-flex;
-      align-items: center;
-      min-block-size: 1.75rem;
-      margin-block-start: auto;
-      padding-block-start: 1rem;
-      font-size: var(--text-sm);
-      font-weight: 600;
-      color: var(--color-accent-deep);
-      text-decoration: none;
-    }
-    :host ::ng-deep .module-grid__more:hover {
-      text-decoration: underline;
-    }
-    :host ::ng-deep .module-grid__text + .module-grid__more {
-      margin-block-start: 1rem;
-      border-top: var(--hairline);
-      inline-size: 100%;
-      box-sizing: border-box;
-    }
   `,
 })
 export class ModuleGrid {

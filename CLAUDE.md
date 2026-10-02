@@ -33,6 +33,7 @@ sync turns the archived API responses into typed JSON and self-hosted images; ev
 | `npm run content:discover`                        | Full inventory of the site → `reports/inventory.{json,md}` (add `-- --offline` to use the archive only)            |
 | `npm run content:render`                          | Render every page in headless Chromium (the site is a client-rendered Angular app) into the archive                |
 | `npm run content:fetch`                           | Download every image, document and builder stylesheet the inventory references                                     |
+| `npm run content:images`                          | Download the images the archived CMS API names (and the old front end's logo files), without a crawl                |
 | `npm run content:sync`                            | Normalize the archive into `src/content/` (offline) and verify sentence coverage → `reports/coverage.md`           |
 | `npm run content:all`                             | discover + fetch + sync in one go (needs compassint.org in the allowed domains)                                    |
 | `npm run media:build`                             | Responsive AVIF/WebP variants, share images, `/files/` documents, favicons (runs before build/start)               |
@@ -50,6 +51,10 @@ sync turns the archived API responses into typed JSON and self-hosted images; ev
 
 Run `ng build` after every change and fix errors before moving on.
 
+`public/media`, `public/icons`, `public/fonts` and `public/manifest.webmanifest` are generated (gitignored) by
+`npm run media:build`, which `npm start` and `npm run build` run first. If images or the logo are missing, run
+`npm install` (the build needs every devDependency, e.g. `subset-font`) and then `npm run media:build`.
+
 ## Architecture
 
 - `src/app/`: the Angular app (standalone components, signals, zoneless, OnPush by default).
@@ -59,13 +64,19 @@ Run `ng build` after every change and fix errors before moving on.
     service set by the page resolver, `AutoLang` directive, `counterpart()` for the language switch), `media`
     (`MediaImage`, the NgOptimizedImage loader), `seo` (SeoService, title strategy, JSON-LD), `contact`.
   - `layout/`: header (products disclosure, mobile `<dialog>`), footer, breadcrumbs, nav links, icons.
-  - `shared/`: section renderer and one component per block type; `SmartLink` for synced hrefs.
+  - `shared/`: section renderer and one component per block type; `SmartLink` for synced hrefs; `Reveal`
+    (sections fade up as they scroll into view; cards inside follow one by one); `blocks/logo-strip` (the old
+    site's drifting client logos, for logo galleries of six or more).
   - `features/`: page components by kind (home, listing, product, content page, contact, 404).
-    `features/home/compass-hero/` is the hero compass (pure-CSS intro, so it runs before hydration).
+    `features/home/hero-slider/` is the home carousel (the old site's 5 slides, 8 s apart, paused on hover,
+    focus, a hidden tab, reduced motion or the pause button; every slide is prerendered, one is shown);
+    `features/home/compass-hero/` is the compass behind its picture (pure-CSS intro, so it runs before hydration).
   - `dev/design-lab/`: dev-only review page at `/design-lab`; guarded by `ngDevMode`, so it is not in production.
 - `src/styles/`: global CSS. `theme.css` holds the Tailwind v4 `@theme` tokens; `base.css`, `prose.css` (site rich
   text), `components.css` (buttons, plates, legend lists, rail sections) and `navigation.css`. `easing.css` and the font block in `index.html` (inline, so first paint has the fonts) are generated.
-- `schema/content.ts`: the zod content model. The app imports its types only.
+- `schema/content.ts`: the zod content model. The app imports its types only. `schema/icons.ts`: the old front
+  end's catalog icons (24px stroke paths and its title rules), named by the sync on product and industry cards
+  and drawn by the app's `Icon`.
 - `src/content/`: the generated snapshot (`site.json`, `index.json`, `routes.json`, `media.json`, `redirects.json`,
   `pages/*.json`, `page-loaders.ts`). Never edit by hand; re-run the sync.
   - `@content/*` resolves to `src/content/` in production builds and to `.cache/fixture/content/` under the
@@ -80,7 +91,8 @@ Run `ng build` after every change and fix errors before moving on.
     come from the rendered pages and fail the sync if the live site doesn't show them), `rendered.ts` reads the
     header and footer, `sync.ts` builds the snapshot and the redirects (old URLs end in a per-visit
     ciphertext, so they redirect by prefix: a redirect `from` ending in `*`), and `fetch.ts` downloads every
-    image the API names.
+    image the API names (the home slides' phone pictures included) and the front end's own logo files
+    (`assets/custom/img/Compass-logo*.png`); the full-colour one is the site logo.
   - `media/build.ts`: image variants, share images, documents, favicons and the manifest (before build/start),
     and the Arabic web fonts cut to the letters the Arabic pages use (`public/fonts/*-site.woff2`).
   - `postbuild/`: after `ng build`, fails the build if a synced page wasn't prerendered (or has the wrong
@@ -111,9 +123,17 @@ Run `ng build` after every change and fix errors before moving on.
 
 ## Design rules ("True North")
 
-- Light cartographic look: cool chart-paper white, ink navy, brass accent tuned to the logo, faint contour lines.
-- One orchestrated motion moment only: the hero compass needle settling on north. Everything else is quiet;
-  `prefers-reduced-motion` is always respected.
+- Light cartographic look: cool chart-paper white, faint contour lines, and compassint.org's own colours: its
+  navy (`#1e2438`, ink) and its teal (`#07a5b6` for graphics and large text, `#067b89` for small text and
+  buttons: the portal's button colour, AA on paper and under white text). The logo is the site's full-colour
+  file. No brass, no cream.
+- Motion as on compassint.org, nothing more: the hero carousel (8 s, pauses as the old one does), the drifting
+  client-logo strip, cards lifting under the pointer, sections fading up as they scroll into view, and the
+  compass needle settling on north behind the hero picture. All of it stops under `prefers-reduced-motion`
+  (the e2e suite checks that nothing animates then).
+- The old front end's drawings stay: its catalog icons on product and industry cards (`schema/icons.ts`), its
+  page-header drawing behind inner-page headings (`public/textures/page-header.svg`, from
+  `assets/img/page-header-bg.svg`), and its "AppStore" illustration on the home page (synced as media).
 - Avoid generic tells: all-caps tracked eyebrow labels, `→` appended to links, `·` metadata strings, 01/02 markers
   on things that aren't sequences, identical rounded card grids with grey `rgba(0,0,0,.1)` shadows, cream/terracotta palettes.
 

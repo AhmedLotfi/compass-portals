@@ -153,3 +153,17 @@ The CMS has no Arabic for these pages' text, so they show the English, marked as
 - `/ar/services/metaverse-solution/`: Metaverse solution
 - `/ar/services/web-development/`: Web Development
 - `/ar/services/`: Services
+
+## Added for the home carousel and the client-logo strip
+
+File: `src/app/core/copy/microcopy.ar.json`
+
+| English | Arabic draft |
+|---|---|
+| Highlights | أبرز ما نقدّمه |
+| Slide {n} of {total} | الشريحة {n} من {total} |
+| Show slide {n}: {title} | عرض الشريحة {n}: {title} |
+| {current} / {total} | {current} / {total} |
+| Pause the slides | إيقاف الشرائح مؤقتًا |
+| Play the slides | تشغيل الشرائح |
+| Client logos | شعارات العملاء |

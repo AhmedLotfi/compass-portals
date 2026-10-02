@@ -19,8 +19,6 @@ import { CompassHero } from '../compass-hero/compass-hero';
 /** As on the old home page: the next slide after 8 s. */
 export const SLIDE_INTERVAL_MS = 8_000;
 
-const mediaMatches = (query: string) => globalThis.matchMedia?.(query).matches ?? false;
-
 /**
  * The home page's hero carousel, as the old site runs it: every slide prerendered, one shown at a
  * time, dots and a count to pick one, and the next slide every 8 seconds unless the visitor hovers
@@ -33,9 +31,9 @@ const mediaMatches = (query: string) => globalThis.matchMedia?.(query).matches ?
   templateUrl: './hero-slider.html',
   styleUrl: './hero-slider.css',
   host: {
-    '(pointerenter)': 'hovered.set(true)',
-    '(pointerleave)': 'hovered.set(false)',
-    '(focusin)': 'focused.set(true)',
+    '(pointerenter)': 'hover(true)',
+    '(pointerleave)': 'hover(false)',
+    '(focusin)': 'focus(true)',
     '(focusout)': 'onFocusOut($event)',
     '(keydown)': 'onKeydown($event)',
   },
@@ -85,15 +83,21 @@ export class HeroSlider {
       const onVisibility = () => this.schedule();
       document.addEventListener('visibilitychange', onVisibility);
 
-      const observer = new IntersectionObserver(([entry]) => {
-        this.visible = entry?.isIntersecting ?? false;
+      let observer: IntersectionObserver | undefined;
+      if (typeof IntersectionObserver === 'undefined') {
+        this.visible = true;
         this.schedule();
-      });
-      observer.observe(this.host.nativeElement);
+      } else {
+        observer = new IntersectionObserver(([entry]) => {
+          this.visible = entry?.isIntersecting ?? false;
+          this.schedule();
+        });
+        observer.observe(this.host.nativeElement);
+      }
 
       this.destroyRef.onDestroy(() => {
         clearTimeout(this.timer);
-        observer.disconnect();
+        observer?.disconnect();
         motion?.removeEventListener('change', onMotion);
         document.removeEventListener('visibilitychange', onVisibility);
       });
@@ -114,10 +118,19 @@ export class HeroSlider {
     this.schedule();
   }
 
+  protected hover(over: boolean): void {
+    this.hovered.set(over);
+    this.schedule();
+  }
+
+  protected focus(within: boolean): void {
+    this.focused.set(within);
+    this.schedule();
+  }
+
   protected onFocusOut(event: FocusEvent): void {
     const next = event.relatedTarget as Node | null;
-    this.focused.set(Boolean(next && this.host.nativeElement.contains(next)));
-    this.schedule();
+    this.focus(Boolean(next && this.host.nativeElement.contains(next)));
   }
 
   /** Arrow keys on the controls move between slides. */
@@ -128,9 +141,8 @@ export class HeroSlider {
     event.preventDefault();
     const direction = this.host.nativeElement.closest('[dir="rtl"]') ? -step : step;
     this.select(this.index() + direction);
-    this.host.nativeElement
-      .querySelectorAll<HTMLButtonElement>('.slider__dot')
-      [this.index()]?.focus();
+    const dots = this.host.nativeElement.querySelectorAll<HTMLButtonElement>('.slider__dot');
+    dots[this.index()]?.focus();
   }
 
   /** Arms the next advance, or stands down while anything asks the slides to hold still. */

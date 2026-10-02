@@ -84,10 +84,8 @@ export const PHONE_MEDIA = '(max-width: 43.75rem)';
       display: contents;
     }
     :host(.fit-contain) img {
-      inline-size: auto;
-      block-size: auto;
-      max-inline-size: 100%;
-      max-block-size: 100%;
+      inline-size: 100%;
+      block-size: 100%;
       object-fit: contain;
     }
   `,

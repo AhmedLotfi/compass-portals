@@ -280,7 +280,7 @@ describe('content sync (fake WordPress → snapshot)', () => {
     const manifest = JSON.parse(
       await readFile(path.join(publicDir, 'manifest.webmanifest'), 'utf8'),
     );
-    expect(manifest).toMatchObject({ name: 'Test Site', theme_color: '#10263d' });
+    expect(manifest).toMatchObject({ name: 'Test Site', theme_color: '#1e2438' });
   });
 
   it('reports sentences that did not make it into the output', () => {

@@ -1,5 +1,6 @@
 import { load } from 'cheerio';
 import { describe, expect, it } from 'vitest';
+import { catalogIcon } from '../../../schema/icons.ts';
 import { collapseSlashes, ordered } from './api.ts';
 import {
   arLabel,
@@ -43,6 +44,18 @@ describe('CMS paths', () => {
       { id: 4, isActive: true, order: 1 },
     ];
     expect(ordered(items).map((i) => i.id)).toEqual([4, 3, 2]);
+  });
+
+  it("names the old front end's catalog icon from the English title", () => {
+    expect(catalogIcon('HR & Payroll')).toBe('people');
+    expect(catalogIcon('Consulting')).toBe('people');
+    expect(catalogIcon('Finance Management')).toBe('chart');
+    expect(catalogIcon('Whole Sales Distribution')).toBe('truck');
+    expect(catalogIcon('Real Estate')).toBe('building');
+    expect(catalogIcon('Non- Profit Organizations')).toBe('heart');
+    expect(catalogIcon('IT Services')).toBe('monitor');
+    expect(catalogIcon('Government ')).toBe('columns');
+    expect(catalogIcon('Contracts Management')).toBe('document');
   });
 
   it('takes the first sentence for cards', () => {

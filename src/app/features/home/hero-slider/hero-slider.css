@@ -147,6 +147,7 @@
   position: relative;
   display: grid;
   justify-items: center;
+  min-inline-size: 0;
 }
 
 .slider__compass {
@@ -166,7 +167,9 @@
 .slider__art-stack {
   position: relative;
   display: grid;
-  inline-size: min(100%, 36rem);
+  inline-size: 100%;
+  max-inline-size: 36rem;
+  min-inline-size: 0;
   aspect-ratio: 580 / 460;
 }
 

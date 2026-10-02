@@ -199,12 +199,17 @@ a[href^='tel:'] {
  */
 .texture-header {
   --texture: url('/textures/page-header.svg');
-  --texture-color: color-mix(in srgb, var(--color-accent) 24%, transparent);
+  --texture-color: color-mix(in srgb, var(--color-accent) 20%, transparent);
   background-color: var(--texture-color);
   mask-image: var(--texture);
-  mask-size: cover;
-  mask-position: bottom;
+  mask-size: auto 100%;
+  mask-position: bottom right;
   mask-repeat: no-repeat;
+}
+
+.texture-header:dir(rtl) {
+  mask-position: bottom left;
+  transform: scaleX(-1);
 }
 
 /*

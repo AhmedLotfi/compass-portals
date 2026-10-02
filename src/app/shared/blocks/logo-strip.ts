@@ -150,15 +150,19 @@ export class LogoStrip {
     const host = inject<ElementRef<HTMLElement>>(ElementRef);
     const destroyRef = inject(DestroyRef);
     afterNextRender(() => {
-      const observer = new IntersectionObserver(([entry]) =>
-        this.visible.set(entry?.isIntersecting ?? false),
-      );
-      observer.observe(host.nativeElement);
+      let observer: IntersectionObserver | undefined;
+      if (typeof IntersectionObserver === 'undefined') this.visible.set(true);
+      else {
+        observer = new IntersectionObserver(([entry]) =>
+          this.visible.set(entry?.isIntersecting ?? false),
+        );
+        observer.observe(host.nativeElement);
+      }
       const onVisibility = () => this.hidden.set(document.hidden);
       onVisibility();
       document.addEventListener('visibilitychange', onVisibility);
       destroyRef.onDestroy(() => {
-        observer.disconnect();
+        observer?.disconnect();
         document.removeEventListener('visibilitychange', onVisibility);
       });
     });
