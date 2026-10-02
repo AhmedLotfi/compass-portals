@@ -1,0 +1,100 @@
+@let p = page();
+<section
+  class="slider chart-grid"
+  aria-roledescription="carousel"
+  [attr.aria-label]="'highlights' | copy"
+>
+  <div class="slider__texture texture-contours texture-focus-end" aria-hidden="true"></div>
+  <div class="frame slider__inner">
+    <div class="slider__copy">
+      <div class="slider__stack">
+        @for (slide of slides(); track $index; let i = $index) {
+          <div
+            class="slide"
+            [class.slide--active]="i === index()"
+            role="group"
+            aria-roledescription="slide"
+            [attr.aria-label]="'slideOf' | copy: { n: '' + (i + 1), total: '' + count() }"
+            [attr.aria-hidden]="i !== index()"
+            [attr.inert]="i !== index() ? '' : null"
+          >
+            @if (i === 0) {
+              <h1 id="home-title" class="slide__title" [appAutoLang]="slide.title">
+                {{ slide.title }}
+              </h1>
+            } @else {
+              <h2 class="slide__title" [appAutoLang]="slide.title">{{ slide.title }}</h2>
+            }
+            @if (slide.lede) {
+              <p class="slide__lede" [appAutoLang]="slide.lede">{{ slide.lede }}</p>
+            }
+          </div>
+        }
+      </div>
+
+      @if (p.hero.ctas.length) {
+        <div class="slider__ctas">
+          @for (cta of p.hero.ctas; track cta.href + cta.label; let first = $first) {
+            <app-smart-link
+              [href]="cta.href"
+              [linkClass]="first ? 'btn btn--accent' : 'btn btn--outline'"
+            >
+              {{ cta.label }}
+            </app-smart-link>
+          }
+        </div>
+      }
+
+      @if (count() > 1) {
+        <div class="slider__controls" role="group" [attr.aria-label]="'highlights' | copy">
+          <div class="slider__dots">
+            @for (slide of slides(); track $index; let i = $index) {
+              <button
+                type="button"
+                class="slider__dot"
+                [class.slider__dot--active]="i === index()"
+                [attr.aria-label]="'showSlide' | copy: { n: '' + (i + 1), title: slide.title }"
+                [attr.aria-current]="i === index() ? 'true' : null"
+                (click)="select(i)"
+              >
+                <span></span>
+              </button>
+            }
+          </div>
+          <span class="slider__count tnum">{{
+            'slideCount' | copy: { current: '' + (index() + 1), total: '' + count() }
+          }}</span>
+          <button
+            type="button"
+            class="slider__pause"
+            [attr.aria-pressed]="paused()"
+            [attr.aria-label]="(paused() ? 'playSlides' : 'pauseSlides') | copy"
+            (click)="togglePause()"
+          >
+            <app-icon [name]="paused() ? 'play' : 'pause'" />
+          </button>
+        </div>
+      }
+    </div>
+
+    <div class="slider__art">
+      <app-compass-hero class="slider__compass" />
+      <div class="slider__art-stack">
+        @for (slide of slides(); track $index; let i = $index) {
+          @if (media(slide.media); as image) {
+            <div class="slider__picture" [class.slider__picture--active]="i === index()">
+              <app-media-image
+                [media]="image"
+                [mobile]="media(slide.mobileMedia)"
+                sizes="(min-width: 60rem) 36rem, 100vw"
+                [priority]="i === 0"
+                fit="contain"
+                alt=""
+              />
+            </div>
+          }
+        }
+      </div>
+    </div>
+  </div>
+</section>

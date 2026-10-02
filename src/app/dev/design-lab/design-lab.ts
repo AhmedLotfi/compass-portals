@@ -11,10 +11,12 @@ const SWATCHES: Swatch[] = [
   { name: 'paper', hex: '#f3f6f8', use: 'Background' },
   { name: 'paper-2', hex: '#e6edf2', use: 'Alternate bands' },
   { name: 'rule', hex: '#c5d2dc', use: 'Hairlines (decorative)' },
-  { name: 'ink', hex: '#10263d', use: 'Text, primary' },
-  { name: 'ink-2', hex: '#3b5064', use: 'Secondary text' },
-  { name: 'brass', hex: '#a8823f', use: 'Graphics, large text' },
-  { name: 'brass-deep', hex: '#7b5b21', use: 'Small accent text' },
+  { name: 'ink', hex: '#1e2438', use: 'Text, primary (the portal navy)' },
+  { name: 'ink-2', hex: '#5b6779', use: 'Secondary text (the portal muted)' },
+  { name: 'accent', hex: '#07a5b6', use: 'Graphics, large text (the portal teal)' },
+  { name: 'accent-deep', hex: '#067b89', use: 'Small accent text, buttons' },
+  { name: 'accent-tint', hex: '#e1f5f8', use: 'Icon tiles, soft bands' },
+  { name: 'accent-light', hex: '#3fd0e0', use: 'Highlights on ink' },
   { name: 'signal', hex: '#b3261e', use: 'Form errors' },
 ];
 

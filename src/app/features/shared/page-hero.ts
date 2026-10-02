@@ -12,6 +12,7 @@ import { SmartLink } from '../../shared/smart-link/smart-link';
   template: `
     @let p = page();
     <header class="page-hero chart-grid">
+      <div class="page-hero__texture texture-header" aria-hidden="true"></div>
       <div class="frame page-hero__inner" [class.page-hero__inner--media]="media()">
         <div class="page-hero__copy">
           @if (p.breadcrumbs.length > 1) {
@@ -26,7 +27,7 @@ import { SmartLink } from '../../shared/smart-link/smart-link';
               @for (cta of p.hero.ctas; track cta.href + cta.label; let first = $first) {
                 <app-smart-link
                   [href]="cta.href"
-                  [linkClass]="first ? 'btn btn--ink' : 'btn btn--outline'"
+                  [linkClass]="first ? 'btn btn--accent' : 'btn btn--outline'"
                 >
                   {{ cta.label }}
                 </app-smart-link>
@@ -53,9 +54,17 @@ import { SmartLink } from '../../shared/smart-link/smart-link';
       display: block;
     }
     .page-hero {
+      position: relative;
+      overflow: clip;
       border-bottom: var(--hairline);
     }
+    .page-hero__texture {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
     .page-hero__inner {
+      position: relative;
       display: grid;
       gap: 2rem;
       align-items: end;

@@ -3,7 +3,7 @@ import type { HttpResponse } from '../http.ts';
 import { downloadImages, imageUrls, type ImageGetter } from './fetch.ts';
 
 describe('CMS image fetch', () => {
-  it('finds image URLs in fields and HTML, skipping the mobile variants', () => {
+  it("finds image URLs in fields and HTML, skipping page pictures' mobile variants", () => {
     const urls = imageUrls({
       imageUrl: 'https://cadmin.example/a.jpg',
       mobileImageUrl: 'http://ddns.example:2026/a-mobile.jpg',
@@ -12,11 +12,13 @@ describe('CMS image fetch', () => {
         { imageUrl: 'https://cadmin.example//c.JPEG' },
         { logo: 'https://cadmin.example/doc.pdf' },
       ],
+      slides: [{ mobileImagePath: 'https://cadmin.example/slide-phone.png' }],
     });
     expect([...urls].sort()).toEqual([
       'https://cadmin.example//c.JPEG',
       'https://cadmin.example/a.jpg',
       'https://cadmin.example/b.png?x=1&y=2',
+      'https://cadmin.example/slide-phone.png',
     ]);
   });
 

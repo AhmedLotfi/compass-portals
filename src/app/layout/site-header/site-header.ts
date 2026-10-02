@@ -18,9 +18,9 @@ export class SiteHeader {
   protected readonly content = inject(ContentStore);
   protected readonly site = this.content.site;
   protected readonly logo = this.content.logo;
-  /** The logo renders 2.6rem tall; its width follows its own aspect ratio. */
+  /** The logo renders 3rem tall; its width follows its own aspect ratio. */
   protected readonly logoWidth = this.logo
-    ? `calc(2.6rem * ${(this.logo.width / this.logo.height).toFixed(4)})`
+    ? `calc(3rem * ${(this.logo.width / this.logo.height).toFixed(4)})`
     : undefined;
   protected readonly phone = this.content.primaryPhone;
   protected readonly email = this.content.primaryEmail;

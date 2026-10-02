@@ -26,7 +26,7 @@ import { Icon } from '../../layout/icon/icon';
             >
           }
           @if (contactPath(); as contactPath) {
-            <a class="btn btn--on-ink" [routerLink]="contactPath">{{ 'contactUs' | copy }}</a>
+            <a class="btn btn--accent" [routerLink]="contactPath">{{ 'contactUs' | copy }}</a>
           }
         </div>
       </div>
@@ -80,7 +80,7 @@ import { Icon } from '../../layout/icon/icon';
       gap: 0.55rem;
       color: var(--color-paper);
       font-weight: 600;
-      text-decoration-color: var(--color-brass);
+      text-decoration-color: var(--color-accent);
     }
   `,
 })

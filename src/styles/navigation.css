@@ -20,7 +20,7 @@
 
 .primary-link.is-active {
   text-decoration: underline;
-  text-decoration-color: var(--color-brass);
+  text-decoration-color: var(--color-accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.45em;
 }
@@ -62,7 +62,7 @@
 }
 
 :is(.mobile-link, .mobile-sublink).is-active {
-  color: var(--color-brass-deep);
+  color: var(--color-accent-deep);
 }
 
 .footer-link {
@@ -73,5 +73,5 @@
 .footer-link:hover,
 .footer-link.is-active {
   text-decoration: underline;
-  text-decoration-color: var(--color-brass);
+  text-decoration-color: var(--color-accent);
 }

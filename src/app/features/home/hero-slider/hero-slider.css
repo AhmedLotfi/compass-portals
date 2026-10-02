@@ -1,0 +1,207 @@
+:host {
+  display: block;
+}
+
+.slider {
+  position: relative;
+  overflow: clip;
+  border-bottom: var(--hairline);
+}
+
+.slider__texture {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.slider__inner {
+  position: relative;
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+  padding-block: clamp(3rem, 2rem + 5vw, 6rem);
+}
+
+@media (min-width: 60rem) {
+  .slider__inner {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+}
+
+/* Every slide's text is prerendered in one stack; the tallest one sets the height, so the hero
+   never jumps when the slide changes. */
+.slider__stack {
+  display: grid;
+}
+
+.slide {
+  grid-area: 1 / 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.6rem);
+  transition:
+    opacity 0.5s var(--ease-out),
+    transform 0.5s var(--ease-out),
+    visibility 0s 0.5s;
+}
+
+.slide--active {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+
+.slide__title {
+  /* 16ch of the display serif, in em: ch follows whichever font is showing, so it would
+     change (and rewrap the headline) when the web font swaps in. */
+  max-inline-size: 8.5em;
+  font-size: var(--text-display);
+  line-height: var(--text-display--line-height);
+  letter-spacing: -0.02em;
+}
+
+.slide__lede {
+  margin-top: 1.4rem;
+  max-inline-size: 25.75em; /* 46ch of the text face, font-independent */
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
+  color: var(--color-ink-2);
+}
+
+.slider__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* The old site's controls: a row of dots (the current one stretched, in teal), the count, and a
+   pause button. */
+.slider__controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+  color: var(--color-ink-2);
+  font-size: var(--text-sm);
+}
+
+.slider__dots {
+  display: flex;
+  align-items: center;
+}
+
+.slider__dot {
+  display: grid;
+  place-items: center;
+  inline-size: 1.75rem;
+  block-size: 2.75rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider__dot span {
+  inline-size: 0.45rem;
+  block-size: 0.45rem;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--color-ink) 35%, transparent);
+  transition:
+    inline-size 0.2s var(--ease-out),
+    background-color 0.2s var(--ease-out);
+}
+
+.slider__dot:hover span {
+  background: var(--color-ink);
+}
+
+.slider__dot--active span {
+  inline-size: 1.5rem;
+  background: var(--color-accent);
+}
+
+.slider__count {
+  letter-spacing: 0.08em;
+}
+
+.slider__pause {
+  display: inline-grid;
+  place-items: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-ink);
+  cursor: pointer;
+}
+
+.slider__pause:hover {
+  background: var(--color-paper-2);
+}
+
+/* The picture, framed as an atlas plate, with the compass settling on north behind it. */
+.slider__art {
+  position: relative;
+  display: grid;
+  justify-items: center;
+}
+
+.slider__compass {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  inline-size: min(118%, 36rem);
+  transform: translate(-50%, -50%);
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+.slider__compass:dir(rtl) {
+  transform: translate(50%, -50%);
+}
+
+.slider__art-stack {
+  position: relative;
+  display: grid;
+  inline-size: min(100%, 36rem);
+  aspect-ratio: 580 / 460;
+}
+
+.slider__picture {
+  display: none;
+  grid-area: 1 / 1;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border: var(--ink-line);
+  border-radius: var(--radius-md);
+  background: rgb(255 255 255 / 0.82);
+  backdrop-filter: blur(2px);
+}
+
+/* Only the current picture is in the layout, so the other slides' pictures are not downloaded
+   until they show; the incoming one fades up from its starting style. */
+.slider__picture--active {
+  display: block;
+  animation: picture-in 0.55s var(--ease-out) both;
+}
+
+@keyframes picture-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem) scale(0.985);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide,
+  .slider__dot span {
+    transition: none;
+  }
+
+  .slider__picture--active {
+    animation: none;
+  }
+}

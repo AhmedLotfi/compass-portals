@@ -20,6 +20,7 @@ import {
   type Waiver,
 } from '../sync.ts';
 import { Archive, loadCms } from './api.ts';
+import { FRONT_END_LOGO } from './fetch.ts';
 import { arLabel, localPath, mapSite, SECTIONS, type CmsPage, type Lang } from './map.ts';
 import { readChrome, RenderedSite } from './rendered.ts';
 
@@ -125,10 +126,17 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
   const chrome = readChrome(home);
 
   const assets = archive.imageAssets();
-  const logoAsset = chrome.logo
-    ? await inlineAsset(chrome.logo.src, options.archiveDir, options.source)
-    : undefined;
-  if (logoAsset) {
+  // The logo: the front end's own full-colour logo file when the archive has it (cms/fetch.ts
+  // downloads it), else the copy its build inlined into the header.
+  const logoFile = `${options.source}${FRONT_END_LOGO}`;
+  const logoEntry = archive.get(logoFile);
+  const logoAsset =
+    logoEntry?.status === 200 && logoEntry.file
+      ? assets.assets.find((asset) => asset.url === logoFile)
+      : chrome.logo
+        ? await inlineAsset(chrome.logo.src, options.archiveDir, options.source)
+        : undefined;
+  if (logoAsset && !assets.resolved[logoAsset.url]) {
     assets.assets.push(logoAsset);
     assets.resolved[logoAsset.url] = logoAsset.url;
   }
@@ -199,7 +207,10 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
   // Site chrome. Header and footer links point at the old paths; map them to the new ones.
   const siteRef = { id: 'site', url: home.url };
   const logo = logoAsset
-    ? media.register({ src: logoAsset.url, alt: chrome.logo?.alt ?? '' }, siteRef)
+    ? media.register(
+        { src: logoAsset.url, alt: chrome.logo?.alt || chrome.topbar.split(/\s+·\s+/)[0] || '' },
+        siteRef,
+      )
     : undefined;
   const nav = (link: { label: string; href: string }): NavItem | undefined => {
     const external = /^https?:/i.test(link.href) && !siteHost(new URL(link.href).hostname);
@@ -319,6 +330,7 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
     title: page.doc.title,
     ...(firstParagraph(page) ? { summary: firstParagraph(page)! } : {}),
     ...(page.doc.hero.media ? { media: page.doc.hero.media } : {}),
+    ...(page.icon ? { icon: page.icon } : {}),
     sourceUrl: page.doc.sourceUrl,
     oldUrls: [...page.oldPaths, ...page.oldPrefixes.map((p) => `${p}*`)],
     ...(page.modified ? { modified: page.modified } : {}),
@@ -342,6 +354,7 @@ export async function runCmsSync(options: CmsSyncOptions): Promise<SyncResult> {
         title: e.title,
         ...(e.summary ? { summary: e.summary } : {}),
         ...(e.media ? { media: e.media } : {}),
+        ...(e.icon ? { icon: e.icon } : {}),
       }));
     const used = mediaList.filter((m) => m.usedOn.includes(page.doc.id)).map((m) => m.id);
     return {

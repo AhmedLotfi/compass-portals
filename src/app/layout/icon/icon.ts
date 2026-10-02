@@ -1,7 +1,12 @@
 import { Component, computed, input } from '@angular/core';
+import { CATALOG_ICONS } from '@schema/icons';
 
-/** Hand-drawn 24px line icons (1.5px stroke). Brand marks are in `BrandIcon` (footer only). */
+/**
+ * Hand-drawn 24px line icons (1.5px stroke), and the old front end's catalog icons for products,
+ * services and industries (`@schema/icons`). Brand marks are in `BrandIcon` (footer only).
+ */
 export const LINE_PATHS = {
+  ...CATALOG_ICONS,
   phone:
     'M6.7 3.6h2.4l1.4 4-1.9 1.3a11.4 11.4 0 0 0 6.5 6.5l1.3-1.9 4 1.4v2.4a2 2 0 0 1-2.2 2A16.4 16.4 0 0 1 4.7 5.8a2 2 0 0 1 2-2.2Z',
   mail: 'M3.5 6.5h17v11h-17Z M3.8 7 12 13.2 20.2 7',
@@ -14,6 +19,7 @@ export const LINE_PATHS = {
   download: 'M12 4v11 M7.5 11 12 15.5 16.5 11 M5 19.5h14',
   check: 'M5 12.5 9.5 17 19 7.5',
   play: 'M8 5.5v13l10.5-6.5Z',
+  pause: 'M8 5.5v13 M16 5.5v13',
   map: 'M9 4.5 3.5 6.5v13L9 17.5l6 2 5.5-2v-13L15 6.5Z M9 4.5v13 M15 6.5v13',
   linkedin:
     'M4.5 4.5h15v15h-15Z M8.2 10.6v5.4 M8.2 7.8v.1 M11.6 16v-5.4 M11.6 13.2a2.4 2.4 0 0 1 4.8 0V16',

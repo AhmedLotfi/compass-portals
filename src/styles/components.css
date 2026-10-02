@@ -46,6 +46,67 @@
   background: var(--color-white);
 }
 
+/* The portal's teal button: its primary call to action. */
+.btn--accent {
+  border-color: var(--color-accent-deep);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-deep);
+  color: var(--color-white);
+  box-shadow: 0 8px 20px -8px rgb(7 165 182 / 0.7);
+}
+
+.btn--accent:hover {
+  border-color: #056774;
+  background: #056774;
+}
+
+/*
+ * Cards, as the portal draws them: a white plate with a hairline, rounded, lifting a little toward
+ * the pointer. The lift is a transition, so reduced-motion settings (which zero every transition)
+ * leave the card still.
+ */
+.card {
+  background: var(--color-white);
+  border: 1px solid #dde6ea;
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 24px -22px rgb(30 36 56 / 0.25);
+  transition:
+    transform 180ms var(--ease-out),
+    border-color 180ms var(--ease-out),
+    box-shadow 180ms var(--ease-out);
+}
+
+.card--link:hover,
+.card--link:focus-within {
+  transform: translateY(-4px);
+  border-color: #73b8c1;
+  box-shadow: var(--shadow-lift);
+}
+
+/* The portal's icon tile: a catalog icon on a soft teal square. */
+.icon-tile {
+  display: grid;
+  place-items: center;
+  inline-size: 3.25rem;
+  block-size: 3.25rem;
+  border: 1px solid #d2ecec;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-tint);
+  color: var(--color-accent-deep);
+}
+
+.icon-tile app-icon {
+  inline-size: 1.6rem;
+  block-size: 1.6rem;
+}
+
+/* On ink, the tile and its icon take the highlight teal. */
+.icon-tile--on-ink {
+  border-color: rgb(255 255 255 / 0.14);
+  background: rgb(255 255 255 / 0.05);
+  color: var(--color-accent-light);
+}
+
 .btn svg {
   inline-size: 1.1em;
   block-size: 1.1em;
@@ -79,7 +140,7 @@
   color: var(--color-ink-2);
 }
 
-/* A map legend: each entry has a brass diamond, entries separated by hairlines. */
+/* A map legend: each entry has an accent diamond, entries separated by hairlines. */
 .legend {
   list-style: none;
   margin: 0;
@@ -101,7 +162,7 @@
   block-size: 0.6rem;
   margin-top: 0.55rem;
   margin-inline-start: 0.2rem;
-  background: var(--color-brass);
+  background: var(--color-accent);
   transform: rotate(45deg);
 }
 
@@ -127,7 +188,7 @@
   inline-size: 2.5rem;
   block-size: 2px;
   margin-bottom: 0.9rem;
-  background: var(--color-brass);
+  background: var(--color-accent);
 }
 
 @media (min-width: 64rem) {

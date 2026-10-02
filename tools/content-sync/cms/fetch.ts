@@ -1,18 +1,26 @@
 /**
  * Downloads every image the CMS API names, including those the old front end never loaded (pages
- * the crawl didn't reach, mobile variants, and images on the CMS's plain-HTTP `ddns.net` host, which
- * browsers block as mixed content on the HTTPS site). For a plain-HTTP URL the HTTPS form is tried
- * first. Everything lands in the HTTP archive, where the sync finds it by URL.
+ * the crawl didn't reach, the home slides' phone-sized pictures, and images on the CMS's plain-HTTP
+ * `ddns.net` host, which browsers block as mixed content on the HTTPS site), and the front end's
+ * own logo files. For a plain-HTTP URL the HTTPS form is tried first. Everything lands in the HTTP
+ * archive, where the sync finds it by URL.
  */
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
+import { SOURCE_ORIGIN } from '../config.ts';
 import { NetworkPolicyError, type HttpClient } from '../http.ts';
 import { API_HOST, Archive, collapseSlashes } from './api.ts';
 
 const IMAGE = /\.(?:png|jpe?g|gif|webp|svg|avif)$/i;
 
-/** Fields the sync never uses (the old front end's phone-sized variants). */
-const SKIPPED_KEYS = /^mobile/i;
+/** Fields the sync never uses (the phone-sized variants of page pictures; slides keep theirs). */
+const SKIPPED_KEYS = /^mobileImageUrl$/i;
+
+/** The old front end's full-colour logo (its header inlines the white version). */
+export const FRONT_END_LOGO = '/assets/custom/img/Compass-logo.png';
+
+/** Files of the old front end itself (not the CMS) that the snapshot uses, by path. */
+export const FRONT_END_ASSETS = [FRONT_END_LOGO, '/assets/custom/img/Compass-logo-white.png'];
 
 /** Image URLs anywhere in a JSON value (including inside HTML strings), except mobile variants. */
 export function imageUrls(value: unknown, out = new Set<string>()): Set<string> {
@@ -90,9 +98,10 @@ export async function fetchCmsImages(
   archiveDir: string,
   http: ImageGetter,
   log: (message: string) => void = () => undefined,
+  source = SOURCE_ORIGIN,
 ): Promise<CmsFetchResult> {
   const archive = await Archive.open(archiveDir);
-  const urls = new Set<string>();
+  const urls = new Set<string>(FRONT_END_ASSETS.map((file) => `${source}${file}`));
   for (const entry of archive.entries) {
     if (new URL(entry.url).hostname !== API_HOST || entry.status !== 200 || !entry.file) continue;
     imageUrls(JSON.parse(await readFile(path.join(archiveDir, entry.file), 'utf8')), urls);

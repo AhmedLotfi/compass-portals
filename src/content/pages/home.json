@@ -25,39 +25,41 @@
         "href": "/products/",
         "kind": "internal"
       }
+    ],
+    "slides": [
+      {
+        "title": "Unlocking Insights: Comprehensive Data Offering Services",
+        "lede": "Empower your projects with our comprehensive data offering services, unlocking beneficial insights for informed decision-making",
+        "media": "m-9aacc48db8",
+        "mobileMedia": "m-9aacc48db8"
+      },
+      {
+        "title": "Metaverse solution",
+        "lede": "Step into the future with Compass International LLC’s Metaverse Solution.",
+        "media": "m-7e80cf7263",
+        "mobileMedia": "m-7e80cf7263"
+      },
+      {
+        "title": "Integrated Solutions for your Business",
+        "lede": "We provide exceptional system integration services for your business",
+        "media": "m-54eb5ddcd5",
+        "mobileMedia": "m-54eb5ddcd5"
+      },
+      {
+        "title": "Expert IT Outsourcing Services and Dedicated Manpower",
+        "lede": "Your trusted partner for IT outsourcing services, embodied by dedicated manpower for smooth project execution",
+        "media": "m-0a9800d342",
+        "mobileMedia": "m-0a9800d342"
+      },
+      {
+        "title": "Customizable & Configurable ERP Solutions",
+        "lede": "Unlock the full potential of your business with our customizable and configurable range of ERP solutions",
+        "media": "m-8765544cc8",
+        "mobileMedia": "m-8765544cc8"
+      }
     ]
   },
   "sections": [
-    {
-      "id": "highlights",
-      "blocks": [
-        {
-          "type": "moduleGrid",
-          "items": [
-            {
-              "title": "Metaverse solution",
-              "html": "<p>Step into the future with Compass International LLC’s Metaverse Solution.</p>",
-              "media": "m-7e80cf7263"
-            },
-            {
-              "title": "Integrated Solutions for your Business",
-              "html": "<p>We provide exceptional system integration services for your business</p>",
-              "media": "m-54eb5ddcd5"
-            },
-            {
-              "title": "Expert IT Outsourcing Services and Dedicated Manpower",
-              "html": "<p>Your trusted partner for IT outsourcing services, embodied by dedicated manpower for smooth project execution</p>",
-              "media": "m-0a9800d342"
-            },
-            {
-              "title": "Customizable & Configurable ERP Solutions",
-              "html": "<p>Unlock the full potential of your business with our customizable and configurable range of ERP solutions</p>",
-              "media": "m-8765544cc8"
-            }
-          ]
-        }
-      ]
-    },
     {
       "id": "right-application-right-direction",
       "title": "Right Application. Right Direction",
@@ -78,66 +80,77 @@
             {
               "title": "HR & Payroll",
               "html": "<p>Enhance your organization's HR and payroll operations with our advanced and customizable module.</p>",
+              "icon": "people",
               "href": "/products/hr-payroll/",
               "linkLabel": "Explore product"
             },
             {
               "title": "Finance Management",
               "html": "<p>Our financial solution offers more than just accounting.</p>",
+              "icon": "chart",
               "href": "/products/finance-management/",
               "linkLabel": "Explore product"
             },
             {
               "title": "Fleet Management",
               "html": "<p>Optimize your fleet operations with an advanced solution that showcases features for tracking, route planning, and real-time vehicle monitoring.</p>",
+              "icon": "truck",
               "href": "/products/fleet-management/",
               "linkLabel": "Explore product"
             },
             {
               "title": "Property Management",
               "html": "<p>Manage your properties with our configurable and customizable solution designed for property owners.</p>",
+              "icon": "building",
               "href": "/products/property-management/",
               "linkLabel": "Explore product"
             },
             {
               "title": "Projects Management",
               "html": "<p>Elevate your project management capabilities with our feature-rich solution.</p>",
+              "icon": "crane",
               "href": "/products/projects-management/",
               "linkLabel": "Explore product"
             },
             {
               "title": "Retail Management",
               "html": "<p>Transform your retail operations with our comprehensive management module.</p>",
+              "icon": "store",
               "href": "/products/retail-management/",
               "linkLabel": "Explore product"
             },
             {
               "title": "Contracts Management",
               "html": "<p>Specifically designed for Consulting and Outsourcing Firms, our Contracts Management solution facilitates the registration of contract details and payment schedules analyzing the profitability of each contract.</p>",
+              "icon": "document",
               "href": "/products/contracts-management/",
               "linkLabel": "Explore product"
             },
             {
               "title": "Charity Management",
               "html": "<p>Our charity solution integrates departments, streamlines workflows, and provides detailed project and donor reports for enhanced transparency and efficiency.</p>",
+              "icon": "heart",
               "href": "/products/charity-management/",
               "linkLabel": "Explore product"
             },
             {
               "title": "School Management",
               "html": "<p>Our comprehensive School Management System is designed to simplify daily operations across single or multiple branches.</p>",
+              "icon": "graduation",
               "href": "/products/school-management/",
               "linkLabel": "Explore product"
             },
             {
               "title": "Insurance Management",
               "html": "<p>Our customizable Insurance solution is crafted to efficiently manage and control processes within insurance companies, adhering to international specifications and configurations to meet diverse needs.</p>",
+              "icon": "chart",
               "href": "/products/insurance-management/",
               "linkLabel": "Explore product"
             },
             {
               "title": "University Management",
               "html": "<p>Smart Management for Modern Universities, Our University Management System streamlines admissions, course registration, scheduling, and finances across multiple campuses.</p>",
+              "icon": "graduation",
               "href": "/products/university-management/",
               "linkLabel": "Explore product"
             }
@@ -255,56 +268,67 @@
             {
               "title": "Retail",
               "html": "<p>We are proud to offer a comprehensive ERP solution designed specifically for the retail industry</p>",
+              "icon": "store",
               "href": "/industries/retail/"
             },
             {
               "title": "Consulting",
               "html": "<p>Compass understands and acknowledges the distinct needs and requirements of the consulting industry.</p>",
+              "icon": "people",
               "href": "/industries/consulting/"
             },
             {
               "title": "Construction",
               "html": "<p>At Compass, we understand the unique requirements and challenges faced by the construction industry.</p>",
+              "icon": "crane",
               "href": "/industries/construction/"
             },
             {
               "title": "Financial Services",
               "html": "<p>Compass offers a comprehensive software solution that specifically caters to the unique requirements of the finance industry</p>",
+              "icon": "chart",
               "href": "/industries/financial-services/"
             },
             {
               "title": "Legal",
               "html": "<p>Compass provides a comprehensive system and software solutions that caters specifically to the unique requirements of the legal services industry</p>",
+              "icon": "columns",
               "href": "/industries/legal/"
             },
             {
               "title": "IT Services",
               "html": "<p>At Compass, we understand the complex requirements of the IT industry and have developed enterprise resource planning (ERP) solutions that address its unique challenges.</p>",
+              "icon": "monitor",
               "href": "/industries/it-services/"
             },
             {
               "title": "Whole Sales Distribution",
               "html": "<p>At Compass, we recognize the unique needs and challenges faced by wholesale businesses.</p>",
+              "icon": "truck",
               "href": "/industries/whole-sales-distribution/"
             },
             {
               "title": "Non- Profit Organizations",
               "html": "<p>Our solutions are specifically designed to cater to the needs of charity organizations, providing them with the tools and functionalities required to effectively manage their operations</p>",
+              "icon": "heart",
               "href": "/industries/non-profit-organizations/"
             },
             {
               "title": "Government",
               "html": "<p>At Compass, we provide secure, scalable, and efficient IT and software solutions tailored for government entities.</p>",
+              "icon": "columns",
               "href": "/industries/government/"
             },
             {
               "title": "Health Care",
               "html": "<p>At Compass, we specialize in delivering innovative IT and software solutions specifically designed for the healthcare sector.</p>",
+              "icon": "cross",
               "href": "/industries/health-care/"
             },
             {
               "title": "Real Estate",
               "html": "<p>Compass provides innovative IT and software solutions designed for the real estate industry.</p>",
+              "icon": "building",
               "href": "/industries/real-estate/"
             }
           ]
@@ -315,6 +339,10 @@
       "id": "an-appstore-for-all-of-your-business-needs",
       "title": "An AppStore for All of Your Business Needs",
       "blocks": [
+        {
+          "type": "media",
+          "media": "m-ec6c7b19b3"
+        },
         {
           "type": "richText",
           "html": "<p>FreshBooks integrates with over 100 great apps to streamline work for business owners, keep teams and clients connected, and better understand your business.</p>"
@@ -677,6 +705,15 @@
         745
       ],
       "svg": false
+    },
+    "m-ec6c7b19b3": {
+      "id": "m-ec6c7b19b3",
+      "mime": "image/svg+xml",
+      "width": 560,
+      "height": 420,
+      "alt": "An AppStore for All of Your Business Needs",
+      "widths": [],
+      "svg": true
     },
     "m-fa5e82b8f5": {
       "id": "m-fa5e82b8f5",

@@ -28,7 +28,7 @@
 }
 
 .brand__logo {
-  block-size: 2.6rem;
+  block-size: 3rem;
 }
 
 /* A white logo sits on an ink plate, like the cartouche of a chart. */
@@ -91,7 +91,7 @@
   font-size: var(--text-sm);
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: var(--color-brass);
+  text-decoration-color: var(--color-accent);
   text-underline-offset: 0.25em;
 }
 

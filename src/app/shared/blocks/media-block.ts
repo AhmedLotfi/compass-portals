@@ -3,6 +3,7 @@ import { Component, computed, input } from '@angular/core';
 import type { Block, MediaRef } from '@schema/content';
 import { MediaImage } from '../../core/media/media-image';
 import { SmartLink } from '../smart-link/smart-link';
+import { LogoStrip } from './logo-strip';
 
 interface MediaItem {
   media: string;
@@ -10,11 +11,20 @@ interface MediaItem {
   href?: string;
 }
 
-/** One image or a gallery, each presented as an atlas plate with its caption. */
+/** Logo rows this long run as the old site's drifting client strip; shorter ones stand still. */
+const STRIP_MIN = 6;
+
+/**
+ * One image or a gallery, each presented as an atlas plate with its caption; a long row of logos
+ * (the site's clients) as the drifting strip of the old home page.
+ */
 @Component({
   selector: 'app-media-block',
-  imports: [AutoLang, MediaImage, SmartLink],
+  imports: [AutoLang, LogoStrip, MediaImage, SmartLink],
   template: `
+    @if (strip()) {
+      <app-logo-strip [items]="items()" [media]="media()" />
+    } @else {
     <div
       class="plates"
       [class.plates--gallery]="items().length > 1"
@@ -40,6 +50,7 @@ interface MediaItem {
         }
       }
     </div>
+    }
   `,
   styles: `
     :host {
@@ -84,6 +95,7 @@ export class MediaBlock {
     const block = this.block();
     return block.type === 'gallery' && block.variant === 'logos';
   });
+  protected readonly strip = computed(() => this.logos() && this.items().length >= STRIP_MIN);
   protected readonly sizes = computed(() =>
     this.logos()
       ? '10rem'

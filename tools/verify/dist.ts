@@ -58,6 +58,7 @@ const NON_TEXT_KEYS = new Set([
   'placeholder',
   'tel',
   'media',
+  'mobileMedia',
   'image',
   'mapUrl',
   'titleSource',

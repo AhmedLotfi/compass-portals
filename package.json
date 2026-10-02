@@ -33,7 +33,8 @@
     "verify:hosting": "node tools/verify/hosting.ts",
     "verify:dist": "node tools/verify/dist.ts",
     "e2e": "playwright test",
-    "lighthouse": "node tools/verify/lighthouse.ts"
+    "lighthouse": "node tools/verify/lighthouse.ts",
+    "content:images": "node tools/content-sync/index.ts images"
   },
   "private": true,
   "packageManager": "npm@11.19.0",

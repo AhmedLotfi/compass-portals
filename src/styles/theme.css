@@ -1,7 +1,8 @@
 /*
  * "True North" design tokens. Tailwind v4 turns each token into a CSS variable and a utility
  * (e.g. --color-ink → bg-ink / text-ink). Component CSS uses the variables directly.
- * The palette is provisional until it is tuned to the Compass logo.
+ * The ink and the accent are compassint.org's own: its navy (--compass-navy) and its teal
+ * (--compass-teal and the darker teal of its buttons), read from the site's stylesheet.
  */
 @theme {
   --color-*: initial;
@@ -14,11 +15,15 @@
   --color-paper: #f3f6f8;
   --color-paper-2: #e6edf2;
   --color-rule: #c5d2dc;
-  --color-ink: #10263d;
-  --color-ink-2: #3b5064;
-  /* Brass is for graphics and large text; brass-deep passes AA for small text on paper. */
-  --color-brass: #a8823f;
-  --color-brass-deep: #7b5b21;
+  --color-ink: #1e2438;
+  --color-ink-2: #5b6779;
+  /* The portal's teal: accent for graphics and large text; accent-deep (its button colour) passes
+     AA for small text on paper and for white text on itself. accent-tint is its soft background,
+     accent-light its highlight on ink. */
+  --color-accent: #07a5b6;
+  --color-accent-deep: #067b89;
+  --color-accent-tint: #e1f5f8;
+  --color-accent-light: #3fd0e0;
   --color-signal: #b3261e;
   --color-white: #ffffff;
   --color-transparent: transparent;
@@ -47,10 +52,14 @@
 
   --radius-xs: 2px;
   --radius-sm: 4px;
+  /* Cards and buttons: the portal's rounding. */
+  --radius-md: 10px;
   --radius-full: 9999px;
 
   /* One tinted lift, reserved for the open menu panel. */
-  --shadow-panel: 0 22px 44px -22px rgb(16 38 61 / 0.42), 0 2px 8px rgb(16 38 61 / 0.08);
+  --shadow-panel: 0 22px 44px -22px rgb(30 36 56 / 0.42), 0 2px 8px rgb(30 36 56 / 0.08);
+  /* The portal's card lift on hover: a teal-tinted shadow. */
+  --shadow-lift: 0 16px 32px -24px rgb(5 117 134 / 0.45);
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 

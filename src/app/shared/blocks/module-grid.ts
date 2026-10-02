@@ -3,13 +3,18 @@ import { NgTemplateOutlet } from '@angular/common';
 import { Component, computed, input } from '@angular/core';
 import type { Block, MediaRef } from '@schema/content';
 import { MediaImage } from '../../core/media/media-image';
+import { Icon, isIconName, type IconName } from '../../layout/icon/icon';
 import { SmartLink } from '../smart-link/smart-link';
 import { InternalLinks } from './internal-links';
 
-/** Repeated cards from the site (products, modules), laid out as a map legend rather than a card kit. */
+/**
+ * Repeated cards from the site (products, modules, team members), drawn as the old site draws its
+ * catalog: a card with the catalog icon or picture, the title, a line of text and the link. Cards
+ * that lead somewhere lift under the pointer; in a revealed section they fade up one by one.
+ */
 @Component({
   selector: 'app-module-grid',
-  imports: [AutoLang, MediaImage, SmartLink, InternalLinks, NgTemplateOutlet],
+  imports: [AutoLang, Icon, MediaImage, SmartLink, InternalLinks, NgTemplateOutlet],
   template: `
     @let grid = block();
     @if (grid.title) {
@@ -21,13 +26,21 @@ import { InternalLinks } from './internal-links';
     }
     <ul class="module-grid" [class.module-grid--media]="hasMedia()">
       @for (item of grid.items; track $index) {
-        <li class="module-grid__item">
+        <li
+          class="module-grid__item card reveal-item"
+          [class.card--link]="item.href"
+          [style.--i]="$index"
+        >
           @if (item.media && media()[item.media]) {
             <span class="module-grid__plate">
               <app-media-image
                 [media]="media()[item.media]!"
-                sizes="(min-width: 64rem) 12rem, 30vw"
+                sizes="(min-width: 64rem) 18rem, (min-width: 48rem) 40vw, 100vw"
               />
+            </span>
+          } @else if (iconFor(item.icon); as icon) {
+            <span class="icon-tile module-grid__icon" aria-hidden="true">
+              <app-icon [name]="icon" />
             </span>
           } @else {
             <span class="module-grid__marker" aria-hidden="true"></span>
@@ -87,49 +100,92 @@ import { InternalLinks } from './internal-links';
     }
     .module-grid {
       display: grid;
-      gap: 0 2.5rem;
+      gap: 1.25rem;
       list-style: none;
       margin: 0;
       padding: 0;
-      border-top: var(--ink-line);
     }
-    @media (min-width: 48rem) {
+    @media (min-width: 40rem) {
       .module-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
-    .module-grid__item {
-      display: grid;
-      grid-template-columns: 1.25rem minmax(0, 1fr);
-      gap: 0.9rem;
-      align-items: start;
-      padding-block: 1.25rem;
-      border-bottom: var(--hairline);
+    @media (min-width: 72rem) {
+      .module-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
-    .module-grid--media .module-grid__item {
-      grid-template-columns: 6.5rem minmax(0, 1fr);
+    .module-grid__item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       gap: 1.25rem;
+      padding: 1.5rem;
+      min-inline-size: 0;
     }
     .module-grid__marker {
       inline-size: 0.6rem;
       block-size: 0.6rem;
       margin: 0.65rem 0 0 0.25rem;
-      background: var(--color-brass);
+      background: var(--color-accent);
       transform: rotate(45deg);
     }
     .module-grid__plate {
       display: block;
+      inline-size: 100%;
       padding: 0.25rem;
-      border: var(--ink-line);
-      background: var(--color-white);
+      box-sizing: border-box;
+      border: var(--hairline);
+      border-radius: var(--radius-sm);
+      background: var(--color-paper);
+    }
+    .module-grid__plate app-media-image {
+      margin-inline: auto;
+    }
+    .module-grid__body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      inline-size: 100%;
     }
     .module-grid__name {
       font-size: var(--text-lg);
       line-height: var(--text-lg--line-height);
     }
+    .module-grid__link {
+      text-decoration: none;
+    }
+    .module-grid__link:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--color-accent);
+    }
     .module-grid__text {
-      margin-top: 0.4rem;
+      margin-top: 0.5rem;
       color: var(--color-ink-2);
+      font-size: var(--text-sm);
+      line-height: var(--text-sm--line-height);
+    }
+    /* The card's "read more" link (inside SmartLink): a full 24px target, on its own row at the
+       foot of the card, like the old catalog's "Explore product" row. */
+    :host ::ng-deep .module-grid__more {
+      display: inline-flex;
+      align-items: center;
+      min-block-size: 1.75rem;
+      margin-block-start: auto;
+      padding-block-start: 1rem;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-accent-deep);
+      text-decoration: none;
+    }
+    :host ::ng-deep .module-grid__more:hover {
+      text-decoration: underline;
+    }
+    :host ::ng-deep .module-grid__text + .module-grid__more {
+      margin-block-start: 1rem;
+      border-top: var(--hairline);
+      inline-size: 100%;
+      box-sizing: border-box;
     }
   `,
 })
@@ -143,5 +199,9 @@ export class ModuleGrid {
 
   protected hasMedia(): boolean {
     return this.block().items.some((item) => item.media && this.media()[item.media]);
+  }
+
+  protected iconFor(name: string | undefined): IconName | undefined {
+    return name && isIconName(name) ? name : undefined;
   }
 }

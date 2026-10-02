@@ -4,6 +4,7 @@
  *   node tools/content-sync/index.ts probe      Fingerprint the site (platform, REST API, permalinks)
  *   node tools/content-sync/index.ts discover   Inventory every page, menu, image, document, contact detail
  *   node tools/content-sync/index.ts fetch      Download every image, document and builder stylesheet
+ *   node tools/content-sync/index.ts images     Download the images the archived CMS API names (no crawl)
  *   node tools/content-sync/index.ts sync       Normalize → emit src/content → verify coverage (offline)
  *   node tools/content-sync/index.ts all        discover + fetch + sync
  *
@@ -208,6 +209,9 @@ async function main(): Promise<number> {
     case 'fetch':
       await runFetch(await readJson<Inventory>(INVENTORY_FILE));
       return 0;
+    case 'images':
+      await fetchCms();
+      return 0;
     case 'sync':
       return runSyncStage();
     case 'all': {
@@ -216,7 +220,7 @@ async function main(): Promise<number> {
     }
     default:
       console.error(
-        'Usage: node tools/content-sync/index.ts <probe|discover|fetch|sync|all> [--offline] [--check] [--max-pages=N]',
+        'Usage: node tools/content-sync/index.ts <probe|discover|fetch|images|sync|all> [--offline] [--check] [--max-pages=N]',
       );
       return stage === 'help' ? 0 : 1;
   }

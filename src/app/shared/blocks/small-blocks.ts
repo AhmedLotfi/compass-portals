@@ -56,7 +56,7 @@ export class CtaBlock {
       flex-direction: column-reverse;
       gap: 0.35rem;
       padding-top: 1rem;
-      border-top: 2px solid var(--color-brass);
+      border-top: 2px solid var(--color-accent);
     }
     .stats__value {
       margin: 0;
@@ -101,7 +101,7 @@ export class StatsBlock {
     .quote {
       margin: 0;
       padding-inline-start: 1.5rem;
-      border-inline-start: 2px solid var(--color-brass);
+      border-inline-start: 2px solid var(--color-accent);
     }
     blockquote {
       margin: 0;
@@ -184,8 +184,8 @@ export class QuoteBlock {
       flex: none;
       inline-size: 0.5rem;
       block-size: 0.5rem;
-      border-inline-end: 2px solid var(--color-brass);
-      border-block-end: 2px solid var(--color-brass);
+      border-inline-end: 2px solid var(--color-accent);
+      border-block-end: 2px solid var(--color-accent);
       transform: rotate(-45deg);
       transition: transform 160ms var(--ease-out, ease-out);
     }

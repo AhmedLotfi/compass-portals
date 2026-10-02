@@ -57,6 +57,8 @@ export const RouteCardSchema = z.object({
   title: z.string(),
   summary: z.string().optional(),
   media: z.string().optional(),
+  /** The old front end's catalog icon for the page (products and industries). */
+  icon: z.string().optional(),
 });
 
 export const RichTextBlockSchema = z.object({
@@ -204,6 +206,15 @@ export const PageKindSchema = z.enum([
   'post',
 ]);
 
+/** One slide of the old home page's hero carousel. */
+export const HeroSlideSchema = z.object({
+  title: z.string(),
+  lede: z.string().optional(),
+  media: z.string().optional(),
+  /** The CMS's phone-sized picture for the slide, shown on narrow screens. */
+  mobileMedia: z.string().optional(),
+});
+
 export const PageDocSchema = z.object({
   id: z.string(),
   kind: PageKindSchema,
@@ -235,6 +246,8 @@ export const PageDocSchema = z.object({
     ctas: z.array(z.object({ label: z.string(), href: z.string(), kind: LinkKindSchema })),
     /** Further slider headlines, kept so nothing from the old hero is lost. */
     highlights: z.array(z.string()).optional(),
+    /** The home page's carousel: every slide, in the site's order (the first is the hero above). */
+    slides: z.array(HeroSlideSchema).optional(),
   }),
   sections: z.array(SectionSchema),
   breadcrumbs: z.array(z.object({ label: z.string(), path: z.string() })),
@@ -257,6 +270,7 @@ export const RouteEntrySchema = z.object({
   /** Verbatim summary (WordPress excerpt or the page's first paragraph) for index pages. */
   summary: z.string().optional(),
   media: z.string().optional(),
+  icon: z.string().optional(),
   sourceUrl: z.url(),
   oldUrls: z.array(z.string()),
   modified: z.string().optional(),
@@ -353,6 +367,7 @@ export type Alternates = z.infer<typeof AlternatesSchema>;
 export type Media = z.infer<typeof MediaSchema>;
 export type MediaRef = z.infer<typeof MediaRefSchema>;
 export type RouteCard = z.infer<typeof RouteCardSchema>;
+export type HeroSlide = z.infer<typeof HeroSlideSchema>;
 export type RouteTable = z.infer<typeof RouteTableSchema>;
 export type Block = z.infer<typeof BlockSchema>;
 export type BlockType = Block['type'];

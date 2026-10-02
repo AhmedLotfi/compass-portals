@@ -78,6 +78,7 @@ export function docText(doc: PageDraft): string {
     doc.hero.title,
     doc.hero.lede ?? '',
     ...doc.hero.ctas.map((c) => c.label),
+    ...(doc.hero.slides ?? []).flatMap((s) => [s.title, s.lede ?? '']),
   ];
   for (const section of doc.sections) {
     if (section.title) parts.push(section.title);

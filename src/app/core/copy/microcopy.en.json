@@ -49,5 +49,12 @@
   "network.snapchat": "Snapchat",
   "languageName": "English",
   "languageSwitch": "Read this page in English",
-  "llmsArabic": "Pages in Arabic"
+  "llmsArabic": "Pages in Arabic",
+  "highlights": "Highlights",
+  "slideOf": "Slide {n} of {total}",
+  "showSlide": "Show slide {n}: {title}",
+  "slideCount": "{current} / {total}",
+  "pauseSlides": "Pause the slides",
+  "playSlides": "Play the slides",
+  "logoStrip": "Client logos"
 }

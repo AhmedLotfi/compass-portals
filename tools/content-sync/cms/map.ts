@@ -11,6 +11,7 @@
  */
 import { load } from 'cheerio';
 import type { Block, LinkKind, PageKind, Section } from '../../../schema/content.ts';
+import { catalogIcon } from '../../../schema/icons.ts';
 import { normalizeSpace } from '../analyze.ts';
 import type { MediaRegistry } from '../media.ts';
 import { toAtoms } from '../normalize/atoms.ts';
@@ -106,6 +107,18 @@ export const SECTIONS = [
     index: 'product-category',
     detail: 'page',
   },
+  // The old front end has /blog routes for this section; the CMS publishes it only when it has
+  // posts (it had none when the site was archived), so the section is optional.
+  {
+    cmsId: 17,
+    key: 'blog',
+    path: '/blog/',
+    old: ['/blog/'],
+    oldIndex: ['/blog'],
+    index: 'page',
+    detail: 'post',
+    optional: true,
+  },
 ] as const satisfies readonly {
   cmsId: number;
   key: string;
@@ -114,7 +127,11 @@ export const SECTIONS = [
   oldIndex?: readonly string[];
   index: PageKind;
   detail: PageKind;
+  optional?: boolean;
 }[];
+
+/** Sections whose cards carry the old front end's catalog icon. */
+const ICON_SECTIONS: readonly SectionSpec['key'][] = ['products', 'industries'];
 
 export type SectionSpec = (typeof SECTIONS)[number];
 
@@ -133,6 +150,8 @@ export interface CmsPage {
   /** Old path prefixes: the old site appended a per-visit ciphertext segment to these. */
   oldPrefixes: string[];
   modified?: string;
+  /** The old front end's catalog icon for the page (products and industries). */
+  icon?: string;
   /** Every API text the page is meant to show, one block per line: the coverage reference. */
   sourceText: string;
 }
@@ -371,6 +390,10 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
     if (!page) throw new Error(`The CMS has no ${spec.key} section (id ${spec.cmsId})`);
     return page;
   };
+  /** The sections the CMS publishes (an optional section may have no record yet). */
+  const published = SECTIONS.filter(
+    (spec) => !('optional' in spec && spec.optional) || sections.has(spec.cmsId),
+  );
   const detailPath = (spec: SectionSpec, detail: PageDetail) =>
     `${spec.path}${slugify(text(detail.titleEn))}/`;
   const detailId = (spec: SectionSpec, detail: PageDetail) =>
@@ -387,7 +410,7 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
     kind: 'internal',
   });
 
-  for (const spec of SECTIONS) {
+  for (const spec of published) {
     if (spec.key === 'about') continue;
     const section = sectionOf(spec);
     const indexId = spec.key;
@@ -496,6 +519,7 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
         },
         parentId: indexId,
         order: detail.order ?? 0,
+        ...(ICON_SECTIONS.includes(spec.key) ? { icon: catalogIcon(text(detail.titleEn)) } : {}),
         oldPaths: spec.old.map((prefix) => `${prefix}${slug}`),
         oldPrefixes: spec.old.map((prefix) => `${prefix}${slug}/`),
         ...(latest(detail.lastModificationTime, detail.creationTime)
@@ -591,7 +615,9 @@ export async function mapSite(ctx: MapContext): Promise<CmsPage[]> {
     });
   }
 
-  await mapHome(ctx, m, sectionOf, (spec, detail) => m.path(detailPath(spec, detail)));
+  await mapHome(ctx, m, published, sectionOf, (spec, detail) =>
+    m.path(detailPath(spec, detail)),
+  );
   await mapStatic(ctx, m);
   return m.pages;
 }
@@ -602,10 +628,12 @@ function card(
   detail: PageDetail,
   href: string,
   linkLabel: string | undefined,
+  icon = false,
 ): Extract<Block, { type: 'moduleGrid' }>['items'][number] {
   const summary = plain(m.raw(detail.descriptionEn, detail.descriptionAr));
   return {
     title: m.t(detail.titleEn, detail.titleAr),
+    ...(icon ? { icon: catalogIcon(text(detail.titleEn)) } : {}),
     ...(summary
       ? {
           html: m.wrap(
@@ -622,6 +650,7 @@ function card(
 async function mapHome(
   ctx: MapContext,
   m: Mapper,
+  published: readonly SectionSpec[],
   sectionOf: (spec: SectionSpec) => WebPage,
   detailPath: (spec: SectionSpec, detail: PageDetail) => string,
 ): Promise<void> {
@@ -631,36 +660,30 @@ async function mapHome(
   const body: Section[] = [];
   const sources: (string | null | undefined)[] = [];
 
-  // In the order the API returns them, as the old home page shows them (not by their `order`).
-  const slides = cms.slides.filter((slide) => slide.isActive);
-  const [lead, ...more] = slides;
+  // The hero carousel: in the order the API returns them, as the old home page shows them (not
+  // by their `order`). Each slide has a desktop picture and a phone-sized one.
+  const slides = cms.slides
+    .filter((slide) => slide.isActive)
+    .map((slide) => {
+      const title = m.t(slide.titleEn, slide.titleAr);
+      const lede = m.t(slide.detailsEn, slide.detailsAr);
+      const media = m.image(slide.imageImagePath, title, homeId);
+      const mobileMedia = m.image(slide.mobileImagePath, title, homeId);
+      return {
+        title,
+        ...(lede ? { lede } : {}),
+        ...(media ? { media } : {}),
+        // The CMS often holds the same file under both names: then there is no phone variant.
+        ...(mobileMedia && mobileMedia !== media ? { mobileMedia } : {}),
+      };
+    });
+  const [lead] = slides;
   if (!lead) throw new Error('The CMS has no home slides');
-  const leadTitle = m.t(lead.titleEn, lead.titleAr);
-  const leadLede = m.t(lead.detailsEn, lead.detailsAr);
-  const heroMedia = m.image(lead.imageImagePath, leadTitle, homeId);
   sources.push(
-    ...slides.flatMap((s) => [m.raw(s.titleEn, s.titleAr), m.raw(s.detailsEn, s.detailsAr)]),
+    ...cms.slides
+      .filter((slide) => slide.isActive)
+      .flatMap((s) => [m.raw(s.titleEn, s.titleAr), m.raw(s.detailsEn, s.detailsAr)]),
   );
-  if (more.length) {
-    const s = m.section(homeId, undefined, [
-      {
-        type: 'moduleGrid',
-        items: more.map((slide) => {
-          const title = m.t(slide.titleEn, slide.titleAr);
-          const media = m.image(slide.imageImagePath, title, homeId);
-          const details = m.t(slide.detailsEn, slide.detailsAr);
-          return {
-            title,
-            ...(details
-              ? { html: m.wrap(`<p>${escapeHtml(details)}</p>`, !hasArabic(slide.detailsAr)) }
-              : {}),
-            ...(media ? { media } : {}),
-          };
-        }),
-      },
-    ]);
-    if (s) body.push({ ...s, id: 'highlights' });
-  }
 
   for (const slogan of ordered(cms.slogans.map((s) => ({ ...s, order: 0 })))) {
     // The slogan title is styled HTML; its text is "Right Application. Right Direction".
@@ -677,23 +700,42 @@ async function mapHome(
     features: await label('Learn more'),
     industries: undefined,
   };
-  for (const spec of SECTIONS.slice(1)) {
+  // The old home page lists products, services, features and industries (not the blog).
+  for (const spec of published.filter((s) => s.key in linkLabels)) {
     const section = sectionOf(spec);
     const details = ordered(section.webPageDetails);
     const s = m.section(homeId, await label(text(section.titleEn)), [
       {
         type: 'moduleGrid',
         items: details.map((detail) =>
-          card(m, detail, detailPath(spec, detail), linkLabels[spec.key]),
+          card(
+            m,
+            detail,
+            detailPath(spec, detail),
+            linkLabels[spec.key],
+            ICON_SECTIONS.includes(spec.key),
+          ),
         ),
       },
     ]);
     if (s) body.push(s);
   }
 
+  // The old front end illustrates a story that has no CMS picture with its own drawing
+  // (assets/compass/business-apps.svg): the picture under the story's heading on the rendered page.
+  const home = await ctx.rendered.page('/');
+  const storyPicture = (title: string): string | undefined => {
+    const story = home.$('.home-story')
+      .toArray()
+      .find((el) => normalizeSpace(home.$(el).find('h2').first().text()) === title);
+    const src = story ? home.$(story).find('img[src]').first().attr('src') : undefined;
+    if (!src || src.startsWith('data:')) return undefined;
+    return ctx.media.register({ src, alt: title }, { id: homeId, url: home.url });
+  };
   for (const line of ordered(cms.sloganLines.map((l) => ({ ...l, order: 0 })))) {
     const title = m.t(line.titleEn, line.titleAr);
-    const media = m.image(line.imageUrl, title, homeId);
+    const media =
+      m.image(line.imageUrl, title, homeId) ?? storyPicture(text(line.titleEn) || title);
     // The old front end shows the title, picture and description, not the `message` field
     // ("Try it free for 30 Days…", "m"), so neither does this page.
     const html = m.h(line.descriptionEn, line.descriptionAr);
@@ -774,17 +816,18 @@ async function mapHome(
       id: 'home',
       kind: 'home',
       path: '/',
-      title: leadTitle,
+      title: lead.title,
       sourceUrl: `${ctx.source}/`,
       seo: {},
       hero: {
-        title: leadTitle,
-        ...(leadLede ? { lede: leadLede } : {}),
-        ...(heroMedia ? { media: heroMedia } : {}),
+        title: lead.title,
+        ...(lead.lede ? { lede: lead.lede } : {}),
+        ...(lead.media ? { media: lead.media } : {}),
         ctas: [
           { label: contact, href: m.path('/contact/'), kind: 'internal' satisfies LinkKind },
           { label: explore, href: m.path('/products/'), kind: 'internal' satisfies LinkKind },
         ],
+        slides,
       },
       sections: body,
     },

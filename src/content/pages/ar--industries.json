@@ -30,77 +30,88 @@
       "path": "/ar/industries/retail/",
       "title": "Retail",
       "summary": "We are proud to offer a comprehensive ERP solution designed specifically for the retail industry",
-      "media": "m-813946f5a1"
+      "media": "m-813946f5a1",
+      "icon": "store"
     },
     {
       "id": "ar--industries--consulting",
       "path": "/ar/industries/consulting/",
       "title": "Consulting",
       "summary": "Compass understands and acknowledges the distinct needs and requirements of the consulting industry. Consequently, our all-encompassing Enterprise Resource Planning (ERP) solution is meticulously tailored to specifically address the unique challenges faced by consulting firms",
-      "media": "m-11e762222e"
+      "media": "m-11e762222e",
+      "icon": "people"
     },
     {
       "id": "ar--industries--construction",
       "path": "/ar/industries/construction/",
       "title": "Construction",
       "summary": "At Compass, we understand the unique requirements and challenges faced by the construction industry. That's why our comprehensive ERP solution is specifically designed to cater to the needs of construction businesses",
-      "media": "m-7b8ab60c1a"
+      "media": "m-7b8ab60c1a",
+      "icon": "crane"
     },
     {
       "id": "ar--industries--financial-services",
       "path": "/ar/industries/financial-services/",
       "title": "Financial Services",
       "summary": "Compass offers a comprehensive software solution that specifically caters to the unique requirements of the finance industry",
-      "media": "m-7b8ab60c1a"
+      "media": "m-7b8ab60c1a",
+      "icon": "chart"
     },
     {
       "id": "ar--industries--legal",
       "path": "/ar/industries/legal/",
       "title": "Legal",
       "summary": "Compass provides a comprehensive system and software solutions that caters specifically to the unique requirements of the legal services industry",
-      "media": "m-232b72b22e"
+      "media": "m-232b72b22e",
+      "icon": "columns"
     },
     {
       "id": "ar--industries--it-services",
       "path": "/ar/industries/it-services/",
       "title": "IT Services",
       "summary": "At Compass, we understand the complex requirements of the IT industry and have developed enterprise resource planning (ERP) solutions that address its unique challenges.",
-      "media": "m-fc0905e61d"
+      "media": "m-fc0905e61d",
+      "icon": "monitor"
     },
     {
       "id": "ar--industries--whole-sales-distribution",
       "path": "/ar/industries/whole-sales-distribution/",
       "title": "Whole Sales Distribution",
       "summary": "At Compass, we recognize the unique needs and challenges faced by wholesale businesses. That's why we have developed a comprehensive software solution tailored to cater specifically to the requirements of the wholesale industry",
-      "media": "m-b65c9bf240"
+      "media": "m-b65c9bf240",
+      "icon": "truck"
     },
     {
       "id": "ar--industries--non-profit-organizations",
       "path": "/ar/industries/non-profit-organizations/",
       "title": "Non- Profit Organizations",
       "summary": "Our solutions are specifically designed to cater to the needs of charity organizations, providing them with the tools and functionalities required to effectively manage their operations",
-      "media": "m-daa661fa88"
+      "media": "m-daa661fa88",
+      "icon": "heart"
     },
     {
       "id": "ar--industries--government",
       "path": "/ar/industries/government/",
       "title": "Government",
       "summary": "At Compass, we provide secure, scalable, and efficient IT and software solutions tailored for government entities. Our technologies help streamline operations, enhance public service delivery, and support digital transformation across various governmental departments. With a strong focus on compliance, security, and performance, Compass empowers governments to operate more transparently, efficiently, and effectively.",
-      "media": "m-0b351bb561"
+      "media": "m-0b351bb561",
+      "icon": "columns"
     },
     {
       "id": "ar--industries--health-care",
       "path": "/ar/industries/health-care/",
       "title": "Health Care",
       "summary": "At Compass, we specialize in delivering innovative IT and software solutions specifically designed for the healthcare sector. We understand the unique challenges faced by healthcare providers — from securely managing patient data to streamlining clinical workflows and ensuring regulatory compliance. Our advanced technologies empower hospitals, clinics, and medical professionals to enhance patient care, improve operational efficiency, and make data-driven decisions. Committed to innovation and security, we support the transformation of healthcare delivery for better outcomes and a healthier future.",
-      "media": "m-4ee075b05a"
+      "media": "m-4ee075b05a",
+      "icon": "cross"
     },
     {
       "id": "ar--industries--real-estate",
       "path": "/ar/industries/real-estate/",
       "title": "Real Estate",
       "summary": "Compass provides innovative IT and software solutions designed for the real estate industry. We help real estate companies streamline property management, automate sales processes, and enhance client engagement through smart tools like CRM integration, AI chatbots, and data analytics. With Compass, you gain the digital edge to succeed in a fast-moving market.",
-      "media": "m-2dee8f3f5f"
+      "media": "m-2dee8f3f5f",
+      "icon": "building"
     }
   ],
   "media": {

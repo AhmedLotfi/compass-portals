@@ -2,18 +2,21 @@ import { AutoLang } from '../../core/i18n/auto-lang';
 import { Component, input } from '@angular/core';
 import type { MediaRef, Section } from '@schema/content';
 import { BlockView } from '../blocks/block-view';
+import { Reveal } from '../reveal';
 
 /**
  * Page sections in the margin-rail layout: on wide screens the section title sits in the left rail,
  * like a note in a map margin; untitled sections keep the rail empty so everything stays aligned.
+ * Each section fades up as it scrolls into view.
  */
 @Component({
   selector: 'app-sections',
-  imports: [AutoLang, BlockView],
+  imports: [AutoLang, BlockView, Reveal],
   template: `
     @for (section of sections(); track section.id) {
       <section
         class="rail-section"
+        appReveal
         [id]="'s-' + section.id"
         [attr.aria-labelledby]="section.title ? 's-' + section.id + '-title' : null"
       >

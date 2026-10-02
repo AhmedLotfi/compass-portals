@@ -33,7 +33,7 @@
   font-weight: 650;
 }
 
-/* Lists read like a map legend: a small brass diamond marks each entry. */
+/* Lists read like a map legend: a small accent diamond marks each entry. */
 .prose-chart ul {
   list-style: none;
   padding: 0;
@@ -55,7 +55,7 @@
   top: 0.62em;
   width: 0.42em;
   height: 0.42em;
-  background: var(--color-brass);
+  background: var(--color-accent);
   transform: rotate(45deg);
 }
 
@@ -64,14 +64,14 @@
 }
 
 .prose-chart ol > li::marker {
-  color: var(--color-brass-deep);
+  color: var(--color-accent-deep);
   font-variant-numeric: tabular-nums;
 }
 
 .prose-chart blockquote {
   margin-inline: 0;
   padding-inline-start: 1.25em;
-  border-inline-start: 2px solid var(--color-brass);
+  border-inline-start: 2px solid var(--color-accent);
   font-family: var(--font-display);
   font-style: italic;
   font-size: var(--text-lg);

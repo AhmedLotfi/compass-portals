@@ -60,7 +60,7 @@ p {
 a {
   color: inherit;
   text-decoration-line: underline;
-  text-decoration-color: var(--color-brass);
+  text-decoration-color: var(--color-accent);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.22em;
   transition: text-decoration-thickness 120ms var(--ease-out);
@@ -82,14 +82,14 @@ img {
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-brass-deep);
+  outline: 2px solid var(--color-accent-deep);
   outline-offset: 3px;
   border-radius: var(--radius-xs);
 }
 
 ::selection {
-  background: var(--color-ink);
-  color: var(--color-paper);
+  background: var(--color-accent-deep);
+  color: var(--color-white);
 }
 
 .tnum {
@@ -188,9 +188,55 @@ a[href^='tel:'] {
 
 .chart-grid {
   background-image:
-    linear-gradient(to right, rgb(16 38 61 / 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(16 38 61 / 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgb(30 36 56 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(30 36 56 / 0.05) 1px, transparent 1px);
   background-size: 2rem 2rem;
+}
+
+/*
+ * The old site's page-header drawing (assets/img/page-header-bg.svg: a dot grid and two rings),
+ * drawn through a mask in the accent colour, for the heading band of inner pages.
+ */
+.texture-header {
+  --texture: url('/textures/page-header.svg');
+  --texture-color: color-mix(in srgb, var(--color-accent) 24%, transparent);
+  background-color: var(--texture-color);
+  mask-image: var(--texture);
+  mask-size: cover;
+  mask-position: bottom;
+  mask-repeat: no-repeat;
+}
+
+/*
+ * Scroll reveals (the Reveal directive): a section is prerendered visible; once the app runs, the
+ * sections still below the fold wait, hidden, and fade up as they scroll into view. Cards inside
+ * them follow one after another.
+ */
+.reveal--pending {
+  opacity: 0;
+  transform: translateY(1.25rem);
+}
+
+.reveal--in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.6s var(--ease-out),
+    transform 0.6s var(--ease-out);
+}
+
+.reveal--pending .reveal-item {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+
+.reveal--in .reveal-item {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.55s var(--ease-out),
+    transform 0.55s var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 55ms);
 }
 
 /* Route changes cross-fade; the header is pinned so it doesn't flicker. */

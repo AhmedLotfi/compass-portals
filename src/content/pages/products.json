@@ -28,77 +28,88 @@
       "path": "/products/hr-payroll/",
       "title": "HR & Payroll",
       "summary": "Enhance your organization's HR and payroll operations with our advanced and customizable module. Our HR system facilitates seamless management of employee onboarding, data administration, payroll processing, and more. With integrated compliance features and powerful reporting tools, our configurable solution ensures accuracy, transparency, and operational efficiency, empowering your HR department.",
-      "media": "m-1224c21e8a"
+      "media": "m-1224c21e8a",
+      "icon": "people"
     },
     {
       "id": "products--finance-management",
       "path": "/products/finance-management/",
       "title": "Finance Management",
       "summary": "Our financial solution offers more than just accounting. It delivers comprehensive financial functionalities tailored to meet your business requirements. Manage invoicing, expense tracking, budgeting, and cash flow seamlessly with our customizable solution.",
-      "media": "m-4e2f6b33ba"
+      "media": "m-4e2f6b33ba",
+      "icon": "chart"
     },
     {
       "id": "products--fleet-management",
       "path": "/products/fleet-management/",
       "title": "Fleet Management",
       "summary": "Optimize your fleet operations with an advanced solution that showcases features for tracking, route planning, and real-time vehicle monitoring. Gain insights, generate detailed reports, and manage various related tasks effortlessly with our user-friendly interface, enhancing your fleet management capabilities",
-      "media": "m-44f131282f"
+      "media": "m-44f131282f",
+      "icon": "truck"
     },
     {
       "id": "products--property-management",
       "path": "/products/property-management/",
       "title": "Property Management",
       "summary": "Manage your properties with our configurable and customizable solution designed for property owners. Streamline lease management, maintenance requests through our integrated systems. Simplify rent collections, track your monthly/yearly expenses, and benefit from our in-system reporting capabilities for valuable insights",
-      "media": "m-3dd99ee371"
+      "media": "m-3dd99ee371",
+      "icon": "building"
     },
     {
       "id": "products--projects-management",
       "path": "/products/projects-management/",
       "title": "Projects Management",
       "summary": "Elevate your project management capabilities with our feature-rich solution. Efficiently track project progress, allocate resources effectively, and collaborate seamlessly with your team. Gain real-time insights into active and closed projects, monitor active laborers, and track the total value for each project. Get a clear look into the progress of each project through the available analytics and KPI’s designed for each contributing factor. Our intuitive interface and comprehensive project billing and costing features ensure smooth management of projects",
-      "media": "m-d1d758189a"
+      "media": "m-d1d758189a",
+      "icon": "crane"
     },
     {
       "id": "products--retail-management",
       "path": "/products/retail-management/",
       "title": "Retail Management",
       "summary": "Transform your retail operations with our comprehensive management module. Streamline inventory, sales, and customer data to optimize store performance. From seamless point-of-sale transactions to advanced inventory tracking and real-time stock level management, our solution ensures you stay ahead. Gain insights into sales trends, items sold, and customer preferences with a fully- fed database that centralizes customer information. Empower your decisions with detailed analytics, driving growth and delivering exceptional retail experiences",
-      "media": "m-a3d703ec91"
+      "media": "m-a3d703ec91",
+      "icon": "store"
     },
     {
       "id": "products--contracts-management",
       "path": "/products/contracts-management/",
       "title": "Contracts Management",
       "summary": "Specifically designed for Consulting and Outsourcing Firms, our Contracts Management solution facilitates the registration of contract details and payment schedules analyzing the profitability of each contract. The system automates payroll costing and payments, integrating with Finance for comprehensive financial management",
-      "media": "m-bb8fbcd880"
+      "media": "m-bb8fbcd880",
+      "icon": "document"
     },
     {
       "id": "products--charity-management",
       "path": "/products/charity-management/",
       "title": "Charity Management",
       "summary": "Our charity solution integrates departments, streamlines workflows, and provides detailed project and donor reports for enhanced transparency and efficiency.",
-      "media": "m-42a55ad4cc"
+      "media": "m-42a55ad4cc",
+      "icon": "heart"
     },
     {
       "id": "products--school-management",
       "path": "/products/school-management/",
       "title": "School Management",
       "summary": "Our comprehensive School Management System is designed to simplify daily operations across single or multiple branches. With features like multi-language and multi-currency support, automated SMS/email notifications, and secure online payments, the system empowers schools to manage enrollment, attendance, grades, finances, and communication all in one centralized platform. Built for efficiency, scalability, and security, it's the ideal solution for modern educational institutions.",
-      "media": "m-9e6e617d6f"
+      "media": "m-9e6e617d6f",
+      "icon": "graduation"
     },
     {
       "id": "products--insurance-management",
       "path": "/products/insurance-management/",
       "title": "Insurance Management",
       "summary": "Our customizable Insurance solution is crafted to efficiently manage and control processes within insurance companies, adhering to international specifications and configurations to meet diverse needs.",
-      "media": "m-db47a42310"
+      "media": "m-db47a42310",
+      "icon": "chart"
     },
     {
       "id": "products--university-management",
       "path": "/products/university-management/",
       "title": "University Management",
       "summary": "Smart Management for Modern Universities, Our University Management System streamlines admissions, course registration, scheduling, and finances across multiple campuses. With secure access for students, faculty, and staff, it enhances collaboration, ensures efficiency, and keeps all operations under one unified platform.",
-      "media": "m-e8563e5a89"
+      "media": "m-e8563e5a89",
+      "icon": "graduation"
     }
   ],
   "media": {

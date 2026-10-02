@@ -1,6 +1,6 @@
 # Content sync report
 
-- Pages: 90; media: 133; redirects: 110
+- Pages: 90; media: 134; redirects: 110
 - Coverage gaps: **0** (must be 0, or waived with a reason)
 - Missing media: 10; unresolved internal links: 1
 - Alt text derived from nearby text (review): 0; decorative (empty alt): 0

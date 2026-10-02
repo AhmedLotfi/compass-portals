@@ -1,45 +1,5 @@
 @let p = page();
-<section class="home-hero chart-grid" aria-labelledby="home-title">
-  <div class="home-hero__texture texture-contours texture-focus-end" aria-hidden="true"></div>
-  <div class="frame home-hero__inner">
-    <div class="home-hero__copy">
-      <h1 id="home-title" class="home-hero__title" [appAutoLang]="p.hero.title">
-        {{ p.hero.title }}
-      </h1>
-      @if (p.hero.lede) {
-        <p class="home-hero__lede" [appAutoLang]="p.hero.lede">{{ p.hero.lede }}</p>
-      }
-      @if (p.hero.ctas.length) {
-        <div class="home-hero__ctas">
-          @for (cta of p.hero.ctas; track cta.href + cta.label; let first = $first) {
-            <app-smart-link
-              [href]="cta.href"
-              [linkClass]="first ? 'btn btn--ink' : 'btn btn--outline'"
-            >
-              {{ cta.label }}
-            </app-smart-link>
-          }
-        </div>
-      }
-    </div>
-    <app-compass-hero class="home-hero__compass" />
-  </div>
-</section>
-
-@if (heroMedia(); as image) {
-  <div class="frame">
-    <div class="rail-section home-plate">
-      <div aria-hidden="true"></div>
-      <figure class="plate">
-        <span class="plate__frame">
-          <!-- Under the hero, past the first screen: loading it early would compete with the
-               headline, the page's largest paint. -->
-          <app-media-image [media]="image" sizes="(min-width: 76rem) 56rem, 100vw" />
-        </span>
-      </figure>
-    </div>
-  </div>
-}
+<app-hero-slider [page]="p" />
 
 <div class="frame">
   <!-- Prerendered in full; the long run of sections under the hero hydrates as it scrolls into

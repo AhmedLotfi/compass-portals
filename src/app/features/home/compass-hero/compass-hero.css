@@ -66,11 +66,11 @@ svg {
 
 .rose__letter--north {
   font-size: 23px;
-  fill: var(--color-brass-deep);
+  fill: var(--color-accent-deep);
 }
 
 .needle__north {
-  fill: var(--color-brass);
+  fill: var(--color-accent);
 }
 
 .needle__south {

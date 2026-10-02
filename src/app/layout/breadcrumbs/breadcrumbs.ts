@@ -48,7 +48,7 @@ export interface Crumb {
     }
     a:hover {
       color: var(--color-ink);
-      text-decoration-color: var(--color-brass);
+      text-decoration-color: var(--color-accent);
     }
     [aria-current] {
       color: var(--color-ink);

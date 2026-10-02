@@ -2740,23 +2740,6 @@
       ]
     },
     {
-      "id": "m-ddef0ddcd8",
-      "sourceUrl": "https://compassint.org/#inline-ddef0ddcd8",
-      "archiveFile": "inline/ddef0ddcd8.webp",
-      "mime": "image/webp",
-      "width": 225,
-      "height": 160,
-      "alt": "Compass International",
-      "altSource": "html",
-      "widths": [
-        225
-      ],
-      "svg": false,
-      "usedOn": [
-        "site"
-      ]
-    },
-    {
       "id": "m-e01ae2f850",
       "sourceUrl": "https://cadmin.compassint.org//ERPAttachments/AppAttachments/HrPerson-Profile/HrPerson-Profile-1d5d2281-001d-4f07-ab3d-44426127d510.jpg",
       "archiveFile": "cadmin.compassint.org/erpattachments-appattachments-hrperson-profile-hrperson-profile-1d5d2281-001d-4f--125946e7fa.jpg",
@@ -2941,6 +2924,45 @@
       "usedOn": [
         "about",
         "ar--about"
+      ]
+    },
+    {
+      "id": "m-ec6c7b19b3",
+      "sourceUrl": "https://compassint.org/assets/compass/business-apps.svg",
+      "archiveFile": "compassint.org/assets-compass-business-apps.svg--76fbe1247b.xml",
+      "mime": "image/svg+xml",
+      "width": 560,
+      "height": 420,
+      "alt": "An AppStore for All of Your Business Needs",
+      "altSource": "html",
+      "widths": [],
+      "svg": true,
+      "usedOn": [
+        "ar--home",
+        "home"
+      ]
+    },
+    {
+      "id": "m-ecdb5495b2",
+      "sourceUrl": "https://compassint.org/assets/custom/img/Compass-logo.png",
+      "archiveFile": "compassint.org/assets-custom-img-compass-logo.png--726673c0b6.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 1140,
+      "alt": "Compass International",
+      "altSource": "html",
+      "widths": [
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "svg": false,
+      "usedOn": [
+        "site"
       ]
     },
     {

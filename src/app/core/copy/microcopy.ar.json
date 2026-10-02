@@ -49,5 +49,12 @@
   "network.snapchat": "سناب شات",
   "languageName": "العربية",
   "languageSwitch": "اقرأ هذه الصفحة بالعربية",
-  "llmsArabic": "الصفحات بالعربية"
+  "llmsArabic": "الصفحات بالعربية",
+  "highlights": "أبرز ما نقدّمه",
+  "slideOf": "الشريحة {n} من {total}",
+  "showSlide": "عرض الشريحة {n}: {title}",
+  "slideCount": "{current} / {total}",
+  "pauseSlides": "إيقاف الشرائح مؤقتًا",
+  "playSlides": "تشغيل الشرائح",
+  "logoStrip": "شعارات العملاء"
 }

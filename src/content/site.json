@@ -3,8 +3,8 @@
   "tagline": "Business-driven technology",
   "origin": "https://compassint.org",
   "source": "https://compassint.org",
-  "logo": "m-ddef0ddcd8",
-  "logoTone": "light",
+  "logo": "m-ecdb5495b2",
+  "logoTone": "dark",
   "languages": [
     {
       "code": "en",
@@ -681,21 +681,27 @@
     }
   },
   "media": {
-    "m-ddef0ddcd8": {
-      "id": "m-ddef0ddcd8",
-      "mime": "image/webp",
-      "width": 225,
-      "height": 160,
+    "m-ecdb5495b2": {
+      "id": "m-ecdb5495b2",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 1140,
       "alt": "Compass International",
       "widths": [
-        225
+        320,
+        480,
+        640,
+        768,
+        960,
+        1280,
+        1600
       ],
       "svg": false
     }
   },
   "snapshot": {
-    "syncedAt": "2026-10-01T06:01:17.947Z",
+    "syncedAt": "2026-10-02T10:02:33.645Z",
     "pages": 90,
-    "media": 133
+    "media": 134
   }
 }

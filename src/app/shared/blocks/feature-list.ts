@@ -90,13 +90,13 @@ const ICONS: Record<string, IconName> = {
     }
     .feature-list__icon {
       margin-top: 0.1rem;
-      color: var(--color-brass-deep);
+      color: var(--color-accent-deep);
     }
     .feature-list__marker {
       inline-size: 0.55rem;
       block-size: 0.55rem;
       margin: 0.55rem 0 0 0.35rem;
-      background: var(--color-brass);
+      background: var(--color-accent);
       transform: rotate(45deg);
     }
     .feature-list__text strong {
